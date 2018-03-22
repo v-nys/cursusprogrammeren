@@ -96,7 +96,7 @@ Het is belangrijk dat het type van de literal overeenstemt met dat van de variab
 ```java
 string eenTekst;
 int eenGetal;
- 
+
 eenTekst = 4;
 eenGetal = "4";
 ```
@@ -123,7 +123,15 @@ int temperatuurEerGisteren= temperatuurGisteren;
 temperatuurGisteren = 25;
 ```
 
+# Expressies
+
+Zonder expressies is programmeren saai: je kan dan enkel variabelen aan mekaar toewijzen. Expressies zijn als het ware eenvoudige tot complexe sequenties van bewerkingen die resulteren tot 1 resultaat. De volgende code is bijvoorbeeld een expressie: `3+2`
+
+Het resultaat van deze expressie is 5. [Meer informatie over expressies hier](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/statements-expressions-operators/expressions).
+
 # Expressie-resultaat toewijzen
+
+Meestal zul je expressies schrijven waarin je bewerkingen op en met variabelen uitvoert. Vervolgens zal je het resultaat van die expressie willen bewaren voor verder gebruik in je code.
 
 Voorbeeld van **expressie**-resultaat toekennen:
 
@@ -150,7 +158,7 @@ Uiteraard mag je ook combinaties van literals en variabelen gebruiken in je expr
 
 ```java
 int breedte = 15;
-int hoogte = 20 * breedte; 
+int hoogte = 20 * breedte;
 ```
 
 
