@@ -13,22 +13,22 @@ Voor de gehele getallen:
 
 | **Type** | **Geheugen** | **Range** |
 | :--- | :--- | :--- |
-| sbyte | 8 bits | -128 tot 127 |
-| byte | 8 bits | 0 tot 255 |
-| short | 16 bits | -32768 tot 32767 |
-| ushort | 16 bits | 0 tot 65535 |
-| int | 32 bits | -2147483658 tot +2147483657 |
-| uint | 32 bits | 0 tot 4294967295 |
-| long | 64 bits | Zie boek |
-| char | 16 bits | 0 tot 65535 |
+| `sbyte` | 8 bits | -128 tot 127 |
+| `byte` | 8 bits | 0 tot 255 |
+| `short` | 16 bits | -32768 tot 32767 |
+| `ushort` | 16 bits | 0 tot 65535 |
+| `int` | 32 bits | -2147483658 tot +2147483657 |
+| `uint` | 32 bits | 0 tot 4294967295 |
+| `long` | 64 bits | Zie boek |
+| `char` | 16 bits | 0 tot 65535 |
 
 Voor de kommagetallen:
 
 | **Type** | **Geheugen** | **Range** | **Precisie** |
 | :--- | :--- | :--- | :--- |
-| float | **32 bits** | 1,5\*10-45tot 3,4\*1048 | 7 digits |
-| double | 64 bits | **5\*10-324tot 1,7\*10308 ** | 15 digits |
-| decimal | 128 bits | 1\*10-28tot 7,9\*1028 | **28-29 digits** |
+| `float` | **32 bits** | 1,5\*10-45tot 3,4\*1048 | 7 digits |
+| `double` | 64 bits | **5\*10-324tot 1,7\*10308 ** | 15 digits |
+| `decimal` | 128 bits | 1\*10-28tot 7,9\*1028 | **28-29 digits** |
 
 ### Bereik in code weten
 
@@ -65,16 +65,93 @@ Indien je reeds weet wat de beginwaarde moet zijn van de variabele dan mag je de
 int mijnLeeftijd = 37;
 ```
 
+## Waarden toekennen aan variabelen
+
 Vanaf dit punt kunnen we dus ten allen tijde deze variabele gebruiken om een waarde aan toe te kennen, de bestaande waarde te overschrijven, of de waarde te gebruiken:
 
 * Waarde toekennen: `mijnGetal= 15;`
-
 * Waarde tonen op scherm: `Console.WriteLine(mijnGetal);`
 
-Je kan natuurlijk ook een waarde uit een variabele uitlezen en toewijzen aan een andere variabele:  
-`int eenAndereLeeftijd= mijnLeeftijd;`
+Met de** toekennings-operator \(=\)** kan je een waarde toekennen aan een variabele. Hierbij kan je zowel een literal toekennen oftewel het resultaat van een expressie.
 
+Je kan natuurlijk ook een waarde uit een variabele uitlezen en toewijzen aan een andere variabele:
 
+```java
+int eenAndereLeeftijd= mijnLeeftijd;
+```
+
+## Literal toewijzen
+
+Literals zijn expliciet ingevoerde waarden in je code. Als je in je code expliciet de waarde 4 wilt toekennen aan een variabele dan is het getal 4 in je code een zogenaamde literal. Wanneer we echter data bijvoorbeeld eerst uitlezen of berekenen \(via bijvoorbeeld invoer van de gebruiker of als resultaat van een berekening\) en het resultaat hiervaan toekennen aan een variabele dan is dit geen literal.
+
+Voorbeelden van een literal toekennen:
+
+```java
+int temperatuurGisteren = 20;
+int temperatuurVandaag = 25;
+```
+
+Het is belangrijk dat het type van de literal overeenstemt met dat van de variabele waaraan je deze zal toewijzen. Een string-literal stel je voor door aanhalingstekens. Volgende code zal dan ook een compiler-fout generen, daar je een string-literal aan een int-variabele wil toewijzen, en vice versa.
+
+```java
+string eenTekst;
+int eenGetal;
+ 
+eenTekst = 4;
+eenGetal = "4";
+```
+
+Als je bovenstaande probeert te compileren dan krijg je volgende error-boodschappen krijgen:
+
+![](/assets/errorliteraltoekenning.png)
+
+### Nieuwe waarden overschrijven oude waarden
+
+Wanneer je een reeds gedeclareerde variabele een **nieuwe waarde toekent **dan zak de oude waarde in die variabele onherroepelijk verloren zijn. Probeer dus altijd goed op te letten of je de oude waarde nog nodig hebt of niet. Wil je de oude waarde ook nog bewaren dan zal je een nieuwe, extra variabele moeten aanmaken en daarin de nieuwe waarde moeten bewaren:
+
+```java
+int temperatuurGisteren = 20;
+temperatuurGisteren = 25;
+```
+
+In dit voorbeeld zal er dus voor gezorgd worden dat de oude waarde van temperatuurGisteren, 20, zal worden overschreven met 25.
+
+Volgende code toont hoe je bijvoorbeeld eerst de vorige waarde kunt bewaren:
+
+```java
+int temperatuurEerGisteren= temperatuurGisteren;
+temperatuurGisteren = 25;
+```
+
+# Expressie-resultaat toewijzen
+
+Voorbeeld van **expressie**-resultaat toekennen:
+
+```java
+int temperatuursVerschil = temperatuurGisteren - temperatuurVandaag;
+```
+
+Hierbij zal de temperatuur uit de rechtse 2 variabelen worden uitgelezen, van mekaar wordt afgetrokken en vervolgens bewaard worden in temperatuursVerschil.
+
+De voorgaande code kan ook langer geschreven worden als:
+
+```java
+int tussenResultaat= tempeatuurGisteren - temperatuurVandaag;
+int temperatuursVerschil = tussenResultaat;
+```
+
+Een ander voorbeeld van en expressie-resultaat toewijzen maar nu met literal \(stel dat we temperatuursVerschil reeds hebben gedeclareerd eerder\):
+
+```java
+temperatuursVerschil = 21 - 25;
+```
+
+Uiteraard mag je ook combinaties van literals en variabelen gebruiken in je expressies:
+
+```java
+int breedte = 15;
+int hoogte = 20 * breedte; 
+```
 
 
 
