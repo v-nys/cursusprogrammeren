@@ -129,7 +129,7 @@ Zonder expressies is programmeren saai: je kan dan enkel variabelen aan mekaar t
 
 Het resultaat van deze expressie is 5. [Meer informatie over expressies hier](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/statements-expressions-operators/expressions).
 
-# Expressie-resultaat toewijzen
+## Expressie-resultaat toewijzen
 
 Meestal zul je expressies schrijven waarin je bewerkingen op en met variabelen uitvoert. Vervolgens zal je het resultaat van die expressie willen bewaren voor verder gebruik in je code.
 
