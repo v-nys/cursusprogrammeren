@@ -2,7 +2,7 @@
 
 Niets is zo leuk als de vreemdste tekens op het scherm tonen. In oude console-games werden deze tekens vaak gebruikt om ‘complexe’ tekeningen op het scherm te tonen:
 
-![](/assets/0intro_kerosenethunder_mockup.png)
+![](/assets/0_intro/kerosenethunder_mockup.png)
 
 ## Unicode karakters tonen
 
