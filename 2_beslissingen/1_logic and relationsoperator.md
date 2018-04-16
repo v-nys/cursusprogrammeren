@@ -15,7 +15,7 @@ De logische EN , OF en NIET-operators die je kent van de booleanse algebra kan j
 C#-syntax| Betekenis
 ---------| ---------
 ``&&`` |en-operator
-``||`` |of-operator
+``&#124;&#124;`` |of-operator
 ``!``  |niet-operator
 
 Je kan de niet-operator voor een expressie zetten om het resultaat hiervan om te draaien. Bijvoorbeeld:
