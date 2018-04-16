@@ -1,13 +1,5 @@
-# My Awesome Book
+# Zie scherp
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
-
-Code voorbeeld
-
-```java
-var t= new t();
-static void MyMethid(){cool;}
-```
 
 
 
