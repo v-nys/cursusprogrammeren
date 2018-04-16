@@ -63,7 +63,7 @@ else if (x == 8)
 ```
 
 ## Relationele operators
-Met de [relationele operators](1_logic and relationsoperator.md) (++, !=, <, >, <= en >=) kunnen we expressie schrijven die als uitkomst waar (true) of niet waar (false) geven.
+Met de [relationele operators](/1_logic and relationsoperator.md) (++, !=, <, >, <= en >=) kunnen we expressie schrijven die als uitkomst waar (true) of niet waar (false) geven.
 
 Een voorbeeld:
 ```java
@@ -92,7 +92,7 @@ Console.WriteLine("c contains 1");
 if(c >= 0) Console.WriteLine("c is non-negative"); 
 if(c < 0) Console.WriteLine("c is negative"); 
 ```
-We kunnen ook meerdere expressie combineren zodat we complexere uitdrukkingen kunnen maken. Hierbij kan je gebruik maken van de [logische operators](1_logic and relationsoperator.md) *AND (&&)** en **OR (||)** operators. .
+We kunnen ook meerdere expressie combineren zodat we complexere uitdrukkingen kunnen maken. Hierbij kan je gebruik maken van de [logische operators](/1_logic and relationsoperator.md) *AND (&&)** en **OR (||)** operators. .
 
 Een voorbeeld:
 ```java
