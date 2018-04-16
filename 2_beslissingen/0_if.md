@@ -106,7 +106,7 @@ if ((a > c) || (a == b))
  
 if ((a >= c) && (b <= c))
     Console.WriteLine(c);
-```java
+```
 
 ## Nesting
 We kunnen met behulp van nesting ook complexere programma flows maken. Hierbij gebruiken we de accolades om het blok code aan te duiden dat bij een if/else/if else hoort. Binnen dit blok kunnen nu echter opnieuw if/else/if else structuren worden aangemaakt.
