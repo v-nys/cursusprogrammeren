@@ -1,4 +1,4 @@
-# Basistypen voor getallen
+﻿# Basistypen voor getallen
 
 De belangrijkste basistypen van C\# om getallen weer te geven zijn
 
@@ -103,7 +103,7 @@ eenGetal = "4";
 
 Als je bovenstaande probeert te compileren dan krijg je volgende error-boodschappen krijgen:
 
-![](/assets/errorliteraltoekenning.png)
+![](/assets/0intro/errorliteraltoekenning.png)
 
 ### Nieuwe waarden overschrijven oude waarden
 
