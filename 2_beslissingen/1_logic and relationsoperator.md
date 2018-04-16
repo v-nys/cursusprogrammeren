@@ -1,4 +1,5 @@
 # Relationele operators
+
 C#-syntax| Betekenis
 ---------| ---------
 ``>`` |groter dan
@@ -10,6 +11,7 @@ C#-syntax| Betekenis
 
 # Logische operator
 De logische EN , OF en NIET-operators die je kent van de booleanse algebra kan je ook gebruiken in C#:
+
 C#-syntax| Betekenis
 ---------| ---------
 ``&&`` |en-operator
