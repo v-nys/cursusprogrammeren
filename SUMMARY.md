@@ -13,5 +13,5 @@
   * [Vreemde tekens in console tonen \(Ascii/unicode\)](1_csharpbasics/10_unicodechars.md)
 * [Chapter 2](2_beslissingen/README.MD)
   * [If](2_beslissingen/0_if.md)
-  * [Logische en relationele operators](2_beslissingen/1_logic and relationsoperator.md)
+  * [Logische en relationele operators](2_beslissingen/1_logic_and_relationsoperator.md)
   * [Switch](2_beslissingen/2_switch.md)
