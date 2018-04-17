@@ -32,6 +32,6 @@
 * [Chapter 9: interfaces](9_interfaces/README.MD)
 * [Chapter 10: generics](10_generics/README.MD)
   * [Generic methods](10_generics/0_genericmethods.md)
-  * [Generic types](10_generics/0_generictypes.md)
-  * [Generic classes en constraints](10_generics/0_genericclasses_en_constraints.md)
+  * [Generic types](10_generics/1_generictypes.md)
+  * [Generic classes en constraints](10_generics/2_genericclasses_en_constraints.md)
 * [Chapter 11: polymorfisme](11_polymorfisme/README.MD)
