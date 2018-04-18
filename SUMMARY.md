@@ -27,6 +27,7 @@
   * [N-dimensionale arrays](5_arrays/4_ndimensionalArrays.md)
   * [Collections](5_arrays/8_Collections_Generics.md)
 * [Chapter 6: klassen en objecten](6_klassen_en_objecten/README.MD)
+  * [Autoproperties](6_klassen_en_objecten/3_autoprop.MD)
 * [Chapter 7: overerving](7_overerving/README.MD)
   * [Virtual en override](7_overerving/1_virtual_override.md)
   * [Base keyword](7_overerving/2_base.md)
