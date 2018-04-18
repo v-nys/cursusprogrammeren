@@ -1,10 +1,10 @@
 # Auto properties
 Automatische eigenschappen (autoproperties) in C# staan toe om eigenschappen (properties) die enkel een waarde uit een private variabele lezen en schrijven verkort voor te stellen.
 
-Zo kan eenvoudige klasse Person zoals deze, waar je merkt dat de properties (get/set) aardig wat plek innemen herschrijven. De originele klasse:
+Zo kan je eenvoudige de klasse Person herschrijven met behulp van autoproperies. De originele klasse:
 
 ```java
-ublic class Person
+public class Person
     {
  
         private string _firstName;
