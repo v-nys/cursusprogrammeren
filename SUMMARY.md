@@ -18,7 +18,7 @@
 * [Chapter 3: loops](3_herhalingen/README.MD)
   * [While en Do While](3_herhalingen/1_while_dowhile.md)
   * [For](3_herhalingen/2_for.md)
-  * [Fun with loops(3_herhalingen/10_funwithloops.md)
+  * [Fun with loops](3_herhalingen/10_funwithloops.md)
 * [Chapter 4: methoden](4_methoden/README.MD)
 * [Chapter 5: arrays](5_arrays/README.MD)
   * [Array principes](5_arrays/0_Arrays.md)
