@@ -9,6 +9,8 @@
   * [Datatypes](1_csharpbasics/1_datatypes.md)
   * [Expressies](1_csharpbasics/2_expressies.md)
   * [Operators](1_csharpbasics/3_operators.md)
+  * [Strings en chars](1_csharpbasics/5_chars_strings.md)
+  * [Strings samenvoegen](1_csharpbasics/6_stringInterpolation.md)
   * [Casting, conversie en parsing](1_csharpbasics/4_converteren_casting.md)
   * [Vreemde tekens in console tonen \(Ascii/unicode\)](1_csharpbasics/10_unicodechars.md)
 * [Chapter 2: beslissingen](2_beslissingen/README.MD)
