@@ -26,15 +26,14 @@ Volgende voorbeeld toont hier het gebruik van:
 
 ```java
 string[] myColors = { "red", "green", "yellow", "orange", "blue" };
- 
 //Sorteer
- System.Array.Sort(myColors);
+System.Array.Sort(myColors);
  
- //Toon resultaat van sorteren
- for (int i = 0; i < myColors.Length; i++)
- {
-     System.Console.WriteLine(myColors[i]);
- }
+//Toon resultaat van sorteren
+for (int i = 0; i < myColors.Length; i++)
+{
+    System.Console.WriteLine(myColors[i]);
+}
 ```
 Wanneer je de Sort-methode toepast op een array van string dan zullen de arrays alfabetisch gerangschikt worden.
 
@@ -43,9 +42,10 @@ Met de System.Array.Reverse() methode kunnen we dan weer de elementen van de arr
 
 ```java
 System.Array.Reverse(myColors);
-```java
+```
+
 ### Arrays leegmaken
-Een array volledig leegmaken (alle elementen op ‘null’ zetten) doe je met de System.Array.Clear methode, als volgt:
+Een array volledig leegmaken (alle elementen op â€˜nullâ€™ zetten) doe je met de System.Array.Clear methode, als volgt:
 
 ```java
 System.Array.Clear(myColors);
@@ -54,7 +54,7 @@ System.Array.Clear(myColors);
 De BinarySearch()-methode maakt het mogelijk om te zoeken naar de index van een gegeven element in een index. Deze methode werkt enkel indien de elementen in de array gesorteerd staan! Je geeft aan de methode 2 parameters mee, enerzijds de array in kwestie en anderzijds het element dat we zoeken. Als resultaat wordt de index van het gevonden element teruggegeven. Indien niets wordt gevonden zal het resultaat -1 zijn.
 
 ```java
-System.Array.BinarySearch(myColors, “red” );
+System.Array.BinarySearch(myColors, â€œredâ€ );
 ```
 #### Manueel zoeken in arrays
 Het zoeken in arrays kan met behulp van while of for-loops tamelijk snel. Volgende programmaatje gaat zoeken of het getal 12 aanwezig is in de array. Indien ja dan wordt de index bewaard van de positie in de array waar het getal staat:
@@ -76,9 +76,9 @@ for (int i = 0; i < getallen.Length; i++)
     }
 }
 ```
-Voorgaande stukje code is de naïefste oplossing. Bedenk echter wat er gebeurt indien het getal dat we zoeken 2 of meerdere keren in de array staat. Index zal dan de positie bevatten van de laatst gevonden 12 in de array.
+Voorgaande stukje code is de naÃ¯efste oplossing. Bedenk echter wat er gebeurt indien het getal dat we zoeken 2 of meerdere keren in de array staat. Index zal dan de positie bevatten van de laatst gevonden 12 in de array.
 
-Het is zéér belangrijk dat je vlot dit soort algoritmen kan schrijven, zoals:
+Het is zÃ©Ã©r belangrijk dat je vlot dit soort algoritmen kan schrijven, zoals:
 
 * Zoeken van elementpositie in array
 * Tellen hoe vaak een element in een array voorkomt
