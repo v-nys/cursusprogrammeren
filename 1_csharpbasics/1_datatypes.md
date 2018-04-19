@@ -9,7 +9,7 @@ De belangrijkste basistypen van C\# om getallen weer te geven zijn
 
 Deze datatypes hebben allemaal een bepaald bereik, wat een rechtstreeks gevolg is van de hoeveelheid geheugen die ze innemen.
 
-Voor de gehele getallen:
+Voor de gehele getallen (voordeel in vet):
 
 | **Type** | **Geheugen** | **Range** |
 | :--- | :--- | :--- |
