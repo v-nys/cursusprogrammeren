@@ -1,4 +1,4 @@
-#Base keyword
+# Base keyword
 Het **base** keyword laat ons toe om bij een overide'n methode of property in de childklasse toch te verplichten om de parent-implementatie toe te passen.
 
 Stel dat we volgende 2 klassen hebbe:
