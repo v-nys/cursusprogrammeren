@@ -1,5 +1,5 @@
 # Herhalingen
-Herhalingen (*Loops*) creëer je wanneer bepaalde code een aantal keer moet herhaald worden. Hoe vaak de herhaling moet duren is afhankelijk van de conditie die je hebt bepaald. 
+Herhalingen (*Loops*) creÃ«er je wanneer bepaalde code een aantal keer moet herhaald worden. Hoe vaak de herhaling moet duren is afhankelijk van de conditie die je hebt bepaald. 
 
 ## While
 De syntax van een while loop is eenvoudig:
@@ -38,7 +38,7 @@ De syntax van een do-while is eveneens verraderlijk eenvoudig:
 } while (condition);
 ```
 
-Merk op dat achteraan de conditie een kommapunt na het ronde haakje staat. **Dit is een véél voorkomende fout. Bij een while is dit niet!**
+Merk op dat achteraan de conditie een kommapunt na het ronde haakje staat. **Dit is een vÃ©Ã©l voorkomende fout. Bij een while is dit niet!**
 Daar de test van een do-while achteraan de code van de loop gebeurt is het logisch dat een do-while dus minstens 1 keer wordt uitgevoerd
 Volgende eenvoudige aftelprogramma toont de werking van de do-while loop
 
@@ -61,6 +61,7 @@ while(teller> && naam!="tim")
 {
   //Keep repeating
 }
+```
 
 ## Oneindige loops
 Indien de loop-conditie nooit false wordt dan heb je een oneindige loop gemaakt. Soms is dit gewenst gedrag (bijvoorbeeld bij de gameloop) soms is dit een bug en zal je dit moeten debuggen.
@@ -95,7 +96,6 @@ while(teller<=10)
    som= som+teller;
 }
 Console.WriteLine(som); //deze lijn zal fout genereren
-
 ```
 
 De **correcte** manier om dit op te lossen is te beseffen dat de variabele som enkel binnen de accolades van de while-loop gekend is. Op de koop toe wordt deze steeds terug op 0 gezet en er kan dus geen som van alle teller-waarden bijgehouden worden:
@@ -108,5 +108,4 @@ while(teller<=10)
    som= som+teller;
 }
 Console.WriteLine(som); //deze lijn zal fout genereren
-
 ```
