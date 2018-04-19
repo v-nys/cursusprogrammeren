@@ -72,7 +72,7 @@ set
         _age = value;
 }
 ```
-** Voorgaande property kan dus NIET herschreven worden met een automatic property.** 
+**Voorgaande property kan dus NIET herschreven worden met een automatic property.** 
 
 ## Alleen-lezen eigenschap
 Je kan automatic properties ook gebruiken om bijvoorbeeld een read-only property te definieren . Als volgt:
