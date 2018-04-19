@@ -259,7 +259,7 @@ Na 4 jaar:17212euro
 Na 5 jaar:17815euro
 Na 6 jaar:18438euro
 Na 7 jaar:19084euro
-
+```
 
 Het programma werkt naar behoren, maar zoals je zelf kan zien wordt er aardig wat code herhaalt, op enkele kleine details na. Bij iedere berekening en het tonen van de interest verandert enkel de macht en het aantal jaar. Als er nu een fout in je interestberekening zou staan dan zal je die op 7 plaatsen telkens moeten veranderen.
 
@@ -291,7 +291,7 @@ static void Main(string[] args)
  
 }
 ```
-Dit programma zal de zelfde output geven als het originele programma, maar de code is aanzienlijk verkleint en minder foutgevoelig (je moet maar op één plek je interestberekening aanpassen indien nodig). (Merk op dat we uiteraard de main kunnen verbeteren m.b.v. een for-loop:''for(int i=0;i<8;i++) {RenteOpRenteBerekenen(i);}`` 
+Dit programma zal de zelfde output geven als het originele programma, maar de code is aanzienlijk verkleint en minder foutgevoelig (je moet maar op één plek je interestberekening aanpassen indien nodig). (Merk op dat we uiteraard de main kunnen verbeteren m.b.v. een for-loop:``for(int i=0;i<8;i++) {RenteOpRenteBerekenen(i);}`` 
 
 
 
