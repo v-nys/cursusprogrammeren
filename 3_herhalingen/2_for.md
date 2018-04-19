@@ -5,7 +5,7 @@ Een veelvoorkomende manier van while-loops gebruiken is waarbij je een bepaalde 
 
 Bijvoorbeeld volgende code om alle even getallen van 0 tot 10 te tonen:
 
-````java
+```java
 int k = 0;
 while(k<11)
 {
