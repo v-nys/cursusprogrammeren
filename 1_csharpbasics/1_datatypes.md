@@ -27,7 +27,7 @@ Voor de kommagetallen:
 | **Type** | **Geheugen** | **Range** | **Precisie** |
 | :--- | :--- | :--- | :--- |
 | `float` | **32 bits** | 1,5\*10-45tot 3,4\*1048 | 7 digits |
-| `double` | 64 bits | **5\*10-324tot 1,7\*10308 ** | 15 digits |
+| `double` | 64 bits | **5\*10-324tot 1,7\*10308** | 15 digits |
 | `decimal` | 128 bits | 1\*10-28tot 7,9\*1028 | **28-29 digits** |
 
 ### Bereik in code weten
