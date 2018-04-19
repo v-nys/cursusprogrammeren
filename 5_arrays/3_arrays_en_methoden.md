@@ -3,7 +3,7 @@ Zoals alle types kan je ook arrays van eender welk type als parameter gebruiken 
 
 **Opgelet:**
 
-Arrays worden altijd ‘by reference’ doorgegeven aan een methode. Dit heeft twee belangrijke gevolgen:
+Arrays worden altijd â€˜by referenceâ€™ doorgegeven aan een methode. Dit heeft twee belangrijke gevolgen:
 
 1. Je hoeft het ref keyword niet mee te geven, dit gebeurt impliciet reeds
 2. Je werkt steeds met de eigenlijke array, ook in de methode. Als je dus aanpassingen aan de array aanbrengt in de methode, dan zal dit ook gevolgen hebben op de array van de parent-methode (logisch: het gaat om dezelfde array).
@@ -26,7 +26,7 @@ static void EenVoorbeeldMethode(ref int[6] inArray)
 {
  
 }
-```java
+```
 En zal volgende error genereren:
 ![](/assets/5_arrays/arrays3.png)
 
