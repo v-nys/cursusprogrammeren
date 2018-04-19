@@ -12,8 +12,8 @@ char eenGetal = '7';`` Weliswaar een getal als teken opslaan, maar dat intern de
 
 # String
 Een string is een reeks van 0, 1 of meerdere chars, zoals je ook kan zien als je even met je muis boven een string keyword ‘hovert’ in je code:
+![](/assets/1_csharpbasics/stringenchars.png.png)
 
-//TODOIMAGEHERE
 
 Alles van het type string uitleggen zou ons voorlopig te ver nemen; het is belangrijk om te beseffen nu wat het verschil is tussen een string en een karakter.
 
@@ -30,7 +30,7 @@ int eenGetal = 1;
 Console.WriteLine(eenKarakter);
 Console.WriteLine(eenString);
 Console.WriteLine(eenGetal);
-```java
+```
 Fout gebruik van strings en chars: Volgende code zal dus niet compileren!
 
 ```java
