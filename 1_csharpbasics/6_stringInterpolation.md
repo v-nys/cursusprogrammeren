@@ -41,3 +41,5 @@ Volgende code zal dus ``Ik ben 13 en ik ben 13 jaar oud`` als resultaat geven:
 ```java
 string result= String.Format("Ik ben {1} en ik ben {1} jaar oud",name,age);
 ```
+
+Wens je meer informatie over string.Format, kijk dan [hier](https://codevan1001nacht.wordpress.com/2013/11/05/placeholders-aka-string-formatters/)
