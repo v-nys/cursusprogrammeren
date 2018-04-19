@@ -24,7 +24,7 @@
 * [Chapter 4: methoden](4_methoden/README.MD)
   * [Bibliotheken (Math.Pow)](4_methoden/1_bibliotheken.MD)
   * [Out en Ref parameters](4_methoden/2_outenref.MD)
-  * [Fun with methods](4_methoden/10_funwith methods.MD)
+  * [Fun with methods](4_methoden/10_funwithmethods.MD)
 * [Chapter 5: arrays](5_arrays/README.MD)
   * [Array principes](5_arrays/0_Arrays.md)
   * [Werken met arrays](5_arrays/2_werken_met_arrays.md)
