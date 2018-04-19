@@ -1,1 +1,328 @@
-Methoden
+# Methoden
+Veel code die we hebben geschreven wordt meerdere keren, al dan niet op verschillende plaatsen, gebruikt. Dit verhoogt natuurlijk de foutgevoeligheid. Door het gebruik van methodes kunnen we de foutgevoeligheid van de code verlagen daar de code maar op één plek, één keer dient geschreven te worden. Echter, ook de leesbaarheid en dus onderhoud van de code wordt verhoogd.
+
+## Wat is een methode
+Een methode, ook vaak functie genoemd, is in C# een stuk code ('block') bestaande uit een 0, 1 of meerder statements. De methode kan herhaaldelijk opgeroepen worden, al dan niet me extra parameters, en kan ook een resultaat terug geven.
+
+De basissyntax van een methode is de volgende indien je een methode in je hoofdprogramma wenst te schrijven (de werking van het keyword static zien we later):
+
+```java
+static returntype MethodeNaam(parameters)
+{
+    //code van methode
+}
+```
+Vervolgens kan je deze methode elders oproepen als volgt, indien de methode geen parameters vereist:
+```java
+MethodeNaam();
+```
+Indien er wel parameters nodig zijn dan geef je die mee als volgt, het is belangrijk dat de volgorde van de parameters gehanteerd wordt zoals je in de methode zelf hebt beschreven.
+
+```java
+MethodeNaam(parameter1, parameter2, …);
+```
+## Returntypes
+Het returntype van een methode geeft aan wat het type is van de data die de methode als resultaat teruggeeft bij het beëindigen ervan. Eender welk type dat je kent kan hiervoor gebruikt worden, zoals int, string, char, float, etc. Maar ook klassen (zie later) zoals Student, Canvas, etc.
+
+Het is belangrijk dat in je methode het resultaat ook effectief wordt teruggegeven, dit doe je met het keyword ``return``
+gevolgd door de variabele die moet teruggeven worden. Denk er dus aan dat deze variabele van het type is dat je hebt opgegeven als zijnde het returntype. Van zodra je ``return`` gebruikt zal je op die plek uit de methode 'vliegen'.
+
+Een voorbeeld eenvoudig voorbeeld. Volgende methode geeft de naam van de auteur van je programma terug
+
+```java
+static string GetNameAuthor()
+{
+    string name = "Tim Dams";
+ 
+    return name;
+}
+```
+Mogelijke manieren om deze methode in je programma te gebruiken zouden kunnen zijn:
+
+```java
+string myName = GetNameAuthor();
+```
+Of bijvoorbeeld ook:
+
+```java
+Console.WriteLine("This program is written by "+ GetNameAuthor());
+```
+
+Een ander voorbeeld is bijvoorbeeld een methode die de faculteit van 5 berekent. We tonen een voorbeeldprogramma die deze methode gebruikt. De oproep van de methode gebeurt vanuit de Main-methode:
+
+```java
+partial class Program
+{
+    static int FaculteitVan5()
+    {
+        int resultaat = 1;
+        for (int i = 1; i <= 5; i++)
+        {
+            resultaat *= i;
+        }
+        return resultaat;
+    }
+ 
+    static void Main(string[] args)
+    {
+       Console.WriteLine("Faculteit van 5 is {0}", FaculteitVan5()); 
+    }
+}
+```
+### Void returntype
+Indien je methode niets teruggeeft wanneer de methode eindigt (bijvoorbeeld indien de methode enkel tekst op het scherm toont) dan dien je dit ook aan te geven. Hiervoor gebruik je het keyword void. Een voorbeeld
+
+```java
+static void ShowProgramVersion()
+{
+    Console.Write("The version of this program is: ");
+    Console.Write(2.16 + "\n");
+}
+```
+
+## Parameters doorgeven
+Parameters kunnen op 2 manieren worden doorgegeven aan een methode:
+
+1. Wanneer een parameter **by value** wordt meegegeven aan een methode, dan wordt een kopie gemaakt van de huidige waarde die wordt meegegeven.
+2. Wanneer echter een parameter **by reference** wordt meegegeven dan zal een pointer worden meegegeven aan de methode. Deze pointer bevat het adres van de eigenlijke variabele die we meegeven. Aanpassingen aan de parameters zullen daardoor ook zichtbaar zijn binnen de scope van de originele variabele.
+
+### Parameters doorgeven by value
+Je methode definitie kan ook 1 of meerdere parameters bevatten. Hierbij gebruik je volgende syntax:
+
+```java
+static returntype MethodeNaam(type parameter1, type parameter2)
+{
+    //code van methode
+}
+```
+Deze parameters zijn nu beschikbaar binnen de methode om mee te werken naar believen.
+
+Stel bijvoorbeeld dat we onze FaculteitVan5 willen veralgemenen naar een methode die voor alle getallen werkt, dan zou je volgende methode kunnen schrijven:
+
+```java
+static int BerekenFaculteit(int grens)
+{
+    int resultaat = 1;
+    for (int i = 1; i <= grens; i++)
+    {
+        resultaat *= i;
+    }
+    return resultaat;
+}
+static void Main(string[] args)
+{
+    int getal = 5;
+    Console.WriteLine("Faculteit van {0} is {1}", getal, BerekenFaculteit(getal));
+}
+```
+Dit geeft als uitvoer: ``Faculteit van 5 is 120;`` 
+Je zou nu echter de waarde van getal kunnen aanpassen (door bijvoorbeeld aan de gebruiker te vragen welke faculteit moet berekend worden) en je code zal nog steeds werken.
+
+Stel bijvoorbeeld dat je de faculteiten wenst te kennen van alle getallen tussen 1 en 10, dan zou je schrijven:
+
+```java
+for (int i = 1; i < 11; i++)
+{
+    Console.WriteLine("Faculteit van {0} is {1}", i, BerekenFaculteit(i));  
+}
+```
+Dit zal als resultaat geven
+```
+Faculteit van 1 is 1
+Faculteit van 2 is 2
+Faculteit van 3 is 6
+Faculteit van 4 is 24
+Faculteit van 5 is 120
+Faculteit van 6 is 720
+Faculteit van 7 is 5040
+Faculteit van 8 is 40320
+Faculteit van 9 is 362880
+Faculteit van 10 is 3628800
+```
+
+Merk dus op dat dankzij je methode, je véél code maar één keer moet schrijven wat de kans op fouten gevoelig verlaagt.
+### Volgorde van parameters
+De volgorde waarin je je parameters meegeeft bij de aanroep van een methode is belangrijk. De eerste variabele wordt aan de eerste parameter otegkeend, en zo voort. Volgende voorbeelde toont dit.
+Stel dat je een methode hebt:
+```java 
+static void ToonDeling(double teller, double noemer)
+{
+    string result=Convert.ToString( teller/noemer);
+    Console.WriteLine(teller/noemer);
+}
+```
+
+Stel dat we nu in onze main volgende aanroep doen:
+```java
+double n= 4.2;
+double t= 5.2;
+ToonDeling(n,t);
+```
+Dit zal een ander resultaat geven dan wanneer we volgende code zouden uitvoeren:
+```java
+ToonDeling(t,n);
+```
+
+Ook de volgorde is belangrijk zeker wanneer je met verschillende types als parameters werkt:
+```java
+static void ToonInfo(string name, int age)
+{
+   Console.WriteLine($"{name} is {age} old");
+}
+```
+Deze aanroep is correct:
+```java
+ToonInfo("Tim",37);
+```
+Deze is **FOUT** en zal niet compileren:
+```java
+ToonInfo(37, "Tim");
+```
+
+## Commentaar toevoegen
+Het is aan te raden om steeds boven een methode een Block-commentaar te zetten dat volgende velden bevat:
+
+* Doel van de methode
+* Wat de methode teruggeeft
+* Beschrijving van de benodigde parameters
+  * Zet IN voor de parameter indien deze enkel als IN-parameter dient (dus de parameters die by value worden meegegeven)
+  * Zet OUT voor de parameter indien deze enkel als OUT-paremeter dient (dus de parameters die als out [type] worden gedefinieerd)
+  * Zet IN-OUT voor de parameter indien deze als IN en OUT-paremeter dient (dus de parameters die als ref [type] worden gedefinieerd)
+
+Stel bijvoorbeeld dat je een methode hebt geschreven die de oppervlakte berekent van een rechthoek, dan zou de commentaar en bijhorende methode als volgt zijn:
+
+```java
+/*
+ * OppervlakteDriehoek: Deze mehode berekent de oppervlakte van een driehoek
+ * 
+ * Return: De oppervlakte van de driehoek
+ *
+ * Parameters:
+ * IN: double basis: lengte van de basis van de driehoek >0
+ * IN: double hoogte: hoogte van de driehoen >0
+ * 
+ */
+static double OppervlakteDriehoek(double basis, double hoogte)
+{
+    double resultaat = 0;
+    resultaat = ( basis * hoogte ) / 2;
+    return resultaat;
+}
+```
+Voor het vorige voorbeeld is commentaar bij de methode schrijven redelijk nutteloos, daar zowel de methodenaam als de parameters duidelijk weergeven wat de methode zal doen. Merk echter op dat wanneer een methode een complexer probleem oplost dat duidelijke commentaar onontbeerlijk zal zijn. Het is daarom een ‘good practice’ (Ned. Goede gewoonte) om steeds bij methoden een stukje commentaar te geven.
+
+# Nut van methoden
+Een eenvoudig voorbeeld (bron: handboek Visual C# 2008, Dirk Louis) waar het gebruik van methoden onmiddellijk duidelijk wordt. Stel, je hebt 15000 euro op een spaarrekening vastgezet waarvoor de bank u een rente geeft van 3,5%. Nu wil je natuurlijk weten hoe je kapitaal hoe je kapitaal van jaar tot jaar groeit. Stel dat je aan de verleiding weerstaat en de jaarlijkse rente niet opneemt, maar op de spaarrekening laat staan. Je berekent dan je kapitaal na n jaren met de volgende formule:
+
+```eindkapitaal = startkapitaal x ( 1 + (rentepercentage/100))^n```
+(^ is tot de macht in pseudocode)
+
+Nu kan je berekenen hoeveel geld je de volgende zeven jaren verdient, het bijhorende programma ziet er zo uit:
+
+```java
+static void Main(string[] args) 
+{
+    double startKapitaal = 15000;
+    double rentepercentage = 3.5;
+    double eindkapitaal;
+ 
+    //Berekening eindkapitaal
+    eindkapitaal = startKapitaal * Math.Pow((1 + rentepercentage / 100), 1);
+    Console.WriteLine("Na 1 jaar:" + (int)eindkapitaal + "euro");
+ 
+    eindkapitaal = startKapitaal * Math.Pow((1 + rentepercentage / 100), 2);
+    Console.WriteLine("Na 2 jaar:" + (int)eindkapitaal + "euro");
+ 
+    eindkapitaal = startKapitaal * Math.Pow((1 + rentepercentage / 100), 3);
+    Console.WriteLine("Na 3 jaar:" + (int)eindkapitaal + "euro");
+ 
+    eindkapitaal = startKapitaal * Math.Pow((1 + rentepercentage / 100), 4);
+    Console.WriteLine("Na 4 jaar:" + (int)eindkapitaal + "euro");
+ 
+    eindkapitaal = startKapitaal * Math.Pow((1 + rentepercentage / 100), 5);
+    Console.WriteLine("Na 5 jaar:" + (int)eindkapitaal + "euro");
+ 
+    eindkapitaal = startKapitaal * Math.Pow((1 + rentepercentage / 100), 6);
+    Console.WriteLine("Na 6 jaar:" + (int)eindkapitaal + "euro");
+ 
+    eindkapitaal = startKapitaal * Math.Pow((1 + rentepercentage / 100), 7);
+    Console.WriteLine("Na 7 jaar:" + (int)eindkapitaal + "euro");
+ 
+}
+```
+Dit geeft als uitvoer:
+```
+Na 1 jaar:15524euro
+Na 2 jaar:16068euro
+Na 3 jaar:16630euro
+Na 4 jaar:17212euro
+Na 5 jaar:17815euro
+Na 6 jaar:18438euro
+Na 7 jaar:19084euro
+
+
+Het programma werkt naar behoren, maar zoals je zelf kan zien wordt er aardig wat code herhaalt, op enkele kleine details na. Bij iedere berekening en het tonen van de interest verandert enkel de macht en het aantal jaar. Als er nu een fout in je interestberekening zou staan dan zal je die op 7 plaatsen telkens moeten veranderen.
+
+### Rente berekenen verbeterd, versie 1
+
+We kunnen nu terug naar onze rente-berekenaar en dit programma aanzienlijk vereenvoudigen door gebruik te maken van methoden. Namelijk als volgt:
+
+```java
+public static void RenteOpRenteBerekenen(double looptijd)
+{
+    double startKapitaal = 15000;
+    double rentepercentage = 3.5;
+    double eindkapitaal;
+ 
+    //Berekening eindkapitaal
+    eindkapitaal = startKapitaal * Math.Pow((1 + rentepercentage / 100), looptijd);
+    Console.WriteLine("Na "+ (int)looptijd+"jaar:" + (int)eindkapitaal + "euro");
+}
+ 
+static void Main(string[] args)
+{
+    RenteOpRenteBerekenen(1);
+    RenteOpRenteBerekenen(2);
+    RenteOpRenteBerekenen(3);
+    RenteOpRenteBerekenen(4);
+    RenteOpRenteBerekenen(5);
+    RenteOpRenteBerekenen(6);
+    RenteOpRenteBerekenen(7);
+ 
+}
+```
+Dit programma zal de zelfde output geven als het originele programma, maar de code is aanzienlijk verkleint en minder foutgevoelig (je moet maar op één plek je interestberekening aanpassen indien nodig). (Merk op dat we uiteraard de main kunnen verbeteren m.b.v. een for-loop:''for(int i=0;i<8;i++) {RenteOpRenteBerekenen(i);}`` 
+
+
+
+### Rente berekenen verbeterd, versie 2
+Je code opdelen in methoden is een zeer goede eerste stap naar modulair programmeren: kleine stukken code die ieder een eigen verantwoordelijkheid hebben. Om perfect modulair te zijn moet een methode zo praktische en algemeen mogelijk blijven, zodat de methode herbruikbaar is in andere projecten.
+
+In het vorige voorbeeld is de mehode van de renteberekening niet pefect modulair. Stel dat je later in het programma opnieuw de rente wil berekening maar niet het resultaat op het scherm wil tonen. Of stel dat je de rente wil berekenen met een andere percentage, dan kunnen we de eerder geschreven methode dus niet gebruiken.
+
+**Modulair programmeren**: indien je modulair wenst te programmeren moet je je aan volgende zaken houden:
+* Beperk de methode strikt tot het uitvoeren van de opgedragen taak. Dus in het voorbeeld: alleen de renteberekening en geen verdere verwerking van de resultaten.
+* Als de methode een waarde teruggeeft, declareer hiervoor dan een passende returnwaarde.
+Geef alle grootheden waarmee je de werkwijze van de methode wilt aanpassen mee aan de methode als parameter. In dit voorbeeld zijn dat dus de variabelen startkapitaal, rentepercentage en looptijd.
+
+De nieuwe algemene, verbeterde methode wordt dan:
+
+```java
+public static double RenteOpRenteBerekenen(double startkapitaal, double rentepercentage, double looptijd)
+{
+    double eindkapitaal;
+ 
+    //berekenig eindkapitaal
+    eindkapitaal = startkapitaal * Math.Pow((1 + rentepercentage / 100), looptijd);
+ 
+    return eindkapitaal;
+ 
+}
+```
+De aanroep van deze methode in de main wordt dan de volgende:
+
+```java
+double eindkapitaal;
+eindkapitaal = RenteOpRenteBerekenen(15000, 3.5, 7);
+Console.WriteLine("Het eindbedrag na 7 jaar:" +(int)eindkapitaal);
+```
