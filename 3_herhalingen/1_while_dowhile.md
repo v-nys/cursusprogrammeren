@@ -33,7 +33,7 @@ In tegenstelling tot een while loop, zal een do-while loop sowieso **minstens 1 
 De syntax van een do-while is eveneens verraderlijk eenvoudig:
 
 ```java
-{
+do{
      // C# code to be performed while expression evaluates to true
 } while (condition);
 ```
