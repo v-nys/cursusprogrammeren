@@ -85,14 +85,5 @@ class Medic:Soldier
 }
 ```
 
-Uiteraard mag je ook de default constructor aanroepen vanuit de child-constructor, alle combinaties zijn mogelijk. Bijvoorbeeld:
-```java
-class Medic:Soldier
-{
-   public Medic(bool canSh): base() //Veronderstellend dat 
-   {} 
-
-   public Medic():base(true)  //Default
-    {Console.WriteLine("Who needs healing?");}
-}
+Uiteraard mag je ook de default constructor aanroepen vanuit de child-constructor, alle combinaties zijn mogelijk (zolang de constructor in kwestie maar bestaat in de parent-klasse)
 ```
