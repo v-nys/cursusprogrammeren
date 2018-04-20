@@ -96,4 +96,4 @@ public override bool Equals(Object o)
 }
 ```
 
-De lijn ``Student temp= (Student)o;`` zal het object o casten naar een Student. Doe je dit niet dan kan je niet aan de interne Student-variabelen van het object o. [Dit concept het polymorfisme en wordt later uitgelegd](11_polymorfisme/README.MD).
+De lijn ``Student temp= (Student)o;`` zal het object o casten naar een Student. Doe je dit niet dan kan je niet aan de interne Student-variabelen van het object o. [Dit concept het polymorfisme en wordt later uitgelegd](/11_polymorfisme/README.MD).
