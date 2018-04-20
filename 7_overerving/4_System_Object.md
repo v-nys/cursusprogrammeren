@@ -100,3 +100,6 @@ De lijn ``Student temp= (Student)o;`` zal het object o casten naar een Student. 
 
 ## GetHashcode
 Indien je Equals override dan moet je eigenlijk ook GetHashCode override'n, daar er wordt verondersteld dat twee gelijke objecten ook dezelfde unieke hashcode teruggeven. Wil je dit dus implementeren dan zal je dus een (bestaand) algoritme moeten schrijven dat een uniek nummer genereert voor ieder niet-gelijke object. Bekijk volgende [StackOverflow post](https://stackoverflow.com/questions/9827911/how-to-implement-override-of-gethashcode-with-logic-of-overriden-equals) indien je dit wenst toe te passen.
+
+#Ik ben nog niet helemaal mee?
+Niet getreurd, je bent niet de enige. Overerving,System.object, Equals..het is allemaal een hoop nieuwe kennis om te verwerken. Uw favoriete schrijver van deze cursus heeft echter in het verleden eens een briljante (kuch) tutorial geschreven waarin ik alle zaken van dit hoofdstuk op een iets andere manier uitleg. **[Allen daarheen dus!](https://codevan1001nacht.wordpress.com/2013/11/05/objecten-testen-op-gelijkheid-the-missing-manual/)**
