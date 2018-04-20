@@ -2,7 +2,7 @@
 **Alle** klassen C# zijn afstammelingen van de ``System.Object`` klasse. Indien je een klasse schrijft zonder een expliciete parent dan zal deze steeds System.Object als rechtstreekse parent hebben. Ook afgeleide klassen stammen dus af van System.Object. Concreet wil dit zeggen dat alle klassen System.Object-klassen zijn en dus ook de bijhorende functionaliteit ervan hebben.
 >Because every class descends from ``Object``, every object "is an" ``Object``.
 
-Indien je de System namespace in je project gebrukkt door bovenaan ``using System;`` te schrijven dan moet je dus niet altijd ``System.Object`` schrijven maar mag je ook **``Object``** schrijven.
+Indien je de System namespace in je project gebruikt door bovenaan ``using System;`` te schrijven dan moet je dus niet altijd ``System.Object`` schrijven maar mag je ook **``Object``** schrijven.
 
 # Hoe ziet System.Object er uit?
 Wanneer je een lege klasse maakt dan zal je zien dat instanties van deze klasse reeds 4 methoden ingebouwd hebben, dit zijn uiteraard de methoden die in de ``System.Object`` klasse staan gedefinieerd:
