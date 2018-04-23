@@ -1,4 +1,9 @@
-# Game
+# Figures with interfaces
+Gebruik je [Rechthoek-klasse](6_klassen_en_objecten/A_practica.md#figuren) die je eerder  hebt aangemaakt. Maak een List aan waarin je een 10 rechthoek-objecten plaatsen, allen met een verschillende grootte. Zorg ervoor dat je nu je rechthoeken met de Sort()-methode kan sorteren op oppervlakte.
+
+Toon de werking aan in een klein voorbeeld programma.
+
+## Game
 
 Maak een spel dat als volgt werkt:
 * De speler dient met zijn pion de overkant van het veld te bereiken.
