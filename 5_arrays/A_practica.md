@@ -3,11 +3,13 @@
 Maak een programma dat aan de gebruiker vraagt om 10 waarden (int) in te voeren in een array. Vervolgens toont het programma De som, het gemiddelde en het grootste getal van deze 10.
 
 Vervolgens vraagt het programma de gebruiker om een getal in te voeren. Het programma toont dan alle getallen die groter of gelijk zijn aandit ingevoerde getal zijn die in de array aanwezig zijn. Indien geen getallen groter zijn dan verschijnt een bericht “Niets is groter” op het scherm.
+
 ![](/assets/5_arrays/practarray1.png)
 ## ArrayOefener 1
 
 ## ArrayOefener 2
 Maak een programma dat aan de gebruiker vraagt om 2 keer 5 getallen in te voeren. Bewaar de eerste reeks waarden in een array A, de tweede reeks waarden in array B. Maak een nieuwe array C aan die steeds de som bevat van het respectievelijke element uit arrays A en B. Toon het resultaat.
+
 ![](/assets/5_arrays/practarray2.png)
 
 ## Vraag Array
@@ -26,6 +28,7 @@ Deze laatste plek krijgt de waarde -1.
 Toon vervolgens alle waarden van de array.
 
 Indien de te zoeken waarde meer dan 1 keer voorkomt, wordt enkel de eerst gevonden waarde verwijderd.
+
 ![](/assets/5_arrays/practarray3.png)
 
 ## LeveringsBedrijf
@@ -43,8 +46,11 @@ Schrijf een programma dat het verschuldigde bedrag toont gegeven de duur van een
 
 Voorbeeldoutput:
 Opstart:
+
  ![](/assets/5_arrays/practarray4.png)
+ 
 Resultaat:
+
 ![](/assets/5_arrays/practarray5.png)
 
 ## Array Viewer
@@ -57,6 +63,7 @@ VisualiseerArray(array);
 VisualiseerArray(array2);
 ```
 Geeft volgende output:
+
 ![](/assets/5_arrays/practarray6.png)
 
 ## Caesar-encryptie
@@ -125,5 +132,7 @@ Schrijf een methode VermenigvuldigMatrix die 2 matrices als invoer verwacht en a
 
 ## Galgje
 Maak een spel , vergelijkbaar als galgje, waarin de speler een woord moet raden. Zie [Wiki](http://nl.wikipedia.org/wiki/Galgje) voor de spelregels indien je deze niet kent.
+
 Voorbeeld  output:
+
 ![](/assets/5_arrays/practarray9.png) 
