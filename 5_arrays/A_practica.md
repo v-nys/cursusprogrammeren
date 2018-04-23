@@ -82,6 +82,8 @@ dan krijgen we:
     WKH TXLFN EURZQ IRA MXPSV RYHU WKH ODCB GRJ
 
 # Meer-dimensionale arrays
+
+## Determinant
 Schrijf een programma dat een methode BerekenDeterminant heeft. Deze methode heeft één paramater als input: een 2 bij 2 array van integers. Als resultaat geeft de methode de determinant als integer terug. Zoek zelf op hoe je de determinant van een matrix kunt berekenen.
 
 Volgende voorbeeld-main dient te werken, 
@@ -96,4 +98,19 @@ Console.WriteLine($"Determinant van matrix is {BerekenDeterminant(aMatrix)}");
 geeft als output: 
 ```
 Determinant van matrix is -2
+```
+
+## 2D Array Viewer
+Breidt het ArrayViewer programma uit zodat ook 2-dimensionale arrays gevisualiseerd kunnen worden. (Hint: gebruik  de GetLength() methode van een array).
+
+Voorbeeld van main:
+```java
+int [,] array= { {15,6,9},{1,2,3},{6,9,12}};
+VisualiseerArray(array);
+```
+Output:
+```
+15  6  9
+1   2  3
+6   9  12
 ```
