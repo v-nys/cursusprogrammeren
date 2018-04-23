@@ -28,6 +28,7 @@
 * [Chapter 4: methoden](4_methoden/README.MD)
   * [Bibliotheken (Math.Pow)](4_methoden/1_bibliotheken.MD)
   * [Out en Ref parameters](4_methoden/2_outenref.MD)
+  * [Geavanceerde methoden](4_methoden/3_advancedmethod.md)
   * [Fun with methods](4_methoden/10_funwithmethods.MD)
   * [Labo-oefeningen](4_methoden/A_Practica.md)
 * [Chapter 5: arrays](5_arrays/README.MD)
