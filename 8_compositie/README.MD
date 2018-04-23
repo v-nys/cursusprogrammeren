@@ -70,5 +70,11 @@ class PC
 myPC.CDisk= new Disk();
 ```
 
+
+
 ## Kortom
-Kortom, comp
+Alle manieren die ja al kende om met bestaande types objecten aan te maken gelden nog steeds. Compositie deed je al de hele tijd wanneer je bijvoorbeeld zij "een student heeft een leeftijd" en dan een variabele ``int age`` aanmaakte. Het grote verschil is echter dat objecten moeten geïnstantieerd worden , wat niet moest met valuetypes. 
+## NullReference is een klassieke fout
+Een veelvoorkomende fout bij compositie van objecten is dat je een object aanspreekt dat nooit werd geïnstantieerd. Je krijgt dan een ``NullReferenceException``.
+
+
