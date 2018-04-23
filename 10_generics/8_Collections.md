@@ -1,19 +1,19 @@
 # Collections
 ## Nadelen van arrays
-We hebben al eerder gezien hoe we arrays kunnen gebruiken om gegevens van hetzelfde type in één datastructuur voor te stellen. Hoewel arrays handig zijn, hebben ze ook een aantal nadelen:
+We hebben al eerder gezien hoe we arrays kunnen gebruiken om gegevens van hetzelfde type in Ã©Ã©n datastructuur voor te stellen. Hoewel arrays handig zijn, hebben ze ook een aantal nadelen:
 
 * Je weet niet altijd van tevoren hoe groot de array zal worden, nochtans moeten we op voorhand ruimte reserveren door op te geven hoe groot de array moet zijn. Hierdoor kan het voorkomen dat we veel computergeheugen reserveren voor een array die mogelijk nooit volledig gevuld zal zijn.
-* Omgekeerd kan het ook zijn dat we onze array te klein definiëren en we dus niet alle data kwijtraken in de array. We kunnen dit, omslachtig, oplossen door een nieuwe, grotere array te definiëren en daar de oude naar te kopiëren, inclusief te nieuwe data.
-* Wanneer de array value-types bevat (int, double, struct, etc.) en deze array kopiëren naar een nieuwe array waar we vervolgens een waarde aanpassen, dan zal enkel de waarde in de gekopieerde array veranderen, niet in de originele. Indien we echter een array van objecten (referentietypes) maken en in een kopie een referentie aanpassen, dan zal deze ook aangepast worden in de originele array.
+* Omgekeerd kan het ook zijn dat we onze array te klein definiÃ«ren en we dus niet alle data kwijtraken in de array. We kunnen dit, omslachtig, oplossen door een nieuwe, grotere array te definiÃ«ren en daar de oude naar te kopiÃ«ren, inclusief te nieuwe data.
+* Wanneer de array value-types bevat (int, double, struct, etc.) en deze array kopiÃ«ren naar een nieuwe array waar we vervolgens een waarde aanpassen, dan zal enkel de waarde in de gekopieerde array veranderen, niet in de originele. Indien we echter een array van objecten (referentietypes) maken en in een kopie een referentie aanpassen, dan zal deze ook aangepast worden in de originele array.
 
 ## Collecties: geavanceerde arrays
 
 Collecties zijn speciale objecten waarin een reeks van andere objecten kan worden gerefereerd. Daar collecties zelf ook objecten zijn, heeft dit een paar gevolgen:
 
-* Collecties moeten geïnstantieerd worden voor te gebruiken zijn (m.b.v. new keyword)
+* Collecties moeten geÃ¯nstantieerd worden voor te gebruiken zijn (m.b.v. new keyword)
 * Collecties hebben properties die onder andere het aantal objecten in collectie weergeeft.
 * Collecties hebben methoden om onder andere objecten toe te voegen en verwijderen
-* Daar collecties beschreven zijn in klassen kan je de typische object-georiënteerde eigenschappen hierop toepassen: je kan collecties overerven, encapsuleren (composiet), etc.
+* Daar collecties beschreven zijn in klassen kan je de typische object-georiÃ«nteerde eigenschappen hierop toepassen: je kan collecties overerven, encapsuleren (composiet), etc.
 
 Er bestaan een hele resem collecties en je hebt er zelfs al van gebruikt, namelijk de List<>-klasse (weliswaar de generic variant, de niet-generieke versie heet ArrayList). Volgende tabel geeft een beschrijving van de meest gebruikte collecties die in de System.Collections.Namespace zitten [Bron MSDN](http://msdn.microsoft.com/en-us/library/system.collections.aspx)
 
@@ -26,7 +26,7 @@ Queue|	Stelt een first-in, first-out (FIFO) lijst voor.
 SortedList|	Soortgelijk als Hashtable, een sleutel stelt de index voor, elementen worden echter onmiddellijk gerangschikt .
 Stack	Stelt een Last-in, first-out (LIFO) lijst voor.
 
-We zullen een aantal van de eerder vernoemde collecte-klassen verderop bekijken, maar we zullen onmiddellijk de generieke varianten bekijken omdat die veel handiger zijn. Het is namelijk zo dat generic collecties meestal bruikbaarder en veiliger zijn dan de gewone collecties die we zonet kort hebben beschreven. Generic collecties zijn ‘strongly types’ en bieden een betere veiligheid op gebied van ‘type safety’, hun gebruik is echter quasi identiek dan dat van de niet generieke collecties.
+We zullen een aantal van de eerder vernoemde collecte-klassen verderop bekijken, maar we zullen onmiddellijk de generieke varianten bekijken omdat die veel handiger zijn. Het is namelijk zo dat generic collecties meestal bruikbaarder en veiliger zijn dan de gewone collecties die we zonet kort hebben beschreven. Generic collecties zijn â€˜strongly typesâ€™ en bieden een betere veiligheid op gebied van â€˜type safetyâ€™, hun gebruik is echter quasi identiek dan dat van de niet generieke collecties.
 
 ### Collection namespace
 
@@ -54,7 +54,7 @@ int leeftijd = (int)nietGeneriekeList[0]; // compilererror: cannot convert type 
 ```
 
 # Generic collections
-Generic collecties zijn ‘strongly typed’ en bieden een betere veiligheid op gebied van ‘type safety’, hun gebruik is echter quasi identiek aan dat van de niet generieke collecties.
+Generic collecties zijn â€˜strongly typedâ€™ en bieden een betere veiligheid op gebied van â€˜type safetyâ€™, hun gebruik is echter quasi identiek aan dat van de niet generieke collecties.
 
 We hebben reeds 1 generic colletie-klasse veel gebruikt, namelijk de List<>-klasse, waarbij we tussen de haakjes het type opgaven dat de List kon bevatten , bv List of List. Met andere woorden, je hebt reeds vorig academiejaar generics gebruikt zonder het goed en wel te beseffen!
 
@@ -79,17 +79,17 @@ myStringList[2] = "andere zin";`
 Interessante methoden en properties voorts zijn:
 
 * ``Count``: property die teruggeeft hoeveel elementen in de lijst aanwezig zijn.
-* ``Clear() :methode die de volledige lijst leegmaakt
+* ``Clear()`` :methode die de volledige lijst leegmaakt
 * ``Insert()``: methode om element op specifieke plaats in lijst toe te voegen, bijvoorbeeld:
 ```java
-myStringList.Insert(3,”A fourth sentence”); 
-````
+myStringList.Insert(3,â€A fourth sentenceâ€); 
+```
 voegt de string toe op de verde (3+1) plek.
  * ``Contain(T item)``: geef als parameter een specifiek object mee (van het type dat de List<> bevat) om te weten te komen of dat specifieke object in de List<> terug te vinden is. Indien ja dan zal true worden teruggeven.
 * ``IndexOf(T item)``: geeft de index terug van het element item in de rij. Indien deze niet in de lijst aanwezig is dan wordt 0 teruggegeven.
 
 ### Foreach loops
-Je kan met een eenvoudige for of while-loop over een list-object itereren, maar het gebruik van een foreach-loop is toch handiger. Dit is dan ook de meestgebruikte operatie om eenvoudig (je kan ook Linq overwegen!) en snel een bepaald stuk code toe te passen op ieder element van de lijst:
+Je kan met een eenvoudige for of while-loop over een list-object itereren, maar het gebruik van een foreach-loop is toch handiger ([ook al eerder besproken hier](/3_herhalingen/3_foreach.md)). Dit is dan ook de meestgebruikte operatie om eenvoudig (je kan ook Linq overwegen!) en snel een bepaald stuk code toe te passen op ieder element van de lijst:
 
 ```java
 List<int> integerList=new List<int>();
@@ -101,9 +101,10 @@ foreach(int prime in integerList)
 {
    Console.WriteLine(prime);
 }
+```
 
 ## Queue<> collectie
-Een queue (Ned. : rij) stelt een FIFO-lijst voor. Een queue stelt dus de rijen voor die we in het echte leven ook hebben wanneer we bijvoorbeeld aanschuiven aan een ticketverkoop. Met deze klasse kunnen we zo’n rij simuleren en ervoor zorgen dat steeds het ‘eerste/oudste’ element in de rij als eerste wordt behandeld. Nieuwe elementen worden achteraan de rij toegevoegd.
+Een queue (Ned. : rij) stelt een FIFO-lijst voor. Een queue stelt dus de rijen voor die we in het echte leven ook hebben wanneer we bijvoorbeeld aanschuiven aan een ticketverkoop. Met deze klasse kunnen we zoâ€™n rij simuleren en ervoor zorgen dat steeds het â€˜eerste/oudsteâ€™ element in de rij als eerste wordt behandeld. Nieuwe elementen worden achteraan de rij toegevoegd.
 
 We gebruiken 2 methoden om met een queue te werken:
 
@@ -111,7 +112,6 @@ We gebruiken 2 methoden om met een queue te werken:
 * ``Dequeue()``: geeft het eerste element in de queue terug en verwijdert dit element vervolgens uit de queue.
 
 Voorbeeld:
-
 
 ```java
 Queue<string> theQueue =  new Queue<string>();
