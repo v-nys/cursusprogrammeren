@@ -43,12 +43,12 @@ Toon de werking van het project aan door een aantal instanties van Driehoek en R
 ### Studentklasse
 Maak ee nieuwe klasse ``Student`` toe
 Deze klasse heeft 6 public fields:
-•	Naam (string)
-•	Leeftijd (int)
-•	Klas (maak dit van een ``enum``)
-•	PuntenCommunicatie (int)
-•	PuntenProgrammingPrinciples (int)
-•	PuntenWebTech (int)	 
+* Naam (string)
+* Leeftijd (int)
+* Klas (maak dit van een ``enum``)
+* PuntenCommunicatie (int)
+* PuntenProgrammingPrinciples (int)
+* PuntenWebTech (int)	 
 Daar deze fields allemaal public zijn kunnen we deze dus rechtstreeks veranderen.
 
 Voeg aan de klasse een methode ``BerekenTotaalCijfer`` toe. Wanneer deze methode wordt aangeroepen dan wordt het gemiddelde van de 3 punten  teruggegeven als double zodat dit op het scherm kan getoond worden.
