@@ -1,22 +1,36 @@
-4	Alles samen
-Volgende hoofdstuk toont het gebruik van van de belangrijkste OO concepten  in een applicatie waarmee we een huis-plattegrond kunnen visualiseren.
-4.1	Abstracte klasse
+# Mapmaker "all-in-one-project"
 
-We maken eerst een abstractie klasse Point, die we vervolgens zullen gebruiken om over te erven zodat nieuwe klassen aangemaakt kunnen worden. Het doel is dat we eenvoudige huis-plattegrond-programma maken. 
+Volgende hoofdstuk toont het gebruik van van de belangrijkste OO concepten in een applicatie waarmee we een huis-plattegrond kunnen visualiseren. Het doel van dit hoofdstuk is zoveel mogelijk elementen van de voorbije hoofdstukken te integreren tot een groter werkend geheel.
 
-Eerst definiëren we een kleine hulpklasse die een punt in de ruimte voorstelt. We kunnen deze klasse ook gebruiken om een vector voor te stellen:
 
+
+## Abstracte klasse
+
+Eerst definiëren we een kleine hulpklasse Point die een punt in de ruimte voorstelt. We kunnen deze klasse ook gebruiken om een vector voor te stellen:
+```java
     public class Point
     {
-        public Point(int x, int y){
-            this.x = x;
-            this.y = y;}
-        public int x;
-        public int y;
+        public Point(int inx, int iny)
+	{
+            x = inx;
+            y = iny;
+	}
+	    
+        public int X
+	{
+	  get{return x;}
+	  set{x=value;;}
+	}
+        public int Y	 
+	{
+	  get{return y;}
+	  set{y=value;;}
+	}
     }
+```
+We maken nu  een abstracte klasse MapObject, die we vervolgens zullen gebruiken om over te erven zodat nieuwe klassen aangemaakt kunnen worden. 
 
-Vervolgens maken we een abstract klasse MapObject dat er als volgt uitziet:
-
+```java
     abstract public class MapObject
     {
         private Point location;
@@ -26,34 +40,40 @@ Vervolgens maken we een abstract klasse MapObject dat er als volgt uitziet:
         //Teken object in de console
         public abstract void Paint();
     }
+```
 
 De variabele Price zal de prijs van het object bevatten, zodat we vlot kunnen berekenen wat de totale kostprijs van onze kaart zal zijn. Location bevat de coördinaten (x,y) waar het object in de console zal getekend moeten worden. drawChar geeft aan met welk karakter het item moet getoond worden.
 
- 
+**Belangrijk**: Merk op dat deze klasse minimaal is en allerlei essentiële zaken mankeert, zoals minstens een default constructor etc.
+
+Indien je dit project dus in de praktijk wenst te gebruiken dan zal je nog zelf de nodige properties (of get/set-methoden, naar keuze) waarmee je toegang krijgt tot Location, Price krijgt en ook drawChar methode moeten schrijven.
+
 
 
  
-4.2	Overerving
-We maken de MapObject klasse expres abstract, we willen voorkomen dat deze klasse rechtstreeks als object in het programma kan gebruikt worden. 
+## Overerving
+We maken de ``MapObject`` klasse expres abstract, we willen voorkomen dat deze klasse rechtstreeks als object in het programma kan gebruikt worden. 
 
 Laten we nu een nieuwe klasse aanmaken dat overerft van de abstract klasse MapObject 
-
+```java
     public class WallElement: MapObject
     {
         public override void Paint()
         {}
     }
-
+```
 De methode van Paint moeten we verplicht overriden (daar ze abstract was in de base klasse), voorts is het aan te raden om een default constructor te maken. De Paint-methode bevat zeer eenvoudigweg volgende 2 lijntjes code:
-
+```java
             Console.SetCursorPosition(Location.x, Location.y);
             Console.Write(DrawChar);
+```
 
-4.2.1	Elementen op het scherm
+### Elementen op het scherm
 We kunnen nu in ons hoofdprogramma (main-methode) al direct elementen op het scherm brengen met bijvoorbeeld volgende code:
-
+```java
             WallElement steen1= new WallElement();
             steen1.Paint();
+```
 
 Dit geeft,als je een default constructor hebt gemaakt die automatisch ieder object op locatie (1,1) zet,, een sterretje op positie (1,1) op het scherm.
 
