@@ -22,6 +22,7 @@
 * [Chapter 3: loops](3_herhalingen/README.MD)
   * [While en Do While](3_herhalingen/1_while_dowhile.md)
   * [For](3_herhalingen/2_for.md)
+  * [Foreach en var](3_herhalingen/3_foreach.md)
   * [Fun with loops](3_herhalingen/10_funwithloops.md)
   * [Labo-oefeningen](3_herhalingen/A_Practica.md)
 * [Chapter 4: methoden](4_methoden/README.MD)
@@ -57,3 +58,4 @@
   * [Labo-oefeningen](10_generics/A_Practica.md)
 * [Chapter 11: polymorfisme](11_polymorfisme/README.MD)
   * [Labo-oefeningen](11_polymorfisme/A_Practica.md)
+  
