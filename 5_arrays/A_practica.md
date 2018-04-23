@@ -122,6 +122,8 @@ Output:
 Schrijf een methode VermenigvuldigMatrix die 2 matrices als invoer verwacht en als resultaat een nieuwe matrix teruggeeft die het product van beide matrices bevat.
 
 # Pro
+
+## Galgje
 Maak een spel , vergelijkbaar als galgje, waarin de speler een woord moet raden. Zie [Wiki](http://nl.wikipedia.org/wiki/Galgje) voor de spelregels indien je deze niet kent.
 Voorbeeld  output:
 ![](/assets/5_arrays/practarray9.png) 
