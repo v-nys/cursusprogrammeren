@@ -100,6 +100,9 @@ geeft als output:
 Determinant van matrix is -2
 ```
 
+Extra:
+Breidt uit zodat de BerekenDeterminant-methode ook werkt voor 3-bij-3 matrices. De methodeaanroep blijft dezelfde, enkel de interne code van de methode zal nu rekening moeten houden met de grootte van de matrix .
+
 ## 2D Array Viewer
 Breidt het ArrayViewer programma uit zodat ook 2-dimensionale arrays gevisualiseerd kunnen worden. (Hint: gebruik  de GetLength() methode van een array).
 
@@ -114,3 +117,11 @@ Output:
 1   2  3
 6   9  12
 ```
+
+## MatrixMultiplier
+Schrijf een methode VermenigvuldigMatrix die 2 matrices als invoer verwacht en als resultaat een nieuwe matrix teruggeeft die het product van beide matrices bevat.
+
+# Pro
+Maak een spel , vergelijkbaar als galgje, waarin de speler een woord moet raden. Zie [Wiki](http://nl.wikipedia.org/wiki/Galgje) voor de spelregels indien je deze niet kent.
+Voorbeeld  output:
+![](/assets/5_arrays/practarray9.png) 
