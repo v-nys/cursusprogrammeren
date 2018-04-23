@@ -59,4 +59,5 @@
   * [Labo-oefeningen](10_generics/A_Practica.md)
 * [Chapter 11: polymorfisme](11_polymorfisme/README.MD)
   * [Labo-oefeningen](11_polymorfisme/A_Practica.md)
-  
+* Chapter 12: All-In-Projects
+ * [MapMaker](/A_AllInOne/1_MapMapker.md)
