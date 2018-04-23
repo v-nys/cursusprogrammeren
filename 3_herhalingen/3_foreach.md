@@ -27,7 +27,7 @@ var tekst= "Hi there handsome"; //var zal string zijn
 ```
 
 **Opgelet**: het ``var`` keyword is gewoon een "lui-igheidje" om te voorkomen dat je als programmer niet constant het type moet schrijven (vooral handig bij [klassen en objecten later](6_klassen_en_objecten/README.MD)). Bij javascript heeft var een totaal andere functie: het zegt eigenlijk "het type dat je in deze variabele kan steken is...variabel", m.a.w. het kan de ene  keer een string zijn, dan een int. Bij C# gaat dit niet: eens je een variabele aanmaakt dan zal dat type onveranderbaar zijn.
-> JavaScript is a dynamically typed language, while c# is (usually) a statically typed language [stackoverflow.com](https://stackoverflow.com/questions/8457813/difference-between-the-implementation-of-var-in-javascript-and-c-sharp)
+> JavaScript is a dynamically typed language, while c# is (usually) a statically typed language ([stackoverflow.com](https://stackoverflow.com/questions/8457813/difference-between-the-implementation-of-var-in-javascript-and-c-sharp))
 
 # var en foreach
 Wanneer je de Visual Studio [code snippet](https://msdn.microsoft.com/en-us/library/z41h7fat.aspx) voor foreach gebruikt ``foreach [tab][tab]`` dan zal deze code ook een var gebruiken voor de iteration variabele. De compiler kan aan de te gebruiken array zien wat het type van een individueel element in de array moet zijn.
