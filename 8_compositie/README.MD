@@ -29,7 +29,7 @@ class PC
 }
 ```
 
-Uiteraard moeten we deze Disk nog instantiaren, dit kan op verschillende mogelijkheden en is afhankelijk van wat je nodig hebt;-.
+Uiteraard moeten we deze Disk nog instantiaren, dit kan op verschillende mogelijkheden en is afhankelijk van wat je nodig hebt. We tonen er drie, maar er zijn er nog.
 
 ### Manier 1
 Ogenblikkelijk:
@@ -77,4 +77,46 @@ Alle manieren die ja al kende om met bestaande types objecten aan te maken gelde
 ## NullReference is een klassieke fout
 Een veelvoorkomende fout bij compositie van objecten is dat je een object aanspreekt dat nooit werd geïnstantieerd. Je krijgt dan een ``NullReferenceException``.
 
+# "Heeft meerdere"- relatie
+Wanneer een object meerdere objecten van een specifiek type heeft (denk maar aan "een boek heeft meerdere pagina's" of "een boom heeft bladeren") dan zullen we een array of een list als compositie-object gebruiken. 
 
+Voorbeeld:
+
+```java
+class Page{}
+
+class Boek
+{
+   private Page[] allPages= new Page[100];
+}
+```
+
+Indien je nu een pagina wenst toe te voegen dan moet je ook deze individuele array-elementen nog instantieren. Een voorbeeld waarbij men van buitenuit het object bestaande pagina's kan toevoegen:
+
+```java
+class Book
+{
+   public InsertPage(Page toAdd, int Position)
+   {
+       allPages[Position]= toAdd
+   }
+
+   private Page[] allPages= new Page[100];
+}
+
+//Elders
+Book myBook= new Book();
+Page myThirdPage= new Page();
+myBook.InsertPage(myThirdPage, 2);
+```
+
+Of een voorbeeld met List:
+
+```java
+class Book
+{
+    public List<Page> AllPages{get;set;} = new List<Page>();
+}
+
+//Elders
+myBook.AllPages.Insert(new Page(), 5); 
