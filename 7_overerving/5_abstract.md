@@ -39,7 +39,7 @@ Het is logisch dat we mogelijk ook bepaalde zaken in de abstracte klasse als abs
 
 Via abstracte methoden geven we dit aan: we hoeven enkel de methode signature te geven, met ervoor ``abstract``:
 ```java
-class  Dier
+abstract class  Dier
 {
    public abstract string MaakGeluid();
 }
@@ -59,3 +59,6 @@ class Paard: Dier
 }
 ```
 (en idem voor de wolf-klasse uiteraard)
+
+### Abstracte methoden enkel in abstracte klassen
+Van zodra een klasse een abstracte methode of property heeft dan ben je, logischerwijs, verplicht om de klasse ook abstract te maken. 
