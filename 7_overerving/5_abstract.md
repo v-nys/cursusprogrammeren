@@ -39,7 +39,7 @@ Het is logisch dat we mogelijk ook bepaalde zaken in de abstracte klasse als abs
 
 Via abstracte methoden geven we dit aan: we hoeven enkel de methode signature te geven, met ervoor ``abstract``:
 ```java
-class Paard: Dier
+class  Dier
 {
    public abstract string MaakGeluid();
 }
