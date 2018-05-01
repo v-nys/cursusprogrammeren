@@ -2,6 +2,7 @@
 
 **Polymorfisme** oftewel "meerdere vormen" is een programmeertechniek waarbij je code schrijft die door objecten van verschillende klasse, kan gebruikt worden. Hierdoor kan je dus compactere code schrijven en hoef je niet voor iedere klasse appart (deel)code te schrijven. Samen met encapsulatie en overerving is polymrfisme een derde belangrijke eigenschap van object georienteerd programmeren.
 
+We tonen het nut van polymorfisme aan de hand van drie voorbeelden:
 
 
 ## Polymorfisme in de praktijk: Dieren
@@ -148,4 +149,4 @@ public class MisterPresident
 En wie zei dat het presidentsschap moeilijk was?!
 
 ## Nog voorbeelden van polymorfisme nodig?
-Volgende tekst heeft een leuke insteek om polymorfisme uit te leggen... aan de hand van...wait for it... Zeemerminnen! :) [Lezen maar!](http://www.techoschool.com/Technology/Dotnet/Csharp-for-Beginners_Csharp-Polymorphism)
+Volgende tekst heeft een leuke insteek om polymorfisme uit te leggen... aan de hand van...wait for it... Zeemeerminnen! :) [Lezen maar!](http://www.techoschool.com/Technology/Dotnet/Csharp-for-Beginners_Csharp-Polymorphism)
