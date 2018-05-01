@@ -4,7 +4,7 @@
 
 
 
-## Polymorfisme in de praktijk
+## Polymorfisme in de praktijk: Dieren
 Een voorbeeld maakt veel duidelijk. Stel dat we een een aantal Dier-gerelateerde klassen hebben die allemaal op hun eigen manier een geluid voortbrengen. We hanteren de klasse dier uit een eerder hoofdstuk ([abstracte klassen in overerving](7_overerving/5_abstract.md)):
 ```java
 abstract class  Dier
@@ -39,7 +39,7 @@ Console.WriteLine(someAnimal.MaakGeluid()); //Hinnikhinnik
 Console.WriteLine(anotherAnimal.MaakGeluid()); //Oinkoink
 ```
 
-## Polymorfisme nut: een ander voorbeeld
+## Polymorfisme in de praktijk: Presidenten
 Beeld je in dat je een klasse President hebt met een methode "RunTheCountry" (voorbeeld van [StackOverflow](https://stackoverflow.com/questions/1031273/what-is-polymorphism-what-is-it-for-and-how-is-it-used) ). De President heeft toegang tot tal van adviseurs die hem kunnen helpen (inzake miltair, binnenlands beleid, economie). Zonder de voordelen van polymorfisme zou de klasse President er zo kunnen uitzien, **slechte manier**:
 ```java
 public class President
@@ -146,3 +146,4 @@ public class MisterPresident
 }
 ```
 En wie zei dat het presidentsschap moeilijk was?!
+
