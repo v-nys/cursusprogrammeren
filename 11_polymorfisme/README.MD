@@ -147,3 +147,5 @@ public class MisterPresident
 ```
 En wie zei dat het presidentsschap moeilijk was?!
 
+## Nog voorbeelden van polymorfisme nodig?
+Volgende tekst heeft een leuke insteek om polymorfisme uit te leggen... aan de hand van...wait for it... Zeemerminnen! :) [Lezen maar!](http://www.techoschool.com/Technology/Dotnet/Csharp-for-Beginners_Csharp-Polymorphism)
