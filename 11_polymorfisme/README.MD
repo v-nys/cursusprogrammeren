@@ -1,6 +1,148 @@
 # Polymorfisme
 
-**Polymorfisme** oftewel "meerdere vormen" is een programmeertechniek waarbij je code schrijft die door objecten van verschillende klasse, kan gebruikt worden. Hierdoor kan je dus compactere code schrijven en hoef je niet voor iedere klasse appart (deel)code te schrijven.
+**Polymorfisme** oftewel "meerdere vormen" is een programmeertechniek waarbij je code schrijft die door objecten van verschillende klasse, kan gebruikt worden. Hierdoor kan je dus compactere code schrijven en hoef je niet voor iedere klasse appart (deel)code te schrijven. Samen met encapsulatie en overerving is polymrfisme een derde belangrijke eigenschap van object georienteerd programmeren.
+
+
 
 ## Polymorfisme in de praktijk
-Een voorbeeld maakt veel duidelijk:
+Een voorbeeld maakt veel duidelijk. Stel dat we een een aantal Dier-gerelateerde klassen hebben die allemaal op hun eigen manier een geluid voortbrengen. We hanteren de klasse dier uit een eerder hoofdstuk ([abstracte klassen in overerving](7_overerving/5_abstract.md)):
+```java
+abstract class  Dier
+{
+   public abstract string MaakGeluid();
+}
+```
+Twee child-klassen:
+```java
+class Paard: Dier
+{
+  public override string MaakGeluid()
+  { 
+      return "Hinnikhinnik";
+  }
+}
+
+class Varken: Dier
+{
+  public override string MaakGeluid()
+  { 
+      return "Oinkoink";
+  }
+}
+```
+
+Dankzij polymorfisme kunnen we nu elders objecten van Paard en Varken in een ``Dier`` bewaren, maar toch hun eigen geluid laten reproduceren:
+```java
+Dier someAnimal= new Varken();
+Dier anotherAniemal= new Paard();
+Console.WriteLine(someAnimal.MaakGeluid()); //Hinnikhinnik
+Console.WriteLine(anotherAnimal.MaakGeluid()); //Oinkoink
+```
+
+## Polymorfisme nut: een ander voorbeeld
+Beeld je in dat je een klasse President hebt met een methode "RunTheCountry" (voorbeeld van [StackOverflow](https://stackoverflow.com/questions/1031273/what-is-polymorphism-what-is-it-for-and-how-is-it-used) ). De President heeft toegang tot tal van adviseurs die hem kunnen helpen (inzake miltair, binnenlands beleid, economie). Zonder de voordelen van polymorfisme zou de klasse President er zo kunnen uitzien, **slechte manier**:
+```java
+public class President
+{
+    public void RunTheCountry()
+    {
+        // people walk into the Presidents office and he tells them what to do
+        // depending on who they are.
+
+        // Fallujah Advice - Mr Prez tells his military exactly what to do.
+        Petraeus.IncreaseTroopNumbers();
+        Petraeus.ImproveSecurity();
+        Petraeus.PayContractors();
+
+        // Condi diplomacy advice - Prez tells Condi how to negotiate
+
+        Condi.StallNegotiations();
+        Condi.LowBallFigure();
+        Condi.FireDemocraticallyElectedIraqiLeaderBecauseIDontLikeHim();
+
+        // Health care mr X
+
+        MrX.IncreasePremiums();
+        MrX.AddPreexistingConditions();
+    }
+}
+```
+Je merkt dat de President (of de programmeur van deze klasse) aardig wat specifieke kennis moet hebben van de vele verschillende departementen van het land. Uiteraard is dat onmogenlijk (een fictief voorbeeld: stel je Trump voor...Denk je echt dat die zo veel weet?) . Bovenstaande code is dus zeer slecht. Telkens er zaken binnen een specifiek landsonderdeel wijzigen moet dit ook in de klasse President aangepast worden. 
+
+Dankzij polymorfisme kunnen we dit alles veel mooier oplossen:
+1. We verplichten alle adviseurs dat ze overerven van de abstracte klasse ``Advisor`` die maar 1 abstracte methode heeft ``Advise``:
+```java
+abstract class Advisor
+{
+  abstract public void Advise();
+}
+
+class MilitaryMinistor:Advisor
+{
+  public override void Advise()
+  {
+       increaseTroopNumbers();
+       improveSecurity();
+       payContractors();
+  }
+  private void increaseTroopNumbers() 
+  {
+  //...
+  }
+    private void improveSecurity() 
+  {
+  //...
+  }
+    private void improveSecurity() 
+  {
+  //...
+  }
+}
+
+class ForeignSecretary:Advisor
+{
+  //...
+}
+class HealthOfficial:Advisor
+{
+  //...
+}
+```
+2° Het leven van de President wordt plots véél makkelijker:
+
+```java
+public class MisterPresident
+{
+    public void RunTheCountry()
+    {
+        Advisor Petraeus = new MilitaryAdvisor();
+        Advisor Condi = new ForeignSecretary();
+        Advisor mrX= new HealthOfficial();
+        Petraeus.Advise(); // # Petraeus says send 100,000 troops to Fallujah
+        Condi.Advise(); // # she says negotiate trade deal with Iran
+        mrX.Advise(); // # they say we need to spend $50 billion on ObamaCare
+    }
+}
+```
+
+3° En we kunnen hem nog helpen door met een array of ``List<Advisor>`` te werken zodat hij ook niet steeds de "namen" van z'n adviseurs moet kennen:
+```java
+public class MisterPresident
+{
+    public void RunTheCountry()
+    {
+    
+        List<Advisor> allMinisters= new List<Advisor>();
+        allMinisters.Add(new MilitaryAdvisor());
+        allMinisters.Add(new ForeignSecretary());
+        allMinisters.Add(new HealthOfficial());
+        
+        //Ask advise from each:
+        foreach (Advisor minister in allMinisters)
+        {
+            minister.Advise();
+        }
+    }
+}
+```
+En wie zei dat het presidentsschap moeilijk was?!
