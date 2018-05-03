@@ -23,6 +23,15 @@ b)	Bij CoffeeTableBooks de prijs enkel tussen 35 en 100 kan liggen
 **Toon de werking aan van je 3 klassen:**
 Maak boeken aan van de 3 klassen, toon dat de prijs niet altijd zomaar ingesteld kan worden en toon aan dat je Equals –methode werkt (ook wanneer je bijvoorbeeld een Book en TextBook wil vergelijken).
 
+# Money, money, money
+Maak enkele klassen die een bank kan gebruiken.
+1. Abstracte klasse Rrekening: deze bevat een methode ``VoegGeldToe``  en ``HaalGeldAf``. Het saldo van de rekening wordt in een private variabele bijgehouden (en via de voorgaande methoden aangepast) die enkel via een readonly property kan uitgelezen worden. Voorts is er een abstracte methode ``BerekenRente`` de rente als double teruggeeft.
+2. Een klasse ``BankRekening`` die een Rekening is. De rente van een BankRekening is 5% wanneer het saldo hoger is dan 100 euro, zoniet is deze 0%. 
+3. Een klasse ``SpaarRekening`` die een Rekening is. De rente van een SpaarRekening bedraagt steeds 2%.
+4. Een klasse ``ProRekening`` die een SpaarRekening is. De ProRekening hanteert de Rente-berekening van een SpaarRekening (``base.BerekenRente``) maar zal per 1000 euro saldo nog eens 10 euro verhogen. 
+
+Schrijf deze klasse en toon de werking ervan in je main.
+
 # Geometric figures
 
 Maak een abstracte klasse ``GeometricFigure``. Iedere figuur heeft een hoogte, breedte en oppervlakte. Maak properties voor deze 3 fields. De oppervlakte is read-only want deze wordt berekend gebaseerd op de hoogte en breedte . 
@@ -34,3 +43,5 @@ Maak 3 klassen:
 * Driehoek: erft over van GeometricFigure. Oppervlakte is gedefinieerd als breedte*hoogte/2.
 
 Maak een applicatie waarin je de werking van deze klassen aantoont
+
+
