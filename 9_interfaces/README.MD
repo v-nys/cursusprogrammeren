@@ -3,3 +3,68 @@ TODO
 
 ## Voorbeeld: Presidenten en interfaces
 In het hoofdstuk Polymorfisme bespraken we een voorbeeld van een klasse ``President`` die enkele ``Advisor``-klassen gebruikt om hem te helpen ([lees hier na](11_polymorfisme#polymorfisme-in-de-praktijk-presidenten)).
+
+Een nadeel van die voorgaande aanpak is dat al onze Advisors maar 1 "job" kunnen hebben: ze erven allemaal over van ``Advisor`` en kunnen nergens anders van overerven (geen multiple inheritance is toegestaan in C#). Via interfaces kunnen we dit oplossen. Een advisor gaan we dan eerder als een "bij-job" beschouwen en niet de hoofdreden van een klasse.
+
+We definiëren daarom eerst een nieuwe interface ``IAdvisor``:
+```csharp
+interface IAdvisor
+{
+    void Advise();
+}
+```
+
+Vanaf nu kan eender *wie* die deze interface implementeert de President advies geven.Hoera! En daarnaast kan die klasse echter ook nog tal van andere zaken doen. Beeld je bijvoorbeeld een CEO van een bedrijf in die ook adviseur van de President wilt zijn. De bestaande klasse is bijvoorbeeld:
+```csharp
+class MicrosoftCEO: CEO   //CEO is een parentklasse die elders bijvoorbeeld algemene CEO-concepten beschrijft
+{
+    public void EarnBigBucks()
+    { 
+       Console.WriteLine("I'm getting rich!!!");       
+    }
+    public void FireDepartement()
+     { 
+       Console.WriteLine("You're all fired!");       
+    }
+}
+```
+Nu we de interface ``IAdvisor`` hebben kunnen we deze klasse aanvullen met deze interface:
+```csharp
+class MicrosoftCEO: CEO, IAdvisor
+{
+     
+    public void Advise()
+    { 
+        Console.WriteLine("I think you should allow our monopoly. *Grin*");
+    }
+    
+    public void EarnBigBucks()
+    { 
+       Console.WriteLine("I'm getting rich!!!");       
+    }
+    public void FireDepartement()
+     { 
+       Console.WriteLine("You're all fired!");       
+    }
+}
+```
+
+
+Ook de ``President`` moet aangepast worden om nu met een lijst van ``IAdvisor`` ipv ``Advisor`` te werken:
+```java
+public class MisterPresident
+{
+    public void RunTheCountry()
+    {
+    
+        List<IAdvisor> allMinisters= new List<IAdvisor>();
+        allMinisters.Add(new MicrosoftCEO);
+        //Ask advise from each:
+        foreach (IAdvisor minister in allMinisters)
+        {
+            minister.Advise();
+        }
+    }
+}
+```
+
