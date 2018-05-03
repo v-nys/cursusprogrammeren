@@ -48,10 +48,10 @@ class MicrosoftCEO: CEO, IAdvisor
     }
 }
 ```
-
+De CEO kan dus z'n bestaande job blijven uitoefenen maar ook als adviseur optreden. 
 
 Ook de ``President`` moet aangepast worden om nu met een lijst van ``IAdvisor`` ipv ``Advisor`` te werken:
-```java
+```csharp
 public class MisterPresident
 {
     public void RunTheCountry()
@@ -68,3 +68,27 @@ public class MisterPresident
 }
 ```
 
+De eerder beschreven ``MilitaryAdvisor``,``ScienceAdvisor`` en ``EconomyAdvisor`` dienen ook niet meer van de abstracte klasse ``Àdvisor``(deze zou je kunnen verwijderen) over te erven en kunnen gewoon de interface implementeren:
+```csharp
+class MilitaryMinistor:IAdvisor
+{
+  public void Advise()
+  {
+       increaseTroopNumbers();
+       improveSecurity();
+       payContractors();
+  }
+  private void increaseTroopNumbers() 
+  {
+  //...
+  }
+    private void improveSecurity() 
+  {
+  //...
+  }
+    private void improveSecurity() 
+  {
+  //...
+  }
+}
+```
