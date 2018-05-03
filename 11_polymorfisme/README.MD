@@ -72,6 +72,7 @@ Je merkt dat de President (of de programmeur van deze klasse) aardig wat specifi
 
 Dankzij polymorfisme kunnen we dit alles veel mooier oplossen:
 1. We verplichten alle adviseurs dat ze overerven van de abstracte klasse ``Advisor`` die maar 1 abstracte methode heeft ``Advise``:
+
 ```java
 abstract class Advisor
 {
