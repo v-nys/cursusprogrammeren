@@ -4,7 +4,7 @@ Herhalingen (*Loops*) creëer je wanneer bepaalde code een aantal keer moet herh
 ## While
 De syntax van een while loop is eenvoudig:
 
-```java
+```csharp
 while (condition) 
 {
 // C# code to be performed while expression evaluates to true
@@ -16,7 +16,7 @@ Zolang de conditie true is zal de code binnen de accolades uitgevoerd worden. In
 
 Een voorbeeld van een eenvoudige while loop:
 
-```java
+```csharp
 int myCount = 0;
  
 while (myCount < 100)
@@ -32,7 +32,7 @@ In tegenstelling tot een while loop, zal een do-while loop sowieso **minstens 1 
 
 De syntax van een do-while is eveneens verraderlijk eenvoudig:
 
-```java
+```csharp
 do{
      // C# code to be performed while expression evaluates to true
 } while (condition);
@@ -43,7 +43,7 @@ Daar de test van een do-while achteraan de code van de loop gebeurt is het logis
 Volgende eenvoudige aftelprogramma toont de werking van de do-while loop
 
 
-```java
+```csharp
 int i = 10;
 do
 {
@@ -56,7 +56,7 @@ do
 
 Uiteraard mag de conditie waaraan een loop moet voldoen complexer zijn door middel van de booleanse logische operator.
 Volgende while bijvoorbeeld zal uitgevoerd worden zolang teller groter is dan 5 en de variabele naam van het type string niet gelijk is aan "tim":
-```java
+```csharp
 while(teller> && naam!="tim")
 {
   //Keep repeating
@@ -68,14 +68,14 @@ Indien de loop-conditie nooit false wordt dan heb je een oneindige loop gemaakt.
 
 Volgende twee voorbeelden tonen dit:
 * Een bewuste oneindige loop:
-```java
+```csharp
 while(true)
 {
  //See you in infinity
 }
 ```
 * Een bug die een oneindige loop veroorzaakt:
-```java
+```csharp
 int teller = 0; 
 while(teller<10)
 {
@@ -88,7 +88,7 @@ while(teller<10)
 Let er op dat de scope van variabelen bij loops zeer belangrijk is. Indien je een variabelen binnen de loop definieert dan zal deze steeds terug "gereset" worden wanneer de volgende cyclus van de loop start.
 Volgende code toont bijvoorbeeld **foutief** hoe je de som van de eerste 10 getallen (1+2+3+...+10) zou maken:
 
-```java
+```csharp
 int teller=1;
 while(teller<=10)
 {
@@ -99,7 +99,7 @@ Console.WriteLine(som); //deze lijn zal fout genereren
 ```
 
 De **correcte** manier om dit op te lossen is te beseffen dat de variabele som enkel binnen de accolades van de while-loop gekend is. Op de koop toe wordt deze steeds terug op 0 gezet en er kan dus geen som van alle teller-waarden bijgehouden worden:
-```java
+```csharp
 int teller=1;
 int som=0;  
 while(teller<=10)

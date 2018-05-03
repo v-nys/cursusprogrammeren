@@ -3,7 +3,7 @@ Automatische eigenschappen (autoproperties) in C# staan toe om eigenschappen (pr
 
 Zo kan je eenvoudige de klasse Person herschrijven met behulp van autoproperies. De originele klasse:
 
-```java
+```csharp
 public class Person
     {
  
@@ -49,7 +49,7 @@ public class Person
     }
 ```
 De herschreven klasse met autoproperties (autoprops):
-```java
+```csharp
 public class Person
     {
  
@@ -65,7 +65,7 @@ Beide klassen hebben exact dezelfde functionaliteit, echter de klasse aan de rec
 Merk op dat je dit enkel kan doen indien er geen extra logica in de property aanwezig is.
 Stel dat je bij de setter van age wil controleren op een negatieve waarde, dan zal je dit zoals voorheen moeten schrijven en kan dit niet met een automatic property:
 
-```java
+```csharp
 set
 {
     if( value > 0)
@@ -78,7 +78,7 @@ set
 Je kan automatic properties ook gebruiken om bijvoorbeeld een read-only property te definieren . Als volgt:
 
 Originele klasse:
-```java
+```csharp
 public string FirstName
 {
  
@@ -89,7 +89,7 @@ public string FirstName
 }
 ```
 Met autoprops:
-```java
+```csharp
 public string FirstName { get; private set;}
 ```
 

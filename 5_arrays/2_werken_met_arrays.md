@@ -12,7 +12,7 @@ Al deze methoden hier beschrijven zal ons te ver nemen. De volgende methoden zij
 Max(), Min(), Sum() en Average()
 
 Volgende code geeft bijvoorbeeld het grootste getal terug uit een array genaamd "leeftijden":
-```java
+```csharp
 int oudsteleeftijd=leeftijden.Max();
 ```
 
@@ -24,7 +24,7 @@ Om arrays te sorteren roep je de Sort() methode op als volgt, als parameter geef
 
 Volgende voorbeeld toont hier het gebruik van:
 
-```java
+```csharp
 string[] myColors = { "red", "green", "yellow", "orange", "blue" };
 //Sorteer
 System.Array.Sort(myColors);
@@ -40,26 +40,26 @@ Wanneer je de Sort-methode toepast op een array van string dan zullen de arrays 
 ### Arrays omkeren
 Met de System.Array.Reverse() methode kunnen we dan weer de elementen van de array omkeren (dus het laatste element vooraan zetten en zo verder:
 
-```java
+```csharp
 System.Array.Reverse(myColors);
 ```
 
 ### Arrays leegmaken
 Een array volledig leegmaken (alle elementen op ‘null’ zetten) doe je met de System.Array.Clear methode, als volgt:
 
-```java
+```csharp
 System.Array.Clear(myColors);
 ```
 ### Zoeken in arrays
 De BinarySearch()-methode maakt het mogelijk om te zoeken naar de index van een gegeven element in een index. Deze methode werkt enkel indien de elementen in de array gesorteerd staan! Je geeft aan de methode 2 parameters mee, enerzijds de array in kwestie en anderzijds het element dat we zoeken. Als resultaat wordt de index van het gevonden element teruggegeven. Indien niets wordt gevonden zal het resultaat -1 zijn.
 
-```java
+```csharp
 System.Array.BinarySearch(myColors, “red” );
 ```
 #### Manueel zoeken in arrays
 Het zoeken in arrays kan met behulp van while of for-loops tamelijk snel. Volgende programmaatje gaat zoeken of het getal 12 aanwezig is in de array. Indien ja dan wordt de index bewaard van de positie in de array waar het getal staat:
 
-```java
+```csharp
 int teZoekenGetal = 12;
  
 int[] getallen = { 5, 10, 12, 25, 16 };

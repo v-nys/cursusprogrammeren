@@ -6,19 +6,19 @@ Een methode, ook vaak functie genoemd, is in C# een stuk code ('block') bestaand
 
 De basissyntax van een methode is de volgende indien je een methode in je hoofdprogramma wenst te schrijven (de werking van het keyword static zien we later):
 
-```java
+```csharp
 static returntype MethodeNaam(parameters)
 {
     //code van methode
 }
 ```
 Vervolgens kan je deze methode elders oproepen als volgt, indien de methode geen parameters vereist:
-```java
+```csharp
 MethodeNaam();
 ```
 Indien er wel parameters nodig zijn dan geef je die mee als volgt, het is belangrijk dat de volgorde van de parameters gehanteerd wordt zoals je in de methode zelf hebt beschreven.
 
-```java
+```csharp
 MethodeNaam(parameter1, parameter2, …);
 ```
 ## Returntypes
@@ -29,7 +29,7 @@ gevolgd door de variabele die moet teruggeven worden. Denk er dus aan dat deze v
 
 Een voorbeeld eenvoudig voorbeeld. Volgende methode geeft de naam van de auteur van je programma terug
 
-```java
+```csharp
 static string GetNameAuthor()
 {
     string name = "Tim Dams";
@@ -39,18 +39,18 @@ static string GetNameAuthor()
 ```
 Mogelijke manieren om deze methode in je programma te gebruiken zouden kunnen zijn:
 
-```java
+```csharp
 string myName = GetNameAuthor();
 ```
 Of bijvoorbeeld ook:
 
-```java
+```csharp
 Console.WriteLine("This program is written by "+ GetNameAuthor());
 ```
 
 Een ander voorbeeld is bijvoorbeeld een methode die de faculteit van 5 berekent. We tonen een voorbeeldprogramma die deze methode gebruikt. De oproep van de methode gebeurt vanuit de Main-methode:
 
-```java
+```csharp
 partial class Program
 {
     static int FaculteitVan5()
@@ -72,7 +72,7 @@ partial class Program
 ### Void returntype
 Indien je methode niets teruggeeft wanneer de methode eindigt (bijvoorbeeld indien de methode enkel tekst op het scherm toont) dan dien je dit ook aan te geven. Hiervoor gebruik je het keyword void. Een voorbeeld
 
-```java
+```csharp
 static void ShowProgramVersion()
 {
     Console.Write("The version of this program is: ");
@@ -89,7 +89,7 @@ Parameters kunnen op 2 manieren worden doorgegeven aan een methode:
 ### Parameters doorgeven by value
 Je methode definitie kan ook 1 of meerdere parameters bevatten. Hierbij gebruik je volgende syntax:
 
-```java
+```csharp
 static returntype MethodeNaam(type parameter1, type parameter2)
 {
     //code van methode
@@ -99,7 +99,7 @@ Deze parameters zijn nu beschikbaar binnen de methode om mee te werken naar beli
 
 Stel bijvoorbeeld dat we onze FaculteitVan5 willen veralgemenen naar een methode die voor alle getallen werkt, dan zou je volgende methode kunnen schrijven:
 
-```java
+```csharp
 static int BerekenFaculteit(int grens)
 {
     int resultaat = 1;
@@ -120,7 +120,7 @@ Je zou nu echter de waarde van getal kunnen aanpassen (door bijvoorbeeld aan de 
 
 Stel bijvoorbeeld dat je de faculteiten wenst te kennen van alle getallen tussen 1 en 10, dan zou je schrijven:
 
-```java
+```csharp
 for (int i = 1; i < 11; i++)
 {
     Console.WriteLine("Faculteit van {0} is {1}", i, BerekenFaculteit(i));  
@@ -144,7 +144,7 @@ Merk dus op dat dankzij je methode, je véél code maar één keer moet schrijve
 ### Volgorde van parameters
 De volgorde waarin je je parameters meegeeft bij de aanroep van een methode is belangrijk. De eerste variabele wordt aan de eerste parameter otegkeend, en zo voort. Volgende voorbeelde toont dit.
 Stel dat je een methode hebt:
-```java 
+```csharp 
 static void ToonDeling(double teller, double noemer)
 {
     string result=Convert.ToString( teller/noemer);
@@ -153,29 +153,29 @@ static void ToonDeling(double teller, double noemer)
 ```
 
 Stel dat we nu in onze main volgende aanroep doen:
-```java
+```csharp
 double n= 4.2;
 double t= 5.2;
 ToonDeling(n,t);
 ```
 Dit zal een ander resultaat geven dan wanneer we volgende code zouden uitvoeren:
-```java
+```csharp
 ToonDeling(t,n);
 ```
 
 Ook de volgorde is belangrijk zeker wanneer je met verschillende types als parameters werkt:
-```java
+```csharp
 static void ToonInfo(string name, int age)
 {
    Console.WriteLine($"{name} is {age} old");
 }
 ```
 Deze aanroep is correct:
-```java
+```csharp
 ToonInfo("Tim",37);
 ```
 Deze is **FOUT** en zal niet compileren:
-```java
+```csharp
 ToonInfo(37, "Tim");
 ```
 
@@ -191,7 +191,7 @@ Het is aan te raden om steeds boven een methode een Block-commentaar te zetten d
 
 Stel bijvoorbeeld dat je een methode hebt geschreven die de oppervlakte berekent van een rechthoek, dan zou de commentaar en bijhorende methode als volgt zijn:
 
-```java
+```csharp
 /*
  * OppervlakteDriehoek: Deze mehode berekent de oppervlakte van een driehoek
  * 
@@ -219,7 +219,7 @@ Een eenvoudig voorbeeld (bron: handboek Visual C# 2008, Dirk Louis) waar het geb
 
 Nu kan je berekenen hoeveel geld je de volgende zeven jaren verdient, het bijhorende programma ziet er zo uit:
 
-```java
+```csharp
 static void Main(string[] args) 
 {
     double startKapitaal = 15000;
@@ -267,7 +267,7 @@ Het programma werkt naar behoren, maar zoals je zelf kan zien wordt er aardig wa
 
 We kunnen nu terug naar onze rente-berekenaar en dit programma aanzienlijk vereenvoudigen door gebruik te maken van methoden. Namelijk als volgt:
 
-```java
+```csharp
 public static void RenteOpRenteBerekenen(double looptijd)
 {
     double startKapitaal = 15000;
@@ -307,7 +307,7 @@ Geef alle grootheden waarmee je de werkwijze van de methode wilt aanpassen mee a
 
 De nieuwe algemene, verbeterde methode wordt dan:
 
-```java
+```csharp
 public static double RenteOpRenteBerekenen(double startkapitaal, double rentepercentage, double looptijd)
 {
     double eindkapitaal;
@@ -321,7 +321,7 @@ public static double RenteOpRenteBerekenen(double startkapitaal, double renteper
 ```
 De aanroep van deze methode in de main wordt dan de volgende:
 
-```java
+```csharp
 double eindkapitaal;
 eindkapitaal = RenteOpRenteBerekenen(15000, 3.5, 7);
 Console.WriteLine("Het eindbedrag na 7 jaar:" +(int)eindkapitaal);

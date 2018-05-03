@@ -16,7 +16,7 @@ Wanneer je een lege klasse maakt dan zal je zien dat instanties van deze klasse 
 
 ## GetType()
 Stel dat je een klasse Student hebt gemaakt in je project. Je kan dan op een object van deze klasse de GetType() -methode aanroepen om te weten wat het type van dit object is:
-```java
+```csharp
 Student stud1= new Student();
 Console.WriteLine(stud1.GetType());
 ```
@@ -25,15 +25,15 @@ Dit zal als uitvoer de namespace gevolgd door het type op het scherm geven. Als 
 ## ToString()
 Deze is de nuttigste waar je al direct leuke dingen mee kan doen. 
 Wanneer je schrijft:
-```java
+```csharp
 Console.WriteLine(stud1);
 ```
 Wordt je code eigenlijk herschreven naar:
-```java
+```csharp
 Console.WriteLine(stud1.ToString());
 ```
 Op het scherm verschijnt dan ``StudentManager.Student``. Waarom? Wel, de methode ToString() wordt in System.Object() ongeveer als volgt beschreven:
-```java
+```csharp
 public virtual string ToString()
  { return GetType(); }
  ```
@@ -44,7 +44,7 @@ public virtual string ToString()
  
  ### ToString() override'n
  Het zou natuurlijk fijner zijn dat de ToString() van onze student nuttigere info teruggeeft, zoals bv de interne Naam (string autoprop) en Leeftijd (int autoprop). We kunnen dat eenvoudig krijgen door gewoon ToString to override'n:
- ```java
+ ```csharp
  class Student
  {
    public int Leeftijd {get;set;}
@@ -61,7 +61,7 @@ public virtual string ToString()
  
  ## Equals()
  Ook deze methode kan je dus override'n om twee objecten met mekaar te testen, bijvoorbeeld:
- ```java
+ ```csharp
 if(stud1.Equals(stud2))
    //...
 ```
@@ -70,7 +70,7 @@ Twee objecten zijn gelijk voor .NET als aan volgende afspraken wordt voldaan:
 * Het moet ``false`` teruggeven indien het argument o ``null`` is
 * Het moet ``true`` teruggeven indien je het object met zichzelf vergelijkt (bv ``stud1.Equals(stud1)``)
 * Het mag enkel ``true`` teruggeven als volgende statements beide waar zijn: 
-```java
+```csharp
 stud1.Equals(stud2);
 stud2.Equals(stud1);
 ```
@@ -78,7 +78,7 @@ stud2.Equals(stud1);
 
 ### Equals overriden
 Stel dat we vinden dat een student gelijk is aan een andere student indien z'n Naam en Leeftijd dezelfde is, we kunnen dan de Equals-methode override'n als volgt:
-```java
+```csharp
 //In de Student class
 public override bool Equals(Object o)
 {

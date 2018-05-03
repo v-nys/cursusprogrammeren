@@ -7,14 +7,14 @@ We tonen het nut van polymorfisme aan de hand van drie voorbeelden:
 
 ## Polymorfisme in de praktijk: Dieren
 Een voorbeeld maakt veel duidelijk. Stel dat we een een aantal Dier-gerelateerde klassen hebben die allemaal op hun eigen manier een geluid voortbrengen. We hanteren de klasse dier uit een eerder hoofdstuk ([abstracte klassen in overerving](7_overerving/5_abstract.md)):
-```java
+```csharp
 abstract class  Dier
 {
    public abstract string MaakGeluid();
 }
 ```
 Twee child-klassen:
-```java
+```csharp
 class Paard: Dier
 {
   public override string MaakGeluid()
@@ -33,16 +33,16 @@ class Varken: Dier
 ```
 
 Dankzij polymorfisme kunnen we nu elders objecten van Paard en Varken in een ``Dier`` bewaren, maar toch hun eigen geluid laten reproduceren:
-```java
-Dier someAnimal= new Varken();
-Dier anotherAniemal= new Paard();
+```csharp
+Dier someAnimal = new Varken();
+Dier anotherAniemal = new Paard();
 Console.WriteLine(someAnimal.MaakGeluid()); //Hinnikhinnik
 Console.WriteLine(anotherAnimal.MaakGeluid()); //Oinkoink
 ```
 
 ## Polymorfisme in de praktijk: Presidenten
 Beeld je in dat je een klasse President hebt met een methode "RunTheCountry" (voorbeeld van [StackOverflow](https://stackoverflow.com/questions/1031273/what-is-polymorphism-what-is-it-for-and-how-is-it-used) ). De President heeft toegang tot tal van adviseurs die hem kunnen helpen (inzake miltair, binnenlands beleid, economie). Zonder de voordelen van polymorfisme zou de klasse President er zo kunnen uitzien, **slechte manier**:
-```java
+```csharp
 public class President
 {
     public void RunTheCountry()
@@ -73,7 +73,7 @@ Je merkt dat de President (of de programmeur van deze klasse) aardig wat specifi
 Dankzij polymorfisme kunnen we dit alles veel mooier oplossen:
 1. We verplichten alle adviseurs dat ze overerven van de abstracte klasse ``Advisor`` die maar 1 abstracte methode heeft ``Advise``:
 
-```java
+```csharp
 abstract class Advisor
 {
   abstract public void Advise();
@@ -112,7 +112,7 @@ class HealthOfficial:Advisor
 ```
 2° Het leven van de President wordt plots véél makkelijker:
 
-```java
+```csharp
 public class MisterPresident
 {
     public void RunTheCountry()
@@ -128,7 +128,7 @@ public class MisterPresident
 ```
 
 3° En we kunnen hem nog helpen door met een array of ``List<Advisor>`` te werken zodat hij ook niet steeds de "namen" van z'n adviseurs moet kennen:
-```java
+```csharp
 public class MisterPresident
 {
     public void RunTheCountry()

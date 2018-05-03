@@ -38,7 +38,7 @@ Een niet-generieke colletion is **niet type-safe** . Een generieke collection is
 Volgende 2 code-voorbeelden tonen dit.
 
 In het niet-generieke geval zal deze code compileren maar **tijdens de uitvoer** zal de laatste lijn een fout (Exception) geven::
-```java
+```csharp
 ArrayList nietGeneriekeList=new ArrayList();
 string naam= "Tim";
 nietGeneriekeList.Add(naam);
@@ -46,7 +46,7 @@ int leeftijd = (int)nietGeneriekeList[0];
 ```
 
 Bij een generieke collection zal er bij soortgelijk code een compiler-error optreden (gedrag dat meestal wenselijk is) en de code zal dus niet gecompileerd kunnen worden:
-```java
+```csharp
 List<string> generiekeList=new List<string>();
 string naam= "Tim";
 generiekeList.Add(naam);
@@ -66,13 +66,13 @@ We beschrijven nu de werking van een aantal typische collecties, merk op dat dez
 
 Een List collectie is de meest standaard collectie die je kan beschouwen als een veiligere variant op een een doodnormale array. Via de Add(T item) methode kan je elementen toevoegen aan de lijst. In volgende voorbeeld maken we een List aan die objecten van het type string mag bevatten:
 
-```java
+```csharp
 List<String> myStringList = new List<String>();
 ``` 
 myStringList.Add("This is the first item in my list!");
 Het leuke van een List is dat je deze ook kan gebruiken als een gewone array, waarbij je mbv de indexer elementen kan aanroepen. Stel bijvoorbeeld dat we een lijst hebben met minstens 4 strings in. Volgende code toont hoe we de string op positie 3 kunnen uitlezen en hoe we die op positie 2 overschrijven:
 
-```java
+```csharp
 Console.WriteLine(myStringList[3]);
 myStringList[2] = "andere zin";`
 ```
@@ -81,7 +81,7 @@ Interessante methoden en properties voorts zijn:
 * ``Count``: property die teruggeeft hoeveel elementen in de lijst aanwezig zijn.
 * ``Clear()`` :methode die de volledige lijst leegmaakt
 * ``Insert()``: methode om element op specifieke plaats in lijst toe te voegen, bijvoorbeeld:
-```java
+```csharp
 myStringList.Insert(3,”A fourth sentence”); 
 ```
 voegt de string toe op de verde (3+1) plek.
@@ -91,7 +91,7 @@ voegt de string toe op de verde (3+1) plek.
 ### Foreach loops
 Je kan met een eenvoudige for of while-loop over een list-object itereren, maar het gebruik van een foreach-loop is toch handiger ([ook al eerder besproken hier](/3_herhalingen/3_foreach.md)). Dit is dan ook de meestgebruikte operatie om eenvoudig (je kan ook Linq overwegen!) en snel een bepaald stuk code toe te passen op ieder element van de lijst:
 
-```java
+```csharp
 List<int> integerList=new List<int>();
 integerList.Add(2);
 integerList.Add(3);
@@ -113,7 +113,7 @@ We gebruiken 2 methoden om met een queue te werken:
 
 Voorbeeld:
 
-```java
+```csharp
 Queue<string> theQueue =  new Queue<string>();
 theQueue.Enqueue("I arrived here first!");
 theQueue.Enqueue("I arrived second.");
@@ -143,7 +143,7 @@ We gebruiken volgende 2 methoden om met een stack te werken:
 * ``Pop()``: geeft het bovenste element in de stack terug en verwijdert vervolgens dit element van de stack
 Voorbeeld:
 
-```java
+```csharp
 Stack<string> theStack =  new Stack<string>();
 theStack.Push("I arrived here first!");
 theStack.Push("I arrived second.");
@@ -177,7 +177,7 @@ Merk op dat je niet verplicht bent om een int als key te gebruiken, dit mag eend
 
 We kunnen nu met behulp van een foreach-loop alle elementen tonen (merk op dat de foreach-constructie voor eender welke type collectie kan gebruikt worden om doorheen een array te lopen):
 
-```java
+```csharp
 foreach (var item in customers)
 {
     Console.WriteLine(item.Key+ "\t:"+item.Value);
@@ -186,7 +186,7 @@ foreach (var item in customers)
 
 We kunnen echter ook een specifiek element opvragen aan de hand van de key. Stel dat we de waarde (naam) van de klant met key (id) gelijk aan 123 willen tonen:
 
-```java
+```csharp
 Console.WriteLine(customers[123]);
 ```
 
@@ -196,7 +196,7 @@ De key werkt dus net als de index bij gewone arrays, alleen heeft de key nu geen
 
 De key kan zelfs een string zijn en de waarde een ander type. In het volgende voorbeeld hebben we eerder een klasse Student aangemaakt. We maken nu een student aan en voegen deze toe aan de studentenLijst. Vervolgens willen we de leeftijd van een bepaalde student tonen op het scherm en vervolgens verwijderen we deze student:
 
-```java
+```csharp
 Dictionary<string, Student> studentenLijst = new Dictionary<string, Student>();
 Student stud= new Student();
 stud.Naam= "Tim";stud.Leeftijd=24;

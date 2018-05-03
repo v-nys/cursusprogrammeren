@@ -1,7 +1,7 @@
 # Char
 Een enkele letter of getal als ‘tekst’ opslaan kan je doen door het char-type te gebruiken. Zo kan je bijvoorbeeld een enkel karakter als volgt tonen:
 
-```java
+```csharp
 char eenLetter = 'X';
 Console.WriteLine("eenLetter=" + eenLetter);
 ```
@@ -23,7 +23,7 @@ Merk op dat we bij een string literal gebruik maken van aanhalingstekens (") ter
 
 Volgende code geeft dus drie keer het cijfer 1 onder mekaar op het scherm, maar de eerste keer behelst het een char (enkelvoudig teken), dan een een string (reeks van tekens) en dan een int (effectief getal):
 
-```java
+```csharp
 char eenKarakter = '1';
 string eenString = "1";
 int eenGetal = 1;
@@ -34,7 +34,7 @@ Console.WriteLine(eenGetal);
 ```
 Fout gebruik van strings en chars: Volgende code zal dus niet compileren!
 
-```java
+```csharp
 char eenKarakter = "1";
 string eenString = '1';
 int eenGetal = '1';
@@ -55,12 +55,12 @@ Zonder aan te geven dat we letterlijk dat teken willen tonen, en het niet in z�
 Denk bijvoorbeeld aan de apostrof…
 Volgende code zou de compiler verkeerd interpreteren, daar hij denkt dat we een leeg karakter wensen op te slaan:
 
-```java
+```csharp
 char apostrof= ''';
 ```
 De juiste manier is om het teken dus door een backslash vooraf te laten gaan:
 
-```java
+```csharp
 char apostrof= '\'';
 ```
 Er zijn echter nog een heleboel andere escape characters die je geregeld zal moeten gebruiken, waaronder `` \n``  om een nieuwe lijn aan te geven en \t om een tab in de tekst te plaatsen.
@@ -70,7 +70,7 @@ Bekijk deze tabel voor alle toegelaten escape characters in C#
 ## Escape characters in strings
 We gebruiken vooral escape characters in strings, om bijvoorbeeld witregels en tabulaties aan te geven. Test bijvoorbeeld volgende lijn eens:
 
-```java
+```csharp
 string eenString = "Eerst een zin.\t dan een zin na een tab \n Dan eentje op een nieuwe regel";
 ```
 Het is belangrijk dat je vlot kan werken met escape characters in string, daar we dit geregeld zullen nodig hebben.
@@ -78,7 +78,7 @@ Het is belangrijk dat je vlot kan werken met escape characters in string, daar w
 ## Optellen van char 
 Stel dat we volgende char-variabele aanmaken. Bij string mogen we de +-operator gebruiken om 2 strings aan mekaar te plakken. Bij char mag dat niet!
 
-```java
+```csharp
 char a = 'A';
 char b = 'B';
 Console.WriteLine(a + b);

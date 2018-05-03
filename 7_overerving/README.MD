@@ -10,13 +10,13 @@ Wanneer twee klassen met behulp van een "x is een y"-relatie kunnen beschreven w
 * Een paard **is een** dier (paard = childklasse, dier= parentklasse)
 * Een tulp **is een** plant
 
-(Opgelet: wanneer we "x heeft een y" zeggen gaat het niét over overerving, maar over compositie)
+(Opgelet: wanneer we "x heeft een y" zeggen gaat het niï¿½t over overerving, maar over compositie)
 
 ## Inheritance in C#
 Overving duid je aan met behulp van het dubbele punt(:)  bij de klassedefinitie:
 
 Een voorbeeld:
-```java
+```csharp
 class Paard: Dier
 {
    public bool KanHinnikken{get;set;}
@@ -31,8 +31,8 @@ class Dier
 }
 ```
 
-Objecten van het type Dier kunnen enkel de Eet-methode aanroepen. Objecten van het type Paard kunnen de Eet-methode aanroepen én ze hebben ook een property KanHinnikken:
-```java
+Objecten van het type Dier kunnen enkel de Eet-methode aanroepen. Objecten van het type Paard kunnen de Eet-methode aanroepen ï¿½n ze hebben ook een property KanHinnikken:
+```csharp
 Dier aDier= new Dier();
 Paard bPaard= new Paard();
 aDier.Eet();
@@ -42,14 +42,14 @@ aDier.KanHinnikken=false; //!!! zal niet werken!
 ```
 
 ## Multiple inheritance
-In C# is het niet mogelijk om een klasse van meer dan een parent-klasse te laten overerven (zogenaamde multiple inheritance), wat wel mogelijk is in sommige andere object georiënteerde talen.
+In C# is het niet mogelijk om een klasse van meer dan een parent-klasse te laten overerven (zogenaamde multiple inheritance), wat wel mogelijk is in sommige andere object georiï¿½nteerde talen.
 
 ## Transitivive
 Overerving in C# is transitief, dit wil zeggen dat de child-klasse ALLES overerft van de parent-klasse: methoden, properties, etc.
 
 ## Protected
 Ook al is overering transitief, hou er rekening mee dat private variabelen en methoden van de parent-klasse NIET rechstreeks aanroepbaar zijn in de child-klasse. Private geeft aan dat het element enkel in de klasse zichtbaar is:
-```java
+```csharp
 class Paard: Dier
 {
    public void MaakOuder()
@@ -64,9 +64,9 @@ class Dier
 }
 ```
 
-Je kan dit oplossen door de **protected** access modifier ipv private te gebruiken. Met protected geef je aan dat het element enkel zichtbaar is binnen de klasse én binnen child-klassen:
+Je kan dit oplossen door de **protected** access modifier ipv private te gebruiken. Met protected geef je aan dat het element enkel zichtbaar is binnen de klasse ï¿½n binnen child-klassen:
 
-```java
+```csharp
 class Paard: Dier
 {
    public void MaakOuder()

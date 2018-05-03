@@ -30,7 +30,7 @@ In dit geval is de code 0x02e7.
 
 Om dit teken te tonen schrijf je dan:
 
-```java
+```csharp
 char blokje = (char)0x02e7;
 Console.WriteLine(blokje);
 ```
@@ -39,7 +39,7 @@ In C\# schrijf je hexadecimale getallen als volgt als je ze rechstreeks in een s
 
 Wil je dus bovenstaande teken schrijven dan kan dan ook als volgt:
 
-```java
+```csharp
 Console.WriteLine("\u02e7");
 ```
 

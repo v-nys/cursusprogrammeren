@@ -19,6 +19,6 @@ C#-syntax| Betekenis
 ``!``  |niet-operator
 
 Je kan de niet-operator voor een expressie zetten om het resultaat hiervan om te draaien. Bijvoorbeeld:
-```java
+```csharp
 !(0==2)  //zal true geven
 ```

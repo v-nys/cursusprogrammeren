@@ -4,26 +4,26 @@ Parsing is iets anders: deze zal je enkel nodig hebben om data door de computer 
 
 ## Casting
 
-Hierbij dien je aan de compiler te zeggen: “Volgende variabele die van het type x is, moet aan deze variabele van het type y toegekend worden. Ik besef dat hierbij data verloren kan gaan, maar zet de variabele toch maar om naar het nieuwe type“.
+Hierbij dien je aan de compiler te zeggen: ï¿½Volgende variabele die van het type x is, moet aan deze variabele van het type y toegekend worden. Ik besef dat hierbij data verloren kan gaan, maar zet de variabele toch maar om naar het nieuwe typeï¿½.
 
 Stel dat temperatuurGisteren en temperatuurVandaag van het type int zijn, maar dat we nu de gemiddelde temperatuur willen weten. De formule voor gemiddelde temperatuur over 2 dagen is:
 
-```java
+```csharp
 int temperatuurGemiddeld = (temperatuurGisteren + temperatuurVandaag)/2;
 ```
 Test dit eens met de waarden 20 en 25. Wat zou je verwachten als resultaat? Inderdaad: 22,5 (omdat 20+25)/2 = 22.5) *Nochtans krijg je 22 op scherm te zien en zal de variabele temperatuurGemiddeld ook effectief de waarde 22 bewaren en niet 22.5.*
 
-Het probleem is dat het gemiddelde van 2 getallen niet noodzakelijk een geheel getal is. **Omdat de expressie enkel integers bevat (temperatuurGisteren en temperatuurVandaag) zal ook het resultaat een integer zijn.** In dit geval wordt alles na de komma gewoon ‘weggegooid’, vandaar de uitkomst. *Dit is narrowing.*
+Het probleem is dat het gemiddelde van 2 getallen niet noodzakelijk een geheel getal is. **Omdat de expressie enkel integers bevat (temperatuurGisteren en temperatuurVandaag) zal ook het resultaat een integer zijn.** In dit geval wordt alles na de komma gewoon ï¿½weggegooidï¿½, vandaar de uitkomst. *Dit is narrowing.*
 
 Hoe krijgen we de correctere uitslag te zien? Door temperatuurGemiddeld als kommagetal te declareren (bijvoorbeeld door het type double):
 
-```java
+```csharp
 double temperatuurGemiddeld = (temperatuurGisteren + temperatuurVandaag)/2;
 ```
 
 Als we dit testen zal nog steeds de waarde 22 aan temperatuurGemiddeld toegewezen worden. Inderdaad. De expressie rechts bevat enkel integers en de computer zal dus ook de berekening en het resultaat als integer beschouwen. We moeten dus ook de rechterkant van de toekenning als double beschouwen. *We doen dit door middel van **casting** zoals eerder vermeld*, als volgt:
 
-```java
+```csharp
 double temperatuurGemiddeld = ((double)temperatuurGisteren + (double)temperatuurVandaag)/2;
 ```
 Nu zal temperatuurGemiddeld wel de waarde 22.5 bevatten.
@@ -37,18 +37,18 @@ Het is belangrijk in te zien dat het casten van een variabele naar een ander typ
 ### Narrowing
 Casting doe je wanneer je een variabele wil toekennen aan een andere variabele van een ander type dat daar eigenlijk niet inpast. Bekijk eens volgende voorbeeld:
 
-```java
+```csharp
 double var1;
 int var2;
  
 var1 = 20.4;
 var2 = var1;
 ```
-Dit zal niet gaan. Je probeert namelijk een waarde van het type double in een variabele van het type int te steken. Dat gaat enkel als je informatie weggooit. Je moet aan ‘narrowing’ doen. Dit gaat enkel als je expliciet aan de compiler zegt: het is goed, je mag informatie weggooien, ik begrijp dat en zal er rekening mee houden. Dit proces van narrowing noemen we casting.
+Dit zal niet gaan. Je probeert namelijk een waarde van het type double in een variabele van het type int te steken. Dat gaat enkel als je informatie weggooit. Je moet aan ï¿½narrowingï¿½ doen. Dit gaat enkel als je expliciet aan de compiler zegt: het is goed, je mag informatie weggooien, ik begrijp dat en zal er rekening mee houden. Dit proces van narrowing noemen we casting.
 
 En je lost dit op door voor de variabele die TIJDELIJK dienst moet doen als een ander type, het nieuwe type, tussen ronde haakjes, te typen, als volgt:
 
-```java
+```csharp
 double var1;
 int var2;
  
@@ -58,9 +58,9 @@ var2 = (int)var1;
 Het resultaat in var2 zal 20 zijn (alles na de komma wordt bij casting van een double naar een int weggegooid).
 
 ### Widening
-Casting is echter dus niet nodig als je aan *‘widening’* doet (een kleiner type in een groter type steken), als volgt:
+Casting is echter dus niet nodig als je aan *ï¿½wideningï¿½* doet (een kleiner type in een groter type steken), als volgt:
 
-```java
+```csharp
 int var1;
 double var2;
  
@@ -68,7 +68,7 @@ var1 = 20;
 var2 = var1;
 ```
 
-Deze code zal zonder problemen gaan. Var2 zal de waarde 20.0 bevatten. De inhoud van var1 wordt ‘verbreed’ naar een double, eenvoudigweg door er een kommagetal van te maken. Er gaat géén inhoud verloren echter.
+Deze code zal zonder problemen gaan. Var2 zal de waarde 20.0 bevatten. De inhoud van var1 wordt ï¿½verbreedï¿½ naar een double, eenvoudigweg door er een kommagetal van te maken. Er gaat gï¿½ï¿½n inhoud verloren echter.
 
 ## Conversie
 Casting is de 'oldschool' manier van data omzetten die vooral zeer nutig is daar deze ook werkt in andere C#-related programmeertalen zoals C, C++ en Java. 
@@ -77,7 +77,7 @@ Echter, .NET heeft ook enkele ingebouwde conversie-methoden die je kunnen helpen
 
 Het gebruik hiervan is zeer eenvoudig.Enkele voorbeelden:
 
-```java
+```csharp
 int getal= Convert.ToInt32(3.2); //double to int
 double anderGetal= Convert.ToDouble(5); //int to double
 bool isWaar= Convert.ToBoolean(1); //int to bool

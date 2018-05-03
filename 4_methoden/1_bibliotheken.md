@@ -28,12 +28,12 @@ Type als code Math gevolgd door een . en je krijgt alle methoden van de Math-lib
 ### PI 
 Ook het getal Pi , 3.14159265358979323846, is beschikbaar in de Math-library. Het witte icoontje voor PI bij Intellisense toont aan dat het hier om en ‘field’ gaat; een eenvoudige variabele met een specifieke waarde. In dit geval gaat het zelfs om een const field, met de waarde van Pi van het type double.
 
-```java
+```csharp
 public const double PI;
 ```
 
 Je kan deze gebruiken in berekeningen als volgt:
-```java
+```csharp
 double straal= 5.5;
 double omtrek= Math.PI * 2 * straal;
 ```
@@ -44,7 +44,7 @@ De help-files van VS zijn zeer uitgebreid en dankzij IntelliSense krijg je ook a
 
 Type daarom onder vorige de WriteLine-zin het volgende:
 
-```java
+```csharp
 System.Console.
 ```
 

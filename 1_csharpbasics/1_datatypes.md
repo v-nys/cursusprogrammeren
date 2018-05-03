@@ -34,7 +34,7 @@ Voor de kommagetallen:
 
 Het bereik van deze typen is weliswaar opgegeven in het handboek. Maar het is belangrijk om weten dat deze ook in de compiler gekend is. Het volgende voorbeeld toont dit aan:
 
-```java
+```csharp
 string zinnetje = "Het bereik van het type double is:";
 Console.WriteLine(zinnetje + double.MinValue + " en " + double.MaxValue);
 ```
@@ -53,7 +53,7 @@ Hiervoor dien je minstens op te geven:
 
 Voorbeeld:
 
-```java
+```csharp
 int mijnLeeftijd;
 ```
 
@@ -61,7 +61,7 @@ We maken variabele van het type ‘int’ \(geheel getal\) dat als identifier �
 
 Indien je reeds weet wat de beginwaarde moet zijn van de variabele dan mag je de variabele ook reeds deze waarde toekennen bij het aanmaken:
 
-```java
+```csharp
 int mijnLeeftijd = 37;
 ```
 
@@ -76,7 +76,7 @@ Met de** toekennings-operator \(=\)** kan je een waarde toekennen aan een variab
 
 Je kan natuurlijk ook een waarde uit een variabele uitlezen en toewijzen aan een andere variabele:
 
-```java
+```csharp
 int eenAndereLeeftijd= mijnLeeftijd;
 ```
 
@@ -86,14 +86,14 @@ Literals zijn expliciet ingevoerde waarden in je code. Als je in je code explici
 
 Voorbeelden van een literal toekennen:
 
-```java
+```csharp
 int temperatuurGisteren = 20;
 int temperatuurVandaag = 25;
 ```
 
 Het is belangrijk dat het type van de literal overeenstemt met dat van de variabele waaraan je deze zal toewijzen. Een string-literal stel je voor door aanhalingstekens. Volgende code zal dan ook een compiler-fout generen, daar je een string-literal aan een int-variabele wil toewijzen, en vice versa.
 
-```java
+```csharp
 string eenTekst;
 int eenGetal;
 
@@ -109,7 +109,7 @@ Als je bovenstaande probeert te compileren dan krijg je volgende error-boodschap
 
 Wanneer je een reeds gedeclareerde variabele een **nieuwe waarde toekent **dan zak de oude waarde in die variabele onherroepelijk verloren zijn. Probeer dus altijd goed op te letten of je de oude waarde nog nodig hebt of niet. Wil je de oude waarde ook nog bewaren dan zal je een nieuwe, extra variabele moeten aanmaken en daarin de nieuwe waarde moeten bewaren:
 
-```java
+```csharp
 int temperatuurGisteren = 20;
 temperatuurGisteren = 25;
 ```
@@ -118,7 +118,7 @@ In dit voorbeeld zal er dus voor gezorgd worden dat de oude waarde van temperatu
 
 Volgende code toont hoe je bijvoorbeeld eerst de vorige waarde kunt bewaren:
 
-```java
+```csharp
 int temperatuurEerGisteren= temperatuurGisteren;
 temperatuurGisteren = 25;
 ```
@@ -135,7 +135,7 @@ Meestal zul je expressies schrijven waarin je bewerkingen op en met variabelen u
 
 Voorbeeld van **expressie**-resultaat toekennen:
 
-```java
+```csharp
 int temperatuursVerschil = temperatuurGisteren - temperatuurVandaag;
 ```
 
@@ -143,20 +143,20 @@ Hierbij zal de temperatuur uit de rechtse 2 variabelen worden uitgelezen, van me
 
 De voorgaande code kan ook langer geschreven worden als:
 
-```java
+```csharp
 int tussenResultaat= tempeatuurGisteren - temperatuurVandaag;
 int temperatuursVerschil = tussenResultaat;
 ```
 
 Een ander voorbeeld van en expressie-resultaat toewijzen maar nu met literal \(stel dat we temperatuursVerschil reeds hebben gedeclareerd eerder\):
 
-```java
+```csharp
 temperatuursVerschil = 21 - 25;
 ```
 
 Uiteraard mag je ook combinaties van literals en variabelen gebruiken in je expressies:
 
-```java
+```csharp
 int breedte = 15;
 int hoogte = 20 * breedte;
 ```

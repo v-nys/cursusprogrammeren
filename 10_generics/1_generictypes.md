@@ -12,7 +12,7 @@ We wensen een struct te maken die de locatie in X,Y,Z richting kan bewaren. We w
 
 
 
-```java
+```csharp
 struct Location<T>
 {
     public T X;
@@ -22,7 +22,7 @@ struct Location<T>
 ```
 We kunnen deze struct nu als volgt gebruiken:
 
-```java
+```csharp
 static void Main(string[] args)
 {
     Location<int> plaats;

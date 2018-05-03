@@ -11,7 +11,7 @@ Het lijdende voorwerp zal steeds het object zijn dat binnen het onderwerp zal ge
 ## In de praktijk
 
 We bekijken het voorbeeld van de computer en de harde schijf. We hebben twee klassen
-```java
+```csharp
 class PC
 {
 }
@@ -22,7 +22,7 @@ class Disk
 ```
 
 Een PC heeft een Disk, dit wil zeggen dat we in de klasse PC een object van het type Disk zullen definieren:
-```java
+```csharp
 class PC
 {
     private Disk cDisk;
@@ -33,7 +33,7 @@ Uiteraard moeten we deze Disk nog instantiaren, dit kan op verschillende mogelij
 
 ### Manier 1
 Ogenblikkelijk:
-```java
+```csharp
 class PC
 {
     private Disk cDisk=new Disk();
@@ -42,7 +42,7 @@ class PC
 
 ### Manier 2
 Ogenblikkelijk, maar in constructor:
-```java
+```csharp
 class PC
 {
     public PC()
@@ -55,7 +55,7 @@ class PC
 
 ### Manier 3
 Door een extern object, bv via een property:
-```java
+```csharp
 class PC
 {
     public Disk CDisk
@@ -82,7 +82,7 @@ Wanneer een object meerdere objecten van een specifiek type heeft (denk maar aan
 
 Voorbeeld:
 
-```java
+```csharp
 class Page{}
 
 class Boek
@@ -93,7 +93,7 @@ class Boek
 
 Indien je nu een pagina wenst toe te voegen dan moet je ook deze individuele array-elementen nog instantieren. Een voorbeeld waarbij men van buitenuit het object bestaande pagina's kan toevoegen:
 
-```java
+```csharp
 class Book
 {
    public InsertPage(Page toAdd, int Position)
@@ -112,7 +112,7 @@ myBook.InsertPage(myThirdPage, 2);
 
 Of een voorbeeld met List:
 
-```java
+```csharp
 class Book
 {
     public List<Page> AllPages{get;set;} = new List<Page>();

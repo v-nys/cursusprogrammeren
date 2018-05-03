@@ -11,7 +11,7 @@ Volgende 3 manieren tonen hoe je steeds tot voorgaande string zal komen.
 
 ## Manier 1 String samenvoegen met de +-operator
 Je kan string en variabelen eenvoudig 'bij mekaar' optellen. Ze worden dan achter mekaar geplakt als het waren. 
-```java
+```csharp
 string result= "Ik ben "+ name + "en ik ben "+ age+ " jaar oud";
 ```
 Let er op dat je tussen de aanhalingsteken (binnen de strings) spaties zet indien je het volgende deel niet 'tegen het vorige stringstuk' wilt plakken.
@@ -19,26 +19,26 @@ Let er op dat je tussen de aanhalingsteken (binnen de strings) spaties zet indie
 ## * string interpolation
 In de oude dagen van C# gebruiketn we String.Format() om meerdere string(s) en variabelen samen te voegen tot een string. Nu kan dat met string interpolation waarbij we het $-teken gebruiken.
 Door het $-teken VOOR de string te plaatsen geef je aan dat alle delen in de string die tussen accolades staan { } als code mogen beschouwd worden. Een voorbeeld maakt dit duidelijk:
-```java
+```csharp
 string result= $"Ik ben {name} en ik ben {age} jaar oud";
 ```
 Zoals je kan zien is dit veel leesbaarder dan de eerste manier.
 
 ### Berekeningen doen
 Je mag eender welk statement tussen de accoldates zetten, denk maar aan:
-```java
+```csharp
 string result= $"Ik ben {name} en ik ben {age+4} jaar oud";
 ```
 
 ## String.Format()
 String.Format is een methode die string-interpolatie toe laat op een iets minder intuïtieve manier:
-```java
+```csharp
 string result= String.Format("Ik ben {0} en ik ben {1} jaar oud",name,age);
 ```
 Het getal tussen de accolades geeft aan de hoeveelste parameter na de string hier in de plaats moet gezet worden (0= de eerste, 1= de tweede, enz).
 
 Volgende code zal dus ``Ik ben 13 en ik ben 13 jaar oud`` als resultaat geven:
-```java
+```csharp
 string result= String.Format("Ik ben {1} en ik ben {1} jaar oud",name,age);
 ```
 

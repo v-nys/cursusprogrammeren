@@ -10,7 +10,7 @@ Je geeft parameters by reference door door het keyword ref voor de parameter in 
 
 Het verschil tussen het gebruik van ``out`` of ``ref`` keyword tonen we aan in het volgende voorbeeld. Laten we dit aantonen met een voorbeeld. Stel dat we het vorige voorbeeld herschreven maar ‘vergeten’ om de parameter tweede een begin-waarde te geven:
 
-```java
+```csharp
 static void Main(string[] args)
 {
     int eerste = 5;
@@ -29,7 +29,7 @@ Door nu het out keyword te gebruiken geven we expliciet aan dat we beseffen dat 
 
 We zouden dus ons programma kunnen herschrijven met deze parameter. Hierbij moeten we ons ervan vergewissen dat we zeker de parameter getal2 een waarde toekennen in de methode!
 
-```java
+```csharp
 static void RefValueVerschil(int getal1, out int getal2)
 {
     getal2 = 10;
@@ -62,7 +62,7 @@ Tweede bedraagt na method:12
 
 Volgende methode zal 2 parameters meekrijgen. De eerste wordt bij value gebruikt, de tweede by reference:
 
-```java
+```csharp
 static void RefValueVerschil(int getal1, ref int getal2)
 {
     getal1 = getal1 + 1;

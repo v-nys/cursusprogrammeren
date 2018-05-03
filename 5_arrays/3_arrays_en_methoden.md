@@ -10,7 +10,7 @@ Arrays worden altijd ‘by reference’ doorgegeven aan een methode. Dit heeft t
 
 Stel dat je bijvoorbeeld een methode hebt die als parameter 1 array van ints meekrijgt. De methode zou er dan als volgt uitzien.
 
-```java
+```csharp
 static void EenVoorbeeldMethode(int[] inArray)
 {
  
@@ -21,7 +21,7 @@ Een array als parameter meegeven kan dus, maar een ander aspect waar rekening me
 
 Volgende methode is dus **FOUT**!
 
-```java 
+```csharp 
 static void EenVoorbeeldMethode(ref int[6] inArray)
 {
  
@@ -37,7 +37,7 @@ Volgende programma toont hoe we verschillende onderdelen vand e code in methoden
 2. zodat code herbruikbaar is
 
 Analyseer de code en denk na hoe eenvoudig het is om een ander programma hiervan te maken (bijvoorbeeld vermenigvuldigen met 10 en alle veelvouden van 6 tonen: je hoeft enkel de parameters in de methode-aanroep aan te passen):
-```java
+```csharp
 namespace ArrayMethods
 {
     class Program
@@ -93,7 +93,7 @@ Ook methoden kun je natuurlijk een array als returntype laten geven. Hiervoor ze
 
 Stel bijvoorbeeld dat je een methode hebt die een int-array maakt van een gegeven grootte waarbij ieder element van de array reeds een beginwaarde heeft die je ook als parameter meegeeft:
 
-```java
+```csharp
 static int[] MaakArray(int lengte, int beginwaarde)
 {
     int[] resultArray = new int[lengte];

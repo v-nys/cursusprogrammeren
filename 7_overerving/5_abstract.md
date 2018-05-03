@@ -9,7 +9,7 @@ Met behulp van het **``abstract``** kunnen we aangeven dat een klasse abstract i
 We plaatsen ``abstract`` voor de klasse om dit aan te duiden.
 
 Een voorbeeld:
-```java
+```csharp
 abstract class Dier
 {
   public int Name {get;set;}
@@ -19,7 +19,7 @@ abstract class Dier
 Volgende lijn zal een error geven: ``Dier hetDier= new Dier();``
 
 We mogen echter wel klassen overerven van deze klasse en instanties van aanmaken:
-```java
+```csharp
 class Paard: Dier
 {
 //...
@@ -38,7 +38,7 @@ En als we polymorfisme gebruiken ([zie verder](/11_polymorfisme/README.MD)) dan 
 Het is logisch dat we mogelijk ook bepaalde zaken in de abstracte klasse als abstract kunnen aanduiden. Beeld je in dat je een Methode "MaakGeluid" hebt in je klasse Dier. Wat voor een geluid maakt 'een dier'? We kunnen dus ook geen implementatie (code) geven in de abstracte parent klasse. 
 
 Via abstracte methoden geven we dit aan: we hoeven enkel de methode signature te geven, met ervoor ``abstract``:
-```java
+```csharp
 abstract class  Dier
 {
    public abstract string MaakGeluid();
@@ -49,7 +49,7 @@ Merk op dat er geen accolades na de signature komen.
 Child-klassen **zijn verplicht deze abstracte methoden te override'n**.
 
 De Paard-klasse wordt dan:
-```java
+```csharp
 class Paard: Dier
 {
   public override string MaakGeluid()

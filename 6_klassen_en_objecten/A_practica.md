@@ -11,7 +11,7 @@ Maak een eenvoudige klasse Nummers. Deze klasse bevat 2 getallen (type int). Er 
 Toon in je main aan dat je code werkt.
 
 Volgende code zou namelijk onderstaande output moeten geven:
-```java
+```csharp
     Nummers paar1 = new Nummers();
     paar1.getal1 = 12;
     paar1.getal2 = 34;
@@ -56,7 +56,7 @@ Voeg aan de klasse een methode ``BerekenTotaalCijfer`` toe. Wanneer deze methode
 Voeg aan de klasse  ook de methode ``GeefOverzicht`` toe. Deze methode zal een volledig "Rapport" van de student tonen (inclusief het gemiddelde m.b.v. de BerekenTotaalCijfer-methode).
 
 Test je programma door enkele studenten aan te maken en in te stellen. Volgende main zou dan de bijhorende output moeten krijgen:
-```java
+```csharp
     Student student1;
     student1.Klas = Klassen.EA2;
     student1.Leeftijd = 21;
@@ -68,7 +68,7 @@ Test je programma door enkele studenten aan te maken en in te stellen. Volgende 
     student1.GeefOverzicht();
 ```
 Output:
-```java
+```csharp
 Joske Vermeulen, 21 jaar
 Klas: EA2
 
@@ -84,7 +84,7 @@ Gemiddelde:               13.3
 We gaan nu de Student-klasse gebruiken om een array van studenten te vullen.
 
 Maak daarom een studenten-array aan die 5 studenten bevat :
-```java
+```csharp
 Student[] alleStudenten= new Student[5];
 for(int i =0 ;  i<5;++)
     alleStudenten[i]= new Student();
@@ -131,7 +131,7 @@ Ontwerp een klasse Account die minstens een Naamveld, bedrag en rekeningnummer b
 Pas de WithdrawFunds methode aan zodat als returntype het bedrag (int) wordt teruggegeven. Indien het gevraagde bedrag meer dan de balance is dan geef je al het geld terug dat nog op de rekening staat en toon je in de console dat niet al het geld kon worden gegeven.
 
 Maak 2 instanties van het type Account aan en toon aan dat je geld van de ene account aan de andere kunt geven, als volgt:
-```java
+```csharp
 BankAccount rekening1=new BankAccount();
 BankAccount rekening2=new BankAccount();
 ```
@@ -141,7 +141,7 @@ Maak een bijhorende publieke Methode  waarmee je de account van state kunt veran
 
 Indien een persoon geld van of naar een Geblokkeerde rekening wil sturen dan zal er een error op het scherm verschijnen.
 Maak een array aan van 10 klanten. Wanneer je met klassen werkt moet je bij de initialisatie van de array ook ieder element afzonderlijk initialiseren, als volgt:
-```java
+```csharp
 BankAccount[] lijst = new BankAccount[10];
 //Init
 for(int i=O; i<lijst.Length;i++)
@@ -180,7 +180,7 @@ Toon de werking van je klasse aan door enkele objecten aan te maken met zowel de
 #### Deel 2: Operator Overloading
 Pas de klasse ‘Job’ aan zodat de + operator kan gebruikt worden om 2 job-objecten bij mekaar op te tellen.
 Bv:
-```java
+```csharp
 Job epicDuoJob= jobOne+jobTwo;  //jobOne en jobTwo zijn ook van het type Job
 ```
 De som van 2 job-objecten gaat als volgt te werk:

@@ -1,12 +1,12 @@
 # Beslissingen/If statements
-Nu we de elementaire zaken van C# en Visual Studio kennen is het tijd om onze programma’s wat interessanter te maken. De ontwikkelde programma’s tot nog toe waren steevast lineair van opbouw, ze werden lijn per lijn uitgevoerd zonder de mogelijkheid om de ‘flow’ van het programma aan te passen.
+Nu we de elementaire zaken van C# en Visual Studio kennen is het tijd om onze programmaï¿½s wat interessanter te maken. De ontwikkelde programmaï¿½s tot nog toe waren steevast lineair van opbouw, ze werden lijn per lijn uitgevoerd zonder de mogelijkheid om de ï¿½flowï¿½ van het programma aan te passen.
 
 In dit deel  zullen we bekijken hoe we ons programma dynamischer kunnen maken met behulp van het if-statement.
 
 ## If
-De if uitdrukking is één van de elementairste uitdrukking in een programmeertaal. De syntax is als volgt:
+De if uitdrukking is ï¿½ï¿½n van de elementairste uitdrukking in een programmeertaal. De syntax is als volgt:
 
-```java
+```csharp
 if (boolean expression) 
 {
      // C# code to be performed when expression evaluates to true
@@ -15,7 +15,7 @@ if (boolean expression)
 Enkel indien de boolean expressie true als resultaat geeft zal de code binnen de accolades van het if-blok uitgevoerd worden. Indien de expressie false teruggaf dan wordt het blok overgeslagen en gaat het programma verder met de code eronder.
 
 Een voorbeeld:
-```java
+```csharp
 int x = 10;
  
 if ( x > 9 )
@@ -28,7 +28,7 @@ if ( x > 9 )
 ## If/else
 Met if/else kunnen we niet enkel zeggen welke code moet uitgevoerd worden als de conditie waar is maar ook welke specifieke code indien de conditatie niet waar (false). Volgende voorbeeld geeft een typisch gebruik van een if/else structuur om 2 waarden met mekaar te vergelijken:
 
-```java
+```csharp
 int x = 10;
  
 if ( x > 9 )
@@ -45,7 +45,7 @@ Met een if/ else if constructie kunnen we meerdere criteria opgeven die waar/nie
 
 Een voorbeeld:
 
-```java
+```csharp
 int x = 9;
  
 if (x == 10)
@@ -66,7 +66,7 @@ else if (x == 8)
 Met de [relationele operators](1_logic_and_relationsoperator.md) (++, !=, <, >, <= en >=) kunnen we expressie schrijven die als uitkomst waar (true) of niet waar (false) geven.
 
 Een voorbeeld:
-```java
+```csharp
 int a, b, c;  
  
 a = 2;  
@@ -95,7 +95,7 @@ if(c < 0) Console.WriteLine("c is negative");
 We kunnen ook meerdere expressie combineren zodat we complexere uitdrukkingen kunnen maken. Hierbij kan je gebruik maken van de [logische operators](1_logic_and_relationsoperator.md) *AND (&&)** en **OR (||)** operators. .
 
 Een voorbeeld:
-```java
+```csharp
 int a = 5, b = 5, c = 10;
  
 if (a == b)
@@ -111,9 +111,9 @@ if ((a >= c) && (b <= c))
 ## Nesting
 We kunnen met behulp van nesting ook complexere programma flows maken. Hierbij gebruiken we de accolades om het blok code aan te duiden dat bij een if/else/if else hoort. Binnen dit blok kunnen nu echter opnieuw if/else/if else structuren worden aangemaakt.
 
-Volgende voorbeeld toont dit aan (bekijk wat er gebeurt als je emergencyValve aan “closed’ gelijkstelt) :
+Volgende voorbeeld toont dit aan (bekijk wat er gebeurt als je emergencyValve aan ï¿½closedï¿½ gelijkstelt) :
 
-````java
+````csharp
 int reactorTemp = 1500;
 string emergencyValve = " ";
  

@@ -10,7 +10,7 @@ Meestal zul je expressies schrijven waarin je bewerkingen op en met variabelen u
 
 Voorbeeld van **expressie**-resultaat toekennen:
 
-```java
+```csharp
 int temperatuursVerschil = temperatuurGisteren - temperatuurVandaag;
 ```
 
@@ -18,20 +18,20 @@ Hierbij zal de temperatuur uit de rechtse 2 variabelen worden uitgelezen, van me
 
 De voorgaande code kan ook langer geschreven worden als:
 
-```java
+```csharp
 int tussenResultaat= tempeatuurGisteren - temperatuurVandaag;
 int temperatuursVerschil = tussenResultaat;
 ```
 
 Een ander voorbeeld van en expressie-resultaat toewijzen maar nu met literal \(stel dat we temperatuursVerschil reeds hebben gedeclareerd eerder\):
 
-```java
+```csharp
 temperatuursVerschil = 21 - 25;
 ```
 
 Uiteraard mag je ook combinaties van literals en variabelen gebruiken in je expressies:
 
-```java
+```csharp
 int breedte = 15;
 int hoogte = 20 * breedte;
 ```
