@@ -32,7 +32,7 @@ Iedere beurt van het spel bestaat uit volgende stappen:
 
 Stel de speler voor door een X, een rots door O , een monster door M een RockDestroyer door D.
 
-Zie onderaan pagina voor minimale klasse-hierarchie en interfaces.
+Zie onderaan pagina voor minimale klasse-hiërarchie en interfaces.
 
 ## Extra’s:
 Voorgaande beschrijving is een ‘minimale’ beschrijving. Voorzie extra functionaliteit naar believen zoals:

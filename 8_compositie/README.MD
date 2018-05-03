@@ -21,7 +21,7 @@ class Disk
 }
 ```
 
-Een PC heeft een Disk, dit wil zeggen dat we in de klasse PC een object van het type Disk zullen definieren:
+Een PC heeft een Disk, dit wil zeggen dat we in de klasse PC een object van het type Disk zullen definiëren:
 ```csharp
 class PC
 {
@@ -73,7 +73,7 @@ myPC.CDisk= new Disk();
 
 
 ## Kortom
-Alle manieren die ja al kende om met bestaande types objecten aan te maken gelden nog steeds. Compositie deed je al de hele tijd wanneer je bijvoorbeeld zij "een student heeft een leeftijd" en dan een variabele ``int age`` aanmaakte. Het grote verschil is echter dat objecten moeten geïnstantieerd worden , wat niet moest met valuetypes. 
+Alle manieren die ja al kende om met bestaande types objecten aan te maken gelden nog steeds. Compositie deed je al de hele tijd wanneer je bijvoorbeeld zij "een student heeft een leeftijd" en dan een variabele ``int age`` aanmaakte. Het grote verschil is echter dat objecten moeten geïnstantieerd worden , wat niet moest met value-types. 
 ## NullReference is een klassieke fout
 Een veelvoorkomende fout bij compositie van objecten is dat je een object aanspreekt dat nooit werd geïnstantieerd. Je krijgt dan een ``NullReferenceException``.
 

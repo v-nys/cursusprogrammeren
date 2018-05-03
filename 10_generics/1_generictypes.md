@@ -8,7 +8,7 @@ De afspraak is om .NET een T te gebruiken indien het type nog dient bepaald te w
 [Meer info](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/generics/introduction-to-generics)
 
 ## Voorbeeld generic type
-We wensen een struct te maken die de locatie in X,Y,Z richting kan bewaren. We willen echter zowel floats, double als ints gebruiken:
+We wensen een ``struct`` te maken die de locatie in X,Y,Z richting kan bewaren. We willen echter zowel ``float``, ``double`` als ``int`` gebruiken om deze X,Y,Z coördinaten in bij te houden:
 
 
 

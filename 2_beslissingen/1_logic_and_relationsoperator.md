@@ -10,7 +10,7 @@ C#-syntax| Betekenis
 ``>=`` |groter dan of gelijk aan
 
 # Logische operator
-De logische EN , OF en NIET-operators die je kent van de booleanse algebra kan je ook gebruiken in C#:
+De logische EN , OF en NIET-operators die je kent van de booleaanse algebra kan je ook gebruiken in C#:
 
 C#-syntax| Betekenis
 ---------| ---------

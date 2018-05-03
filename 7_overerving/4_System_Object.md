@@ -42,8 +42,8 @@ public virtual string ToString()
  2. De methode is **virtual** gedefinieerd.
  **Alle 4 methoden in System.Object zijn ``virtual`` , en je kan deze dus ``override``'n!**
  
- ### ToString() override'n
- Het zou natuurlijk fijner zijn dat de ToString() van onze student nuttigere info teruggeeft, zoals bv de interne Naam (string autoprop) en Leeftijd (int autoprop). We kunnen dat eenvoudig krijgen door gewoon ToString to override'n:
+ ### ToString() overriden
+ Het zou natuurlijk fijner zijn dat de ToString() van onze student nuttigere info teruggeeft, zoals bv de interne Naam (string autoprop) en Leeftijd (int autoprop). We kunnen dat eenvoudig krijgen door gewoon ToString to overriden:
  ```csharp
  class Student
  {
@@ -60,12 +60,12 @@ public virtual string ToString()
  
  
  ## Equals()
- Ook deze methode kan je dus override'n om twee objecten met mekaar te testen, bijvoorbeeld:
+ Ook deze methode kan je dus overriden om twee objecten met mekaar te testen, bijvoorbeeld:
  ```csharp
 if(stud1.Equals(stud2))
    //...
 ```
-De euals methode heeft dus als signatuur: ``public virtual bool Equals(Object o)`` 
+De ``Equals`` methode heeft dus als signatuur: ``public virtual bool Equals(Object o)`` 
 Twee objecten zijn gelijk voor .NET als aan volgende afspraken wordt voldaan:
 * Het moet ``false`` teruggeven indien het argument o ``null`` is
 * Het moet ``true`` teruggeven indien je het object met zichzelf vergelijkt (bv ``stud1.Equals(stud1)``)
@@ -77,7 +77,8 @@ stud2.Equals(stud1);
 * Indien ``stud1.Equals(stud2)`` true teruggeeft en ``stud1.Equals(stud3)`` ook true is, dan moet ``stud2.Equals(stud3)`` ook true zijn.
 
 ### Equals overriden
-Stel dat we vinden dat een student gelijk is aan een andere student indien z'n Naam en Leeftijd dezelfde is, we kunnen dan de Equals-methode override'n als volgt:
+Stel dat we vinden dat een student gelijk is aan een andere student indien z'n Naam en Leeftijd dezelfde is, we kunnen dan de Equals-methode overriden als volgt:
+
 ```csharp
 //In de Student class
 public override bool Equals(Object o)
@@ -96,10 +97,10 @@ public override bool Equals(Object o)
 }
 ```
 
-De lijn ``Student temp= (Student)o;`` zal het object o casten naar een Student. Doe je dit niet dan kan je niet aan de interne Student-variabelen van het object o. [Dit concept het polymorfisme en wordt later uitgelegd](/11_polymorfisme/README.MD).
+De lijn ``Student temp = (Student)o;`` zal het object o casten naar een Student. Doe je dit niet dan kan je niet aan de interne Student-variabelen van het object o. [Dit concept het polymorfisme en wordt later uitgelegd](/11_polymorfisme/README.MD).
 
 ## GetHashcode
-Indien je Equals override dan moet je eigenlijk ook GetHashCode override'n, daar er wordt verondersteld dat twee gelijke objecten ook dezelfde unieke hashcode teruggeven. Wil je dit dus implementeren dan zal je dus een (bestaand) algoritme moeten schrijven dat een uniek nummer genereert voor ieder niet-gelijke object. Bekijk volgende [StackOverflow post](https://stackoverflow.com/questions/9827911/how-to-implement-override-of-gethashcode-with-logic-of-overriden-equals) indien je dit wenst toe te passen.
+Indien je Equals override dan moet je eigenlijk ook GetHashCode overriden, daar er wordt verondersteld dat twee gelijke objecten ook dezelfde unieke hashcode teruggeven. Wil je dit dus implementeren dan zal je dus een (bestaand) algoritme moeten schrijven dat een uniek nummer genereert voor ieder niet-gelijke object. Bekijk volgende [StackOverflow post](https://stackoverflow.com/questions/9827911/how-to-implement-override-of-gethashcode-with-logic-of-overriden-equals) indien je dit wenst toe te passen.
 
 # Ik ben nog niet helemaal mee?
 Niet getreurd, je bent niet de enige. Overerving,System.object, Equals..het is allemaal een hoop nieuwe kennis om te verwerken. Uw favoriete schrijver van deze cursus heeft echter in het verleden eens een briljante (kuch) tutorial geschreven waarin ik alle zaken van dit hoofdstuk op een iets andere manier uitleg. 

@@ -10,7 +10,7 @@ We hebben al eerder gezien hoe we arrays kunnen gebruiken om gegevens van hetzel
 
 Collecties zijn speciale objecten waarin een reeks van andere objecten kan worden gerefereerd. Daar collecties zelf ook objecten zijn, heeft dit een paar gevolgen:
 
-* Collecties moeten geïnstantieerd worden voor te gebruiken zijn (m.b.v. new keyword)
+* Er moet eerst een instantie van een collectie aangemaakt worden voor je ze kan gebruiken (m.b.v. ``new`` keyword)
 * Collecties hebben properties die onder andere het aantal objecten in collectie weergeeft.
 * Collecties hebben methoden om onder andere objecten toe te voegen en verwijderen
 * Daar collecties beschreven zijn in klassen kan je de typische object-georiënteerde eigenschappen hierop toepassen: je kan collecties overerven, encapsuleren (composiet), etc.
@@ -19,12 +19,12 @@ Er bestaan een hele resem collecties en je hebt er zelfs al van gebruikt, nameli
 
 Klasse	| Beschrijving
 ------  | ------------
-ArrayList| 	Standaard collectie die dynamisch kan groeien (zelfde als de List<> generieke variant).
-BitArray|	Array die enkel Booleans (true/false) bevat. Handig om dus een bit-voorstelling te doen.
-Hashtable|	Ieder element bevat een waarde en een bijhorende sleutel als index.
-Queue|	Stelt een first-in, first-out (FIFO) lijst voor.
-SortedList|	Soortgelijk als Hashtable, een sleutel stelt de index voor, elementen worden echter onmiddellijk gerangschikt .
-Stack	Stelt een Last-in, first-out (LIFO) lijst voor.
+``ArrayList``| 	Standaard collectie die dynamisch kan groeien (zelfde als de List<> generieke variant).
+``BitArray``|	Array die enkel Booleans (true/false) bevat. Handig om dus een bit-voorstelling te doen.
+``HashTable``|	Ieder element bevat een waarde en een bijhorende sleutel als index.
+``Queue``|	Stelt een first-in, first-out (FIFO) lijst voor.
+``SortedList``|	Soortgelijk als HashTable, een sleutel stelt de index voor, elementen worden echter onmiddellijk gerangschikt .
+``Stack``|	Stelt een Last-in, first-out (LIFO) lijst voor.
 
 We zullen een aantal van de eerder vernoemde collecte-klassen verderop bekijken, maar we zullen onmiddellijk de generieke varianten bekijken omdat die veel handiger zijn. Het is namelijk zo dat generic collecties meestal bruikbaarder en veiliger zijn dan de gewone collecties die we zonet kort hebben beschreven. Generic collecties zijn ‘strongly types’ en bieden een betere veiligheid op gebied van ‘type safety’, hun gebruik is echter quasi identiek dan dat van de niet generieke collecties.
 
@@ -56,7 +56,7 @@ int leeftijd = (int)nietGeneriekeList[0]; // compilererror: cannot convert type 
 # Generic collections
 Generic collecties zijn ‘strongly typed’ en bieden een betere veiligheid op gebied van ‘type safety’, hun gebruik is echter quasi identiek aan dat van de niet generieke collecties.
 
-We hebben reeds 1 generic colletie-klasse veel gebruikt, namelijk de List<>-klasse, waarbij we tussen de haakjes het type opgaven dat de List kon bevatten , bv List of List. Met andere woorden, je hebt reeds vorig academiejaar generics gebruikt zonder het goed en wel te beseffen!
+We hebben reeds 1 generic collectie-klasse veel gebruikt, namelijk de List<>-klasse, waarbij we tussen de haakjes het type opgaven dat de List kon bevatten , bv List of List. Met andere woorden, je hebt reeds vorig academiejaar generics gebruikt zonder het goed en wel te beseffen!
 
 Een volledig overzicht van alle mogelijk generic collections vind je hier terug [MSDN](http://msdn.microsoft.com/en-us/library/system.collections.generic.aspx).
 
@@ -161,7 +161,7 @@ I arrived second.
 
 ## Dictionary<TKey,TValue> collectie
 
-In de niet generieke-colletions heb je de Hashtable, de generische versie is de dictionary. In een dictionary wordt ieder element voorgesteld door een index en de waarde van het element. De sleutel moet een unieke waarde zijn zodat het element kan opgevraagd worden uit de dictionary aan de hand van deze sleutel.
+In de niet generieke-collections heb je de HashTable, de generische versie is de dictionary. In een dictionary wordt ieder element voorgesteld door een index en de waarde van het element. De sleutel moet een unieke waarde zijn zodat het element kan opgevraagd worden uit de dictionary aan de hand van deze sleutel.
 
 Bij de declaratie van de dictionary dien je op te geven wat het type van de key zal zijn , alsook het type van de waarde (value). In het volgende voorbeeld maken we een dictionary van klanten, iedere klant heeft een unieke ID (de key) alsook een naam (die niet noodzakelijk uniek is):
 

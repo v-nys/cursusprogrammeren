@@ -6,14 +6,14 @@ Maak een klasse ``Book``  en gebruik auto-properties voor de velden:
 * Author (string)
 Maak voorts een property voor Price, met bijhorende private price field.
 * Price (double)
-Maak een childklasse die van Book overerft genaamd ‘TextBook. Een textbook heeft één extra field:
+Maak een child-klasse die van Book overerft genaamd ‘TextBook. Een textbook heeft één extra field:
 * GradeLevel (int)
-Maak een childklasse die van Book overerft genaamd ‘CoffeeTableBook’. Deze klasse heeft geen extra velden.
+Maak een child-klasse die van Book overerft genaamd ‘CoffeeTableBook’. Deze klasse heeft geen extra velden.
 
 Voorts kunnen boeken "opgeteld" worden om als omnibus uitgebracht te worden. De titel wordt dan "Omnibus van [X]". waarbij X de Authors bevat, gescheiden met een komma. De prijs van een Omnibus is steeds de som van beide boeken gedeeld door 2.
 
-In beide childklassen, override de Price-setter zodat 
-a)	Bij Textbook de prijs enkel tu ssen 20 en 80 kan liggen
+In beide child-klassen, override de Price-setter zodat 
+a)	Bij Textbook de prijs enkel tussen 20 en 80 kan liggen
 b)	Bij CoffeeTableBooks de prijs enkel tussen 35 en 100 kan liggen
 
 ## Deel 2
@@ -25,7 +25,7 @@ Maak boeken aan van de 3 klassen, toon dat de prijs niet altijd zomaar ingesteld
 
 # Money, money, money
 Maak enkele klassen die een bank kan gebruiken.
-1. Abstracte klasse Rrekening: deze bevat een methode ``VoegGeldToe``  en ``HaalGeldAf``. Het saldo van de rekening wordt in een private variabele bijgehouden (en via de voorgaande methoden aangepast) die enkel via een readonly property kan uitgelezen worden. Voorts is er een abstracte methode ``BerekenRente`` de rente als double teruggeeft.
+1. Abstracte klasse ``Rekening``: deze bevat een methode ``VoegGeldToe``  en ``HaalGeldAf``. Het saldo van de rekening wordt in een private variabele bijgehouden (en via de voorgaande methoden aangepast) die enkel via een read-only property kan uitgelezen worden. Voorts is er een abstracte methode ``BerekenRente`` de rente als double teruggeeft.
 2. Een klasse ``BankRekening`` die een Rekening is. De rente van een BankRekening is 5% wanneer het saldo hoger is dan 100 euro, zoniet is deze 0%. 
 3. Een klasse ``SpaarRekening`` die een Rekening is. De rente van een SpaarRekening bedraagt steeds 2%.
 4. Een klasse ``ProRekening`` die een SpaarRekening is. De ProRekening hanteert de Rente-berekening van een SpaarRekening (``base.BerekenRente``) maar zal per 1000 euro saldo nog eens 10 euro verhogen. 

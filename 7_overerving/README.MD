@@ -7,10 +7,10 @@ De child-klasse kan alles wat de parent-klasse kan, maar de nieuwe klasse kan nu
 ## Is-een relatie
 Wanneer twee klassen met behulp van een "x is een y"-relatie kunnen beschreven worden dan weet je dat overerving mogelijk.
 
-* Een paard **is een** dier (paard = childklasse, dier= parentklasse)
+* Een paard **is een** dier (paard = child-klasse, dier= parent-klasse)
 * Een tulp **is een** plant
 
-(Opgelet: wanneer we "x heeft een y" zeggen gaat het ni�t over overerving, maar over compositie)
+(Opgelet: wanneer we "x heeft een y" zeggen gaat het **niet** over overerving, maar over compositie)
 
 ## Inheritance in C#
 Overving duid je aan met behulp van het dubbele punt(:)  bij de klassedefinitie:
@@ -42,13 +42,13 @@ aDier.KanHinnikken=false; //!!! zal niet werken!
 ```
 
 ## Multiple inheritance
-In C# is het niet mogelijk om een klasse van meer dan een parent-klasse te laten overerven (zogenaamde multiple inheritance), wat wel mogelijk is in sommige andere object geori�nteerde talen.
+In C# is het niet mogelijk om een klasse van meer dan een parent-klasse te laten overerven (zogenaamde multiple inheritance), wat wel mogelijk is in sommige andere object georiënteerde talen.
 
-## Transitivive
+## Transitive
 Overerving in C# is transitief, dit wil zeggen dat de child-klasse ALLES overerft van de parent-klasse: methoden, properties, etc.
 
 ## Protected
-Ook al is overering transitief, hou er rekening mee dat private variabelen en methoden van de parent-klasse NIET rechstreeks aanroepbaar zijn in de child-klasse. Private geeft aan dat het element enkel in de klasse zichtbaar is:
+Ook al is overevring transitief, hou er rekening mee dat private variabelen en methoden van de parent-klasse NIET rechtsreeks aanroepbaar zijn in de child-klasse. Private geeft aan dat het element enkel in de klasse zichtbaar is:
 ```csharp
 class Paard: Dier
 {
@@ -64,7 +64,7 @@ class Dier
 }
 ```
 
-Je kan dit oplossen door de **protected** access modifier ipv private te gebruiken. Met protected geef je aan dat het element enkel zichtbaar is binnen de klasse �n binnen child-klassen:
+Je kan dit oplossen door de **protected** access modifier ipv private te gebruiken. Met protected geef je aan dat het element enkel zichtbaar is binnen de klasse **en** binnen child-klassen:
 
 ```csharp
 class Paard: Dier

@@ -54,7 +54,7 @@ static void Main(string[] args)
 Dit geeft terug als output:
 
 ```
-Geta1 bedraagt in method:6
+Getal1 bedraagt in method:6
 Getal2 bedraagt in method:12
 Eerste bedraagt na method:5
 Tweede bedraagt na method:12
@@ -82,7 +82,7 @@ static void Main(string[] args)
 ```
 De uitvoer is de volgende, zoals verwacht: :
 ```
-Geta1 bedraagt in method:6
+Getal1 bedraagt in method:6
 Getal2 bedraagt in method:12
 Eerste bedraagt na method:5
 Tweede bedraagt na method:12

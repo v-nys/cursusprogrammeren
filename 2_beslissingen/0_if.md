@@ -1,10 +1,10 @@
 # Beslissingen/If statements
-Nu we de elementaire zaken van C# en Visual Studio kennen is het tijd om onze programma�s wat interessanter te maken. De ontwikkelde programma�s tot nog toe waren steevast lineair van opbouw, ze werden lijn per lijn uitgevoerd zonder de mogelijkheid om de �flow� van het programma aan te passen.
+Nu we de elementaire zaken van C# en Visual Studio kennen is het tijd om onze programma's wat interessanter te maken. De ontwikkelde programma�s tot nog toe waren steevast lineair van opbouw, ze werden lijn per lijn uitgevoerd zonder de mogelijkheid om de *flow* van het programma aan te passen.
 
 In dit deel  zullen we bekijken hoe we ons programma dynamischer kunnen maken met behulp van het if-statement.
 
 ## If
-De if uitdrukking is ��n van de elementairste uitdrukking in een programmeertaal. De syntax is als volgt:
+De ``if`` uitdrukking is 1 van de elementairste uitdrukking in een programmeertaal. De syntax is als volgt:
 
 ```csharp
 if (boolean expression) 
@@ -111,7 +111,7 @@ if ((a >= c) && (b <= c))
 ## Nesting
 We kunnen met behulp van nesting ook complexere programma flows maken. Hierbij gebruiken we de accolades om het blok code aan te duiden dat bij een if/else/if else hoort. Binnen dit blok kunnen nu echter opnieuw if/else/if else structuren worden aangemaakt.
 
-Volgende voorbeeld toont dit aan (bekijk wat er gebeurt als je emergencyValve aan �closed� gelijkstelt) :
+Volgende voorbeeld toont dit aan (bekijk wat er gebeurt als je emergencyValve aan ``closed`` gelijkstelt) :
 
 ````csharp
 int reactorTemp = 1500;

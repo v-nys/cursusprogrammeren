@@ -67,12 +67,12 @@ Geeft volgende output:
 ![](/assets/5_arrays/practarray6.png)
 
 ## Caesar-encryptie
-Maak 2 methoden ``Encrypt`` en ``Decrypt`` die als parameters telkens een array krijgen en een integer. Bedoeling is dat de Encrypt-methode de array van het type string encrypteert gegeven de sleutel x volgens het Caesar cipher (zie hieronder). Als resultaat komt er uit de methode de geëncrypteerde array. 
+Maak 2 methoden ``Encrypt`` en ``Decrypt`` die als parameters telkens een array krijgen en een integer. Bedoeling is dat de Encrypt-methode de array van het type string versleuteld gegeven de sleutel x volgens het Caesar cipher (zie hieronder). Als resultaat komt er uit de methode de geëncrypteerde array. 
 De decrypt-methode doet hetzelfde maar omgekeerd: je kan er een versleutelde tekst insteken en de sleutel en de ontcijferde tekst komt terug (merk op dat je decrypt-methode gebruik kan maken van de encrypt-methode!).
 
-Toon in je main aan dat je methoden werken (door bijvoorbeeld aan de gebruiker een stuk tekst te vragen en een sleutel en deze dan te encrypteren/decrypteren).
+Toon in je main aan dat je methoden werken (door bijvoorbeeld aan de gebruiker een stuk tekst te vragen en een sleutel en deze dan te encrypteren/de-crypteren).
 
-> Encryptie is de kunst van het vercijferen van data. Hierbij gaat men een gewone tekst zodanig omvormen (‘scramblen’) zodat deze onleesbaar is en enkel kan ontcijferd worden door de ontvanger die weet hoe de tekst terug kan verkregen worden en enkel indien deze ook de ‘private’ sleutel heeft.
+> Encryptie is de kunst van het vercijferen van data. Hierbij gaat men een gewone tekst zodanig omvormen (*versleutelen*) zodat deze onleesbaar is en enkel kan ontcijferd worden door de ontvanger die weet hoe de tekst terug kan verkregen worden en enkel indien deze ook de ‘private’ sleutel heeft.
 
 > Een klassiek encryptie-algoritme uit de oudheid is de Caesar substitutie. Hierbij gaan we het alfabet met x  plaatsen opschuiven en vervolgens de te vercijferen tekst letter per letter te vervangen met z’n respectievelijke opgeschoven versie. Hierbij is x dus de geheime sleutel die zender en ontvanger moeten afspreken.
 

@@ -4,7 +4,7 @@
 Maak een methode FilmRuntime() die 3 parameters accepteert:
 1. Een string die de naam van de film bevat
 2. Een integer die duur in minuten van de film bevat
-3. Een enumtype die het genre van de film bevat (Drama, Actie, etc.)
+3. Een enum-type die het genre van de film bevat (Drama, Actie, etc.)
 Indien de duur van de film niet wordt meegeven wordt een standaard  lengte van 90 minuten ingesteld. Indien het genre niet wordt meegeven dan wordt deze default op Onbekend ingesteld.
 
 De methode geeft niets terug maar toont eenvoudigweg de film op het scherm, gevolgd door z’n duur.

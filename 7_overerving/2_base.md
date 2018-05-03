@@ -1,7 +1,7 @@
 # Base keyword
-Het **base** keyword laat ons toe om bij een overide'n methode of property in de childklasse toch te verplichten om de parent-implementatie toe te passen.
+Het **base** keyword laat ons toe om bij een overiden methode of property in de child-klasse toch te verplichten om de parent-implementatie toe te passen.
 
-Stel dat we volgende 2 klassen hebbe:
+Stel dat we volgende 2 klassen hebben:
 ```csharp
 class Restaurant
 {

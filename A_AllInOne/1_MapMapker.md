@@ -334,9 +334,9 @@ De UpdateElements methode zou er dan als volgt kunnen uitzien:
             }
 ```
 ## Is/as
-Telkens we dus UpdateElements aanroepen dan worden alle elementen die bij het object horen ook geüpdate.
+Telkens we dus UpdateElements aanroepen dan worden alle elementen die bij het object horen ook geüpdatet.
 
-Nu rest ons nog één aanpassing, dat is ervoor zorgen dat deze methode ook effectief telkens wordt aangeroepen. De methode moet aangeroepen worden telkens we een aanpassing aan de Location van het SalonElement doen. Hierbij controleren we eerst of de locatie überhaupt al geïnitaliseerd is (anders is deze waarde gelijk aan ‘null’). Vervolgens berekenen we de offset, dit is het verschil tussen de huidige en de nieuwe locatie van de composietklasse.
+Nu rest ons nog één aanpassing, dat is ervoor zorgen dat deze methode ook effectief telkens wordt aangeroepen. De methode moet aangeroepen worden telkens we een aanpassing aan de Location van het SalonElement doen. Hierbij controleren we eerst of de locatie überhaupt al geïnitialiseerd is (anders is deze waarde gelijk aan ‘null’). Vervolgens berekenen we de offset, dit is het verschil tussen de huidige en de nieuwe locatie van de composietklasse.
 Daar Location bij MapObject hoort, moeten we dus in die klasse een aanpassing doen. We bereiden daarom de Locationproperty uit als volgt:
 ```csharp
         public Point Location

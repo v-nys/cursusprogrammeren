@@ -111,7 +111,7 @@ Bouw extra functionaliteit naar keuze bij de StudentOrganizer, zoals:
 
 ### PizzaTime
 Maak een klasse Pizza. Deze klasse heeft een aantal private fields:
-* toppings (string): bevat beschrijving van wat er op ligt, bv. Hawai, pepperoni, etc.
+* toppings (string): bevat beschrijving van wat er op ligt, bv. ananas, pepperoni, etc.
 * diameter (integer): doorsnede van de pizza in cm
 * price (double): prijs van de pizza in euro.
 Zorg ervoor dat je met behulp van properties deze 3 velden kan uitlezen en aanpassen. Bouw controle in zodat de fields geen foute waarden kunnen gegeven worden (denk maar aan negatieve prijs en diameter, pizza zonder topping, etc.). Maak in je main een aantal pizza-instanties aan en toon de werking van de properties aan.
@@ -126,7 +126,7 @@ Herschrijf de studentmanager zodat deze werkt met deze nieuwe klasse .
 Ontwerp een klasse Account die minstens een Naamveld, bedrag en rekeningnummer bevat. Voorzie 3 methoden: 
 1. WithdrawFunds: bepaald bedrag wordt van rekening verwijderd
 2. PayInFunds: bepaald bedrag (als parameter) wordt op de rekening gezet
-3. GetBalance: het totale bedrag op de rekning wordt teruggegeven
+3. GetBalance: het totale bedrag op de rekening wordt teruggegeven
 
 Pas de WithdrawFunds methode aan zodat als returntype het bedrag (int) wordt teruggegeven. Indien het gevraagde bedrag meer dan de balance is dan geef je al het geld terug dat nog op de rekening staat en toon je in de console dat niet al het geld kon worden gegeven.
 
@@ -186,7 +186,7 @@ Job epicDuoJob= jobOne+jobTwo;  //jobOne en jobTwo zijn ook van het type Job
 De som van 2 job-objecten gaat als volgt te werk:
 * Description: beide description worden na mekaar geplakt, waarbij het voegwoord ‘en’ tussen beide wordt gezet.
 * Duration: som van beide durations
-* RatePerHour: gemiddelde van beide rateperhours
+* RatePerHour: gemiddelde de ``rateperhour``van beide objecten
 Toon in je main aan dat je nieuwe klasse werkt en dat je 2 jobs kan samenvoegen. Toon ook aan dat je vervolgens deze nieuwe samenvoeging op zijn beurt kan samenvoegen met een andere job (of zelfs met een andere samengevoegde job!).
 
 ### Breuk

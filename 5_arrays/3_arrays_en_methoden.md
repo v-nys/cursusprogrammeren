@@ -32,7 +32,7 @@ En zal volgende error genereren:
 
 
 ### Voorbeeldprogramma met methoden
-Volgende programma toont hoe we verschillende onderdelen vand e code in methoden hebben geplaatst zodat:
+Volgende programma toont hoe we verschillende onderdelen van de code in methoden hebben geplaatst zodat:
 1. de lezer van de code sneller kan zien wat het programma juist doet
 2. zodat code herbruikbaar is
 

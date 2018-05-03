@@ -1,5 +1,5 @@
 # Constructors bij overerving
-Wanneer je een object instantieert van ee child-klasse dan gebeuren er meerdere zaken na mekaar, in volgende volgorde:
+Wanneer je een object instantiëert van ee child-klasse dan gebeuren er meerdere zaken na mekaar, in volgende volgorde:
 * Eerst wordt de constructor aangeroepen van de basis-klasse: dus steeds eerst die van ``System.Object``
 * Gevolgd door de constructors van alle parent-klassen
 * Finaal de constructor van de klasse zelf.
@@ -21,7 +21,7 @@ Indien je vervolgens een object aanmaakt van het type Medic:
 ```csharp
 Medic RexGregor= new Medic();
 ```
-Dan zal zien we de volgorde van constructoraanroep op het scherm:
+Dan zal zien we de volgorde van constructor-aanroep op het scherm:
 ```
 Soldier reporting in
 Who needs healing?
@@ -43,7 +43,7 @@ class Medic:Soldier
 }
 ```
 
-Wat je namelijk niet ziet bij child-klasses en hun constructors is dat er eigenlijk een impliciete call naar de basis-constructor wordt gedaan. Bij alle constructors staat eigenlijk ``:base()`` wat je ook zelf kunt schrijven:
+Wat je namelijk niet ziet bij child-klassen en hun constructors is dat er eigenlijk een impliciete call naar de basis-constructor wordt gedaan. Bij alle constructors staat eigenlijk ``:base()`` wat je ook zelf kunt schrijven:
 ```csharp
 class Medic:Soldier
 {

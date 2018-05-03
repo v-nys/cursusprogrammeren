@@ -80,7 +80,7 @@ Met als uitvoer:
 
 
 # Constraints
-We willen vaak voorkomen dat bepaalde types wel of niet gebruikt kunnen worden in je zelfgemaakte generieke klasse. Stel bijvoorbeeld dat je een klasse schrijft waarbij je de CompareTo() methode wenst te gebruiken. Dit gaat enkel indien het type in kwestie de IComparable interface implementeert. We kunnen als constraint ("beperking") dan opgeven dat de volgende klasse enkel kan geburikt worden door klassen die ook effectief die interface implementeren (en dus de CompareTo()-methoden hebben). Het geel deel geeft de constraint aan. We zeggen dus letterlijk ("waar T overerft van IComparable"):
+We willen vaak voorkomen dat bepaalde types wel of niet gebruikt kunnen worden in je zelfgemaakte generieke klasse. Stel bijvoorbeeld dat je een klasse schrijft waarbij je de CompareTo() methode wenst te gebruiken. Dit gaat enkel indien het type in kwestie de IComparable interface implementeert. We kunnen als constraint ("beperking") dan opgeven dat de volgende klasse enkel kan gebruikt worden door klassen die ook effectief die interface implementeren (en dus de CompareTo()-methoden hebben). Het geel deel geeft de constraint aan. We zeggen dus letterlijk ("waar T overerft van IComparable"):
 
 ```csharp
 public class Wijziging<T> where T : IComparable
@@ -109,7 +109,7 @@ Console.WriteLine(w.IsGestegen());
 ```
 
 ## Mogelijke constraints
-Verschillende zaken kunnen als constraint optreden. Naast de verplichting dat een bepaalde interface moet worden ge�mplementeerd kunnen ook volgende constraints gelden([meer info](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/generics/constraints-on-type-parameters)):
+Verschillende zaken kunnen als constraint optreden. Naast de verplichting dat een bepaalde interface moet worden geïmplementeerd kunnen ook volgende constraints gelden([meer info](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/generics/constraints-on-type-parameters)):
 * Enkel value types
 * Enkel klassen
 * Moet default constructor hebben

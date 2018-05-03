@@ -76,7 +76,7 @@ for (int i = 0; i < getallen.Length; i++)
     }
 }
 ```
-Voorgaande stukje code is de naïefste oplossing. Bedenk echter wat er gebeurt indien het getal dat we zoeken 2 of meerdere keren in de array staat. Index zal dan de positie bevatten van de laatst gevonden 12 in de array.
+Voorgaande stukje code is de meest naïeve oplossing. Bedenk echter wat er gebeurt indien het getal dat we zoeken 2 of meerdere keren in de array staat. Index zal dan de positie bevatten van de laatst gevonden 12 in de array.
 
 Het is zéér belangrijk dat je vlot dit soort algoritmen kan schrijven, zoals:
 

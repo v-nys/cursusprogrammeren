@@ -4,7 +4,7 @@ Veel code die we hebben geschreven wordt meerdere keren, al dan niet op verschil
 ## Wat is een methode
 Een methode, ook vaak functie genoemd, is in C# een stuk code ('block') bestaande uit een 0, 1 of meerder statements. De methode kan herhaaldelijk opgeroepen worden, al dan niet me extra parameters, en kan ook een resultaat terug geven.
 
-De basissyntax van een methode is de volgende indien je een methode in je hoofdprogramma wenst te schrijven (de werking van het keyword static zien we later):
+De basis-syntax van een methode is de volgende indien je een methode in je hoofdprogramma wenst te schrijven (de werking van het keyword static zien we later):
 
 ```csharp
 static returntype MethodeNaam(parameters)
@@ -142,7 +142,7 @@ Faculteit van 10 is 3628800
 
 Merk dus op dat dankzij je methode, je véél code maar één keer moet schrijven wat de kans op fouten gevoelig verlaagt.
 ### Volgorde van parameters
-De volgorde waarin je je parameters meegeeft bij de aanroep van een methode is belangrijk. De eerste variabele wordt aan de eerste parameter otegkeend, en zo voort. Volgende voorbeelde toont dit.
+De volgorde waarin je je parameters meegeeft bij de aanroep van een methode is belangrijk. De eerste variabele wordt aan de eerste parameter otegkeend, en zo voort. Volgende voorbeeld toont dit.
 Stel dat je een methode hebt:
 ```csharp 
 static void ToonDeling(double teller, double noemer)
@@ -193,7 +193,7 @@ Stel bijvoorbeeld dat je een methode hebt geschreven die de oppervlakte berekent
 
 ```csharp
 /*
- * OppervlakteDriehoek: Deze mehode berekent de oppervlakte van een driehoek
+ * OppervlakteDriehoek: Deze methode berekent de oppervlakte van een driehoek
  * 
  * Return: De oppervlakte van de driehoek
  *
@@ -298,7 +298,7 @@ Dit programma zal de zelfde output geven als het originele programma, maar de co
 ### Rente berekenen verbeterd, versie 2
 Je code opdelen in methoden is een zeer goede eerste stap naar modulair programmeren: kleine stukken code die ieder een eigen verantwoordelijkheid hebben. Om perfect modulair te zijn moet een methode zo praktische en algemeen mogelijk blijven, zodat de methode herbruikbaar is in andere projecten.
 
-In het vorige voorbeeld is de mehode van de renteberekening niet pefect modulair. Stel dat je later in het programma opnieuw de rente wil berekening maar niet het resultaat op het scherm wil tonen. Of stel dat je de rente wil berekenen met een andere percentage, dan kunnen we de eerder geschreven methode dus niet gebruiken.
+In het vorige voorbeeld is de methode van de renteberekening niet perfect modulair. Stel dat je later in het programma opnieuw de rente wil berekening maar niet het resultaat op het scherm wil tonen. Of stel dat je de rente wil berekenen met een andere percentage, dan kunnen we de eerder geschreven methode dus niet gebruiken.
 
 **Modulair programmeren**: indien je modulair wenst te programmeren moet je je aan volgende zaken houden:
 * Beperk de methode strikt tot het uitvoeren van de opgedragen taak. Dus in het voorbeeld: alleen de renteberekening en geen verdere verwerking van de resultaten.

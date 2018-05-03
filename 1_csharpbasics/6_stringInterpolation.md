@@ -17,7 +17,7 @@ string result= "Ik ben "+ name + "en ik ben "+ age+ " jaar oud";
 Let er op dat je tussen de aanhalingsteken (binnen de strings) spaties zet indien je het volgende deel niet 'tegen het vorige stringstuk' wilt plakken.
 
 ## * string interpolation
-In de oude dagen van C# gebruiketn we String.Format() om meerdere string(s) en variabelen samen te voegen tot een string. Nu kan dat met string interpolation waarbij we het $-teken gebruiken.
+In de oude dagen van C# gebruiken we String.Format() om meerdere string(s) en variabelen samen te voegen tot een string. Nu kan dat met string interpolation waarbij we het $-teken gebruiken.
 Door het $-teken VOOR de string te plaatsen geef je aan dat alle delen in de string die tussen accolades staan { } als code mogen beschouwd worden. Een voorbeeld maakt dit duidelijk:
 ```csharp
 string result= $"Ik ben {name} en ik ben {age} jaar oud";
@@ -25,7 +25,7 @@ string result= $"Ik ben {name} en ik ben {age} jaar oud";
 Zoals je kan zien is dit veel leesbaarder dan de eerste manier.
 
 ### Berekeningen doen
-Je mag eender welk statement tussen de accoldates zetten, denk maar aan:
+Je mag eender welk statement tussen de accolades zetten, denk maar aan:
 ```csharp
 string result= $"Ik ben {name} en ik ben {age+4} jaar oud";
 ```

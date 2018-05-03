@@ -61,7 +61,7 @@ string[] myColors;
 myColors = new string[5];
 ```
 ## Elementen van een array aanpassen en uitlezen
-Vanaf er waarden in een array staan of moeten bijgeplaatst worden dan kan je deze benaderen met de zogenaamde �array accessor� notatie Deze notatie is heel eenvoudigweg de volgende:
+Vanaf er waarden in een array staan of moeten bijgeplaatst worden dan kan je deze benaderen met de zogenaamde *array accessor* notatie Deze notatie is heel eenvoudigweg de volgende:
 
 ```csharp
 myColors[i];
@@ -79,7 +79,7 @@ Ook schrijven van waarden naar de array gebruikt dezelfde notatie. Enkel moet je
 ```csharp
 myColors[0] = "indigo";
 ```
-Als we dus bij aanvang nog niet weten welke waarden de individuele elementen moeten hebben in een array, dan kunnen we deze eerst definieren, en vervolgens individueel toekennen:
+Als we dus bij aanvang nog niet weten welke waarden de individuele elementen moeten hebben in een array, dan kunnen we deze eerst definiëren, en vervolgens individueel toekennen:
 
 ```csharp
 string[] myColors;
@@ -92,7 +92,7 @@ myColors[3]= "orange";
 myColors[4]= "blue";
 ```
 ## Uitlezen
-Stel dat we een array aanmaken (eerste lijn) dan kunnen we dus bijvoorbeeld het getal �90� op het scherm tonen als volgt:
+Stel dat we een array aanmaken (eerste lijn) dan kunnen we dus bijvoorbeeld het getal ``90`` op het scherm tonen als volgt:
 
 ```csharp
 int[] scores = { 100, 90, 55, 0, 34 };
@@ -143,7 +143,7 @@ for(int teller=0; teller < 4; teller++)
 numbers[teller] += 5;
 ```
 ## De lengte van de array te weten komen
-Soms kan het nodig zijn dat je in een later stadium van je programma de lengte van je array nodig hebt. De *�Length�* eigenschap van iedere array geeft dit weer. Volgende voorbeeld toen dit:
+Soms kan het nodig zijn dat je in een later stadium van je programma de lengte van je array nodig hebt. De ``Length`` eigenschap van iedere array geeft dit weer. Volgende voorbeeld toen dit:
 
 ```csharp
 string[] myColors = { "red", "green", "yellow", "orange", "blue" };
@@ -164,7 +164,7 @@ for (int i = 0; i < getallen.Length; i++)
 }
 ```
 ## Volledig voorbeeldprogramma met arrays
-Met al de voorgaande informatie is het nu mogelijk om heel eenvoudig complexere programma�s te schrijven die veel data moeten kunnen verwerken. Meestal gebruikt men een for-element om een bepaalde operatie over de hele array toe te passen.
+Met al de voorgaande informatie is het nu mogelijk om heel eenvoudig complexere programma's te schrijven die veel data moeten kunnen verwerken. Meestal gebruikt men een for-element om een bepaalde operatie over de hele array toe te passen.
 
 Het volgende programma zal een array van integers aanmaken die alle gehele getallen van 0 tot 99 bevat. Vervolgens zal ieder getal met 3 vermenigvuldigd worden. Finaal tonen we tonen we enkel die getallen die een veelvoud van 4 zijn na de bewerking.
 

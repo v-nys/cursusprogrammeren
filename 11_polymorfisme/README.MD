@@ -1,6 +1,6 @@
 # Polymorfisme
 
-**Polymorfisme** oftewel "meerdere vormen" is een programmeertechniek waarbij je code schrijft die door objecten van verschillende klasse, kan gebruikt worden. Hierdoor kan je dus compactere code schrijven en hoef je niet voor iedere klasse appart (deel)code te schrijven. Samen met encapsulatie en overerving is polymrfisme een derde belangrijke eigenschap van object georienteerd programmeren.
+**Polymorfisme** oftewel "meerdere vormen" is een programmeertechniek waarbij je code schrijft die door objecten van verschillende klasse, kan gebruikt worden. Hierdoor kan je dus compactere code schrijven en hoef je niet voor iedere klasse appart (deel)code te schrijven. Samen met encapsulatie en overerving is polymorfisme een derde belangrijke eigenschap van object georiënteerd programmeren.
 
 We tonen het nut van polymorfisme aan de hand van drie voorbeelden:
 
@@ -68,7 +68,7 @@ public class President
     }
 }
 ```
-Je merkt dat de President (of de programmeur van deze klasse) aardig wat specifieke kennis moet hebben van de vele verschillende departementen van het land. Uiteraard is dat onmogenlijk (een fictief voorbeeld: stel je Trump voor...Denk je echt dat die zo veel weet?) . Bovenstaande code is dus zeer slecht. Telkens er zaken binnen een specifiek landsonderdeel wijzigen moet dit ook in de klasse President aangepast worden. 
+Je merkt dat de President (of de programmeur van deze klasse) aardig wat specifieke kennis moet hebben van de vele verschillende departementen van het land. Uiteraard is dat onmogelijk (een fictief voorbeeld: stel je Trump voor...Denk je echt dat die zo veel weet?) . Bovenstaande code is dus zeer slecht. Telkens er zaken binnen een specifiek landsonderdeel wijzigen moet dit ook in de klasse President aangepast worden. 
 
 Dankzij polymorfisme kunnen we dit alles veel mooier oplossen:
 1. We verplichten alle adviseurs dat ze overerven van de abstracte klasse ``Advisor`` die maar 1 abstracte methode heeft ``Advise``:

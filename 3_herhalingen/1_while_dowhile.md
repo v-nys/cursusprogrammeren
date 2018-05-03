@@ -10,7 +10,7 @@ while (condition)
 // C# code to be performed while expression evaluates to true
 }
 ```
-Waarbij we, net als bij een if statement, de conditie uitgedrukt wordt als een booleanse expressie met 1 of meerdere relationele operators.
+Waarbij we, net als bij een if statement, de conditie uitgedrukt wordt als een booleaanse expressie met 1 of meerdere relationele operators.
 
 Zolang de conditie true is zal de code binnen de accolades uitgevoerd worden. Indien dus de conditie reeds vanaf het begin false is dan zal de code binnen de while-loop niet worden uitgevoerd.
 
@@ -54,7 +54,7 @@ do
 
 ## Complexe condities
 
-Uiteraard mag de conditie waaraan een loop moet voldoen complexer zijn door middel van de booleanse logische operator.
+Uiteraard mag de conditie waaraan een loop moet voldoen complexer zijn door middel van de booleaanse logische operator.
 Volgende while bijvoorbeeld zal uitgevoerd worden zolang teller groter is dan 5 en de variabele naam van het type string niet gelijk is aan "tim":
 ```csharp
 while(teller> && naam!="tim")

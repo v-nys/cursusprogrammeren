@@ -18,7 +18,7 @@ public static void ToonArray(string[] array)
     }
 }
 ```
-Dankzij generics kunnen we nu het deel dat �generiek� moet zijn aanduiden (in dit geval met T) en onze methode eenmalig definieren:
+Dankzij generics kunnen we nu het deel dat *generiek* moet zijn aanduiden (in dit geval met ``T``) en onze methode eenmalig definiëren:
 
 ```csharp
 public static void ToonArray<T>(T[] array)

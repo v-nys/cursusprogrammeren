@@ -16,7 +16,7 @@ abstract class Dier
 }
 ```
 
-Volgende lijn zal een error geven: ``Dier hetDier= new Dier();``
+Volgende lijn zal een error geven: ``Dier hetDier = new Dier();``
 
 We mogen echter wel klassen overerven van deze klasse en instanties van aanmaken:
 ```csharp
@@ -46,7 +46,7 @@ abstract class  Dier
 ```
 Merk op dat er geen accolades na de signature komen.
 
-Child-klassen **zijn verplicht deze abstracte methoden te override'n**.
+Child-klassen **zijn verplicht deze abstracte methoden te overriden**.
 
 De Paard-klasse wordt dan:
 ```csharp
