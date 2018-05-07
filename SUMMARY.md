@@ -36,6 +36,7 @@
   * [Werken met arrays](5_arrays/2_werken_met_arrays.md)
   * [Arrays en methoden](5_arrays/3_arrays_en_methoden.md)
   * [N-dimensionale arrays](5_arrays/4_ndimensionalArrays.md)
+  * [Jagged arrays](5_arrays/5_jaggedArrays.md)
   * [Labo-oefeningen](5_arrays/A_Practica.md)
 * [Klassen en objecten](6_klassen_en_objecten/README.MD)
   * [Autoproperties](6_klassen_en_objecten/3_autoprop.md)
