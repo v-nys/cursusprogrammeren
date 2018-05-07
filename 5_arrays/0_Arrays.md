@@ -1,7 +1,7 @@
 # Werken met arrays
 
 ## Arrays declareren
-Een array cre�ren (declareren) kan op verschillende manieren. Hoewel manier 1 de meest gebruikelijke is, zal deze voor de beginnende programmeur nog wat abstract lijken vanwege het gebruik van het new keyword. Manier 2 is de eenvoudigste en snelste manier, maar deze is wel minder flexibel.
+Een array creëren (declareren) kan op verschillende manieren. Hoewel manier 1 de meest gebruikelijke is, zal deze voor de beginnende programmeur nog wat abstract lijken vanwege het gebruik van het new keyword. Manier 2 is de eenvoudigste en snelste manier, maar deze is wel minder flexibel.
 
 ### Manier 1
 De eenvoudigste variant is deze waarbij je een array variabele aanmaakt, maar deze nog niet initialiseert (i.e. je maakt enkel een identifier in aan). De syntax is als volgt:
@@ -9,7 +9,7 @@ De eenvoudigste variant is deze waarbij je een array variabele aanmaakt, maar de
 ```csharp
 type[] arraynaam;
 ```
-Type kan dus eender welk type zijn dat je reeds kent. De [ ] (�brackets�) duiden aan dat het om een array gaat.
+Type kan dus eender welk type zijn dat je reeds kent. De [ ] (*square brackets*) duiden aan dat het om een array gaat.
 
 Voorbeelden van array declaraties kunnen dus bijvoorbeeld zijn:
 ```csharp
@@ -60,8 +60,11 @@ string[] myColors = {"red", "green", "yellow", "orange", "blue" };
 string[] myColors;
 myColors = new string[5];
 ```
+
+
+
 ## Elementen van een array aanpassen en uitlezen
-Vanaf er waarden in een array staan of moeten bijgeplaatst worden dan kan je deze benaderen met de zogenaamde *array accessor* notatie Deze notatie is heel eenvoudigweg de volgende:
+Van zodra er waarden in een array staan of moeten bijgeplaatst worden dan kan je deze benaderen met de zogenaamde *array accessor* notatie Deze notatie is heel eenvoudigweg de volgende:
 
 ```csharp
 myColors[i];
@@ -72,6 +75,12 @@ We plaatsen de naam van de array, gevolgd door brackets waarbinnen een getal i a
 
 ![](/assets/5_arrays/arrays1.png)
 
+### Veelgemaakte foute: Lengte en indexering van een arrays
+Het gebeurt vaak dat beginnende programmeurs verward geraken omtrent het aanmaken van een array aan de hand van de lengte en het indexeren.
+
+De regels zijn duidelijk:
+* Bij het maken van een array is de lengte van een array gelijk aan het aantal elementen dat er in aanwezig is. Dus een array met 5 elementen heeft als lengte 5.
+* Bij het schrijven en lezen van individuele elementen uit de array (zie hierna) gebruiken we een indexering die start bij 0. Bijgevolg is de index **4** van het laatste elemente in een array met **lengte 5**.
 
 ## Schrijven
 Ook schrijven van waarden naar de array gebruikt dezelfde notatie. Enkel moet je dus deze keer de array accessor-notatie links van de toekenningsoperator plaatsen. Stel dat we bijvoorbeeld de waarde van het eerste element uit de myColors array willen veranderen van red naar indigo, dan gebruiken we volgende notatie:
@@ -131,8 +140,8 @@ int[] numbers = {5, 10, 30, 45};
 int teller = 0;
 while (teller < 4)
 {
-numbers[teller] += 5;
-teller++
+    numbers[teller] += 5;
+    teller++
 }
 ```
 Of het equivalent met een for-loop
@@ -140,7 +149,9 @@ Of het equivalent met een for-loop
 ```csharp
 int[] numbers = {5, 10, 30, 45};
 for(int teller=0; teller < 4; teller++)
-numbers[teller] += 5;
+{
+    numbers[teller] += 5;
+}
 ```
 ## De lengte van de array te weten komen
 Soms kan het nodig zijn dat je in een later stadium van je programma de lengte van je array nodig hebt. De ``Length`` eigenschap van iedere array geeft dit weer. Volgende voorbeeld toen dit:
@@ -192,4 +203,6 @@ for (int i = 0; i < getallen.Length; i++)
 }
 ```
 
+# Geheugengebruik bij arrays
+[Zie volgende filmpje op 31minuten.](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=17ce5c87-2b6a-46ea-b7b1-a87e00a7e4e5)
 
