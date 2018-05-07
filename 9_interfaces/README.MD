@@ -1,4 +1,4 @@
-#Interface
+# Interfaces
 TODO
 
 ## Voorbeeld: Presidenten en interfaces
@@ -16,7 +16,7 @@ interface IAdvisor
 
 Vanaf nu kan eender *wie* die deze interface implementeert de President advies geven.Hoera! En daarnaast kan die klasse echter ook nog tal van andere zaken doen. Beeld je bijvoorbeeld een CEO van een bedrijf in die ook adviseur van de President wilt zijn. De bestaande klasse is bijvoorbeeld:
 ```csharp
-class MicrosoftCEO: CEO   //CEO is een parentklasse die elders bijvoorbeeld algemene CEO-concepten beschrijft
+class MicrosoftCEO: CEO   //CEO kan een parentklasse zijn die elders bijvoorbeeld algemene CEO-concepten beschrijft
 {
     public void EarnBigBucks()
     { 
@@ -69,26 +69,28 @@ public class MisterPresident
 ```
 
 De eerder beschreven ``MilitaryAdvisor``,``ScienceAdvisor`` en ``EconomyAdvisor`` dienen ook niet meer van de abstracte klasse ``Àdvisor``(deze zou je kunnen verwijderen) over te erven en kunnen gewoon de interface implementeren:
+
 ```csharp
 class MilitaryMinistor:IAdvisor
 {
-  public void Advise()
-  {
-       increaseTroopNumbers();
-       improveSecurity();
-       payContractors();
-  }
-  private void increaseTroopNumbers() 
-  {
-  //...
-  }
+    public void Advise()
+    {
+        increaseTroopNumbers();
+        improveSecurity();
+        payContractors();
+    }
+
+    private void increaseTroopNumbers() 
+    {
+      //...
+    }
     private void improveSecurity() 
-  {
-  //...
-  }
+    {
+       //...
+    }
     private void improveSecurity() 
-  {
-  //...
-  }
+    {
+      //...
+ }
 }
 ```
