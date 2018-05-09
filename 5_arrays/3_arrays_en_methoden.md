@@ -17,6 +17,7 @@ static void EenVoorbeeldMethode(int[] inArray)
 }
 ```
 
+### Array grootte in de methode
 Een array als parameter meegeven kan dus, maar een ander aspect waar rekening mee gehouden moet worden is dat je niet kan ingeven in de parameterlijst hoe groot de array is! Je zal dus in je methode steeds de grootte van de array moeten uitlezen met de Length-eigenschap.
 
 Volgende methode is dus **FOUT**!
@@ -31,6 +32,32 @@ En zal volgende error genereren:
 
 ![](/assets/5_arrays/arrays3.png)
 
+## Arraymethode voorbeeld
+
+Volgende voorbeeld toont een methode die alle getallen van de array op het scherm zal tonen:
+```csharp
+static void ToonArray(int[] getalArray)
+{
+    Console.WriteLine("Array output:");
+    for (int i = 0; i < getalArray.Length; i++)
+    {
+        Console.WriteLine(getalArray[i]);
+    }
+}
+```
+Stel dat je elders volgende array hebt ``int[] leeftijden= {2,5,1,6};``.
+De ``ToonArray`` methode aanroepen kan dan als volgt:
+```csharp
+ToonArray(leeftijden);
+``` 
+En de output zal dan zijn:
+```
+Array output:
+2
+5
+1
+6
+```
 
 ### Voorbeeldprogramma met methoden
 Volgende programma toont hoe we verschillende onderdelen van de code in methoden hebben geplaatst zodat:
