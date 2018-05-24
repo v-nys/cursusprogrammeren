@@ -53,7 +53,7 @@
 * [Polymorfisme](11_polymorfisme/README.MD)
   * [Labo-oefeningen](11_polymorfisme/A_Practica.md)
 * [Interfaces](9_interfaces/README.MD)
-  * [Interfaces in de praktijk](2_InterfacesInPraktijk.md)
+  * [Interfaces in de praktijk](9_interfaces/2_InterfacesInPraktijk.md)
   * [Labo-oefeningen](9_interfaces/A_Practica.md)
 * [Generics](10_generics/README.MD)
   * [Generic methods](10_generics/0_genericmethods.md)
