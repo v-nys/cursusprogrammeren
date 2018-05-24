@@ -1,0 +1,2 @@
+# Enum datatypes
+[TODO]
