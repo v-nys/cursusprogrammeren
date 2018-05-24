@@ -27,6 +27,8 @@ Het is in de klassen dat we nu vervolgens verplicht zijn deze methode en propert
 
 >**Een interface is een beschrijving hoe een component een andere component kan gebruiken, zonder te zeggen hoe dit moet gebeuren. De interface is met andere woorden 100% scheiding tussen de methode/Property-signatuur en de eigenlijke implementatie ervan.**
 
+![](/assets/9_interfaces/scuminterface.jpg)
+
 ## Interface regels
 * Je kan geen  membervariabelen (fields) declareren in een interface (dat hoort bij de implementatie)
 * Je kan geen constructor declareren

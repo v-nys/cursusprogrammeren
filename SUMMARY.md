@@ -3,6 +3,9 @@
 * [FrontMatter](README.md)
 * [Inleiding](0_intro/README.md)
   * [Benodigdheden](0_intro/benodigdheden.md)
+
+## Semester 1
+
 * [Basics](1_csharpbasics/README.md)
   * [Essentiele zaken](1_csharpbasics/0_csharpessentials.md)
   * [Console basics](1_csharpbasics/0b_console.md)
@@ -38,6 +41,9 @@
   * [N-dimensionale arrays](5_arrays/4_ndimensionalArrays.md)
   * [Jagged arrays](5_arrays/5_jaggedArrays.md)
   * [Labo-oefeningen](5_arrays/A_Practica.md)
+
+## Semester 2
+
 * [Klassen en objecten](6_klassen_en_objecten/README.MD)
   * [Autoproperties](6_klassen_en_objecten/3_autoprop.md)
   * [Labo-oefeningen](6_klassen_en_objecten/A_Practica.md)

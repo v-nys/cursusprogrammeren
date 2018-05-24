@@ -38,6 +38,7 @@ Wanneer we nu proberen:
 Array.Sort(eurolanden);
 ```
 Dan treedt er een uitzondering op:``InvalidOperationException: Failed to compare two elements in the array`` 
+![](/assets/9_interfaces/interfaceexep.png)
 
 ### Stap 2: IComparable onderzoeken
 We kunnen dit oplossen door de ``IComparable`` interface in de klasse ``Land`` te implementeren. We bekijken daarom eerst de documentatie van deze interface ([hier](https://msdn.microsoft.com/en-us/library/system.icomparable(v=vs.110).aspx 

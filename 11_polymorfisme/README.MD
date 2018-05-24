@@ -41,6 +41,7 @@ Console.WriteLine(anotherAnimal.MaakGeluid()); //Oinkoink
 ```
 
 ## Polymorfisme in de praktijk: Presidenten
+![](/assets/9_interfaces/president.jpg)
 Beeld je in dat je een klasse President hebt met een methode "RunTheCountry" (voorbeeld van [StackOverflow](https://stackoverflow.com/questions/1031273/what-is-polymorphism-what-is-it-for-and-how-is-it-used) ). De President heeft toegang tot tal van adviseurs die hem kunnen helpen (inzake miltair, binnenlands beleid, economie). Zonder de voordelen van polymorfisme zou de klasse President er zo kunnen uitzien, **slechte manier**:
 ```csharp
 public class President
