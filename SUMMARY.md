@@ -60,5 +60,7 @@
   * [Generic classes en constraints](10_generics/2_genericclasses_en_constraints.md)
   * [Collections](10_generics/8_Collections.md)
   * [Labo-oefeningen](10_generics/A_Practica.md)
+* [Is en As keyword](12_IsAs/README.MD)
+  * [Polymorfisme en interfaces](A_AllInOne/2_Polymorfisme_Interfaces.md)
 * All-In-Projects
   * [MapMaker](A_AllInOne/1_MapMapker.md)
