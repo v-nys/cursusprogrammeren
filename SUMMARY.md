@@ -61,6 +61,6 @@
   * [Collections](10_generics/8_Collections.md)
   * [Labo-oefeningen](10_generics/A_Practica.md)
 * [Is en As keyword](12_IsAs/README.MD)
-  * [Polymorfisme en interfaces](A_AllInOne/2_Polymorfisme_Interfaces.md)
+  * [Polymorfisme en interfaces](12_IsAs/2_Polymorfisme_Interfaces.md)
 * All-In-Projects
   * [MapMaker](A_AllInOne/1_MapMapker.md)
