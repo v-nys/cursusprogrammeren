@@ -50,6 +50,9 @@ interface IComparable
 }
 ```
 
+**OPGELET: Deze interface bestaat al in .NET en mag je dus niet opnieuw in code schrijven!**
+
+
 Daarbij moet de methode een int  teruggeven als volgt:
 | Waarde        | Betekenis           |
 | ------------- |:-------------:| 
