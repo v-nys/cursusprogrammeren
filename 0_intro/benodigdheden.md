@@ -7,6 +7,8 @@ In alle lessen \(hoorcollege en practica\) hebben we 2 zaken nodig:
 
 # Cheat sheet
 Volgende document bevat een overzicht van de basis C# zaken van het eerste en (deel van het) tweede semester:
+
+
 ![/assets/0_intro/cheat-sheet.pdf](/assets/0_intro/cheatprev.jpg)
 
 
