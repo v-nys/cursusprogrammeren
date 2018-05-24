@@ -1,4 +1,4 @@
-# Werken met arrays
+# Array Basics
 
 ## Arrays declareren
 Een array creëren (declareren) kan op verschillende manieren. Hoewel manier 1 de meest gebruikelijke is, zal deze voor de beginnende programmeur nog wat abstract lijken vanwege het gebruik van het new keyword. Manier 2 is de eenvoudigste en snelste manier, maar deze is wel minder flexibel.
