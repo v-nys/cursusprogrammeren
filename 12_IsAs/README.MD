@@ -69,7 +69,7 @@ if(tim is IDeletable)
 
 Ouput: ``I can delete game of thrones``.
 
-## As keyword
+## As keyword met voorbeeld
 Wanneer we objecten van het ene naar het andere type willen omzetten dan doen we dit vaak met behulp van [casting](/1_csharpbasics/4_converteren_casting.md):
 ```csharp
 Student fritz= new Student();
@@ -79,6 +79,7 @@ Mens jos = (Mens)fritz;
  Het probleem bij casting is dat dit niet altijd lukt. Indien de conversie niet mogelijk is zal een Exception gegenereerd worden en je programma zal  crashen als  je niet aan [Exception handling doet](https://codevan1001nacht.wordpress.com/2013/11/06/exception-handling/).
 
  Het ``as`` keyword lost dit op. Het keyword zegt aan de compiler 'probeer dit object te converteren.Als het niet lukt, zet het dan op ``null`` in plaats van een Exception te werpen.
+ 
  De code van daarnet herschrijven we dan naar:
 
  ```csharp
