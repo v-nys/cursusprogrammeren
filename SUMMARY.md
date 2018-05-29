@@ -40,7 +40,7 @@
   * [Labo-oefeningen](4_methoden/A_Practica.md)
 * Arrays
   * [Array intro](5_arrays/0_ArraysIntro.md)
-  * [Array principes](5_arrays/1_ArrayBasics.md)
+  * [Array principes](5_arrays/1_ArraysBasics.md)
   * [Werken met arrays](5_arrays/2_werken_met_arrays.md)
   * [Arrays en methoden](5_arrays/3_arrays_en_methoden.md)
   * [N-dimensionale arrays](5_arrays/4_ndimensionalArrays.md)
