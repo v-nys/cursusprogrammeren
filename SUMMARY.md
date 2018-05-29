@@ -83,5 +83,5 @@
   * [Polymorfisme en interfaces](12_IsAs/2_Polymorfisme_Interfaces.md)
   * [Labo-oefeningen](12_IsAs/A_Practica.md)
 * All-In-Projecten
-  * [Overzicht](A_AllInOne/0_IntroductieAllInOne)
+  * [Overzicht](A_AllInOne/0_IntroductieAllInOne.md)
 
