@@ -85,7 +85,7 @@
   * [Polymorfisme en interfaces](12_IsAs/2_Polymorfisme_Interfaces.md)
   * [Labo-oefeningen](12_IsAs/A_Practica.md)
 * All-In-Projecten
-  * [Overzicht](A_DEEL2_AllInOne/0_IntroductieAllInOne.md)
+  * [Overzicht](A_DEEL2_AllInOne/0_Deel2_IntroductieAllInOne)
   * [OO Textbased Game](A_DEEL2_AllInOne/2_OOTextGame.md)
   * [War Simulator](A_DEEL2_AllInOne/3_WarGame.md)
   * [Map Maker](A_DEEL2_AllInOne/1_MapMapker.md) 
