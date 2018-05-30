@@ -46,7 +46,10 @@
   * [Labo-oefeningen](5_arrays/A_Practica.md)
 * All-In-Projecten
   * [Overzicht](A_DEEL1_AllInOne/0_Deel1_IntroductieAllInOne.md)
-  * [Ascii Movies](A_DEEL1_AllInOne/2_AsciiMoviesWithMethods.md)
+  * [Console Matrix](A_DEEL1_AllInOne/31_ConsoleMatrix.md)
+  * [Ascii filmpjes maken met loops](A_DEEL1_AllInOne/3_AsciiMovieWithLoops.md)
+  * [Ascii filmpjes maken met methoden](A_DEEL1_AllInOne/2_AsciiMoviesWithMethods.md)
+
 
 ## Semester 2
 

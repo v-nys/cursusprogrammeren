@@ -1,6 +1,6 @@
 # Methoden gebruiken om een ascii-filmpje te maken
 
-Volgende demonstratie toont de kracht van methoden. We zullen een steeds complexer geheel maken, dat dankzij methoden, nog steeds onderhoudbaar én leesbaar zal blijven. We zullen een bottom-up approach hanteren waarbij we eerst beginnen met de meest basis-functionaliteit die we nodig hebben en zo steeds een schil , in de vorm van een methode, er omheen coderen.
+Volgende demonstratie toont de kracht van methoden. We zullen een steeds complexer geheel maken, dat dankzij methoden, nog steeds onderhoudbaar én leesbaar zal blijven. We zullen een bottom-up approach hanteren waarbij we eerst beginnen met de meest basis-functionaliteit die we nodig hebben en zo steeds een schil , in de vorm van een methode, er omheen coderen. 
 
 Ons doel is een method ``SpeelFilm`` te maken die een filmpje, bestaande uit opeen volgende frames en scenes, zal afspelen in de Console.
 
