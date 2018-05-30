@@ -960,9 +960,3 @@ private static void DrawMapCool(int[,] Kaart, int posX, int posY)
 }
 
 ```
-
-```csharp
-```
-
-```csharp
-```
