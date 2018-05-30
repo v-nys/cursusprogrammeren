@@ -8,4 +8,5 @@ Volgt nu een beschrijving van de belangrijkste technieken die je in de projecten
 * [Console Matrix](A_DEEL1_AllInOne/1_ConsoleMatrix.md): Console, ConsoleColor, Loops, Random
 * [Ascii filmpjes maken met loops](A_DEEL1_AllInOne/3_AsciiMovieWithLoops.md):  Loops, Beslissingen, Chars, Casting
 * [Ascii filmpjes maken met methoden](A_DEEL1_AllInOne/2_AsciiMoviesWithMethods.md): Vorige project + Methoden, Chars, Casting
-* TODO: textbased game walkthrough
+* [Tekst-gebaseerd Maze game](A_DEEL1_AllInOne/4_MazeGame.md): Loops, Methoden, Arrays, ``out`` 
+

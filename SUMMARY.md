@@ -49,6 +49,8 @@
   * [Console Matrix](A_DEEL1_AllInOne/1_ConsoleMatrix.md)
   * [Ascii filmpjes maken met loops](A_DEEL1_AllInOne/3_AsciiMovieWithLoops.md)
   * [Ascii filmpjes maken met methoden](A_DEEL1_AllInOne/2_AsciiMoviesWithMethods.md)
+  * [Tekst-gebaseerd Maze game](A_DEEL1_AllInOne/4_MazeGame.md)
+
 
 
 ## Semester 2
