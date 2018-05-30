@@ -6,6 +6,6 @@ Volgende hoofdstukken bevatten grotere projecten waarin wordt getracht meerdere 
 
 Volgt nu een beschrijving van de belangrijkste technieken die je in de projecten hierna zal tegenkomen:
 
-* TODO: fun with methods
+* [Ascii filmpjes maken](A_DEEL1_AllInOne/2_AsciiMoviesWithMethods.md): Methoden, Loops, Beslissingen
 * TODO: fun with loops
 * TODO: textbased game walkthrough

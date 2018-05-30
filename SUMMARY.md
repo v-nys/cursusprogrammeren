@@ -16,7 +16,6 @@
   * [Strings samenvoegen](1_csharpbasics/6_stringInterpolation.md)
   * [Casting, conversie en parsing](1_csharpbasics/4_converteren_casting.md)
   * [Enums](1_csharpbasics/7_enum.md)
-  * [Vreemde tekens in console tonen \(Ascii/unicode\)](1_csharpbasics/10_unicodechars.md)
   * [Labo-oefeningen](1_csharpbasics/A_Practica.md)
 * Beslissingen
   * [Beslissingen intro](2_beslissingen/0_beslissingen_intro.md)
@@ -36,7 +35,6 @@
   * [Bibliotheken (Math.Pow)](4_methoden/1_bibliotheken.MD)
   * [Out en Ref parameters](4_methoden/2_outenref.MD)
   * [Geavanceerde methoden](4_methoden/3_advancedmethod.md)
-  * [Fun with methods](4_methoden/10_funwithmethods.MD)
   * [Labo-oefeningen](4_methoden/A_Practica.md)
 * Arrays
   * [Array intro](5_arrays/0_ArraysIntro.md)
@@ -48,6 +46,7 @@
   * [Labo-oefeningen](5_arrays/A_Practica.md)
 * All-In-Projecten
   * [Overzicht](A_DEEL1_AllInOne/0_Deel1_IntroductieAllInOne.md)
+  * [Ascii Movies](A_DEEL1_AllInOne/2_AsciiMoviesWithMethods.md)
 
 ## Semester 2
 
