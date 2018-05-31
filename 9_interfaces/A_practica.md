@@ -5,7 +5,8 @@ Gebruik je [Rechthoek-klasse uit de Figuren oefening](../6_klassen_en_objecten/A
 Toon de werking aan in een klein voorbeeld programma. 
 Ignore dit stuk, trying to fix reference (mr Dams):
 [abstracte klassen in overerving](../7_overerving/5_abstract.md)
-[Rechthoek-klasse uit de Figuren oefening](../6_klassen_en_objecten/A_practica.md#figures)
+
+[Rechthoek-klasse uit de Figuren oefening](../6_klassen_en_objecten/A_practica.md)
 
 ## Game
 **Zie onderaan pagina voor minimale klasse-hiërarchie en interfaces.**
