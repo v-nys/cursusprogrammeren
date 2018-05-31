@@ -43,6 +43,21 @@ Voorgaande beschrijving is een ‘minimale’ beschrijving. Voorzie extra functi
 * Meerdere spelers
 * Verder schieten, of schieten in andere richtingen.
 
+## Klasse-schema
 ![](/assets/9_interfaces/practgame.png)
+
+``Location`` is van het type ``Point`` (compositie). ``Point`` is een zelfgemaakte mini klasse die er als volgt uit (minimaal uitziet): 
+```csharp
+class Location
+{
+  public int X{get;set;}
+  public int Y{get;set;}
+}
+```
+
+## Enkele screenshots
+
 ![](/assets/9_interfaces/practgame2.png)
 ![](/assets/9_interfaces/practgame3.png)
+
+
