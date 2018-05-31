@@ -8,6 +8,10 @@ Ignore dit stuk, trying to fix reference (mr Dams):
 
 [Rechthoek-klasse uit de Figuren oefening](../6_klassen_en_objecten/A_practica.md)
 
+[abstracte klassen in overerving](../6_klassen_en_objecten/A_practica.md)
+
+
+
 ## Game
 **Zie onderaan pagina voor minimale klasse-hiërarchie en interfaces.**
 
