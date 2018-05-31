@@ -1,5 +1,4 @@
 # Overerving
-[Rechthoek-klasse uit de Figuren oefening](../6_klassen_en_objecten/A_practica.md#figures)
 Overerving (**inheritance**) laat ons toe om klassen te specialiseren vanuit een reeds bestaande basisklasse. Wanneer we een klasse van een andere klasse overerven dan zeggen we dat deze nieuwe klasse een child-klasse of sub-klasse is van de bestaande parent-klasse of super-klasse.
 
 De child-klasse kan alles wat de parent-klasse kan, maar de nieuwe klasse kan nu ook extra specialisatie code krijgen.
