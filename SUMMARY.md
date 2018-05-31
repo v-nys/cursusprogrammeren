@@ -78,9 +78,7 @@
   * [Interfaces in de praktijk](9_interfaces/2_InterfacesInPraktijk.md)
   * [Labo-oefeningen](9_interfaces/A_Practica.md)
 * Generics
-  * [Generics intro](10_generics/0_generics_intro.MD)
-  * [Generic methods](10_generics/0_genericmethods.md)
-  * [Generic types](10_generics/1_generictypes.md)
+  * [Generics methoden en types](10_generics/0_generics_intro.MD)
   * [Generic classes en constraints](10_generics/2_genericclasses_en_constraints.md)
   * [Collections](10_generics/8_Collections.md)
   * [Labo-oefeningen](10_generics/A_Practica.md)
