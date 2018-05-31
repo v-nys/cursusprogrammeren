@@ -4,6 +4,7 @@ Gebruik je [Rechthoek-klasse](/6_klassen_en_objecten/A_practica.md#figuren) die 
 Toon de werking aan in een klein voorbeeld programma. 
 
 ## Game
+**Zie onderaan pagina voor minimale klasse-hiërarchie en interfaces.**
 
 Maak een spel dat als volgt werkt:
 * De speler dient met zijn pion de overkant van het veld te bereiken.
@@ -32,7 +33,7 @@ Iedere beurt van het spel bestaat uit volgende stappen:
 
 Stel de speler voor door een X, een rots door O , een monster door M een RockDestroyer door D.
 
-Zie onderaan pagina voor minimale klasse-hiërarchie en interfaces.
+
 
 ## Extra’s:
 Voorgaande beschrijving is een ‘minimale’ beschrijving. Voorzie extra functionaliteit naar believen zoals:
