@@ -49,12 +49,14 @@ Voorgaande beschrijving is een ‘minimale’ beschrijving. Voorzie extra functi
 
 ``Location`` is van het type ``Point`` (compositie). ``Point`` is een zelfgemaakte mini klasse die er als volgt uit (minimaal uitziet): 
 ```csharp
-class Location
+class Point
 {
   public int X{get;set;}
   public int Y{get;set;}
 }
 ```
+
+En dus in je abstracte klasse MapElement zal iets krijgen in de trend van: ``public Point Location {get;set;} = new Point();``
 
 ## Enkele screenshots
 
