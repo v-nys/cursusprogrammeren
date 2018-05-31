@@ -1,6 +1,6 @@
 # Figures with interfaces
 Gebruik je [Rechthoek-klasse uit de Figuren oefening](../6_klassen_en_objecten/A_practica.md#figures) die je eerder  hebt aangemaakt. Maak een List aan waarin je een 10 rechthoek-objecten plaatsen, allen met een verschillende grootte. Zorg ervoor dat je nu je rechthoeken met de Sort()-methode kan sorteren op oppervlakte.
-
+[abstracte klassen in overerving](../7_overerving/5_abstract.md)
 Toon de werking aan in een klein voorbeeld programma. 
 
 ## Game
