@@ -28,6 +28,7 @@
   * [While en Do While](3_herhalingen/1_while_dowhile.md)
   * [For](3_herhalingen/2_for.md)
   * [Foreach en var](3_herhalingen/3_foreach.md)
+  * [Programma flow analyse](3_herhalingen/4_programflow.md)
   * [Labo-oefeningen](3_herhalingen/A_Practica.md)
 * Methoden
   * [Methoden intro](4_methoden/0_intromethods.MD)
