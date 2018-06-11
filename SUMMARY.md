@@ -3,7 +3,7 @@
 * [FrontMatter](README.md)
 * Inleiding
   * [Benodigdheden](0_intro/benodigdheden.md)
-
+  * [Werken met Visual Studio](0_intro/1_werkenmetvs.md)
 ## Semester 1
 
 * Basics

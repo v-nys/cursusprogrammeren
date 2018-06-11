@@ -2,6 +2,50 @@
 ## Prijzen met foreach
 Maak een array die tot 20 prijzen (double) kan bewaren. Vraag aan de gebruiker om 20 prijzen in te voeren en bewaar deze in de array. Doorloop vervolgens m.b.v. een foreach-lus de volledige array en toon enkel de elementen op het scherm wiens prijs hoger of gelijk is aan €5.00. Toon op het einde van het programma het gemiddelde van alle prijzen (dus inclusief de lagere prijzen).
 
+## For doordenker
+Schrijf een programma dat de volgende output geeft , gegeven dat de gebruiker een maximum waarde invoert , dus als hij 4 ingeeft dan zal de driehoek maximum 4 breed worden. Gebruik enkel forloops!
+```
+*
+**
+***
+****
+***
+**
+*
+```
+
+## For doordenker extra
+Schrijf een programma dat de volgende output geeft  (zie ook WhileDoordenker van vorige labo), gegeven dat de gebruiker een maximum waarde invoert die opgeeft uit hoeveel lijnen de boom bestaat. Maak enkel gebruik van for-loops.
+```
+     *
+    ***
+   *****
+  *******
+ *********
+***********
+```
+
+# Euler project
+Maak volgende opdracht van [projecteuler.net](projecteuler.net):
+>Indien we alle natuurlijke getallen van 0 tot en met 10 oplijsten die een meervoud van 3 of 5 zijn, dan krijgen we de getallen 3,5,6 en 9. De som van deze 4 getallen is 23.
+Maak nu een programma dat de som van alle veelvouden van 3 of 5 weergeeft onder van 0 tot 1000.
+
+# Grootste getal
+Vervolledig deze code zodat ook getoond wordt welke de grootste waarde is die werd ingevoerd.
+```csharp
+int x=0;
+int y=0;
+do
+{
+    y=y+x;
+    Console.WriteLine("Voer gehele waarden in (32767=stop)");
+    string instring= Console.ReadLine();
+    x= Convert.ToInt32(instring);
+    //....
+
+}while (x != 32767)
+Console.WriteLine(y);
+```
 ## Raad het getal
 
 **Deel 1:** Teken de flowchart van het volgende programma. 

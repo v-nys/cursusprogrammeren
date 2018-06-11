@@ -32,3 +32,5 @@ for (int i = 0; i < 11; i=i+2)
 }
 ```
 Voor de setup-variabele kiest men meestal i, maar dat is niet noodzakelijk. In de setup wordt dus een variabele op een start-waarde gezet. De finish test zal aan de start van iedere loop kijken of de finish test nog waar is, indien dat het geval is dan wordt een nieuwe loop gestart en wordt i met een bepaalde waarde, zoals in update aangegeven, verhoogd.
+
+Lees zeker [deze for tutorial na](https://www.techotopia.com/index.php/C_Sharp_Looping_-_The_for_Statement) want er zijn nog enkele subtiliteiten in for-loops die we niet hier behandelen.
