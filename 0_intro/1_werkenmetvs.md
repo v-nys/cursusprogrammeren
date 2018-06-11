@@ -2,7 +2,9 @@
 
 Het grootste deel van het leven van een beginnende software-ontwikkelaar ("programmeur") vindt plaats in een ontwikkelomgeving. Dit is de plek waar je je computercode zal schrijven, die vervolgens zal omgezet worden naar een uitvoerbare applicatie. 
 
-visual Studio (VS) is een pakket dat een groot deel tools samenvoegt (debuger, code editor, compiler, etc) zodat je niet tientalle paketten moet gebruiken om software te schrijven.
+Visual Studio (VS) is een pakket dat een groot deel tools samenvoegt (debuger, code editor, compiler, etc) zodat je niet tientalle paketten moet gebruiken om software te schrijven.
+
+![](/assets/0_intro/vslogo.png)
 
 Visual Studio is een zogenaamde IDE("Integrated Development Environment") en is op maat gemaakt om C#.NET applicaties te ontwikkelen. Je bent echter verre van verplicht om enkel C# applicaties in VS te ontwikkelen, je kan gerust VB.NET, TypeScript, Pythong en andere talen gebruiken.
 
@@ -14,7 +16,7 @@ Visual Studio vindt eindelijk ook z'n weg op andere platformen. Zoek je een ligh
 
 Na het opstarten van VS krijg je het startvenster te zien van waaruit je verschillende dingen kan doen, zoals eerder aangemaakte projecten opstarten, informatie opzoeken of een totaal nieuw project starten.
 
-
+![](/assets/0_intro/vsstart.png)
 
 ### Een nieuw project aanmaken 
 
@@ -22,10 +24,10 @@ We zullen nu een nieuw project aanmaken. Dit kan op verschillende manieren. De e
 
 Het "New Project" venster dat nu verschijnt geeft je hopelijk al een glimps van de veelzijdigheid van VS. In het linkerdeel zie je bijvoorbeeld alle Project Types staan. M.a.w. dit zijn alle soorten programma’s die jan kan maken in VS. Naargelang de geïnstalleerde opties en bibliotheken zal deze lijst groter of kleiner zijn.
 
-In ons geval kiezen we als Project Type **‘Visual C#’** en als template **Console Application**. Onderaan kan je een naam geven voor je project alsook de locatie op de harde schijf waar het project dient opgeslagen te worden. **Onthoudt waar je je project aanmaakt zodat je dit later terugvind**.
+In ons geval kiezen we als Project Type **‘Visual C#’** en als template **Console Application (.NET Framework)**. Onderaan kan je een naam geven voor je project alsook de locatie op de harde schijf waar het project dient opgeslagen te worden. **Onthoudt waar je je project aanmaakt zodat je dit later terugvind**.
 
 Geef volgende informatie op:
-
+![](/assets/0_intro/vsproject.png)
 Druk ok.
 
 VS heeft nu reeds een aantal bestanden aangemaakt die je nodig hebt om een ‘Console Applicatie’ te maken. 
@@ -42,21 +44,24 @@ Kijk steeds goed volgende zaken na voor je je nieuwe project aanmaakt:
 # IDE Layout {#ide-layout}
 
 We zullen nu eerst eens bekijken wat we allemaal zien in VS na het aanmaken van een nieuw programma.
+![](/assets/0_intro/vside.png)
 
-Je kan meerdere bestanden tegelijkertijd openen in VS. Ieder bestand zal z’n eigen tab krijgen. De actieve tab is het bestand wiens inhoud je in het hoofdgedeelte eronder te zien krijgt.
+* Je kan meerdere bestanden tegelijkertijd openen in VS. Ieder bestand zal z’n eigen tab krijgen. De actieve tab is het bestand wiens inhoud je in het hoofdgedeelte eronder te zien krijgt.
 
-De "solution explorer" toont alle bestanden en elementen die tot het huidige project behoren. Als we dus later nieuwe bestanden toevoegen dan kan je die hier zien (en openen).
+* De "**solution explorer**" toont alle bestanden en elementen die tot het huidige project behoren. Als we dus later nieuwe bestanden toevoegen dan kan je die hier zien (en openen).
 
-Het properties venster (eigenschappen) is een belangrijk venster. Hier komen alle eigenschappen van het huidige geselecteerde element. Selecteer bijvoorbeeld maar eens Program.cs in de solution explorer en merk op dat er allerlei eigenschappen getoond worden. Onderaan het Propertis venster wordt steeds meer informatie getoond over de huidig geselecteerde eigenschap (zoals in dit geval de Build Action).
+* Het **properties** venster (eigenschappen) is een belangrijk venster. Hier komen alle eigenschappen van het huidige geselecteerde element. Selecteer bijvoorbeeld maar eens Program.cs in de solution explorer en merk op dat er allerlei eigenschappen getoond worden. Onderaan het Properties venster wordt steeds meer informatie getoond over de huidig geselecteerde eigenschap.
 
 ## Layout kapot/kwijt/vreemd
 Het gebeurt al eens dat je layout een beetje om zeep is.  
 * Voor eenvoudige venster terug te krijgen, bijvoorbeeld het properties window of de solution explorer: klik bovenaan in de menubalk op "View" en kies dan het gewenste venster (soms staat dit in een submenu)
 * Je kan ook altijd je layout in z'n geheel resette: Ga naar "Window" en kies "Reset window layout".
-
+![](/assets/0_intro/vsreset.png)
 # Je programma starten 
 De code die VS voor je heeft gemaakt is reeds een werkend programma. Je kan de code compileren naar een uitvoerbaar bestand door te klikken op Build-&gt;Build Solution. Als dit gelukt is zal er onderaan VS in de statusbar ‘Build succeeded’ verschijnen.
 
 Je kan nu je gecompileerde bestand uitvoeren door te kiezen voor Debug-&gt;Start without debugging (of door te drukken op ctrl+F5).
+
+![](/assets/0_intro/vscmd.png)
 
 Veel doet je programma nog niet natuurlijk, dus sluit dit venster maar terug af door een willekeurige toets in te drukken.
