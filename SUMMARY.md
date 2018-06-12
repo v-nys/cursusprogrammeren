@@ -3,12 +3,13 @@
 * [FrontMatter](README.md)
 * Inleiding
   * [Benodigdheden](0_intro/benodigdheden.md)
-  * [Werken met Visual Studio](0_intro/1_werkenmetvs.md)
-## Semester 1
 
+## Semester 1
+* Beginnen met C# en Visual Studio
+  * [Werken met Visual Studio](0_intro/1_werkenmetvs.md)
+  * [Console basics: WriteLine en ReadLine](1_csharpbasics/2_console.md)
 * Basics
   * [Essentiele zaken](1_csharpbasics/0_csharpessentials.md)
-  * [Console basics](1_csharpbasics/0b_console.md)
   * [Datatypes](1_csharpbasics/1_datatypes.md)
   * [Expressies](1_csharpbasics/2_expressies.md)
   * [Operators](1_csharpbasics/3_operators.md)
