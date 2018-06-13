@@ -18,7 +18,7 @@
   * [Enums](1_csharpbasics/7_enum.md)
   * [Oefeningen](1_csharpbasics/A_Practica.md)
 * H2: Console Applications
-   * [WriteLine en ReadLine](1_csharpbasics/2_console.md)
+   * [WriteLine en ReadLine](0_intro/2_console.md)
 * H3: Beslissingen
   * [Beslissingen intro](2_beslissingen/0_beslissingen_intro.md)
   * [If](2_beslissingen/0_if.md)
