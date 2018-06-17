@@ -311,7 +311,7 @@ Dit resulteert in volgende finale code voor deze fase:
 ```csharp
 static void Main()
 {
-    int[,] Kaart ={{1, 2, 1, 3},{0, 1, 0, 1},{0, 4, 0, 5}};
+    int[,] Kaart ={ {1, 2, 1, 3},{0, 1, 0, 1},{0, 4, 0, 5}};
 
     string[] Kamers ={"Onbekend terrein",  "In een gang", "In de lobby", "In de bar", "In de keuken", "Achtertuin"};
 
