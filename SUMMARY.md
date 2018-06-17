@@ -15,7 +15,6 @@
   * [Strings en chars](1_csharpbasics/5_chars_strings.md)
   * [Strings samenvoegen](1_csharpbasics/6_stringInterpolation.md)
   * [Casting, conversie en parsing](1_csharpbasics/4_converteren_casting.md)
-  * [Enums](1_csharpbasics/7_enum.md)
   * [Oefeningen](1_csharpbasics/A_Practica.md)
 * H2: Console Applications
    * [WriteLine en ReadLine](0_intro/2_console.md)
@@ -24,6 +23,7 @@
   * [If](2_beslissingen/0_if.md)
   * [Logische en relationele operators](2_beslissingen/1_logic_and_relationsoperator.md)
   * [Switch](2_beslissingen/2_switch.md)
+  * [Enums](1_csharpbasics/7_enum.md)
   * [Oefeningen](2_beslissingen/A_Practica.md)
 * H4: Loops
   * [Loops intro](3_herhalingen/0_loops_intro.md)
