@@ -28,7 +28,7 @@ Als je volgende tabel begrijpt dan beheers je geheugenmanagement in C#:
 ### Value types
 
 **Value** types worden in de stack bewaard. De effectieve waarde van de variabele wordt in de stack bewaard.
-Dit zijn alle gekende, 'eenvoudige' datatypes die we totnogtoe gezien hebben:
+Dit zijn alle gekende, 'eenvoudige' datatypes die we totnogtoe gezien hebben, inclusief enums en structs (zie later):
 * ``sbyte``, ``byte``
 * ``short``, ``ushort``
 * ``int``, ``uint``
@@ -41,7 +41,7 @@ Dit zijn alle gekende, 'eenvoudige' datatypes die we totnogtoe gezien hebben:
 
 #### = operator bij value types
 Wanneer we een value-type willen kopieren dan kopieren de echte waarde:
-```charp 
+```csharp 
 int getal=3;
 int anderGetal= getal;
 ```
@@ -132,7 +132,7 @@ Na methode 5
 ```
 
 ## De Garbage Collector (GC)
-Een essentieel onderdeel van .NET is de zogenaamde GC, de Garbage Collector. Dit is een geautomatiseerd onderdeel van ieder C# programma dat ervoor zorgt dat we geen geheugen voor niets gerserveerd houden.
+Een essentieel onderdeel van .NET is de zogenaamde GC, de Garbage Collector. Dit is een geautomatiseerd onderdeel van ieder C# programma dat ervoor zorgt dat we geen geheugen voor niets gereserveerd houden.
 De GC zal geregeld het geheugen doorlopen en kijken of er in de heap data staat waar geen references naar verwijzen. Indien er geen references naar wijzen zal dit stuk data verwijderd worden.
 
 In dit voorbeeld zien we dit in actie:
