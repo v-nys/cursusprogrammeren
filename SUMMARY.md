@@ -45,8 +45,9 @@
   * [Arrays en methoden](5_arrays/3_arrays_en_methoden.md)
   * [N-dimensionale arrays](5_arrays/4_ndimensionalArrays.md)
   * [Jagged arrays](5_arrays/5_jaggedArrays.md)
-  * [Geheugenmanagement](5_arrays/6_memorymanagement.md)
   * [Oefeningen](5_arrays/A_Practica.md)
+* H7: Geheugemenmanagement
+   * [Stack en Heap](5_arrays/6_memorymanagement.md)
 * All-In-Projecten
   * [Overzicht](A_DEEL1_AllInOne/0_Deel1_IntroductieAllInOne.md)
   * [Console Matrix](A_DEEL1_AllInOne/1_ConsoleMatrix.md)
