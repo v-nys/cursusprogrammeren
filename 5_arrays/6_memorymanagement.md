@@ -24,6 +24,11 @@ Als je volgende tabel begrijpt dan beheers je geheugenmanagement in C#:
 
 ![](/assets/5_arrays/gc1.png)
 
+## Waarom twee geheugens?
+Waarom plaatsen we niet alles in de stack? De reden hiervoor is dat bij het compileren van je applicatie er reeds zal berekend worden hoeveel geheugen de stack zal nodig hebben. Wanneer je programma dus later wordt uitgevoerd weet het OS perfect hoeveel geheugen het minstens moet reserveren. 
+Er is echter een probleem: we kunnen niet alles perfect berekenen/voorspellen. Een variabele van het type ``int`` is perfect geweten hoe groot die zal zijn (32 bit).Maar wat met een string? Of met een array waarvan we pas tijdens de uitvoer de lengte aan de gebruiker misschien vragen?
+Het zou nutteloos (en zonde) zijn om reeds bij aanvang een bepaalde hoeveelheid voor een array te reserveren als we niet ween hoe groot die zal worden. Beeld je maar eens in dat we 2k byte reserveren om dan te ontdekken dat we maar 5byte ervan nodig hebben. RAM is goedkoop, maar toch...
+De heap laat ons dus toe om geheugen op een wat minder gestructureerde manier in te palmen. Tijdens de uitvoer van het programma zal de heap als het ware dienst doen als een grote zandbak waar eender welke plek kan ingepalmd worden om zaken te bewaren. De stack daarentegen is het kleine bankje naast de zandbak: handig, snel, en perfect geweten hoe groot.
 
 ### Value types
 
