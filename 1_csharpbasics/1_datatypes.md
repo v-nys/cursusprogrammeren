@@ -1,4 +1,5 @@
 ﻿# Typen en variabelen
+
 Een essentieel onderdeel van C# is kennis van datatypes. Binnen C# zijn een aantal types gedefiniëerd die je kan gebruiken om dat ain op te slaan. Wanneer je data wenst te bewaren in je applicatie dan zal je je moeten afvragen wat voor soort data het is. Gaat het om een getal, een geheel getal, een kommagetal, een stuk tekst of misschien een binaire reeks? Ieder datatype in C# kan één welbepaald soort data bewaren, en dit zal telkens een bepaalde hoeveelheid geheugen vereisen. 
 
 De data zelf bewaren we in **variabelen** van een **bepaald type**. Een variabele is een plekje in het geheugen dat in je programma zal gereserveerd worden om daarin data te bewaren van het type dat je aan de variabele hebt toegekend. Een variabele zal intern een geheugenadres hebben (waar de data in het geheugen staat) maar dat zou lastig programmeren meer, daarom moeten we ook steeds een naam oftewel **identifier** aan de variabele geven. 
