@@ -6,9 +6,16 @@ Je kan parameters op 2 manieren by reference doorgeven:
 
 Je geeft parameters by reference door door het keyword ref voor de parameter in kwestie te zetten, zowel in de methode-declaratie als in de aanroep van de methode zelf.
 
-**Opgelet**:Het dient opgemerkt te worden dat parameters by reference doorgeven vaak tot problemen kan leiden indien je niet goed oplet, daar je rechtstreeks werkt met geheugenlocaties. Als je bijvoorbeeld verkeerdelijk een referentie optelt bij een value dan krijg je een nieuwe referentie die echter naar, mogelijk, een onbestaand stuk geheugen wijst. De ontwikkelaars van Visual Studio raden het gebruik van ref en out dan ook af, zeker indien je een beginnende programmeur bent. Meer info vind je hier.
+**Opgelet**:Het dient opgemerkt te worden dat parameters by reference doorgeven vaak tot problemen kan leiden indien je niet goed oplet, daar je rechtstreeks werkt met geheugenlocaties. Als je bijvoorbeeld verkeerdelijk een referentie optelt bij een value dan krijg je een nieuwe referentie die echter naar, mogelijk, een onbestaand stuk geheugen wijst. De ontwikkelaars van Visual Studio raden het gebruik van ref en out dan ook af, zeker indien je een beginnende programmeur bent. .
 
-Het verschil tussen het gebruik van ``out`` of ``ref`` keyword tonen we aan in het volgende voorbeeld. Laten we dit aantonen met een voorbeeld. Stel dat we het vorige voorbeeld herschreven maar ‘vergeten’ om de parameter tweede een begin-waarde te geven:
+#Out en ref
+Via de keywords out en ref kunnen we parameters by reference dooregeven (ipv by value), het verschil daarbij is:
+* ``ref``: de parameter bevat reeds een waarde wanneer deze naar de methode wordt gestuurd
+* ``out``: de parameter bevat nog geen parameter en er wordt verwacht dat deze een waarde krijgt in de methode 
+
+Het verschil tussen het gebruik van ``out`` of ``ref`` keyword tonen we aan in het volgende voorbeeld. 
+
+Laten we dit aantonen met een voorbeeld. Stel dat we het vorige voorbeeld herschreven maar ‘vergeten’ om de parameter tweede een begin-waarde te geven:
 
 ```csharp
 static void Main(string[] args)
@@ -43,8 +50,7 @@ static void RefValueVerschil(int getal1, out int getal2)
 static void Main(string[] args)
 {
     int eerste = 5;
-    int tweede;
-    RefValueVerschil(eerste, out tweede);
+    RefValueVerschil(eerste, out int tweede);
  
     Console.WriteLine("Eerste bedraagt na method:{0}", eerste);
     Console.WriteLine("Tweede bedraagt na method:{0}", tweede);

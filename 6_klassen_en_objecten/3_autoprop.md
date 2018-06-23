@@ -61,6 +61,13 @@ public class Person
 ```
 
 Beide klassen hebben exact dezelfde functionaliteit, echter de klasse aan de rechterzijde is aanzienlijk eenvoudig om te lezen en te typen. 
+
+## Beginwaarde van autoprops
+Je mag autoproperties beginwaarden geven door de waarde achter de property te geven, als volgt:
+```csharp
+public int Age {get;set} = 45;
+````
+
 ## Altijd auto-properties? 
 Merk op dat je dit enkel kan doen indien er geen extra logica in de property aanwezig is.
 Stel dat je bij de setter van age wil controleren op een negatieve waarde, dan zal je dit zoals voorheen moeten schrijven en kan dit niet met een automatic property:
@@ -92,6 +99,13 @@ Met autoprops:
 ```csharp
 public string FirstName { get; private set;}
 ```
+
+En andere manier die ook kan is als volgt:
+```csharp
+public string FirstName { get; }
+```
+De enige manier om FirstName een waarde te geven is via de constructor van de klasse. Alle andere manieren zal een error genereren.[Meer info.](https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-6#read-only-auto-properties)
+
 
 ## Snel autoproperties typen in Visual Studio:
 Als je in Visual Studio in je code prop typt en vervolgens twee keer de tabtoets indrukt dan verschijnt al de nodige code voor een automatic property. Je hoeft dan enkel nog volgende zaken in orde te brengen:

@@ -62,6 +62,7 @@
 * Klassen en objecten
   * [OOP Intro](6_klassen_en_objecten/0_oop_intro.md))
   * [Autoproperties](6_klassen_en_objecten/3_autoprop.md)
+  * [Expression bodied members](6_klassen_en_objecten/6_exprbody.md)
   * [Labo-oefeningen](6_klassen_en_objecten/A_Practica.md)
 * Overerving
   * [Overerving intro](7_overerving/0_overerving_intro.MD)
