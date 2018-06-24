@@ -87,7 +87,7 @@
   * [Generic classes en constraints](10_generics/2_genericclasses_en_constraints.md)
   * [Collections](10_generics/8_Collections.md)
   * [Labo-oefeningen](10_generics/A_Practica.md)
-* H16: Is en As keyword
+* H15: Is en As keyword
   * [Is en As keywords](12_IsAs/1_IsAs.md)
   * [Polymorfisme en interfaces](12_IsAs/2_Polymorfisme_Interfaces.md)
   * [Objecten vergekijken: alles komt samen](12_IsAs/6_equals.md)
