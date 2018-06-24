@@ -91,7 +91,7 @@
 * Is en As keyword
   * [Is en As keywords](12_IsAs/1_IsAs.md)
   * [Polymorfisme en interfaces](12_IsAs/2_Polymorfisme_Interfaces.md)
-  * [Objecten vergekijken: alles komt samen](7_overerving/6_equals.md)
+  * [Objecten vergekijken: alles komt samen](12_IsAs/6_equals.md)
   * [Labo-oefeningen](12_IsAs/A_Practica.md)
 * All-In-Projecten
   * [Overzicht](A_DEEL2_AllInOne/0_Deel2_IntroductieAllInOne.md)
