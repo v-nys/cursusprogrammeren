@@ -62,6 +62,7 @@
 * Klassen en objecten
   * [OOP Intro](6_klassen_en_objecten/0_oop_intro.md))
   * [Autoproperties](6_klassen_en_objecten/3_autoprop.md)
+  * [Static](6_klassen_en_objecten/5_static.md)
   * [Expression bodied members](6_klassen_en_objecten/6_exprbody.md)
   * [Labo-oefeningen](6_klassen_en_objecten/A_Practica.md)
 * Overerving
@@ -90,6 +91,7 @@
 * Is en As keyword
   * [Is en As keywords](12_IsAs/1_IsAs.md)
   * [Polymorfisme en interfaces](12_IsAs/2_Polymorfisme_Interfaces.md)
+  * [Objecten vergekijken: alles komt samen](7_overerving/6_equals.md)
   * [Labo-oefeningen](12_IsAs/A_Practica.md)
 * All-In-Projecten
   * [Overzicht](A_DEEL2_AllInOne/0_Deel2_IntroductieAllInOne.md)

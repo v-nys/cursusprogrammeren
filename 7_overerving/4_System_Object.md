@@ -60,7 +60,7 @@ public virtual string ToString()
  
  
  ## Equals()
- Ook deze methode kan je dus overriden om twee objecten met mekaar te testen, bijvoorbeeld:
+ Ook deze methode kan je dus overriden om twee objecten met mekaar te testen. Op het  [einde van deze cursus](6_equals.md) zal dieper in ``Equals`` ingaan worden om objecten te vergelijken, maar we tonen hier reeds een voorbeeld:
  ```csharp
 if(stud1.Equals(stud2))
    //...
@@ -97,11 +97,15 @@ public override bool Equals(Object o)
 }
 ```
 
-De lijn ``Student temp = (Student)o;`` zal het ``object o`` casten naar een ``Student``. Doe je dit niet dan kan je niet aan de interne Student-variabelen van het ``object o``. [Dit concept het polymorfisme en wordt later uitgelegd](../11_polymorfisme/11_polymo_intro.MD).
+De lijn ``Student temp = (Student)o;`` zal het ``object o`` casten naar een ``Student``. Doe je dit niet dan kan je niet aan de interne Student-variabelen van het ``object o``. 
+
+[Dit concept heet polymorfisme en wordt later uitgelegd](../11_polymorfisme/11_polymo_intro.MD).
 
 ## GetHashcode
-Indien je Equals override dan moet je eigenlijk ook GetHashCode overriden, daar er wordt verondersteld dat twee gelijke objecten ook dezelfde unieke hashcode teruggeven. Wil je dit dus implementeren dan zal je dus een (bestaand) algoritme moeten schrijven dat een uniek nummer genereert voor ieder niet-gelijke object. Bekijk volgende [StackOverflow post](https://stackoverflow.com/questions/9827911/how-to-implement-override-of-gethashcode-with-logic-of-overriden-equals) indien je dit wenst toe te passen.
+Indien je Equals override dan moet je eigenlijk ook GetHashCode overriden, daar er wordt verondersteld dat twee gelijke objecten ook dezelfde unieke hashcode teruggeven. Wil je dit dus implementeren dan zal je dus een (bestaand) algoritme moeten schrijven dat een uniek nummer genereert voor ieder niet-gelijke object. 
+
+Bekijk volgende [StackOverflow post](https://stackoverflow.com/questions/9827911/how-to-implement-override-of-gethashcode-with-logic-of-overriden-equals) indien je dit wenst toe te passen.
 
 # Ik ben nog niet helemaal mee?
-Niet getreurd, je bent niet de enige. Overerving,System.object, Equals..het is allemaal een hoop nieuwe kennis om te verwerken. Uw favoriete schrijver van deze cursus heeft echter in het verleden eens een briljante (kuch) tutorial geschreven waarin ik alle zaken van dit hoofdstuk op een iets andere manier uitleg. 
-**[Allen daarheen dus!](https://codevan1001nacht.wordpress.com/2013/11/05/objecten-testen-op-gelijkheid-the-missing-manual/)**
+Niet getreurd, je bent niet de enige. Overerving,System.object, Equals,...het is allemaal een hoop nieuwe kennis om te verwerken. 
+Aan het [einde van deze cursus](./12_IsAs/6_equals.md) gaan we dieper in bovenstaande materie in om een volledige ``Equals`` methode op te bouwen en we bij iedere stap uitgebreide uitleg geven.
