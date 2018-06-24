@@ -96,3 +96,6 @@ public int CompareTo(object obj)
     return 0;
 }
 ```
+
+# Why should I care?
+Als ik niet overtuigend genoeg was over het nut van interfaces in het vorige hoofdstuk, dan hoop ik dat bovenstaande voorbeelden je al een beetje hebben kunnen doen proeven van de kracht van interfaces. Gedaan met ons druk te maken wat er allemaal in een klasse gebeurt. Werk gewoon 'tegen' de interfaces van een klasse en we krijgen de ultieme black-box revelatie (see what I did there? :p )!

@@ -114,3 +114,6 @@ Verschillende zaken kunnen als constraint optreden. Naast de verplichting dat ee
 * Enkel klassen
 * Moet default constructor hebben
 * Moet overerven van een bepaalde klasse
+
+# Why should I care?
+Goh, eerlijk is eerlijk: in je prille programmeursbestaan zal je niet heel vaak de nood zien om je eigen generieke klasse te schrijven. Laat staan dat je ook nog eens allerlei constraints gaat definiëren. 
