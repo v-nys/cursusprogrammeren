@@ -115,6 +115,7 @@ for(int i =0; i<mensjes.Length; i++)
 
 # Why should I care 
 ![](/assets/care.jpg)
+
 In de echte C# wereld houdt men van interfaces. Het is veel beter om 'tegen interfaces' te programmeren dan tegen klassen. Het maakt je code veel beter qua onderhoud en complexiteit.
 
 Met ``is`` en ``as`` kan je snel objecten van eender welk type bevragen:
