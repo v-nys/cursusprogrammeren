@@ -13,7 +13,7 @@ class SithLord
 }
 ```
 Een ``SithLord`` heeft steeds een verborgen Sith Name en ook een hoeveelheid energie die hij nodig heeft om te strijden.
-**Het is uit den boze dat we eenvoudige data fieds (``energy`` en ``name``) ``public`` maken. Zouden we dat wel doen dan kunnen externe objecten deze geheime informatie uitlezen!
+**Het is uit den boze dat we eenvoudige data fields (``energy`` en ``name``) ``public`` maken.** Zouden we dat wel doen dan kunnen externe objecten deze geheime informatie uitlezen!
 ```csharp
 SithLord Palpatine= new SithLord();
 Console.WriteLine(Palpatine.sithName);

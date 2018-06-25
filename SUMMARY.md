@@ -58,7 +58,8 @@
 ## Semester 2
 
 * H7: Klassen en objecten
-  * [OOP Intro](6_klassen_en_objecten/0_oop_intro.md))
+  * [OOP Intro](6_klassen_en_objecten/0_oop_intro.md)
+  * [Constructors](6_klassen_en_objecten/1_constructors.md)
   * [Properties](6_klassen_en_objecten/2_properties.md)
   * [Autoproperties](6_klassen_en_objecten/3_autoprop.md)
   * [Static](6_klassen_en_objecten/5_static.md)
