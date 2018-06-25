@@ -300,6 +300,7 @@ public override bool Equals (object obj)
 ```
 
 # Why should I care 
+
 ![](/assets/care.jpg)
 
 Let's be honest. Als je aan dit punt en geen flauw benul hebt waarom je in godsnaam je hier ies van moet aantrekken, wel dan wordt het dringend tijd om deze cursus van voor naar achter, links naar rechts en onder tot boven terug door te nemen ;).

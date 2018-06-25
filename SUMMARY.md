@@ -56,14 +56,16 @@
 
 
 ## Semester 2
-* H7: Geheugemenmanagement
-   * [Stack en Heap](5_arrays/6_memorymanagement.md)
-* H8: Klassen en objecten
+
+* H7: Klassen en objecten
   * [OOP Intro](6_klassen_en_objecten/0_oop_intro.md))
+  * [Properties](6_klassen_en_objecten/3_autoprop.md)
   * [Autoproperties](6_klassen_en_objecten/3_autoprop.md)
   * [Static](6_klassen_en_objecten/5_static.md)
   * [Expression bodied members](6_klassen_en_objecten/6_exprbody.md)
   * [Labo-oefeningen](6_klassen_en_objecten/A_Practica.md)
+* H8: Geheugennmanagement
+   * [Stack en Heap](6_klassen_en_objecten/6_memorymanagement.md)
 * H9: Overerving
   * [Overerving intro](7_overerving/0_overerving_intro.MD)
   * [Virtual en override](7_overerving/1_virtual_override.md)

@@ -108,7 +108,7 @@ De enige manier om FirstName een waarde te geven is via de constructor van de kl
 
 
 ## Snel autoproperties typen in Visual Studio:
-Als je in Visual Studio in je code prop typt en vervolgens twee keer de tabtoets indrukt dan verschijnt al de nodige code voor een automatic property. Je hoeft dan enkel nog volgende zaken in orde te brengen:
+Als je in Visual Studio in je code ``prop`` typt en vervolgens twee keer de tabtoets indrukt dan verschijnt al de nodige code voor een automatic property. Je hoeft dan enkel nog volgende zaken in orde te brengen:
 
 * Het type van de property
 * De naam van de property (identifier) 

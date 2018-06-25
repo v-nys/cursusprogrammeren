@@ -8,9 +8,6 @@
 
 ## Object methoden
 
-## Properties
-
-## autoproperties
 
 ## Object constructors en constructor overloading
 
@@ -18,7 +15,6 @@
 
 ## Objecten als parameters en returntypes
 
-## Geheugengebruik in C#
 
 ## Object references en null
 

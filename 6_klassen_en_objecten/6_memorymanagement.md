@@ -74,16 +74,32 @@ Na methode 5
 
 ### Reference types
 **Reference** types worden in de heap bewaard. De effectieve waarde wordt in de heap bewaard, en in de stack zal enkel een **referentie** of **pointer** naar de data in de heap bewaard worden. Een referentie (of pointer) is niet meer dan het geheugenadres naar waar verwezen wordt (bv ``0xA3B3163``)  Concreet zijn dit alle zaken die vaak redelijk groot zullen zijn:
-* objecten (zie verder), interfaces en delegates
+* objecten, interfaces en delegates
 * arrays
 
 #### = operator bij reference types
-Wanneer we de = operator gebruiken bij een reference type dan kopieren we de referentie naar rde waarde, niet de waarde zelf:
+Wanneer we de = operator gebruiken bij een reference type dan kopieren we de referentie naar de waarde, niet de waarde zelf.
+
+**Bij objecten**
+We zien dit gedrag bij alle reference types, zoals objecten:
+```csharp
+Student stud= new Student();
+```
+
+Wat gebeurt er hier?
+1. ``new Student()``  : ``new`` roept de constructor van ``Student`` aan. Deze zal een constructor in de **heap** aanmaken en vervolgens de geheugenlocatie teruggeven.
+2. Een variabele ``stud`` wordt in de **stack** aangemaakt.
+3. De geheugenlocatie uit de eerste stap wordt vervolgens in ``stud`` opgeslagen in de stack.
+
+
+**Bij arrays**
+Maar ook bij arrays:
 ```csharp
 int[] nummers= {4,5,10};
 int[] andereNummers= nummers;
 ```
 In dit voorbeeld zal ``andereNummers`` dus nu ook verwijzen naar de array in de heap waar de actuele waarden staan.
+
 Als we dus volgende code uitvoeren dan ontdekken we dat beide variabele naar dezelfde array verwijzen:
 ```csharp
 andereNummers[0]=999;
@@ -95,6 +111,17 @@ We zullen dus als output krijgen:
 999
 999
 ```
+
+Hetzelfde gedrag zien we bij objecten:
+```csharp
+Student a= new Student("Abba");
+Student b= new Student("Queen");
+a=b;
+Console.WriteLine(a.Naam);
+```
+We zullen in dit geval dus ``Queen`` op het scherm zien omdat zowel ``b`` als ``a`` naar het zelfde object in de heap verwijzen. Het originele "abba"-object zijn we kwijt en zal verdwijnen (zie Garbage collector verderop).
+
+#### Methoden en reference parameters
 
 Ook bij methoden geven we de dus de referentie naar de waarde mee. In de methode kunnen we dus zaken aanpassen van de parameter en dan passen we eigenlijk de originele variabele aan:
 ```csharp
