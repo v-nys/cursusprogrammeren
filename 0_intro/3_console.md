@@ -1,18 +1,5 @@
-# Console-applicaties
-
-Een console-applicatie is een eenvoudig programma dat zijn in- en uitvoer via een klassiek commando-scherm toont. Via 2 belangrijke methoden **``Console.WriteLine``** en **``Console.ReadLine``** kunnen we enerzijds tekst op het scherm tonen en anderzijds tekst dat de gebruiker intypt inlezen.
-
-Een console-applicatie draait dus in dezelfde omgeving als wanneer we in Windows een command-prompt openen (via Start-> Uitvoeren-> ``cmd`` [enter] )
-
-## Je eerste programma
-
-Maak een nieuw console-project aan (noem het Demo1) en open het Program.cs bestand (indien het niet open). 
-
-Voeg binnen de accolades van ``Main`` volgende zin toe:
-
-```System.Console.WriteLine("Hoi, ik ben het!");```
-
-Zodat je dus volgende code krijgt (:
+# First program verbeteren
+We nemen terug ons eerste programma erbij en gaan hier aan verder werken:
 ```csharp
 namespace Demo1
 {
@@ -21,29 +8,17 @@ namespace Demo1
         static void Main(string[] args)
         {
             Console.WriteLine("Hoi, ik ben het!");
-            Console.ReadLine();
+            Console.WriteLine("Wie ben jij?!");
+             Console.ReadKey();
         }
     }
 }
 ```
-Compileer deze code en voer ze uit: druk hiervoor op het groene driehoekje met "Start" naast. Of via het menu Debug en dan Start Debugging.
 
-### LEES MIJ! (veel voorkomende fout)
-De lijn met``ReadLine`` is een klein truukje: ReadLine verwerkt input van de gebruiker maar in het voorgaande stuk code doen we niets met die input. Test echter eens wat er gebeurt als je de lijn ``Console.ReadLine();`` weglaat en dan probeert te starten.
+## ReadLine: Input van de gebruiker verwerken
 
-Inderdaad het programma sluit zich ogenblikkelijk af en je hebt amper tijd om te lezen wat er op het scherm verscheen. Dankzij ReadLine bouwen we dus een "pauze/wachtpunt" in aan het einde van ons programma. Dit is een goede gewoonte als je console-applicaties aan het debuggen bent.
- 
- ## WriteLine: Tekst op het scherm
- De WriteLine-methode is een veelgebruikte methode in Console-applicaties. Het zorgt ervoor dat we tekst op het scherm kunnen tonen.
-
-Voeg volgende lijn toe na de vorige WriteLine-lijn in je project:
-
-`Console.WriteLine("Wie ben jij?!");`` 
-
-De WriteLine methode zal alle tekst tonen die tussen de  "  " staan tussen de haakjes van de methode. **De aanhalingstekens aan het begin en einde van de tekst zijn uiterst belangrijk! Alsook het kommapunt helemaal achteraan.**
-
-## ReadLine: Input van de gebruiker
 Met de console kan je met een handvol methoden reeds een aantal interessante dingen doen. 
+
 Zo kan je bijvoorbeeld input van de gebruiker inlezen en bewaren in een variabele als volgt:
 ```csharp
 string result;

@@ -57,6 +57,7 @@ Het gebeurt al eens dat je layout een beetje om zeep is.
 * Voor eenvoudige venster terug te krijgen, bijvoorbeeld het properties window of de solution explorer: klik bovenaan in de menubalk op "View" en kies dan het gewenste venster (soms staat dit in een submenu)
 * Je kan ook altijd je layout in z'n geheel resette: Ga naar "Window" en kies "Reset window layout".
 ![](/assets/0_intro/vsreset.png)
+
 # Je programma starten 
 De code die VS voor je heeft gemaakt is reeds een werkend programma. Je kan de code compileren naar een uitvoerbaar bestand door te klikken op Build-&gt;Build Solution. Als dit gelukt is zal er onderaan VS in de statusbar ‘Build succeeded’ verschijnen.
 

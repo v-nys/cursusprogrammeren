@@ -6,7 +6,9 @@
 
 ## Semester 1
 * H0: Werken met Visual Studio
+  * [Introductie tot C#](0_intro/0_intrototcs.md)
   * [Werken met Visual Studio](0_intro/1_werkenmetvs.md) 
+  * [Je eerste programma](0_intro/2_firstprogram.md)
 * H1: De Taal C#
   * [Essentiele zaken](1_csharpbasics/0_csharpessentials.md)
   * [Datatypes](1_csharpbasics/1_datatypes.md)
@@ -17,7 +19,7 @@
   * [Casting, conversie en parsing](1_csharpbasics/4_converteren_casting.md)
   * [Oefeningen](1_csharpbasics/A_Practica.md)
 * H2: Console Applications
-   * [WriteLine en ReadLine](0_intro/2_console.md)
+  * [Console applicaties](0_intro/3_console.md)
 * H3: Beslissingen
   * [Beslissingen intro](2_beslissingen/0_beslissingen_intro.md)
   * [If](2_beslissingen/0_if.md)
