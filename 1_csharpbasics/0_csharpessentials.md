@@ -5,8 +5,17 @@ Een C#-programma bestaat uit een opeenvolging van instructies ook wel **statemen
 
 De volgorde van de woorden (keywords, variabelen, etc.) zijn niet vrijblijvend en moeten aan (grammaticale) regels voldoen.  Enkel indien alle statements correct zijn zal het programma gecompileerd worden naar een werkend en uitvoerbaar programma (zoals in vorige sectie besproken).
 
-# Keywords: de woordenschat
-C# bestaat zoals gezegd uit enkel grammaticale regels. Grammatica zonder woordeschat is nutteloos. Er ijn binnen C# dan ook 80 woorden, zogenaamde **keywords** gereserveerd die de woordenschat voorstellen.
+Enkele belangrijke regels van C#:
+
+* **Hoofdletter-gevoelig**: C# is hoofdlettergevoelig. Dat wil zeggen dat hoofdletter ``T`` en lowercase ``t`` totaal verschillende zaken zijn voor C#.
+* **Statements afsluiten met kommapunt**: Ieder C# statement wordt afgesloten moet een kommapunt **;**. 
+* **Witruimtes**: Spaties, tabs en enters worden door de C# compiler genegeerd. Je kan ze dus gebruiken om de layout van je code  (*bladspiegel* zeg maar) te verbeteren.
+* **Commentaar toevoegen kan**: met behulp van ``//`` voor een enkele lijn en ``/*         */`` voor meerdere lijnen commentaar. Alles dat in commentaar staat zal door de compiler genegeerd worden.
+
+
+
+# Keywords: de woordenschat 
+C# bestaat zoals gezegd uit enkel grammaticale regels. Grammatica zonder woordeschat is nutteloos. Er ijn binnen C# dan ook 80 woorden, zogenaamde **reserved keywords** gereserveerd die de woordenschat voorstellen.
 In dze cursus zullen we stelselmatig deze keywords leren kennen en gebruiken op een correcte manier om zo werkende code te maken.
 
 Deze keywords zijn:
@@ -46,7 +55,7 @@ Wanneer we een variabele aanmaken zal deze moeten voldoen aan enkele afspraken. 
 De verschillende datatypes bespreken we in een volgende [hoofdstuk](1_datatypes.md).
 
 ## Regels voor identifiers
-De code die we gaan schrijven moet voldoen aan een hoop regels. Wanneer we in onze code zelf namen (**identifiers**) moeten geven aan variabelen (en later ook methoden, objecten, etc) dan moeten we een aantal regels volgen:
+De code die we gaan schrijven moet voldoen aan een hoop regels. Wanneer we in onze code zelf namen (**identifiers**) moeten geven aan **variabelen** (en later ook methoden, objecten, etc) dan moeten we een aantal regels volgen:
 
 * Hoofdlettergevoelig: de identifiers ``tim`` en ``Tim`` zijn verschillend. Je mag dus perfect twee verschillende variabelen aanmaken met deze name. 
 * Geen keywords: identifiers mogen geen gereserveerd C# keyword zijn. De keywords van hierboven mogen dus niet. Varianten wel: denk maar aan ``goTO`` (``goto`` is een gereserveerd keyword, maar dankzij de hoofdlettergevoeligregel is dit dus toegelaten) en ``INT`` (tegenover keyword ``int``)
@@ -58,6 +67,12 @@ De code die we gaan schrijven moet voldoen aan een hoop regels. Wanneer we in on
     * liggend streepje
     * een cijfer (``1`` tot en met ``9`` en ``0``)
 * Lengte: een legale identifier mag zo lang zijn als je wenst, maar hou het best leesbaar
+
+## Naamgeving afspraken 
+Er zijn geen vaste afspraken over hoe je je variabelen moet noemen toch hanteren we enkele **coding guidelines** die doorheen je opleiding moeten gevolgd worden. Naarmate we meer C# leren zullen er extra guidelines bijkomen (zie [deze appendix voor alle guidelines van de opleiding](B_appendix/codingguidelines.md)).
+
+* **Duidelijke naam**: de identifier moet duidelijk maken waarvoor de identifier dient. Schrijf dus liever ``gewicht`` of ``leeftijd`` in plaats van ``a`` of ``meuh``. 
+* **Camel casing**: gebruik camel casing indien je meerdere woorden in je identfier wenst te gebruiken. Camel casing wil zeggen dat ieder nieuw woord terug met een hoofdletter begint. Een goed voorbeeld kan dus zijn ``leeftijdTimDams`` of ``aantalLeerlingenKlas1EA`` . Merk op dat we liefst het eerste woord met kleine letter starten.
 
 # Commentaar
 Soms wil je misschien extra commentaar bij je code zetten. Als je dat gewoon zou doen (bv ``Dit deel zal alles verwijderen``) dan zal je compiler niet begrijpen wat die zin doet. Hij verwacht namelijk C# syntax en niet een Nederlandstalige zin. Om dit op te lossen kan je in je code op twee manieren aangeven dat een stuk tekst gewoon commentaar is en mag genegeerd worden door de compiler:

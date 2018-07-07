@@ -19,7 +19,7 @@
   * [Casting, conversie en parsing](1_csharpbasics/4_converteren_casting.md)
   * [Oefeningen](1_csharpbasics/A_Practica.md)
 * H2: Console Applications
-  * [Console applicaties](0_intro/3_console.md)
+  * [ReadLine](0_intro/3_console.md)
 * H3: Beslissingen
   * [Beslissingen intro](2_beslissingen/0_beslissingen_intro.md)
   * [If](2_beslissingen/0_if.md)
@@ -103,3 +103,5 @@
   * [War Simulator](A_DEEL2_AllInOne/3_WarGame.md)
   * [Map Maker](A_DEEL2_AllInOne/1_MapMapker.md) 
 
+## Appendix
+* [Ea-ict coding guideline](B_appendix/codingguidelines.md)

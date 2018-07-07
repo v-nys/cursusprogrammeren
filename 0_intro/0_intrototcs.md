@@ -9,8 +9,8 @@ Het algoritme van een programma moet je zelf verzinnen. De volgorde waarin de in
 
 Eender welke andere volgorde van bovenstaande algoritme zal vreemde (en soms fatale) fouten geven.
 
-# C#
-Om een algoritme te schrijven dat onze computer begrijpt dienen we een programmeertaal te gebruiken. Net zoals er ontelbare spreektalen in de wereld zijn, zijn er ook vele programmeertalen. C# ('siejarp') is er een van de vele. In tegenstelling tot onze spreektalen moet een computertaal 'exact' zijn en moet het op ondubbelzinnige manier door de computer verstaan worden. C# is een taal die deel uitmaakt van de .NET omgeving die meer dan 15 jaar geleden door Microsoft werd ontwikkeld (juli 2000).
+# C-Sharp
+Om een algoritme te schrijven dat onze computer begrijpt dienen we een programmeertaal te gebruiken. Net zoals er ontelbare spreektalen in de wereld zijn, zijn er ook vele programmeertalen. **C#** (*'siesjarp'*) is er een van de vele. In tegenstelling tot onze spreektalen moet een computertaal 'exact' zijn en moet het op ondubbelzinnige manier door de computer verstaan worden. C# is een taal die deel uitmaakt van de .NET omgeving die meer dan 15 jaar geleden door Microsoft werd ontwikkeld (juli 2000).
 
 De geschiedenis en de hele .NET-wereld vertellen zou een cursus op zich betekenen en gaan we hier niet doen. Het is nuttig om weten dat er een gigantische bron aan informatie over .NET en C# online te vinden is, beginnende met [docs.microsoft.com](https://docs.microsoft.com/en-us/dotnet/csharp/getting-started/)
 
