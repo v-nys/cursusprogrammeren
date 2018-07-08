@@ -9,17 +9,18 @@
   * [Introductie tot C#](0_intro/0_intrototcs.md)
   * [Werken met Visual Studio](0_intro/1_werkenmetvs.md) 
   * [Je eerste programma](0_intro/2_firstprogram.md)
-* H1: De Taal C#
-  * [Essentiele zaken](1_csharpbasics/0_csharpessentials.md)
+  * [De essentie van C#](1_csharpbasics/0_csharpessentials.md)
+* H1: Variabelen en datatypes
   * [Datatypes](1_csharpbasics/1_datatypes.md)
-  * [Expressies](1_csharpbasics/2_expressies.md)
-  * [Operators](1_csharpbasics/3_operators.md)
+  * [Input verwerken met ReadLine](0_intro/3_console.md)
   * [Strings en chars](1_csharpbasics/5_chars_strings.md)
   * [Strings samenvoegen](1_csharpbasics/6_stringInterpolation.md)
-  * [Casting, conversie en parsing](1_csharpbasics/4_converteren_casting.md)
   * [Oefeningen](1_csharpbasics/A_Practica.md)
-* H2: Console Applications
-  * [ReadLine](0_intro/3_console.md)
+* H2: Werken met data
+  * [Expressies](1_csharpbasics/2_expressies.md)
+  * [Operators](1_csharpbasics/3_operators.md) 
+  * [Casting, conversie en parsing](1_csharpbasics/4_converteren_casting.md)
+  
 * H3: Beslissingen
   * [Beslissingen intro](2_beslissingen/0_beslissingen_intro.md)
   * [If](2_beslissingen/0_if.md)
@@ -104,4 +105,4 @@
   * [Map Maker](A_DEEL2_AllInOne/1_MapMapker.md) 
 
 ## Appendix
-* [Ea-ict coding guideline](B_appendix/codingguidelines.md)
+* [Ea-ict coding guidelines](B_appendix/codingguidelines.md)

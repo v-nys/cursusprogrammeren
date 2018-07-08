@@ -1,10 +1,24 @@
 ﻿# Typen en variabelen
+>Een variabele is een soort container in een C# programma waarin we een data waarde kunnen opslaan in het computergeheugen. The bewaarde waarde kan aangeroepen worden via de naam van de variabele
 
-Een essentieel onderdeel van C# is kennis van datatypes. Binnen C# zijn een aantal types gedefiniëerd die je kan gebruiken om dat ain op te slaan. Wanneer je data wenst te bewaren in je applicatie dan zal je je moeten afvragen wat voor soort data het is. Gaat het om een getal, een geheel getal, een kommagetal, een stuk tekst of misschien een binaire reeks? Ieder datatype in C# kan één welbepaald soort data bewaren, en dit zal telkens een bepaalde hoeveelheid geheugen vereisen. 
+Een essentieel onderdeel van C# is kennis van datatypes. Binnen C# zijn een aantal types gedefinieerd die je kan gebruiken om data in op te slaan. Wanneer je data wenst te bewaren in je applicatie dan zal je je moeten afvragen wat voor soort data het is. Gaat het om een getal, een geheel getal, een kommagetal, een stuk tekst of misschien een binaire reeks? Ieder datatype in C# kan één welbepaald soort data bewaren, en dit zal telkens een bepaalde hoeveelheid geheugen vereisen. 
 
 De data zelf bewaren we in **variabelen** van een **bepaald type**. Een variabele is een plekje in het geheugen dat in je programma zal gereserveerd worden om daarin data te bewaren van het type dat je aan de variabele hebt toegekend. Een variabele zal intern een geheugenadres hebben (waar de data in het geheugen staat) maar dat zou lastig programmeren meer, daarom moeten we ook steeds een naam oftewel **identifier** aan de variabele geven. 
+>De naam (identifier) van de variabele moet voldoen aan de identifier regels uit het vorige hoofdstuk.
+
+Om een variabele te maken moeten we deze **declareren**, door een type en naam te geven. Een variabele declaratie heeft als syntax:
+```csharp
+datatype variabelenaam;
+```
+Je mag ook meerdere variabele van het zelfde datatype in 1 enkele declaratie aanmaken door deze met komma's te scheiden:
+
+```csharp
+datatype variabelenaam1, variabelenaam2, variabelenaam3;
+```
 
 Dit alles bespreken we in de komende secties.
+
+# Datatypes
 
 # Basistypen voor getallen
 
@@ -111,7 +125,7 @@ eenGetal = "4";
 
 Als je bovenstaande probeert te compileren dan krijg je volgende error-boodschappen krijgen:
 
-![](/assets/0intro/errorliteraltoekenning.png)
+![](/assets/0_intro/errorliteraltoekenning.png)
 
 ### Nieuwe waarden overschrijven oude waarden
 
