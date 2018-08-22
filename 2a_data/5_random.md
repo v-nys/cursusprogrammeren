@@ -2,8 +2,8 @@ Random getallen genereren in je code kan leuk zijn om de gebruiker een interacti
 
 # Random generator
 De ``Random``-klasse laat je toe om eenvoudig willekeurige gehele en komma-getallen te maken. Je moet hiervoor twee zaken doen:
-1) Maak *eenmalig* een Random-generator aan: ``Random randomgen= new Random();``
-2) Roep de ``Next`` methode aan telkens je een nieuw getal nodig hebt, bijvoorbeeld: ``int mijnGetal= randomgen.Next()``
+1. Maak *eenmalig* een Random-generator aan: ``Random randomgen= new Random();``
+2. Roep de ``Next`` methode aan telkens je een nieuw getal nodig hebt, bijvoorbeeld: ``int mijnGetal= randomgen.Next()``
 
 ``Next()`` zal een geheel getal genereren.
 
