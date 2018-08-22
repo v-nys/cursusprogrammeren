@@ -1,9 +1,10 @@
 Leren programmeren door enkele de opdrachten in deze cursus te maken zal je niet ver (genoeg) brengen. Onze dikke vriend het Internet heeft echter tal van schitterende bronnen. Hier een overzicht.
 
 ## Cheat sheet
-Volgende document bevat een overzicht van de basis C# zaken van het eerste en (deel van het) tweede semester:
+Volgende document bevat een overzicht van de basis C# zaken van het eerste en (deel van het) tweede semester: [down](/assets/0_intro/cheat-sheet.pdf)
 
-![/assets/0_intro/cheat-sheet.pdf](/assets/0_intro/cheatprev.jpg)
+
+![](/assets/0_intro/cheatprev.jpg)
 
 
 
@@ -23,7 +24,7 @@ Ideale manier om programmeren meer in de vingers te krijgen:
 * [Code van 1001 Nacht](https://codevan1001nacht.wordpress.com/) :  Hier plaats ik geregeld korte tutorials over een specifiek probleem/onderwerp omtrent C#. De meeste content daar werd reeds in deze cursus verwerkt.
 * 
 ## Oefenvragen
-* [Een lijst met oude oefenvragen uit 2010](../assets/docs/oefenvragen2010.pdf): nog steeds relevant.
+* [Een lijst met oude oefenvragen uit 2010](/assets/docs/oefenvragen2010.pdf): nog steeds relevant.
 * [Een dagelijkse programmeeruitdaging op reddit](https://www.reddit.com/r/dailyprogrammer/)
 * Pittige vragen van de jaarlijkse Vlaamse Programmeerwedstrijd:
  * [2013](http://www.vlaamseprogrammeerwedstrijd.be/2013/opgaven.php)
