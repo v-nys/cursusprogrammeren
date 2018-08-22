@@ -16,11 +16,12 @@
   * [Strings en chars](1_csharpbasics/5_chars_strings.md)
   * [Strings samenvoegen](1_csharpbasics/6_stringInterpolation.md)
   * [Oefeningen](1_csharpbasics/A_Practica.md)
-* H2: Werken met data
-  * [Expressies](1_csharpbasics/2_expressies.md)
-  * [Operators](1_csharpbasics/3_operators.md) 
-  * [Casting, conversie en parsing](1_csharpbasics/4_converteren_casting.md)
   
+* H2: Werken met data
+  * [Expressies](2a_data/2_expressies.md)
+  * [Operators](2a_data/3_operators.md) 
+  * [Casting, conversie en parsing](2a_data/4_converteren_casting.md)
+  * [Oefeningen](2a_data/A_practica.md) 
 * H3: Beslissingen
   * [Beslissingen intro](2_beslissingen/0_beslissingen_intro.md)
   * [If](2_beslissingen/0_if.md)
