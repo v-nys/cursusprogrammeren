@@ -3,6 +3,7 @@
 * [FrontMatter](README.md)
 * Inleiding
   * [Benodigdheden](0_intro/benodigdheden.md)
+  * [Nuttige extras](0_intro/nuttigeextras.md)
 
 ## Semester 1
 * H0: Werken met Visual Studio
@@ -21,6 +22,7 @@
   * [Expressies](2a_data/2_expressies.md)
   * [Operators](2a_data/3_operators.md) 
   * [Casting, conversie en parsing](2a_data/4_converteren_casting.md)
+  * [Random](2a_data/5_random.md)
   * [Oefeningen](2a_data/A_practica.md) 
 * H3: Beslissingen
   * [Beslissingen intro](2_beslissingen/0_beslissingen_intro.md)

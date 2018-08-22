@@ -25,12 +25,12 @@ Schrijf een programma dat de volgende output geeft  (zie ook WhileDoordenker van
 ***********
 ```
 
-# Euler project
+## Euler project
 Maak volgende opdracht van [projecteuler.net](projecteuler.net):
 >Indien we alle natuurlijke getallen van 0 tot en met 10 oplijsten die een meervoud van 3 of 5 zijn, dan krijgen we de getallen 3,5,6 en 9. De som van deze 4 getallen is 23.
 Maak nu een programma dat de som van alle veelvouden van 3 of 5 weergeeft onder van 0 tot 1000.
 
-# Grootste getal
+##  Grootste getal
 Vervolledig deze code zodat ook getoond wordt welke de grootste waarde is die werd ingevoerd.
 ```csharp
 int x=0;
@@ -46,6 +46,19 @@ do
 }while (x != 32767)
 Console.WriteLine(y);
 ```
+
+## Boekhouder
+1° Maak een 'boekhoud-programma': de gebruiker kan continu positieve en negatieve getallen invoeren. Telkens hij op enter duwt wordt de huidige invoer aan de balans bijgevoegd.
+Je houdt volgende zaken bij:
+
+* De balans van alle ingevoerde getallen: dit is gewoon de som van de getallen. Als de gebruiker dus de getallen 4,-10, 8 invoerde dan zal de balans op +2 staan  (4 -10 + 8)
+* De som van alle negatieve invoeren. Als de gebruiker dus 4,-10,8,-6 invoerde dan zal dit getal op -16 staan (= -10 -6) .
+* De som van alle positieve invoeren. Als de gebruiker dus 4,-10,8,-6 invoerde dan zal dit getal op +12 staan (= 4+8) . 
+* Het gemiddelde van alle ingevoerde getallen 
+
+Deze 4 getallen worden steeds geüpdate en getoond wanneer de gebruiker een nieuw getal invoert en op enter duwt.
+
+
 ## Raad het getal
 
 **Deel 1:** Teken de flowchart van het volgende programma. 
@@ -100,3 +113,13 @@ Op het scherm wordt telkens getoond wie de huidige ronde heeft gewonnen en hoeve
 
 Teken een flowchart van je applicatie.
 
+# Tafels van vermenigvuldigen
+Gebruik de krach van loops om pijlsnel alle tafels van 1 tot en 10 van vermenigvuldigen oph et scherm te tonen (dus van 1x1 tot 10x10 en alles daartussen)
+
+# Password generator
+Ontwerp een consoletoepassing waarmee je een wachtwoord genereert voor een gebruiker. Het wachtwoord is opgebouwd uit:
+
+de 2 eerste letters van de familienaam: de 1ste letter is een hoofdletter, de 2de letter is een kleine letter. 
+Daarna worden de 2 letters gewisseld;
+het zonenummer van het telefoonnummer zonder de 0;
+het eerste cijfer van de postcode in het kwadraat.
