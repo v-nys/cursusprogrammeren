@@ -123,3 +123,32 @@ de 2 eerste letters van de familienaam: de 1ste letter is een hoofdletter, de 2d
 Daarna worden de 2 letters gewisseld;
 het zonenummer van het telefoonnummer zonder de 0;
 het eerste cijfer van de postcode in het kwadraat.
+
+# Become Neo
+Volgende code genereert een beeld zoals dat ook in de cultfilm The Matrix plaatsvindt. 
+```csharp
+Random rangen = new Random();
+Console.ForegroundColor = ConsoleColor.Green;
+while (true)
+{
+    //Genereer nieuw random teken:
+    char teken = Convert.ToChar(rangen.Next(62, 400));
+    //Zet teken op scherm
+    Console.Write(teken);
+    
+    //Ietwat vertragen
+    System.Threading.Thread.Sleep(10); //dit getal is in milliseconden. Speel er gerust mee.
+    
+    //Af en toe donker kleurtje
+    if(rangen.Next(0,3)==0)
+    {
+        Console.ForegroundColor = ConsoleColor.DarkGreen;
+    }
+    else
+    {
+        Console.ForegroundColor = ConsoleColor.Green;
+    }
+}
+```
+
+Vul de code aan zodat de karakters random kleuren krijgen. Kan je het nog cooler maken?
