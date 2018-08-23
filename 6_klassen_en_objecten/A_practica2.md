@@ -10,7 +10,7 @@ Korte uitleg over Pokémons en hun interne werking: Iedere Pokémon wordt uniek 
 
 De full-stats (punt 9) zijn echter de stats die de effectieve ‘krachten’ van een Pokémon bepalen in een gevecht. Deze stats worden berekend gebaseerd op de vaste base-stats en het huidige level van de Pokémon. Hoe hoger het level van de Pokémon, hoe hoger dus zijn full-stats. 
  
- ![](/assets/6_klassen/Pokémon.png)
+ ![](/assets/6_klassen/pokemon.png)
 
 ## De Pokémonopdracht
 1.	Maak een consoleapplicatie.
@@ -42,10 +42,10 @@ a.	Bv: Attack_Full wordt berekend als: ((Attack_Base*Level)/50)+5
 Pas de kennis van constructors toe op je Pokémon-project. Zorg ervoor dat je Pokémons op 3 kunt aanmaken als volgt:
 * Via een default constructor: alle base stats worden daarbij op 10 standaard ingesteld via de constructor
 * Via een overloaded constructor die de gebruiker toelaat om de 6 base stats als parameters mee te geven
-* Via object initializer syntax waarbij je eender welke stat kunt instellen
- 
+* Via object initializer syntax waarbij je eender welke stat kunt instellen.
+
  ## Deel 2: De Pokémontester
- [vergelijk je oplossing uit het vorige deel [met volgende oplossing](/assets/6_klassen/Pokemon.md) ]
+ [vergelijk je oplossing uit het vorige deel [met volgende oplossing](/assets/6_klassen/Pokemon.cs) ]
 Maak een nieuwe console-applicatie genaamd "Pokémon Tester": 
 
 1. voeg de Pokémon-klasse-bestand toe aan dit project. Verander de "namespace" van dit bestand naar de namespace van je nieuwe console-applicatie  (zie "Aanpassen van klasse" in [volgende uitleg](https://codevan1001nacht.wordpress.com/2013/11/06/werken-met-klassen-in-visual-studio/))
