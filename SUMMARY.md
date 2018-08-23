@@ -70,7 +70,9 @@
   * [Autoproperties](6_klassen_en_objecten/3_autoprop.md)
   * [Static](6_klassen_en_objecten/5_static.md)
   * [Expression bodied members](6_klassen_en_objecten/6_exprbody.md)
-  * [Labo-oefeningen](6_klassen_en_objecten/A_Practica.md)
+  * [Labo-oefeningen 1](6_klassen_en_objecten/A_Practica.md)
+  * [Labo-oefeningen 2](6_klassen_en_objecten/A_Practica2.md)
+  * [Labo-oefeningen 3](6_klassen_en_objecten/A_Practica3.md)
 * H8: Geheugennmanagement
    * [Stack en Heap](6_klassen_en_objecten/6_memorymanagement.md)
 * H9: Overerving
