@@ -75,6 +75,8 @@
   * [Labo-oefeningen 3](6_klassen_en_objecten/A_practica3.md)
 * H8: Geheugennmanagement
    * [Stack en Heap](6_klassen_en_objecten/6_memorymanagement.md)
+   * [Arrays van objecten](6_klassen_en_objecten/7_arraysvanobj.md)
+   * [Labo-oefeningen](6_klassen_en_objecten/A_practicaMem.md)
 * H9: Overerving
   * [Overerving intro](7_overerving/0_overerving_intro.MD)
   * [Virtual en override](7_overerving/1_virtual_override.md)

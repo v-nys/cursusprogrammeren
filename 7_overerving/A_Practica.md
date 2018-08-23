@@ -46,3 +46,16 @@ Maak 3 klassen:
 Maak een applicatie waarin je de werking van deze klassen aantoont
 
 
+
+# Dierentuin
+Maak een console-applicatie waarin je een zelfverzonnen abstract klasse Dier in een List<Dier> kunt plaatsen. Ieder dier heeft een gewicht en een methode ``Zegt`` (die abstract is) die het geluid van het dier in kwestie op het scherm zal tonen. Maak enkele childklassen die overerven van Dier en uiteraard de ``Zegt`` methode overriden.
+
+Vervolgens vraag je aan de gebruiker wat voor dieren er in deze lijst moeten toegevoegd worden.  Wanneer de gebruiker 'q' kiest stopt het programma met vragen welke dieren moeten toegevoegd worden en komt er een nieuw keuze menu. 
+Het keuze menu heeft volgende opties:
+a. Dier verwijderen , gevolgd door de gebruiker die invoert het hoeveelste dier weg moet uit de List.
+b. Diergewicht gemiddelde: het gemiddelde van alle dieren hun gewicht wordt getoond
+c. Dier praten: alle dieren hun Zegt() methode wordt aangeroepen en via WriteLine getoond
+d. Opnieuw beginnen: de List wordt leeggemaakt en het programma zal terug van voor af aan beginnen.
+
+Probeer zo modulair (methoden en oo!) te werken.
+
