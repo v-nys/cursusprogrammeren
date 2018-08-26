@@ -94,7 +94,7 @@
 * H13: Interfaces
   * [Interface intro](9_interfaces/1_Interface_intro.MD) 
   * [Interfaces in de praktijk](9_interfaces/2_InterfacesInPraktijk.md)
-  * [Labo-oefeningen](9_interfaces/A_Practica.md)
+  * [Labo-oefeningen](9_interfaces/a_practica.md)
 * H14: Generics
   * [Generics methoden en types](10_generics/0_generics_intro.MD)
   * [Generic classes en constraints](10_generics/2_genericclasses_en_constraints.md)
