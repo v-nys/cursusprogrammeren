@@ -17,7 +17,3 @@ Tim Dams
 PS Besef dat goed kunnen programmeren enkel kan (aan)geleerd worden indien je ook effectief veel programmeert. Je kan ook niet leren fietsen door enkel een handboek "Fietsen met Merckx" te lezen, je zal op de fiets moeten springen! En vallen...véél vallen. 
 
 
-Todo's voor de auteur:
-* Nieuwe => syntax voor properties (uitleggen bij props én override bij interface en virtual)
-
-

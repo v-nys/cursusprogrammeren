@@ -1,4 +1,4 @@
-# Geheugenmanagement in C#
+# Geheugenmanagement in C-Sharp
 Tot nog toe lagen we er niet van wakker wat er achter de schermen van een C# programma gebeurde. Nu dat we arrays hebben geïntroduceerd wordt het tijd om dit wel te doen.
 Het is , zeker naar het volgende semester, essentieel dat je deze materie ten gronde beheerst.
 
