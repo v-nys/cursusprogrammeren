@@ -1,6 +1,5 @@
 {
-    "styles": {
-
-        "pdf": "styles/pdf.css"
+    "pdf": {
+        "fontSize": 17
     }
 }
