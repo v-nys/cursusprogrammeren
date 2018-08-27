@@ -54,6 +54,7 @@ Wanneer je VS opstart zal je mogelijk overweldigd worden door de hoeveelheid men
 Laat je niet afschrikken door VS. Het is een imponerend programma, maar je zal er sneller dan je verwacht, je weg in terugvinden!
 
 We zullen nu eerst eens bekijken wat we allemaal zien in VS na het aanmaken van een nieuw programma.
+
 ![](/assets/0_intro/vside.png)
 
 * Je kan meerdere bestanden tegelijkertijd openen in VS. Ieder bestand zal z’n eigen tab krijgen. De actieve tab is het bestand wiens inhoud je in het hoofdgedeelte eronder te zien krijgt. Merk op dat enkel open bestanden een tab krijgen.
@@ -67,6 +68,7 @@ De layout van VS kan je volledig naar je hand zetten. Je kan ieder (deel-)venste
 
 * Om eenvoudig een venster terug te krijgen, bijvoorbeeld het properties window of de solution explorer: klik bovenaan in de menubalk op "View" en kies dan het gewenste venster (soms staat dit in een submenu)
 * Je kan ook altijd je layout in z'n geheel resetten: ga naar "Window" en kies "Reset window layout".
+
 ![](/assets/0_intro/vsreset.png)
 
 # Je programma starten 

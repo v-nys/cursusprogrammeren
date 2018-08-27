@@ -3,6 +3,8 @@ Leren programmeren door enkele de opdrachten in deze cursus te maken zal je niet
 
 ## Cheat sheet
 Volgende document bevat een overzicht van de basis C# syntax zaken van het eerste en (deel van het) tweede semester: [download hier](/assets/0_intro/cheat-sheet.pdf)
+
+
 ![](/assets/0_intro/cheatprev.jpg)
 
 

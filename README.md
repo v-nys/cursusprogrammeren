@@ -10,12 +10,13 @@ De cursus is volledig 'opensource' en je kan deze dus ook zelf forken via [githu
 
 Veel leer-en leesplezier,
 Tim Dams
+
 ![](/assets/0_intro/tdams.jpg)
 
 PS Besef dat goed kunnen programmeren enkel kan (aan)geleerd worden indien je ook effectief veel programmeert. Je kan ook niet leren fietsen door enkel een handboek "Fietsen met Merckx" te lezen, je zal op de fiets moeten springen! En vallen...véél vallen. 
 
 ## Todo's
-Deze cursus is nog volop in opbouw, hier lijst ik de belangrijkste aspecten die nog moeten gebeuren:
+Deze cursus is nog volop in opbouw. Hier de lijst van de belangrijkste aspecten die nog moeten gebeuren:
 * Titels in hoofding laten overeenstemmen met titels in inhoudsopgave
 * Hoofdstuk debugging schrijven
 * Volgorde H1 en H2 herschikken
