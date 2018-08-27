@@ -1,4 +1,4 @@
-# Benodigheden
+# Benodigdheden
 
 In alle lessen \(hoorcollege en practica\) hebben we 2 zaken nodig:
 

@@ -1,13 +1,14 @@
+# Nuttige extra's
 Leren programmeren door enkele de opdrachten in deze cursus te maken zal je niet ver (genoeg) brengen. Onze dikke vriend het Internet heeft echter tal van schitterende bronnen. Hier een overzicht.
 
 ## Cheat sheet
-Volgende document bevat een overzicht van de basis C# zaken van het eerste en (deel van het) tweede semester: [download hier](/assets/0_intro/cheat-sheet.pdf)
+Volgende document bevat een overzicht van de basis C# syntax zaken van het eerste en (deel van het) tweede semester: [download hier](/assets/0_intro/cheat-sheet.pdf)
 ![](/assets/0_intro/cheatprev.jpg)
 
 
 
 ## Game-based programmeren
-Ideale manier om programmeren meer in de vingers te krijgen:
+Ideale manier om programmeren meer in de vingers te krijgen op een speelse manier:
 
 * [Code Combat](https://codecombat.com/) (aanrader!)
 * [Pex For Fun](https://pexforfun.com/) (specifiek voor C#!)
