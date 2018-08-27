@@ -7,16 +7,16 @@ De volgorde van de woorden (keywords, variabelen, etc.) zijn niet vrijblijvend e
 
 Enkele belangrijke regels van C#:
 
-* **Hoofdletter-gevoelig**: C# is hoofdlettergevoelig. Dat wil zeggen dat hoofdletter ``T`` en lowercase ``t`` totaal verschillende zaken zijn voor C#.
-* **Statements afsluiten met kommapunt**: Ieder C# statement wordt afgesloten moet een kommapunt **;**. 
-* **Witruimtes**: Spaties, tabs en enters worden door de C# compiler genegeerd. Je kan ze dus gebruiken om de layout van je code  (*bladspiegel* zeg maar) te verbeteren.
+* **Hoofdletter-gevoelig**: C# is hoofdlettergevoelig. Dat wil zeggen dat hoofdletter ``T`` en lowercase ``t`` totaal verschillende zaken zijn voor C#. ``reinhardt`` en ``Reinhardt`` zijn dus ook niet hetzelfde.
+* **Statements afsluiten met kommapunt**: Ieder C# statement wordt afgesloten moet een kommapunt **;**. Doe je dat niet dan zal C# denken dat de regel gewoon op de volgende regel doorloopt en deze als één (fout) geheel proberen te compileren.
+* **Witruimtes**: Spaties, tabs en enters worden door de C# compiler genegeerd. Je kan ze dus gebruiken om de layout van je code  (*bladspiegel* zeg maar) te verbeteren. De enige plek waar witruimtes wél een verschil geven is tussen aanhalingstekens ``"      "`` die we later (bij string) zullen leren gebruiken.
 * **Commentaar toevoegen kan**: met behulp van ``//`` voor een enkele lijn en ``/*         */`` voor meerdere lijnen commentaar. Alles dat in commentaar staat zal door de compiler genegeerd worden.
 
 
 
 # Keywords: de woordenschat 
-C# bestaat zoals gezegd uit enkel grammaticale regels. Grammatica zonder woordeschat is nutteloos. Er ijn binnen C# dan ook 80 woorden, zogenaamde **reserved keywords** gereserveerd die de woordenschat voorstellen.
-In dze cursus zullen we stelselmatig deze keywords leren kennen en gebruiken op een correcte manier om zo werkende code te maken.
+C# bestaat zoals gezegd uit enkel grammaticale regels. Grammatica zonder woordenschat is nutteloos. Er zijn binnen C# dan ook 80 woorden, zogenaamde **reserved keywords**  die de woordenschat voorstellen.
+In deze cursus zullen we stelselmatig deze keywords leren kennen en gebruiken op een correcte manier om zo werkende code te maken.
 
 Deze keywords zijn:
 |   |     |     |   |
@@ -42,7 +42,9 @@ Deze keywords zijn:
 |using	|using static|	*virtual*|	**void**|
 |volatile	|**while**| |
 
-> De keywords in vet zijn keywords die we dit semester zullen kennen. Die in cursief in het tweede semester.
+> De keywords in vet zijn keywords die we dit semester zullen kennen. Die in cursief in het tweede semester. De overige zal je zelf moeten leren ;)
+
+(indien je deze tabel in pdf bekijkt zal deze om zeep zijn. Onze gitbook gnomes proberen dit op te lossen maar voorlopig vinden we helaas geen oplossing, waarvoor onze excuses)
 
 # Variabelen, identifiers en naamgeving
 We hebben variabelen nodig om (tijdelijke) data in op te slaan. Wanneer we een statement schrijven dat bijvoorbeeld input van de gebruiker moet vragen, dan willen we ook die input bewaren, zodat we verderop in het programma (het algoritme) iets met deze data kunnen doen.
@@ -57,28 +59,43 @@ De verschillende datatypes bespreken we in een volgende [hoofdstuk](1_datatypes.
 ## Regels voor identifiers
 De code die we gaan schrijven moet voldoen aan een hoop regels. Wanneer we in onze code zelf namen (**identifiers**) moeten geven aan **variabelen** (en later ook methoden, objecten, etc) dan moeten we een aantal regels volgen:
 
-* Hoofdlettergevoelig: de identifiers ``tim`` en ``Tim`` zijn verschillend. Je mag dus perfect twee verschillende variabelen aanmaken met deze name. 
-* Geen keywords: identifiers mogen geen gereserveerd C# keyword zijn. De keywords van hierboven mogen dus niet. Varianten wel: denk maar aan ``goTO`` (``goto`` is een gereserveerd keyword, maar dankzij de hoofdlettergevoeligregel is dit dus toegelaten) en ``INT`` (tegenover keyword ``int``)
+* Hoofdlettergevoelig: de identifiers ``tim`` en ``Tim`` zijn verschillend zoals reeds vermeld. 
+* Geen keywords: identifiers mogen geen gereserveerde C# keywords zijn. De keywords van hierboven mogen dus niet. Varianten waarbij de hoofdletters anders zijn mogen wel, bijvoorbeeld: ``goTO`` (``goto`` is een gereserveerd keyword, maar dankzij de hoofdlettergevoelig-regel is dit dus toegelaten) en ``INT`` mag ook (tegenover het gerserveerd keyword ``int`` dat je dus niet als identifier mag gebruiken)
 * Eerste karakter-regel: het eerste karakter van de identifier mag enkel zijn:
     * kleine of grote letter
     * liggend streepje ( ``_``)
 * Alle andere karakters: de overige karakters moeten mogen enkel zijn:
-    * kleine of groter| letter
+    * kleine of grote letter
     * liggend streepje
-    * een cijfer (``1`` tot en met ``9`` en ``0``)
+    * een cijfer (``0`` tot en met ``9`` )
 * Lengte: een legale identifier mag zo lang zijn als je wenst, maar hou het best leesbaar
+
+### Enkele voorbeelden
+Enkele voorbeelden van toegelaten en niet toegelaten identifiers:
+| identifier  | toegelaten?    |   uitleg indien niet toegelaten  | 
+|----|----|-----|
+|werknemer| ja |  |
+|kerst2018| ja |  |
+|pippo de clown| neen| geen spaties toegestaan|
+|4dPlaats| neen| mag niet starten met getal|
+|_ILOVE2019| ja| |
+|Tor+Bjorn| neen| enkel cijfers, letters en liggende streepjes toegestaan|
+|ALLCAPSMAN| ja |  |
+|B_A_L| ja| |
+|class | neen| gereserveerd keyword|
+|WriteLine| ja|  |
 
 ## Naamgeving afspraken 
 Er zijn geen vaste afspraken over hoe je je variabelen moet noemen toch hanteren we enkele **coding guidelines** die doorheen je opleiding moeten gevolgd worden. Naarmate we meer C# leren zullen er extra guidelines bijkomen (zie [deze appendix voor alle guidelines van de opleiding](B_appendix/codingguidelines.md)).
 
 * **Duidelijke naam**: de identifier moet duidelijk maken waarvoor de identifier dient. Schrijf dus liever ``gewicht`` of ``leeftijd`` in plaats van ``a`` of ``meuh``. 
-* **Camel casing**: gebruik camel casing indien je meerdere woorden in je identfier wenst te gebruiken. Camel casing wil zeggen dat ieder nieuw woord terug met een hoofdletter begint. Een goed voorbeeld kan dus zijn ``leeftijdTimDams`` of ``aantalLeerlingenKlas1EA`` . Merk op dat we liefst het eerste woord met kleine letter starten.
+* **Camel casing**: gebruik camel casing indien je meerdere woorden in je identifier wenst te gebruiken. Camel casing wil zeggen dat ieder nieuw woord terug met een hoofdletter begint. Een goed voorbeeld kan dus zijn ``leeftijdTimDams`` of ``aantalLeerlingenKlas1EA`` . Merk op dat we liefst het eerste woord met kleine letter starten. En uiteraard zijn geen spaties toegelaten.
 
 # Commentaar
-Soms wil je misschien extra commentaar bij je code zetten. Als je dat gewoon zou doen (bv ``Dit deel zal alles verwijderen``) dan zal je compiler niet begrijpen wat die zin doet. Hij verwacht namelijk C# syntax en niet een Nederlandstalige zin. Om dit op te lossen kan je in je code op twee manieren aangeven dat een stuk tekst gewoon commentaar is en mag genegeerd worden door de compiler:
+Soms wil je misschien extra commentaar bij je code zetten. Als je dat gewoon zou doen (bv ``Dit deel zal alles verwijderen``) dan zal je compiler niet begrijpen wat die zin doet. Hij verwacht namelijk C#  en niet een Nederlandstalige zin. Om dit op te lossen kan je in je code op twee manieren aangeven dat een stuk tekst gewoon commentaar is en mag genegeerd worden door de compiler:
 
-## Enkele lijn commentaar  met //
-Eén lijn commentaar geef je aan door de lijn te starten met twee voorwaartse slashes ``//``. Uiteraard mag je ook meerdere lijnen op deze manier in commentaar zetten. Zo wordt dit ook vaak gebruik om tijdelijk een stuk code "uit te schakelen". Ook mogen we commenaar *achter* een stuk C# code plaatsen (zie onderaan voorbeeld)
+## Enkele lijn commentaar
+Eén lijn commentaar geef je aan door de lijn te starten met twee voorwaartse slashes ``//``. Uiteraard mag je ook meerdere lijnen op deze manier in commentaar zetten. Zo wordt dit ook vaak gebruik om tijdelijk een stuk code "uit te schakelen". Ook mogen we commentaar *achter* een stuk C# code plaatsen (zie onderaan voorbeeld)
 ```csharp
 //De start van het programma
 int getal=3;
@@ -87,8 +104,8 @@ int result = getal * 5;
 // result= 5* 4;
 Console.WriteLine(result); //We tonen resultaat op scherm
 ```
-## Blok commentaar met /* en */
-We kunnen een stuk tekst als commentaar aangeven door voor de tekst ``/*`` te plaatsen en achteraan de blok tekst ``*/``. Een voorbeeld:
+## Blok commentaar
+We kunnen een stuk tekst als commentaar aangeven door voor de tekst ``/*`` te plaatsen en ``*/`` achteraan. Een voorbeeld:
 ```csharp
 /*
     Veel commentaar.

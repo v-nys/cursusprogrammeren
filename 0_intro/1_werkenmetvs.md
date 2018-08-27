@@ -48,7 +48,7 @@ Kijk steeds goed volgende zaken na voor je je nieuwe project aanmaakt:
 
 
 
-# IDE Layout {#ide-layout}
+# IDE Layout
 Wanneer je VS opstart zal je mogelijk overweldigd worden door de hoeveelheid menu's, knopjes, schermen etc. Dit is normaal voor een IDE: deze wil zoveel mogelijk mogelijkheden aanbieden aan de gebruiker. Vergelijk dit met Word: afhankelijk van wat je gaat doen gebruikt iedere gebruiker andere zaken van Word. De makers van Word kunnen echter niet bepaalde zaken weglaten, ze moeten net zoveel mogelijk aanbieden. 
 
 Laat je niet afschrikken door VS. Het is een imponerend programma, maar je zal er sneller dan je verwacht, je weg in terugvinden!
