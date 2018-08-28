@@ -22,6 +22,7 @@
   
 * H2: Werken met data
   * [Casting, conversie en parsing](2a_data/4_converteren_casting.md)
+  * [Input vverwerken en omzetten](2a_data/4b_inputconverten.md)
   * [Random](2a_data/5_random.md)
   * [Oefeningen](2a_data/A_practica.md) 
 * H3: Beslissingen
