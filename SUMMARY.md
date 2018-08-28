@@ -13,14 +13,14 @@
   * [De essentie van C#](1_csharpbasics/0_csharpessentials.md)
 * H1: Variabelen en datatypes
   * [Datatypes](1_csharpbasics/1_datatypes.md)
-  * [Input verwerken met ReadLine](0_intro/3_console.md)
+  * [Expressies](2a_data/2_expressies.md)
+  * [Operators](2a_data/3_operators.md) 
   * [Strings en chars](1_csharpbasics/5_chars_strings.md)
   * [Strings samenvoegen](1_csharpbasics/6_stringInterpolation.md)
+  * [Input verwerken met ReadLine](0_intro/3_console.md)
   * [Oefeningen](1_csharpbasics/A_Practica.md)
   
 * H2: Werken met data
-  * [Expressies](2a_data/2_expressies.md)
-  * [Operators](2a_data/3_operators.md) 
   * [Casting, conversie en parsing](2a_data/4_converteren_casting.md)
   * [Random](2a_data/5_random.md)
   * [Oefeningen](2a_data/A_practica.md) 
@@ -113,3 +113,4 @@
 
 ## Appendix
 * [Ea-ict coding guidelines](B_appendix/codingguidelines.md)
+* [Nice to know stuff](B_appendix/prostuff.md)
