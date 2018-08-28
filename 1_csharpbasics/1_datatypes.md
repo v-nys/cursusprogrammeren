@@ -1,6 +1,4 @@
-﻿# Datatypes en variabelen
-
->Een variabele is een soort container in een C# programma waarin we een data waarde kunnen opslaan in het computergeheugen. The bewaarde waarde kan aangeroepen worden via de naam van de variabele
+﻿>Een variabele is een soort container in een C# programma waarin we een data waarde kunnen opslaan in het computergeheugen. The bewaarde waarde kan aangeroepen worden via de naam van de variabele
 
 Een essentieel onderdeel van C# is kennis van datatypes. Binnen C# zijn een aantal types gedefinieerd die je kan gebruiken om data in op te slaan. Wanneer je data wenst te bewaren in je applicatie dan zal je je moeten afvragen wat voor soort data het is. Gaat het om een getal, een geheel getal, een kommagetal, een stuk tekst of misschien een binaire reeks? Ieder datatype in C# kan één welbepaald soort data bewaren, en dit zal telkens een bepaalde hoeveelheid computergeheugen vereisen. 
 
