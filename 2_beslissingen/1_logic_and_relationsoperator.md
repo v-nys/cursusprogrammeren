@@ -1,4 +1,6 @@
 # Relationele operators
+Om beslissingen te kunnen nemen in C# hebben we een nieuw soort operators nodig. Operators waarmee we kunne testen of iets waar of niet waar is. Dit doen we met de zogenaamde **relationele operators**. En guess what, je kent die al van uit het lager! Enkel de "gelijk aan" ziet er iets anders uit dan we gewoon zijn:
+
 
 | C#-syntax| Betekenis| 
 | ---------| ---------

@@ -24,13 +24,14 @@
   * [Input verwerken en omzetten](2a_data/4b_inputconverten.md)
   * [Random](2a_data/5_random.md)
   * [Oefeningen](2a_data/A_practica.md) 
+
 * H3: Beslissingen
   * [Beslissingen intro](2_beslissingen/0_beslissingen_intro.md)
   * [Booleanse expressies, logische en relationele operators](2_beslissingen/1_logic_and_relationsoperator.md)
   * [If](2_beslissingen/0_if.md)
   * [Switch](2_beslissingen/2_switch.md)
   * [Enums](2_beslissingen/3_enum.md)
-  * [Oefeningen](2_beslissingen/A_Practica.md)
+  * [Oefeningen](2_beslissingen/A_practica.md)
 * H4: Loops
   * [Loops intro](3_herhalingen/0_loops_intro.md)
   * [While en Do While](3_herhalingen/1_while_dowhile.md)
