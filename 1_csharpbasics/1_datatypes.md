@@ -6,14 +6,12 @@ De data zelf bewaren we in **variabelen** van een **bepaald type**. Een variabel
 >De naam (identifier) van de variabele moet voldoen aan de identifier regels uit het vorige hoofdstuk.
 
 
-Dit alles bespreken we in de komende secties.
-
-# Datatypes
 Er zijn tal basistypes in C# gedeclareerd (zogenaamde **primitieve datatypes**). Dit semester leren we werken met datatypes voor:
 * Gehele getallen: `sbyte, byte, short, ushort, int, uint, long`
 * Kommagetallen: `double , float, decimal`
 * Tekst: `char`,`string`
 * Booleans: `bool`
+
 
 # Basistypen voor getallen
 Alhoewel een computer digitaal werkt en enkel 0'n en 1'n bewaard zou dat voor ons niet erg handig werken. C# heeft daarom een hoop datatypes gedefinieerd om te werken met getallen zoals wij ze kennen, gehele en kommagetallen. Intern zullen deze getallen nog steeds binair bewaard worden, maar dat is tijdens het programmeren zelden een probleem.
@@ -26,11 +24,10 @@ De basistypen van C\# om getallen in op te slaan zijn:
 
 > Ieder type hierboven heeft een bepaald bereik en hoeveelheid geheugen nodig. Je zal dus steeds moeten afwegen wat je wenst. Op een high-end pc met ettelijke gigabytes aan werkgeheugen (RAM) is geheugen zelden een probleem waar je rekening mee moet houden...Of toch: wat met real-time shooters die miljoenen berekeningen (3D) per seconde moeten uitvoeren. Daar zal iedere byte tellen. En op andere apparaten (smartphone, arduino, smart fridges, etc) is iedere byte geheugen nog kostbaarder. **Kortom: kies steeds bewust het datatype dat het beste 'past' voor je probleem qua bereik, precisie en geheugengebruik.**
 
-## Eigenschappen van datatypes
 
 Deze datatypes hebben allemaal een bepaald bereik, wat een rechtstreeks gevolg is van de hoeveelheid geheugen die ze innemen.
 
-### Gehele getallen
+## Gehele getallen
 Voor de gehele getallen:
 
 | **Type** | **Geheugen** | **Bereik** | **Meer info**|
@@ -54,7 +51,7 @@ Enkele opmerkingen bij deze tabel:
 * Het grootste getal bij `long` is 2 tot de 63ste (
 negen triljoen tweehonderddrieëntwintig biljoen driehonderd tweeënzeventig biljoen zesendertig miljard achthonderdvierenvijftig miljoen zevenhonderdvijfenzeventigduizend achthonderd zeven) . Dit zijn maar 63 bits?! Inderaad, de laatste bit wordt gebruikt om het teken te bewaren.
 
-### Kommagetallen
+## Kommagetallen
 Voor de kommagetallen zijn er maar 3 mogelijkeden. Ieder datatype heeft een 'voordeel' tegenover de 2 andere, dit voordeel staat vet in de tabel:
 
 | **Type** | **Geheugen** | **Bereik** | **Precisie** |
@@ -67,7 +64,22 @@ Voor de kommagetallen zijn er maar 3 mogelijkeden. Ieder datatype heeft een 'voo
   
   > Bij twijfel opteren we meestal voor kommagetallen om het ``double`` datatype te gebruiken. Bij gehele getallen kiezen we meestal voor  ``int`` .
 
-## Variabelen aanmaken en gebruiken
+## Boolean datatype
+Het ``bool`` (**boolean**) is het eenvoudigste datatype van C#. Het kan maar 2 mogelijke waarden bevatten: ``true`` of ``false``. 0 of 1 met andere woorden. 
+
+Het gebeurt vaak dat beginnende programmeurs een ``int`` variabele gebruiken terwijl ze toch weten dat de variabele maar 2 mogelijke waarden zal hebben. Om dus onnodig geheugen te verbruiken is het aan te raden om in die gevallen steeds met een ``bool`` variabele te werken.
+
+We zullen het ``bool`` datatype erg veel nodig hebben wanneer we met [beslissingen](../2_beslissingen/0_beslissingen_intro.md) zullen werken , specifiek de [``if`` statements]((../2_beslissingen/if.md)) die afhankelijk van de uitslag van een ``bool`` bepaalde code wel of niet zullen doen uitvoeren.
+
+## Tekst/String datatype
+We besteden een heel apart hoofdstuk verderop om te tonen hoe je tekst en enkele karakters kan bewaren in variabelen. Sneak preview: 
+* Tekst kan bewaard worden in het ``string`` datatype
+* Een enkel karakter wordt bewaard in het ``char`` datatype dat we ook hierboven al even hebben zien passeren.
+
+Meer info vind je in [dit hoofdstuk](5_chars_strings.md).
+
+
+# Variabelen aanmaken en gebruiken
 
 Om een variabele te maken moeten we deze **declareren**, door een type en naam te geven. Vanaf dan zal de computer een hoeveelheid geheugen voor je reserveren waar de inhoud van deze variabele in kan bewaard worden. 
 Hiervoor dien je minstens op te geven:
