@@ -32,6 +32,7 @@
   * [Switch](2_beslissingen/2_switch.md)
   * [Enums](2_beslissingen/3_enum.md)
   * [Oefeningen](2_beslissingen/A_practica.md)
+  
 * H4: Loops
   * [Loops intro](3_herhalingen/0_loops_intro.md)
   * [While en Do While](3_herhalingen/1_while_dowhile.md)
