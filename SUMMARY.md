@@ -14,6 +14,7 @@
 * H1: Variabelen en datatypes
   * [Datatypes](1_csharpbasics/1_datatypes.md)
   * [Expressies en operators](1_csharpbasics/2_expressies.md)
+  * [Scope van variabelen](1_csharpbasics/3_scope.md)
   * [Strings en chars](1_csharpbasics/5_chars_strings.md)
   * [Strings samenvoegen](1_csharpbasics/6_stringInterpolation.md)
   * [Input verwerken met ReadLine](0_intro/3_console.md)
@@ -37,7 +38,6 @@
   * [Loops intro](3_herhalingen/0_loops_intro.md)
   * [While en Do While](3_herhalingen/1_while_dowhile.md)
   * [For](3_herhalingen/2_for.md)
-  * [Foreach en var](3_herhalingen/3_foreach.md)
   * [Programma flow analyse](3_herhalingen/4_programflow.md)
   * [Oefeningen](3_herhalingen/A_Practica.md)
 * H5: Methoden
@@ -51,6 +51,7 @@
   * [Array principes](5_arrays/1_ArraysBasics.md)
   * [Werken met arrays](5_arrays/2_werken_met_arrays.md)
   * [Arrays en methoden](5_arrays/3_arrays_en_methoden.md)
+  * [Foreach en var](5_arrays/3_foreach.md)
   * [N-dimensionale arrays](5_arrays/4_ndimensionalArrays.md)
   * [Jagged arrays](5_arrays/5_jaggedArrays.md)
   * [Oefeningen](5_arrays/A_Practica.md)

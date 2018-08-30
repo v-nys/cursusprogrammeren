@@ -1,5 +1,17 @@
 
-#Bereik in code weten (Pro-kennis)
+# Handige Visual Studio code snippets
+
+Bepaalde code zal je vaak opnieuw schrijven. Er zitten in VS tal van shortcuts om deze typische lijnen code sneller te schrijven. Schrijf een van volgende stukken code en druk dan 2x op de [tab]-toets
+* cw: schrijft ``Console.WriteLine()``;
+* for
+* while
+* dowhile
+* switch
+* propfull: full property
+* prop: auto-property
+
+
+# Bereik in code weten (Pro-kennis)
 Het bereik van  datatypen is weliswaar opgegeven. Maar het is belangrijk om weten dat deze ook in de compiler gekend is. Het volgende voorbeeld toont dit aan:
 
 ```csharp
