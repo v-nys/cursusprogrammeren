@@ -17,6 +17,10 @@ Maak een array aan die tot 10 ints kan bevatten. Lees 1 voor 1 de vraag uit de a
 
 Na de 10 vragen toon je vervolgens de 10 vragen met achter iedere vraag het antwoord van de gebruiker.
 
+
+## Prijzen met foreach
+Maak een array die tot 20 prijzen (double) kan bewaren. Vraag aan de gebruiker om 20 prijzen in te voeren en bewaar deze in de array. Doorloop vervolgens m.b.v. een foreach-lus de volledige array en toon enkel de elementen op het scherm wiens prijs hoger of gelijk is aan €5.00. Toon op het einde van het programma het gemiddelde van alle prijzen (dus inclusief de lagere prijzen).
+
 ## Array Zoeker
 Maak een programma dat eerst weer aan de gebruiker om 10 waarden vraagt die in een array worden gezet. 
 
