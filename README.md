@@ -19,4 +19,3 @@ PS Besef dat goed kunnen programmeren enkel kan (aan)geleerd worden indien je oo
 Deze cursus is nog volop in opbouw. Hier de lijst van de belangrijkste aspecten die nog moeten gebeuren:
 * Titels in hoofding laten overeenstemmen met titels in inhoudsopgave
 * Hoofdstuk debugging schrijven
-* Hoofdstukken Expressie datatypes en operators schrijven
