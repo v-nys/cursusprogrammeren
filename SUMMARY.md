@@ -26,8 +26,8 @@
   * [Oefeningen](2a_data/A_practica.md) 
 * H3: Beslissingen
   * [Beslissingen intro](2_beslissingen/0_beslissingen_intro.md)
+  * [Booleanse expressies, logische en relationele operators](2_beslissingen/1_logic_and_relationsoperator.md)
   * [If](2_beslissingen/0_if.md)
-  * [Logische en relationele operators](2_beslissingen/1_logic_and_relationsoperator.md)
   * [Switch](2_beslissingen/2_switch.md)
   * [Enums](2_beslissingen/3_enum.md)
   * [Oefeningen](2_beslissingen/A_Practica.md)

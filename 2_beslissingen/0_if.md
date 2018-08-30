@@ -1,5 +1,5 @@
-# Beslissingen/If statements
-Nu we de elementaire zaken van C# en Visual Studio kennen is het tijd om onze programma's wat interessanter te maken. De ontwikkelde programma's tot nog toe waren steevast lineair van opbouw, ze werden lijn per lijn uitgevoerd zonder de mogelijkheid om de *flow* van het programma aan te passen.
+#If statements
+> De flowchart afbeelding komen uit het handboek ["Microsoft Visual C# 2015: An Introduction to Object-Oriented Programming" van Joyce Farrell](https://books.google.be/books/about/Microsoft_Visual_C_2015_An_Introduction.html?id=Xy-dBAAAQBAJ&source=kp_cover&redir_esc=y). Op termijn zullen de illustraties door mezelf gemaakt worden.
 
 In dit deel  zullen we bekijken hoe we ons programma dynamischer kunnen maken met behulp van het if-statement.
 
@@ -9,61 +9,62 @@ De ``if`` uitdrukking is 1 van de elementairste uitdrukking in een programmeerta
 ```csharp
 if (boolean expression) 
 {
-     // C# code to be performed when expression evaluates to true
+     // C# die moet uitgevoerd worden indien de booleaanse expressie waar is
 }
 ```
-Enkel indien de boolean expressie true als resultaat geeft zal de code binnen de accolades van het if-blok uitgevoerd worden. Indien de expressie false teruggaf dan wordt het blok overgeslagen en gaat het programma verder met de code eronder.
+Enkel indien de booleaanse expressie waar is, en dus ``true`` als resultaat heeft zal de code binnen de accolades van het if-blok uitgevoerd worden. Indien de expressie niet waar is (``false``) dan wordt het blok overgeslagen en gaat het programma verder met de code eronder.
+
+
 
 Een voorbeeld:
 ```csharp
-int x = 10;
+int number = 3;
  
-if ( x > 9 )
-{
-         System.Console.WriteLine ("x is greater than 9!");
-}
+if ( number < 5 )
+        Console.WriteLine ("A");
+Console.WriteLine("B");
 ```
-
-
-## If/else
-Met if/else kunnen we niet enkel zeggen welke code moet uitgevoerd worden als de conditie waar is maar ook welke specifieke code indien de conditatie niet waar (false). Volgende voorbeeld geeft een typisch gebruik van een if/else structuur om 2 waarden met mekaar te vergelijken:
-
-```csharp
-int x = 10;
- 
-if ( x > 9 )
-{
-         System.Console.WriteLine ("x is greater than 9!");
-}
-else
-{
-         System.Console.WriteLine ("x is less than 9!");
-}
+De uitvoer van dit programma zal zijn:
 ```
-## If/else if
-Met een if/ else if constructie kunnen we meerdere criteria opgeven die waar/niet waar moeten zijn voor een bepaald stukje code kan uitgevoerd worden. Sowieso begint men steeds met een if. Als men vervolgens een else if plaats dan zal de code van deze else if uitgevoerd worden enkel en alleen als de eerste expressie (van de if) niet waar was en de expressie van deze else if wel waar is.
+A
+B
+```
+Indien ``number`` groter of gelijk aan 5 was dan zou er enkel ``B`` op het scherm zijn verschenen. De lijn ``Console.WriteLine("B")`` zal sowieso uitgevoerd worden zoals je ook kan zijn aan de volgende flowchart:
+
+![](/assets/2_beslissingen/ifflow.png)
+
+## if met een block
+Het is aangeraden om steeds na de if-expressie met accolades te werken. Dit zorgt ervoor dat alle code tussen het block (de accolades) zal uitgevoerd worden indien de booleanse expressie waar was. **Gebruik je geen accolades dan zal enkel de eerste lijn na de ``if`` uitgevoerd worden bij ``true``.
 
 Een voorbeeld:
-
 ```csharp
-int x = 9;
- 
-if (x == 10)
-{
-     System.Console.WriteLine ("x is 10");
+if ( number < 5 )
+{        
+    Console.WriteLine ("C");
+    Console.WriteLine ("D");
 }
-else if (x == 9)
-{
-     System.Console.WriteLine ("x is 9");
-}
-else if (x == 8)
-{
-     System.Console.WriteLine ("x is 8");
-}
+
 ```
 
-## Relationele operators
-Met de [relationele operators](1_logic_and_relationsoperator.md) (++, !=, <, >, <= en >=) kunnen we expressie schrijven die als uitkomst waar (true) of niet waar (false) geven.
+![](/assets/2_beslissingen/iffflowblock.png)
+
+De booleaanse expressie die je tussen de ``if`` haakjes plaats moet een stuk code zijn dat altijd een ``bool`` als resultaat teruggeeft. 
+
+
+
+## Veelgemaakte if-fouten
+Er zijn enkele veelgemaakte fouten waar je op moet letten:
+
+* Haakjes vergeten maar je code toch zodanig outlinen (met tabs) dat het lijkt of je een heel codeblock hebt:
+  
+  ![](/assets/2_beslissingen/ifflownobrace.png)
+
+* Een kommapunt plaatsen na de booleanse expressie
+  ![](/assets/2_beslissingen/ifflowsemicolon.png)
+  
+
+## Gebruik relationele operators
+Met de relationele operators (==, !=, <, >, <= en >=) kunnen we expressie schrijven die als uitkomst waar (true) of niet waar (false) geven:
 
 Een voorbeeld:
 ```csharp
@@ -92,7 +93,7 @@ Console.WriteLine("c contains 1");
 if(c >= 0) Console.WriteLine("c is non-negative"); 
 if(c < 0) Console.WriteLine("c is negative"); 
 ```
-We kunnen ook meerdere expressie combineren zodat we complexere uitdrukkingen kunnen maken. Hierbij kan je gebruik maken van de [logische operators](1_logic_and_relationsoperator.md) *AND (&&)** en **OR (||)** operators. .
+We kunnen ook meerdere expressie combineren zodat we complexere uitdrukkingen kunnen maken. Hierbij kan je gebruik maken van de logische operators (``&&``,``||``,``!``) 
 
 Een voorbeeld:
 ```csharp
@@ -107,6 +108,47 @@ if ((a > c) || (a == b))
 if ((a >= c) && (b <= c))
     Console.WriteLine(c);
 ```
+
+
+## If/else
+Met if/else kunnen we niet enkel zeggen welke code moet uitgevoerd worden als de conditie waar is maar ook welke specifieke code indien de conditatie niet waar (false). Volgende voorbeeld geeft een typisch gebruik van een if/else structuur om 2 waarden met mekaar te vergelijken:
+
+```csharp
+int x = 10;
+ 
+if ( x > 9 )
+{
+         Console.WriteLine ("x is greater than 9!");
+}
+else
+{
+         Console.WriteLine ("x is less than 9!");
+}
+```
+
+  ![](/assets/2_beslissingen/ifelseflow.png)
+## If/else if
+Met een if/ else if constructie kunnen we meerdere criteria opgeven die waar/niet waar moeten zijn voor een bepaald stukje code kan uitgevoerd worden. Sowieso begint men steeds met een if. Als men vervolgens een else if plaats dan zal de code van deze else if uitgevoerd worden enkel en alleen als de eerste expressie (van de if) niet waar was en de expressie van deze else if wel waar is.
+
+Een voorbeeld:
+
+```csharp
+int x = 9;
+ 
+if (x == 10)
+{
+     System.Console.WriteLine ("x is 10");
+}
+else if (x == 9)
+{
+     System.Console.WriteLine ("x is 9");
+}
+else if (x == 8)
+{
+     System.Console.WriteLine ("x is 8");
+}
+```
+
 
 ## Nesting
 We kunnen met behulp van nesting ook complexere programma flows maken. Hierbij gebruiken we de accolades om het blok code aan te duiden dat bij een if/else/if else hoort. Binnen dit blok kunnen nu echter opnieuw if/else/if else structuren worden aangemaakt.

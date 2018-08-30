@@ -22,3 +22,27 @@ Je kan de niet-operator voor een expressie zetten om het resultaat hiervan om te
 ```csharp
 !(0==2)  //zal true geven
 ```
+## Booleaanse expressies
+
+Een booleaanse expressie is een stuk C# code dat een ``bool`` als resultaat zal geven. 
+
+De logische operators van hierboven zijn operators die een ``bool`` teruggeven. Ze zijn zogenaamde test-operators: ze testen of iets waar is of niet. 
+"is b kleiner dan c?" schrijf je dan als de booleaanse expressie: ``b<c``>
+
+Test maar eens wat er op je scherm komt als je in code schrijft: ``Console.WriteLine(45<=55);``. 
+
+Zoals verwacht zal er ``True`` op het scherm verschijnen.
+
+
+# Test jezelf
+Wat zal de uitkomst zijn van volgende expressies? (protip: het zal steeds ``true`` of ``false`` zijn, niets anders)
+* ``3>2  ``
+* ``4!=4`` 
+* ``4<5 && 4<3 ``
+* ``"a"=="a" || 4>=3  ``
+* ``(3==3 && 2<1) || 5!=4 ``
+* ``!(4<=3) ``
+* ``true || false ``
+* ``!true && false ``
+
+>Voorgaande oefeningen komen uit een kennistoets examen. Het is voornaam dat je dit soort expressies vlot kunt oplossen!
