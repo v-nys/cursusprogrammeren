@@ -32,7 +32,7 @@
   * [If](2_beslissingen/0_if.md)
   * [Switch](2_beslissingen/2_switch.md)
   * [Enums](2_beslissingen/3_enum.md)
-  * [Oefeningen](2_beslissingen/A_practica.md)
+  * [Oefeningen](2_beslissingen/a_practica.md)
   
 * H4: Loops
   * [Loops intro](3_herhalingen/0_loops_intro.md)
