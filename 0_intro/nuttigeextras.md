@@ -6,11 +6,11 @@ Er zijn oneindig veel boeken over C# geschreven, althans zo lijkt het. Hier een 
 ## Beginner boeken
 * [C# Programming](https://ineasysteps.com/products-page/all_books/c-sharp-programming-in-easy-steps/) van Mike McGrath: een uiterst compact, maar zeer helder en kleurrijk boekje dat ik ten stelligste aanbeveel als je wat last hebt met de materie van de eerste weken.
 *[Microsoft Visual C# 2015: An introduction to OOP](https://www.amazon.com/Microsoft-Visual-2015-Introduction-Object-Oriented/dp/1285860233) van Joyce Farrell: Niet het meest sexy boek, maar wel het volledigste qua overlap met de leerstof van deze cursus. Aanrader voor zij die wat meer in detail willen gaan en op zoek zijn naar oneindig veel potentiele examenvragen ;)  
-*[Head First C#](https://www.bol.com/nl/f/head-first-c/37019965/?country=BE) van Andrew Stellman & Jennifer Greene: laat de ietwat bizarre, bijna kleuterachtige look'n feel van de head first boeken je niet afschrikken. Ieder boek in deze serie is goud waar. De head first boeken zijn dé ideale manier als je zoekt naar een alternatieve manier om complexe materie te begrijpen. Bekijk zeker ook de Head First Design Patterns en Head First Sql boeken in de reeks!
+*[Head First C#](https://www.bol.com/nl/f/head-first-c/37019965/?country=BE) van Andrew Stellman & Jennifer Greene: laat de ietwat bizarre, bijna kleuterachtige look'n feel van de head first boeken je niet afschrikken. Ieder boek in deze serie is goud waar. De head first boeken zijn dï¿½ ideale manier als je zoekt naar een alternatieve manier om complexe materie te begrijpen. Bekijk zeker ook de Head First Design Patterns en Head First Sql boeken in de reeks!
 
 
 ## Geavanceerd
-* [C# Unleashed](https://www.bol.com/nl/f/c-5-0-unleashed/9200000009902560/?country=BE) van Bart De Smet: in mijn opinie dé referentie om C# tot op het bot te begrijpen. Geschreven door een Belg die bij Microsoft in Redmond aan C# werkt.
+* [C# Unleashed](https://www.bol.com/nl/f/c-5-0-unleashed/9200000009902560/?country=BE) van Bart De Smet: in mijn opinie dï¿½ referentie om C# tot op het bot te begrijpen. Geschreven door een Belg die bij Microsoft in Redmond aan C# werkt.
 * [Code Complete](https://www.amazon.de/Code-Complete-Practical-Construction-Costruction/dp/0735619670) van Steve McConnell: een referentiewerk over 'programmeren in het algemeen'. Het boek is al jaar en dag het te lezen boek als je je als programmeur wilt verdiepen in wat nu 'correct programmeren' behelst. Als je op je CV kunt zetten dat je dit boek door en door kent dan zal elk IT-bedrijf je stante pede aannemen ;)
 
 
@@ -30,6 +30,7 @@ Volgende document bevat een overzicht van de basis C# syntax zaken van het eerst
 ## Game-based programmeren
 Ideale manier om programmeren meer in de vingers te krijgen op een speelse manier:
 
+* [Memrise](https://www.memrise.com/course/700046/learn-c/) (aanrader!) Bekijk zeker ook de tal van andere cursussen die er staan. Let er op dat je bij de filter Engels instelt, er zijn nog niet veel (goede) Nederlandstalige C# cursussen naar mijn weten.
 * [Code Combat](https://codecombat.com/) (aanrader!)
 * [Pex For Fun](https://pexforfun.com/) (specifiek voor C#!)
 * [Code Academy](https://www.codecademy.com/)
