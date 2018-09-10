@@ -30,7 +30,13 @@ Volgende document bevat een overzicht van de basis C# syntax zaken van het eerst
 ## Game-based programmeren
 Ideale manier om programmeren meer in de vingers te krijgen op een speelse manier:
 
-* [Memrise](https://www.memrise.com/course/700046/learn-c/) (aanrader!) Bekijk zeker ook de tal van andere cursussen die er staan. Let er op dat je bij de filter Engels instelt, er zijn nog niet veel (goede) Nederlandstalige C# cursussen naar mijn weten.
+**Apps**
+
+* [SoloLearn](https://play.google.com/store/apps/details?id=com.sololearn): Verplichte app! Simple as that!
+* [Memrise](https://www.memrise.com/course/700046/learn-c/) (aanrader!) Origineel vooral bedoeld om spreektalen te leren, maar bevat ook tal van andere zaken. Hoofdzakelijk nuttig om nieuwe aspecten te 'drillen'. Enkel dus nuttig indien je de basismaterie eerst hebt verwerkt.  Bekijk zeker ook de tal van andere cursussen die er staan. Let er op dat je bij de filter Engels instelt, er zijn nog niet veel (goede) Nederlandstalige C# cursussen naar mijn weten. **Opgelet: je kan je enkel via de browser inschrijven op niet-spreektaal-cursussen. De app toont enkel spreektaalcursussen**.
+* [Mimo](https://play.google.com/store/apps/details?id=com.getmimo) Speels en vrij beperkt in gratis versie, maar ideale aanvullign op SoloLearn.
+
+**Websites**
 * [Code Combat](https://codecombat.com/) (aanrader!)
 * [Pex For Fun](https://pexforfun.com/) (specifiek voor C#!)
 * [Code Academy](https://www.codecademy.com/)
