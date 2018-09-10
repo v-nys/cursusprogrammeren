@@ -20,3 +20,11 @@ Deze cursus is nog volop in opbouw. Hier de lijst van de belangrijkste aspecten 
 * Titels in hoofding laten overeenstemmen met titels in inhoudsopgave
 * Hoofdstuk debugging schrijven
 * [Scope van variabelen](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=20538981-ceaf-4129-a54a-a91100c81b2f)
+* Woordje uitleg werking VS Code
+    ```
+mkdir test
+cd test
+dotnet new console
+code .
+F5 (om te starten)
+```
