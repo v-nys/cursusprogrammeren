@@ -8,7 +8,7 @@
 ## Semester 1
 * H0: Werken met Visual Studio
   * [Introductie tot C#](0_intro/0_intrototcs.md)
-  * [Werken met Visual Studio Code](0_intro/1_werkenmetvs.md) 
+  * [Werken met Visual Studio Code](0_intro/1_werkenmetvscode.md) 
   * [Je eerste programma](0_intro/2_firstprogram.md)
   * [Input verwerken met ReadLine](0_intro/3_console.md)
   * [De essentie van C#](1_csharpbasics/0_csharpessentials.md)
