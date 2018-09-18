@@ -9,7 +9,7 @@ namespace Demo1
         {
             Console.WriteLine("Hoi, ik ben het!");
             Console.WriteLine("Wie ben jij?!");
-            Console.ReadKey();
+
         }
     }
 }
@@ -49,7 +49,6 @@ namespace Demo1
             Console.WriteLine("Wie ben jij?!");
             string result;
             result = Console.ReadLine();
-            Console.ReadKey();
         }
     }
 }
@@ -100,7 +99,6 @@ namespace Demo1
             Console.WriteLine("Dag");
             Console.WriteLine(result);
             Console.WriteLine("hoe gaat het met je?");
-            Console.ReadLine();
         }
     }
 }

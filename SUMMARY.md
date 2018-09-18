@@ -8,16 +8,17 @@
 ## Semester 1
 * H0: Werken met Visual Studio
   * [Introductie tot C#](0_intro/0_intrototcs.md)
-  * [Werken met Visual Studio](0_intro/1_werkenmetvs.md) 
+  * [Werken met Visual Studio Code](0_intro/1_werkenmetvs.md) 
   * [Je eerste programma](0_intro/2_firstprogram.md)
+  * [Input verwerken met ReadLine](0_intro/3_console.md)
   * [De essentie van C#](1_csharpbasics/0_csharpessentials.md)
+
 * H1: Variabelen en datatypes
   * [Datatypes](1_csharpbasics/1_datatypes.md)
   * [Expressies en operators](1_csharpbasics/2_expressies.md)
   * [Scope van variabelen](1_csharpbasics/3_scope.md)
   * [Strings en chars](1_csharpbasics/5_chars_strings.md)
   * [Strings samenvoegen](1_csharpbasics/6_stringInterpolation.md)
-  * [Input verwerken met ReadLine](0_intro/3_console.md)
   * [Oefeningen](1_csharpbasics/A_Practica.md)
   
 * H2: Werken met data

@@ -31,7 +31,6 @@ namespace Demo1
         static void Main(string[] args)
         {
             Console.WriteLine("Hoi, ik ben het!");
-            Console.ReadKey();
         }
     }
 }
@@ -49,13 +48,8 @@ We gaan nu iedere lijn code kort bespreken. Sommige lijnen code zullen lange tij
 * ``class Program{}``: Hier start je echte programma. Alle code binnen deze Program accolades zullen gecompileerd worden naar een uitvoerbaar bestand.
 * ``static void Main(string[] args)``: Het startpunt van iedere console-applicatie. Wat hier gemaakt wordt is een **methode** genaamd ``Main``. Je programma kan meerdere methoden (of functies) bevatten, maar enkel degene genaamd ``Main`` zal door de compiler als het startpunt van het programma gemaakt worden.
 * ``Console.WriteLine("Hoi, ik ben het!");``: Dit is een **statement** dat de WriteLine-methode aanroept van de ``Console``-klasse. Het zal alle tekst die tussen de aanhalingstekens staat op het scherm tonen. 
-* ``Console.ReadKey();`` : Een truukje (zie hierna) dat het programma zal pauzeren tot de gebruiker op een toets heeft geduwd.
 
 
-### LEES MIJ! (veel voorkomende fout): waarom ReadKey?
-De lijn met ``ReadKey`` is een klein truukje: ReadKey verwerkt input van de gebruiker maar in het voorgaande stuk code doen we niets met die input. Test echter eens wat er gebeurt als je de lijn ``Console.ReadKey();`` weglaat en dan probeert te starten.
-
-Inderdaad het programma sluit zich ogenblikkelijk af en je hebt amper tijd om te lezen wat er op het scherm verscheen. Dankzij ReadKey bouwen we dus een "pauze/wachtpunt" in aan het einde van ons programma. Dit is een goede gewoonte als je console-applicaties aan het schrijven bent.
  
  ## WriteLine: Tekst op het scherm
  De WriteLine-methode is een veelgebruikte methode in Console-applicaties. Het zorgt ervoor dat we tekst op het scherm kunnen tonen.
@@ -76,7 +70,6 @@ namespace Demo1
         {
             Console.WriteLine("Hoi, ik ben het!");
             Console.WriteLine("Wie ben jij?!");
-            Console.ReadKey);
         }
     }
 }
