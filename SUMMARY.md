@@ -11,9 +11,10 @@
   * [Werken met Visual Studio Code](0_intro/1_werkenmetvscode.md) 
   * [Je eerste programma](0_intro/2_firstprogram.md)
   * [Input verwerken met ReadLine](0_intro/3_console.md)
-  * [De essentie van C#](1_csharpbasics/0_csharpessentials.md)
+  * [Oefeningen ](0_intro/A_Practica.md)
 
 * H1: Variabelen en datatypes
+  * [De essentie van C#](1_csharpbasics/0_csharpessentials.md)
   * [Datatypes](1_csharpbasics/1_datatypes.md)
   * [Expressies en operators](1_csharpbasics/2_expressies.md)
   * [Scope van variabelen](1_csharpbasics/3_scope.md)
