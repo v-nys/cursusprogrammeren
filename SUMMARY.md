@@ -115,5 +115,6 @@
   * [Map Maker](A_DEEL2_AllInOne/1_MapMapker.md) 
 
 ## Appendix
+* [Werken met Visual Studio](B_appendix/1_werkenmetvs.md) 
 * [Ea-ict coding guidelines](B_appendix/codingguidelines.md)
 * [Nice to know stuff](B_appendix/prostuff.md)
