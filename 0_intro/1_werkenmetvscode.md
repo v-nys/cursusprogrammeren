@@ -53,3 +53,5 @@ Er werden enkele files aangemaat, de enige belangrijke momenteel zijn:
 De code die VS voor je heeft gemaakt is reeds een werkend, maar weinig nuttig, programma. Je kan de code compileren naar een uitvoerbaar bestand door te klikken op Debug-&gt;Start Debugging (of via F5 shortcut). Als dit gelukt is zal er onderaan VS in de statusbar ‘Build succeeded’ verschijnen en even later zal je de uitvoer van je programma zien.
 > Indien dit de eerste keer is dat je je project build dan zal je mogelijk nog de nodige extra door VS Code moeten laten installeren (*restore*), laat dit toe.
 
+# Een handige flowchart
+Volgende flowchart kan je gebruiken om , zeker de eerste weken, vlot in VS Code aan je projecten te starten. [Download hier](/assets/docs/flowchartvscode.pdf)
