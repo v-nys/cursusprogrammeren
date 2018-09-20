@@ -17,10 +17,11 @@
   * [De essentie van C#](1_csharpbasics/0_csharpessentials.md)
   * [Datatypes](1_csharpbasics/1_datatypes.md)
   * [Expressies en operators](1_csharpbasics/2_expressies.md)
-  * [Scope van variabelen](1_csharpbasics/3_scope.md)
+  * [Oefeningen](1_csharpbasics/A_practica.md)
+* H1.b: Tekst in code
   * [Strings en chars](1_csharpbasics/5_chars_strings.md)
   * [Strings samenvoegen](1_csharpbasics/6_stringInterpolation.md)
-  * [Oefeningen](1_csharpbasics/A_Practica.md)
+
   
 * H2: Werken met data
   * [Casting, conversie en parsing](2a_data/4_converteren_casting.md)
@@ -32,6 +33,7 @@
   * [Beslissingen intro](2_beslissingen/0_beslissingen_intro.md)
   * [Booleanse expressies, logische en relationele operators](2_beslissingen/1_logic_and_relationsoperator.md)
   * [If](2_beslissingen/0_if.md)
+  * [Scope van variabelen](1_csharpbasics/3_scope.md)
   * [Switch](2_beslissingen/2_switch.md)
   * [Enums](2_beslissingen/3_enum.md)
   * [Oefeningen](2_beslissingen/a_practica.md)

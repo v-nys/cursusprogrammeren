@@ -31,7 +31,7 @@ Console.WriteLine(eenKarakter);
 Console.WriteLine(eenString);
 Console.WriteLine(eenGetal);
 ```
-De output an dit programma za dan zijn:
+De output van dit programma zal dan zijn:
 ```
 1
 1

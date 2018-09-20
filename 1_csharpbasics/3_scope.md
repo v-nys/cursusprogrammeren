@@ -3,7 +3,9 @@
 De locatie waar je een variabele aanmaakt bepaald de **scope**, oftewel de zichtbaarheid, van de variabele.
 Eenvoudig gezegd zullen steeds de omliggende accolades de scope van de variabele bevatten. Indien je de variabele dus buiten die accolades nodig hebt dan heb je een probleem: de variabele is enkel bereikbaar binnen de accolades vanaf het punt in de code waarin het werd aangemaakt.
 
+Zeker wanneer je begint met ``if``, loops, methoden, etc zal de scope belangrijk zijn: deze code-constructies gebruiken steeds accolades om codeblocks aan te tonen. Een variabele die je dus binnen een if-blok aanmaakt zal enkel binnen dit blok bestaan, niet er buiten.
 ```csharp
+if( something == true)
 {
     int getal =0 ;  //Start scope getal
     getal = 6;
@@ -12,7 +14,20 @@ Eenvoudig gezegd zullen steeds de omliggende accolades de scope van de variabele
 getal = 4 // zal niet werken daar de scope van getal al gedaan was
 ```
 
->> Scope van variabelen is soms wat verwarrend. Hopelijk kan volgende kennis je helpen:[Kennisclip "Scope van variabelen](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=20538981-ceaf-4129-a54a-a91100c81b2f).
+Wil je dus getal ook nog buiten de ``if`` gebruiken zal je je code moeten herschrijven zodat getal VOOR de ``if`` wordt aangemaakt:
+
+```csharp
+int getal =0 ;  //Start scope getal
+if( something == true)
+{
+ 
+    getal = 6;
+} 
+
+getal = 4 
+```
+
+> Scope van variabelen is soms wat verwarrend. Hopelijk kan volgende kennis je helpen:[Kennisclip "Scope van variabelen](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=20538981-ceaf-4129-a54a-a91100c81b2f).
 
 
 # Variabelen met zelfde naam
