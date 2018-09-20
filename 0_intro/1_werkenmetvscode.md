@@ -12,6 +12,8 @@ Het hart van Visual Studio Code bestaat uit de **compiler** die we hiervoor besp
 # Visual Studio Code Installeren
 Je kan Visual Studio Code downloaden via [https://code.visualstudio.com/](https://code.visualstudio.com/) 
 
+> De volledige werking van VS code gaan we niet in de ze cursus bespreken. Wanneer je echter VS Code opstart zal je in de rechterhelft 3 knoppen onder "Learn' zien staan. Bekijk zeker en vast de **Interactive playground* eens!
+![](/assets/0_intro/codelearn.png)
 
 # Een nieuw project aanmaken 
 
@@ -49,5 +51,5 @@ Er werden enkele files aangemaat, de enige belangrijke momenteel zijn:
 
 # Je programma starten 
 De code die VS voor je heeft gemaakt is reeds een werkend, maar weinig nuttig, programma. Je kan de code compileren naar een uitvoerbaar bestand door te klikken op Debug-&gt;Start Debugging (of via F5 shortcut). Als dit gelukt is zal er onderaan VS in de statusbar ‘Build succeeded’ verschijnen en even later zal je de uitvoer van je programma zien.
->> Indien dit de eerste keer is dat je je project build dan zal je mogelijk nog de nodige extra door VS Code moeten laten installeren (*restore*), laat dit toe.
+> Indien dit de eerste keer is dat je je project build dan zal je mogelijk nog de nodige extra door VS Code moeten laten installeren (*restore*), laat dit toe.
 
