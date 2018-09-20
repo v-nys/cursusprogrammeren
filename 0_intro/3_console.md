@@ -9,11 +9,28 @@ namespace Demo1
         {
             Console.WriteLine("Hoi, ik ben het!");
             Console.WriteLine("Wie ben jij?!");
+            Console.ReadKey(); //Zie opmerking hieronder
 
         }
     }
 }
 ```
+
+# IMPORTANT: ReadLine en Visual Studio code
+## Stap 1: console veranderen
+![](/assets/attention.jpg)
+`ReadLine` dat we zo meteen gaan bespreken is momenteel niet zo'n goede vriend van Visual Studio code.
+Om ReadLine te kunnen gebruiken dienen we in ons project een aanpassing te maken. **Dit moet je bij ieder nieuw project doen dat je in de toekomst gaat aanmaken waar ReadLine vereist is**
+
+* Ga naar de ``.vscode`` folder in je project en open de file ``launch.json``  (indien deze file en/of folder nog niet bestaat moet je eerst je project builden)
+* In het bestand, vervang volgende lijn ``"console": "internalConsole",`` door **``"console": "externalTerminal",``**
+
+Vanaf nu zal je programma in een aparte terminal runnen en kan je ReadLine toepassen.
+## Stap 2: programma 'pauzeren' voor afsluiten
+Je zal merken dat programma's die in de externe console runnen ogenblikkelijk afsluiten. Je kan dit oplossen door als laatste lijn  ``Console.ReadKey()`` of ``Console.ReadLine()`` te plaatsen. We hebben dit in de code hierboven reeds gedaan. Zorg er voor dat dus de lijn ``Console.ReadKey()`` steeds de laatste lijn is!
+
+Dit is een goede gewoonte als je console-applicaties aan het schrijven bent.
+ 
 
 ## ReadLine: Input van de gebruiker verwerken
 
@@ -49,10 +66,17 @@ namespace Demo1
             Console.WriteLine("Wie ben jij?!");
             string result;
             result = Console.ReadLine();
+
+            Console.ReadKey();  //Prevent program from finishing
         }
     }
 }
 ```
+
+
+
+
+
 Start nogmaals je programma. Je zal merken dat je programma nu een cursor toont en wacht op invoer. Als je eender welke karakters op het toetsenbord intypt en drukt op enter dan zal je programma stoppen met ‘``Druk op een toets om door te gaan. . .`` (dit zal in de taal staan waarin je computer op is ingesteld).
 
 
@@ -70,9 +94,6 @@ In de tweede lijn hier gebruiken we de variabele ``result´´(waar de invoer van
 Je volledige programma ziet er dus nu zo uit:
 ```csharp
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace Demo1
 {
@@ -90,6 +111,8 @@ namespace Demo1
             Console.WriteLine("Dag");
             Console.WriteLine(result);
             Console.WriteLine("hoe gaat het met je?");
+
+            Console.ReadKey();  //Prevent program from finishing
         }
     }
 }
