@@ -45,9 +45,9 @@
   * [Programma flow analyse](3_herhalingen/4_programflow.md)
   * [Oefeningen](3_herhalingen/A_Practica.md)
 * H5: Methoden
-  * [Methoden intro](4_methoden/0_intromethods.MD)
-  * [Bibliotheken (Math.Pow)](4_methoden/1_bibliotheken.MD)
-  * [Out en Ref parameters](4_methoden/2_outenref.MD)
+  * [Methoden intro](4_methoden/0_intromethods.md)
+  * [Bibliotheken (Math.Pow)](4_methoden/1_bibliotheken.md)
+  * [Out en Ref parameters](4_methoden/2_outenref.md)
   * [Geavanceerde methoden](4_methoden/3_advancedmethod.md)
   * [Oefeningen](4_methoden/A_Practica.md)
 * H6: Arrays
