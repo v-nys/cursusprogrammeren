@@ -1,4 +1,22 @@
-# First program verbeteren
+# IMPORTANT, voor we verder gaan: ReadLine en Visual Studio code
+## Stap 1: console veranderen
+![](/assets/attention.jpg)
+`ReadLine` dat we zo meteen gaan bespreken is momenteel niet zo'n goede vriend van Visual Studio code.
+Om ReadLine te kunnen gebruiken dienen we in ons project een aanpassing te maken. **Dit moet je bij ieder nieuw project doen dat je in de toekomst gaat aanmaken waar ReadLine vereist is**
+
+* Ga naar de ``.vscode`` folder in je project en open de file ``launch.json``  (indien deze file en/of folder nog niet bestaat moet je eerst je project builden)
+* In het bestand, vervang volgende lijn ``"console": "internalConsole",`` door **``"console": "externalTerminal",``**
+
+Vanaf nu zal je programma in een aparte terminal runnen en kan je ReadLine toepassen.
+
+## Stap 2: programma 'pauzeren' voor afsluiten
+Je zal merken dat programma's die in de externe console runnen ogenblikkelijk afsluiten. Je kan dit oplossen door als laatste lijn  ``Console.ReadKey()`` of ``Console.ReadLine()`` te plaatsen. We hebben dit in de code hieronder reeds gedaan. Zorg er voor dat dus de lijn ``Console.ReadKey()`` steeds de laatste lijn is!
+
+Dit is een goede gewoonte als je console-applicaties aan het schrijven bent.
+
+Nu gaan we verder!
+
+# First program verbeteren met ReadLine
 We nemen terug ons eerste programma erbij en gaan hier aan verder werken:
 ```csharp
 namespace Demo1
@@ -9,30 +27,14 @@ namespace Demo1
         {
             Console.WriteLine("Hoi, ik ben het!");
             Console.WriteLine("Wie ben jij?!");
-            Console.ReadKey(); //Zie opmerking hieronder
+            Console.ReadKey(); //Zie opmerking hierboven
 
         }
     }
 }
 ```
 
-# IMPORTANT: ReadLine en Visual Studio code
-## Stap 1: console veranderen
-![](/assets/attention.jpg)
-`ReadLine` dat we zo meteen gaan bespreken is momenteel niet zo'n goede vriend van Visual Studio code.
-Om ReadLine te kunnen gebruiken dienen we in ons project een aanpassing te maken. **Dit moet je bij ieder nieuw project doen dat je in de toekomst gaat aanmaken waar ReadLine vereist is**
-
-* Ga naar de ``.vscode`` folder in je project en open de file ``launch.json``  (indien deze file en/of folder nog niet bestaat moet je eerst je project builden)
-* In het bestand, vervang volgende lijn ``"console": "internalConsole",`` door **``"console": "externalTerminal",``**
-
-Vanaf nu zal je programma in een aparte terminal runnen en kan je ReadLine toepassen.
-## Stap 2: programma 'pauzeren' voor afsluiten
-Je zal merken dat programma's die in de externe console runnen ogenblikkelijk afsluiten. Je kan dit oplossen door als laatste lijn  ``Console.ReadKey()`` of ``Console.ReadLine()`` te plaatsen. We hebben dit in de code hierboven reeds gedaan. Zorg er voor dat dus de lijn ``Console.ReadKey()`` steeds de laatste lijn is!
-
-Dit is een goede gewoonte als je console-applicaties aan het schrijven bent.
- 
-
-## ReadLine: Input van de gebruiker verwerken
+# ReadLine: Input van de gebruiker verwerken
 
 Met de console kan je met een handvol methoden reeds een aantal interessante dingen doen. 
 
@@ -131,7 +133,7 @@ hoe gaat het met je?
 ```
 
 
-### Aanhalingsteken of niet?
+## Aanhalingsteken of niet?
 Wanneer je de inhoud van een variabele wil gebruiken in een methode zoals  ``WriteLine()`` dan plaats je deze zonder aanhalingsteken!
 Bekijk zelf eens wat het verschil wordt wanneer je volgende lijn code `` Console.Write(result);`` vervangt door ``Console.Write("result");`` .
 
@@ -145,7 +147,7 @@ result
 hoe gaat het met je?
 ```
 
-## Write en WriteLine
+# Write en WriteLine
 De ``WriteLine``-methode zal steeds een line break ([enter] zeg maar) aan het einde van de lijn zetten zodat de cursor naar de volgende lijn springt. 
 
 De ``Write``-methode zal geen enter aan het einde van de lijn toevoegen. Als je dus vervolgens iets toevoegt (met een volgende ``Write`` of ``WriteLine``) **dan zal dit aan dezelfde lijn toegevoegd worden.** 
@@ -179,7 +181,7 @@ tim [enter]
 Dag tim hoe gaat het met je?
 ```
 
-### Opletten met spaties
+## Opletten met spaties
 
 Spaties zijn ook tekens die op scherm moeten komen (ook al zien we ze niet) en je dient dus binnen de aanhalingstekens spaties toe  te voegen. Indien je deze erbuiten plaats dan heeft dit geen effect (je wist al uit het eerste hoofdstuk dat C# alle witregels negeert die niet tussen aanhalingstekens staan). *In volgend voorbeeld zijn de spaties aangegeven als liggende streepjes ( _ )*.
 
@@ -196,7 +198,7 @@ Console.Write("Dag_");
 Console.Write("_hoe gaat het met je?");
 ```
 
-## Zinnen aan mekaar plakken
+# Zinnen aan mekaar plakken
 We kunnen dit hele verhaal een pak korter tonen. De plus-operator (``+``) in C# kan je namelijk gebruiken om variabelen van het type string aan mekaar te plakken. De laatste 3 lijnen code kunnen korter geschreven worden  als volgt:
 
 ```csharp
@@ -211,7 +213,7 @@ Console.WriteLine("Dag "+ result + " hoe gaat het met je?");
 Console.Write("Dag "+ "result" + " hoe gaat het met je?");
 ```
 
-### Meer input vragen
+# Meer input vragen
 Als je  meerdere inputs van de gebruiker tegelijkertijd wenst te bewaren dan zal je meerdere geheugenplekken nodig hebben om de invoer te bewaren. Bijvoorbeeld:
 ```csharp
 string leeftijd;
