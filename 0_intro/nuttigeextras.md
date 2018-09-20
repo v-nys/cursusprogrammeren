@@ -26,7 +26,8 @@ Volgende document bevat een overzicht van de basis C# syntax zaken van het eerst
 ![](/assets/0_intro/cheatprev.jpg)
 
 ## VS Code Cheat sheet
-[download hier](/assets/docs/flowchartvscode.pdf)
+
+[Download hier](/assets/docs/flowchartvscode.pdf).
 
 ## Game-based programmeren
 Ideale manier om programmeren meer in de vingers te krijgen op een speelse manier:
