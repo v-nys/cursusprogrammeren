@@ -54,4 +54,6 @@ De code die VS voor je heeft gemaakt is reeds een werkend, maar weinig nuttig, p
 > Indien dit de eerste keer is dat je je project build dan zal je mogelijk nog de nodige extra door VS Code moeten laten installeren (*restore*), laat dit toe.
 
 # Een handige flowchart
-Volgende flowchart kan je gebruiken om , zeker de eerste weken, vlot in VS Code aan je projecten te starten. [Download hier](/assets/docs/flowchartvscode.pdf)
+Volgende flowchart kan je gebruiken om , zeker de eerste weken, vlot in VS Code aan je projecten te starten.
+
+[Download hier](/assets/docs/flowchartvscode.pdf).
