@@ -13,7 +13,6 @@ Voeg binnen de accolades van ``Main`` volgende zin toe:
 
 ```csharp
 Console.WriteLine("Hoi, ik ben het!");
-Console.ReadKey();
 ```
 
 Zodat je dus volgende code krijgt (:
