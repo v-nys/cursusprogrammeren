@@ -1,6 +1,8 @@
 # IMPORTANT, voor we verder gaan: ReadLine en Visual Studio code
 ## Stap 1: console veranderen
+
 ![](/assets/attention.jpg)
+
 `ReadLine` dat we zo meteen gaan bespreken is momenteel niet zo'n goede vriend van Visual Studio code.
 Om ReadLine te kunnen gebruiken dienen we in ons project een aanpassing te maken. **Dit moet je bij ieder nieuw project doen dat je in de toekomst gaat aanmaken waar ReadLine vereist is**
 

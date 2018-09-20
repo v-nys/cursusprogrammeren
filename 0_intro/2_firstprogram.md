@@ -18,10 +18,6 @@ Console.WriteLine("Hoi, ik ben het!");
 Zodat je dus volgende code krijgt (:
 ```csharp
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Demo1
 {

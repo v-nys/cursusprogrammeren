@@ -30,6 +30,16 @@ dotnet new console
 code .
 ```
 
+> Indien ``dotnet new console`` een error geeft moet je eerst via [https://www.microsoft.com/net/download](https://www.microsoft.com/net/download) de ".NET Core SDK" downloaden installeren!(linkerzijde op de pagina!)
+
+## Toelichting bij deze commando's
+De commando's die je hier staan zijn zogenaamde shell-commando's:
+* ``mkdir`` : "make directory". Dit zal in de huidige folder een nieuwe folder aanmaken met de naam die je als extra argument meegeeft (EERSTEPROJECT in dit geval)
+* ``cd``: "change directory" . Hiermee gaan we 'in' de directory/folder die we meegeven als argument. Indien je gewoon de naam geeft (zonder het gehele path zoals C:\Temp\Test) dan wordt veronderstelt dat de folder zich in de huidige folder bevindt.
+* ``dotnet new console``: dit geeft aan dat in de huidige folder (dus EERSTEPROJECT nu) een nieuw C# moet aangemaakt worden.
+* ``code .`` : open een nieuw Visual Studio Code venster waarin je nieuw project/folder het actieve project is.
+
+
 # Je project
 Er werden enkele files aangemaat, de enige belangrijke momenteel zijn:
 * Program.cs: hierin plaats je de effectieve code van je project
