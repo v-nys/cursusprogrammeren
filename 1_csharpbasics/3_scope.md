@@ -6,7 +6,10 @@ Eenvoudig gezegd zullen steeds de omliggende accolades de scope van de variabele
 ```csharp
 {
     int getal =0 ;  //Start scope getal
+    getal = 6;
 } // einde scope getal
+
+getal = 4 // zal niet werken daar de scope van getal al gedaan was
 ```
 
 >> Scope van variabelen is soms wat verwarrend. Hopelijk kan volgende kennis je helpen:[Kennisclip "Scope van variabelen](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=20538981-ceaf-4129-a54a-a91100c81b2f).
