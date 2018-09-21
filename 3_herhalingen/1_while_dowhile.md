@@ -40,7 +40,7 @@ do{
 } while (booleaanse expressie);
 ```
 
-Merk op dat achteraan de conditie een kommapunt na het ronde haakje staat. **Dit is een véél voorkomende fout. Bij een while is dit niet!**
+Merk op dat achteraan de conditie een puntkomma na het ronde haakje staat. **Dit is een véél voorkomende fout. Bij een while is dit niet!**
 Daar de test van een do-while achteraan de code van de loop gebeurt is het logisch dat een do-while dus minstens 1 keer wordt uitgevoerd
 Volgende eenvoudige aftelprogramma toont de werking van de do-while loop
 

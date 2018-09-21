@@ -38,7 +38,7 @@ namespace Demo1
 ```
 Compileer deze code en voer ze uit: druk hiervoor op het groene driehoekje met "Start" naast. Of via het menu Debug en dan Start Debugging.
 
-**Let erop dat je iedere 'zin' eindigt met een kommapunt.**
+**Let erop dat je iedere 'zin' eindigt met een puntkomma.**
 
 ## Analyse van de code
 We gaan nu iedere lijn code kort bespreken. Sommige lijnen code zullen lange tijd niet belangrijk zijn.  Onthoud nu alvast dat: **alle belangrijke code staat tussen de accolades onder de lijn ``static void Main(string[] args)``**!
@@ -64,7 +64,7 @@ Voeg volgende lijn toe na de vorige WriteLine-lijn in je project:
 
 ``Console.WriteLine("Wie ben jij?!");`` 
 
-De WriteLine methode zal alle tekst tonen die tussen de  "  " staan tussen de haakjes van de methode. **De aanhalingstekens aan het begin en einde van de tekst zijn uiterst belangrijk! Alsook het kommapunt helemaal achteraan.**
+De WriteLine methode zal alle tekst tonen die tussen de  "  " staan tussen de haakjes van de methode. **De aanhalingstekens aan het begin en einde van de tekst zijn uiterst belangrijk! Alsook het puntkomma helemaal achteraan.**
 
 Je programma is nu:
 ```csharp

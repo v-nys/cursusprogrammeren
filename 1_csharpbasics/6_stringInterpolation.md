@@ -3,6 +3,7 @@ Je kan strings en variabelen samenvoegen tot een nieuwe string op verschillende 
 * +-operator
 * $ string interpolation
 * Of de oude manier:  ``String.Format()`` 
+* ddfgdfg
 
 **Stel dat je 2 variabelen hebt ``int age=13`` en ``string name="Finkelstein"``.** 
 

@@ -65,7 +65,7 @@ enum Weekdagen {Maandag, Dinsdag, Woensdag, Donderdag, Vrijdag, Zaterdag, Zondag
 
 Vanaf nu kan je variabelen van het type ``Weekdagen`` aanmaken.
 
-Merk op dat er **geen kommapunt** achteraan komt.
+Merk op dat er **geen puntkomma** achteraan komt.
 
 #### Locatie enum definitie
 Let er op dat je je ``enum`` op de juiste locatie in je code schrijft:

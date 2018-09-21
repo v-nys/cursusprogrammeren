@@ -20,7 +20,7 @@ Enkele opmerkingen:
 * Het woord ``class`` wordt niet gebruikt, in de plaats daarvan gebruiken we ``interface``.
 *  Het is een goede gewoonte om interfaces met een I te laten starten in hun naamgeving
 *  Methoden en properties gaan niet vooraf van ``public``: interfaces zijn van nature net publiek, dus alle methoden en properties van de interface zijn dat bijgevolg ook.
-*  Er wordt geen code/implementatie gegeven: iedere methode eindigt ogenblikkelijk met een kommapunt.
+*  Er wordt geen code/implementatie gegeven: iedere methode eindigt ogenblikkelijk met een puntkomma.
 
 
 Het is in de klassen dat we nu vervolgens verplicht zijn deze methode en properties te implementeren.

@@ -59,7 +59,7 @@ Er zijn enkele veelgemaakte fouten waar je op moet letten:
   
   ![](/assets/2_beslissingen/ifflownobrace.png)
 
-* Een kommapunt plaatsen na de booleanse expressie
+* Een puntkomma plaatsen na de booleanse expressie
   ![](/assets/2_beslissingen/ifflowsemicolon.png)
   
 

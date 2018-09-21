@@ -1,14 +1,14 @@
 # Statements en de C# syntax
 Om een werkend C#-programma te maken moeten we de C#-taal beheersen. Net zoals iedere taal bestaat ook C# uit enerzijds grammatica, in de vorm van de **C# syntax** en de te gebruiken keywords.
 
-Een C#-programma bestaat uit een opeenvolging van instructies ook wel **statements** genoemd. **Deze eindigen steeds met een kommapunt (``;``)** (zoals ook in het Nederlands een zin eindigt met een punt).
+Een C#-programma bestaat uit een opeenvolging van instructies ook wel **statements** genoemd. **Deze eindigen steeds met een puntkomma (``;``)** (zoals ook in het Nederlands een zin eindigt met een punt).
 
 De volgorde van de woorden (keywords, variabelen, etc.) zijn niet vrijblijvend en moeten aan (grammaticale) regels voldoen.  Enkel indien alle statements correct zijn zal het programma gecompileerd worden naar een werkend en uitvoerbaar programma (zoals in vorige sectie besproken).
 
 Enkele belangrijke regels van C#:
 
 * **Hoofdletter-gevoelig**: C# is hoofdlettergevoelig. Dat wil zeggen dat hoofdletter ``T`` en lowercase ``t`` totaal verschillende zaken zijn voor C#. ``reinhardt`` en ``Reinhardt`` zijn dus ook niet hetzelfde.
-* **Statements afsluiten met kommapunt**: Ieder C# statement wordt afgesloten moet een kommapunt **;**. Doe je dat niet dan zal C# denken dat de regel gewoon op de volgende regel doorloopt en deze als één (fout) geheel proberen te compileren.
+* **Statements afsluiten met puntkomma**: Ieder C# statement wordt afgesloten moet een puntkomma **;**. Doe je dat niet dan zal C# denken dat de regel gewoon op de volgende regel doorloopt en deze als één (fout) geheel proberen te compileren.
 * **Witruimtes**: Spaties, tabs en enters worden door de C# compiler genegeerd. Je kan ze dus gebruiken om de layout van je code  (*bladspiegel* zeg maar) te verbeteren. De enige plek waar witruimtes wél een verschil geven is tussen aanhalingstekens ``"      "`` die we later (bij string) zullen leren gebruiken.
 * **Commentaar toevoegen kan**: met behulp van ``//`` voor een enkele lijn en ``/*         */`` voor meerdere lijnen commentaar. Alles dat in commentaar staat zal door de compiler genegeerd worden.
 
@@ -60,11 +60,11 @@ De verschillende datatypes bespreken we in een volgende [hoofdstuk](1_datatypes.
 De code die we gaan schrijven moet voldoen aan een hoop regels. Wanneer we in onze code zelf namen (**identifiers**) moeten geven aan **variabelen** (en later ook methoden, objecten, etc) dan moeten we een aantal regels volgen:
 
 * Hoofdlettergevoelig: de identifiers ``tim`` en ``Tim`` zijn verschillend zoals reeds vermeld. 
-* Geen keywords: identifiers mogen geen gereserveerde C# keywords zijn. De keywords van hierboven mogen dus niet. Varianten waarbij de hoofdletters anders zijn mogen wel, bijvoorbeeld: ``goTO`` (``goto`` is een gereserveerd keyword, maar dankzij de hoofdlettergevoelig-regel is dit dus toegelaten) en ``INT`` mag ook (tegenover het gerserveerd keyword ``int`` dat je dus niet als identifier mag gebruiken)
+* Geen keywords: identifiers mogen geen gereserveerde C# keywords zijn. De keywords van hierboven mogen dus niet. Varianten waarbij de hoofdletters anders zijn mogen wel, bijvoorbeeld: ``gOTO`` en ``stRINg`` mogen dus wel, maar niet ``goto`` of ``string`` daar beide een gereserveerd keyword zijn maar dankzij de hoofdlettergevoelig-regel is dit dus toegelaten. ``INT`` mag ook ook, maar niet ``int`.
 * Eerste karakter-regel: het eerste karakter van de identifier mag enkel zijn:
     * kleine of grote letter
     * liggend streepje ( ``_``)
-* Alle andere karakters: de overige karakters moeten mogen enkel zijn:
+* Alle andere karakters: de overige karakters mogen enkel zijn:
     * kleine of grote letter
     * liggend streepje
     * een cijfer (``0`` tot en met ``9`` )
