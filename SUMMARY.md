@@ -10,7 +10,8 @@
   * [Introductie tot C#](0_intro/0_intrototcs.md)
   * [Werken met Visual Studio](0_intro/1_werkenmetvs.md) 
   * [Je eerste programma](0_intro/2_firstprogram.md)
-  * [Oefeningen ](0_intro/A_Practica.md)
+  * [Oefeningen](0_intro/A_Practica.md)
+
 * H1: Variabelen en datatypes
   * [De essentie van C#](1_csharpbasics/0_csharpessentials.md)
   * [Datatypes](1_csharpbasics/1_datatypes.md)
