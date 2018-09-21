@@ -19,6 +19,8 @@ In deze cursus zullen de voorbeelden steeds met de Enterprise editie van VS gema
 Het is belangrijk bij de installatie dat je minimaal de **.NET desktop development**workload selecteert als te installeren tools. Uiteraard ben je vrij om meerdere zaken te installeren. 
 ![](/assets/0_intro/vsinstall.png)
 
+> Bekijk [volgende video](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=fecd350e-a402-45cf-b57e-a91100cad93f) voor een stap voor uitleg over de installatie.  **De stap ivm de key is zeer belangrijk**
+
 # Visual studio opstarten
 
 Na het opstarten van VS krijg je het startvenster te zien van waaruit je verschillende dingen kan doen, zoals eerder aangemaakte projecten opstarten, informatie opzoeken of een totaal nieuw project starten.
@@ -79,3 +81,5 @@ Je kan nu je gecompileerde bestand uitvoeren door te kiezen voor Debug-&gt;Start
 ![](/assets/0_intro/vscmd.png)
 
 Veel doet je programma nog niet natuurlijk, dus sluit dit venster maar terug af door een willekeurige toets in te drukken.
+
+> In [volgende video](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=1889dae4-d6cf-4ca3-b959-a91100ceeca9) overloop ik de belangrijkste zaken van dit hoofdstuk.
