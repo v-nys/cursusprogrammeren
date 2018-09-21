@@ -17,7 +17,7 @@
   * [De essentie van C#](1_csharpbasics/0_csharpessentials.md)
   * [Datatypes](1_csharpbasics/1_datatypes.md)
   * [Expressies en operators](1_csharpbasics/2_expressies.md)
-  * [Oefeningen](1_csharpbasics/A_Practica.md)
+  * [Oefeningen](1_csharpbasics/A_practica.md)
   
 * H1b: Tekst in code
   * [Strings en chars](1_csharpbasics/5_chars_strings.md)
