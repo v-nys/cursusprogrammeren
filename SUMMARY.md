@@ -10,16 +10,17 @@
   * [Introductie tot C#](0_intro/0_intrototcs.md)
   * [Werken met Visual Studio](0_intro/1_werkenmetvs.md) 
   * [Je eerste programma](0_intro/2_firstprogram.md)
-  * [De essentie van C#](1_csharpbasics/0_csharpessentials.md)
+  * [Oefeningen ](0_intro/A_Practica.md)
 * H1: Variabelen en datatypes
+  * [De essentie van C#](1_csharpbasics/0_csharpessentials.md)
   * [Datatypes](1_csharpbasics/1_datatypes.md)
   * [Expressies en operators](1_csharpbasics/2_expressies.md)
-  * [Scope van variabelen](1_csharpbasics/3_scope.md)
-  * [Strings en chars](1_csharpbasics/5_chars_strings.md)
-  * [Strings samenvoegen](1_csharpbasics/6_stringInterpolation.md)
   * [Input verwerken met ReadLine](0_intro/3_console.md)
   * [Oefeningen](1_csharpbasics/A_Practica.md)
   
+* H1b: Tekst in code
+  * [Strings en chars](1_csharpbasics/5_chars_strings.md)
+  * [Strings samenvoegen](1_csharpbasics/6_stringInterpolation.md)
 * H2: Werken met data
   * [Casting, conversie en parsing](2a_data/4_converteren_casting.md)
   * [Input verwerken en omzetten](2a_data/4b_inputconverten.md)
@@ -30,6 +31,7 @@
   * [Beslissingen intro](2_beslissingen/0_beslissingen_intro.md)
   * [Booleanse expressies, logische en relationele operators](2_beslissingen/1_logic_and_relationsoperator.md)
   * [If](2_beslissingen/0_if.md)
+  * [Scope van variabelen](1_csharpbasics/3_scope.md)
   * [Switch](2_beslissingen/2_switch.md)
   * [Enums](2_beslissingen/3_enum.md)
   * [Oefeningen](2_beslissingen/a_practica.md)
@@ -41,9 +43,9 @@
   * [Programma flow analyse](3_herhalingen/4_programflow.md)
   * [Oefeningen](3_herhalingen/A_Practica.md)
 * H5: Methoden
-  * [Methoden intro](4_methoden/0_intromethods.MD)
-  * [Bibliotheken (Math.Pow)](4_methoden/1_bibliotheken.MD)
-  * [Out en Ref parameters](4_methoden/2_outenref.MD)
+  * [Methoden intro](4_methoden/0_intromethods.md)
+  * [Bibliotheken (Math.Pow)](4_methoden/1_bibliotheken.md)
+  * [Out en Ref parameters](4_methoden/2_outenref.md)
   * [Geavanceerde methoden](4_methoden/3_advancedmethod.md)
   * [Oefeningen](4_methoden/A_Practica.md)
 * H6: Arrays

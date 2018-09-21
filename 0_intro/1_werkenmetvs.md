@@ -3,7 +3,7 @@ Visual Studio (VS) is een pakket dat een groot deel tools samenvoegt (debuger, c
 
 ![](/assets/0_intro/vslogo.png)
 
-Visual Studio is een zogenaamde IDE("Integrated Development Environment") en is op maat gemaakt om C#.NET applicaties te ontwikkelen. Je bent echter verre van verplicht om enkel C# applicaties in VS te ontwikkelen, je kan gerust VB.NET, TypeScript, Pythong en andere talen gebruiken.
+Visual Studio is een zogenaamde IDE("Integrated Development Environment") en is op maat gemaakt om C#.NET applicaties te ontwikkelen. Je bent echter verre van verplicht om enkel C# applicaties in VS te ontwikkelen, je kan gerust VB.NET, TypeScript, Python en andere talen gebruiken.
 
 # De compiler en Visual Studio
 Jouw taak als programmeur in deze cursus is algoritmes in C# taal uitschrijven. We zouden dit in een eenvoudige tekstverwerker kunnen doen, maar dan maken we het onszelf lastig. Net zoals je tekst in notepad kunt schrijven, is het handiger dit in bijvoorbeeld Word te doen: je krijgt een spellingchecker en allerlei handige extra's. Ook voor het schrijven van computer code is het handiger om een zogenaamde IDE te gebruiken, een omgeving die ons zal helpen foutloze C# code te schrijven.
@@ -11,10 +11,10 @@ Jouw taak als programmeur in deze cursus is algoritmes in C# taal uitschrijven. 
 Het hart van Visual Studio bestaat uit de **compiler** die we hiervoor besproken. De compiler zal je C# code omzetten naar de ILcode  zodat jij (of anderen) je applicatie op een computer (of ander apparaat) kan gebruiken. Zolang de C# niet exact voldoet aan de C# syntax (zie verder) zal de compiler het vertikken een uitvoerbaar bestand voor je te genereren. 
 ![](/assets/0_intro/compilereenvoudig.png)
 
-**Opmerking**: In deze cursus zullen we steeds werken met Visual Studio. Niet met Visual Studio Code. Visual Studio code is een zogenaamde lightwieght versie van VS die echter zeker ook z'n voordelen heeft (gratis, snel, compact, etc). Visual Studio vindt dankzij VS Code eindelijk ook z'n weg op andere platformen dan enkel die van Microsoft. Zoek je een lightweight versie dan moet je zeker eens [Visual Studio Code](https://code.visualstudio.com/) eens proberen.
+**Opmerking**: In deze cursus zullen we steeds werken met Visual Studio. Niet met Visual Studio Code. Visual Studio code is een zogenaamde lightweight versie van VS die echter zeker ook z'n voordelen heeft (gratis, snel, compact, etc). Visual Studio vindt dankzij VS Code eindelijk ook z'n weg op andere platformen dan enkel die van Microsoft. Zoek je een lightweight versie dan moet je zeker eens [Visual Studio Code](https://code.visualstudio.com/) eens proberen.
 
 # Visual Studio Installeren
-In deze cursus zullen de voorbeelden steeds met de Enterprise editie van VS gezmaakt zijn. Je kan deze als AP-student gratis downloaden en installeren via oftewel [DreamSpark](http://dreamspark.ap.be) of via [Microsoft](https://www.visualstudio.com/thank-you-downloading-visual-studio-imagine/?sku=Enterprise&rel=15) (maar dan dien je wel een key via DreamSpark aan te vragen).
+In deze cursus zullen de voorbeelden steeds met de Enterprise editie van VS gemaakt zijn. Je kan deze als AP-student gratis downloaden en installeren via oftewel [DreamSpark](http://dreamspark.ap.be) of via [Microsoft](https://www.visualstudio.com/thank-you-downloading-visual-studio-imagine/?sku=Enterprise&rel=15) (maar dan dien je wel een key via DreamSpark aan te vragen).
 
 Het is belangrijk bij de installatie dat je minimaal de **.NET desktop development**workload selecteert als te installeren tools. Uiteraard ben je vrij om meerdere zaken te installeren. 
 ![](/assets/0_intro/vsinstall.png)

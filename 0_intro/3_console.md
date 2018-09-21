@@ -56,16 +56,7 @@ namespace Demo1
 ```
 Start nogmaals je programma. Je zal merken dat je programma nu een cursor toont en wacht op invoer. Als je eender welke karakters op het toetsenbord intypt en drukt op enter dan zal je programma stoppen met ‘``Druk op een toets om door te gaan. . .`` (dit zal in de taal staan waarin je computer op is ingesteld).
 
-### Meer input vragen
-Als je  meerdere inputs van de gebruiker tegelijkertijd wenst te bewaren dan zal je meerdere geheugenplekken nodig hebben om de invoer te bewaren. Bijvoorbeeld:
-```csharp
-string leeftijd;
-Console.WriteLine("Geef leeftijd");
-result = Console.ReadLine();
-Console.WriteLine("Geef adres");
-string adres;
-result = Console.ReadLine(); 
-```
+
 
 ## Input gebruiker verwerken en gebruiken
 We kunnen nu invoer van de gebruiker, die we hebben bewaard in de variabele `` result``  gebruiken en tonen op het scherm. 
@@ -100,7 +91,7 @@ namespace Demo1
             Console.WriteLine("Dag");
             Console.WriteLine(result);
             Console.WriteLine("hoe gaat het met je?");
-            Console.ReadLine();
+            Console.ReadKey();
         }
     }
 }
@@ -199,3 +190,13 @@ Console.WriteLine("Dag "+ result + " hoe gaat het met je?");
 Console.Write("Dag "+ "result" + " hoe gaat het met je?");
 ```
 
+### Meer input vragen
+Als je  meerdere inputs van de gebruiker tegelijkertijd wenst te bewaren dan zal je meerdere geheugenplekken nodig hebben om de invoer te bewaren. Bijvoorbeeld:
+```csharp
+string leeftijd;
+Console.WriteLine("Geef leeftijd");
+leeftijd = Console.ReadLine();
+Console.WriteLine("Geef adres");
+string adres;
+adres = Console.ReadLine(); 
+```

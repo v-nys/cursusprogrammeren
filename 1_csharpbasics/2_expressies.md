@@ -38,6 +38,7 @@ int hoogte = 20 * breedte;
 
 # Operators
 Operators in C# zijn de welgekende 'wiskundige bewerkingen' zoals optellen (`+`), aftrekken (`-`), vermenigvuldigen (`*`) en delen (`/`). Deze volgende de wiskundige regels van **volgorde van berekeningen**:
+
 1. Haakjes
 2. Vermenigvuldigen : ``*`` en ``/`` (alsook `%` die we later zien)
 3. Optellen: `+` en `-`
@@ -107,6 +108,7 @@ int otherResult= 3.1/45.2;
 **Let hier op!**
 
 But wait...it gets worse! 
+
 Wat als je een ``int`` door een ``int```deelt? Het resultaat is terug een ``int``. ** Je bent gewoon alle informatie na de komma kwijt. Kijk maar:
 ```csharp
 int getal1= 9;
@@ -138,14 +140,17 @@ En nu krijgen we wel ``4.5``
 ## En complexer?
 
 Het kan subtiel en ambetant worden in grotere berekeningen.
+
 Stel dat ik afspreek dat je van mij de helft van m'n salaris krijgt. Ik verdien (fictief) 10000 euro per maand. 
 Ik gebruik volgende formule:
+
 ```csharp
 double helft= 10000.0 * (1/2);
 ```
 Hoeveel krijg je van me? **0.0 euro, MUHAHAHAHA!!!**
 
-De volgorde van berekeningen zal eerst het gedeelte tussen de haakjes doen: 1 delen door 2 geeft 0, daar we een ``int`` door een ``int``delen en dus terug een ``int`` als resultaat willen. Vervolgens zullen we deze ``0`` vermenigvuldgen met ``10000.0`` waarvan ik zo slim was om deze in ``double`` te zetten. Niet dus. We vermenigvuldigen weliswaar een``double```(het salaris) met een ``int`` maar die ``int`` is reeds ``0`` en we krijgen dus ``0.0`` als resultaat.
+De volgorde van berekeningen zal eerst het gedeelte tussen de haakjes doen: 1 delen door 2 geeft 0, daar we een ``int`` door een ``int``delen en dus terug een ``int`` als resultaat willen. 
+Vervolgens zullen we deze ``0`` vermenigvuldgen met ``10000.0`` waarvan ik zo slim was om deze in ``double`` te zetten. Niet dus. We vermenigvuldigen weliswaar een``double```(het salaris) met een ``int`` maar die ``int`` is reeds ``0`` en we krijgen dus ``0.0`` als resultaat.
 
 Wil je het dus eerlijk spelen dan zal je de formule moeten aanpassen naar:
 ```csharp
