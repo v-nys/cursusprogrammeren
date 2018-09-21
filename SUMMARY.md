@@ -10,13 +10,13 @@
   * [Introductie tot C#](0_intro/0_intrototcs.md)
   * [Werken met Visual Studio](0_intro/1_werkenmetvs.md) 
   * [Je eerste programma](0_intro/2_firstprogram.md)
+  * [Input verwerken met ReadLine](0_intro/3_console.md)
   * [Oefeningen](0_intro/A_Practica.md)
 
 * H1: Variabelen en datatypes
   * [De essentie van C#](1_csharpbasics/0_csharpessentials.md)
   * [Datatypes](1_csharpbasics/1_datatypes.md)
   * [Expressies en operators](1_csharpbasics/2_expressies.md)
-  * [Input verwerken met ReadLine](0_intro/3_console.md)
   * [Oefeningen](1_csharpbasics/A_Practica.md)
   
 * H1b: Tekst in code

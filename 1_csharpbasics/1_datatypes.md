@@ -10,6 +10,7 @@ Er zijn tal basistypes in C# gedeclareerd (zogenaamde **primitieve datatypes**).
 * Tekst: `char`,`string`
 * Booleans: `bool`
 
+> Het datatype``string`` heb je al gezien in het vorig hoofdstuk. Je hebt toen al een variabele aangemaakt van het type string door de zin ``string result;``. Verderop plaatsen we dan iets dat de gebruiker intype in die variabele (toekenning in C# gaat van rechts naar links): ``result=Console.ReadLine();``.
 
 # Basistypen voor getallen
 Alhoewel een computer digitaal werkt en enkel 0'n en 1'n bewaard zou dat voor ons niet erg handig werken. C# heeft daarom een hoop datatypes gedefinieerd om te werken met getallen zoals wij ze kennen, gehele en kommagetallen. Intern zullen deze getallen nog steeds binair bewaard worden, maar dat is tijdens het programmeren zelden een probleem.
