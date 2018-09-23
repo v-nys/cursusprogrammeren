@@ -21,4 +21,4 @@ Hier de omzettingstabel (je gewicht op Mercurius is dus je gewicht op aarde x 0.
 
 De output zijn verschillende lijnen onder mekaar in de vorm van:
 ``Je weegt op [planeet] [gewichtopdieplaneet] kg.``
-Plaats de zin met Jupiter in het rood, daar je daar het zwaarst weeg, en die van pluto in het groen.
+Plaats de zin met Jupiter in het rood, daar je daar het zwaarst weegt, en die van pluto in het groen.
