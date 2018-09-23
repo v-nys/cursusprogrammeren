@@ -27,7 +27,7 @@
   * [Casting, conversie en parsing](2a_data/4_converteren_casting.md)
   * [Input verwerken en omzetten](2a_data/4b_inputconverten.md)
   * [Random](2a_data/5_random.md)
-  * [Oefeningen](2a_data/A_practica.md) 
+  * [Oefeningen](2a_data/A_Practica.md) 
 
 * H3: Beslissingen
   * [Beslissingen intro](2_beslissingen/0_beslissingen_intro.md)

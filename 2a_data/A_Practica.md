@@ -1,7 +1,8 @@
-# Euro naar dollar
-Ontwerp een toepassing waarmee je een ingevoerd bedrag, inclusief komma-getallen  in euro kan omrekenen naar dollar. Gebruik hierbij de huidige wisselkoers
-Je hoeft niet af te ronden. Het resultaat in een label wordt als volgt weergegeven: ``X EUR is gelijk aan Y USD``.
 
+
+# BMI berekenaar
+Maak een programma dat aan de gebruiker z'n lengte en gewicht vraagt en vervolgens z'n berekende BMI (Body Mass Index) toont.
+Bereken na met je rekenmachine of je uitkomst wel degelijk klopt!
 
 # Feestkassa
 De plaatselijke voetbalclub organiseert een mosselfestijn. Naast mosselen met frietjes (20 EUR) bieden ze voor de kinderen de mogelijkheid om een koninginnehapje (10 EUR) te kiezen. Verder is er een ijsje als nagerecht voorzien (3 EUR). Om het gemakkelijk te maken kosten alle dranken 2 EUR.
