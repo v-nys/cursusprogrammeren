@@ -1,9 +1,11 @@
+> Het is aanbevolen dat je per hoofdstuk een nieuwe folder aanmaakt op je computer. Per oefening maak je dan best een nieuw project aan dat je in de folder zet. Geef ieder project een duidelijke naam (bv EuroNaarDollar) zodat je later vlot je oefeningen kan terugvinden. Denk er aan dat je je projecten best enkel met cijfers en letters benoemd (dus beter EuroNaarDollar dan Euro-Dollar).
+
 # Euro naar dollar
 Ontwerp een toepassing waarmee je een bedrag, inclusief komma-getallen  in euro kan omrekenen naar dollar. Gebruik hierbij de huidige wisselkoers
 Je hoeft niet af te ronden. Het resultaat in een label wordt als volgt weergegeven: ``[x] EUR is gelijk aan [y] USD``.
 
 # Kill/Death-ratio
-Maak twee variabelen ``double kills`` en ``double deaths`` aan. Wijs er jouw typische scores aan toe die je haalt in een spel naar keuze. Bereken en toon vervolgens je kill/death-ratio. (**opgelet: begrijp je waarom we best een van beide variabelen in double zetten? Lees de warning bij Expressies zeker nog eens na...OF test eens wat er gebeurt indien je met int zou werken)
+Maak twee variabelen ``double kills`` en ``double deaths`` aan. Wijs er jouw typische scores aan toe die je haalt in een spel naar keuze. Bereken en toon vervolgens je kill/death-ratio. (**opgelet: begrijp je waarom we best een van beide variabelen in double zetten?** Lees de warning bij Expressies zeker nog eens na...OF test eens wat er gebeurt indien je met int zou werken)
 
 # Gewicht in space
 Je massa is overal dezelfde. Je gewicht daarentegen is afhankelijk van de zwaartekracht van de plek waar je bent. Zo is je gewicht veel groter op Jupiter dan op Mars.
