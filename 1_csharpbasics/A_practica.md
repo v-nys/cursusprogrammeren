@@ -14,6 +14,22 @@ Schrijf een programma dat het gemiddele van drie int-variabelen berekend (de var
 Ontwerp een toepassing waarmee je een bedrag, inclusief komma-getallen  in euro kan omrekenen naar dollar. Gebruik hierbij de huidige wisselkoers
 Je hoeft niet af te ronden. Het resultaat in een label wordt als volgt weergegeven: ``[x] EUR is gelijk aan [y] USD``.
 
+# Tafel en Console.Clear
+Met het statement ``Console.Clear`` kan je de console ...je raadt het nooit... leegmaken. Test deze code in het volgende programma.
+
+Schrijf een programma dat de tafels van vermenigvuldigen geeft van 411 (dus 1x411=411, 2x411= 822 tot en met 10x411=4110). Toon telkens 1 zin en wacht dan tot de gebruiker op enter duwt om de volgende vermenigvuldiging op een nieuw scherm te tonen. De output ziet er dus als volgt uit:
+
+```
+1 x 411 = 411
+Druk op enter voor de volgende lijn. 
+[Scherm leeg gemaakt]
+2 x 411 = 822
+Druk op enter voor de volgende lijn
+[Scherm leeg gemaakt]
+...
+```
+**Plaats 411 in een variabele aan de start van het programma en gebruik deze in je berekeningen verderop. Toon dat je code ook werkt door de inhoud van de variabele in een ander getal te veranderen zodat je van dat nieuwe getal nu de tafels van vermenigvuldiging krijgt.**
+
 # Kill/Death-ratio
 Maak twee variabelen ``double kills`` en ``double deaths`` aan. Wijs er jouw typische scores aan toe die je haalt in een spel naar keuze. Bereken en toon vervolgens je kill/death-ratio. 
 
@@ -41,6 +57,8 @@ De output zijn verschillende lijnen onder mekaar in de vorm van:
 ``Je weegt op [planeet] [gewichtopdieplaneet] kg.``
 
 Plaats de zin met Jupiter in het rood, daar je daar het zwaarst weegt, en die van pluto in het groen.
+
+
 
 > In de verdere hoofdstukken zal je geregeld oefeningen tegenkomen waar PRO voor staat. Dit zijn iets pittigere oefeningen die je enkel vlot zal kunnen als je de standaard oefeningen hebt gemaakt. Ik raad iedereen echter aan ze te (proberen) maken.
 
