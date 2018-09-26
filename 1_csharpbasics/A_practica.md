@@ -2,10 +2,16 @@
 
 # Simple maths
 Schrijf een programma dat de uitkomst van volgende resultaten op het scherm toont:
+
 -1 + 4 * 6
+
 ( 35+ 5 ) % 7
+
 14 + -4 * 6 / 11
+
 2 + 15 / 6 * 1 - 7 % 2
+
+
 
 # Gemiddelde
 Schrijf een programma dat het gemiddele van drie int-variabelen berekend (de variabelen geef je uiteraard een waarde in code).
