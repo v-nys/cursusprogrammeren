@@ -101,8 +101,8 @@ Eén lijn commentaar geef je aan door de lijn te starten met twee voorwaartse sl
 int getal=3;
 //Nu gaan we rekenen
 int result = getal * 5;
-// result= 5* 4;
-Console.WriteLine(result); //We tonen resultaat op scherm
+// result= 3*5;
+Console.WriteLine(result); //We tonen resultaat op scherm: 15
 ```
 ## Blok commentaar
 We kunnen een stuk tekst als commentaar aangeven door voor de tekst ``/*`` te plaatsen en ``*/`` achteraan. Een voorbeeld:
