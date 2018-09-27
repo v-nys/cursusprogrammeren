@@ -5,7 +5,12 @@ Volgende code zal bijvoorbeeld een dikke error geven:
 int age = 4.3;
 ```
 
-Je kan geen appelen in peren veranderen zonder magie: in het geval van C# zal je moeten **converteren of casten**
+Je kan geen appelen in peren veranderen zonder magie: in het geval van C# zal je moeten **converteren of casten**. 
+
+Dit kan op 2 manieren:
+* via casting: de (oude) manier die ook werkt in veel andere programmeertalen
+* via de Convert. bibliotheek van .NET
+* Er bestaat een derde manier *parsing* die we enkel terloops bespreken, maar die niet bij de leerstof van deze cursus hoort. Deze manier is enkel nuttig om strings om te zetten naar andere zaken.
 
 
 ## Casting
@@ -14,7 +19,7 @@ Het is uiteraard onmogelijk om een kommagetal aan een geheel getal toe te wijzen
 Hierbij dien je aan de compiler te zeggen: *"Volgende variabele die van het type x is, moet aan deze variabele van het type y toegekend worden. **Ik besef dat hierbij data verloren kan gaan, maar zet de variabele toch maar om naar het nieuwe type, ik draag alle verantwoordelijkheid voor het verlies**"*.
 
 
-## Wat is casting
+### Wat is casting
 Casting heb je nodig om een variabele van een bepaald type voor een ander type te laten doorgaan? Stel dat je een complexe berekening hebt waar je werkt met verschillende types (bijvoorbeeld int, double en float). Door te casten voorkom je dat je vreemde resultaten krijgt. Je gaat namelijk bepaalde types even als andere types gebruiken.
 
 Het is belangrijk in te zien dat het casten van een variabele naar een ander type enkel een gevolg heeft TIJDENS het uitwerken van de expressie waarbinnen je werkt. De variabele in het geheugen zal voor eeuwig en altijd van het type zijn waarin het origineel gedeclareerd werd.
@@ -31,7 +36,7 @@ double kommagetal= 13.8;
 int kommanietwelkom= (int)kommagetal
 ```
 
-## Casting voorbeelden
+
 ### Narrowing
 Casting doe je dus wanneer je een variabele wil toekennen aan een andere variabele van een ander type dat daar eigenlijk niet inpast. We moeten dan aan **narrowing** doen, letterlijk het versmallen van de dat. 
 
@@ -60,7 +65,7 @@ var2 = (int)var1;
 Het resultaat in `var2` zal `20` zijn (alles na de komma wordt bij casting van een double naar een int weggegooid). 
 >Merk op dat `var1` nooit van datatype is veranderd; enkel de inhoud ervan (`20.4`) werd eruit gehaald, omgezet ("gecast") naar `20` en dan aan ``var2`` toegewezen dat enkel `int` aanvaardt.
 
-#### Narowing in de praktijk
+### Narowing in de praktijk
 
 Stel dat temperatuurGisteren en temperatuurVandaag van het type int zijn, maar dat we nu de gemiddelde temperatuur willen weten. De formule voor gemiddelde temperatuur over 2 dagen is:
 
@@ -112,8 +117,7 @@ bool isWaar= Convert.ToBoolean(1); //int to bool
 int userAge= Convert.ToInt32("19"); //string to int
 int ageOther= Convert.ToInt32(anderGetal); //double to int
 ```
- Je plaatst tussen de ronde haakjes de variabele of literal die je wenst te converteren naar een ander type. Merk op dat naar een `intµ  converteren met ``.ToInt32()`` moet gebeuren. Naar een ``short`` is dit met behulp van ``.ToInt16()``.
-
+ Je plaatst tussen de ronde haakjes de variabele of literal die je wenst te converteren naar een ander type. Merk op dat naar een `int`  converteren met ``.ToInt32()`` moet gebeuren. Naar een ``short`` is dit met behulp van ``.ToInt16()``.
 
 Opgelet: de convert zal zelf zo goed mogelijk de data omzetten en dus indien nodig widening of narrowing toepassen. Zeker bij het omzetten van een string naar een ander type kijk je best steeds de documentatie na om te weten wat er intern juist zal gebeuren.
 
