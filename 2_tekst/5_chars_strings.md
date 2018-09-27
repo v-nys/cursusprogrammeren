@@ -1,5 +1,5 @@
 # Char
-Een **enkel karakter** (cijfer, letters, leestekens, etc.) als 'tekst' opslaan kan je doen door het char`` -type te gebruiken. Zo kan je bijvoorbeeld een enkel karakter als volgt tonen:
+Een **enkel karakter** (cijfer, letters, leestekens, etc.) als 'tekst' opslaan kan je doen door het `char` -type te gebruiken. Zo kan je bijvoorbeeld een enkel karakter als volgt tonen:
 
 ```csharp
 char eenLetter = 'X';
@@ -9,11 +9,11 @@ Console.WriteLine("eenLetter=" + eenLetter);
 Het is belangrijk dat je de apostrof (') niet vergeet voor en na het karakter dat je wenst op te slaan daar dit de literal voorstelling van `char`-literals is (zie ook [hier](../0_intro/1_datatypes.md)).
 
 Je kan eender welk [UNICODE-teken](https://en.wikipedia.org/wiki/Unicode) in een `char` bewaren, namelijk letters, cijfers en speciale tekens zoals `%`, `$`, `*` ,`#` , etc.) Merk dus op dat volgende lijn:``
-char eenGetal = '7';`` weliswaar een getal als teken opslaat, maar dat intern de compiler deze variabele steeds als een character zal gebruiken. Als je dit cijfer zou willen gebruiken als effectief cijfer om wiskundige bewerkingen op uit te voeren, dan zal je dit eerst moeten converteren naar een getal ([zie Convert en Casting](../1_csharpbasics/4_converteren_casting.md)).
+char eenGetal = '7';`` weliswaar een getal als teken opslaat, maar dat intern de compiler deze variabele steeds als een character zal gebruiken. Als je dit cijfer zou willen gebruiken als effectief cijfer om wiskundige bewerkingen op uit te voeren, dan zal je dit eerst moeten converteren naar een getal ([zie Convert en Casting](../3_data/4_converteren_casting.md)).
 
 
 # String
-Een string is een reeks (eigenlijk [array](../5_arrays/0_ArraysIntro.md)) van 0, 1 of meerdere `char`-elementen, zoals je ook kan zien als je even met je muis boven een string keyword *hovert* in je code:
+Een string is een reeks (eigenlijk [array](../7_arrays/0_ArraysIntro.md)) van 0, 1 of meerdere `char`-elementen, zoals je ook kan zien als je even met je muis boven een string keyword *hovert* in je code:
 
 ![](/assets/1_csharpbasics/stringenchars.png)
 
