@@ -38,7 +38,7 @@ Vraag aan de gebruiker het nummer van de harde schijf waar meer informatie over 
 Opgelet: sta toe dat de gebruiker 1 voor de eerste harde schijf mag gebruiken, 2 voor de tweede, enzovoort. Je zal dus in code nog manueel 1 moeten aftrekken van de invoer van de gebruiken.
 Bv:
 ```csharp
-int invoer= Convert.ToInt(Console.ReadLine()) - 1 ;
+int invoer= Convert.ToInt32(Console.ReadLine()) - 1 ;
  long totalsize = DriveInfo.GetDrives()[invoer].TotalSize;  
  ```
 
