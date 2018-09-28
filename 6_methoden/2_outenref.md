@@ -96,3 +96,6 @@ Tweede bedraagt na method:12
 
 
 Merk dus op dat enkel de variabele tweede aangepast wordt buiten de methode doordat we deze by reference doorgeven.
+
+
+# TryParse: out in de praktijk
