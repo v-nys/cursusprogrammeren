@@ -99,3 +99,5 @@ Merk dus op dat enkel de variabele tweede aangepast wordt buiten de methode door
 
 
 # TryParse: out in de praktijk
+
+[TODO: maar lees gerust dit al na](https://www.dotnetperls.com/parse)
