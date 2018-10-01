@@ -20,12 +20,13 @@
   * [Expressies en operators](1_csharpbasics/2_expressies.md)
   * [Oefeningen](1_csharpbasics/A_practica.md)
   
-
-## In Opbouw (semester 1)
 * H2: Tekst in code
   * [Strings en chars](2_tekst/5_chars_strings.md)
   * [Strings samenvoegen](2_tekst/6_stringInterpolation.md)
   * [Oefeningen](2_tekst/a_practica.md)
+
+## In Opbouw (semester 1)
+
   
 * H3: Werken met data
   * [Casting, conversie en parsing](3_data/4_converteren_casting.md)
