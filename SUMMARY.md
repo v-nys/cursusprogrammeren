@@ -31,7 +31,6 @@
   * [Casting, conversie en parsing](3_data/4_converteren_casting.md)
   * [Input verwerken en omzetten](3_data/4b_inputconverten.md)
   * [Math-library en berekeningen](3_data/4c_math.md)
-  * [Random](3_data/5_random.md)
   * [Oefeningen](3_data/A_Practica.md) 
 
 * H4: Beslissingen
@@ -40,7 +39,6 @@
   * [If](4_beslissingen/0_if.md)
   * [Scope van variabelen](4_beslissingen/3_scope.md)
   * [Switch](4_beslissingen/2_switch.md)
-  * [Enums](4_beslissingen/3_enum.md)
   * [Oefeningen](4_beslissingen/a_practica.md)
   
 * H5: Loops
