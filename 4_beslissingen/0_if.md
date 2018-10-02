@@ -1,5 +1,5 @@
 #If statements
-> De flowchart afbeelding komen uit het handboek ["Microsoft Visual C# 2015: An Introduction to Object-Oriented Programming" van Joyce Farrell](https://books.google.be/books/about/Microsoft_Visual_C_2015_An_Introduction.html?id=Xy-dBAAAQBAJ&source=kp_cover&redir_esc=y). Op termijn zullen de illustraties door mezelf gemaakt worden.
+> De flowchart afbeeldingen komen uit het handboek ["Microsoft Visual C# 2015: An Introduction to Object-Oriented Programming" van Joyce Farrell](https://books.google.be/books/about/Microsoft_Visual_C_2015_An_Introduction.html?id=Xy-dBAAAQBAJ&source=kp_cover&redir_esc=y). Op termijn zullen de illustraties door mezelf gemaakt worden.
 
 In dit deel  zullen we bekijken hoe we ons programma dynamischer kunnen maken met behulp van het if-statement.
 
@@ -60,11 +60,12 @@ Er zijn enkele veelgemaakte fouten waar je op moet letten:
   ![](/assets/2_beslissingen/ifflownobrace.png)
 
 * Een puntkomma plaatsen na de booleanse expressie
+
   ![](/assets/2_beslissingen/ifflowsemicolon.png)
   
 
 ## Gebruik relationele operators
-Met de relationele operators (==, !=, <, >, <= en >=) kunnen we expressie schrijven die als uitkomst waar (true) of niet waar (false) geven:
+Met de relationele operators (==, !=, <, >, <= en >=) kunnen we complexere expressies schrijven die als uitkomst waar (true) of niet waar (false) geven:
 
 Een voorbeeld:
 ```csharp
@@ -73,26 +74,54 @@ int a, b, c;
 a = 2;  
 b = 3;  
  
-if(a < b) Console.WriteLine("a is less than b"); 
+if(a < b) 
+{
+    Console.WriteLine("a is less than b"); 
+}
  
-// this won't display anything  
-if(a == b) Console.WriteLine("you won't see this");  
+if(a == b) 
+{
+    Console.WriteLine("you won't see this");  
+}
  
 Console.WriteLine(); 
  
 c = a - b; // c contains -1 
  
 Console.WriteLine("c contains -1"); 
-if(c >= 0) Console.WriteLine("c is non-negative"); 
-if(c < 0) Console.WriteLine("c is negative"); 
+if(c >= 0) 
+{
+    Console.WriteLine("c is non-negative"); 
+}
+if(c < 0) 
+{
+    Console.WriteLine("c is negative"); 
+}
  
 Console.WriteLine(); 
  
 c = b - a; // c now contains 1 
 Console.WriteLine("c contains 1"); 
-if(c >= 0) Console.WriteLine("c is non-negative"); 
-if(c < 0) Console.WriteLine("c is negative"); 
+if(c >= 0) 
+{
+    Console.WriteLine("c is non-negative"); 
+}
+if(c < 0)
+{
+     Console.WriteLine("c is negative"); 
+}
 ```
+Uitvoer van bovenstaande code zal zijn:
+```
+a is less than b
+
+c contains -1
+c is negative
+
+c contains 1
+c is non-negative
+```
+
 We kunnen ook meerdere expressie combineren zodat we complexere uitdrukkingen kunnen maken. Hierbij kan je gebruik maken van de logische operators (``&&``,``||``,``!``) 
 
 Een voorbeeld:
@@ -100,15 +129,25 @@ Een voorbeeld:
 int a = 5, b = 5, c = 10;
  
 if (a == b)
-    Console.WriteLine(a);
+{
+        Console.WriteLine(a);
+}
  
 if ((a > c) || (a == b))
+{  
     Console.WriteLine(b);
+}
  
 if ((a >= c) && (b <= c))
+{
     Console.WriteLine(c);
+}
 ```
-
+Uitvoer van dit programma zal zijn:
+```
+5
+5
+```
 
 ## If/else
 Met if/else kunnen we niet enkel zeggen welke code moet uitgevoerd worden als de conditie waar is maar ook welke specifieke code indien de conditatie niet waar (false). Volgende voorbeeld geeft een typisch gebruik van een if/else structuur om 2 waarden met mekaar te vergelijken:
