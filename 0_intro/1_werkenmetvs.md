@@ -83,3 +83,6 @@ Je kan nu je gecompileerde bestand uitvoeren door te kiezen voor Debug-&gt;Start
 Veel doet je programma nog niet natuurlijk, dus sluit dit venster maar terug af door een willekeurige toets in te drukken.
 
 > In [volgende video](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=1889dae4-d6cf-4ca3-b959-a91100ceeca9) overloop ik de belangrijkste zaken van dit hoofdstuk.
+
+## Is dit alles?!
+Nee hoor. Visual Studio is lekker groot. Was bovenstaande uitleg toch niet zo verhelderend als ik hoopte. Bekijk dan volgende korte, maar ohzo duidelijk, uitleg van Visual Studio en de verschillende onderdelen (klik zeker op de chapters in de linkermenu om verder te lezen): [Getting started with VS 2017](https://tutorials.visualstudio.com/vs-get-started/intro)
