@@ -24,11 +24,7 @@
   * [Strings en chars](2_tekst/5_chars_strings.md)
   * [Strings samenvoegen](2_tekst/6_stringInterpolation.md)
   * [Oefeningen](2_tekst/a_practica.md)
-
-* Need to know -  Ditjes en datjes
-  * [Unicode tonen](B_appendix/unicode.md) 
-
-
+  
 ## In Opbouw (semester 1)
 * H3: Werken met data
   * [Casting, conversie en parsing](3_data/4_converteren_casting.md)
@@ -66,6 +62,7 @@
   * [Jagged arrays](6_arrays/5_jaggedArrays.md)
   * [Oefeningen](6_arrays/A_Practica.md)
 * Need to know -  Ditjes en datjes
+  * [Unicode tonen](B_appendix/unicode.md) 
   * [enum](B_appendix/enum.md)
   * [Random](B_appendix/random.md)
 * All-In-Projecten
