@@ -1,6 +1,6 @@
 # Summary
 
-* [FrontMatter](README.md)
+* [Welkom](README.md)
 * Inleiding
   * [Benodigdheden](0_intro/benodigdheden.md)
   * [Nuttige extras](0_intro/nuttigeextras.md)
