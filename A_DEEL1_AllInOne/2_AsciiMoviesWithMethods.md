@@ -62,7 +62,7 @@ static void DrawFace(int posX, int posY)
     DrawRectangle('_', posX + 2, posY + 6, 4, 1);
 }
 ```
-De enige extra complexiteit is dat we steeds rekening moeten houden met de locatie van het gezicht (``posx``,``posy``) en de onderlinge posities van de gezichts-onderdelen. We plaatsen dus bijvoorbeeld de mons op 6e lijn ten opzichte van de bovenkant van het gezicht.
+De enige extra complexiteit is dat we steeds rekening moeten houden met de locatie van het gezicht (``posx``,``posy``) en de onderlinge posities van de gezichts-onderdelen. We plaatsen dus bijvoorbeeld de mond op 6e lijn ten opzichte van de bovenkant van het gezicht.
 Denk er ook aan dat we de volgorde van methode-aanroepen hier relevant is.Indien we de eerste DrawRectangle aanroep helemaal onderaan zouden plaatsen, dan zou deze al de andere gezichts-onderdelen overtekenen.
 
 ## Auto tekenen

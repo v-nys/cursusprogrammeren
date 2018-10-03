@@ -14,7 +14,7 @@ Het doel is te komen tot een spel waarbij de gebruiker kan wandelen door een kaa
 Deze tutorial gaat er van uit dat je volgende zaken beheerst:
 
 *   Basisprincipes van Arrays, zowel 1D als 2D arrays: aanmaken, waarden toevoegen/uitlezen
-*   Werken met de Console-bibliotheek: in het bijzonder Clear(), SetCursosPosition(), ForeGroundColor en BackGroundColor, Write() vs WriteLine()
+*   Werken met de Console-bibliotheek: in het bijzonder Clear(), SetCursorPosition(), ForeGroundColor en BackGroundColor, Write() vs WriteLine()
 *   Je kan werken met while en for-loops
 *   Je begrijpt de werking van het ``out`` keyword
 
