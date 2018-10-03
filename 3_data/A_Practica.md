@@ -1,7 +1,11 @@
 
-> Vanaf dit punt zullen  de meeste oefeningen "iets vragen aan de gebruiker". Hiermee wordt bedoeld dat je z'n input via ReadLine moet inlezen en indien nodig moet converteren naar het gewenste type.
+
+
+**Gebruik je kennis van debuggen om vanaf dit hoofstuk problemen op te lossen. Gebruik niet ``Console.WriteLine()`` om de waarde van een variabele te controleren at-runtime, maar gebruik daarentegen breakpoints!**
 
 # Supercomputer
+> Vanaf dit punt zullen  de meeste oefeningen "iets vragen aan de gebruiker". Hiermee wordt bedoeld dat je z'n input via ReadLine moet inlezen en indien nodig moet converteren naar het gewenste type.
+
 Vraag aan de gebruiker 3 kommagetallen. Bereken het gemiddelde van deze 3 getallen
 
 # Geometric-fun
