@@ -25,6 +25,8 @@
   * [Strings samenvoegen](2_tekst/6_stringInterpolation.md)
   * [Oefeningen](2_tekst/a_practica.md)
 
+* Need to know -  Ditjes en datjes
+  * [Unicode tonen](B_appendix/unicode.md) 
 ## In Opbouw (semester 1)
  
 * H3: Werken met data
@@ -64,7 +66,7 @@
   * [Oefeningen](6_arrays/A_Practica.md)
 * Need to know -  Ditjes en datjes
   * [enum](B_appendix/enum.md)
-  * [enum](B_appendix/random.md)
+  * [Random](B_appendix/random.md)
 * All-In-Projecten
   * [Overzicht](A_DEEL1_AllInOne/0_Deel1_IntroductieAllInOne.md)
   * [Console Matrix](A_DEEL1_AllInOne/1_ConsoleMatrix.md)

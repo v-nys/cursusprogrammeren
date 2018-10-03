@@ -27,4 +27,6 @@ while (true)
 ```
 
 Enkele opmerkingen:
-* ``System.Threading.Sleep()`` is een ingebouwde C# methode die aan de computer verteld dat je applicatie(thread) gedurende *x* milliseconden mag gepauzeerd (Sleep) worden. Het argument geeft weer hoeveel milliseconden dit moet zijn. Wil je dus 1 seconden pauzeren dan geef je 1000 mee. **Opgelet**: Sleep zal je programma volledig "blokkeren", het zal met andere woorden ook geen andere zaken doen zoals input van de gebruiker detecteren. 
+* ``System.Threading.Sleep()`` is een ingebouwde C# methode die aan de computer verteld dat je applicatie(thread) gedurende *x* milliseconden mag gepauzeerd (Sleep) worden. Het argument geeft weer hoeveel milliseconden dit moet zijn. Wil je dus 1 seconden pauzeren dan geef je 1000 mee. 
+
+* **Opgelet**: Sleep zal je programma volledig "blokkeren", het zal met andere woorden ook geen andere zaken doen zoals input van de gebruiker detecteren. 

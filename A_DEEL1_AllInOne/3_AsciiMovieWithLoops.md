@@ -1,7 +1,7 @@
 # Console-filmpjes maken
 Volgende tutorial toont hoe je een eenvoudig filmpje kan maken dat je, mits wat fantasie, vlot kan uitbreiden over enkele weken met interactieve aspecten.
 
-## Basisloop voor het filmpe
+## Basisloop voor het filmpje
 Volgende voorbeeld toont wat je bijvoorbeeld kan doen. Kopieer dit alles naar een eigen project tussen de accolades van de main:
 ```csharp
  int framenummer = 0;
@@ -89,7 +89,7 @@ Mogelijke uitbreidingen kunnen zijn:
 * Ipv tekst zou je heeldere ASCII-art afbeeldingen kunnen tonen (én animeren)
 
 ## Geavanceerde uitbreidingen
-### Niet-sequentiele flow
+### Niet-sequentiële flow
 Je kan ook bepalen wat het volgende frame moet zijn door de variabele framenummer aan te passen naar het framenummer dat je nodig hebt -1 . Stel dat je bijvoorbeeld in frame 8 wenst dat na dit frame frame 3 wordt uitgevoerd, dan schrijf je:
 ```csharp
 else if (framenummer == 8)
@@ -103,7 +103,7 @@ else if (framenummer == 8)
 Via de methode ``ConsoleSetCursorPosition`` kan je instellen waar de cursor moet gezet worden. Je geeft tussen de haakjes van deze methode de x,y coördinaten (integers) mee waar de cursor moet gezet worden.
 Als je vervolgens tekst schrijft dan wordt die weggeschreven vanaf dat punt. De coördinaten zijn x,y coördinaten, waarbij het punt (1,1) het eerste karakter linksboven in de console is.
 Volgende frame zet bijvoorbeeld een "X" 10 letters naar rechts, 20 lijnen naar beneden
-````csharp
+```csharp
 else if (framenummer == 9)
 {
     Console.SetCursorPosition(10, 20);
