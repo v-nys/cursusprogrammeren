@@ -27,8 +27,9 @@
 
 * Need to know -  Ditjes en datjes
   * [Unicode tonen](B_appendix/unicode.md) 
+
+
 ## In Opbouw (semester 1)
- 
 * H3: Werken met data
   * [Casting, conversie en parsing](3_data/4_converteren_casting.md)
   * [Input verwerken en omzetten](3_data/4b_inputconverten.md)
