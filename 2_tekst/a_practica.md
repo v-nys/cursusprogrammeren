@@ -74,3 +74,47 @@ of:
 ## [PRO²] Deel 3
 
 Kan je afhankelijk van de ringwaarde het getal in de tabel in de juiste kleur zetten conform de weerstandskleuren (tip: je zal ``Write`` en ``if`` moeten leren gebruiken)
+
+# [PRO] Shell-starter
+Je kan de output van een ``Process.Start()`` programma naar je console scherm sturen. Dit vereist wat meer code. Volgende voorbeeld zal de output van het commando ``ipconfig /all`` op het scherm tonen:
+```csharp
+    System.Diagnostics.Process process = new System.Diagnostics.Process();
+    process.StartInfo.FileName = "ipconfig";
+    process.StartInfo.Arguments = "/all"; 
+    process.StartInfo.UseShellExecute = false;
+    process.StartInfo.RedirectStandardOutput = true;
+    process.StartInfo.RedirectStandardError = true;
+    process.Start(); //start process
+
+    // Read the output (or the error)
+    string output = process.StandardOutput.ReadToEnd(); //normal output
+    Console.WriteLine(output);
+    string err = process.StandardError.ReadToEnd(); //error output (if any)
+    Console.WriteLine(err);
+    process.WaitForExit();
+    //Continue
+    Console.WriteLine("Klaar");
+```
+> Let er op dat dit voorbeeld niet perfect werkt met een shell-commando dat even duurt. Denk bijvoorbeeld aan ``ping``. De output komt namelijk pas op het scherm als het commando is afgelopen. Test zelf maar eens!
+
+Maak enkele kleine C# programma's die bepaalde shell-commando's zullen uitvoeren , eventueel na input van de gebruiker.
+Enkele nuttige shell-commando's in de netwerk-sfeer zijn bijvoorbeeld:
+`` 
+hostname
+arp -a
+getmac 
+nslookup google.com
+netstat
+``
+
+Andere toffe commando's kunnen zijn:
+``
+chrome.exe ap.be
+notepad mytest.txt
+``
+
+Of de naam van een bestand dat je wilt openen, maar dan met het hele path:
+``
+c:\Temp\mydocument.docx
+``
+
