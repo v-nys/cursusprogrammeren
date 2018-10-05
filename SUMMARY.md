@@ -6,6 +6,7 @@
   * [Nuttige extras](0_intro/nuttigeextras.md)
 
 ## Semester 1
+### Module 1
 * H0: Werken met Visual Studio
   * [Introductie tot C#](0_intro/0_intrototcs.md)
   * [Werken met Visual Studio](0_intro/1_werkenmetvs.md) 
@@ -25,13 +26,14 @@
   * [Strings samenvoegen](2_tekst/6_stringInterpolation.md)
   * [Oefeningen](2_tekst/a_practica.md)
   
-## In Opbouw (semester 1)
 * H3: Werken met data
   * [Casting, conversie en parsing](3_data/4_converteren_casting.md)
   * [Input verwerken en omzetten](3_data/4b_inputconverten.md)
   * [Math-library en berekeningen](3_data/4c_math.md)
   * [Debuggen](3_data/5_debuggen.md)
   * [Oefeningen](3_data/A_Practica.md) 
+
+## In Opbouw (semester 1)
 
 * H4: Beslissingen
   * [Beslissingen intro](4_beslissingen/0_beslissingen_intro.md)
@@ -40,7 +42,7 @@
   * [Scope van variabelen](4_beslissingen/3_scope.md)
   * [Switch](4_beslissingen/2_switch.md)
   * [Oefeningen](4_beslissingen/a_practica.md)
-  
+### Module 1
 * H5: Loops
   * [Loops intro](5_herhalingen/0_loops_intro.md)
   * [While en Do While](5_herhalingen/1_while_dowhile.md)
