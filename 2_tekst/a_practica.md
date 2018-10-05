@@ -15,6 +15,7 @@ Deze computer-informatie kan je verkrijgen mbv de Environment-klasse. Hier enkel
             string username = Environment.UserName;
             long memory = Environment.WorkingSet; //bytes (hoeveelheid geheugen dat je programma krijgt van windows)
 ```
+> WorkingSet geeft terug hoeveel geheugen het programma van windows toegewezen krijgt. Als je dus op 'run' klikt om je code te runnen dan zal dit programma geheugen krijgen en via WorkingSet kan het programma dus zelf zien hoeveel het krijgt. (wat een vreemde lange zin).
 
 Zoals je ziet wordt het geheugen in bytes teruggegeven. Zorg ervoor dat het geheugen steeds in mega of gigabytes op het scherm wordt getoond.
 
@@ -22,7 +23,10 @@ Zoals je ziet wordt het geheugen in bytes teruggegeven. Zorg ervoor dat het gehe
 
 ## [PRO] Deel 2
 
-Ook informatie over de harde schijven kan je verkrijgen (in bits). Dit vereist wel dat je bovenaan je programma volgende lijn bijschrijft: ``using System.IO``. Vervolgens kan je in je programma schrijven:
+Ook informatie over de harde schijven kan je verkrijgen (in bits). 
+Dit vereist wel dat je bovenaan je programma volgende lijn bijschrijft: ``using System.IO``. 
+
+Vervolgens kan je in je programma schrijven:
 
 ```csharp
             long cdriveinbytes = DriveInfo.GetDrives()[0].AvailableFreeSpace;  

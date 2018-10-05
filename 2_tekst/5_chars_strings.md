@@ -109,7 +109,7 @@ Stel dat we volgende char-variabele aanmaken. Bij string mogen we de +-operator 
 ```csharp
 char letter1 = 'A';
 char letter2 = 'B';
-Console.WriteLine(a + b);
+Console.WriteLine(letter1 + letter2);
 ```
 **Wanneer je deze code uitvoert dan krijg je `131` te zien?!**
 
