@@ -42,7 +42,7 @@
   * [Scope van variabelen](4_beslissingen/3_scope.md)
   * [Switch](4_beslissingen/2_switch.md)
   * [Oefeningen](4_beslissingen/a_practica.md)
-### Module 1
+### Module 2
 * H5: Loops
   * [Loops intro](5_herhalingen/0_loops_intro.md)
   * [While en Do While](5_herhalingen/1_while_dowhile.md)
