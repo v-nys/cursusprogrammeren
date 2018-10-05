@@ -48,13 +48,20 @@ int invoer= Convert.ToInt32(Console.ReadLine()) - 1 ;
  ```
 
 # Weerstandberekenaar
+Stel dat je in het labo een weerstand vastneemt en je kent de kleurcodes van de streepjes wel, maar niet hoe je die kunt omzetten naar de effectieve weerstandswaarde. In dit programma kunnen we de gebruiker helpen.
+
+![](/assets/1_csharpbasics/colors.jpg)
+
+(Bron afbeelding: [https://www.esdsite.nl](https://www.esdsite.nl))
+
 ## Deel 1
 Maak een programma dat de weerstandwaarde berekent gebaseerd op:
 * Ring 1: die de tientallen voorstelt
 * Ring 2: die de eenheden voorstel
 * [ENKEL VOOR PRO] Ring 3: die de exponent (10 tot de macht) voorstelt. (tip:``Math.Pow(10,ring3``))
 
-Gebruik twee variabelen van het type ``int`` waar je getal van 0 tot 9 telkens aan kan toewijzen.
+Gebruik twee variabelen van het type ``int`` waar je getal van 0 tot 9 telkens aan kan toewijzen. (we veronderstellen dus dat de gebruiker de kleurcode heeft omgezet naar een getal en dat toewijst aan de variabele)
+
 Test dat je "formule/berekening" klopt om gebaseerd op 2 (of 3) ringen de weerstandswaarde te berekenen. 
 
 ## Deel 2
