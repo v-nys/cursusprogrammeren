@@ -6,7 +6,6 @@
   * [Nuttige extras](0_intro/nuttigeextras.md)
 
 ## Semester 1
-### Module 1
 * H0: Werken met Visual Studio
   * [Introductie tot C#](0_intro/0_intrototcs.md)
   * [Werken met Visual Studio](0_intro/1_werkenmetvs.md) 
@@ -42,7 +41,6 @@
   * [Scope van variabelen](4_beslissingen/3_scope.md)
   * [Switch](4_beslissingen/2_switch.md)
   * [Oefeningen](4_beslissingen/a_practica.md)
-### Module 2
 * H5: Loops
   * [Loops intro](5_herhalingen/0_loops_intro.md)
   * [While en Do While](5_herhalingen/1_while_dowhile.md)
