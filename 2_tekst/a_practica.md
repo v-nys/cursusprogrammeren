@@ -13,13 +13,14 @@ Deze computer-informatie kan je verkrijgen mbv de Environment-klasse. Hier enkel
             string pcname = Environment.MachineName;
             int proccount = Environment.ProcessorCount;
             string username = Environment.UserName;
-            long memory = Environment.WorkingSet; //bytes (hoeveelheid geheugen dat je programma krijgt van windows)
+            long memory = Environment.WorkingSet; //zal ongeveer 10 Mb teruggeven. 
 ```
-> WorkingSet geeft terug hoeveel geheugen het programma van windows toegewezen krijgt. Als je dus op 'run' klikt om je code te runnen dan zal dit programma geheugen krijgen en via WorkingSet kan het programma dus zelf zien hoeveel het krijgt. (wat een vreemde lange zin).
+> **WorkingSet** geeft terug hoeveel geheugen het programma van windows toegewezen krijgt. Als je dus op 'run' klikt om je code te runnen dan zal dit programma geheugen krijgen en via WorkingSet kan het programma dus zelf zien hoeveel het krijgt. (wat een vreemde lange zin).
 
 Zoals je ziet wordt het geheugen in bytes teruggegeven. Zorg ervoor dat het geheugen steeds in mega of gigabytes op het scherm wordt getoond.
 
 **Formateer de informatie met behulp van de $-notatie  zodat deze  deftig getoond worden en de gebruiker snel de belangrijke informatie over z'n systeem te zien krijgt.**
+
 
 ## [PRO] Deel 2
 
