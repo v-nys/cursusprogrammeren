@@ -23,7 +23,9 @@ double result= Math.Pow(getal,3);
 
 Als je in Visual Studio ``Math`` schrijft, gevolgd door een punt ``.`` krijg je alles te zien wat de Math-bibliotheek kan doen:
 
+
 ![](/assets/4_methoden/methoden3.png)
+
 
 Een doosje voor een naam wil zeggen dat het om een **Methode** gaat (zoals Console.ReadLine()). Een vierkantje met twee streepjes in zijn constanten (zoals Pi en E).
 
@@ -37,7 +39,9 @@ double complex= 3+ DerdeMachtVan20 * Math.Round(sineHoekA)
 
 Twijfel je over de werking van een methode, gebruik dan de help als volgt:
 1) schrijf de Methode zonder argumenten. Bijvoorbeeld ``Math.Pow()`` (je mag de rode error negeren)
+
 ![](/assets/4_methoden/math.png)
+
 2) plaats je cursos op Pow
 3) druk op F1 op je toetsenbord. 
 4) Je krijgt nu de help-files te zien van deze methode op MDSDN
