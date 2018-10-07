@@ -5,6 +5,9 @@
   * [Benodigdheden](0_intro/benodigdheden.md)
   * [Nuttige extras](0_intro/nuttigeextras.md)
 
+
+
+
 ## Semester 1
 * H0: Werken met Visual Studio
   * [Introductie tot C#](0_intro/0_intrototcs.md)

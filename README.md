@@ -31,3 +31,4 @@ Deze cursus is nog volop in opbouw. Hier de lijst van de belangrijkste aspecten 
 * Hoofdstuk debugging schrijven
 * Hoofdstuk Berekeningen
 * Try Parse
+* formatters 2

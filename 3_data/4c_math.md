@@ -21,7 +21,7 @@ double result= Math.Pow(getal,3);
 
 ### De Math bibliotheek ontdekken
 
-Als je in Visual Studio ``Math```schrijft, gevolgd door een punt ``.`` krijg je alles te zien wat de Math-bibliotheek kan doen:
+Als je in Visual Studio ``Math`` schrijft, gevolgd door een punt ``.`` krijg je alles te zien wat de Math-bibliotheek kan doen:
 
 ![](/assets/4_methoden/methoden3.png)
 
