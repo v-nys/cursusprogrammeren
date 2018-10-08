@@ -43,12 +43,13 @@ Ideale manier om programmeren meer in de vingers te krijgen op een speelse manie
 * [RPG Game in C#](http://scottlilly.com/learn-c-by-building-a-simple-rpg-index/) (behandelt leerstof van volledig eerste jaar en meer)
 
 ## Tutorials
+* [C# Getting started interactive quickstart tutorials](https://docs.microsoft.com/en-us/dotnet/csharp/quick-starts/): Aanrader.
 * [Online video c#  cursus](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners):  Zeer aan te raden indien je een bepaald concept uit de les niet begrijpt. 
 * [C-sharp.be](http://www.c-sharp.be) : Nederlandstalige cursus met veel toffe oefeningen waarvan je sommige zelfs in deze cursus zal terugvinden.
 * [Microsoft Virtual Academy](https://mva.microsoft.com/en-us/training-courses/c-fundamentals-for-absolute-beginners-16169?l=Lvld4EQIC_2706218949):  Microsoft heeft een virtual academy cursus "C# fundamentals" uitgebracht. Ik kan deze cursus zeer erg aanbevelen. 
 * [Rob Miles's The C# Programming Yellow book](http://www.robmiles.com/c-yellow-book/): Zeer vermakelijk, vlot geschreven C# boek(je)
 * [Code van 1001 Nacht](https://codevan1001nacht.wordpress.com/) :  Hier plaats ik geregeld korte tutorials over een specifiek probleem/onderwerp omtrent C#. De meeste content daar werd reeds in deze cursus verwerkt.
-* 
+
 ## Oefenvragen
 * [Een lijst met oude oefenvragen uit 2010](/assets/docs/oefenvragen2010.pdf): nog steeds relevant.
 * [Een dagelijkse programmeeruitdaging op reddit](https://www.reddit.com/r/dailyprogrammer/)
