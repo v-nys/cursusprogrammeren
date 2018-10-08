@@ -37,6 +37,7 @@ Ideale manier om programmeren meer in de vingers te krijgen op een speelse manie
 * [Mimo](https://play.google.com/store/apps/details?id=com.getmimo) Speels en vrij beperkt in gratis versie, maar ideale aanvullign op SoloLearn.
 
 **Websites**
+* [Exercism](https://exercism.io/tracks/csharp)
 * [Code Combat](https://codecombat.com/) (aanrader!)
 * [Pex For Fun](https://pexforfun.com/) (specifiek voor C#!)
 * [Code Academy](https://www.codecademy.com/)
