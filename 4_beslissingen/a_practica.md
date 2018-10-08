@@ -15,6 +15,21 @@ a) Maak een oefening die aan de gebruiker vraagt hoeveel paar schoenen hij wenst
 
 b) Voeg nu toe dat het programma eerst aan de kassier vraagt vanaf hoeveel paar de klant korting zal krijgen. Als de gebruiker dus 5 indient zal reeds bij 5 paar de kost per paar 10euro zijn.
 
+# Ohm-berekenaar
+Vraag aan de gebruiker wat hij wenst te berekenen: Spanning, Weerstand of Stroomsterkte. Vraag vervolgens de 2 andere waarden (als dus de gebruiker "Spanning" kiest vraag je aan de gebruiker de stroomsterkte en de weerstand) en bereken m.b.v. de wet van Ohm de gewenste waarde.
+
+# Kleurcode weerstand naar ohm
+Vraag aan de gebruiker om de ringkleuren van de eerste 3 ringen in te voeren als tekst (bv ``groen``). Toon vervolgens de de waarde van deze weerstand.
+Als dus de gebruiker na mekaar invoert:
+```
+rood
+paars
+rood
+```
+Dan zal het programma tonen:
+
+``Deze weerstand heeft waarde van  2700 Ohm``
+
 # Quiz
 Maak een quiz. Maak gebruik van het switch-statement om de input van de gebruiker (a,b,c of d) te verwerken en bij iedere vraag aan te geven of dit juist/fout is. Voorzie 3 multiple choice vragen. Houdt bij hoe vaak de speler juist antwoordde en geef op het einde de eindscore (Juist is +2 , fout is -1)
 
