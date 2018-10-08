@@ -33,7 +33,24 @@ Dan zal het programma tonen:
 
 ``Deze weerstand heeft waarde van  2700 Ohm``
 
+# Armstrong nummer
+Een getal is een *narcistisch getal* of *armstronggetal* als het de som is van zijn eigen cijfers elk tot de macht verheven van het aantal cijfers.
+
+* 9 is een Armstrong nummer, want 9 = 9^1 = 9
+* 10 is geen Armstrong nummer, want 10 != 1^2 + 0^2 = 1
+* 153 is een  Armstrong nummer, want: 153 = 1^3 + 5^3 + 3^3 = 1 + 125 + 27 = 153
+* 154 is geen  Armstrong nummer, want: 154 != 1^3 + 5^3 + 4^3 = 1 + 125 + 64 = 190
+Schrijf een programma dat aan de gebruiker een getal vraagt en vervolgens toont of het ingevoerde getal een Armstrong-nummer is of niet.
+
 # Quiz
 Maak een quiz. Maak gebruik van het switch-statement om de input van de gebruiker (a,b,c of d) te verwerken en bij iedere vraag aan te geven of dit juist/fout is. Voorzie 3 multiple choice vragen. Houdt bij hoe vaak de speler juist antwoordde en geef op het einde de eindscore (Juist is +2 , fout is -1)
 
  Zoek op hoe je de kleur van de letters en de achtergrond in een console-applicatie kunt aanpassen en pas dit toe op je quiz om deze er iets boeiender uit te laten zien. Toon iedere vraag op een nieuw scherm.
+
+# Schrikkeljaar
+De gebruiker voert een jaartal in en jouw programma toont of het wel of geen schrikkeljaar is. Een schrikkeljaar is deelbaar door 4, behalve als het ook deelbaar is dor 100, tenzij ht wél deelbaar is door 400.
+Bijvoorbeeld: 
+* 1997: geen schrikkeljaar
+* 1996: wél schrikkeljaar
+* 1900: geen schrikkeljaar
+* 2000: wél schrikkeljaar
