@@ -26,12 +26,14 @@
 * H2: Tekst in code
   * [Strings en chars](2_tekst/5_chars_strings.md)
   * [Strings samenvoegen](2_tekst/6_stringInterpolation.md)
+  * [Unicode tonen](B_appendix/unicode.md) 
   * [Oefeningen](2_tekst/a_practica.md)
   
 * H3: Werken met data
   * [Casting, conversie en parsing](3_data/4_converteren_casting.md)
   * [Input verwerken en omzetten](3_data/4b_inputconverten.md)
   * [Math-library en berekeningen](3_data/4c_math.md)
+  * [Random](B_appendix/random.md)
   * [Debuggen](3_data/5_debuggen.md)
   * [Oefeningen](3_data/A_Practica.md) 
 
@@ -42,6 +44,7 @@
   * [Booleanse expressies, logische en relationele operators](4_beslissingen/1_logic_and_relationsoperator.md)
   * [If](4_beslissingen/0_if.md)
   * [Scope van variabelen](4_beslissingen/3_scope.md)
+  * [enum](B_appendix/enum.md)
   * [Switch](4_beslissingen/2_switch.md)
   * [Oefeningen](4_beslissingen/a_practica.md)
 * H5: Loops
@@ -65,10 +68,7 @@
   * [N-dimensionale arrays](6_arrays/4_ndimensionalArrays.md)
   * [Jagged arrays](6_arrays/5_jaggedArrays.md)
   * [Oefeningen](6_arrays/A_Practica.md)
-* Need to know -  Ditjes en datjes
-  * [Unicode tonen](B_appendix/unicode.md) 
-  * [enum](B_appendix/enum.md)
-  * [Random](B_appendix/random.md)
+  
 * All-In-Projecten
   * [Overzicht](A_DEEL1_AllInOne/0_Deel1_IntroductieAllInOne.md)
   * [Console Matrix](A_DEEL1_AllInOne/1_ConsoleMatrix.md)
