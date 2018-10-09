@@ -29,6 +29,4 @@ Ook een speciale dank aan de vele studenten die me geregeld feedback geven op za
 Deze cursus is nog volop in opbouw. Hier de lijst van de belangrijkste aspecten die nog moeten gebeuren:
 * Titels in hoofding laten overeenstemmen met titels in inhoudsopgave
 * Hoofdstuk debugging schrijven
-* Hoofdstuk Berekeningen
 * Try Parse
-* formatters 2
