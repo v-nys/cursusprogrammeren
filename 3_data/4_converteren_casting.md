@@ -118,6 +118,8 @@ int userAge= Convert.ToInt32("19"); //string to int
 int ageOther= Convert.ToInt32(anderGetal); //double to int
 ```
  Je plaatst tussen de ronde haakjes de variabele of literal die je wenst te converteren naar een ander type. Merk op dat naar een `int`  converteren met ``.ToInt32()`` moet gebeuren. Naar een ``short`` is dit met behulp van ``.ToInt16()``.
+ 
+ > ``Convert.ToBoolean`` verdient extra aandacht: Wanneer je een getal, eender welk, aan deze methode meegeeft zal deze altijd naar ``True`` geconverteerd worden.  Enkel indien je ``0`` (``int``) f``0.0`` ingeeft, dan krijg je ``False``. In quasi alle andere gevallen krijg je altijd ``True``.
 
 Opgelet: de convert zal zelf zo goed mogelijk de data omzetten en dus indien nodig widening of narrowing toepassen. Zeker bij het omzetten van een string naar een ander type kijk je best steeds de documentatie na om te weten wat er intern juist zal gebeuren.
 
