@@ -9,8 +9,9 @@ De ``if`` uitdrukking is 1 van de elementairste uitdrukking in een programmeerta
 ```csharp
 if (boolean expression) 
 {
-     // C# die moet uitgevoerd worden indien de booleaanse expressie waar is
+     // code hier moet uitgevoerd worden indien de booleaanse expressie waar is
 }
+
 ```
 Enkel indien de booleaanse expressie waar is, en dus ``true`` als resultaat heeft zal de code binnen de accolades van het if-blok uitgevoerd worden. Indien de expressie niet waar is (``false``) dan wordt het blok overgeslagen en gaat het programma verder met de code eronder.
 
@@ -55,11 +56,12 @@ De booleaanse expressie die je tussen de ``if`` haakjes plaats moet een stuk cod
 ## Veelgemaakte if-fouten
 Er zijn enkele veelgemaakte fouten waar je op moet letten:
 
-* Haakjes vergeten maar je code toch zodanig outlinen (met tabs) dat het lijkt of je een heel codeblock hebt:
+* **Appelen en peren vergelijken**: de types in je booleanse expressie moeten steeds vergelijkbaar zijn. Volgende code is dus fout: ``if( "4" > 3)`` daar we hier een ``string`` met een ``int``vergelijken.
+* **Accolades vergeten** om een codeblock aan te duiden, maar je code toch zodanig outlinen (met tabs) dat het lijkt of je een heel codeblock hebt. Het gevolg zal zijn dat enkel de eerste lijn na de ``if`` zal uitgevoerd worden indien ``true```. De volgende lijn zal vervolgens altijd uitgevoerd worden:
   
   ![](/assets/2_beslissingen/ifflownobrace.png)
 
-* Een puntkomma plaatsen na de booleanse expressie
+* **Een puntkomma plaatsen** na de booleanse expressie. Dit zal ervoor zorgen dat er eigenlijk geen codeblock bij de if hoort en je dus een nietszeggende ``if`` het geschreven. De code na het puntkomma zal uitgvoerd worden ongeacht de ``if``:
 
   ![](/assets/2_beslissingen/ifflowsemicolon.png)
   
