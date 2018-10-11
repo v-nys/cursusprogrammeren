@@ -3,7 +3,7 @@
 
 # BMI met if
 
-Pas je BMI-programma ([zie practica vorige hoofdstuk](../3_data/A_Practica.md#d#bmi-berekenaar)) aan zodat je programma feedback aan de gebruiker geeft naargelang de berekende BMI.
+Pas je BMI-programma ([zie practica vorige hoofdstuk](../3_data/A_Practica.md#bmi-berekenaar)) aan zodat je programma feedback aan de gebruiker geeft naargelang de berekende BMI.
 
 De kleur tussen haakjes geeft aan in welke kleur je deze tekst zet:
 
