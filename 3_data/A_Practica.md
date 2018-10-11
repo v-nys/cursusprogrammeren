@@ -72,7 +72,11 @@ Het totaal te betalen bedrag is 126 EURO
 ```
 
  # Het Orakeltje van Delphi
- Gebruik de random generator om een orakel/waarzegger te maken. Het programma zal aan de gebruiker vertellen hoe lang deze nog zal leven. Bijvoorbeeld: "Je zal nog 15 jaar leven.".
+ Gebruik de random generator om een orakel/waarzegger te maken, namelijk de kleine broer of zus van het [Orakel van Delphi](https://nl.wikipedia.org/wiki/Orakel_van_Delphi). Het programma zal aan de gebruiker vertellen hoe lang deze nog zal leven. Bijvoorbeeld: "Je zal nog 15 jaar leven.".
+ 
+ Het orakel zal enkel realistische getallen geven. Maw, getallen tussen de 5 en 125 jaar (onder de 5 zou grof zijn).
+
+ > We gaan geregeld een oefening in een later hoofdstuk verder uitbreiden. Het orakeltje van Delphi is er zo eentje.
 
  # Random invoer
  Pas 1 van bovenstaande programma's aan waarbij je de invoer niet aan de gebruiker meer vraagt, maar deze genereert door een random generator. Zorg ervoor dat je realistische waarden genereert.
