@@ -3,7 +3,7 @@
 
 # BMI met if
 
-Pas je BMI-programma ([zie practica vorige hoofdstuk](../1_csharpbasics/A_practica.md)) aan zodat je programma feedback aan de gebruiker geeft naargelang de berekende BMI.
+Pas je BMI-programma ([zie practica vorige hoofdstuk](../h3-werken-met-data/a_practica.md#bmi-berekenaar)) aan zodat je programma feedback aan de gebruiker geeft naargelang de berekende BMI.
 
 De kleur tussen haakjes geeft aan in welke kleur je deze tekst zet:
 
