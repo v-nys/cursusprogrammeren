@@ -43,7 +43,7 @@ Een getal is een *narcistisch getal* of *armstronggetal* als het de som is van z
 Schrijf een programma dat aan de gebruiker een getal vraagt en vervolgens toont of het ingevoerde getal een Armstrong-nummer is of niet.
 
 # Orakeltje van Delphi, part deux
-Vul de oefening aan uit het vorige hoofdstuk. Voor het orakel je vertelt hoe lang je te leven hebt zal het eerste vragen of je een vrouw (``v``) of een man (``m``)bent. Dan vraagt ze je leeftijd.
+Vul de oefening aan uit het vorige hoofdstuk (zie [hier](../3_data/A_Practica.md)). Voor het orakel je vertelt hoe lang je te leven hebt zal het eerste vragen of je een vrouw (``v``) of een man (``m``)bent. Dan vraagt ze je leeftijd.
 Mannen leven maximum tot hun 120 jaar. Vrouwen tot 150 jaar. Laat het orakel een duur voorspellen die kan. Als een vrouw van 50 de vraag stelt dan zal het orakel dus een getal tussen 5 en 100 (``150-50``) genereren. Een man van 35 zal tussen de 5 en 85 (``120-35``) jaren langer kunnen leven. 
 
 
