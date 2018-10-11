@@ -36,9 +36,6 @@
   * [Random](3_data/random.md)
   * [Debuggen](3_data/5_debuggen.md)
   * [Oefeningen](3_data/A_Practica.md) 
-
-## In Opbouw (semester 1)
-
 * H4: Beslissingen
   * [Beslissingen intro](4_beslissingen/0_beslissingen_intro.md)
   * [Booleanse expressies, logische en relationele operators](4_beslissingen/1_logic_and_relationsoperator.md)
@@ -47,6 +44,9 @@
   * [enum](B_appendix/enum.md)
   * [Switch](4_beslissingen/2_switch.md)
   * [Oefeningen](4_beslissingen/a_practica.md)
+
+
+## In Opbouw (semester 1)
 * H5: Loops
   * [Loops intro](5_herhalingen/0_loops_intro.md)
   * [While en Do While](5_herhalingen/1_while_dowhile.md)
