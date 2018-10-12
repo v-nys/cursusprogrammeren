@@ -16,13 +16,17 @@ Tim Dams
 PS Besef dat goed kunnen programmeren enkel kan (aan)geleerd worden indien je ook effectief veel programmeert. Je kan ook niet leren fietsen door enkel een handboek "Fietsen met Merckx" te lezen, je zal op de fiets moeten springen! En vallen...véél vallen. 
 
 # Typohunters Hall of Fame
+![Landscape with Hunters door Pieter Van Laer](/assets/0_intro/halloffame.png)
+
 Deze cursus bevat hier en daar enkele typo's. Die zijn er uiteraard bewust *kuch* in geplaatst. Zij die er vinden zullen voor eeuwig in deze hall of fame opgenomen worden. Ere aan de typohunters:
 
 * Van Driel Kevin:    3 gevonden 
 * Van Breedam Arne:   2 gevonden
 * Yoncalik Arafa:     1 gevonden
 
-Ook een speciale dank aan de vele studenten die me geregeld feedback geven op zaken die beter, anders, grappiger kunnen! Zoals: Dzialak Jan, Hattas Zeno,
+Ook een speciale dank aan de vele studenten die me geregeld feedback geven op zaken die beter, anders, grappiger kunnen. Zoals: 
+* Dzialak Jan
+*  Hattas Zeno,
 Keep'm coming!
 
 
