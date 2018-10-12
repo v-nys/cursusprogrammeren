@@ -111,21 +111,30 @@ Je kan de output van een ``Process.Start()`` programma naar je console scherm st
 
 Maak enkele kleine C# programma's die bepaalde shell-commando's zullen uitvoeren , eventueel na input van de gebruiker.
 Enkele nuttige shell-commando's in de netwerk-sfeer zijn bijvoorbeeld:
+
 `` 
 hostname
+
 arp -a
+
 getmac 
+
 nslookup google.com
+
 netstat
 ``
 
 Andere toffe commando's kunnen zijn:
+
 ``
 chrome.exe ap.be
+
 notepad mytest.txt
+
 ``
 
 Of de naam van een bestand dat je wilt openen, maar dan met het hele path:
+
 ``
 c:\Temp\mydocument.docx
 ``
