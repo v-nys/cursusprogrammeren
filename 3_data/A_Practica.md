@@ -15,9 +15,9 @@ Vraag aan de gebruiker een hoek in graden. Zet deze om naar radialen (rad= x° *
 Maak een programma dat aan de gebruiker z'n lengte en gewicht vraagt en vervolgens z'n berekende BMI (Body Mass Index) toont.
  Gebruik ``Math.Round`` om de uitkomst tot maximum 2 cijfers na de komen te tonen.
 
- Bereken na met je rekenmachine of je uitkomst wel degelijk klopt!
+ Reken na met je rekenmachine of je uitkomst wel degelijk klopt!
 
->Bekijk de volgende [kennisclip](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=6381a023-ae87-4662-91ed-a969006d3d9b) en geef je uitvoerbaar bestand van de programma aan een klasgenoot. Kijk of hij het kan uitvoeren.
+>Bekijk de volgende [kennisclip](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=6381a023-ae87-4662-91ed-a969006d3d9b) en geef je uitvoerbaar bestand van het programma aan een klasgenoot. Kijk of hij het kan uitvoeren.
 
 # Op-de-poef
 Een vaste klant in je café besteld altijd "op-de-poef". Dat wil zeggen dat hij niet betaald en dat z'n rekeningen worden neergeschreven. Ooit zal de klant dan gevraagd worden de hele som te betalen.
