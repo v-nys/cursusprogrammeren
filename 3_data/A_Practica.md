@@ -13,7 +13,7 @@ Vraag aan de gebruiker een hoek in graden. Zet deze om naar radialen (rad= x° *
 
 # BMI berekenaar
 Maak een programma dat aan de gebruiker z'n lengte en gewicht vraagt en vervolgens z'n berekende BMI (Body Mass Index) toont.
- Gebruik ``Math.Round`` om de uitkomst tot maximum 2 cijfers na de komen te tonen.
+ Gebruik ``Math.Round`` om de uitkomst tot maximum 2 cijfers na de komma te tonen.
 
  Reken na met je rekenmachine of je uitkomst wel degelijk klopt!
 
