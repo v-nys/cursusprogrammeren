@@ -44,6 +44,7 @@
   * [enum](B_appendix/enum.md)
   * [Switch](4_beslissingen/2_switch.md)
   * [Oefeningen](4_beslissingen/a_practica.md)
+  [Module 1 test](4_beslissingen/b_allinonemodule1.md)
 
 
 ## In Opbouw (semester 1)
