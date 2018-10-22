@@ -34,6 +34,15 @@ Schrijf een programma dat de volgende output geeft  (zie ook WhileDoordenker van
 ***********
 ```
 
+# Armstrong nummer
+Een getal is een *narcistisch getal* of *armstronggetal* als het de som is van zijn eigen cijfers elk tot de macht verheven van het aantal cijfers.
+
+* 9 is een Armstrong nummer, want 9 = 9^1 = 9
+* 10 is geen Armstrong nummer, want 10 != 1^2 + 0^2 = 1
+* 153 is een  Armstrong nummer, want: 153 = 1^3 + 5^3 + 3^3 = 1 + 125 + 27 = 153
+* 154 is geen  Armstrong nummer, want: 154 != 1^3 + 5^3 + 4^3 = 1 + 125 + 64 = 190
+Schrijf een programma dat aan de gebruiker een getal vraagt en vervolgens toont of het ingevoerde getal een Armstrong-nummer is of niet.
+
 ## Euler project
 Maak volgende opdracht van [projecteuler.net](projecteuler.net):
 >Indien we alle natuurlijke getallen van 0 tot en met 10 oplijsten die een meervoud van 3 of 5 zijn, dan krijgen we de getallen 3,5,6 en 9. De som van deze 4 getallen is 23.

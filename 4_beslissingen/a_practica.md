@@ -36,14 +36,6 @@ Dan zal het programma tonen:
 
 Indien je deze oefening maakt nadat je reeds ``switch`` hebt leren gebruiken, los deze oefening dan met ``switch`` op. Nog niet gezien? Ga voor ``if``-`` if else`` code.
 
-# Armstrong nummer
-Een getal is een *narcistisch getal* of *armstronggetal* als het de som is van zijn eigen cijfers elk tot de macht verheven van het aantal cijfers.
-
-* 9 is een Armstrong nummer, want 9 = 9^1 = 9
-* 10 is geen Armstrong nummer, want 10 != 1^2 + 0^2 = 1
-* 153 is een  Armstrong nummer, want: 153 = 1^3 + 5^3 + 3^3 = 1 + 125 + 27 = 153
-* 154 is geen  Armstrong nummer, want: 154 != 1^3 + 5^3 + 4^3 = 1 + 125 + 64 = 190
-Schrijf een programma dat aan de gebruiker een getal vraagt en vervolgens toont of het ingevoerde getal een Armstrong-nummer is of niet.
 
 # Orakeltje van Delphi, part deux
 Vul de oefening aan uit het vorige hoofdstuk (zie [hier](../3_data/A_Practica.md#het-orakeltje-van-delphi)). Voor het orakel je vertelt hoe lang je te leven hebt zal het eerste vragen of je een vrouw (``v``) of een man (``m``)bent. Dan vraagt ze je leeftijd.
