@@ -162,7 +162,10 @@ In dit geval zullen Maandag tot Vrijdag intern als 1 tot en met 5 bewaard worden
 # Why should I care?
 ![](/assets/care.jpg)
 
-Je kan perfect leven zonder ``enum``. Vele programmeurs voor je hebben dit bewezen. Echter, van zodra ze ``enum```ontdekten (en begrepen) zijn nog maar weinig programmeurs er van af gestapt. De eerste kennismaking met enumeraties is wat bevreemdend: je kan plots je eigen datatypes aanmaken?! Van zodra je ze in de vingers hebt zal je ontdekken dat je veel leesbaardere code kunt schrijven én dat Visual Studio je kan helpen met het opsporen van bugs. 
+Je kan perfect leven zonder ``enum``. Vele programmeurs voor je hebben dit bewezen. Echter, van zodra ze ``enum``ontdekten (en begrepen) zijn nog maar weinig programmeurs er van af gestapt. 
+
+De eerste kennismaking met enumeraties is wat bevreemdend: je kan plots je eigen datatypes aanmaken?! Van zodra je ze in de vingers hebt zal je ontdekken dat je veel leesbaardere code kunt schrijven én dat Visual Studio je kan helpen met het opsporen van bugs. 
+
 Wanneer gebruik je ``enumm``? Telkens je een variabele (of meerdere) nodig hebt waarvan je perfect op voorhand weet welke handvol mogelijke waarde ze mogen hebben. Ze worden bijvoorbeeld vaak gebruikt in **finite state machines**. Bij game development willen we bijhouden bijhouden in welke staat het programma zich bevindt: ``intro``,``startmenu``, ``ingame``,``gameover``,``optionsscreen``, etc.
 Dit is een typisch ``enumv`` verhaal. We definiëren hiervoor het volgende type:
 ```csharp
