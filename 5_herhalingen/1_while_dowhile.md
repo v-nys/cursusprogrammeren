@@ -115,3 +115,25 @@ while(teller<=10)
 }
 Console.WriteLine(som); 
 ```
+
+## Foute input van gebruiker met loops verwerken
+Dankzij loops kunnen we nu ook eenvoudiger omgan met foutieve input van de gebruiker. Stel dat we volgende vraag hebben:
+
+```csharp
+Console.WriteLine("Geef uw keuze in: a,b of c");
+string input= Console.ReadLine();
+```
+
+Met een loop kunnen we nu deze vragen blijven stellen tot de gebruiker een geldige input geeft:
+```csharp
+string input;
+do
+{
+  Console.WriteLine("Geef uw keuze in: a,b of c");
+  input= Console.ReadLine();
+}while( input != "a"  && input != "b" && input != "c");
+```
+**Zolang (while) de gebruiker niet ``"a"`` OF ``"b"`` OF ``"c"`` invoert zal de loop zichzelf blijven herhalen.**
+
+Merk op dat we de variabele ``string input`` VOOR de `` do while`` moeten aanmaken. Zouden we die IN de loop pas aanmaken dan zou de variabele niet als test kunnen gebruikt worden aan het einde van de loop.
+> Je ziet dat het stuk ``} while(input...);`` achteraan buiten de accolades van de loop ligt en dus een andere scope heeft).
