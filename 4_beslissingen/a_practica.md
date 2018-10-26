@@ -48,7 +48,7 @@ Maak een quiz. Maak gebruik van het ``switch``-statement om de input van de gebr
  Zoek op hoe je de kleur van de letters en de achtergrond in een console-applicatie kunt aanpassen en pas dit toe op je quiz om deze er iets boeiender uit te laten zien. Toon iedere vraag op een nieuw scherm.
 
 # Schrikkeljaar
-De gebruiker voert een jaartal in en jouw programma toont of het wel of geen schrikkeljaar is. Een schrikkeljaar is deelbaar door 4, behalve als het ook deelbaar is dor 100, tenzij ht wél deelbaar is door 400.
+De gebruiker voert een jaartal in en jouw programma toont of het wel of geen schrikkeljaar is. Een schrikkeljaar is deelbaar door 4, behalve als het ook deelbaar is door 100, tenzij het wél deelbaar is door 400.
 Bijvoorbeeld: 
 * 1997: geen schrikkeljaar
 * 1996: wél schrikkeljaar
