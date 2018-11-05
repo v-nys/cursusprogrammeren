@@ -36,3 +36,4 @@ Deze cursus is nog volop in opbouw. Hier de lijst van de belangrijkste aspecten 
 * Titels in hoofding laten overeenstemmen met titels in inhoudsopgave
 * Hoofdstuk debugging schrijven
 * Try Parse
+*  Zombie flowchart
