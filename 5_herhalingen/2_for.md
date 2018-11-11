@@ -44,3 +44,12 @@ Lees zeker [deze for tutorial na](https://www.techotopia.com/index.php/C_Sharp_L
 
 ## for-tab-tab
 Als je in Visual Studio ``for`` typt en dan tweemaal op [tab] duwt krijg je  kant en klare for-loop code.
+
+## Break
+Je kan loops (alle types) altijd vroegtijdig stopzetten door het ``break`` keyword. Het gebruik hiervan ligt soms in de schemerzone van misbruik. Probeer dus eerst je probleem anders op te lossen voor je ``break`` begint te gebruiken.
+
+Om iemand op StackOverflow te quoten: 
+>When used at the start of a block, as first checks made, they act like preconditions, so it's good.
+>When used in the middle of the block, with some code around, they act like hidden traps, so it's bad."
+
+[Bron StackOverFlow: Are `break` and `continue` bad programming practices? ](https://softwareengineering.stackexchange.com/questions/58237/are-break-and-continue-bad-programming-practices)

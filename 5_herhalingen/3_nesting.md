@@ -3,6 +3,8 @@ Wanneer we 1 of meerdere loops in een andere loop plaatsen dan spreken we over *
 Geneste loops komen vaak voor, maar zijn wel een ras apart wanner je deze zaken wilt debuggen en correct schrijven.
 
  ![](/assets/3_loops/nesting.png)
+
+
  We spreken steeds over de **outer loop** als de omhullende of "grootste" loop. Waarbij de binnenste loops de **inner loop(s)** zijn. 
 
 
@@ -24,9 +26,10 @@ while(tellerA<3 )  //outer loop
  ```
 
  De uitvoer hiervan zal als volgt zijn:
-  ![](/assets/3_loops/nestedoutput.png)
 
-Begrijp je hoe we aan deze uitvoer komen? (tip: analyseer de inner loop apart)
+ ![](/assets/3_loops/nestedoutput.png)
+
+**Begrijp je hoe we aan deze uitvoer komen? (tip: analyseer de inner en outer loop apart)**
 
 # Geneste loops tellen
 Om te tellen hoe vaak de 'inner' code zal uitgevoerd worden dien je te weten hoe vaak iedere loop afzonderlijk wordt uitgevoerd. Vervolgens vermenenigvuldig je al deze getallen met mekaar.

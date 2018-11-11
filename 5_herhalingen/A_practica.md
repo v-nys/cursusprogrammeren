@@ -8,6 +8,8 @@ Bekijk maak de oefeningen 8 tot en met 13 van hoofdstuk 4 in volgende [pdf](/ass
 > Ter info: Dit document staat ook in de lijst onderaan bij de nuttige extra's [hier](../0_intro/nuttigeextras.md).
 
 # De oefeningen
+> Indien niet expliciet vermeld mag je kiezen met wat voor loop (for, while, do while) je het probleem zal oplossen.
+
 ## Tafels van vermenigvuldigen
 Gebruik de kracht van loops om pijlsnel alle tafels van 1 tot en 10 van vermenigvuldigen op het scherm te tonen (dus van 1x1 tot 10x10 en alles daartussen)
 
