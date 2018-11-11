@@ -14,6 +14,10 @@ Zolang de conditie ``true`` is zal de code binnen de accolades uitgevoerd worden
 
 Telkens wanneer aan het programma einde van het while codeblock komt springt het terug naar de conditie bovenaan en zal de test wederom uitvoeren. Is deze weer ``true`` dan wordt de code weer uitgevoerd. Van zodra de test ``false`` is zal de code voorbij het codeblock springen en na de ``while`` doorgaan.
 
+Het diagramma is duidelijk:
+ ![](/assets/3_loops/while.png)
+
+
 Een voorbeeld van een eenvoudige while loop:
 
 ```csharp
@@ -31,6 +35,11 @@ Daar de test gebeurt aan het begin van de loop wil dit zeggen dat het getal 100 
 
 ## Do while
 In tegenstelling tot een while loop, zal een do-while loop sowieso **minstens 1 keer uitgevoerd worden**. Ongeacht de opgegeven conditie zal de do-while loop zijn code 1 keer uitvoeren. We herhalen deze zin uitdrukkelijk 2x zodat het verschil tussen beide type loops duidelijk blijft.
+
+Vergelijk volgende diagramma van de ``do while``:
+ ![](/assets/3_loops/dowhile.png)
+
+ met die hierboven van de ``while``.
 
 De syntax van een do-while is eveneens verraderlijk eenvoudig:
 

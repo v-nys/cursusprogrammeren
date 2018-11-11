@@ -16,14 +16,19 @@ We tonen nu kort de verschillende program flow elementen en hoe ze in een flowch
 ##	If-element
  ![](/assets/3_loops/if.png)
 ##	If-else element
+
  ![](/assets/3_loops/ifelse.png)
+
 ##	While-element
  ![](/assets/3_loops/while.png)
+
 ##	Do while-element
  ![](/assets/3_loops/dowhile.png)
 Merk op dat bij if en if-else de flow niet naar een eerder punt in de code gaat. Dit is dus de manier om een while/do while te herkennen: er wordt naar een eerder punt in de code gegaan, een punt waar we reeds geweest waren
+
 ##	For-element
  ![](/assets/3_loops/for.png)
+
 # Voorbeeld flowchart
 Door de eerder beschreven elementen nu samen te voegen kunnen we een programma als een flowchart voorstellen.  Stel dat we een programma "Faculteit" maken. Hierin is het de bedoeling om de faculteit  van een gegeven getal N dat door de gebruiker wordt ingevoerd, te berekenen (bijvoorbeeld N=5 geeft dan ``5! = 5x4x3x2x2 = 120`` ). 
 De finale flowchart ziet er als volgt uit:

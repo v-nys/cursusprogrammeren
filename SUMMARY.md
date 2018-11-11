@@ -46,14 +46,17 @@
   * [Oefeningen](4_beslissingen/a_practica.md)
 * Module 1 eindetest
   * [Opgave en oplossing](4_beslissingen/b_allinonemodule1.md)
-
-## In Opbouw (semester 1)
+  
 * H5: Loops
   * [Loops intro](5_herhalingen/0_loops_intro.md)
   * [While en Do While](5_herhalingen/1_while_dowhile.md)
   * [For](5_herhalingen/2_for.md)
   * [Programma flow analyse](5_herhalingen/4_programflow.md)
-  * [Oefeningen](5_herhalingen/A_practica.md)
+  * [Oefeningen deel 1](5_herhalingen/A_practica.md)
+
+
+## In Opbouw (semester 1)
+
 * H6: Methoden
   * [Methoden intro](5_methoden/0_intromethods.md)
   * [Bibliotheken (Math.Pow)](5_methoden/1_bibliotheken.md)
