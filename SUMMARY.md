@@ -53,7 +53,7 @@
   * [While en Do While](5_herhalingen/1_while_dowhile.md)
   * [For](5_herhalingen/2_for.md)
   * [Programma flow analyse](5_herhalingen/4_programflow.md)
-  * [Oefeningen](5_herhalingen/A_Practica.md)
+  * [Oefeningen](5_herhalingen/A_practica.md)
 * H6: Methoden
   * [Methoden intro](5_methoden/0_intromethods.md)
   * [Bibliotheken (Math.Pow)](5_methoden/1_bibliotheken.md)
