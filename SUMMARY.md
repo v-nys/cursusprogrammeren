@@ -51,6 +51,7 @@
   * [Loops intro](5_herhalingen/0_loops_intro.md)
   * [While en Do While](5_herhalingen/1_while_dowhile.md)
   * [For](5_herhalingen/2_for.md)
+  * [Nesting](5_herhalingen/3_nesting.md)
   * [Programma flow analyse](5_herhalingen/4_programflow.md)
   * [Oefeningen deel 1](5_herhalingen/A_practica.md)
   * [Oefeningen deel 2](5_herhalingen/b_practica.md)
