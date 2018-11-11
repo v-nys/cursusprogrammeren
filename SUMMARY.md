@@ -46,7 +46,7 @@
   * [Oefeningen](4_beslissingen/a_practica.md)
 * Module 1 eindetest
   * [Opgave en oplossing](4_beslissingen/b_allinonemodule1.md)
-  
+
 * H5: Loops
   * [Loops intro](5_herhalingen/0_loops_intro.md)
   * [While en Do While](5_herhalingen/1_while_dowhile.md)
@@ -62,7 +62,8 @@
   * [Bibliotheken (Math.Pow)](5_methoden/1_bibliotheken.md)
   * [Out en Ref parameters](5_methoden/2_outenref.md)
   * [Geavanceerde methoden](5_methoden/3_advancedmethod.md)
-  * [Oefeningen](5_methoden/A_Practica.md)
+  * [Oefeningen deel 1](5_methoden/a_practica.md)
+  * [Oefeningen deel 2](5_methoden/b_practica.md)
 * H7: Arrays
   * [Array intro](6_arrays/0_ArraysIntro.md)
   * [Array principes](6_arrays/1_ArraysBasics.md)
