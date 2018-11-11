@@ -1,3 +1,5 @@
+> Begin pas aan deze oefeningen in week 2 van deze module. Doe eerst de practica deel 1!
+
 ##  Grootste getal
 Vervolledig deze code zodat ook getoond wordt welke de grootste waarde is die werd ingevoerd.
 ```csharp

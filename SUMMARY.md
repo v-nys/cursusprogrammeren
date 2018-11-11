@@ -53,7 +53,7 @@
   * [For](5_herhalingen/2_for.md)
   * [Programma flow analyse](5_herhalingen/4_programflow.md)
   * [Oefeningen deel 1](5_herhalingen/A_practica.md)
-
+  * [Oefeningen deel 2](5_herhalingen/b_practica.md)
 
 ## In Opbouw (semester 1)
 
