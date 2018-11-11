@@ -53,3 +53,5 @@ Om iemand op StackOverflow te quoten:
 >When used in the middle of the block, with some code around, they act like hidden traps, so it's bad."
 
 [Bron StackOverFlow: Are `break` and `continue` bad programming practices? ](https://softwareengineering.stackexchange.com/questions/58237/are-break-and-continue-bad-programming-practices)
+
+Lees meer over het gebruik van ``break`` [hier](https://www.dotnetperls.com/break)
