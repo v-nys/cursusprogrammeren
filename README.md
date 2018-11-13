@@ -20,9 +20,9 @@ PS Besef dat goed kunnen programmeren enkel kan (aan)geleerd worden indien je oo
 
 Deze cursus bevat hier en daar enkele typo's. Die zijn er uiteraard bewust *kuch* in geplaatst. Zij die er vinden zullen voor eeuwig in deze hall of fame opgenomen worden. Ere aan de typohunters:
 
+* Van Riel Lennert:     4 gevonden 
 * Van Driel Kevin:      3 gevonden 
 * Van Breedam Arne:     2 gevonden
-* Van Riel Lennert:     2 gevonden 
 * Yoncalik Arafa:       1 gevonden
 
 Ook een speciale dank aan de vele studenten die me geregeld feedback geven op zaken die beter, anders, grappiger kunnen. Zoals: 
@@ -35,6 +35,6 @@ Keep'm coming!
 Deze cursus is nog volop in opbouw. Hier de lijst van de belangrijkste aspecten die nog moeten gebeuren:
 * Titels in hoofding laten overeenstemmen met titels in inhoudsopgave
 * Hoofdstuk debugging schrijven
-* Try Parse
-*  Zombie flowchart
-* Uitleg kleur verandere uit oefneing halen + Console.ResetColor()
+* TryParse()
+* Zombie flowchart
+* Uitleg kleur veranderen uit oefening halen en naar "theorie" verplaatsen + Console.ResetColor() toevoegen

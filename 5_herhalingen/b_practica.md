@@ -50,7 +50,7 @@ while(!gevonden)
     {
         Console.WriteLine("Het gezochte getal is groter, probeer opnieuw.");
     }
-    else if(getal>poging)
+    else if(getal<poging)
     {
         Console.WriteLine("Het gezochte getal is kleiner, probeer opnieuw.");
     }
@@ -127,7 +127,7 @@ Vul de code aan zodat de karakters random kleuren krijgen. Kan je het nog cooler
 Schrijf een BeerSong-generator zoals onderstaande output. Merk op dat de laatste 6 zinnen anders zijn:
 
 ```
-9 bottles of beer on the wall, 99 bottles of beer.
+99 bottles of beer on the wall, 99 bottles of beer.
 Take one down and pass it around, 98 bottles of beer on the wall.
 
 98 bottles of beer on the wall, 98 bottles of beer.
