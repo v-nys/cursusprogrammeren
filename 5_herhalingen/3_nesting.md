@@ -1,6 +1,6 @@
 # Nested loops
 Wanneer we 1 of meerdere loops in een andere loop plaatsen dan spreken we over **geneste loops**. 
-Geneste loops komen vaak voor, maar zijn wel een ras apart wanner je deze zaken wilt debuggen en correct schrijven.
+Geneste loops komen vaak voor, maar zijn wel een ras apart wanneer je deze zaken wilt debuggen en correct schrijven.
 
  ![](/assets/3_loops/nesting.png)
 
