@@ -126,7 +126,7 @@ Console.WriteLine(som);
 ```
 
 ## Foute input van gebruiker met loops verwerken
-Dankzij loops kunnen we nu ook eenvoudiger omgan met foutieve input van de gebruiker. Stel dat we volgende vraag hebben:
+Dankzij loops kunnen we nu ook eenvoudiger omgaan met foutieve input van de gebruiker. Stel dat we volgende vraag hebben:
 
 ```csharp
 Console.WriteLine("Geef uw keuze in: a,b of c");
