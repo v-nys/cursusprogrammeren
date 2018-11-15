@@ -109,6 +109,7 @@ while(teller<=10)
 {
    int som=0;
    som= som+teller;
+   teller++;
 }
 Console.WriteLine(som); //deze lijn zal fout genereren
 ```
@@ -121,6 +122,7 @@ while(teller<=10)
 {
    
    som= som+teller;
+   teller++
 }
 Console.WriteLine(som); 
 ```
