@@ -13,7 +13,7 @@ In het vorige hoofdstuk leerden we hoe we met behulp van beslissingen onze code 
 Er zijn verschillende soorten loops:
 * Definite of counted loop: een loop waar het aantal iteraties vooraf van gekend is. (bv alle getallen van 0 tot en met 100 tonen)
 * Indefinite of sentinel loop: een loop waarvan op voorhand niet kan gezegd worden hoe vaak deze zal uitgevoerd worden. Input van de gebruiker of een interne test zal bepalen wanneer de loop stopt (bv "Voer getallen in, voer -1 in om te stoppen" of "Bereken de grootste gemene deler")
-* Oneindige loop: ee loop die nooit stopt. Soms gewenst (bijvoorbeeld de game loop) of, vaker, een bug.
+* Oneindige loop: een loop die nooit stopt. Soms gewenst (bijvoorbeeld de game loop) of, vaker, een bug.
 
 ## Loops in C#
 Er zijn 3 manieren om zogenaamde loops te maken in C#:
