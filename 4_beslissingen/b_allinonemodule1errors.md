@@ -57,7 +57,7 @@ if (keuze == 1)
  int toegestaanafstand = 1;      //  0 is nee en 1 is ja.
  ```
 
- 5.
+ 5. 
  ```csharp
  if (ToppingsKeuzeBodem1 == 1)
 {
@@ -83,7 +83,7 @@ else if (ToppingsKeuzeBodem1 == 2)
     {
 
 ```
-6.
+6. 
 ```csharp
 PizzaTotaal = 25 + 5 + 10;
 
@@ -94,25 +94,25 @@ PizzaTotaal = 25 + 5 + 6;
 PizzaTotaal = 25 + 5;
 ```
 
-7.
+7. 
 Volgende commentaar, of een variant, kwam bij vele studenten voor. Hoe had dit voorkomen kunnen worden?
 ```csharp
 // Eindbedrag -> Had de pizzabodem en toppingprijzen niet apart opgeslagen
 // en kon het niet meer veranderen wegens tijdstekort.
 ```
-8.
+8. 
 ```csharp
 Console.WriteLine("Oei, hier ging iets mis.");
 Console.Clear();
 Console.WriteLine("ERROR");
 ```
 
-9.
+9. 
 ```csharp
 goto end;
 ```
 
-10.
+10. 
 ```csharp
 double tussenkomst = adres / 5;
 int Tonnen = 0;
