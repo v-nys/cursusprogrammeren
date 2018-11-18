@@ -55,7 +55,8 @@
   * [Nesting](5_herhalingen/3_nesting.md)
   * [Programma flow analyse](5_herhalingen/4_programflow.md)
   * [Oefeningen deel 1](5_herhalingen/A_practica.md)
-  * [Oefeningen deel 2](5_herhalingen/b_practica.md)
+  * [Oefeningen deel 2](5_herhalingen/c_practica.md)
+  * [Oefeningen deel 3](5_herhalingen/b_practica.md)
 
 ## In Opbouw (semester 1)
 
