@@ -46,7 +46,8 @@
   * [Oefeningen](4_beslissingen/a_practica.md)
 * Module 1 eindetest
   * [Opgave en oplossing](4_beslissingen/b_allinonemodule1.md)
-
+  * [Opgave vaardigheidsproef 2018-2019](4_beslissingen/b_vaardig1819.md)
+  * [Veel gemaakte fouten bij de vaardigheidsproef](4_beslissingen/b_allinonemodule1errors.md)
 * H5: Loops
   * [Loops intro](5_herhalingen/0_loops_intro.md)
   * [While en Do While](5_herhalingen/1_while_dowhile.md)
