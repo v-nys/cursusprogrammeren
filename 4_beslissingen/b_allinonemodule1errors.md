@@ -10,28 +10,28 @@ int keuze = Convert.ToInt16(Console.ReadLine());
 
 2.
 ```csharp
-  switch (keuze) {
-                case 1:
-                    totaal += 5;
-                    int pType = Convert.ToInt16(Console.ReadLine()); // 
+switch (keuze) {
+case 1:
+    totaal += 5;
+    int pType = Convert.ToInt16(Console.ReadLine()); // 
 
-                    switch (pType)
-                    {
-                        case 1:
-                            totaal += 10;
-                            topping = 1;
-                            break;
-                        case 2:
-                            totaal += 5.5;
-                            topping = 2;
-                            break;
-                        case 3:
-                            totaal += 0;
-                            break;
-                    }
-                    break;
-                case 2:
-                // enzovoort
+    switch (pType)
+    {
+        case 1:
+            totaal += 10;
+            topping = 1;
+            break;
+        case 2:
+            totaal += 5.5;
+            topping = 2;
+            break;
+        case 3:
+            totaal += 0;
+            break;
+    }
+    break;
+case 2:
+// enzovoort
 ```
 3.
 ```csharp
@@ -49,12 +49,12 @@ EndraliPies = Convert.ToString(Console.ReadLine());
 if (keuze == 1)
 {
 
- ```
+```
 
  4. 
  ```csharp            
- int toegestaanleeftijd = 1;     // o is nee en 1 is ja.
- int toegestaanafstand = 1;      //  is nee en 1 is ja.
+ int toegestaanleeftijd = 1;     //  0 is nee en 1 is ja.
+ int toegestaanafstand = 1;      //  0 is nee en 1 is ja.
  ```
 
  5.
@@ -141,7 +141,10 @@ else if (tussenkomst <= 5)
 ```
 
 11. Onderaan de code van een oplossing stond volgende commentaar:
-`` // TE WEINIG TIJD AKA MISSCHIEN TE TRAAG GEWERKT SORRY``. Mogelijk heeft de student te traag gewerkt, maar kijken we eens naar de code in z'n geheel dan zien we volgende beeld:
+    ```csharp 
+    // TE WEINIG TIJD AKA MISSCHIEN TE TRAAG GEWERKT SORRY
+    ```
+    Mogelijk heeft de student te traag gewerkt, maar kijken we eens naar de code in z'n geheel dan zien we volgende beeld:
 
     ![](/assets/2_beslissingen/bigcode.jpg)
 
