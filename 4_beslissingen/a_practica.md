@@ -55,4 +55,6 @@ Bijvoorbeeld:
 * 1900: geen schrikkeljaar
 * 2000: wél schrikkeljaar
 
-
+# GuntherD Stemwijzer
+Kan jij volgende ludieke stemwijzer van GuntherD in een eenvoudig programma gieren dat door een reeks j/n vragen aan de gebruiker uiteindelijk zijn "stemprofiel" toont?
+![](/assets/2_beslissingen/stemwijzer.png)
