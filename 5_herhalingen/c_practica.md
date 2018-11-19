@@ -8,7 +8,6 @@ Probeer niet alle oefeningen met hetzelfde type loop te doen, wissel tussen ``wh
 
 * Toon alle natuurlijke getallen van 1 tot *n*.
 * Toon alle natuurlijke getallen van *n* tot 1.
-* Toon het alfabet van a tot z.
 * Toon alle even getallen tussen 1 en 100.
 * Toon alle oneven getallen tussen 1 en 100.
 * Toon de som van alle getallen van 1 tot *n* (dus 1+2+3+4+...+n).
@@ -17,6 +16,7 @@ Probeer niet alle oefeningen met hetzelfde type loop te doen, wissel tussen ``wh
 * Schrijf een programma dat het aantal digits in een getal telt (het getal 12348 heeft bijvoorbeeld 5 digits).
 * Schrijf een programma dat een ingevoerd getal als tekst uitschrijft. Als de gebruiker dus 123 invoert zal de uitvoer zijn: honderd drie en twintig.
 * Schrijf een programma dat alle ascii karakters en hun waarde toont van 10 tot *n* (tip: ``char c = Convert.ToChar(65); `` zal hoofdletter ``A`` tonen) 
+* Toon het alfabet van a tot z.
 * Schrijf een programma dat de macht van een getal toont. De gebruiker voor eerst het getal in, gevolgd door de macht (bv 2 en 4 zal als resultaat 16 geven (2 tot de 4e)).
 * Schrijf een programma een getal *n* ontbindt in [factoren](https://nl.wikipedia.org/wiki/Factorisatie). Factoren zijn de getallen waardoor je *n* kan delen zonder rest (van  bijvoorbeeld het getal 100 zijn de factoren 1,2,4,5,10,20,25,50,100  ).
 * Schrijf een programma dat controleert of een getal priem is of niet.
