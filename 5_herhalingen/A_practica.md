@@ -51,7 +51,7 @@ Je kan aan een string vragen hoe groot deze is als volgt:
 ```csharp
 int lengte= myInputGetal.Length;  //veronderstellend dat myInputGetal van het type string is
 ```
-Je kan dan nu met ``Math.Pow(10,lengte)`` berekenen vanaf welke exponent van 10 we moeten beginnen werken.
+Je kan dan nu met ``Math.Pow(10,lengte-1)`` berekenen vanaf welke exponent van 10 we moeten beginnen werken.
 
 
 ## Euler project

@@ -7,9 +7,19 @@ Bepaalde code zal je vaak opnieuw schrijven. Er zitten in VS tal van shortcuts o
 * while
 * dowhile
 * switch
-* propfull: full property
-* prop: auto-property
+* propfull: full property  (semester 2)
+* prop: auto-property (semester 2)
 
+# Regions
+Je kan delen van je code in handige inklapbare secties zetten door deze als regions aan te duiden, als volgt:
+```csharp
+#region My Epic code
+Console.WriteLine("I am the greatest!");
+Console.WriteLine("Echt waar!");
+#endregion
+```
+
+Je zal vanaf dan in Visual Studio rechts van de start van de region een minnetje zien waar je op kunt klikken om de hele region tot aan ``#endregion`` in te klappen. De code zal nog steeds gecompileerd worden, maar je bladspiegel is weer wat ordelijker geworden. 
 
 # Bereik in code weten (Pro-kennis)
 Het bereik van  datatypen is weliswaar opgegeven. Maar het is belangrijk om weten dat deze ook in de compiler gekend is. Het volgende voorbeeld toont dit aan:
