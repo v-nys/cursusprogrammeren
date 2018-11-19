@@ -142,7 +142,7 @@ Faculteit van 10 is 3628800
 
 Merk dus op dat dankzij je methode, je véél code maar één keer moet schrijven wat de kans op fouten gevoelig verlaagt.
 ### Volgorde van parameters
-De volgorde waarin je je parameters meegeeft bij de aanroep van een methode is belangrijk. De eerste variabele wordt aan de eerste parameter otegkeend, en zo voort. Volgende voorbeeld toont dit.
+De volgorde waarin je je parameters meegeeft bij de aanroep van een methode is belangrijk. De eerste variabele wordt aan de eerste parameter toegekend, en zo voort. Volgende voorbeeld toont dit.
 Stel dat je een methode hebt:
 ```csharp 
 static void ToonDeling(double teller, double noemer)

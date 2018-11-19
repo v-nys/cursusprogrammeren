@@ -16,7 +16,7 @@ Voor ``WriteLine`` geeft dit:
 
 ![](/assets/4_methoden/methoden2.png)
 
-In de overload list zien we de verschillende manieren waarop je de methode in kwestie kan aanroepen. JE kan op iedere methode klikken voor meer informatie en een codevoorbeeld.
+In de overload list zien we de verschillende manieren waarop je de methode in kwestie kan aanroepen. Je kan op iedere methode klikken voor meer informatie en een codevoorbeeld.
 
 
 ## Intellisense
