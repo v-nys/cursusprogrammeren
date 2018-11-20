@@ -31,12 +31,8 @@ MyIntro("Jos",34, "Trammezantlei 21");
 ## Grootste methode
 Schrijf een methode die 3 ints aanvaardt en vervolgens de grootste van de 3 parameters als resultaat terug geeft.
 
-
-
 ## Paswoord generator methode
 Maak een paswoord generator die paswoorden van bepaalde lengte genereert en bestaat uit willekeurige letters, hoofdletters en cijfers. Plaats deze ode in een methode die 1 parameter aanvaardt namelijk de lengte van het paswoord dat gemaakt moet worden. De methode geeft het gegenereerde paswoord terug als resultaat.
-
-
 
 # Deel 2 Geavanceerde methode concepten
 
@@ -62,6 +58,6 @@ Toon ook aan dat je een array van 50 ints als parameter kan meegeven aan de meth
 Kan je code uit vorige hoofdstukken herbruiken door deze in handige methoden te plaatsen zodat je code leesbaarder én bruikbaarder wordt?
 
 ## Module 1 test herschrijven
-Bekijk terug jouw (of mijn) oplossing van de vaardigheidsproef 18/19 of de [module 1 eindetest](../4_beslissingen/b_allinonemodule1.md)in deze cursus. 
+Bekijk terug jouw (of mijn) oplossing van de vaardigheidsproef 18/19 of de [module 1 eindetest](../4_beslissingen/b_allinonemodule1.md) in deze cursus. 
 
 Kan je deze code leesbaarder maken door methoden (en loops) toe te voegen?

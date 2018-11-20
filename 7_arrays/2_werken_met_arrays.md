@@ -83,3 +83,16 @@ Het is zéér belangrijk dat je vlot dit soort algoritmen kan schrijven, zoals:
 * Zoeken van elementpositie in array
 * Tellen hoe vaak een element in een array voorkomt
 * Elementen in een array 1 of meerdere plaatsen opschuiven,
+
+# String en arrays
+Het type ``string`` is niet meer dan een arrays van karakters, ``char[]``. Om een string per karakter te bewerken is het aanbevolen om deze naar een char-array om te zetten en nadien terug naar een string. Dit kan als volgt;
+
+```csharp
+char[] myarray = "Ik ben Tom".ToCharArray();
+
+myarray[8]= 'i';
+
+string newtekst= new string(myarray);
+```
+
+Test wat dit doet.

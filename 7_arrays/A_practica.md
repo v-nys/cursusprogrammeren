@@ -133,6 +133,12 @@ Willen we deze tekst dus ‘encrypteren’:
 dan krijgen we:
     WKH TXLFN EURZQ IRA MXPSV RYHU WKH ODCB GRJ
 
+#  Ondernemingsnummer
+[Originele bron voor dit idee](https://www.c-sharp.be/c-sharp/functies/)
+Ontwerp een methode waarmee je een Belgisch ondernemingsnummer kan controleren. Een Belgisch ondernemingsnummer is als volgt opgebouwd: BE 0xxx.xxx.xxx waarbij BE de landcode is die standaard gevolgd wordt door een spatie en dan een 0. Wanneer je de volgende 7 cijfers deelt door 97 in een gehele deling, dan is het getal gevormd door de laatste 2 cijfers gelijk aan 97 minus de rest van deze gehele deling.
+Bij een geldig ondernemingsnummer verschijnt de tekst "Geldig ondernemingsnummer.", bij een ongeldig ondernemingsnummer "Ongeldig ondernemingsnummer.". 
+De methode aanvaardt een string waarin je de ondernemingsnummer staat.
+
 # Meer-dimensionale arrays
 
 ## Determinant
