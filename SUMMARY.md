@@ -73,7 +73,7 @@
   * [Foreach en var](7_arrays/3_foreach.md)
   * [N-dimensionale arrays](7_arrays/4_ndimensionalArrays.md)
   * [Jagged arrays](7_arrays/5_jaggedArrays.md)
-  * [Oefeningen](7_arrays/A_Practica.md)
+  * [Oefeningen](7_arrays/A_practica.md)
   
 * Module 2 eindetest
   * [Opgave](7_arrays/b_allinonemodule2.md)

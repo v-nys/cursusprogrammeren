@@ -1,3 +1,5 @@
+> Een aantal oefeningen is geïnspireerd op oefeningen van [Exercism.io](https://exercism.io/tracks/csharp/exercises).
+
 # Opwarmers
 [TODO](https://codeforwin.org/2015/07/array-programming-exercises-and.html)
 
@@ -45,6 +47,38 @@ Vraag aan de gebruiker een postcode en het gewicht van het pakket. Vervolgens wo
 
 Indien het bedrijf niet levert aan de ingetypte postcode dan wordt een foutmelding weergegeven.
 
+## Bob
+"Bob is a lackadaisical teenager. In conversation, his responses are very limited.
+
+Bob answers 'Sure.' if you ask him a question.
+
+He answers 'Whoa, chill out!' if you yell at him.
+
+He answers 'Calm down, I know what I'm doing!' if you yell a question at him.
+
+He says 'Fine. Be that way!' if you address him without actually saying anything.
+
+He answers 'Whatever.' to anything else."
+
+Bekijk steeds de laatste 2 tekens die de gebruiker invoert om de response van Bob te bepalen. 
+
+Kan je een gesofisticeerdere bot maken? (tip: ``myInputstring.Contains(somestring)`` geeft een ``bool`` terug in dien ``somestring`` voorkomt in de variabele ``myInputstring`` van het type ``string`` )
+
+
+
+## Hamming distance
+De hamming distance is het aantal tekens dat twee reeksen verschillen indien we ieder element vergelijken op dezelfde plaats in de andere reeks.
+
+Maak een programma dat aan de gebruiker vraagt om twee DNA strings in te voeren (een reeks bestaande uit de letters G,A,C &T). Beide reeksen moeten even lang zijn.
+
+Bereken de hamming distance tussen beide reeksen.
+
+De hamming distance van volgende twee DNA strings is 7 daar er 7 elementen in beide strings niet gelijk zijn (aangeduid met ``^``)
+```
+GAGCCTACTAACGGGAT
+CATCGTAATGACGGCCT
+^ ^ ^  ^ ^    ^^
+```
 # Methoden met arrays als parameter
 ## Parkeergarage
 Een parkinggarage vraagt sowieso €2.00 om tot maximum 3uur te parkeren. Per extra uur NA die 3uur wordt telkens €0.5 aangerekend (dus 4uur parkeren kost €2.5. Er wordt maximum €10 aangerekend per dag. En veronderstel dat er nooit langer dan 1 dag (24u) kan geparkeerd worden.
@@ -179,6 +213,30 @@ Output:
 ## MatrixMultiplier
 Schrijf een methode VermenigvuldigMatrix die 2 matrices als invoer verwacht en als resultaat een nieuwe matrix teruggeeft die het product van beide matrices bevat.
 
+## Robot Simulator
+Write a robot simulator.
+
+A robot factory's test facility needs a program to verify robot movements.
+
+The robots have three possible movements:
+
+* turn right
+* turn left
+* advance
+Robots are placed on a hypothetical infinite grid, facing a particular direction (north, east, south, or west) at a set of {x,y} coordinates, e.g., {3,8}, with coordinates increasing to the north and east.
+
+The robot then receives a number of instructions, at which point the testing facility verifies the robot's new position, and in which direction it is pointing.
+
+The letter-string "RAALAL" means:
+* Turn right
+* Advance twice
+* Turn left
+* Advance once
+* Turn left yet again
+
+Say a robot starts at {7, 3} facing north. Then running this stream of instructions should leave it at {9, 4} facing west.
+
+Teken het gevolgde pad in de console (gebruik ``Console.SetCursorPosition()``).
 # Pro
 
 ## Galgje

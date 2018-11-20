@@ -1,3 +1,5 @@
+> Ook dit hoofdstuk bevat meer oefeningen dan je lief zijn. Zoek zelf de oefeningen uit die je aanspreken en focus je op het leren werken met methoden en deze te integreren in een grotere applicatie.
+
 # Deel 0 - Opwarmers
 Een extra grote hoop oefeningen om je methoden te drillen ([originele bron](https://codeforwin.org/2016/03/functions-programming-exercises-and-solutions-in-c.html)). De oefeningen zijn ongeveergerangschikt naar moeilijkheid, je moet deze allemaal met loops oplossen! Hoe ver geraak je?
 
@@ -31,8 +33,15 @@ MyIntro("Jos",34, "Trammezantlei 21");
 ## Grootste methode
 Schrijf een methode die 3 ints aanvaardt en vervolgens de grootste van de 3 parameters als resultaat terug geeft.
 
+## Rekenmachine
+Maak minimaal methoden genaamd ``TelOp``, ``TrekAf``, ``VermenigVuldig`` en ``Deel``. Je kan aan deze methoden steeds twee doubles meegeven en het resultaat dat terugkomt is uiteraard de bewerking van die twee parameters.
+Maak een eenvoudig programma'tje waarin je die methoden test. Kan je een eenvoudige rekenmachine maken? (inclusief geheugen) Voeg extra methoden naar keuze toe (denk aan Mach, Sinus, Cosinus, Modulo, etc.)
+
+
 ## Paswoord generator methode
 Maak een paswoord generator die paswoorden van bepaalde lengte genereert en bestaat uit willekeurige letters, hoofdletters en cijfers. Plaats deze ode in een methode die 1 parameter aanvaardt namelijk de lengte van het paswoord dat gemaakt moet worden. De methode geeft het gegenereerde paswoord terug als resultaat.
+
+## 
 
 # Deel 2 Geavanceerde methode concepten
 
@@ -52,6 +61,8 @@ Maak een methode Som() die eender welke hoeveelheid paramaters van het type int 
 Toon in je main aan dat de methode werkt door onder andere 1, 3,5 en 10 gehele getalen mee te geven.
 
 Toon ook aan dat je een array van 50 ints als parameter kan meegeven aan de methode. (hint:je moet het ``params``  keyword gebruiken).
+
+## 
 
 # Deel 3 -  Overal methoden!
 ## Oude oefeningen leesbaarder maken
