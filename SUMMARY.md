@@ -56,8 +56,6 @@
   * [Oefeningen deel 2](5_herhalingen/c_practica.md)
   * [Oefeningen deel 3](5_herhalingen/b_practica.md)
 
-## In Opbouw (semester 1)
-
 * H6: Methoden
   * [Methoden intro](6_methoden/0_intromethods.md)
   * [Bibliotheken](6_methoden/1_bibliotheken.md)
@@ -91,7 +89,7 @@
 * [Nice to know stuff](B_appendix/prostuff.md)
 
 
-## Semester 2
+## (In opbouw) Semester 2
 
 * H7: Klassen en objecten
   * [OOP Intro](6_klassen_en_objecten/0_oop_intro.md)
