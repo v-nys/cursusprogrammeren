@@ -4,7 +4,7 @@ Veel code die we hebben geschreven wordt meerdere keren, al dan niet op verschil
 ## Wat is een methode
 Een methode, ook vaak functie genoemd, is in C# een stuk code ('block') bestaande uit een 0, 1 of meerder statements. De methode kan herhaaldelijk opgeroepen worden, al dan niet me extra parameters, en kan ook een resultaat terug geven.
 
-De basis-syntax van een methode is de volgende indien je een methode in je hoofdprogramma wenst te schrijven (de werking van het keyword static zien we later):
+De basis-syntax van een methode is de volgende indien je een methode in je hoofdprogramma wenst te schrijven (de werking van het keyword ``static`` zien we later):
 
 ```csharp
 static returntype MethodeNaam(parameters)
@@ -180,36 +180,33 @@ ToonInfo(37, "Tim");
 ```
 
 ## Commentaar toevoegen
-Het is aan te raden om steeds boven een methode een Block-commentaar te zetten dat volgende velden bevat:
+Het is aan te raden om steeds boven een methode een Block-commentaar te plaatsen als volgt: ``\\\``
 
-* Doel van de methode
-* Wat de methode teruggeeft
-* Beschrijving van de benodigde parameters
-  * Zet IN voor de parameter indien deze enkel als IN-parameter dient (dus de parameters die by value worden meegegeven)
-  * Zet OUT voor de parameter indien deze enkel als OUT-paremeter dient (dus de parameters die als out [type] worden gedefinieerd)
-  * Zet IN-OUT voor de parameter indien deze als IN en OUT-paremeter dient (dus de parameters die als ref [type] worden gedefinieerd)
+Visual Studio zal dan automatisch de parameters verwerken van je methode zodat je vervolgens enkel nog het doel van iedere parameter moet plaatsen. 
 
-Stel bijvoorbeeld dat je een methode hebt geschreven die de oppervlakte berekent van een rechthoek, dan zou de commentaar en bijhorende methode als volgt zijn:
-
+Stel dat we een methode hebben geschreven die de macht van een getal berekend.  We zouden dan volgende commentaar toevoegen:
 ```csharp
-/*
- * OppervlakteDriehoek: Deze methode berekent de oppervlakte van een driehoek
- * 
- * Return: De oppervlakte van de driehoek
- *
- * Parameters:
- * IN: double basis: lengte van de basis van de driehoek >0
- * IN: double hoogte: hoogte van de driehoen >0
- * 
- */
-static double OppervlakteDriehoek(double basis, double hoogte)
+/// <summary>
+/// Berekend de macht van een getal.
+/// </summary>
+/// <param name="grondtal">Het getal dat je tot een bepaalde macht wilt verheffen</param>
+/// <param name="exponent">De exponent van de macht</param>
+/// <returns></returns>
+static int Macht(int grondtal, int exponent)
 {
-    double resultaat = 0;
-    resultaat = ( basis * hoogte ) / 2;
-    return resultaat;
+    int result = grondtal;
+    for (int i = 1; i < exponent; i++)
+    {
+        result *= grondtal;
+    }
+    return result;
 }
 ```
-Voor het vorige voorbeeld is commentaar bij de methode schrijven redelijk nutteloos, daar zowel de methodenaam als de parameters duidelijk weergeven wat de methode zal doen. Merk echter op dat wanneer een methode een complexer probleem oplost dat duidelijke commentaar onontbeerlijk zal zijn. Het is daarom een ‘good practice’ (Ned. Goede gewoonte) om steeds bij methoden een stukje commentaar te geven.
+
+Wanneer we nu elders de methode ``Macht`` gebruiken dan krijgen we automatische extra informatie:
+
+![](/assets/4_methoden/comment.png)
+
 
 # Nut van methoden
 Een eenvoudig voorbeeld (bron: handboek Visual C# 2008, Dirk Louis) waar het gebruik van methoden onmiddellijk duidelijk wordt. Stel, je hebt 15000 euro op een spaarrekening vastgezet waarvoor de bank u een rente geeft van 3,5%. Nu wil je natuurlijk weten hoe je kapitaal hoe je kapitaal van jaar tot jaar groeit. Stel dat je aan de verleiding weerstaat en de jaarlijkse rente niet opneemt, maar op de spaarrekening laat staan. Je berekent dan je kapitaal na n jaren met de volgende formule:
