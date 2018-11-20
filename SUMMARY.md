@@ -76,18 +76,18 @@
 * Module 2 eindetest
   * [Opgave](7_arrays/b_allinonemodule2.md)
 
+
+
+
+## Appendix
+* [Ea-ict coding guidelines](B_appendix/codingguidelines.md)
+* [Nice to know stuff](B_appendix/prostuff.md)
 * All-In-Projecten
   * [Overzicht](A_DEEL1_AllInOne/0_Deel1_IntroductieAllInOne.md)
   * [Console Matrix](A_DEEL1_AllInOne/1_ConsoleMatrix.md)
   * [Ascii filmpjes maken met loops](A_DEEL1_AllInOne/3_AsciiMovieWithLoops.md)
   * [Ascii filmpjes maken met methoden](A_DEEL1_AllInOne/2_AsciiMoviesWithMethods.md)
   * [Tekst-gebaseerd Maze game](A_DEEL1_AllInOne/4_MazeGame.md)
-
-
-## Appendix
-* [Ea-ict coding guidelines](B_appendix/codingguidelines.md)
-* [Nice to know stuff](B_appendix/prostuff.md)
-
 
 ## (In opbouw) Semester 2
 
