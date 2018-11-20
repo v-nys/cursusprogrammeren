@@ -75,6 +75,9 @@
   * [Jagged arrays](7_arrays/5_jaggedArrays.md)
   * [Oefeningen](7_arrays/A_Practica.md)
   
+* Module 2 eindetest
+  * [Opgave](7_arrays/b_allinonemodule2.md)
+
 * All-In-Projecten
   * [Overzicht](A_DEEL1_AllInOne/0_Deel1_IntroductieAllInOne.md)
   * [Console Matrix](A_DEEL1_AllInOne/1_ConsoleMatrix.md)
