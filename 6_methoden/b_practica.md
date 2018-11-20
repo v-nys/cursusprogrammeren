@@ -51,7 +51,7 @@ Toon ook aan dat je een array van 50 ints als parameter kan meegeven aan de meth
 Kan je code uit vorige hoofdstukken herbruiken door deze in handige methoden te plaatsen zodat je code leesbaarder én bruikbaarder wordt?
 
 ## Module 1 test herschrijven
-Bekijk terug jouw (of mijn) oplossing van de vaardigheidsproef 18/19 of de [module 1 eindetest] (4_beslissingen/b_allinonemodule1.md)in deze cursus. 
+Bekijk terug jouw (of mijn) oplossing van de vaardigheidsproef 18/19 of de [module 1 eindetest](4_beslissingen/b_allinonemodule1.md)in deze cursus. 
 
 Kan je deze code leesbaarder maken door methoden (en loops) toe te voegen?
 
