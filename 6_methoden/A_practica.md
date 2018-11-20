@@ -1,4 +1,0 @@
-# Bijna!
-
-Ff geduld!!!!
-
