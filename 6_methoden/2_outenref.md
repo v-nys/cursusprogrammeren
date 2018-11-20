@@ -135,7 +135,7 @@ else
 }
 ```
 
-# TryParse en loops
+## TryParse en loops
 Daar ``TryParse`` een ``bool`` teruggeeft kunnen we deze ook gebruiken in loops als logische expressie. Volgende applicatie zal aan de gebruiker een komma getal vragen en pas verder gaan indien de gebruiker een geldige invoer heeft gegeven:
 
 ```csharp

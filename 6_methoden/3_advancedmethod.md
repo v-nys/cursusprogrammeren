@@ -30,7 +30,7 @@ We kunnen named parameters aangeven door de naam van de parameter gevolg door ee
  PrintOrderDetails(productName: "Red Mug", sellerName: "Gift Shop", orderNum: 31);
  ```
 
-## Volgorde van named parameters belangrijk
+### Volgorde van named parameters belangrijk
 Je mag ook een combinatie doen van named en gewone parameters, maar **dan is de volgorde belangrijk*: je moet je dan houden aan de volgorde van de methode-volgorde. Je verbeterd hiermee de leesbaarheid van je code dus (maar krijgt niet het voordeel van een eigen volgorde te hanteren).
 Enkele voorbeelden:
 ```csharp
@@ -103,7 +103,7 @@ Afhankelijk van de aanroep zal dus de ene of andere uitgevoerd worden. Volgende 
             Console.WriteLine($"Circle: {ComputeArea(7)}");
 ```
 
-## Betterness rule
+### Betterness rule
 Indien de compiler twijfelt tijdens de **overload resolution** (welke versie moet aangeroepen worden) zal de betterness rule worden gehanteerd: de best 'passende' methode zal aangeroepen.
 Stel dat we volgende overloaded methoden hebben:
 
