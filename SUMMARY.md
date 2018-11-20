@@ -63,8 +63,8 @@
   * [Bibliotheken](6_methoden/1_bibliotheken.md)
   * [Out en Ref parameters](6_methoden/2_outenref.md)
   * [Geavanceerde methoden](6_methoden/3_advancedmethod.md)
-  * [Oefeningen deel 1](6_methoden/a_practic.md)
   * [Oefeningen deel 2](6_methoden/b_practica.md)
+  * [Oefeningen deel 1](6_methoden/a_practic.md)
 * H7: Arrays
   * [Array intro](7_arrays/0_ArraysIntro.md)
   * [Array principes](7_arrays/1_ArraysBasics.md)
