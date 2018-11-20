@@ -35,6 +35,5 @@ Keep'm coming!
 Deze cursus is nog volop in opbouw. Hier de lijst van de belangrijkste aspecten die nog moeten gebeuren:
 * Titels in hoofding laten overeenstemmen met titels in inhoudsopgave
 * Hoofdstuk debugging schrijven
-* TryParse()
 * Zombie flowchart (ik heb geen flauw idee meer wat ik hier in godsnaam mee bedoel)
 * Uitleg kleur veranderen uit oefening halen en naar "theorie" verplaatsen + Console.ResetColor() toevoegen

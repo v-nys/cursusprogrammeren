@@ -98,6 +98,59 @@ Tweede bedraagt na method:12
 Merk dus op dat enkel de variabele tweede aangepast wordt buiten de methode doordat we deze by reference doorgeven.
 
 
-# TryParse: out in de praktijk
+# Foute invoer van de gebruiker opvangen
+Vaak wil je de invoer van de gebruiker verwerken/omzetten naar een getal. Denk maar aan volgende applicatie:
+```csharp
+ Console.WriteLine("Geef je leeftijd");
+string invoer = Console.ReadLine();
+int leeftijd = Convert.ToInt32(invoer);
+leeftijd += 10;
+Console.WriteLine($"Over 10 jaar ben je {leeftijd} jaar oud");
+```
 
-[TODO: maar lees gerust dit al na](https://www.dotnetperls.com/parse)
+Deze applicatie zal falen indien de gebruiker iets invoert dat niet kan geconverteerd worden naar een ``int``.
+## TryParse
+De types ``int``, ``double``, ``float`` etc hebben allemaal een ``TryParse`` methode. Je kan deze gebruiken om de invoer van een gebruikeren **te proberen om te zetten** als deze niet lukt dan kan je dit ook weten zonder dat je programma crasht. De werking van ``TryParse`` is als volgt:
+
+```csharp
+bool gelukt = int.TryParse(invoer,out int leeftijd);
+```
+De methode ``TryParse`` zal de string in de eerste parameter (``invoer`` in dit voorbeeld) trachten naar een ``int`` te converteren. Als dit lukt dan zal het resultaat in de variabele ``int leeftijd`` geplaatst worden. Merk op dat we ``out`` voor de parameter moeten zetten zoals we ook hierboven hebben gezien. 
+
+Het return resultaat van de methode is ``bool```: indien de conversie gelukt is dan zal deze ``true`` teruggeven, anders ``false``.
+
+We kunnen nu onze applicatie herschrijven en minder foutgevoelig maken voor slechte invoer van de gebruiker:
+```csharp
+Console.WriteLine("Geef je leeftijd");
+string invoer = Console.ReadLine();
+bool gelukt = int.TryParse(invoer,out int leeftijd);
+if (gelukt == true)
+{
+    leeftijd += 10;
+    Console.WriteLine($"Over 10 jaar ben je {leeftijd} jaar oud");
+}
+else
+{
+    Console.WriteLine("Geen geldige invoer gegeven!");
+}
+```
+
+# TryParse en loops
+Daar ``TryParse`` een ``bool`` teruggeeft kunnen we deze ook gebruiken in loops als logische expressie. Volgende applicatie zal aan de gebruiker een komma getal vragen en pas verder gaan indien de gebruiker een geldige invoer heeft gegeven:
+
+```csharp
+double temperatuur;
+string invoer = "";
+do
+{
+    Console.WriteLine("Geef temperatuur");
+    invoer = Console.ReadLine();
+    
+} while (! double.TryParse(invoer, out temperatuur));
+
+//enkel verdergaan van zodra temperatuur een geldige waarde heeft gekregen
+```
+> Let er op dat de scope hier van belang is: ``invoer`` en ``temperatuur`` moet gekend zijn buiten de loop waar technisch gezien ook de ``TryParse`` zal gebeuren. 
+
+
+[Meer info en voorbeelden over TryParse nodig?](https://www.dotnetperls.com/parse)

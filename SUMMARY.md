@@ -62,7 +62,7 @@
 
 * H6: Methoden
   * [Methoden intro](6_methoden/0_intromethods.md)
-  * [Bibliotheken (Math.Pow)](6_methoden/1_bibliotheken.md)
+  * [Bibliotheken](6_methoden/1_bibliotheken.md)
   * [Out en Ref parameters](6_methoden/2_outenref.md)
   * [Geavanceerde methoden](6_methoden/3_advancedmethod.md)
   * [Oefeningen deel 1](6_methoden/a_practica.md)
