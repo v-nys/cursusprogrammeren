@@ -1,3 +1,16 @@
+# Deel 0 - Opwarmers
+Een extra grote hoop oefeningen om je methoden te drillen ([originele bron](https://codeforwin.org/2016/03/functions-programming-exercises-and-solutions-in-c.html)). De oefeningen zijn ongeveergerangschikt naar moeilijkheid, je moet deze allemaal met loops oplossen! Hoe ver geraak je?
+
+Iedere oefening verwacht dat je steeds een methode schrijft en de werking ervan aantoont:
+* Methode ``Kwadraat`` die het kwadraat van een ingevoerd getal berekend.
+* Methode ``BerekenStraal`` die de straal van een welke cirkel kan berekenen
+* Idem voor omtrek en oppervlakte
+* Methode die het grootste van 2 getallen teruggeeft
+* Methode ``IsEven`` die bepaald of een getal even of oneven is (geeft een ``bool`` terug die ``true`` is indien even)
+* Methode ``IsArmstrong`` die bepaald of een getal een Armstrong getal is.
+* Methode ``ToonOddNumbers`` die alle oneven getallen van 1 tot n toont waarbij n als parameter wordt meegegeven.
+* Methode ``ToonArmstrongNumbers`` die idem alle [Armstrong](../5_herhalingen/a_practica.md#armstrong-nummer) nummers tot n toont.
+
 # Deel 1 - De basics
 > Sommige oefeningen zijn van de vorm "Maak een methode die...". Het is steeds de bedoeling dat je de werking van je methode ook test in je main door deze aan te roepen.
 
@@ -13,9 +26,7 @@ MyIntro();
 Zorg er voor dat je nu je naam, leeftijd en adres via parameters kan meegeven en dus de methode als volgt kunt aanhouden:
 ```csharp
 MyIntro("Jos",34, "Trammezantlei 21");
-``` 
-
-
+```
 
 ## Grootste methode
 Schrijf een methode die 3 ints aanvaardt en vervolgens de grootste van de 3 parameters als resultaat terug geeft.
@@ -23,7 +34,7 @@ Schrijf een methode die 3 ints aanvaardt en vervolgens de grootste van de 3 para
 
 
 ## Paswoord generator methode
-Maak een paswoord generator die paswoorden van bepaalde lengte generereert en bestaat uit willekeurige letters, hoofdletters en cijfers. Plaats deze ode in een methode die 1 parameter aanvaardt namelijk de lengte van het paswoord dat gemaakt moet worden. De methode geeft het gegenereerde paswoord terug als resultaat.
+Maak een paswoord generator die paswoorden van bepaalde lengte genereert en bestaat uit willekeurige letters, hoofdletters en cijfers. Plaats deze ode in een methode die 1 parameter aanvaardt namelijk de lengte van het paswoord dat gemaakt moet worden. De methode geeft het gegenereerde paswoord terug als resultaat.
 
 
 
@@ -51,7 +62,6 @@ Toon ook aan dat je een array van 50 ints als parameter kan meegeven aan de meth
 Kan je code uit vorige hoofdstukken herbruiken door deze in handige methoden te plaatsen zodat je code leesbaarder én bruikbaarder wordt?
 
 ## Module 1 test herschrijven
-Bekijk terug jouw (of mijn) oplossing van de vaardigheidsproef 18/19 of de [module 1 eindetest](4_beslissingen/b_allinonemodule1.md)in deze cursus. 
+Bekijk terug jouw (of mijn) oplossing van de vaardigheidsproef 18/19 of de [module 1 eindetest](../4_beslissingen/b_allinonemodule1.md)in deze cursus. 
 
 Kan je deze code leesbaarder maken door methoden (en loops) toe te voegen?
-
