@@ -14,7 +14,7 @@ Probeer niet alle oefeningen met hetzelfde type loop te doen, wissel tussen ``wh
 * Toon de som van alle even getallen van 1 tot *n*.
 * Toon de som van alle oneven getallen van 1 tot *n*.
 * Schrijf een programma dat het aantal digits in een getal telt (het getal 12348 heeft bijvoorbeeld 5 digits).
-* Schrijf een programma dat een ingevoerd getal als tekst uitschrijft. Als de gebruiker dus 123 invoert zal de uitvoer zijn: honderd drie en twintig.
+* (PRO) Schrijf een programma dat een ingevoerd getal als tekst uitschrijft. Als de gebruiker dus 123 invoert zal de uitvoer zijn: honderd drie en twintig.
 * Schrijf een programma dat alle ascii karakters en hun waarde toont van 10 tot *n* (tip: ``char c = Convert.ToChar(65); `` zal hoofdletter ``A`` tonen) 
 * Toon het alfabet van a tot z.
 * Schrijf een programma dat de macht van een getal toont. De gebruiker voor eerst het getal in, gevolgd door de macht (bv 2 en 4 zal als resultaat 16 geven (2 tot de 4e)).
