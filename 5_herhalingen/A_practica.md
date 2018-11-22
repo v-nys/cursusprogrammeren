@@ -26,7 +26,7 @@ Als de gebruiker dus ``ACGTGGTCTTAA`` heeft ingevoerd moet het resultaat: ``UGCA
 
 Ga er van uit dat de gebruiker letter per letter invoert (telkens dus enter na een letter) en je de omgezette string doet groeien (m.b.v ``+=``).
 
-## Armstrong nummer
+## PRO Armstrong nummer
 Een getal is een *narcistisch getal* of *armstronggetal* als het de som is van zijn eigen cijfers elk tot de macht verheven van het aantal cijfers.
 
 * 9 is een Armstrong nummer, want 9 = 9^1 = 9
@@ -40,11 +40,11 @@ Schrijf een programma dat aan de gebruiker een getal vraagt en vervolgens toont 
 
 Tip 1: Stel dat je het getal 4560 hebt:*
 * Eerst deel je 4563 door 1000. Dit geeft **4**. 
-* We trekken 4*1000 van 4563 af. Dit geeft 563.
+* We trekken 4x1000 van 4563 af. Dit geeft 563.
 * Deel 563 door 100. Dit geeft **5**.
-* We trekken 5*100 van 563 af. Dit geeft 63.
+* We trekken 5x100 van 563 af. Dit geeft 63.
 * Deel 63 door 10. Dit geeft **6**
-* We trekken 6*10 van 63 af. Dit geeft **3**
+* We trekken 6x10 van 63 af. Dit geeft **3**
 
 Tip 2:
 Je kan aan een string vragen hoe groot deze is als volgt:

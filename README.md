@@ -23,8 +23,9 @@ Deze cursus bevat hier en daar enkele typo's. Die zijn er uiteraard bewust *kuch
 * Van Riel Lennert:     6 gevonden 
 * Van Driel Kevin:      3 gevonden 
 * Van Breedam Arne:     2 gevonden
+* Strauven Wannes       2 gevonden
 * Yoncalik Arafa:       1 gevonden
-* Strauven Wannes       1 gevonden
+
 
 Ook een speciale dank aan de vele studenten die me geregeld feedback geven op zaken die beter, anders, grappiger kunnen. Zoals: 
 * Dzialak Jan
