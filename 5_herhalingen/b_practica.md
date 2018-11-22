@@ -14,7 +14,7 @@ do
     //....
 
 }while (x != 32767)
-Console.WriteLine(y);
+Console.WriteLine($"Som is{y}");
 ```
 
 ## Boekhouder

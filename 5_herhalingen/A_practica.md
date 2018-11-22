@@ -38,13 +38,13 @@ Schrijf een programma dat aan de gebruiker een getal vraagt en vervolgens toont 
 
 > Je zou deze oefening kunnen oplossen door het ingevoerde getal als string op te splitsen in individuele char's. Maar ik raad je aan om de "wiskunde" weg te volgen zodat je terdege leert met loops te wiskunde.*
 
-Tip 1: Stel dat je het getal 4560 hebt:*
+Tip 1: Stel dat je het getal 4560 hebt:
 * Eerst deel je 4563 door 1000. Dit geeft **4**. 
 * We trekken 4x1000 van 4563 af. Dit geeft 563.
 * Deel 563 door 100. Dit geeft **5**.
 * We trekken 5x100 van 563 af. Dit geeft 63.
-* Deel 63 door 10. Dit geeft **6**
-* We trekken 6x10 van 63 af. Dit geeft **3**
+* Deel 63 door 10. Dit geeft **6**.
+* We trekken 6 x 10 van 63 af. Dit geeft **3**
 
 Tip 2:
 Je kan aan een string vragen hoe groot deze is als volgt:

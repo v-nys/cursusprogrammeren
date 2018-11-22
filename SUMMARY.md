@@ -82,6 +82,8 @@
 ## Appendix
 * [Ea-ict coding guidelines](B_appendix/codingguidelines.md)
 * [Nice to know stuff](B_appendix/prostuff.md)
+* Oplpssingen
+    * [Hoofdstuk Herhalingen](5_herhalingen/opl_a_practica.md)
 * All-In-Projecten
   * [Overzicht](A_DEEL1_AllInOne/0_Deel1_IntroductieAllInOne.md)
   * [Console Matrix](A_DEEL1_AllInOne/1_ConsoleMatrix.md)
