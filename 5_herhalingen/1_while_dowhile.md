@@ -144,7 +144,7 @@ do
   input= Console.ReadLine();
 }while( input != "a"  && input != "b" && input != "c");
 ```
-**Zolang (while) de gebruiker niet ``"a"`` OF ``"b"`` OF ``"c"`` invoert zal de loop zichzelf blijven herhalen.**
+**Zolang (while) de gebruiker niet ``"a"`` EN ``"b"`` EN ``"c"`` invoert zal de loop zichzelf blijven herhalen.**
 
 Merk op dat we de variabele ``string input`` VOOR de `` do while`` moeten aanmaken. Zouden we die IN de loop pas aanmaken dan zou de variabele niet als test kunnen gebruikt worden aan het einde van de loop.
 > Je ziet dat het stuk ``} while(input...);`` achteraan buiten de accolades van de loop ligt en dus een andere scope heeft).
