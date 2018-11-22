@@ -92,7 +92,6 @@ de 2 eerste letters van de familienaam: de 1ste letter is een hoofdletter, de 2d
 Daarna worden de 2 letters gewisseld;
 het zonenummer van het telefoonnummer zonder de 0;
 het eerste cijfer van de postcode in het kwadraat.
-(PS gebruik casting om random getallen naar char om te zetten)
 
 # Become Neo
 Volgende code genereert een beeld zoals dat ook in de cultfilm The Matrix plaatsvindt. 
