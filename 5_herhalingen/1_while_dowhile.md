@@ -8,7 +8,7 @@ while (booleaanse expressie)
   // C# die zal uitgevoegd worden zolang de booleaanse expressie waar is
 }
 ```
-Waarbij we, net als bij een if statement, de conditie uitgedrukt wordt als een booleaanse expressie met 1 of meerdere relationele operators.
+Waarbij, net als bij een ``if`` statement, de conditie uitgedrukt wordt als een booleaanse expressie met 1 of meerdere relationele operators.
 
 Zolang de conditie ``true`` is zal de code binnen de accolades uitgevoerd worden. Indien dus de conditie reeds vanaf het begin ``false`` is dan zal de code binnen de while-loop niet worden uitgevoerd.
 

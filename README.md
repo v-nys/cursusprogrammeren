@@ -21,6 +21,7 @@ PS Besef dat goed kunnen programmeren enkel kan (aan)geleerd worden indien je oo
 Deze cursus bevat hier en daar enkele typo's. Die zijn er uiteraard bewust *kuch* in geplaatst. Zij die er vinden zullen voor eeuwig in deze hall of fame opgenomen worden. Ere aan de typohunters:
 
 * Van Riel Lennert:     6 gevonden 
+* De Vree Bart:         5 gevonden
 * Van Driel Kevin:      3 gevonden 
 * Van Breedam Arne:     2 gevonden
 * Strauven Wannes       2 gevonden
