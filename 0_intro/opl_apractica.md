@@ -1,0 +1,46 @@
+## Oplossing Rommelzin
+
+```csharp
+Console.WriteLine("Wat is je favoriete kleur?");
+string favkleur=Console.ReadLine();
+Console.WriteLine("Wat is je favoriete eten?");
+string faveten=Console.ReadLine();
+Console.WriteLine("Wat is je favoriete boek?");
+string faboek=Console.ReadLine();
+Console.WriteLine("Wat is je favoriete auto?");
+string favauto=Console.ReadLine();
+
+
+Console.WriteLine("Je favoriete kleur is"+ faveten+". Je eet graag"+ favauto+". Je lievelingsfilm is"+ favboek+" en je favoriete boek is "+ favkleur);
+```
+
+## Met kleuren
+```csharp
+//...
+//Op het einde
+Console.BackgroundColor = ConsoleColor.Blue;
+Console.WriteLine("Je favoriete kleur is"+ faveten);
+Console.BackgroundColor = ConsoleColor.Green;
+Console.WriteLine("Je eet graag"+ favauto+);
+Console.BackgroundColor = ConsoleColor.Red;
+Console.WriteLine("Je lievelingsfilm is"+ favboek);
+Console.BackgroundColor = ConsoleColor.Yellow;
+Console.WriteLine("en je favoriete boek is "+ favkleur);
+```
+
+Of per letter:
+```csharp
+//...
+//Op het einde
+Console.BackgroundColor = ConsoleColor.Blue;
+Console.WriteLine("Je");
+Console.BackgroundColor = ConsoleColor.Green;
+Console.WriteLine(" favoriete");
+Console.BackgroundColor = ConsoleColor.Red;
+Console.WriteLine(" kleur");
+Console.BackgroundColor = ConsoleColor.Yellow;
+Console.WriteLine(" is");
+Console.BackgroundColor = ConsoleColor.Lime;
+Console.WriteLine(faveten);
+//enzovoort
+```

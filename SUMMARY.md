@@ -83,8 +83,9 @@
 * [Ea-ict coding guidelines](B_appendix/codingguidelines.md)
 * [Nice to know stuff](B_appendix/prostuff.md)
 * Oplossingen oefeningen
+    * [Hoofdstuk 0 Werken met VS](0_intro/opl_apractica.md)
     * [Module 1 eindetest](4_beslissingen/b_oplallinonemodule1.md)
-    * [Hoofdstuk Herhalingen](5_herhalingen/opl_a_practica.md)
+    * [Hoofdstuk 5](5_herhalingen/opl_a_practica.md)
 * All-In-Projecten
   * [Overzicht](A_DEEL1_AllInOne/0_Deel1_IntroductieAllInOne.md)
   * [Console Matrix](A_DEEL1_AllInOne/1_ConsoleMatrix.md)
