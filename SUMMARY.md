@@ -43,7 +43,7 @@
   * [Switch](4_beslissingen/2_switch.md)
   * [Oefeningen](4_beslissingen/a_practica.md)
 * Module 1 eindetest
-  * [Opgave en oplossing](4_beslissingen/b_allinonemodule1.md)
+  * [Opgave](4_beslissingen/b_allinonemodule1.md)
   * [Opgave vaardigheidsproef 2018-2019](4_beslissingen/b_vaardig1819.md)
   * [Veel gemaakte fouten bij de vaardigheidsproef](4_beslissingen/b_allinonemodule1errors.md)
 * H5: Loops
@@ -82,7 +82,8 @@
 ## Appendix
 * [Ea-ict coding guidelines](B_appendix/codingguidelines.md)
 * [Nice to know stuff](B_appendix/prostuff.md)
-* Oplpssingen
+* Oplossingen oefeningen
+    * [Module 1 eindetest](4_beslissingen/b_oplallinonemodule1.md)
     * [Hoofdstuk Herhalingen](5_herhalingen/opl_a_practica.md)
 * All-In-Projecten
   * [Overzicht](A_DEEL1_AllInOne/0_Deel1_IntroductieAllInOne.md)
