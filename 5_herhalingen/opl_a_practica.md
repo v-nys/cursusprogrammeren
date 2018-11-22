@@ -10,7 +10,7 @@ while(teller<=10)
 }
 ```
 
-# Oplossing DNA Transscriptie
+## Oplossing DNA Transscriptie
 ```csharp
 string inp="", DNA="", RNA ="";
 do
