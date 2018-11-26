@@ -1,8 +1,8 @@
 # Methoden
-Veel code die we hebben geschreven wordt meerdere keren, al dan niet op verschillende plaatsen, gebruikt. Dit verhoogt natuurlijk de foutgevoeligheid. Door het gebruik van methodes kunnen we de foutgevoeligheid van de code verlagen daar de code maar op één plek, één keer dient geschreven te worden. Echter, ook de leesbaarheid en dus onderhoud van de code wordt verhoogd.
+Veel code die we hebben geschreven wordt meerdere keren, al dan niet op verschillende plaatsen, gebruikt. Dit verhoogt natuurlijk de foutgevoeligheid. Door het gebruik van methodes kunnen we de foutgevoeligheid van de code verlagen omdat de code maar op 1 plek staat én maar 1 keer dient geschreven te worden. Echter, ook de leesbaarheid en dus onderhoud van de code wordt verhoogd.
 
 ## Wat is een methode
-Een methode, ook vaak functie genoemd, is in C# een stuk code ('block') bestaande uit een 0, 1 of meerder statements. De methode kan herhaaldelijk opgeroepen worden, al dan niet me extra parameters, en kan ook een resultaat terug geven.
+Een methode, ook vaak functie genoemd, is in C# een stuk code ('block') bestaande uit een 0, 1 of meerdere statements. De methode kan herhaaldelijk opgeroepen worden, al dan niet met extra parameters, en kan ook een resultaat terug geven.
 
 De basis-syntax van een methode is de volgende indien je een methode in je hoofdprogramma wenst te schrijven (de werking van het keyword ``static`` zien we later):
 
@@ -27,7 +27,7 @@ Het returntype van een methode geeft aan wat het type is van de data die de meth
 Het is belangrijk dat in je methode het resultaat ook effectief wordt teruggegeven, dit doe je met het keyword ``return``
 gevolgd door de variabele die moet teruggeven worden. Denk er dus aan dat deze variabele van het type is dat je hebt opgegeven als zijnde het returntype. Van zodra je ``return`` gebruikt zal je op die plek uit de methode 'vliegen'.
 
-Een voorbeeld eenvoudig voorbeeld. Volgende methode geeft de naam van de auteur van je programma terug
+Volgend voorbeeld bestaat uit een methode die de naam van de auteur van je programma teruggeeft:
 
 ```csharp
 static string GetNameAuthor()
@@ -142,8 +142,10 @@ Faculteit van 10 is 3628800
 
 Merk dus op dat dankzij je methode, je véél code maar één keer moet schrijven wat de kans op fouten gevoelig verlaagt.
 ### Volgorde van parameters
-De volgorde waarin je je parameters meegeeft bij de aanroep van een methode is belangrijk. De eerste variabele wordt aan de eerste parameter toegekend, en zo voort. Volgende voorbeeld toont dit.
-Stel dat je een methode hebt:
+De volgorde waarin je je parameters meegeeft bij de aanroep van een methode is belangrijk. De eerste variabele wordt aan de eerste parameter toegekend, en zo voort. 
+
+Volgende voorbeeld toont dit. Stel dat je een methode hebt:
+
 ```csharp 
 static void ToonDeling(double teller, double noemer)
 {
@@ -170,11 +172,15 @@ static void ToonInfo(string name, int age)
    Console.WriteLine($"{name} is {age} old");
 }
 ```
+
 Deze aanroep is correct:
+
 ```csharp
 ToonInfo("Tim",37);
 ```
+
 Deze is **FOUT** en zal niet compileren:
+
 ```csharp
 ToonInfo(37, "Tim");
 ```
@@ -209,7 +215,7 @@ Wanneer we nu elders de methode ``Macht`` gebruiken dan krijgen we automatische 
 
 
 # Nut van methoden
-Een eenvoudig voorbeeld (bron: handboek Visual C# 2008, Dirk Louis) waar het gebruik van methoden onmiddellijk duidelijk wordt. Stel, je hebt 15000 euro op een spaarrekening vastgezet waarvoor de bank u een rente geeft van 3,5%. Nu wil je natuurlijk weten hoe je kapitaal hoe je kapitaal van jaar tot jaar groeit. Stel dat je aan de verleiding weerstaat en de jaarlijkse rente niet opneemt, maar op de spaarrekening laat staan. Je berekent dan je kapitaal na n jaren met de volgende formule:
+Een eenvoudig voorbeeld (bron: handboek Visual C# 2008, Dirk Louis) waar het gebruik van methoden onmiddellijk duidelijk wordt. Stel, je hebt 15000 euro op een spaarrekening vastgezet waarvoor de bank u een rente geeft van 3,5%. Nu wil je natuurlijk weten hoe je kapitaal van jaar tot jaar groeit. Stel dat je aan de verleiding weerstaat en de jaarlijkse rente niet opneemt, maar op de spaarrekening laat staan. Je berekent dan je kapitaal na n jaren met de volgende formule:
 
 ```eindkapitaal = startkapitaal x ( 1 + (rentepercentage/100))^n```
 (^ is tot de macht in pseudocode)
@@ -293,7 +299,7 @@ Dit programma zal de zelfde output geven als het originele programma, maar de co
 
 
 ### Rente berekenen verbeterd, versie 2
-Je code opdelen in methoden is een zeer goede eerste stap naar modulair programmeren: kleine stukken code die ieder een eigen verantwoordelijkheid hebben. Om perfect modulair te zijn moet een methode zo praktische en algemeen mogelijk blijven, zodat de methode herbruikbaar is in andere projecten.
+Je code opdelen in methoden is een zeer goede eerste stap naar modulair programmeren: kleine stukken code die ieder een eigen verantwoordelijkheid hebben. Om perfect modulair te zijn moet een methode zo praktisch en algemeen mogelijk blijven, zodat de methode herbruikbaar is in andere projecten.
 
 In het vorige voorbeeld is de methode van de renteberekening niet perfect modulair. Stel dat je later in het programma opnieuw de rente wil berekening maar niet het resultaat op het scherm wil tonen. Of stel dat je de rente wil berekenen met een andere percentage, dan kunnen we de eerder geschreven methode dus niet gebruiken.
 
