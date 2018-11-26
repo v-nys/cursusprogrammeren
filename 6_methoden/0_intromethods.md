@@ -1,7 +1,9 @@
 # Methoden
+
 Veel code die we hebben geschreven wordt meerdere keren, al dan niet op verschillende plaatsen, gebruikt. Dit verhoogt natuurlijk de foutgevoeligheid. Door het gebruik van methodes kunnen we de foutgevoeligheid van de code verlagen omdat de code maar op 1 plek staat én maar 1 keer dient geschreven te worden. Echter, ook de leesbaarheid en dus onderhoud van de code wordt verhoogd.
 
 ## Wat is een methode
+
 Een methode, ook vaak functie genoemd, is in C# een stuk code ('block') bestaande uit een 0, 1 of meerdere statements. De methode kan herhaaldelijk opgeroepen worden, al dan niet met extra parameters, en kan ook een resultaat terug geven.
 
 De basis-syntax van een methode is de volgende indien je een methode in je hoofdprogramma wenst te schrijven (de werking van het keyword ``static`` zien we later):
@@ -13,15 +15,19 @@ static returntype MethodeNaam(parameters)
 }
 ```
 Vervolgens kan je deze methode elders oproepen als volgt, indien de methode geen parameters vereist:
+
 ```csharp
 MethodeNaam();
 ```
+
 Indien er wel parameters nodig zijn dan geef je die mee als volgt, het is belangrijk dat de volgorde van de parameters gehanteerd wordt zoals je in de methode zelf hebt beschreven.
 
 ```csharp
 MethodeNaam(parameter1, parameter2, …);
 ```
+
 ## Returntypes
+
 Het returntype van een methode geeft aan wat het type is van de data die de methode als resultaat teruggeeft bij het beëindigen ervan. Eender welk type dat je kent kan hiervoor gebruikt worden, zoals int, string, char, float, etc. Maar ook klassen (zie later) zoals Student, Canvas, etc.
 
 Het is belangrijk dat in je methode het resultaat ook effectief wordt teruggegeven, dit doe je met het keyword ``return``
@@ -37,11 +43,13 @@ static string GetNameAuthor()
     return name;
 }
 ```
+
 Mogelijke manieren om deze methode in je programma te gebruiken zouden kunnen zijn:
 
 ```csharp
 string myName = GetNameAuthor();
 ```
+
 Of bijvoorbeeld ook:
 
 ```csharp
@@ -65,11 +73,13 @@ partial class Program
  
     static void Main(string[] args)
     {
-       Console.WriteLine("Faculteit van 5 is {0}", FaculteitVan5()); 
+       Console.WriteLine("Faculteit van 5 is {0}", FaculteitVan5());
     }
 }
 ```
+
 ### Void returntype
+
 Indien je methode niets teruggeeft wanneer de methode eindigt (bijvoorbeeld indien de methode enkel tekst op het scherm toont) dan dien je dit ook aan te geven. Hiervoor gebruik je het keyword void. Een voorbeeld
 
 ```csharp
@@ -81,12 +91,14 @@ static void ShowProgramVersion()
 ```
 
 ## Parameters doorgeven
+
 Parameters kunnen op 2 manieren worden doorgegeven aan een methode:
 
 1. Wanneer een parameter **by value** wordt meegegeven aan een methode, dan wordt een kopie gemaakt van de huidige waarde die wordt meegegeven.
 2. Wanneer echter een parameter **by reference** wordt meegegeven dan zal een pointer worden meegegeven aan de methode. Deze pointer bevat het adres van de eigenlijke variabele die we meegeven. Aanpassingen aan de parameters zullen daardoor ook zichtbaar zijn binnen de scope van de originele variabele.
 
 ### Parameters doorgeven by value
+
 Je methode definitie kan ook 1 of meerdere parameters bevatten. Hierbij gebruik je volgende syntax:
 
 ```csharp
@@ -95,6 +107,7 @@ static returntype MethodeNaam(type parameter1, type parameter2)
     //code van methode
 }
 ```
+
 Deze parameters zijn nu beschikbaar binnen de methode om mee te werken naar believen.
 
 Stel bijvoorbeeld dat we onze FaculteitVan5 willen veralgemenen naar een methode die voor alle getallen werkt, dan zou je volgende methode kunnen schrijven:
@@ -115,7 +128,9 @@ static void Main(string[] args)
     Console.WriteLine("Faculteit van {0} is {1}", getal, BerekenFaculteit(getal));
 }
 ```
-Dit geeft als uitvoer: ``Faculteit van 5 is 120;`` 
+
+Dit geeft als uitvoer: ``Faculteit van 5 is 120;``
+
 Je zou nu echter de waarde van getal kunnen aanpassen (door bijvoorbeeld aan de gebruiker te vragen welke faculteit moet berekend worden) en je code zal nog steeds werken.
 
 Stel bijvoorbeeld dat je de faculteiten wenst te kennen van alle getallen tussen 1 en 10, dan zou je schrijven:
@@ -126,7 +141,9 @@ for (int i = 1; i < 11; i++)
     Console.WriteLine("Faculteit van {0} is {1}", i, BerekenFaculteit(i));  
 }
 ```
+
 Dit zal als resultaat geven
+
 ```
 Faculteit van 1 is 1
 Faculteit van 2 is 2
@@ -141,12 +158,14 @@ Faculteit van 10 is 3628800
 ```
 
 Merk dus op dat dankzij je methode, je véél code maar één keer moet schrijven wat de kans op fouten gevoelig verlaagt.
+
 ### Volgorde van parameters
+
 De volgorde waarin je je parameters meegeeft bij de aanroep van een methode is belangrijk. De eerste variabele wordt aan de eerste parameter toegekend, en zo voort. 
 
 Volgende voorbeeld toont dit. Stel dat je een methode hebt:
 
-```csharp 
+```csharp
 static void ToonDeling(double teller, double noemer)
 {
     string result=Convert.ToString( teller/noemer);
@@ -155,17 +174,21 @@ static void ToonDeling(double teller, double noemer)
 ```
 
 Stel dat we nu in onze main volgende aanroep doen:
+
 ```csharp
 double n= 4.2;
 double t= 5.2;
 ToonDeling(n,t);
 ```
+
 Dit zal een ander resultaat geven dan wanneer we volgende code zouden uitvoeren:
+
 ```csharp
 ToonDeling(t,n);
 ```
 
 Ook de volgorde is belangrijk zeker wanneer je met verschillende types als parameters werkt:
+
 ```csharp
 static void ToonInfo(string name, int age)
 {
@@ -186,11 +209,13 @@ ToonInfo(37, "Tim");
 ```
 
 ## Commentaar toevoegen
+
 Het is aan te raden om steeds boven een methode een Block-commentaar te plaatsen als volgt: ``\\\``
 
-Visual Studio zal dan automatisch de parameters verwerken van je methode zodat je vervolgens enkel nog het doel van iedere parameter moet plaatsen. 
+Visual Studio zal dan automatisch de parameters verwerken van je methode zodat je vervolgens enkel nog het doel van iedere parameter moet plaatsen.
 
 Stel dat we een methode hebben geschreven die de macht van een getal berekend.  We zouden dan volgende commentaar toevoegen:
+
 ```csharp
 /// <summary>
 /// Berekend de macht van een getal.
@@ -211,19 +236,22 @@ static int Macht(int grondtal, int exponent)
 
 Wanneer we nu elders de methode ``Macht`` gebruiken dan krijgen we automatische extra informatie:
 
-![](/assets/4_methoden/comment.png)
-
+![Hoe comment getoond wordt](/assets/4_methoden/comment.png)
 
 # Nut van methoden
+
 Een eenvoudig voorbeeld (bron: handboek Visual C# 2008, Dirk Louis) waar het gebruik van methoden onmiddellijk duidelijk wordt. Stel, je hebt 15000 euro op een spaarrekening vastgezet waarvoor de bank u een rente geeft van 3,5%. Nu wil je natuurlijk weten hoe je kapitaal van jaar tot jaar groeit. Stel dat je aan de verleiding weerstaat en de jaarlijkse rente niet opneemt, maar op de spaarrekening laat staan. Je berekent dan je kapitaal na n jaren met de volgende formule:
 
-```eindkapitaal = startkapitaal x ( 1 + (rentepercentage/100))^n```
+```csharp
+eindkapitaal = startkapitaal x ( 1 + (rentepercentage/100))^n
+```
+
 (^ is tot de macht in pseudocode)
 
 Nu kan je berekenen hoeveel geld je de volgende zeven jaren verdient, het bijhorende programma ziet er zo uit:
 
 ```csharp
-static void Main(string[] args) 
+static void Main(string[] args)
 {
     double startKapitaal = 15000;
     double rentepercentage = 3.5;
@@ -250,11 +278,12 @@ static void Main(string[] args)
  
     eindkapitaal = startKapitaal * Math.Pow((1 + rentepercentage / 100), 7);
     Console.WriteLine("Na 7 jaar:" + (int)eindkapitaal + "euro");
- 
 }
 ```
+
 Dit geeft als uitvoer:
-```
+
+```text
 Na 1 jaar:15524euro
 Na 2 jaar:16068euro
 Na 3 jaar:16630euro
@@ -294,18 +323,19 @@ static void Main(string[] args)
  
 }
 ```
-Dit programma zal de zelfde output geven als het originele programma, maar de code is aanzienlijk verkleint en minder foutgevoelig (je moet maar op één plek je interestberekening aanpassen indien nodig). (Merk op dat we uiteraard de main kunnen verbeteren m.b.v. een for-loop:``for(int i=0;i<8;i++) {RenteOpRenteBerekenen(i);}`` 
+Dit programma zal de zelfde output geven als het originele programma, maar de code is aanzienlijk verkleint en minder foutgevoelig (je moet maar op één plek je interestberekening aanpassen indien nodig). (Merk op dat we uiteraard de main kunnen verbeteren m.b.v. een for-loop:``for(int i=0;i<8;i++) {RenteOpRenteBerekenen(i);}``
 
+## Rente berekenen verbeterd, versie 2
 
-
-### Rente berekenen verbeterd, versie 2
 Je code opdelen in methoden is een zeer goede eerste stap naar modulair programmeren: kleine stukken code die ieder een eigen verantwoordelijkheid hebben. Om perfect modulair te zijn moet een methode zo praktisch en algemeen mogelijk blijven, zodat de methode herbruikbaar is in andere projecten.
 
 In het vorige voorbeeld is de methode van de renteberekening niet perfect modulair. Stel dat je later in het programma opnieuw de rente wil berekening maar niet het resultaat op het scherm wil tonen. Of stel dat je de rente wil berekenen met een andere percentage, dan kunnen we de eerder geschreven methode dus niet gebruiken.
 
 **Modulair programmeren**: indien je modulair wenst te programmeren moet je je aan volgende zaken houden:
+
 * Beperk de methode strikt tot het uitvoeren van de opgedragen taak. Dus in het voorbeeld: alleen de renteberekening en geen verdere verwerking van de resultaten.
 * Als de methode een waarde teruggeeft, declareer hiervoor dan een passende returnwaarde.
+
 Geef alle grootheden waarmee je de werkwijze van de methode wilt aanpassen mee aan de methode als parameter. In dit voorbeeld zijn dat dus de variabelen startkapitaal, rentepercentage en looptijd.
 
 De nieuwe algemene, verbeterde methode wordt dan:
@@ -319,9 +349,9 @@ public static double RenteOpRenteBerekenen(double startkapitaal, double renteper
     eindkapitaal = startkapitaal * Math.Pow((1 + rentepercentage / 100), looptijd);
  
     return eindkapitaal;
- 
 }
 ```
+
 De aanroep van deze methode in de main wordt dan de volgende:
 
 ```csharp
