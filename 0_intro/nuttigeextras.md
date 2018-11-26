@@ -39,7 +39,8 @@ Ideale manier om programmeren meer in de vingers te krijgen op een speelse manie
 
 **Websites**
 * [Exercism](https://exercism.io/tracks/csharp)
-* [Code Combat](https://codecombat.com/) (aanrader!)
+* [Coding game](https://www.codingame.com/start) zeer vet
+* [Code Combat](https://codecombat.com/) 
 * [Pex For Fun](https://pexforfun.com/) (specifiek voor C#!)
 * [Code Academy](https://www.codecademy.com/)
 * [RPG Game in C#](http://scottlilly.com/learn-c-by-building-a-simple-rpg-index/) (behandelt leerstof van volledig eerste jaar en meer)
