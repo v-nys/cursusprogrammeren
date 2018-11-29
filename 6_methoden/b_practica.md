@@ -5,7 +5,7 @@ Een extra grote hoop oefeningen om je methoden te drillen ([originele bron](http
 
 Iedere oefening verwacht dat je steeds een methode schrijft en de werking ervan aantoont:
 * Methode ``Kwadraat`` die het kwadraat van een ingevoerd getal berekend.
-* Methode ``BerekenStraal`` die de straal van een welke cirkel kan berekenen
+* Methode ``BerekenStraal`` die de straal van een cirkel kan berekenen waarvan je de diameter meegeeft
 * Idem voor omtrek en oppervlakte
 * Methode die het grootste van 2 getallen teruggeeft
 * Methode ``IsEven`` die bepaald of een getal even of oneven is (geeft een ``bool`` terug die ``true`` is indien even)
