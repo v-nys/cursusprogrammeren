@@ -59,7 +59,6 @@
 * H6: Methoden
   * [Methoden intro](6_methoden/0_intromethods.md)
   * [Bibliotheken](6_methoden/1_bibliotheken.md)
-  * [Out en Ref parameters](6_methoden/2_outenref.md)
   * [Geavanceerde methoden](6_methoden/3_advancedmethod.md)  
   * [Oefeningen](6_methoden/b_practica.md)
 
@@ -82,6 +81,7 @@
 ## Appendix
 * [Ea-ict coding guidelines](B_appendix/codingguidelines.md)
 * [Nice to know stuff](B_appendix/prostuff.md)
+   * [Out en Ref parameters](6_methoden/2_outenref.md)
 * Oplossingen oefeningen
     * [H0 - Werken met VS](0_intro/opl_apractica.md)
     * [H3 - Werken met data](3_data/a_oplpractica.md)
