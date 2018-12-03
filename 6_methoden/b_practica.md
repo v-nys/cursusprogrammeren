@@ -35,7 +35,7 @@ Schrijf een methode die 3 ints aanvaardt en vervolgens de grootste van de 3 para
 
 ## Rekenmachine
 Maak minimaal methoden genaamd ``TelOp``, ``TrekAf``, ``VermenigVuldig`` en ``Deel``. Je kan aan deze methoden steeds twee doubles meegeven en het resultaat dat terugkomt is uiteraard de bewerking van die twee parameters.
-Maak een eenvoudig programma'tje waarin je die methoden test. Kan je een eenvoudige rekenmachine maken? (inclusief geheugen) Voeg extra methoden naar keuze toe (denk aan Mach, Sinus, Cosinus, Modulo, etc.)
+Maak een eenvoudig programma'tje waarin je die methoden test. Kan je een eenvoudige rekenmachine maken? (inclusief geheugen) Voeg extra methoden naar keuze toe (denk aan Macht, Sinus, Cosinus, Modulo, etc.)
 
 
 ## Paswoord generator methode

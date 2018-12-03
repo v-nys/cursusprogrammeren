@@ -207,7 +207,7 @@ for (int i = 0; i < getallen.Length; i++)
 [Zie volgende filmpje op 31minuten.](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=17ce5c87-2b6a-46ea-b7b1-a87e00a7e4e5)
 
 # Arrays kopieren
-Arrays worden 'by reference' gebruikt in C#. Het gevolg hiervan is dat volgende code code niet zal doen wat je wenst (``ploegen``, ``nieuwePloegen`` zijn twee arrays van een bijvoorbeeld ``string[]``)
+Arrays worden 'by reference' gebruikt in C#. Het gevolg hiervan is dat volgende code niet zal doen wat je wenst (``ploegen``, ``nieuwePloegen`` zijn twee arrays van een bijvoorbeeld ``string[]``)
 ```csharp
 nieuwePloegen= ploegen;
 ```
