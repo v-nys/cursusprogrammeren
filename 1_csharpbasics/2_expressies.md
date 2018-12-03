@@ -109,7 +109,7 @@ int otherResult= 3.1/45.2;
 
 But wait...it gets worse! 
 
-Wat als je een ``int`` door een ``int```deelt? Het resultaat is terug een ``int``. ** Je bent gewoon alle informatie na de komma kwijt. Kijk maar:
+Wat als je een ``int`` door een ``int`` deelt? Het resultaat is terug een ``int``. ** Je bent gewoon alle informatie na de komma kwijt. Kijk maar:
 ```csharp
 int getal1= 9;
 int getal2= 2;
@@ -150,7 +150,7 @@ double helft= 10000.0 * (1/2);
 Hoeveel krijg je van me? **0.0 euro, MUHAHAHAHA!!!**
 
 De volgorde van berekeningen zal eerst het gedeelte tussen de haakjes doen: 1 delen door 2 geeft 0, daar we een ``int`` door een ``int``delen en dus terug een ``int`` als resultaat willen. 
-Vervolgens zullen we deze ``0`` vermenigvuldgen met ``10000.0`` waarvan ik zo slim was om deze in ``double`` te zetten. Niet dus. We vermenigvuldigen weliswaar een``double```(het salaris) met een ``int`` maar die ``int`` is reeds ``0`` en we krijgen dus ``0.0`` als resultaat.
+Vervolgens zullen we deze ``0`` vermenigvuldigen met ``10000.0`` waarvan ik zo slim was om deze in ``double`` te zetten. Niet dus. We vermenigvuldigen weliswaar een``double`` (het salaris) met een ``int`` maar die ``int`` is reeds ``0`` en we krijgen dus ``0.0`` als resultaat.
 
 Wil je het dus eerlijk spelen dan zal je de formule moeten aanpassen naar:
 ```csharp
