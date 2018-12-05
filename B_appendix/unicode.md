@@ -16,7 +16,7 @@ Zonder een uitleg te geven over het verschil tussen ASCII en Unicode is het voor
 
 Kopieer het karakter zelf en plaats het in je code waar je het nodig hebt, bijvoorbeeld:
 
-```rust
+```csharp
 Console.WriteLine("˧");
 ```
 
@@ -41,4 +41,30 @@ Wil je dus bovenstaande teken schrijven dan kan dan ook als volgt:
 
 ```csharp
 Console.WriteLine("\u02e7");
+```
+
+# Ascii-art tonen
+
+Soms zou je multiline ASCII-art willen tonen in je c# applicatie. Dit kan je eenvoudig oplossen door gebruik te maken van het ```@`` teken voor een string.
+
+Stel dat je een toffe titel of tekening via een van volgende sites hebt gemaakt:
+* [Asciiflow.Com](http://asciiflow.com/)
+* [Ascii title generator](http://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20)
+* [Ascii generator](http://www.network-science.de/ascii/)
+
+Je kan het resultaat eenvoudig naar je klembord copieren en vervolgens in je C# code integraal copy pasten als literal voor een ``string`` op voorwaarde dat je het laat voorafgaan door ``@"`` en uiteraard eindigt met ``";``.
+
+Bijvoorbeeld:
+
+```csharp
+string myname=@"
+___________________   
+\__    ___/\______ \  
+  |    |    |    |  \ 
+  |    |    |    `   \
+  |____|   /_______  /
+                   \/ ";
+
+Console.WriteLine(myname);
+
 ```
