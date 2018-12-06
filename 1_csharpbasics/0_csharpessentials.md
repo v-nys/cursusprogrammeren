@@ -1,4 +1,5 @@
 # Statements en de C# syntax
+
 Om een werkend C#-programma te maken moeten we de C#-taal beheersen. Net zoals iedere taal bestaat ook C# uit enerzijds grammatica, in de vorm van de **C# syntax** en de te gebruiken keywords.
 
 Een C#-programma bestaat uit een opeenvolging van instructies ook wel **statements** genoemd. **Deze eindigen steeds met een puntkomma (``;``)** (zoals ook in het Nederlands een zin eindigt met een punt).
@@ -12,67 +13,70 @@ Enkele belangrijke regels van C#:
 * **Witruimtes**: Spaties, tabs en enters worden door de C# compiler genegeerd. Je kan ze dus gebruiken om de layout van je code  (*bladspiegel* zeg maar) te verbeteren. De enige plek waar witruimtes wél een verschil geven is tussen aanhalingstekens ``"      "`` die we later (bij string) zullen leren gebruiken.
 * **Commentaar toevoegen kan**: met behulp van ``//`` voor een enkele lijn en ``/*         */`` voor meerdere lijnen commentaar. Alles dat in commentaar staat zal door de compiler genegeerd worden.
 
+# Keywords: de woordenschat
 
-
-# Keywords: de woordenschat 
 C# bestaat zoals gezegd uit enkel grammaticale regels. Grammatica zonder woordenschat is nutteloos. Er zijn binnen C# dan ook 80 woorden, zogenaamde **reserved keywords**  die de woordenschat voorstellen.
 In deze cursus zullen we stelselmatig deze keywords leren kennen en gebruiken op een correcte manier om zo werkende code te maken.
 
 Deze keywords zijn:
 |   |     |     |   |
 |----|----|-----|----|
-|*abstract*	|*as*	|*base*	|**bool**|
-|**break**|	**byte**|	**case**|	catch|
-|**char**|	checked|	*class*|	**const**|
-|continue|	**decimal**|	*default*	|delegate|
-|**do**|	**double**|	**else**|	**enum**|
-|event|	explicit|	extern|	**false**|
-|finally|	fixed|	**float**|	**for**|
-|*foreach*|	goto|	**if**|	implicit|
-|*in*|	**int**|	*interface*|	internal|
-|*is*|	lock|	**long**|	**namespace**|
-|*new*|	*null*|	*object*|	*operator*|
-|**out**|	*override*|	params|	*private*|
-|*protected*|	*public*|	readonly|	**ref**|
-|**return**|	**sbyte**|	*sealed*|	**short**|
-|sizeof|	stackalloc|	*static*|	**string**|
-|*struct*|	**switch**|	*this*|	throw|
-|**true**|	try|	typeof|	**uint**|
-|**ulong**|	unchecked|	unsafe|	**ushort**|
-|using	|using static|	*virtual*|	**void**|
-|volatile	|**while**| |
+|*abstract*|*as*|*base*|**bool**|
+|**break**|**byte**|**case**|catch|
+|**char**|checked|*class*|**const**|
+|continue|**decimal**|*default*|delegate|
+|**do**|**double**|**else**|**enum**|
+|event|explicit|extern|**false**|
+|finally|fixed|**float**|**for**|
+|*foreach*|goto|**if**|implicit|
+|*in*|**int**|*interface*|internal|
+|*is*|lock|**long**|**namespace**|
+|*new*|*null*|*object*|*operator*|
+|**out**|*override*|params|*private*|
+|*protected*|*public*|readonly|**ref**|
+|**return**|**sbyte**|*sealed*|**short**|
+|sizeof|stackalloc|*static*|**string**|
+|*struct*|**switch**|*this*|throw|
+|**true**|try|typeof|**uint**|
+|**ulong**|unchecked|unsafe|**ushort**|
+|using|using static|*virtual*|**void**|
+|volatile|**while**| |
 
 > De keywords in vet zijn keywords die we dit semester zullen kennen. Die in cursief in het tweede semester. De overige zal je zelf moeten leren ;)
 
 (indien je deze tabel in pdf bekijkt zal deze om zeep zijn. Onze gitbook gnomes proberen dit op te lossen maar voorlopig vinden we helaas geen oplossing, waarvoor onze excuses)
 
 # Variabelen, identifiers en naamgeving
+
 We hebben variabelen nodig om (tijdelijke) data in op te slaan. Wanneer we een statement schrijven dat bijvoorbeeld input van de gebruiker moet vragen, dan willen we ook die input bewaren, zodat we verderop in het programma (het algoritme) iets met deze data kunnen doen.
 We doen hetzelfde in ons hoofd wanneer we bijvoorbeeld zegen "tel 3 en 4 op en vermenigvuldig dat resultaat met 5". Eerst zullen we het resultaat van 3+4 in een variabele moeten bewaren. Vervolgens zullen we de inhoud van die variabele vermenigvuldigen met 5 en dat nieuwe resultaat ook in een nieuwe variabele opslaan (om vervolgens bijvoorbeeld naar het scherm te sturen).
 
 Wanneer we een variabele aanmaken zal deze moeten voldoen aan enkele afspraken. Zo moeten we minstens 2 zaken meegeven:
+
 * Het type van de variabele: het **datatype**  dat aangeeft wat voor data we wensen op te slaan (tekst, getal, afbeelding, etc)
 * De naam van de variabele: de **identifier** waarmee we snel aan de variabele-waarde aankunnen
 
 De verschillende datatypes bespreken we in een volgende [hoofdstuk](1_datatypes.md).
 
 ## Regels voor identifiers
+
 De code die we gaan schrijven moet voldoen aan een hoop regels. Wanneer we in onze code zelf namen (**identifiers**) moeten geven aan **variabelen** (en later ook methoden, objecten, etc) dan moeten we een aantal regels volgen:
 
-* Hoofdlettergevoelig: de identifiers ``tim`` en ``Tim`` zijn verschillend zoals reeds vermeld. 
+* Hoofdlettergevoelig: de identifiers ``tim`` en ``Tim`` zijn verschillend zoals reeds vermeld.
 * Geen keywords: identifiers mogen geen gereserveerde C# keywords zijn. De keywords van hierboven mogen dus niet. Varianten waarbij de hoofdletters anders zijn mogen wel, bijvoorbeeld: ``gOTO`` en ``stRINg`` mogen dus wel, maar niet ``goto`` of ``string`` daar beide een gereserveerd keyword zijn maar dankzij de hoofdlettergevoelig-regel is dit dus toegelaten. ``INT`` mag ook ook, maar niet ``int`.
 * Eerste karakter-regel: het eerste karakter van de identifier mag enkel zijn:
-    * kleine of grote letter
-    * liggend streepje ( ``_``)
+  * kleine of grote letter
+  * liggend streepje ( ``_``)
 * Alle andere karakters: de overige karakters mogen enkel zijn:
-    * kleine of grote letter
-    * liggend streepje
-    * een cijfer (``0`` tot en met ``9`` )
+  * kleine of grote letter
+  * liggend streepje
+  * een cijfer (``0`` tot en met ``9`` )
 * Lengte: een legale identifier mag zo lang zijn als je wenst, maar hou het best leesbaar
 
 ### Enkele voorbeelden
+
 Enkele voorbeelden van toegelaten en niet toegelaten identifiers:
-| identifier  | toegelaten?    |   uitleg indien niet toegelaten  | 
+| identifier  | toegelaten?    |   uitleg indien niet toegelaten  |
 |----|----|-----|
 |werknemer| ja |  |
 |kerst2018| ja |  |
@@ -85,17 +89,21 @@ Enkele voorbeelden van toegelaten en niet toegelaten identifiers:
 |class | neen| gereserveerd keyword|
 |WriteLine| ja|  |
 
-## Naamgeving afspraken 
+## Naamgeving afspraken
+
 Er zijn geen vaste afspraken over hoe je je variabelen moet noemen toch hanteren we enkele **coding guidelines** die doorheen je opleiding moeten gevolgd worden. Naarmate we meer C# leren zullen er extra guidelines bijkomen (zie [deze appendix voor alle guidelines van de opleiding](B_appendix/codingguidelines.md)).
 
-* **Duidelijke naam**: de identifier moet duidelijk maken waarvoor de identifier dient. Schrijf dus liever ``gewicht`` of ``leeftijd`` in plaats van ``a`` of ``meuh``. 
+* **Duidelijke naam**: de identifier moet duidelijk maken waarvoor de identifier dient. Schrijf dus liever ``gewicht`` of ``leeftijd`` in plaats van ``a`` of ``meuh``.
 * **Camel casing**: gebruik camel casing indien je meerdere woorden in je identifier wenst te gebruiken. Camel casing wil zeggen dat ieder nieuw woord terug met een hoofdletter begint. Een goed voorbeeld kan dus zijn ``leeftijdTimDams`` of ``aantalLeerlingenKlas1EA`` . Merk op dat we liefst het eerste woord met kleine letter starten. En uiteraard zijn geen spaties toegelaten.
 
 # Commentaar
+
 Soms wil je misschien extra commentaar bij je code zetten. Als je dat gewoon zou doen (bv ``Dit deel zal alles verwijderen``) dan zal je compiler niet begrijpen wat die zin doet. Hij verwacht namelijk C#  en niet een Nederlandstalige zin. Om dit op te lossen kan je in je code op twee manieren aangeven dat een stuk tekst gewoon commentaar is en mag genegeerd worden door de compiler:
 
 ## Enkele lijn commentaar
+
 Eén lijn commentaar geef je aan door de lijn te starten met twee voorwaartse slashes ``//``. Uiteraard mag je ook meerdere lijnen op deze manier in commentaar zetten. Zo wordt dit ook vaak gebruik om tijdelijk een stuk code "uit te schakelen". Ook mogen we commentaar *achter* een stuk C# code plaatsen (zie onderaan voorbeeld)
+
 ```csharp
 //De start van het programma
 int getal=3;
@@ -104,8 +112,11 @@ int result = getal * 5;
 // result= 3*5;
 Console.WriteLine(result); //We tonen resultaat op scherm: 15
 ```
+
 ## Blok commentaar
+
 We kunnen een stuk tekst als commentaar aangeven door voor de tekst ``/*`` te plaatsen en ``*/`` achteraan. Een voorbeeld:
+
 ```csharp
 /*
     Veel commentaar.
