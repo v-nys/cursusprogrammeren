@@ -11,10 +11,11 @@ Console.WriteLine("Wat is je favoriete auto?");
 string favauto=Console.ReadLine();
 
 
-Console.WriteLine("Je favoriete kleur is"+ faveten+". Je eet graag"+ favauto+". Je lievelingsfilm is"+ favboek+" en je favoriete boek is "+ favkleur);
+Console.WriteLine("Je favoriete kleur is"+ faveten +". Je eet graag"+ favauto +". Je lievelingsfilm is"+ favboek +" en je favoriete boek is "+ favkleur);
 ```
 
 ## Met kleuren
+
 ```csharp
 //...
 //Op het einde
@@ -28,19 +29,20 @@ Console.BackgroundColor = ConsoleColor.Yellow;
 Console.WriteLine("en je favoriete boek is "+ favkleur);
 ```
 
-Of per letter:
+Of per woord:
+
 ```csharp
 //...
 //Op het einde
 Console.BackgroundColor = ConsoleColor.Blue;
-Console.WriteLine("Je");
+Console.Write("Je");
 Console.BackgroundColor = ConsoleColor.Green;
-Console.WriteLine(" favoriete");
+Console.Write(" favoriete");
 Console.BackgroundColor = ConsoleColor.Red;
-Console.WriteLine(" kleur");
+Console.Write(" kleur");
 Console.BackgroundColor = ConsoleColor.Yellow;
-Console.WriteLine(" is");
+Console.Write(" is");
 Console.BackgroundColor = ConsoleColor.Lime;
-Console.WriteLine(faveten);
+Console.Write(faveten);
 //enzovoort
 ```

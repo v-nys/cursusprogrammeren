@@ -3,10 +3,12 @@
 Een console-applicatie is een  programma dat zijn in- en uitvoer via een klassiek commando/shell-scherm toont. Een console-applicatie draait  in dezelfde omgeving als wanneer we in Windows een command-prompt openen (via Start-> Uitvoeren-> ``cmd`` [enter] ). We zullen in dze cursus enkel console-applicaties leren maken. Grafische frontends (bv WPF) komen in deze cursus niet aan bod.
 
 ## ReadLine en WriteLine
+
 Console-applicaties maken in C# vereist dat je minstens twee belangrijke C# methoden leert gebruiken:
 Via **``Console.WriteLine()``** kunnen we tekst op het scherm tonen en met behulp van **``Console.ReadLine()``** kunnen we input van de gebruiker inlezen en in ons programma verwerken.
 
 # Je eerste console programma
+
 Maak een nieuw console-project aan (noem het Demo1) en open het Program.cs bestand (indien het niet open). **Veeg de code die hier reeds staat niet weg!**
 
 Voeg binnen de accolades van ``Main`` volgende zin toe:
@@ -16,7 +18,8 @@ Console.WriteLine("Hoi, ik ben het!");
 Console.ReadKey();
 ```
 
-Zodat je dus volgende code krijgt (:
+Zodat je dus volgende code krijgt:
+
 ```csharp
 using System;
 using System.Collections.Generic;
@@ -36,11 +39,13 @@ namespace Demo1
     }
 }
 ```
+
 Compileer deze code en voer ze uit: druk hiervoor op het groene driehoekje met "Start" naast. Of via het menu Debug en dan Start Debugging.
 
 **Let erop dat je iedere 'zin' eindigt met een puntkomma.**
 
 ## Analyse van de code
+
 We gaan nu iedere lijn code kort bespreken. Sommige lijnen code zullen lange tijd niet belangrijk zijn.  Onthoud nu alvast dat: **alle belangrijke code staat tussen de accolades onder de lijn ``static void Main(string[] args)``**!
 
 * ``using System;`` :  Alle ``Console``-commando's die we verderop gebruiken zitten in de ``System`` bibliotheek. Als we deze lijn (een zogenaamde **directive**) niet zouden schrijven dan moesten we ``System.Console.WriteLine`` i.p.v. ``Console.WriteLine`` schrijven verderop in de code. 
@@ -53,20 +58,23 @@ We gaan nu iedere lijn code kort bespreken. Sommige lijnen code zullen lange tij
 
 
 ### LEES MIJ! (veel voorkomende fout): waarom ReadKey?
+
 De lijn met ``ReadKey`` is een klein truukje: ReadKey verwerkt input van de gebruiker maar in het voorgaande stuk code doen we niets met die input. Test echter eens wat er gebeurt als je de lijn ``Console.ReadKey();`` weglaat en dan probeert te starten.
 
 Inderdaad het programma sluit zich ogenblikkelijk af en je hebt amper tijd om te lezen wat er op het scherm verscheen. Dankzij ReadKey bouwen we dus een "pauze/wachtpunt" in aan het einde van ons programma. Dit is een goede gewoonte als je console-applicaties aan het schrijven bent.
- 
- ## WriteLine: Tekst op het scherm
+
+## WriteLine: Tekst op het scherm
+
  De WriteLine-methode is een veelgebruikte methode in Console-applicaties. Het zorgt ervoor dat we tekst op het scherm kunnen tonen.
 
 Voeg volgende lijn toe na de vorige WriteLine-lijn in je project:
 
-``Console.WriteLine("Wie ben jij?!");`` 
+``Console.WriteLine("Wie ben jij?!");``
 
 De WriteLine methode zal alle tekst tonen die tussen de  "  " staan tussen de haakjes van de methode. **De aanhalingstekens aan het begin en einde van de tekst zijn uiterst belangrijk! Alsook het puntkomma helemaal achteraan.**
 
 Je programma is nu:
+
 ```csharp
 namespace Demo1
 {
@@ -82,4 +90,4 @@ namespace Demo1
 }
 ```
 
-> Oh boy...Wat was dit allemaal?! We hebben al aardig wat vreemde code zien passeren en het is niet meer dan normaal dat je nu denkt "dit ga ik nooit kunnen". Wees echter niet bevreesd: je zal sneller dan je denkt bovenstaande code als 'kinderspel' gaan bekijken. Een tip nodig? Test en experimenteer met wat je al kunt! 
+> Oh boy...Wat was dit allemaal?! We hebben al aardig wat vreemde code zien passeren en het is niet meer dan normaal dat je nu denkt "dit ga ik nooit kunnen". Wees echter niet bevreesd: je zal sneller dan je denkt bovenstaande code als 'kinderspel' gaan bekijken. Een tip nodig? Test en experimenteer met wat je al kunt!
