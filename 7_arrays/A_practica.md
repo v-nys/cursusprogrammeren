@@ -245,3 +245,10 @@ Maak een spel , vergelijkbaar als galgje, waarin de speler een woord moet raden.
 Voorbeeld  output:
 
 ![](/assets/5_arrays/practarray9.png) 
+
+## Grote Som
+Maak een methode Som() die eender welke hoeveelheid paramaters van het type int aanvaardt en vervolgens de som van al deze parameters teruggeeft (als int).
+
+Toon in je main aan dat de methode werkt door onder andere 1, 3,5 en 10 gehele getalen mee te geven.
+
+Toon ook aan dat je een array van 50 ints als parameter kan meegeven aan de methode. (hint:je moet het ``params``  keyword gebruiken)
