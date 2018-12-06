@@ -4,7 +4,7 @@ Je herkent een methode aan de ronde haakjes na de methodenaam. Je hebt dus reeds
 
 Dit zijn dus alle 3 methoden: stukken code die een specifieke taak uitvoeren.
 
-Sommige methoden, zoals WriteLine(), vereisen dat je een aantal parameters meegeeft. De parameters dien je tussen de ronde haakjes te zetten. Hierbij is het uiterst belangrijk dat je de volgorde respecteert die de ontwikkelaar van de methode heeft gebruikt. Indien je niet weet wat deze volgorde is kan je altijd Intellisense gebruiken. Typ gewoon de methode in je code en stop met typen na het eerste ronde haakje, vervolgens verschijnen alle mogelijke manieren waarop je deze methoden kan oproepen..
+Sommige methoden, zoals WriteLine(), vereisen dat je een aantal parameters meegeeft. De parameters dien je tussen de ronde haakjes te zetten. Hierbij is het uiterst belangrijk dat je de volgorde respecteert die de ontwikkelaar van de methode heeft gebruikt. Indien je niet weet wat deze volgorde is kan je altijd Intellisense gebruiken. Typ gewoon de methode in je code en stop met typen na het eerste ronde haakje, vervolgens verschijnen alle mogelijke manieren waarop je deze methoden kan oproepen.
 
 ![](/assets/4_methoden/methoden1.png)
 
@@ -30,7 +30,7 @@ Type daarom onder vorige de WriteLine-zin het volgende:
 System.Console.
 ```
 
-Wacht nu even en er zal na het . een lijst komen van methoden en fields die beschikbaar zijn. Je kan hier met de muis doorheen scrollen en zo zien welke methoden allemaal bij de Console klasse horen
+Wacht nu even en er zal na het punt (``.``) een lijst komen van methoden en fields die beschikbaar zijn. Je kan hier met de muis doorheen scrollen en zo zien welke methoden allemaal bij de Console klasse horen
 
 ![](/assets/4_methoden/methoden4.png)
 

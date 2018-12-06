@@ -10,8 +10,8 @@ Iedere oefening verwacht dat je steeds een methode schrijft en de werking ervan 
 * Methode die het grootste van 2 getallen teruggeeft
 * Methode ``IsEven`` die bepaald of een getal even of oneven is (geeft een ``bool`` terug die ``true`` is indien even)
 * Methode ``IsArmstrong`` die bepaald of een getal een Armstrong getal is.
-* Methode ``ToonOddNumbers`` die alle oneven getallen van 1 tot n toont waarbij n als parameter wordt meegegeven.
-* Methode ``ToonArmstrongNumbers`` die idem alle [Armstrong](../5_herhalingen/a_practica.md#armstrong-nummer) nummers tot n toont.
+* Methode ``ToonEvenNummers`` die alle oneven getallen van 1 tot n toont waarbij n als parameter wordt meegegeven.
+* Methode ``ToonArmstrongNummers`` die idem alle [Armstrong](../5_herhalingen/a_practica.md#armstrong-nummer) nummers tot n toont.
 
 # Deel 1 - De basics
 > Sommige oefeningen zijn van de vorm "Maak een methode die...". Het is steeds de bedoeling dat je de werking van je methode ook test in je main door deze aan te roepen.

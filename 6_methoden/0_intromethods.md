@@ -56,7 +56,7 @@ Of bijvoorbeeld ook:
 Console.WriteLine("This program is written by "+ GetNameAuthor());
 ```
 
-Een ander voorbeeld is bijvoorbeeld een methode die de faculteit van 5 berekent. We tonen een voorbeeldprogramma die deze methode gebruikt. De oproep van de methode gebeurt vanuit de Main-methode:
+Hier een voorbeeld van een methode die de faculteit van 5 berekent. De oproep van de methode gebeurt vanuit de Main-methode:
 
 ```csharp
 partial class Program
@@ -129,7 +129,7 @@ static void Main(string[] args)
 }
 ```
 
-Dit geeft als uitvoer: ``Faculteit van 5 is 120;``
+Dit geeft als uitvoer: ``Faculteit van 5 is 120``
 
 Je zou nu echter de waarde van getal kunnen aanpassen (door bijvoorbeeld aan de gebruiker te vragen welke faculteit moet berekend worden) en je code zal nog steeds werken.
 
@@ -157,7 +157,7 @@ Faculteit van 9 is 362880
 Faculteit van 10 is 3628800
 ```
 
-Merk dus op dat dankzij je methode, je véél code maar één keer moet schrijven wat de kans op fouten gevoelig verlaagt.
+Merk dus op dat dankzij je methode, je véél code maar één keer moet schrijven wat de kans op fouten verlaagt.
 
 ### Volgorde van parameters
 
@@ -210,7 +210,7 @@ ToonInfo(37, "Tim");
 
 ## Commentaar toevoegen
 
-Het is aan te raden om steeds boven een methode een Block-commentaar te plaatsen als volgt: ``\\\``
+Het is aan te raden om steeds boven een methode een Block-commentaar te plaatsen als volgt (dit werkt enkel bij methoden): ``///``
 
 Visual Studio zal dan automatisch de parameters verwerken van je methode zodat je vervolgens enkel nog het doel van iedere parameter moet plaatsen.
 
