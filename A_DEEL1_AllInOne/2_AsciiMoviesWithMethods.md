@@ -128,17 +128,17 @@ static void DrawManInCar(int posX, int posY)
 ```
 
 ## Film maken
-We kunnen nu een uber-boeiend filmpje maken waarin het mannetje naar de auto loopt en dan er in wegrijdt.We zullen dit stukje top-down benaderen. Eerst maken we een methode ``SpeelFilm()`` die frame per frame het filmpje zal afspelen.Afhankelijk van het framenummer zal een andere scene getoond worden (lijnen 6,8):
+We kunnen nu een uber-boeiend filmpje maken waarin het mannetje naar de auto loopt en dan er in wegrijdt.We zullen dit stukje top-down benaderen. Eerst maken we een methode ``PlayMovie()`` die frame per frame het filmpje zal afspelen.Afhankelijk van het framenummer zal een andere scene getoond worden (lijnen 6,8):
 
 ```csharp
-private static void SpeelFilm()
+private static void PlayMovie()
 {
     for (int i = 0; i < 60; i++)
     {
         if (i < 35)
-            ManNaarAutoScene(i);
+            WalkToCarScene(i);
         else if (i >= 35)
-            ManRijdWegScene(i - 35);
+            RideAwayScene(i - 35);
  
         System.Threading.Thread.Sleep(100);
         Console.Clear();
@@ -148,12 +148,12 @@ private static void SpeelFilm()
 Merk op dat we ``i`` gebruiken als framenummer en zo weten wanneer welke scene moet afgespeeld worden. Voorts geven we het framenummer door naar de scene-methoden voor het geval ze deze nodig hebben om bijvoorbeeld de correcte positie te bepalen:
 
 ```csharp
-private static void ManRijdWegScene(int framenumber)
+private static void RideAwayScene(int framenumber)
 {
     DrawManInCar(40+framenumber*2,5);
 }
  
-private static void ManNaarAutoScene(int framenumber)
+private static void WalkToCarScene(int framenumber)
 {
     if (framenumber % 2 == 0)
     {
