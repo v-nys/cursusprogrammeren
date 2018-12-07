@@ -359,3 +359,32 @@ double eindkapitaal;
 eindkapitaal = RenteOpRenteBerekenen(15000, 3.5, 7);
 Console.WriteLine("Het eindbedrag na 7 jaar:" +(int)eindkapitaal);
 ```
+
+## Een Nuttige methode
+
+Vaak moet je code schrijven van volgende vorm:
+
+```csharp
+Console.WriteLine("Geef leeftijd");
+int leeftijd= Convert.ToInt32(Console.ReadLine());
+```
+
+Waarbij je eerst een zinnetje toont aan de gebruiker en dan z'n input omzet naar een werkbaar getal.
+
+Als deze constructie op meerdere plekken in een project voorkomt dan is het nuttig om deze twee lijnen naar een methode te verhuizen die er dan zo kan uitzien:
+
+```csharp
+static VraagInt(string zin)
+{
+    Console.WriteLine(zin);
+    return  Convert.ToInt32(Console.ReadLine());
+}
+```
+
+De code van zonet kan je dan nu herschrijven naar:
+
+```csharp
+int leeftijd= VraagInt("Geef leeftijd");
+```
+
+
