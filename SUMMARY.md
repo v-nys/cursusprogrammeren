@@ -67,7 +67,6 @@
   * [Array principes](7_arrays/1_ArraysBasics.md)
   * [Werken met arrays](7_arrays/2_werken_met_arrays.md)
   * [Arrays en methoden](7_arrays/3_arrays_en_methoden.md)
-  * [Foreach en var](7_arrays/3_foreach.md)
   * [N-dimensionale arrays](7_arrays/4_ndimensionalArrays.md)
   * [Oefeningen](7_arrays/A_practica.md)
   
@@ -81,6 +80,7 @@
 * [Ea-ict coding guidelines](B_appendix/codingguidelines.md)
 * [Nice to know stuff](B_appendix/prostuff.md)
    * [Out en Ref parameters](6_methoden/2_outenref.md)
+   * [Foreach en var](7_arrays/3_foreach.md)
    * [Jagged arrays](7_arrays/5_jaggedArrays.md)
 * Oplossingen oefeningen
     * [H0 - Werken met VS](0_intro/opl_apractica.md)
