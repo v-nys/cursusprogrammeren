@@ -74,13 +74,10 @@
   * [Opgave](7_arrays/b_allinonemodule2.md)
 
 
-
-
 ## Appendix
 * [Ea-ict coding guidelines](B_appendix/codingguidelines.md)
 * [Nice to know stuff](B_appendix/prostuff.md)
    * [Out en Ref parameters](6_methoden/2_outenref.md)
-   * [Foreach en var](7_arrays/3_foreach.md)
    * [Jagged arrays](7_arrays/5_jaggedArrays.md)
 * Oplossingen oefeningen
     * [H0 - Werken met VS](0_intro/opl_apractica.md)
@@ -110,6 +107,7 @@
 * H8: Geheugennmanagement
    * [Stack en Heap](6_klassen_en_objecten/6_memorymanagement.md)
    * [Arrays van objecten](6_klassen_en_objecten/7_arraysvanobj.md)
+   * [Foreach en var](7_arrays/3_foreach.md)
    * [Labo-oefeningen](6_klassen_en_objecten/A_practicaMem.md)
 * H9: Overerving
   * [Overerving intro](7_overerving/0_overerving_intro.MD)
