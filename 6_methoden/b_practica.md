@@ -17,15 +17,21 @@ Iedere oefening verwacht dat je steeds een methode schrijft en de werking ervan 
 > Sommige oefeningen zijn van de vorm "Maak een methode die...". Het is steeds de bedoeling dat je de werking van je methode ook test in je main door deze aan te roepen.
 
 ## Intro methode
+
 ### Basic
 Maak een methode die jezelf voorstelt op het scherm in de vorm van "Ik ben Tim Dams, ik ben 18 jaar oud en woon in de Lambrisseringsstraat 666".
 Deze informatie mag hardcoded in je methode staan. Bedoeling is dat je de methode kan aanroepen als volgt:
+
 ```csharp
 MyIntro();
 ```
+
 > Deze methode toont enkel zaken op het scherm en heeft dus als returntype ``void``.
+
 ### Basic 2
+
 Zorg er voor dat je nu je naam, leeftijd en adres via parameters kan meegeven en dus de methode als volgt kunt aanhouden:
+
 ```csharp
 MyIntro("Jos",34, "Trammezantlei 21");
 ```
@@ -47,12 +53,19 @@ Maak een paswoord generator die paswoorden van bepaalde lengte genereert en best
 
 ## Film Default
 Maak een methode FilmRuntime() die 3 parameters accepteert:
+
 1. Een string die de naam van de film bevat
 2. Een integer die duur in minuten van de film bevat
 3. Een enum-type die het genre van de film bevat (Drama, Actie, etc.)
+
 Indien de duur van de film niet wordt meegeven wordt een standaard  lengte van 90 minuten ingesteld. Indien het genre niet wordt meegeven dan wordt deze default op Onbekend ingesteld.
 
-De methode geeft niets terug maar toont eenvoudigweg de film op het scherm, gevolgd door z’n duur.
+De methode geeft niets terug maar toont eenvoudigweg de film op het scherm, gevolgd door z’n duur en genre in volgende formaat.
+
+```text
+The Matrix (120minuten, Actie)
+```
+
 Toon aan in je main dat de methode werkt met zowel 1, 2 als 3 parameters. Toon ook aan dat je met ‘named arguments’ de methode kan aanroepen.
 
 

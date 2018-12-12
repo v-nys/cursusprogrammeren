@@ -85,6 +85,7 @@
     * [H4 - Beslissingen](4_beslissingen/a_oplpractica.md)
     * [Module 1 eindetest](4_beslissingen/b_oplallinonemodule1.md)
     * [H5 - Herhalingen](5_herhalingen/opl_a_practica.md)
+    *[H6 - Methoden](6_methoden/opl_b_practica.md)
 * All-In-Projecten
   * [Overzicht](A_DEEL1_AllInOne/0_Deel1_IntroductieAllInOne.md)
   * [Console Matrix](A_DEEL1_AllInOne/1_ConsoleMatrix.md)
