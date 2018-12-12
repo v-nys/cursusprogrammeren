@@ -97,6 +97,52 @@ for (int i = 0; i <=1000; i++)
 Console.WriteLine($"Som:{som}");
 ```
 
+## Oplossing for doordenker
+
+```csharp
+int rows = 4;
+for (int i = 1; i <= rows; ++i)
+{
+    for (int j = 1; j <= i; ++j)
+    {
+        Console.Write("*");
+    }
+    Console.WriteLine();
+}
+
+for (int i = 1; i <= rows-1; ++i)
+{
+    for (int j = 1; j <= 4- i%4; ++j)
+    {
+        Console.Write("*");
+    }
+    Console.WriteLine();
+}
+```
+
+## Oplossing pro for doordenker extra
+
+```csharp
+int rows = 6;
+int k = 0;
+int space = 0;
+for (int i = 1; i <= rows; ++i,  k = 0)
+{
+    for (space = 1; space <= rows - i; ++space)
+    {
+        Console.Write("  ");
+    }
+
+    while (k != 2 * i - 1)
+    {
+        Console.Write("* ");
+        ++k;
+    }
+
+    Console.WriteLine();
+}
+```
+
 # Oplossing practica deel 2
 
 ## Oplossing grootste getal
