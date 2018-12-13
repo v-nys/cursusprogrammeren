@@ -12,7 +12,7 @@ Gebruik steeds een loop om dit op te lossen.
 * Maak een array gevuld met willekeurige getallen tussen 1 en 100 (array is 20 lang)
 * Maak een array gevuld met afwisselen ``true`` en ``false```(lengte is 30)
 
-Per array: output de array naar het scherm, maar ieder element naast mekaar met komma gescheiden.
+Per array: output de array naar het scherm, maar ieder element naast elkaar met komma gescheiden.
 Dus niet:
 
 ```
@@ -42,11 +42,12 @@ Maak een array aan die tot 10 ints kan bevatten. Lees 1 voor 1 de vraag uit de a
 
 Na de 10 vragen toon je vervolgens de 10 vragen met achter iedere vraag het antwoord van de gebruiker.
 
-
 ## Prijzen met foreach
+
 Maak een array die tot 20 prijzen (double) kan bewaren. Vraag aan de gebruiker om 20 prijzen in te voeren en bewaar deze in de array. Doorloop vervolgens m.b.v. een foreach-lus de volledige array en toon enkel de elementen op het scherm wiens prijs hoger of gelijk is aan €5.00. Toon op het einde van het programma het gemiddelde van alle prijzen (dus inclusief de lagere prijzen).
 
 ## Array Zoeker
+
 Maak een programma dat eerst weer aan de gebruiker om 10 waarden vraagt die in een array worden gezet.
 
 Vervolgens vraagt het programma welke waarde moet verwijderd worden. Wanneer de gebruiker hierop antwoordt met een nieuwe waarde dan zal deze nieuw ingevoerde waarde in de array gezocht worden. Indien deze gevonden wordt dan wordt deze waarde uit de array verwijderd en worden alle waarden die erachter komen met een plaatsje naar links opgeschoven, zodat achteraan de array terug een lege plek komt.
