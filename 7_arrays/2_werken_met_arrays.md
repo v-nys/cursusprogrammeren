@@ -85,14 +85,28 @@ Het is zéér belangrijk dat je vlot dit soort algoritmen kan schrijven, zoals:
 * Elementen in een array 1 of meerdere plaatsen opschuiven,
 
 # String en arrays
+
+## String naar char array
 Het type ``string`` is niet meer dan een arrays van karakters, ``char[]``. Om een string per karakter te bewerken is het aanbevolen om deze naar een char-array om te zetten en nadien terug naar een string. Dit kan als volgt;
 
 ```csharp
-char[] myarray = "Ik ben Tom".ToCharArray();
-
-myarray[8]= 'i';
-
-string newtekst= new string(myarray);
+char[] karakters = "Ik ben Tom".ToCharArray();
+karakters[8]= 'i';
+string nieuweZin= new string(karakters);
+Console.WriteLine(nieuweZin)
 ```
 
-Test wat dit doet.
+De uitvoer zal worden:``Ik ben Tim``.
+
+## Char array naar string
+
+Ook de omgekeerde weg is mogelijk.  De werking is iets anders, let vooral op hoe we de char array doorgeven als argument bij het aanmaken van een nieuwe ``string`` in lijn 3:
+
+```csharp
+char[] arrayOfLetters = { `h`, `a`, `l`, `l`, `o` };
+arrayOfLetters[2] = `x`;
+string word =  new string(arrayOfLetters)
+Console.WriteLine(word);
+```
+
+De uitvoer van deze code zal zijn: ``haxlo``.
