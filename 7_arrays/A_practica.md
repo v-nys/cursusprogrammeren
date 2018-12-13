@@ -14,18 +14,20 @@ Gebruik steeds een loop om dit op te lossen.
 
 Per array: output de array naar het scherm, maar ieder element naast mekaar met komma gescheiden.
 Dus niet:
+
 ```
 true
 false
 true
 \\etc
 ```
-maar wel: ```true,false,true,...`` 
+
+maar wel: ```true,false,true,...``
 
 ## ArrayOefener 1
 Maak een programma dat aan de gebruiker vraagt om 10 waarden (int) in te voeren in een array. Vervolgens toont het programma De som, het gemiddelde en het grootste getal van deze 10.
 
-Vervolgens vraagt het programma de gebruiker om een getal in te voeren. Het programma toont dan alle getallen die groter of gelijk zijn aandit ingevoerde getal zijn die in de array aanwezig zijn. Indien geen getallen groter zijn dan verschijnt een bericht “Niets is groter” op het scherm.
+Vervolgens vraagt het programma de gebruiker om een getal in te voeren. Het programma toont dan alle getallen die groter of gelijk zijn aan dit ingevoerde getal zijn die in de array aanwezig zijn. Indien geen getallen groter zijn dan verschijnt een bericht `` Niets is groter`` op het scherm.
 
 ![](/assets/5_arrays/practarray1.png)
 
