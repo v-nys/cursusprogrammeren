@@ -1,4 +1,4 @@
-## Nuttige array methoden
+# Nuttige array methoden
 
 Net zoals we hebben gezien dat de Math-klasse een hele boel nuttige methoden in zich, zo ook heeft iedere array een aantal methoden waar handig gebruik van kan gemaakt worden.
 
@@ -16,10 +16,10 @@ Volgende code geeft bijvoorbeeld het grootste getal terug uit een array genaamd 
 int oudsteleeftijd=leeftijden.Max();
 ```
 
-## System.Array
+# System.Array
 Alle C# arrays erven over van de System.Array klasse (klasse en overerving zien we later dit semester), hierdoor kan je zaken zoals Length gebruiken op je array. De System.Array klasse heeft echter ook nog een hoop andere nuttige methoden zoals de BinarySearch(), Sort() en Reverse() methoden. Het gebruik hiervan is steeds dezelfde zoals volgende voorbeelden tonen:
 
-### Arrays sorteren
+## Arrays sorteren
 Om arrays te sorteren roep je de Sort() methode op als volgt, als parameter geef je de array mee die gesorteerd moet worden.
 
 Volgende voorbeeld toont hier het gebruik van:
@@ -37,27 +37,44 @@ for (int i = 0; i < myColors.Length; i++)
 ```
 Wanneer je de Sort-methode toepast op een array van string dan zullen de arrays alfabetisch gerangschikt worden.
 
-### Arrays omkeren
+## Arrays omkeren
 Met de System.Array.Reverse() methode kunnen we dan weer de elementen van de array omkeren (dus het laatste element vooraan zetten en zo verder:
 
 ```csharp
 System.Array.Reverse(myColors);
 ```
 
-### Arrays leegmaken
+## Arrays leegmaken
 Een array volledig leegmaken (alle elementen op ‘null’ zetten) doe je met de System.Array.Clear methode, als volgt:
 
 ```csharp
 System.Array.Clear(myColors);
 ```
-## Zoeken in arrays
+
+# Zoeken in arrays
 De ``BinarySearch``-methode maakt het mogelijk om te zoeken naar de index van een gegeven element in een index. *Deze methode werkt enkel indien de elementen in de array gesorteerd staan!* Je geeft aan de methode 2 parameters mee, enerzijds de array in kwestie en anderzijds het element dat we zoeken. Als resultaat wordt de index van het gevonden element teruggegeven. Indien niets wordt gevonden zal het resultaat -1 zijn.
 
 ```csharp
 System.Array.BinarySearch(myColors, "red" );
 ```
 
-### Manueel zoeken in arrays
+Volgende voorbeeld toont het gebruik van deze methode:
+
+```csharp
+int[] rank = { 224, 34, 156, 1023, -6 };
+Array.Sort(rank);
+
+Console.WriteLine("What rank do you need?");
+int userchoice = Convert.ToInt32(Console.ReadLine());
+
+int index = Array.BinarySearch(rank, userchoice);
+if(index>0)
+    Console.WriteLine($"{userchoice} found at index {index}");
+else
+    Console.WriteLine("Not found");
+```
+
+## Manueel zoeken in arrays
 Het zoeken in arrays kan met behulp van while of for-loops tamelijk snel. Volgende programmaatje gaat zoeken of het getal 12 aanwezig is in de array. Indien ja dan wordt de index bewaard van de positie in de array waar het getal staat:
 
 ```csharp
@@ -165,6 +182,7 @@ else
 # String en arrays
 
 ## String naar char array
+
 Het type ``string`` is niet meer dan een arrays van karakters, ``char[]``. Om een string per karakter te bewerken is het aanbevolen om deze naar een char-array om te zetten en nadien terug naar een string. Dit kan gebruikmakend van ``.ToCharArray()`` als volgt:
 
 ```csharp
