@@ -4,6 +4,7 @@
 Een extra grote hoop oefeningen om je methoden te drillen ([originele bron](https://codeforwin.org/2016/03/functions-programming-exercises-and-solutions-in-c.html)). De oefeningen zijn ongeveergerangschikt naar moeilijkheid, je moet deze allemaal met loops oplossen! Hoe ver geraak je?
 
 Iedere oefening verwacht dat je steeds een methode schrijft en de werking ervan aantoont:
+
 * Methode ``Kwadraat`` die het kwadraat van een ingevoerd getal berekend.
 * Methode ``BerekenStraal`` die de straal van een cirkel kan berekenen waarvan je de diameter meegeeft
 * Idem voor omtrek en oppervlakte

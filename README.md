@@ -22,15 +22,15 @@ PS Besef dat goed kunnen programmeren enkel kan (aan)geleerd worden indien je oo
 
 Deze cursus bevat hier en daar enkele typo's. Die zijn er uiteraard bewust *kuch* in geplaatst. Zij die er vinden zullen voor eeuwig in deze hall of fame opgenomen worden. Ere aan de typohunters:
 
-* Van Riel Lennert:     10 gevonden
-* Van Driel Kevin:      7 gevonden
+* Van Riel Lennert:     18 gevonden
+* Van Driel Kevin:      15 gevonden
 * Van Ingelghem Brian   6 gevonden
 * De Vree Bart:         5 gevonden
 * Van Breedam Arne:     2 gevonden
 * Strauven Wannes       2 gevonden
 * Yoncalik Arafa:       1 gevonden
 * Baeten Tom:           1 gevonden
-* Zeno Hatas            1 gevonden
+* Zeno Hattas            1 gevonden
 
 Ook een speciale dank aan de vele studenten die me geregeld feedback geven op zaken die beter, anders, grappiger kunnen. Zoals:
 

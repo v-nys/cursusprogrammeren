@@ -47,9 +47,9 @@ Na de 10 vragen toon je vervolgens de 10 vragen met achter iedere vraag het antw
 Maak een array die tot 20 prijzen (double) kan bewaren. Vraag aan de gebruiker om 20 prijzen in te voeren en bewaar deze in de array. Doorloop vervolgens m.b.v. een foreach-lus de volledige array en toon enkel de elementen op het scherm wiens prijs hoger of gelijk is aan €5.00. Toon op het einde van het programma het gemiddelde van alle prijzen (dus inclusief de lagere prijzen).
 
 ## Array Zoeker
-Maak een programma dat eerst weer aan de gebruiker om 10 waarden vraagt die in een array worden gezet. 
+Maak een programma dat eerst weer aan de gebruiker om 10 waarden vraagt die in een array worden gezet.
 
-Vervolgens vraagt het programma welke waarde moet verwijderd worden. Wanneer de gebruiker hierop antwoord met een nieuwe waarde dan zal deze nieuw ingevoerde waarde in de array gezocht worden. Indien deze gevonden wordt dan wordt deze waarde uit de array verwijderd en worden alle waarden die erachter komen met een plaatsje naar links opgeschoven, zodat achteraan de array terug een lege plek komt. 
+Vervolgens vraagt het programma welke waarde moet verwijderd worden. Wanneer de gebruiker hierop antwoordt met een nieuwe waarde dan zal deze nieuw ingevoerde waarde in de array gezocht worden. Indien deze gevonden wordt dan wordt deze waarde uit de array verwijderd en worden alle waarden die erachter komen met een plaatsje naar links opgeschoven, zodat achteraan de array terug een lege plek komt.
 
 Deze laatste plek krijgt de waarde -1.
 
@@ -60,7 +60,7 @@ Indien de te zoeken waarde meer dan 1 keer voorkomt, wordt enkel de eerst gevond
 ![](/assets/5_arrays/practarray3.png)
 
 ## LeveringsBedrijf
-Maak een programma voor een koerierbedrijf.  Maak een array die 10 postcodes bevat (zelf te kiezen) van gemeenten waar het bedrijf naar levert. Maakt een tweede array die de prijs bevat per  kg van iedere respectievelijke gemeente.  Het eerste element  van deze array bevat dus de prijs/kg om naar de gemeente die als eerste in de array met postcodes staat.
+Maak een programma voor een koeriersbedrijf.  Maak een array die 10 postcodes bevat (zelf te kiezen) van gemeenten waar het bedrijf naar levert. Maak een tweede array die de prijs bevat per  kg van iedere respectievelijke gemeente.  Het eerste element  van deze array bevat dus de prijs/kg om naar de gemeente die als eerste in de array met postcodes staat.
 
 Vraag aan de gebruiker een postcode en het gewicht van het pakket. Vervolgens wordt de prijs opgezocht voor die gemeente en wordt deze berekend gegeven het ingegeven gewicht.
 
@@ -81,7 +81,7 @@ He answers 'Whatever.' to anything else."
 
 Bekijk steeds de laatste 2 tekens die de gebruiker invoert om de response van Bob te bepalen. 
 
-Kan je een gesofisticeerdere bot maken? (tip: ``myInputstring.Contains(somestring)`` geeft een ``bool`` terug in dien ``somestring`` voorkomt in de variabele ``myInputstring`` van het type ``string`` )
+Kan je een gesofisticeerdere bot maken? (tip: ``myInputstring.Contains(somestring)`` geeft een ``bool`` terug indien ``somestring`` voorkomt in de variabele ``myInputstring`` van het type ``string`` )
 
 
 
@@ -93,14 +93,18 @@ Maak een programma dat aan de gebruiker vraagt om twee DNA strings in te voeren 
 Bereken de hamming distance tussen beide reeksen.
 
 De hamming distance van volgende twee DNA strings is 7 daar er 7 elementen in beide strings niet gelijk zijn (aangeduid met ``^``)
+
 ```
 GAGCCTACTAACGGGAT
 CATCGTAATGACGGCCT
 ^ ^ ^  ^ ^    ^^
 ```
+
 # Methoden met arrays als parameter
+
 ## Parkeergarage
-Een parkinggarage vraagt sowieso €2.00 om tot maximum 3uur te parkeren. Per extra uur NA die 3uur wordt telkens €0.5 aangerekend (dus 4uur parkeren kost €2.5. Er wordt maximum €10 aangerekend per dag. En veronderstel dat er nooit langer dan 1 dag (24u) kan geparkeerd worden.
+
+Een parkeergarage vraagt sowieso €2.00 om tot maximum 3uur te parkeren. Per extra uur NA die 3uur wordt telkens €0.5 aangerekend (dus 4uur parkeren kost €2.5. Er wordt maximum €10 aangerekend per dag. En veronderstel dat er nooit langer dan 1 dag (24u) kan geparkeerd worden.
 
 Schrijf een programma dat het verschuldigde bedrag toont gegeven de duur van een auto. Bij het opstarten van het programma wordt eerst gevraagd hoeveel auto’s ingevoerd zullen worden, dan wordt per auto de duur van het parkeren gevraagd. Finaal wordt, netjes getabuleerd, alle informatie getoond, inclusief het totaal bedrag. Gebruik minstens 1 methode ‘berekenKosten’ die de kost voor 1 gebruiker telkens teruggeeft, gegeven de duur als parameter. Gebruik ook een methode die een array als parameter aanvaard (bijvoorbeeld de array met daarin de respectievelijke uren per auto).
 
@@ -120,7 +124,7 @@ Maak een console-applicatie voor een assistent voetbaltrainer (of een sport naar
 De voetbalcoach wil na de match iedere knappe en domme actie van een speler weten. Op die manier weet hij aan het einde van de match wie er de meeste goede en slechte acties doet. De spelers hebben rugnummers 1 tot en met 12.
 
 
-Wanneer de coach een rugnummer in typt kan hij vervolgens ingeven of hij (a) een knappe actie of (b) een domme actie wil ingeven. Vervolgens geeft hij een getal in . Gebruik een 2dimensionale array die per speler het aantal domme en goede acties bijhoudt (de array is dus 12 bij 2 groot: 1 lijn per speler, bestaande uit 2 kolommen voor goede en domme actie. De index van de lijn is de rugnummer van speler -1 ). 
+Wanneer de coach een rugnummer intypt kan hij vervolgens ingeven of hij (a) een knappe actie of (b) een domme actie wil ingeven. Vervolgens geeft hij een getal in . Gebruik een 2dimensionale array die per speler het aantal domme en goede acties bijhoudt (de array is dus 12 bij 2 groot: 1 lijn per speler, bestaande uit 2 kolommen voor goede en domme actie. De index van de lijn is de rugnummer van speler -1 ). 
 
 Een typische invoer kan dus zijn:
 ```
@@ -132,7 +136,7 @@ a
 ```
 
 
-De coach kiest dus speler met rugnummer 2, hij kiest voor een knappe actie, en voer 6 in als aantal goede acties.
+De coach kiest dus de speler met rugnummer 2, hij kiest voor een knappe actie, en voer 6 in als aantal goede acties.
 
 In de array op index 1 (rugnummer -1 ) zal in de de 0'de kolom(0=goede, 1=slechte) het getal 6 geplaatst worden.
 
@@ -212,10 +216,10 @@ Determinant van matrix is -2
 ```
 
 Extra:
-Breidt uit zodat de BerekenDeterminant-methode ook werkt voor 3-bij-3 matrices. De methodeaanroep blijft dezelfde, enkel de interne code van de methode zal nu rekening moeten houden met de grootte van de matrix .
+Breid uit zodat de BerekenDeterminant-methode ook werkt voor 3-bij-3 matrices. De methodeaanroep blijft dezelfde, enkel de interne code van de methode zal nu rekening moeten houden met de grootte van de matrix .
 
 ## 2D Array Viewer
-Breidt het ArrayViewer programma uit zodat ook 2-dimensionale arrays gevisualiseerd kunnen worden. (Hint: gebruik  de GetLength() methode van een array).
+Breid het ArrayViewer programma uit zodat ook 2-dimensionale arrays gevisualiseerd kunnen worden. (Hint: gebruik  de GetLength() methode van een array).
 
 Voorbeeld van main:
 ```csharp
@@ -235,7 +239,7 @@ Schrijf een methode VermenigvuldigMatrix die 2 matrices als invoer verwacht en a
 ## Robot Simulator
 Write a robot simulator.
 
-A robot factory's test facility needs a program to verify robot movements.
+A robot factories' test facility needs a program to verify robot movements.
 
 The robots have three possible movements:
 
@@ -266,8 +270,8 @@ Voorbeeld  output:
 ![](/assets/5_arrays/practarray9.png) 
 
 ## Grote Som
-Maak een methode Som() die eender welke hoeveelheid paramaters van het type int aanvaardt en vervolgens de som van al deze parameters teruggeeft (als int).
+Maak een methode Som() die eender welke hoeveelheid paramaters van het type ``int`` aanvaardt en vervolgens de som van al deze parameters teruggeeft (als int).
 
-Toon in je main aan dat de methode werkt door onder andere 1, 3,5 en 10 gehele getalen mee te geven.
+Toon in je main aan dat de methode werkt door onder andere 1, 3, 5 en 10 als gehele getalen mee te geven.
 
 Toon ook aan dat je een array van 50 ints als parameter kan meegeven aan de methode. (hint:je moet het ``params``  keyword gebruiken)

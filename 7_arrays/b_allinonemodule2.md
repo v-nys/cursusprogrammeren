@@ -8,9 +8,10 @@ In deze opgave gaan we stap voor stap een "radio" opbouwen. We zullen daarbij we
 # Muziek maken
 [Het wikipedia artikel over toonhoogte](http://nl.wikipedia.org/wiki/Toonhoogte) leert ons dat de grondtonen do-re-mi-fa-sol-la-si-do de frequenties : 264-297-330-352-396-440-495-528 hz behelzen (excuses indien dit ‘jargon’ niet klopt...ik ken even veel van muziek als van metsen).
 
-De ``Console.Beep()`` methode laat ons toe om tonen te genereren op een bepaalde frequentie (in hz) en van een bepaalde duur (in milliseconden, i.e. 1/1000 seconde). 
+De ``Console.Beep()`` methode laat ons toe om tonen te genereren op een bepaalde frequentie (in hz) en van een bepaalde duur (in milliseconden, i.e. 1/1000 seconde).
 
-We kunnen dus de computer de toonladder afspelen, elke noot 1seconde langs, als volgt:
+We kunnen dus de computer de toonladder afspelen, elke noot 1 seconde langs, als volgt:
+
 ```csharp
 Console.Beep(264, 1000);
 Console.Beep(297, 1000);
@@ -23,7 +24,9 @@ Console.Beep(528, 1000);
 ```
 
 ## Basis toon-methoden
+
 Zorg ervoor dat je de toonladder van hierboven als volgt kunt aanroepen:
+
 ```csharp
 Do();
 Re();
@@ -34,10 +37,12 @@ La();
 Si();
 Do2();
 ```
+
 Iedere methode zal dus de correcte toon afspelen gedurende 1s (je mag dit ook sneller instellen naar keuze).
 
 Iedere "noot-methode" zal ook steeds op het scherm tonen welke noot wordt afgespeeld (doe dit als eerste in de methode)
-De uitvoer van voorgaande code wordt dan (het geluid moet je er maar even bijverzinnen):
+De uitvoer van voorgaande code wordt dan (het geluid moet je er maar even bij verzinnen):
+
 ```csharp
 Do
 Re
@@ -48,8 +53,9 @@ La
 Si
 Do
 ```
-Extra 1: plaats ieder noot in een andere tekstkleur 
-Extra 2: kan je er voor zorgen dat de noten achter mekaar, met komma, gescheiden op het scherm komen in plaats van onder mekaar?
+
+Extra 1: plaats iedere noot in een andere tekstkleur.
+Extra 2: kan je er voor zorgen dat de noten achter elkaar, met komma, gescheiden op het scherm komen in plaats van onder elkaar?
 
 ## Octaven
 Door  de frequentie van een toon te vermenigvuldigen of te delen met veelvouden van 2 krijg je de tonen op andere octaven.
