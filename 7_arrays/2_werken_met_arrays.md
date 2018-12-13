@@ -19,7 +19,7 @@ int oudsteleeftijd=leeftijden.Max();
 # System.Array
 Alle C# arrays erven over van de System.Array klasse (klasse en overerving zien we later dit semester), hierdoor kan je zaken zoals Length gebruiken op je array. De System.Array klasse heeft echter ook nog een hoop andere nuttige methoden zoals de BinarySearch(), Sort() en Reverse() methoden. Het gebruik hiervan is steeds dezelfde zoals volgende voorbeelden tonen:
 
-## Arrays sorteren
+## Sort: Arrays sorteren
 Om arrays te sorteren roep je de Sort() methode op als volgt, als parameter geef je de array mee die gesorteerd moet worden.
 
 Volgende voorbeeld toont hier het gebruik van:
@@ -37,21 +37,21 @@ for (int i = 0; i < myColors.Length; i++)
 ```
 Wanneer je de Sort-methode toepast op een array van string dan zullen de arrays alfabetisch gerangschikt worden.
 
-## Arrays omkeren
+## Reverse: Arrays omkeren
 Met de System.Array.Reverse() methode kunnen we dan weer de elementen van de array omkeren (dus het laatste element vooraan zetten en zo verder:
 
 ```csharp
 System.Array.Reverse(myColors);
 ```
 
-## Arrays leegmaken
+## Clear: Arrays leegmaken
 Een array volledig leegmaken (alle elementen op ‘null’ zetten) doe je met de System.Array.Clear methode, als volgt:
 
 ```csharp
 System.Array.Clear(myColors);
 ```
 
-# Zoeken in arrays
+##  BinarySeach: Zoeken in arrays
 De ``BinarySearch``-methode maakt het mogelijk om te zoeken naar de index van een gegeven element in een index. *Deze methode werkt enkel indien de elementen in de array gesorteerd staan!* Je geeft aan de methode 2 parameters mee, enerzijds de array in kwestie en anderzijds het element dat we zoeken. Als resultaat wordt de index van het gevonden element teruggegeven. Indien niets wordt gevonden zal het resultaat -1 zijn.
 
 Volgende code zal bijvoorbeeld de index teruggeven van de kleur "red" indien deze in de array ``myColors`` staat:
@@ -76,7 +76,7 @@ else
     Console.WriteLine("Not found");
 ```
 
-## Manueel zoeken in arrays
+# Manueel zoeken in arrays
 Het zoeken in arrays kan met behulp van while of for-loops tamelijk snel. Volgende programmaatje gaat zoeken of het getal 12 aanwezig is in de array. Indien ja dan wordt de index bewaard van de positie in de array waar het getal staat:
 
 ```csharp
