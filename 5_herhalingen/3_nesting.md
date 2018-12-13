@@ -32,7 +32,7 @@ while(tellerA<3 )  //outer loop
 **Begrijp je hoe we aan deze uitvoer komen? (tip: analyseer de inner en outer loop apart)**
 
 # Geneste loops tellen
-Om te tellen hoe vaak de 'inner' code zal uitgevoerd worden dien je te weten hoe vaak iedere loop afzonderlijk wordt uitgevoerd. Vervolgens vermenenigvuldig je al deze getallen met mekaar.
+Om te tellen hoe vaak de 'inner' code zal uitgevoerd worden dien je te weten hoe vaak iedere loop afzonderlijk wordt uitgevoerd. Vervolgens vermenenigvuldig je al deze getallen met elkaar.
 
 Een voorbeeld: Hoe vaak zal de zin ``Hallo`` op het scherm verschijnen bij volgende code?
 ```csharp

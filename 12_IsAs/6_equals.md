@@ -21,7 +21,7 @@ dan zal in de heap een ``Point`` object worden aangemaakt. Vervolgens krijgt een
 
 # Objecten vergelijken
 ## Value types en de == operator
-Wanneer we twee variabele van een van de ingebouwde .NET types (behalve string) met mekaar vergelijken (int, char, etc.) dan kunnen we schrijven:
+Wanneer we twee variabele van een van de ingebouwde .NET types (behalve string) met elkaar vergelijken (int, char, etc.) dan kunnen we schrijven:
 ```csharp
 int getal1 = 4;
 int getal2= 5;
@@ -32,7 +32,7 @@ if(getal1 == getal2)
 ```
  
 Dit werkt omdat de variabelen ``getal1`` en ``getal2`` in het geheugen de effectieve waarden 4 en 5 bezitten.
-**Maar wat gebeurt er indien we twee objecten met mekaar op deze manier vergelijken?**
+**Maar wat gebeurt er indien we twee objecten met elkaar op deze manier vergelijken?**
 
 ## Objecten en de == operator
 Stel dat we een klasse Point hebben dat we gebruiken om een 2-dimensionaal punt voor te stellen:
@@ -78,7 +78,7 @@ Het object met ``Y=5`` zijn we kwijt door de garbage collector: die heeft gezien
 De variabelen ``punt1`` en ``punt2`` zijn nu dus wel gelijk: ze hebben dezelfde inhoud, namelijk hetzelfde adres naar hetzelfde object.
 
 ## Objecten vergelijken zonder overerving
-Hoe kunnen we dan wel 2 objecten vergelijken? Hiervoor dienen we, manueel, alle properties en private fields te vergelijken met mekaar van beide objecten. Althans, jij als programmeur moet beslissen wanneer 2 objecten gelijk zijn. Mogelijk vind je dat 2 punten gelijk zijn als ze beide dezelfde X-waarde hebben ongeacht de Y-waarde. Maar wij prefereren natuurlijk dat zowel de X als de Y-waarde dezelfde is en kunnen dus schrijven:
+Hoe kunnen we dan wel 2 objecten vergelijken? Hiervoor dienen we, manueel, alle properties en private fields te vergelijken met elkaar van beide objecten. Althans, jij als programmeur moet beslissen wanneer 2 objecten gelijk zijn. Mogelijk vind je dat 2 punten gelijk zijn als ze beide dezelfde X-waarde hebben ongeacht de Y-waarde. Maar wij prefereren natuurlijk dat zowel de X als de Y-waarde dezelfde is en kunnen dus schrijven:
 ```csharp
 if(punt1.X== punt2.X && punt1.Y== punt2.Y)
 ```

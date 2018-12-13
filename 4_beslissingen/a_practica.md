@@ -23,7 +23,7 @@ Vraag aan de gebruiker wat hij wenst te berekenen: Spanning, Weerstand of Stroom
 
 # Kleurcode weerstand naar ohm
 Vraag aan de gebruiker om de ringkleuren van de eerste 3 ringen in te voeren als tekst (bv ``groen``). Toon vervolgens de de waarde van deze weerstand.
-Als dus de gebruiker na mekaar invoert:
+Als dus de gebruiker na elkaar invoert:
 
 ```
 rood

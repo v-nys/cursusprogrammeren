@@ -60,7 +60,7 @@ public virtual string ToString()
  
  
  ## Equals()
- Ook deze methode kan je dus overriden om twee objecten met mekaar te testen. Op het  [einde van deze cursus](6_equals.md) zal dieper in ``Equals`` ingaan worden om objecten te vergelijken, maar we tonen hier reeds een voorbeeld:
+ Ook deze methode kan je dus overriden om twee objecten met elkaar te testen. Op het  [einde van deze cursus](6_equals.md) zal dieper in ``Equals`` ingaan worden om objecten te vergelijken, maar we tonen hier reeds een voorbeeld:
  ```csharp
 if(stud1.Equals(stud2))
    //...

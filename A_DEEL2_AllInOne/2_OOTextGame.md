@@ -303,7 +303,7 @@ public  void ToonActies()
 }
 ```
 ### InitGame()
-In deze methode definiëren nu de volledige spelinhoud. Wil je dus bijvoorbeeld dit spel uitbreiden met extra kamers en objecten, dan doe je dat in deze methode. Ter illustratie tonen we eerst hoe we 2 locaties aanmaken en deze aan mekaar hangen mbv de Exits (waarbij kamer één zich ten zuiden van kamer 2 bevindt)
+In deze methode definiëren nu de volledige spelinhoud. Wil je dus bijvoorbeeld dit spel uitbreiden met extra kamers en objecten, dan doe je dat in deze methode. Ter illustratie tonen we eerst hoe we 2 locaties aanmaken en deze aan elkaar hangen mbv de Exits (waarbij kamer één zich ten zuiden van kamer 2 bevindt)
 
 ```csharp
 private  void InitGame()

@@ -152,7 +152,7 @@ Uitvoer van dit programma zal zijn:
 ```
 
 ## If/else
-Met if/else kunnen we niet enkel zeggen welke code moet uitgevoerd worden als de conditie waar is maar ook welke specifieke code indien de conditatie niet waar (false). Volgende voorbeeld geeft een typisch gebruik van een if/else structuur om 2 waarden met mekaar te vergelijken:
+Met if/else kunnen we niet enkel zeggen welke code moet uitgevoerd worden als de conditie waar is maar ook welke specifieke code indien de conditatie niet waar (false). Volgende voorbeeld geeft een typisch gebruik van een if/else structuur om 2 waarden met elkaar te vergelijken:
 
 ```csharp
 int x = 10;

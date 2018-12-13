@@ -44,7 +44,7 @@ Maak twee variabelen ``double kills`` en ``double deaths`` aan. Wijs er jouw typ
 # Gewicht in space
 Je massa is overal dezelfde. Je gewicht daarentegen is afhankelijk van de zwaartekracht van de plek waar je bent. Zo is je gewicht veel groter op Jupiter dan op Mars.
 
-Maak een variabele ``double gewichtOpAarde`` aan. Wijs een gewicht toe (bv het jouwe). Schrijf nu een programma dat onder mekaar jouw gewicht op verschillende planeten toont.
+Maak een variabele ``double gewichtOpAarde`` aan. Wijs een gewicht toe (bv het jouwe). Schrijf nu een programma dat onder elkaar jouw gewicht op verschillende planeten toont.
 
 Hier de omzettingstabel (je gewicht op Mercurius is dus je gewicht op aarde x 0.38):
 
@@ -58,7 +58,7 @@ Hier de omzettingstabel (je gewicht op Mercurius is dus je gewicht op aarde x 0.
 * Neptunus: 1.19
 * Pluto: 0.06  (we laten de discussie achterwege of pluto wel of niet een planeet is)
 
-De output zijn verschillende lijnen onder mekaar in de vorm van:
+De output zijn verschillende lijnen onder elkaar in de vorm van:
 
 ``Je weegt op [planeet] [gewichtopdieplaneet] kg.``
 

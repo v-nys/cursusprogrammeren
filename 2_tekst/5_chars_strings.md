@@ -20,7 +20,7 @@ Een string is een reeks (eigenlijk [array](../7_arrays/0_ArraysIntro.md)) van 0,
 ## Strings declareren
 Merk op dat we bij een string literal gebruik maken van aanhalingstekens (`"`) terwijl bij chars we een apostrof gebruiken (`'`). Dit is de manier om een string van een char te herkennen.
 
-Volgende code geeft dus drie keer het cijfer 1 onder mekaar op het scherm, maar de eerste keer behelst het een char (enkelvoudig teken), dan een een string (reeks van tekens) en dan een int (effectief getal):
+Volgende code geeft dus drie keer het cijfer 1 onder elkaar op het scherm, maar de eerste keer behelst het een char (enkelvoudig teken), dan een een string (reeks van tekens) en dan een int (effectief getal):
 
 ```csharp
 char eenKarakter = '1'; 
@@ -104,7 +104,7 @@ Het is belangrijk dat je vlot kan werken met escape characters in string, daar w
 ``\a`` mag je enkel gebruiken als je een koptelefoon op hebt ;) .
 
 ## Optellen van char 
-Stel dat we volgende char-variabele aanmaken. Bij string mogen we de +-operator gebruiken om 2 strings aan mekaar te plakken. Bij char mag dat niet!
+Stel dat we volgende char-variabele aanmaken. Bij string mogen we de +-operator gebruiken om 2 strings aan elkaar te plakken. Bij char mag dat niet!
 
 ```csharp
 char letter1 = 'A';

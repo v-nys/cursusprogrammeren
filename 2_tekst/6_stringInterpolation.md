@@ -17,7 +17,7 @@ We willen de inhoud van deze variabelen samenvoegen in een nieuwe ``string resul
 Volgende 3 manieren tonen hoe je steeds tot voorgaande string zal komen.
 
 ## Manier 1: String samenvoegen met de +-operator
-Je kan string en variabelen eenvoudig 'bij mekaar' optellen. Ze worden dan achter mekaar geplakt als het waren. 
+Je kan string en variabelen eenvoudig 'bij elkaar' optellen. Ze worden dan achter elkaar geplakt als het waren. 
 ```csharp
 string result= "Ik ben "+ name + "en ik ben "+ age+ " jaar oud";
 ```

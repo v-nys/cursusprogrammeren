@@ -74,7 +74,7 @@ class Batman:Man, ISuperHeld, ICoureur
 {...}
 ```
 
-Ook mogen interfaces van mekaar overerven:
+Ook mogen interfaces van elkaar overerven:
 ```csharp
 interface IGod:ISuperHeld
 {...}

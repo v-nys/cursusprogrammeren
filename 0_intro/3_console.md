@@ -157,7 +157,7 @@ tim [enter]
 Dagtimhoe gaat het met je?
 ```
 
-Wat is er verkeerd gelopen? Al je tekst van de laatste lijn plakt zo dicht bij mekaar? Inderdaad, we zijn spaties vergeten toe te voegen! Spaties zijn ook tekens die op scherm moeten komen (ook al zien we ze niet) en je dient dus binnen de aanhalingstekens spaties toe  te voegen. Namelijk:
+Wat is er verkeerd gelopen? Al je tekst van de laatste lijn plakt zo dicht bij elkaar? Inderdaad, we zijn spaties vergeten toe te voegen! Spaties zijn ook tekens die op scherm moeten komen (ook al zien we ze niet) en je dient dus binnen de aanhalingstekens spaties toe  te voegen. Namelijk:
 
 ```csharp
 Console.Write("Dag ");
@@ -194,9 +194,9 @@ Console.Write("Dag_");
 Console.Write("_hoe gaat het met je?");
 ```
 
-## Zinnen aan mekaar plakken
+## Zinnen aan elkaar plakken
 
-We kunnen dit hele verhaal een pak korter tonen. De plus-operator (``+``) in C# kan je namelijk gebruiken om variabelen van het type string aan mekaar te plakken. De laatste 3 lijnen code kunnen korter geschreven worden  als volgt:
+We kunnen dit hele verhaal een pak korter tonen. De plus-operator (``+``) in C# kan je namelijk gebruiken om variabelen van het type string aan elkaar te plakken. De laatste 3 lijnen code kunnen korter geschreven worden  als volgt:
 
 ```csharp
 Console.WriteLine("Dag " + result + " hoe gaat het met je?");

@@ -4,7 +4,7 @@ Talen als C# bieden goede mogelijkheden voor strong typing. Dit houdt in dat de 
 Run-time fouten zijn lastiger te detecteren, omdat deze alleen optreden op het moment dat de "foute" regel code uitgevoerd wordt en dus alleen door middel van testen en gebruik van het systeem boven water kunnen komen wat dus vaak resulteert in bugs. Via generieke klassen kunnen we aan strong typing doen en zo al een groot deel van potentiele problemen at compile-time opvangen. [Bron](http://www.sdn.nl/SDN/Artikelen/tabid/58/view/View/ArticleID/1668/Generic-Programming-in-C-20.aspx)
 
 # Generieke methoden
-Vaak schrijf je methoden die hetzelfde doen, maar waarvan enkel het type van de parameters en/of het returntype verschilt. Stel dat je een methode hebt die de elementen in een array onder mekaar toont. Je wil dit werkende hebben voor arays van ints, string, etc. Zonder generics moeten we dan per type een methode schrijven:
+Vaak schrijf je methoden die hetzelfde doen, maar waarvan enkel het type van de parameters en/of het returntype verschilt. Stel dat je een methode hebt die de elementen in een array onder elkaar toont. Je wil dit werkende hebben voor arays van ints, string, etc. Zonder generics moeten we dan per type een methode schrijven:
 
 ```csharp
 public static void ToonArray(int[] array)

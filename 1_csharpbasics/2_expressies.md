@@ -1,6 +1,6 @@
 # Expressies en operators
 
-Zonder expressies is programmeren saai: je kan dan enkel variabelen aan mekaar toewijzen. Expressies zijn als het ware eenvoudige tot complexe sequenties van bewerkingen die resulteren tot 1 resultaat. De volgende code is bijvoorbeeld een expressie: `3+2`
+Zonder expressies is programmeren saai: je kan dan enkel variabelen aan elkaar toewijzen. Expressies zijn als het ware eenvoudige tot complexe sequenties van bewerkingen die resulteren tot 1 resultaat. De volgende code is bijvoorbeeld een expressie: `3+2`
 
 Het resultaat van deze expressie is 5. [Meer informatie over expressies hier](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/statements-expressions-operators/expressions).
 
@@ -14,7 +14,7 @@ Voorbeeld van **expressie**-resultaat toekennen:
 int temperatuursVerschil = temperatuurGisteren - temperatuurVandaag;
 ```
 
-Hierbij zal de temperatuur uit de rechtse 2 variabelen worden uitgelezen, van mekaar wordt afgetrokken en vervolgens bewaard worden in temperatuursVerschil.
+Hierbij zal de temperatuur uit de rechtse 2 variabelen worden uitgelezen, van elkaar wordt afgetrokken en vervolgens bewaard worden in temperatuursVerschil.
 
 De voorgaande code kan ook langer geschreven worden als:
 
@@ -89,7 +89,7 @@ Stel dat we een variabele ``int getal`` hebben:
 | ``getal/=2;`` | ``getal= getal/2;``| variabele delen door een getal|
 | ``getal-=6;`` | ``getal= getal-6;``| variabele verminderen met een getal|
 
-Je zal deze verkorte notatie vaak tegenkomen. Ze zijn identiek aan mekaar en zullen dus je code niet versnellen. Ze zal enkel compacter om te lezen zijn. Bij twijfel, gebruik gewoon de lange notatie. 
+Je zal deze verkorte notatie vaak tegenkomen. Ze zijn identiek aan elkaar en zullen dus je code niet versnellen. Ze zal enkel compacter om te lezen zijn. Bij twijfel, gebruik gewoon de lange notatie. 
 #  Expressiedatatypes 
 ![](/assets/attention.jpg)
 

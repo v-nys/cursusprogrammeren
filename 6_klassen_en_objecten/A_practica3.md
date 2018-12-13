@@ -58,7 +58,7 @@ Vervolgens moet de gebruiker kiezen welke student (nummer) moet ingevuld worden,
 
  
 2. Student gegevens tonen (alle studenten)
-Wanneer de gebruiker voor 2 kiest dan wordt de GeefOverzicht-methode aangeroepen van iedere student zodat de 5 ‘rapportjes’ onder mekaar op het scherm 
+Wanneer de gebruiker voor 2 kiest dan wordt de GeefOverzicht-methode aangeroepen van iedere student zodat de 5 ‘rapportjes’ onder elkaar op het scherm 
 
 Extra's:
 Bouw extra functionaliteit naar keuze bij de StudentOrganizer, zoals: 
@@ -86,13 +86,13 @@ Voorzie 2 constructors:
 Toon de werking van je klasse aan door enkele objecten aan te maken met zowel de default als de overloaded constructor. Toon vervolgens dat TotalFee correct werkt.
 
 ### Deel 2: Operator Overloading
-Pas de klasse ‘Job’ aan zodat de + operator kan gebruikt worden om 2 job-objecten bij mekaar op te tellen.
+Pas de klasse ‘Job’ aan zodat de + operator kan gebruikt worden om 2 job-objecten bij elkaar op te tellen.
 Bv:
 ```csharp
 Job epicDuoJob= jobOne+jobTwo;  //jobOne en jobTwo zijn ook van het type Job
 ```
 De som van 2 job-objecten gaat als volgt te werk:
-* Description: beide description worden na mekaar geplakt, waarbij het voegwoord ‘en’ tussen beide wordt gezet.
+* Description: beide description worden na elkaar geplakt, waarbij het voegwoord ‘en’ tussen beide wordt gezet.
 * Duration: som van beide durations
 * RatePerHour: gemiddelde de ``rateperhour``van beide objecten
 Toon in je main aan dat je nieuwe klasse werkt en dat je 2 jobs kan samenvoegen. Toon ook aan dat je vervolgens deze nieuwe samenvoeging op zijn beurt kan samenvoegen met een andere job (of zelfs met een andere samengevoegde job!).

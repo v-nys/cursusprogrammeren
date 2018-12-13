@@ -300,7 +300,7 @@ else
     Console.Write(" ");
 ```
 
-Na iedere inner-loop moeten we vervolgens een newline toevoegen, anders worden alle rijen van de kaart naast mekaar gezet. Finaal krijgen we dus:
+Na iedere inner-loop moeten we vervolgens een newline toevoegen, anders worden alle rijen van de kaart naast elkaar gezet. Finaal krijgen we dus:
 ```csharp
     }
     Console.Write('\n');
