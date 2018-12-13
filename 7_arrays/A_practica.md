@@ -1,9 +1,26 @@
 > Een aantal oefeningen is geïnspireerd op oefeningen van [Exercism.io](https://exercism.io/tracks/csharp/exercises).
 
 # Opwarmers
-[TODO](https://codeforwin.org/2015/07/array-programming-exercises-and.html)
 
-# Basis van Arrays
+Een kort programma om op te warmen. Iedere opdracht hieronder is een apart programma(uiteraard mag je dit ook in 1 project oplossen).
+
+Gebruik steeds een loop om dit op te lossen.
+
+* Maak een array gevuld met de getallen 0 tot 10
+* Maak een array gevuld met de getallen van 100 tot 1
+* Maak een array gevuld met de letters a tot z
+* Maak een array gevuld met willekeurige getallen tussen 1 en 100 (array is 20 lang)
+* Maak een array gevuld met afwisselen ``true`` en ``false```(lengte is 30)
+
+Per array: output de array naar het scherm, maar ieder element naast mekaar met komma gescheiden.
+Dus niet:
+```
+true
+false
+true
+\\etc
+```
+maar wel: ```true,false,true,...`` 
 
 ## ArrayOefener 1
 Maak een programma dat aan de gebruiker vraagt om 10 waarden (int) in te voeren in een array. Vervolgens toont het programma De som, het gemiddelde en het grootste getal van deze 10.
