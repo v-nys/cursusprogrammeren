@@ -22,7 +22,7 @@ true
 \\etc
 ```
 
-maar wel: ```true,false,true,...``
+maar wel: ``true,false,true,...``
 
 ## ArrayOefener 1
 Maak een programma dat aan de gebruiker vraagt om 10 waarden (int) in te voeren in een array. Vervolgens toont het programma De som, het gemiddelde en het grootste getal van deze 10.
