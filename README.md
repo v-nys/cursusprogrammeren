@@ -22,7 +22,7 @@ PS Besef dat goed kunnen programmeren enkel kan (aan)geleerd worden indien je oo
 
 Deze cursus bevat hier en daar enkele typo's. Die zijn er uiteraard bewust *kuch* in geplaatst. Zij die er vinden zullen voor eeuwig in deze hall of fame opgenomen worden. Ere aan de typohunters:
 
-* Van Riel Lennert:     9 gevonden
+* Van Riel Lennert:     10 gevonden
 * Van Driel Kevin:      7 gevonden
 * Van Ingelghem Brian   6 gevonden
 * De Vree Bart:         5 gevonden
@@ -47,4 +47,5 @@ Deze cursus is nog volop in opbouw. Hier de lijst van de belangrijkste aspecten 
 * Hoofdstuk debugging schrijven
 * Zombie flowchart (ik heb geen flauw idee meer wat ik hier in godsnaam mee bedoel)
 * Uitleg kleur veranderen uit oefening halen en naar "theorie" verplaatsen + Console.ResetColor() toevoegen
+* Git
 * Array opwarmers: [TODO](https://codeforwin.org/2015/07/array-programming-exercises-and.html)

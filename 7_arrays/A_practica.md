@@ -37,7 +37,7 @@ Maak een programma dat aan de gebruiker vraagt om 2 keer 5 getallen in te voeren
 ![](/assets/5_arrays/practarray2.png)
 
 ## Vraag Array
-Maak een array die 10 string kan bevatten. Ieder element van de array bevat een vraag (naar keuze te verzinnen) als string waar de gebruiker met een getal op moet antwoorden.
+Maak een array die 10 strings kan bevatten. Ieder element van de array bevat een vraag (naar keuze te verzinnen) als string waar de gebruiker met een getal op moet antwoorden.
 Maak een array aan die tot 10 ints kan bevatten. Lees 1 voor 1 de vraag uit de array-string uit en toon deze op het scherm. Lees vervolgens het antwoord uit dat de gebruiker intypt en bewaar dit als int in de 2e array.
 
 Na de 10 vragen toon je vervolgens de 10 vragen met achter iedere vraag het antwoord van de gebruiker.
