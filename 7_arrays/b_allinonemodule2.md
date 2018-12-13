@@ -128,7 +128,7 @@ double totaletijd = stopwatch.Elapsed.TotalSeconds;
 totaleTijd zal de totaal verstreken tijd in seconden bevatten.
 
 ## Playlist editor
-Maak een playlist editor aan in je radio (als extra keuzemenu voeg je "Playlist Maker" toe). Wanneer de gebruiker dit kiest dan krijgt deze alle liedjes te zien. De gebruiker kan nu invoeren welke liedjes na mekaar moeten worden afgespeeld. Je bewaard deze keuze in een array.
+Maak een playlist editor aan in je radio (als extra keuzemenu voeg je "Playlist Maker" toe). Wanneer de gebruiker dit kiest dan krijgt deze alle liedjes te zien. De gebruiker kan nu invoeren welke liedjes na elkaar moeten worden afgespeeld. Je bewaard deze keuze in een array.
 
 
 In het hoofdmenu komt nu ook de mogelijkheid "Speel playlist" af. Wanneer deze keuze wordt genomen dan zullen de liedjes zoals ze in de playlist staan afgespeeld worden.
@@ -139,4 +139,5 @@ Nadien wordt getoond hoe lang de playlist heeft afgespeeld in totaal.
 In een aparte array houdt je een log bij van alle keuzes/invoer die de gebruiker tijdens het verloop van het programma heeft uitgevoerd. (bv 1,1,3, 2, 5, etc)
 
 Via een nieuw menuitem "Herhaal acties" worden deze acties terug uitgevoerd zodat het lijkt alsof het programma automatisch werkt!
-> Het al niet zo lijken, het zal zijn!
+
+> Het zal niet zo lijken, het zal zijn!
