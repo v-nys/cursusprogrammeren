@@ -63,7 +63,6 @@
   * [Oefeningen](6_methoden/b_practica.md)
 
 * H7: Arrays
-  * [Array intro](7_arrays/0_ArraysIntro.MD)
   * [Array principes](7_arrays/1_ArraysBasics.md)
   * [Werken met arrays](7_arrays/2_werken_met_arrays.md)
   * [Arrays en methoden](7_arrays/3_arrays_en_methoden.md)
