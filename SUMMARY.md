@@ -96,11 +96,14 @@
 
 * H7: Klassen en objecten
   * [OOP Intro](6_klassen_en_objecten/0_oop_intro.md)
+  * [Klassen en objecten in C#](6_klassen_en_objecten/0b_oopincs.md)
+  * [Methoden en access modifiers](6_klassen_en_objecten/0c_simpleobjects.md)
   * [Constructors](6_klassen_en_objecten/1_constructors.md)
   * [Properties](6_klassen_en_objecten/2_properties.md)
   * [Autoproperties](6_klassen_en_objecten/3_autoprop.md)
   * [Static](6_klassen_en_objecten/5_static.md)
   * [Expression bodied members](6_klassen_en_objecten/6_exprbody.md)
+  * [Expression bodied members](6_klassen_en_objecten/8_operatoroverloading.md)
   * [Labo-oefeningen 1](6_klassen_en_objecten/A_practica.md)
   * [Labo-oefeningen 2](6_klassen_en_objecten/A_practica2.md)
   * [Labo-oefeningen 3](6_klassen_en_objecten/A_practica3.md)
