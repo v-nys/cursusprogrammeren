@@ -1,4 +1,4 @@
->> Dit hoofdstuk is verre van compleet (itt andere hoofdstukken van dit semester in deze cursus)**
+> **Dit hoofdstuk is verre van compleet (itt andere hoofdstukken van dit semester in deze cursus)**
 
 # OOP
 Object Oriented Programming of korter OOP is een techniek afkomstig van higher level programmeertalen zoals Java, C#, VB.NET, ... en vindt zijn oorsprong bij Smalltalk die het eerst de term Object Oriented Programming introduceerde.
@@ -40,6 +40,7 @@ Nog een andere invalshoek:
 In C# kunnen we geen objecten aanmaken voor we een klasse hebben gedefinieerd dat de algemene eigenschappen (properties) en werking (methoden) beschrijft.
 
 ## Klasse maken
+
 Een klasse heeft de volgende vorm:
 
 ```csharp
@@ -50,7 +51,8 @@ Een klasse heeft de volgende vorm:
 ```
 
 Volgende code de klasse auto in C#
-```
+
+```csharp
 class Auto
 {
 
