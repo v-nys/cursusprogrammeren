@@ -103,7 +103,7 @@
   * [Autoproperties](6_klassen_en_objecten/3_autoprop.md)
   * [Static](6_klassen_en_objecten/5_static.md)
   * [Expression bodied members](6_klassen_en_objecten/6_exprbody.md)
-  * [Expression bodied members](6_klassen_en_objecten/8_operatoroverloading.md)
+  * [Operator overloading](6_klassen_en_objecten/8_operatoroverloading.md)
   * [Labo-oefeningen 1](6_klassen_en_objecten/A_practica.md)
   * [Labo-oefeningen 2](6_klassen_en_objecten/A_practica2.md)
   * [Labo-oefeningen 3](6_klassen_en_objecten/A_practica3.md)

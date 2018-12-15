@@ -1,8 +1,11 @@
 # Expression bodied members
+
 Wanneer je methoden, constructors of properties schrijft waar **exact 1 expressie** (*1 lijn code* die een resultaat teruggeeft) nodig is dan kan je gebruik maken van de **expression bodied member syntax** (EBM). Deze is van de vorm:
-```
+
+```text
 member => expression
 ```
+
 Dankzij EBM kan je veel kortere code schrijven.
 
 We tonen telkens een voorbeeld hoe deze origineel is en hoe deze naar EBM syntax kan omgezet worden.
@@ -10,6 +13,7 @@ We tonen telkens een voorbeeld hoe deze origineel is en hoe deze naar EBM syntax
 ## Methoden en EBM
 
 Origineel:
+
 ```csharp
 public void ToonLeeftijd(int age)
 {
@@ -18,11 +22,13 @@ public void ToonLeeftijd(int age)
 ```
 
 Met EBM:
+
 ```csharp
 public void ToonLeetijd(int age) => Console.WriteLine(age);
 ```
 
 Nog een voorbeeld, nu met een return. Merk op dat we return niet moeten schrijven:
+
 ```csharp
 public int GeefGewicht()
 {
