@@ -109,6 +109,7 @@
   * [Labo-oefeningen 3](6_klassen_en_objecten/A_practica3.md)
 * H8: Geheugenmanagement
    * [Stack en Heap](6_klassen_en_objecten/6_memorymanagement.md)
+   * [Objecten en methoden](6_klassen_en_objecten/6b_objectenenmethoden.md)
    * [Arrays van objecten](6_klassen_en_objecten/7_arraysvanobj.md)
    * [Foreach en var](7_arrays/3_foreach.md)
    * [Labo-oefeningen](6_klassen_en_objecten/A_practicaMem.md)

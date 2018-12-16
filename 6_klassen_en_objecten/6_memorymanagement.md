@@ -1,15 +1,18 @@
 # Geheugenmanagement in C-Sharp
-Tot nog toe lagen we er niet van wakker wat er achter de schermen van een C# programma gebeurde. Nu dat we arrays hebben geïntroduceerd wordt het tijd om dit wel te doen.
-Het is , zeker naar het volgende semester, essentieel dat je deze materie ten gronde beheerst.
+
+Tot nog toe lagen we er niet van wakker wat er achter de schermen van een C# programma gebeurde. We duiken nu dieper in wat er juist gebeurt wanneer we variabelen aanmaken.
 
 ## Twee soorten geheugen
+
 Wanneer een C# applicatie wordt uitgevoerd krijgt het twee soorten geheugen toegewezen dat het 'naar hartelust' kan gebruiken:
+
 1. Het kleine, maar snelle **stack** geheugen
 2. Het grote, maar tragere **heap** geheugen
 
 Afhankelijk van het soort variabele wordt ofwel de stack, ofwel de heap gebruikt. **Het is uitermate belangrijk dat je weet in welk geheugen de variabele zal bewaard worden!**
 
-Er zijn namelijk twee soorten variabelen: 
+Er zijn namelijk twee soorten variabelen:
+
 1. Value types
 2. Reference types
 
@@ -25,6 +28,7 @@ Als je volgende tabel begrijpt dan beheers je geheugenmanagement in C#:
 ![](/assets/5_arrays/gc1.png)
 
 ## Waarom twee geheugens?
+
 Waarom plaatsen we niet alles in de stack? De reden hiervoor is dat bij het compileren van je applicatie er reeds zal berekend worden hoeveel geheugen de stack zal nodig hebben. Wanneer je programma dus later wordt uitgevoerd weet het OS perfect hoeveel geheugen het minstens moet reserveren. 
 Er is echter een probleem: we kunnen niet alles perfect berekenen/voorspellen. Een variabele van het type ``int`` is perfect geweten hoe groot die zal zijn (32 bit).Maar wat met een string? Of met een array waarvan we pas tijdens de uitvoer de lengte aan de gebruiker misschien vragen?
 Het zou nutteloos (en zonde) zijn om reeds bij aanvang een bepaalde hoeveelheid voor een array te reserveren als we niet ween hoe groot die zal worden. Beeld je maar eens in dat we 2k byte reserveren om dan te ontdekken dat we maar 5byte ervan nodig hebben. RAM is goedkoop, maar toch...
@@ -41,18 +45,22 @@ Dit zijn alle gekende, 'eenvoudige' datatypes die we totnogtoe gezien hebben, in
 * ``char``
 * ``float``, ``double``, ``decimal``
 * ``bool``
-* structs
+* structs (zien we niet in deze cursus)
 * enums
 
 #### = operator bij value types
+
 Wanneer we een value-type willen kopieren dan kopieren de echte waarde:
-```csharp 
+
+```csharp
 int getal=3;
 int anderGetal= getal;
 ```
-Vanaf nu zal ``anderGetal`` de waarde ``3`` hebben. Als we nu eenv an beide variabelen aanpassen dan zal dit **geen** effect hebben op de andere variabelen.
+
+Vanaf nu zal ``anderGetal`` de waarde ``3`` hebben. Als we nu een van beide variabelen aanpassen dan zal dit **geen** effect hebben op de andere variabelen.
 
 We zien het zelfde effect wanner we een methode maken die een parameter van het value type aanvaardt- we geven een kopie van de variabele mee:
+
 ```csharp
 void DoeIets(int a)
 {
@@ -87,17 +95,21 @@ Student stud= new Student();
 ```
 
 Wat gebeurt er hier?
+
 1. ``new Student()``  : ``new`` roept de constructor van ``Student`` aan. Deze zal een constructor in de **heap** aanmaken en vervolgens de geheugenlocatie teruggeven.
 2. Een variabele ``stud`` wordt in de **stack** aangemaakt.
 3. De geheugenlocatie uit de eerste stap wordt vervolgens in ``stud`` opgeslagen in de stack.
 
 
 **Bij arrays**
+
 Maar ook bij arrays:
+
 ```csharp
 int[] nummers= {4,5,10};
 int[] andereNummers= nummers;
 ```
+
 In dit voorbeeld zal ``andereNummers`` dus nu ook verwijzen naar de array in de heap waar de actuele waarden staan.
 
 Als we dus volgende code uitvoeren dan ontdekken we dat beide variabele naar dezelfde array verwijzen:

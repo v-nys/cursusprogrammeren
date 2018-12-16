@@ -151,5 +151,3 @@ Bono.VerjaardagVieren();
 ```
 
 Als je deze code zou uitvoeren zal je zien dat de leeftijd van Elvis verhoogt en niet die van Bono wanneer we ``VerjaardagVieren`` aanroepen. Zoals het hoort!
-
-## Objecten als parameters en returntypes
