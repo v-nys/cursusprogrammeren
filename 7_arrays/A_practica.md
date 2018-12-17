@@ -157,19 +157,23 @@ Rugnummer   Goede   Domme   Verschil
 Het programma toont ook welke speler(s) het meest performant waren, namelijk zij met het grootste positieve verschil tussen goede en domme acties, alsook de minst performante en de meeste “gemiddelde” speler (i.e. verschil == 0 )
 
 ## Array Viewer
+
 Maak een programma dat een methode VisualiseerArray implementeert. De methode zal een array (type int) als parameter hebben en niets teruggeven (void). Echter, de methode zal met behulp van Write() de array, van eender welke grootte, op het scherm tonen. Tussen ieder element van dezelfde rij dient een tab (‘\t’) gezet te worden. Je dient in de methode gebruik te maken van een for-loop.
 Voorbeeld van main:
+
 ```csharp
 int[] array={15,6,9};
 int[] array2={0,1,2,3,4,5,6};
 VisualiseerArray(array);
 VisualiseerArray(array2);
 ```
+
 Geeft volgende output:
 
 ![](/assets/5_arrays/practarray6.png)
 
 ## Caesar-encryptie
+
 Maak 2 methoden ``Encrypt`` en ``Decrypt`` die als parameters telkens een array krijgen en een integer. Bedoeling is dat de Encrypt-methode de array van het type string versleuteld gegeven de sleutel x volgens het Caesar cipher (zie hieronder). Als resultaat komt er uit de methode de geëncrypteerde array. 
 De decrypt-methode doet hetzelfde maar omgekeerd: je kan er een versleutelde tekst insteken en de sleutel en de ontcijferde tekst komt terug (merk op dat je decrypt-methode gebruik kan maken van de encrypt-methode!).
 
@@ -182,19 +186,31 @@ Toon in je main aan dat je methoden werken (door bijvoorbeeld aan de gebruiker e
 ![](/assets/5_arrays/practarray8.png) 
 
 Stel bijvoorbeeld dat x=3  dan krijgen we volgende nieuwe alfabet:
-    DEFGHIJKLMNOPQRSTUVWXYZABC
+```text
+DEFGHIJKLMNOPQRSTUVWXYZABC
+```
+
 Waarbij dus de A zal vervangen worden door een D, de Z door een C, etc.
 
 Willen we deze tekst dus ‘encrypteren’:
-    the quick brown fox jumps over the lazy dog
+
+```text
+the quick brown fox jumps over the lazy dog
+```
 
 dan krijgen we:
-    WKH TXLFN EURZQ IRA MXPSV RYHU WKH ODCB GRJ
 
-#  Ondernemingsnummer
+```text
+WKH TXLFN EURZQ IRA MXPSV RYHU WKH ODCB GRJ
+```
+
+
+## Ondernemingsnummer
+
 [Originele bron voor dit idee](https://www.c-sharp.be/c-sharp/functies/)
+
 Ontwerp een methode waarmee je een Belgisch ondernemingsnummer kan controleren. Een Belgisch ondernemingsnummer is als volgt opgebouwd: BE 0xxx.xxx.xxx waarbij BE de landcode is die standaard gevolgd wordt door een spatie en dan een 0. Wanneer je de volgende 7 cijfers deelt door 97 in een gehele deling, dan is het getal gevormd door de laatste 2 cijfers gelijk aan 97 minus de rest van deze gehele deling.
-Bij een geldig ondernemingsnummer verschijnt de tekst "Geldig ondernemingsnummer.", bij een ongeldig ondernemingsnummer "Ongeldig ondernemingsnummer.". 
+Bij een geldig ondernemingsnummer verschijnt de tekst "Geldig ondernemingsnummer.", bij een ongeldig ondernemingsnummer "Ongeldig ondernemingsnummer.".
 De methode aanvaardt een string waarin je de ondernemingsnummer staat.
 
 # Meer-dimensionale arrays
