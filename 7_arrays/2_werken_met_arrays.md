@@ -76,6 +76,26 @@ else
     Console.WriteLine("Not found");
 ```
 
+## Copy : Array kopieren
+
+In het vorige hoofdstuk vertelden we reeds over het venijn van arrays kopiëren, daar deze 'by reference' worden bewaard. Lijn 2 in deze code creëert dus enkel een alias naar dezelfde array en geen kopie:
+
+```csharp
+int[] arrayA= {1,2,3};
+int[] arrayB= arrayA; //Sure?!
+```
+
+Willen we een kopie dan moet dit dus zoals in vorige hoofdstuk manueel gebeuren, of je maakt gebruikt van de ``Array.Copy()`` methode, als volgt:
+
+```csharp
+int[] ar = { 1, 2, 3 };
+int[] bar = new int[ar.Length];
+Array.Copy(ar, bar, ar.Length);
+```
+
+De methode ``Array.Copy`` vereist minimaal 3 parameters, waaronder originele array, de doel array (die reeds met aangemaakt zijn!) alsook hoeveel elementen je uit de originele array wenst te kopieren. Bekijk zeker ook de overloaded versies die deze methode heeft. Zo kan je ook een bepaald stuk van een array kopieren en ook bepalen naar waar in de doel array dit stuk moet komen.
+
+
 # Manueel zoeken in arrays
 Het zoeken in arrays kan met behulp van while of for-loops tamelijk snel. Volgende programmaatje gaat zoeken of het getal 12 aanwezig is in de array. Indien ja dan wordt de index bewaard van de positie in de array waar het getal staat:
 
