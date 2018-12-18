@@ -74,9 +74,11 @@
 
 ## Appendix
 * [Ea-ict coding guidelines](B_appendix/codingguidelines.md)
+* [Git (semester 2)](B_appendix/git.md)
 * [Nice to know stuff](B_appendix/prostuff.md)
    * [Out en Ref parameters](6_methoden/2_outenref.md)
    * [Jagged arrays](7_arrays/5_jaggedArrays.md)
+  
 * Oplossingen oefeningen
     * [H0 - Werken met VS](0_intro/opl_apractica.md)
     * [H3 - Werken met data](3_data/a_oplpractica.md)
