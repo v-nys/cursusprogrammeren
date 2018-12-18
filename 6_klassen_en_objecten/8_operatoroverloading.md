@@ -1,6 +1,5 @@
 # Operator overloading
 
-## Een scenario met kassa's
 Stel, je hebt volgende klasse:
 
 ```csharp
@@ -18,7 +17,7 @@ Kassa benedenKassa = new Kassa(){Totaal= 50, Bouwjaar= 1981};
 Kassa bovenKassa = new Kassa(){Totaal= 40, Bouwjaar= 2000};
 ```
 
-Even later wordt besloten dat beide kassa's moeten samgenvoegd worden tot een gloednieuwe kassa voor beide verdiepingen samen. Bedoeling is dat het totale geld in beide kassa's opgeteld in de nieuwe kassa moet gezet worden. Het bouwjaar van de nieuwe kassa moet het bouwjaar van de oudste van de 2 originele kassa's zijn:
+Even later wordt besloten dat beide kassa's moeten samengevoegd worden tot een gloednieuwe kassa voor beide verdiepingen samen. Bedoeling is dat het totale geld in beide kassa's opgeteld in de nieuwe kassa moet gezet worden. Het bouwjaar van de nieuwe kassa moet het bouwjaar van de oudste van de 2 originele kassa's zijn:
 Je zou willen schrijven:
 
 ```csharp
@@ -57,4 +56,25 @@ Laten we deze syntax even bekijken:
 
 # De operator beschrijven
 
-TODO
+Vervolgens moeten we nu beschrijven hoe de operator moet werken. Finaal zal de methode een nieuw object moeten teruggeven waarin het resultaat van de operatie zit.
+
+In het voorbeeld dat we maken willen we dus het volgende:
+
+```csharp
+public static Kassa operator+ (Kassa a, Kassa b)
+{
+    Kassa resultaat= new Kassa();
+    resultaat.Totaal= a.Totaal+b.Totaal;
+    if(a.Bouwjaar< b.Bouwjaar)
+    {
+        resultaat.Bouwjaar = a.Bouwjaar;
+    }
+    else
+    {
+        resultaat.Bouwjaar = b.Bouwjaar;
+    }
+    return resultaat;
+}
+```
+
+Zoals je ziet maken we dus een nieuw object ``resultaat`` waarin we de som van de twee meegegeven kassa's hun totalen plaatsen, alsook het bouwjaar van de oudste van de 2 kassa's.
