@@ -3,7 +3,7 @@ Voorlopig hebben we enkel met 1-dimensionale array gewerkt. Je kan er echter ook
 
 Door een komma tussen rechte haakjes te plaatsen tijdens de declaratie kunnen we meer-dimensionale arrays maken. 
 
-Bijvoorbeeld 1D:
+Bijvoorbeeld 2D:
 
 ```csharp
 string[,] books;
