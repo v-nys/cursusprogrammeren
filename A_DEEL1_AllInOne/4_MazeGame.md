@@ -175,12 +175,12 @@ We krijgen in de switch dus:
         else Console.WriteLine("Kan niet");
         break;
     case 'O':
-        if (posY != Kaart.GetUpperBound(1) && Kaart[posX, posY + 1] != 0)
+        if (posY != Kaart.Length(1)-1 && Kaart[posX, posY + 1] != 0)
             posY++;
         else Console.WriteLine("Kan niet");
         break;
     case 'Z':
-        if (posX != Kaart.GetUpperBound(0) && Kaart[posX + 1, posY] != 0)
+        if (posX != Kaart.GetLength(0)-1 && Kaart[posX + 1, posY] != 0)
             posX++;
         else Console.WriteLine("Kan niet");
         break;
@@ -930,10 +930,10 @@ private static void DrawMapCool(int[,] Kaart, int posX, int posY)
     ConsoleColor bll2 = Console.BackgroundColor;
     Console.BackgroundColor = ConsoleColor.DarkYellow;
 
-    for (int i = 0; i <= Kaart.GetUpperBound(0); i++)
+    for (int i = 0; i < Kaart.GetLength(0); i++)
     {
         Console.SetCursorPosition(7, 3 + i);
-        for (int j = 0; j <= Kaart.GetUpperBound(1); j++)
+        for (int j = 0; j < Kaart.GetLength(1); j++)
         {
             if (posX == i & posY == j)
             {
