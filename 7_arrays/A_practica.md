@@ -42,10 +42,6 @@ Maak een array aan die tot 10 ints kan bevatten. Lees 1 voor 1 de vraag uit de a
 
 Na de 10 vragen toon je vervolgens de 10 vragen met achter iedere vraag het antwoord van de gebruiker.
 
-## Prijzen met foreach
-
-Maak een array die tot 20 prijzen (double) kan bewaren. Vraag aan de gebruiker om 20 prijzen in te voeren en bewaar deze in de array. Doorloop vervolgens m.b.v. een foreach-lus de volledige array en toon enkel de elementen op het scherm wiens prijs hoger of gelijk is aan €5.00. Toon op het einde van het programma het gemiddelde van alle prijzen (dus inclusief de lagere prijzen).
-
 ## Array Zoeker
 
 Maak een programma dat eerst weer aan de gebruiker om 10 waarden vraagt die in een array worden gezet.
@@ -176,10 +172,11 @@ Geeft volgende output:
 
 ## Caesar-encryptie
 
-Maak 2 methoden ``Encrypt`` en ``Decrypt`` die als parameters telkens een array krijgen en een integer. Bedoeling is dat de Encrypt-methode de array van het type string versleuteld gegeven de sleutel x volgens het Caesar cipher (zie hieronder). Als resultaat komt er uit de methode de geëncrypteerde array. 
+Maak 2 methoden ``Encrypt`` en ``Decrypt`` die als parameters telkens een chararray krijgen en een integer. Bedoeling is dat de Encrypt-methode de array van het type string versleuteld gegeven de sleutel x volgens het Caesar cipher (zie hieronder). Als resultaat komt er uit de methode de geëncrypteerde array.
+
 De decrypt-methode doet hetzelfde maar omgekeerd: je kan er een versleutelde tekst insteken en de sleutel en de ontcijferde tekst komt terug (merk op dat je decrypt-methode gebruik kan maken van de encrypt-methode!).
 
-Toon in je main aan dat je methoden werken (door bijvoorbeeld aan de gebruiker een stuk tekst te vragen en een sleutel en deze dan te encrypteren/de-crypteren).
+Toon in je main aan dat je methoden werken (door bijvoorbeeld aan de gebruiker een stuk tekst als string te vragen en een sleutel en deze dan te encrypteren/de-crypteren).
 
 > Encryptie is de kunst van het vercijferen van data. Hierbij gaat men een gewone tekst zodanig omvormen (*versleutelen*) zodat deze onleesbaar is en enkel kan ontcijferd worden door de ontvanger die weet hoe de tekst terug kan verkregen worden en enkel indien deze ook de ‘private’ sleutel heeft.
 
@@ -188,13 +185,14 @@ Toon in je main aan dat je methoden werken (door bijvoorbeeld aan de gebruiker e
 ![](/assets/5_arrays/practarray8.png) 
 
 Stel bijvoorbeeld dat x=3  dan krijgen we volgende nieuwe alfabet:
+
 ```text
 DEFGHIJKLMNOPQRSTUVWXYZABC
 ```
 
 Waarbij dus de A zal vervangen worden door een D, de Z door een C, etc.
 
-Willen we deze tekst dus ‘encrypteren’:
+Willen we deze tekst dus encrypteren:
 
 ```text
 the quick brown fox jumps over the lazy dog
@@ -205,7 +203,6 @@ dan krijgen we:
 ```text
 WKH TXLFN EURZQ IRA MXPSV RYHU WKH ODCB GRJ
 ```
-
 
 ## Ondernemingsnummer
 

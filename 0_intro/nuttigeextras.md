@@ -63,3 +63,13 @@ Ideale manier om programmeren meer in de vingers te krijgen op een speelse manie
   * [2013](http://www.vlaamseprogrammeerwedstrijd.be/2013/opgaven.php)
   * [2014](http://www.vlaamseprogrammeerwedstrijd.be/2014/opgaven.php)
   * [2015](http://www.vlaamseprogrammeerwedstrijd.be/2015/opgaven.php)
+
+## Streaming programmeurs
+
+Ja hoor, ze bestaan. Meer en meer professionele én beginnende programmeurs streamen terwijl te programmeren. Dit is een ideale manier om te zien hoe andere mensen problemen aanpakken. De meeste programming streamers kan je terugvinden op youtube, maar ook op Twitch zijn er steeds meer. Enkele aanraders (bekijk zeker de filmpjes uit de archieven eens):
+
+* [Handmade Hero](https://www.twitch.tv/handmade_hero): deze programmeur heeft een volledige RPG gemaakt en het hele proces gestreamt.
+* [CSharpFrits](http://youtube.com/csharpfritz)
+* [DevChatter](https://www.twitch.tv/devchatter)
+* [Visual Studio Twitch](https://www.twitch.tv/visualstudio)
+* [NoopKat](https://www.twitch.tv/noopkat)
