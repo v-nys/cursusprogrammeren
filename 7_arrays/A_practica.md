@@ -84,7 +84,9 @@ Bekijk steeds de laatste 2 tekens die de gebruiker invoert om de response van Bo
 
 Kan je een gesofisticeerdere bot maken? (tip: ``myInputstring.Contains(somestring)`` geeft een ``bool`` terug indien ``somestring`` voorkomt in de variabele ``myInputstring`` van het type ``string`` )
 
+Gebruik een array om de antwoorden in te bewaren. 
 
+PRO: kan je met een array eerdere vragen van de gebruiker bewaren om zo complexere antwoorden te genereren?
 
 ## Hamming distance
 De hamming distance is het aantal tekens dat twee reeksen verschillen indien we ieder element vergelijken op dezelfde plaats in de andere reeks.
