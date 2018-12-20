@@ -143,7 +143,7 @@ De gebruiker kan zich naar het noorden, oosten, zuiden of westen begeven (respec
 
 ```csharp
 Console.WriteLine("NOZW? Naar waar wil je?");
-char inp = Convert.ToChar(Console.ReadLine());
+char inp = Convert.ToChar(Console.ReadLine().ToUpper());
 
 ```
 
@@ -224,7 +224,7 @@ while (true)
 
     Console.WriteLine("NOZW? Naar waar wil je?");
 
-    char inp = Convert.ToChar(Console.ReadLine());
+    char inp = Convert.ToChar(Console.ReadLine().ToUpper());
     switch (inp)
     {
         case 'N':
@@ -233,12 +233,12 @@ while (true)
             else Console.WriteLine("Kan niet");
             break;
         case 'O':
-            if (posY != Kaart.GetUpperBound(1) && Kaart[posX, posY + 1] != 0)
+            if (posY != Kaart.GetLength(1)-1 && Kaart[posX, posY + 1] != 0)
                 posY++;
             else Console.WriteLine("Kan niet");
             break;
         case 'Z':
-            if (posX != Kaart.GetUpperBound(0) && Kaart[posX + 1, posY] != 0)
+            if (posX != Kaart.GetLength(0)-1 && Kaart[posX + 1, posY] != 0)
                 posX++;
             else Console.WriteLine("Kan niet");
             break;
@@ -274,9 +274,9 @@ We doorlopen in de ``DrawMap()`` methode de volledige kaart. Lijn per lijn. Hier
 ```csharp
 private static void DrawMap(int[,] Kaart, int posX, int posY)
 {
-    for (int i = 0; i <= Kaart.GetUpperBound(0); i++)
+    for (int i = 0; i < Kaart.GetLength(0); i++)
     {
-        for (int j = 0; j <= Kaart.GetUpperBound(1); j++)
+        for (int j = 0; j < Kaart.GetLength(1); j++)
         {
 ```
 
@@ -327,7 +327,7 @@ static void Main()
         Console.WriteLine(Kamers[kamerindex]);
         Console.WriteLine("NOZW? Naar waar wil je?");
 
-        char inp = Convert.ToChar(Console.ReadLine());
+        char inp = Convert.ToChar(Console.ReadLine().ToUpper());
         switch (inp)
         {
             case 'N':
@@ -336,12 +336,12 @@ static void Main()
                 else Console.WriteLine("Kan niet");
                 break;
             case 'O':
-                if (posY != Kaart.GetUpperBound(1) && Kaart[posX, posY + 1] != 0)
+                if (posY != Kaart.GetLength(1)-1 && Kaart[posX, posY + 1] != 0)
                     posY++;
                 else Console.WriteLine("Kan niet");
                 break;
             case 'Z':
-                if (posX != Kaart.GetUpperBound(0) && Kaart[posX + 1, posY] != 0)
+                if (posX != Kaart.GetLength(0)-1 && Kaart[posX + 1, posY] != 0)
                     posX++;
                 else Console.WriteLine("Kan niet");
                 break;
@@ -355,9 +355,9 @@ static void Main()
 }
 private static void DrawMap(int[,] Kaart, int posX, int posY)
 {
-    for (int i = 0; i <= Kaart.GetUpperBound(0); i++)
+    for (int i = 0; i <= Kaart.GetLength(0); i++)
     {
-        for (int j = 0; j <= Kaart.GetUpperBound(1); j++)
+        for (int j = 0; j <= Kaart.GetLength(1); j++)
         {
             if (posX == i & posY == j)
                 Console.Write("X");
@@ -371,7 +371,7 @@ private static void DrawMap(int[,] Kaart, int posX, int posY)
 }
 ```
 
-## Fase 5: Kaart vergroten 
+## Fase 5: Kaart vergroten
 
 Zoals reeds aangehaald staat niets je in de weg om je spel-wereld groter te maken. Hiervoor hoef je enkel (momenteel) de Kamers en Kaart arrays aan te passen. Alle code zal blijven werken.
 
@@ -534,8 +534,8 @@ static void Main()
 
     int posX = 0;
     int posY = 0;
-
-    while (true)
+    char inp='k';
+    while (inp != 'Q')
     {
         Console.Clear();
         DrawMap(Kaart, posX, posY);
@@ -547,7 +547,7 @@ static void Main()
         Console.WriteLine();
         Console.WriteLine("NOZW? Naar waar wil je?");
 
-        char inp = Convert.ToChar(Console.ReadLine());
+        inp = Convert.ToChar(Console.ReadLine().ToUpper());
         switch (inp)
         {
             case 'N':
@@ -556,12 +556,12 @@ static void Main()
                 else Console.WriteLine("Kan niet");
                 break;
             case 'O':
-                if (posY != Kaart.GetUpperBound(1) && Kaart[posX, posY + 1] != 0)
+                if (posY != Kaart.GetLength(1)-1 && Kaart[posX, posY + 1] != 0)
                     posY++;
                 else Console.WriteLine("Kan niet");
                 break;
             case 'Z':
-                if (posX != Kaart.GetUpperBound(0) && Kaart[posX + 1, posY] != 0)
+                if (posX != Kaart.GetLength(0)-1 && Kaart[posX + 1, posY] != 0)
                     posX++;
                 else Console.WriteLine("Kan niet");
                 break;
@@ -654,7 +654,7 @@ private static void VerwerkInput(
     ref int posX, 
     ref int posY)
 {
-    char inp = Convert.ToChar(Console.ReadLine());
+    char inp = Convert.ToChar(Console.ReadLine().ToUpper());
     switch (inp)
     {
             //etc
@@ -718,10 +718,10 @@ Vervolgens gebruiken we SetCursorPosition om onze spelerskaart ‘over’ de Asc
 ConsoleColor bll2 = Console.BackgroundColor;
 Console.BackgroundColor = ConsoleColor.DarkYellow;
 
-for (int i = 0; i <= Kaart.GetUpperBound(0); i++)
+for (int i = 0; i <= Kaart.GetLength(0); i++)
 {
     Console.SetCursorPosition(7, 3 + i);
-    for (int j = 0; j <= Kaart.GetUpperBound(1); j++)
+    for (int j = 0; j <= Kaart.GetLength(1); j++)
     {
         if (posX == i & posY == j)
         {
@@ -851,7 +851,7 @@ private static void VerwerkInput(
     ref int posX, 
     ref int posY)
 {
-    char inp = Convert.ToChar(Console.ReadLine());
+    char inp = Convert.ToChar(Console.ReadLine().ToUpper());
     switch (inp)
     {
             //etc
@@ -861,12 +861,12 @@ private static void VerwerkInput(
             else Console.WriteLine("Kan niet");
             break;
         case 'O':
-            if (posY != Kaart.GetUpperBound(1) && Kaart[posX, posY + 1] != 0)
+            if (posY != Kaart.GetLength(1) && Kaart[posX, posY + 1] != 0)
                 posY++;
             else Console.WriteLine("Kan niet");
             break;
         case 'Z':
-            if (posX != Kaart.GetUpperBound(0) && Kaart[posX + 1, posY] != 0)
+            if (posX != Kaart.GetLength(0) && Kaart[posX + 1, posY] != 0)
                 posX++;
             else Console.WriteLine("Kan niet");
             break;

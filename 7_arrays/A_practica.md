@@ -139,7 +139,7 @@ a
 ```
 
 
-De coach kiest dus de speler met rugnummer 2, hij kiest voor een knappe actie, en voer 6 in als aantal goede acties.
+De coach kiest dus de speler met rugnummer 2, hij kiest voor een knappe actie, en voert 6 in als aantal goede acties.
 
 In de array op index 1 (rugnummer -1 ) zal in de de 0'de kolom(0=goede, 1=slechte) het getal 6 geplaatst worden.
 
@@ -256,10 +256,12 @@ Output:
 Schrijf een methode VermenigvuldigMatrix die 2 matrices als invoer verwacht en als resultaat een nieuwe matrix teruggeeft die het product van beide matrices bevat.
 
 ## Robot Simulator
+Volgende opgave komt uit [https://exercism.io](Exercism.io)
+
+"
 Write a robot simulator.
 
 A robot factories' test facility needs a program to verify robot movements.
-
 The robots have three possible movements:
 
 * turn right
@@ -276,9 +278,10 @@ The letter-string "RAALAL" means:
 * Advance once
 * Turn left yet again
 
-Say a robot starts at {7, 3} facing north. Then running this stream of instructions should leave it at {9, 4} facing west.
+Say a robot starts at {7, 3} facing north. Then running this stream of instructions should leave it at {9, 4} facing west." 
 
 Teken het gevolgde pad in de console (gebruik ``Console.SetCursorPosition()``).
+
 # Pro
 
 ## Galgje
