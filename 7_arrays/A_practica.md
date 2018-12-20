@@ -110,7 +110,7 @@ Schrijf een programma dat het verschuldigde bedrag toont gegeven de duur van een
 Voorbeeldoutput:
 Opstart:
 
- ![](/assets/5_arrays/practarray4.png)
+![](/assets/5_arrays/practarray4.png)
  
 Resultaat:
 

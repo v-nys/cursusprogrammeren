@@ -186,7 +186,7 @@ Soms kan het nodig zijn dat je in een later stadium van je programma de lengte v
 
 ```csharp
 string[] myColors = { "red", "green", "yellow", "orange", "blue" };
-System.Console.WriteLine("Length of array = ", myColors.Length);
+Console.WriteLine("Length of array = ", myColors.Length);
 ```
 De variabele myColors.Length is een special element, van het type int, die iedere array met zich meedraagt (zie volgende semester). Je kan dus deze lengte ook toekennen aan een variabele:
 

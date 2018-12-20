@@ -178,15 +178,15 @@ int x = 9;
  
 if (x == 10)
 {
-     System.Console.WriteLine ("x is 10");
+     Console.WriteLine ("x is 10");
 }
 else if (x == 9)
 {
-     System.Console.WriteLine ("x is 9");
+     Console.WriteLine ("x is 9");
 }
 else if (x == 8)
 {
-     System.Console.WriteLine ("x is 8");
+     Console.WriteLine ("x is 8");
 }
 ```
 
@@ -202,14 +202,14 @@ string emergencyValve = " ";
  
 if (reactorTemp < 1000)
 {
-    System.Console.WriteLine("Reactor temperature normal");
+    Console.WriteLine("Reactor temperature normal");
 }
 else
 {
-    System.Console.WriteLine("Reactor temperature too high!");
+    Console.WriteLine("Reactor temperature too high!");
     if (emergencyValve == "closed")
     {
-        System.Console.WriteLine("Reactor meltdown in progress!");
+        Console.WriteLine("Reactor meltdown in progress!");
     }
 }
 ```

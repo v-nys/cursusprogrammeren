@@ -27,28 +27,28 @@ Volgende voorbeeld toont hier het gebruik van:
 ```csharp
 string[] myColors = { "red", "green", "yellow", "orange", "blue" };
 //Sorteer
-System.Array.Sort(myColors);
+Array.Sort(myColors);
  
 //Toon resultaat van sorteren
 for (int i = 0; i < myColors.Length; i++)
 {
-    System.Console.WriteLine(myColors[i]);
+    Console.WriteLine(myColors[i]);
 }
 ```
 Wanneer je de Sort-methode toepast op een array van string dan zullen de arrays alfabetisch gerangschikt worden.
 
 ## Reverse: Arrays omkeren
-Met de System.Array.Reverse() methode kunnen we dan weer de elementen van de array omkeren (dus het laatste element vooraan zetten en zo verder:
+Met de Array.Reverse() methode kunnen we dan weer de elementen van de array omkeren (dus het laatste element vooraan zetten en zo verder:
 
 ```csharp
-System.Array.Reverse(myColors);
+Array.Reverse(myColors);
 ```
 
 ## Clear: Arrays leegmaken
-Een array volledig leegmaken (alle elementen op ‘null’ zetten) doe je met de System.Array.Clear methode, als volgt:
+Een array volledig leegmaken (alle elementen op ‘null’ zetten) doe je met de Array.Clear methode, als volgt:
 
 ```csharp
-System.Array.Clear(myColors);
+Array.Clear(myColors);
 ```
 
 ##  BinarySeach: Zoeken in arrays
@@ -57,7 +57,7 @@ De ``BinarySearch``-methode maakt het mogelijk om te zoeken naar de index van ee
 Volgende code zal bijvoorbeeld de index teruggeven van de kleur "red" indien deze in de array ``myColors`` staat:
 
 ```csharp
-System.Array.BinarySearch(myColors, "red" );
+Array.BinarySearch(myColors, "red" );
 ```
 
 Volgende voorbeeld toont het gebruik van deze methode:
@@ -70,7 +70,7 @@ Console.WriteLine("What rank do you need?");
 int userchoice = Convert.ToInt32(Console.ReadLine());
 
 int index = Array.BinarySearch(rank, userchoice);
-if(index>0)
+if(index>=0)
     Console.WriteLine($"{userchoice} found at index {index}");
 else
     Console.WriteLine("Not found");

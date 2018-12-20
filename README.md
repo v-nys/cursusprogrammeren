@@ -33,6 +33,7 @@ Deze cursus bevat hier en daar enkele typo's. Die zijn er uiteraard bewust *kuch
 |Strauven Wannes|       2 |
 |Yoncalik Arafa|       1 |
 |Baeten Tom|          1 |
+|Baert Jonas|   1 |
 
 
 Ook een speciale dank aan de vele studenten die me geregeld feedback geven op zaken die beter, anders, grappiger kunnen. Zoals:
