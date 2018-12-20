@@ -73,3 +73,4 @@ Ja hoor, ze bestaan. Meer en meer professionele én beginnende programmeurs stre
 * [DevChatter](https://www.twitch.tv/devchatter)
 * [Visual Studio Twitch](https://www.twitch.tv/visualstudio)
 * [NoopKat](https://www.twitch.tv/noopkat)
+* [The Coding train](https://www.youtube.com/channel/UCvjgXvBlbQiydffZU7m1_aw)
