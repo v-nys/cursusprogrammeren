@@ -194,6 +194,15 @@ Console.Write("Dag_");
 Console.Write("_hoe gaat het met je?");
 ```
 
+> fuck0ff: hi, does someone here know the escape sequence for a blank?  
+fuck0ff: hello? a blank ?  
+fuck0ff: escape sequence like 't' for tab, and blank like the things you do between words. ?  
+fuck0ff: it's for a c program  
+fuck0ff: has the channel #programming anything to do with, like to program?  
+MadSciFab: why do u need an escape sequence for a blank space?  
+MakAtak: err.. is that what you call "space"?  
+Bron: [bash.org](http://bash.org/?21854)
+
 ## Zinnen aan elkaar plakken
 
 We kunnen dit hele verhaal een pak korter tonen. De plus-operator (``+``) in C# kan je namelijk gebruiken om variabelen van het type string aan elkaar te plakken. De laatste 3 lijnen code kunnen korter geschreven worden  als volgt:
