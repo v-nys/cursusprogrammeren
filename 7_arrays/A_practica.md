@@ -65,6 +65,13 @@ Vraag aan de gebruiker een postcode en het gewicht van het pakket. Vervolgens wo
 
 Indien het bedrijf niet levert aan de ingetypte postcode dan wordt een foutmelding weergegeven.
 
+```text
+Geef gewicht pakket
+45
+Naar welke postcode wenst u dit pakket te versturen?
+2020
+Dit zal 9630 euro kosten.
+```
 ## Bob
 "Bob is a lackadaisical teenager. In conversation, his responses are very limited.
 
