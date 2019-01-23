@@ -58,6 +58,7 @@ Ideale manier om programmeren meer in de vingers te krijgen op een speelse manie
 ## Oefenvragen
 
 * [Een lijst met oude oefenvragen uit 2010](/assets/docs/oefenvragen2010.pdf): nog steeds relevant.
+* [Veel kleine, fijne oefeningen](https://www.w3resource.com/csharp-exercises/)
 * [Een dagelijkse programmeeruitdaging op reddit](https://www.reddit.com/r/dailyprogrammer/)
 * Pittige vragen van de jaarlijkse Vlaamse Programmeerwedstrijd:
   * [2013](http://www.vlaamseprogrammeerwedstrijd.be/2013/opgaven.php)
