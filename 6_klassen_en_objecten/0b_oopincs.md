@@ -59,13 +59,3 @@ Let goed op dat je dus op de juiste plekken dit alles doen (bekijk de onderstaan
 ![basics oop same in vv](/assets/6_klassen/allessamen.png)
 
 > Je hebt dus in het verleden ook al objecten aangemaakt. Telkens je met Random werkt deed je dit al. Dit wil zeggen dat er dus in .NET ergens reeds een voorgeprogrammeerde klasse ``Random`` bestaat met de interne werking.
-
-# TODO
-
-
-
-
-
-
-
-
