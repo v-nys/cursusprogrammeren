@@ -28,8 +28,8 @@ Deze cursus bevat hier en daar enkele typo's. Die zijn er uiteraard bewust *kuch
 |Van Riel Lennert|     19 |
 |Van Ingelghem Brian|   6 |
 |De Vree Bart|         5 |
+|Van Breedam Arne|     3 |
 |Zeno Hattas |           2 |
-|Van Breedam Arne|     2 |
 |Strauven Wannes|       2 |
 |Yoncalik Arafa|       1 |
 |Baeten Tom|          1 |

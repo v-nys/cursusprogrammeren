@@ -29,15 +29,18 @@ while (myCount < 100)
     Console.WriteLine(myCount);
 }
 ```
+
 Zolang ``myCount`` kleiner is dan 100 (``myCount<100``) zal myCount met 1 verhoogd worden en zal de huidige waarde van myCount getoond worden. We krijgen met dit programma dus alle getallen van 1 tot en met 100 op het scherm onder elkaar te zien.
 
 Daar de test gebeurt aan het begin van de loop wil dit zeggen dat het getal 100 nog wel getoond zal worden. **Begrijp je waarom?** Test dit zelf!
 
 ## Do while
+
 In tegenstelling tot een while loop, zal een do-while loop sowieso **minstens 1 keer uitgevoerd worden**. Ongeacht de opgegeven conditie zal de do-while loop zijn code 1 keer uitvoeren. We herhalen deze zin uitdrukkelijk 2x zodat het verschil tussen beide type loops duidelijk blijft.
 
 Vergelijk volgende diagramma van de ``do while``:
- ![](/assets/3_loops/dowhile.png)
+
+ !do while[](/assets/3_loops/dowhile.png)
 
  met die hierboven van de ``while``.
 
@@ -53,15 +56,15 @@ Merk op dat achteraan de conditie een puntkomma na het ronde haakje staat. **Dit
 Daar de test van een do-while achteraan de code van de loop gebeurt is het logisch dat een do-while dus minstens 1 keer wordt uitgevoerd
 Volgende eenvoudige aftelprogramma toont de werking van de do-while loop
 
-
 ```csharp
 int i = 10;
 do
 {
     i--;
     Console.WriteLine(i);
-} while (i < 10);
+} while (i > 0);
 ```
+
 Begrijp je wat dit programma zal doen?
 
 ## Complexe condities
