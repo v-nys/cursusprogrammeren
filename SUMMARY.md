@@ -97,7 +97,7 @@
 
 ## (In opbouw) Semester 2
 
-* H7: Klassen en objecten
+* H8: Klassen en objecten
   * [OOP Intro](6_klassen_en_objecten/0_oop_intro.md)
   * [Klassen en objecten in C#](6_klassen_en_objecten/0b_oopincs.md)
   * [Methoden en access modifiers](6_klassen_en_objecten/0c_simpleobjects.md)
@@ -110,13 +110,13 @@
   * [Labo-oefeningen 1](6_klassen_en_objecten/A_practica.md)
   * [Labo-oefeningen 2](6_klassen_en_objecten/A_practica2.md)
   * [Labo-oefeningen 3](6_klassen_en_objecten/A_practica3.md)
-* H8: Geheugenmanagement
+* H9: Geheugenmanagement
    * [Stack en Heap](6_klassen_en_objecten/6_memorymanagement.md)
    * [Objecten en methoden](6_klassen_en_objecten/6b_objectenenmethoden.md)
    * [Arrays van objecten](6_klassen_en_objecten/7_arraysvanobj.md)
    * [Foreach en var](7_arrays/3_foreach.md)
    * [Labo-oefeningen](6_klassen_en_objecten/A_practicaMem.md)
-* H9: Overerving
+* H10: Overerving
   * [Overerving intro](7_overerving/0_overerving_intro.MD)
   * [Virtual en override](7_overerving/1_virtual_override.md)
   * [Base keyword](7_overerving/2_base.md)
