@@ -1,6 +1,7 @@
 # Casting en conversie: data omzetten
 Wanneer je de waarde van een variabele wil toekennen aan een variabele van een ander type mag dit niet zo maar. 
 Volgende code zal bijvoorbeeld een dikke error geven:
+
 ```csharp
 int age = 4.3;
 ```
@@ -27,18 +28,20 @@ Het is belangrijk in te zien dat het casten van een variabele naar een ander typ
 > **Je dient enkel aan casting te doen wanneer je aan *narrowing* doet: een datatype omzetten naar een ander datatype dat een verlies aan data met zich zal meebrengen.**
 
 Casting duidt je aan door voor de variabel of literal het datatype tussen haakjes te plaatsen naar waar het moet omgezet worden:
+
 ```csharp
 int mijngetal= (int)3.5;
 ```
+
 of
+
 ```csharp
 double kommagetal= 13.8;
-int kommanietwelkom= (int)kommagetal
+int kommaNietWelkom= (int)kommagetal
 ```
 
-
 ### Narrowing
-Casting doe je dus wanneer je een variabele wil toekennen aan een andere variabele van een ander type dat daar eigenlijk niet inpast. We moeten dan aan **narrowing** doen, letterlijk het versmallen van de dat. 
+Casting doe je dus wanneer je een variabele wil toekennen aan een andere variabele van een ander type dat daar eigenlijk niet inpast. We moeten dan aan **narrowing** doen, letterlijk het versmallen van de data.
 
 Bekijk eens volgende voorbeeld:
 
@@ -49,7 +52,8 @@ int var2;
 var1 = 20.4;
 var2 = var1;
 ```
-Dit zal niet gaan. Je probeert namelijk een waarde van het type double in een variabele van het type int te steken. Dat gaat enkel als je informatie weggooit. Je moet aan *narrowing* doen. 
+
+Dit zal niet gaan. Je probeert namelijk een waarde van het type double in een variabele van het type int te steken. Dat gaat enkel als je informatie weggooit. Je moet aan *narrowing* doen.
 
 Dit gaat enkel als je expliciet aan de compiler zegt: het is goed, je mag informatie weggooien, ik begrijp dat en zal er rekening mee houden. Dit proces van narrowing noemen we casting.
 
@@ -133,6 +137,7 @@ Naast conversie en casting bestaat er ook nog parsing.
 Parsing is anders dan conversie en casting. Parsing zal je enkel nodig hebben dit jaar om tekst naar getallen om te zetten. Intern zal bijna altijd ``Convert.To...`gebruikt worden.
 
 Ieder ingebouwd type heeft  een .Parse() methode die je kan aanroepen om strings om te zetten naar het gewenste type. Parsing zal je echter minder vaak nodig hebben. Gebruik deze enkel wanneer
+
 1. Je een string hebt waarvan je weet dat deze altijd van een specifiek type zal zijn, bv een int, dan kan je ``Int32.Parse()`` gebruiken 
 2. Je input van de gebruiker vraagt (bv via Console.ReadLine) en niet 100% zeker bent dat deze een getal zal bevatten, gebruik dan ``Int32.TryParse()`` ([info](https://msdn.microsoft.com/en-us/library/f02979c7.aspx))
 

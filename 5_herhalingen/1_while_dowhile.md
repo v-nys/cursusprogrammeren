@@ -1,5 +1,5 @@
-
 ## While
+
 De syntax van een while loop is eenvoudig:
 
 ```csharp
@@ -8,6 +8,7 @@ while (booleaanse expressie)
   // C# die zal uitgevoegd worden zolang de booleaanse expressie waar is
 }
 ```
+
 Waarbij, net als bij een ``if`` statement, de conditie uitgedrukt wordt als een booleaanse expressie met 1 of meerdere relationele operators.
 
 Zolang de conditie ``true`` is zal de code binnen de accolades uitgevoerd worden. Indien dus de conditie reeds vanaf het begin ``false`` is dan zal de code binnen de while-loop niet worden uitgevoerd.
@@ -72,8 +73,9 @@ Begrijp je wat dit programma zal doen?
 Uiteraard mag de conditie waaraan een loop moet voldoen complexer zijn door middel van de  relationele operators.
 
 Volgende ``while`` bijvoorbeeld zal uitgevoerd worden zolang teller groter is dan 5 en de variabele naam van het type string niet gelijk is aan "tim":
+
 ```csharp
-while(teller> && naam!="tim")
+while(teller > 5 && naam != "tim")
 {
   //Keep repeating
 }

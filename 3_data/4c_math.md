@@ -1,6 +1,7 @@
 
 # Berekeningen
-Een groot deel van je programmeursleven zal bestaan uit het bewerken van variabelen in code. Meestal zullen die bewerkingen voorafgaan van berekeningen. Good ol' wiskunde , met andere woorden. In dit hoofdstuk bespreken we de 'tools' die je daarin kunnen helpen, namelijk:
+Een groot deel van je leven als ontwikkelaar zal bestaan uit het bewerken van variabelen in code. Meestal zullen die bewerkingen voorafgaan van berekeningen. Good ol' wiskunde , met andere woorden. In dit hoofdstuk bespreken we de 'tools' die je daarin kunnen helpen, namelijk:
+
 * De Math-bibliotheek 
 * Leren debuggen (volgende hoofdstuk)
 * Lopende sommen
