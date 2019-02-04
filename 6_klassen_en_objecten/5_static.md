@@ -59,7 +59,7 @@ Ieder object houdt de stand van z'n eigen variabelen bij. Ze kunne mekaars inter
 
 ### Variabelen MET static
 
-We makende variabele ``private int leeftijd`` static als volgt: ``private static int leeftijd=1;``.
+We maken de variabele ``private int leeftijd`` static als volgt: ``private static int leeftijd=1;``.
 
 We krijgen dan:
 
