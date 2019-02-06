@@ -44,7 +44,7 @@
   * [Oefeningen](4_beslissingen/a_practica.md)
 * Module 1 eindetest
   * [Opgave](4_beslissingen/b_allinonemodule1.md)
-  * [Opgave vaardigheidsproef 2018-2019](4_beslissingen/b_vaardig1819.md)
+  * [Opgave vaardigheidsproef mod 1 2018-2019](4_beslissingen/b_vaardig1819.md)
   * [Oplossing en veel gemaakte fouten bij vaardigheidsproef 1819](4_beslissingen/b_allinonemodule1errors.md)
 * H5: Loops
   * [Loops intro](5_herhalingen/0_loops_intro.md)
@@ -71,6 +71,7 @@
   
 * Module 2 eindetest
   * [Opgave](7_arrays/b_allinonemodule2.md)
+  * [Opgave vaardigheidsproef mod 2 2018-2019](7_arrays/b_vaardigmod21819.md)
   * [Veel gemaakte fouten bij vaardigheidsproef 1819](7_arrays/b_allinonemodule2errors.md)
 
 ## Appendix
