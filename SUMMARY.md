@@ -71,6 +71,7 @@
   
 * Module 2 eindetest
   * [Opgave](7_arrays/b_allinonemodule2.md)
+  * [Veel gemaakte fouten bij vaardigheidsproef 1819](7_arrays/b_allinonemodule2errors.md)
 
 ## Appendix
 * [Ea-ict coding guidelines](B_appendix/codingguidelines.md)
