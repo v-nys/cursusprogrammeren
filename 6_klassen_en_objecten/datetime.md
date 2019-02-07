@@ -1,4 +1,4 @@
-# DateTime en hoe klassen
+# DateTime
 
 De .NET klasse `DateTime`` is de ideale manier om te leren werken met objecten. Het is een nuttige en toegankelijk klasse.
 
