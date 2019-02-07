@@ -101,6 +101,7 @@
 * H8: Klassen en objecten
   * [OOP Intro](6_klassen_en_objecten/0_oop_intro.md)
   * [Klassen en objecten in C#](6_klassen_en_objecten/0b_oopincs.md)
+  * [DateTime: leren werken met objecten](7_klassen_en_objecten/datetime.md)
   * [Methoden en access modifiers](6_klassen_en_objecten/0c_simpleobjects.md)
   * [Constructors](6_klassen_en_objecten/1_constructors.md)
   * [Properties](6_klassen_en_objecten/2_properties.md)
