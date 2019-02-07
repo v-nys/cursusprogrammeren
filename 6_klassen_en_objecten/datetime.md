@@ -63,7 +63,7 @@ DateTime nextWeek= timeNow.AddDays(7);
 Uiteraard mag je ook een bestaand object overschrijven met het resultaat van deze methoden:
 
 ```csharp
-DateTime someTime= new DateTime(1,4,2019);
+DateTime someTime= new DateTime(2019, 4, 1);
 
 //much later...
 someTime = someTime.AddYears(10);

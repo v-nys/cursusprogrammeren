@@ -11,7 +11,7 @@ We maken een nieuwe klasse ``Mens`` en maken een methode ``Praat`` die iets op h
 ```csharp
 class Mens
 {
-    public Praat()
+    public void Praat()
     {
         Console.WriteLine("Ik ben een mens!");
     }
@@ -48,12 +48,12 @@ Test volgende klasse eens, kan je de methode ``VertelGeheim`` vanuit de Main op 
 ```csharp
 class Mens
 {
-    public Praat()
+    public void Praat()
     {
         Console.WriteLine("Ik ben een mens!");
     }
 
-    VertelGeheim()
+    void VertelGeheim()
     {
         Console.WriteLine("Mijn geheim is dat ik leef!");
     }
@@ -77,13 +77,13 @@ Stel dat we in de klasse extra (hulp)methoden willen gebruiken die enkel intern 
 ```csharp
 class Mens
 {
-    public Praat()
+    public void Praat()
     {
         Console.WriteLine("Ik ben een mens!");
         VertelGeheim();
     }
 
-    VertelGeheim()
+    void VertelGeheim()
     {
         Console.WriteLine("Mijn geheim is dat ik leef!");
     }
@@ -113,14 +113,14 @@ class Mens
 {
     private int leeftijd = 1;
 
-    public VerjaardagVieren
+    public void VerjaardagVieren()
     {
         Console.WriteLine("Hiphip hoera voor mezelf!");
         leeftijd++;
         Praat();
     }
 
-    public Praat()
+    public void Praat()
     {
         Console.WriteLine("Ik ben een mens! ");
         Console.WriteLine($"Ik ben {leeftijd} jaar oud");
