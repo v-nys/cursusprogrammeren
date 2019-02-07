@@ -1,6 +1,6 @@
 # DateTime
 
-De .NET klasse `DateTime`` is de ideale manier om te leren werken met objecten. Het is een nuttige en toegankelijk klasse.
+De .NET klasse ``DateTime`` is de ideale manier om te leren werken met objecten. Het is een nuttige en toegankelijk klasse.
 
 Grote delen van deze tekst komen van [zetoode.com](http://zetcode.com/articles/csharpdatetime/).
 
@@ -199,8 +199,8 @@ Zoals je ziet roepen we ``Parse`` aan op ``DateTime`` en dus niet op een specifi
 Deze nuttige methode geeft een ``bool`` terug om aan te geven het meegegeven object eens chrikkelhaar is of niet:
 
 ```csharp
-DateTime today= DateTime.Now
-bool isLeap= DateTime.IsLeapYear(today)
+DateTime today= DateTime.Now;
+bool isLeap= DateTime.IsLeapYear(today.Year);
 if(isLeap==true)
     Console.WriteLine("This year is a leap year");
 ```

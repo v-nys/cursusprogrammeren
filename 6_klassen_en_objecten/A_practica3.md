@@ -1,8 +1,9 @@
 # Grotere oefeningen
 
 ## Studentklasse
-Maak ee nieuwe klasse ``Student`` toe
+Maak een nieuwe klasse ``Student``.
 Deze klasse heeft 6 public fields:
+
 * Naam (string)
 * Leeftijd (int)
 * Klas (maak dit van een ``enum``)
