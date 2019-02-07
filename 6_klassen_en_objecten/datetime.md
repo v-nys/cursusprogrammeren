@@ -196,7 +196,7 @@ Zoals je ziet roepen we ``Parse`` aan op ``DateTime`` en dus niet op een specifi
 
 ## IsLeapYear
 
-Deze nuttige methode geeft een ``bool`` terug om aan te geven het meegegeven object eens chrikkelhaar is of niet:
+Deze nuttige methode geeft een ``bool`` terug om aan te geven het meegegeven object eens schrikkeljaar is of niet:
 
 ```csharp
 DateTime today= DateTime.Now;

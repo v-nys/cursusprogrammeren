@@ -24,7 +24,7 @@ Deze cursus bevat hier en daar enkele typo's. Die zijn er uiteraard bewust *kuch
 
 | Typohunter        |  # gevonden|
 | ------------- | -----:|
-|van Driel Kevin|      26 |
+|van Driel Kevin|      27 |
 |Van Riel Lennert|     21 |
 |Van Ingelghem Brian|   6 |
 |De Vree Bart|         5 |
