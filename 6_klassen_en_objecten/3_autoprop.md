@@ -65,7 +65,7 @@ Beide klassen hebben exact dezelfde functionaliteit, echter de klasse aan de rec
 ## Beginwaarde van autoprops
 Je mag autoproperties beginwaarden geven door de waarde achter de property te geven, als volgt:
 ```csharp
-public int Age {get;set} = 45;
+public int Age {get;set;} = 45;
 ````
 
 ## Altijd auto-properties? 
@@ -79,7 +79,7 @@ set
         _age = value;
 }
 ```
-**Voorgaande property kan dus NIET herschreven worden met een automatic property.** 
+**Voorgaande property kan dus NIET herschreven worden met een automatic property.**
 
 ## Alleen-lezen eigenschap
 Je kan automatic properties ook gebruiken om bijvoorbeeld een read-only property te definiëren . Als volgt:
@@ -113,3 +113,5 @@ Als je in Visual Studio in je code ``prop`` typt en vervolgens twee keer de tabt
 * Het type van de property
 * De naam van de property (identifier) 
 * De toegankelijkheid van get/set (public, private, protected)
+
+Via ``propg`` krijg je aan autoproperty met private setter.
