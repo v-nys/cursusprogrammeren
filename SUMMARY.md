@@ -6,7 +6,7 @@
   * [Nuttige extras](0_intro/nuttigeextras.md)
 
 
-## Semester 1
+## Semester 1: Programming Principles
 * H0: Werken met Visual Studio
   * [Introductie tot C#](0_intro/0_intrototcs.md)
   * [Werken met Visual Studio](0_intro/1_werkenmetvs.md) 
@@ -96,7 +96,7 @@
   * [Tekst-gebaseerd Maze game](A_DEEL1_AllInOne/4_MazeGame.md)
   * [Conway game of life](A_DEEL1_AllInOne/5_conway.md)
 
-## (In opbouw) Semester 2
+##  Semester 2 : OOP
 
 * H8: Klassen en objecten
   * [OOP Intro](6_klassen_en_objecten/0_oop_intro.md)
@@ -106,18 +106,19 @@
   * [Constructors](6_klassen_en_objecten/1_constructors.md)
   * [Properties](6_klassen_en_objecten/2_properties.md)
   * [Autoproperties](6_klassen_en_objecten/3_autoprop.md)
-  * [Static](6_klassen_en_objecten/5_static.md)
   * [Expression bodied members](6_klassen_en_objecten/6_exprbody.md)
-  * [Operator overloading](6_klassen_en_objecten/8_operatoroverloading.md)
   * [Labo-oefeningen 1](6_klassen_en_objecten/A_practica.md)
   * [Labo-oefeningen 2](6_klassen_en_objecten/A_practica2.md)
   * [Labo-oefeningen 3](6_klassen_en_objecten/A_practica3.md)
-* H9: Geheugenmanagement
-   * [Stack en Heap](6_klassen_en_objecten/6_memorymanagement.md)
-   * [Objecten en methoden](6_klassen_en_objecten/6b_objectenenmethoden.md)
-   * [Arrays van objecten](6_klassen_en_objecten/7_arraysvanobj.md)
-   * [Foreach en var](7_arrays/3_foreach.md)
-   * [Labo-oefeningen](6_klassen_en_objecten/A_practicaMem.md)
+
+* H8: Advanced klassen en objecten
+  * [Static](6_klassen_en_objecten/5_static.md)
+  * [Operator overloading](6_klassen_en_objecten/8_operatoroverloading.md)
+  * [Geheugenmanagement: Stack en Heap](6_klassen_en_objecten/6_memorymanagement.md)
+  * [Objecten en methoden](6_klassen_en_objecten/6b_objectenenmethoden.md)
+  * [Arrays van objecten](6_klassen_en_objecten/7_arraysvanobj.md)
+  * [Foreach en var](7_arrays/3_foreach.md)
+  * [Labo-oefeningen](6_klassen_en_objecten/A_practicaMem.md)
 * H10: Overerving
   * [Overerving intro](7_overerving/0_overerving_intro.MD)
   * [Virtual en override](7_overerving/1_virtual_override.md)
