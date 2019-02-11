@@ -246,6 +246,13 @@ class Persoon
     {
         get{ return $"{voornaam} {achternaam}";}
     }
+    public string Email
+    {
+        get
+        {
+            return $"{voornaam}.{achternaam}@ap.be";
+        }
+    }
 }
 ```
 
