@@ -12,17 +12,62 @@ class SithLord
     private string sithName;
 }
 ```
+
 Een ``SithLord`` heeft steeds een verborgen Sith Name en ook een hoeveelheid energie die hij nodig heeft om te strijden.
 **Het is uit den boze dat we eenvoudige data fields (``energy`` en ``name``) ``public`` maken.** Zouden we dat wel doen dan kunnen externe objecten deze geheime informatie uitlezen!
+
 ```csharp
 SithLord Palpatine= new SithLord();
 Console.WriteLine(Palpatine.sithName);
 ```
 
-We willen echter wel van buitenuit het energy-level van een sithLord kunnen instellen. Maar ook hier hetzelfde probleem: wat als we de enrgy-level op -1000 instellen? Terwijl energy nooit onder 0 mag gaan.
+We willen echter wel van buiten uit het energy-level van een sithLord kunnen instellen. Maar ook hier hetzelfde probleem: wat als we de energy-level op -1000 instellen? Terwijl energy nooit onder 0 mag gaan.
 
 **Properties lossen dit probleem op**
 
+### Oldschool oplossing
+
+Vroeger loste m'n voorgaande probleem op door Get-methoden te schrijven:
+
+Je zal deze manier nog in veel andere talen tegenkomen. Wij prefereren properties zoals we nu zullen uitleggen.
+
+```csharp
+class SithLord
+{
+    private int energy;
+    private string sithName;
+
+    public void SetSithName(string newname)
+    {
+        sithName= newname;
+    }
+
+    public string GetSithName()
+    {
+        return "YOU WISH!";
+    }
+
+    public void SetEnergy(int value)
+    {
+        if(value > 0 && value < 9999)
+            energy=value;
+    }
+
+    public int GetEnergy()
+    {
+        return energy;
+    }
+}
+```
+
+Je zou dan kunnen doen:
+
+```csharp
+SithLord Vader= new SithLord();
+Vader.SetEnergy(20); 
+Console.WriteLine($"Vaders energy is {Vader.GetEnergy()}"); //get
+
+```
 ## Full properties
 
 Een **full property** ziet er als volgt uit:
@@ -46,7 +91,18 @@ class SithLord
 }
 ```
 
-We zullen de property stuk per stuk analyseren:
+Dankzij deze code kunnen we nu elders dit doen:
+
+```csharp
+SithLord Vader= new SithLord();
+Vader.Energy= 20; //set
+Console.WriteLine($"Vaders energy is {Vader.Energy}"); //get
+```
+
+Vergelijk dit met de vorige alinea waar we dit met Get en Set methoden moesten doen. Deze property syntax is veel eenvoudiger.
+
+
+We zullen de property nu stuk per stuk analyseren:
 * ``public int Energy``: een property is altijd ``public``. Vervolgens zeggen we wat voor type de property moet zijn en geven we het een naam. Indien je de property gaat gebruiken om een intern dataveld naar buiten beschikbaar te stellen, dan is het een goede gewoonte om dezelfde naam als dat veld te nemen maar nu met een hoofdletter. (dus ``Energy`` i.p.v. ``energy``).
 * { }: Vervolgens volgen 2 accolades waarbinnen we de werking van de property beschrijven.
 * ``get {}``: indien je wenst dat de property data **naar buiten** moet sturen, dan schrijven we de get-code. Binnen de accolades van de get schrijven we wat er naar buiten moet gestuurd worden. In dit geval ``return energy`` maar dit mag even goed bijvoorbeeld ``return 4`` of een hele reeks berekeningen zijn. Het element dat je returnt in de get code moet uiteraard van hetzelfde type zijn als waarmee je de property hebt gedefinieerd (``int`` in dit geval).
@@ -169,7 +225,7 @@ public void ResetLord()
 
 > **Het is een goede gewoonte om zo vaak mogelijk via de properties je interne variabele aan te passen en niet rechtstreeks het dataveld zelf.**
 
-### REad-only Get-omvormers
+### Read-only Get-omvormers
 Je bent uiteraard niet verplicht om voor iedere interne variabele een bijhorende property te schrijven. Omgekeerd ook: mogelijk wil je extra properties hebben voor data die je 'on-the-fy' kan genereren.
 
 Stel dat we volgende klasse hebben
