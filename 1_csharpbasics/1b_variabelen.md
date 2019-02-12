@@ -83,7 +83,7 @@ De manier waarop je een literal schrijft in je code zal bepalen wat het datatype
     * ``L`` of ``l`` voor ``long`` . Vb.: ``125L``.
     * ``UL`` of ``ul`` voor ``ulong`` . Vb.: ``125ul``.
     * ``F`` of ``f`` voor ``float`` . Vb.: ``12.5f``.
-    * ``M`` of ``m`` voor ``float`` . Vb.: ``12.5M``.
+    * ``M`` of ``m`` voor ``decimal`` . Vb.: ``12.5M``.
 * Voor ``bool`` (zie verder) is dit enkel ``true``  of ``false``
 * Voor ``char`` (zie verder) wordt dit aangeduid met een enkele apostrof voor en na de literal. Vb: ``'q'``.
 * Voor ``string`` (zie verder) wordt dit aangeduid met  aanhalingsteken voor en na de literal. Vb: ``"pikachu"``.
