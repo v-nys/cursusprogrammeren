@@ -105,14 +105,13 @@
   * [Methoden en access modifiers](6_klassen_en_objecten/0c_simpleobjects.md)
   * [Properties](6_klassen_en_objecten/2_properties.md)
   * [Labo-oefeningen](6_klassen_en_objecten/A_practica.md)
-
+  * [Grote Pokemon oefening, deel 1 ](6_klassen_en_objecten/A_poke1.md)
 
 * H9: Advanced klassen en objecten
   * [Expression bodied members](6_klassen_en_objecten/6_exprbody.md)
   * [Constructors](6_klassen_en_objecten/1_constructors.md)
   * [Static](6_klassen_en_objecten/5_static.md)
   * [Operator overloading](6_klassen_en_objecten/8_operatoroverloading.md)
-  * [Grote Pokemon oefening ](6_klassen_en_objecten/A_practica2.md)
   * [Labo-oefeningen](6_klassen_en_objecten/A_practica3.md)
 * H10: Referenties en objecten
   * [Stack en Heap](6_klassen_en_objecten/6_memorymanagement.md)

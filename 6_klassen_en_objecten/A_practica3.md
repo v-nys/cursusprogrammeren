@@ -1,4 +1,28 @@
 
+# Pokémons en constructors
+
+Pas de kennis van constructors toe op je Pokémon-project  uit het vorige hoofdstuk. Zorg ervoor dat je Pokémons op 3 kunt aanmaken als volgt:
+
+* Via een default constructor: alle base stats worden daarbij op 10 standaard ingesteld via de constructor
+* Via een overloaded constructor die de gebruiker toelaat om de 6 base stats als parameters mee te geven (bv ``new Pokemon(45,42,50,65,34,67)``)
+* Via object initializer syntax waarbij je eender welke stat kunt instellen.
+
+
+
+# Digitale kluis
+Maak een klasse DigitaleKluis die we gaan gebruiken om een kluis voor te stellen.
+
+De klasse heeft volgende elementen: 
+
+* Een private variabele die de toegangscode van de kluis bewaard als geheel getal (naam: code) 
+* Een overloaded constructor die als parameter een geheel getal toelaat. Dit getal zal worden toegewezen aan de private variabele code.
+* Een full property "CanShowCode" die kan ingesteld worden op true or false, om aan te geven of de code van buitenuit kan gezien worden.
+* Een read-only property “CodeLevel” van type int. Deze property zal de "level" van de code teruggeven. Het level is eenvoudigweg de code gedeeld door 1000 als geheel getal (dus indien de code 500 is zal 0 worden teruggegeven, indien de code 2000 is wordt 2 teruggegeven, etc.) 
+* Een fullproperty Code met private set. De get van deze property zal -666 teruggeven, tenzij CanShowcode op true staat, in dit geval zal de effectieve code worden terug gegeven. 
+* Een methode "TryCode" die een geheel getal als parameter aanvaardt. De methode geeft een true terug indien de code correct was, anders false. Deze methode kan gebruikt worden om extern een code te testen , indien deze overeenkomt met de bewaarde code dan zal gemeld worden dat de code geldig is en wordt ook getoond hoeveel keer de gebruiker geprobeerd heeft. Indien de gebruiker -666 meegaf dan meldt de methode dat de gebruiker een cheater is . Indien de gebruiker een foute code meegaf dan meldt de methode dat dit een foute code was en wordt het aantal pogingen met 1 verhoogd.  
+* Een private variabele “aantalpogingen” om bij te houden hoe vaak de gebruiker geprobeerd heeft de code te vinden. 
+Maak enkele Digitale Kluis objecten aan in je main en test of je bovenstaande klasse correct is geïmplementeerd.
+
 # APCenture-Job Agency
 ## Deel 1: Klasse voorbereiden
 Maak een klasse ``Job``. Deze klasse heeft vier data fields:
