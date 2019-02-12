@@ -74,28 +74,6 @@
   * [Opgave vaardigheidsproef mod 2 2018-2019](7_arrays/b_vaardigmod21819.md)
   * [Veel gemaakte fouten bij vaardigheidsproef 1819](7_arrays/b_allinonemodule2errors.md)
 
-## Appendix
-* [Ea-ict coding guidelines](B_appendix/codingguidelines.md)
-* [Nice to know stuff](B_appendix/prostuff.md)
-   * [Out en Ref parameters](6_methoden/2_outenref.md)
-   * [Jagged arrays](7_arrays/5_jaggedArrays.md)
-  
-* Oplossingen oefeningen
-    * [H0 - Werken met VS](0_intro/opl_apractica.md)
-    * [H3 - Werken met data](3_data/a_oplpractica.md)
-    * [H4 - Beslissingen](4_beslissingen/a_oplpractica.md)
-    * [Module 1 eindetest](4_beslissingen/b_oplallinonemodule1.md)
-    * [H5 - Herhalingen](5_herhalingen/opl_a_practica.md)
-    * [H6 - Methoden](6_methoden/opl_b_practica.md)
-    * [H7 - Arrays](7_arrays/opl_a_practica.md)
-* All-In-Projecten
-  * [Overzicht](A_DEEL1_AllInOne/0_Deel1_IntroductieAllInOne.md)
-  * [Console Matrix](A_DEEL1_AllInOne/1_ConsoleMatrix.md)
-  * [Ascii filmpjes maken met loops](A_DEEL1_AllInOne/3_AsciiMovieWithLoops.md)
-  * [Ascii filmpjes maken met methoden](A_DEEL1_AllInOne/2_AsciiMoviesWithMethods.md)
-  * [Tekst-gebaseerd Maze game](A_DEEL1_AllInOne/4_MazeGame.md)
-  * [Conway game of life](A_DEEL1_AllInOne/5_conway.md)
-
 ##  Semester 2 : OOP
 
 * H8: Klassen en objecten
@@ -147,6 +125,35 @@
   * [Polymorfisme en interfaces](12_IsAs/2_Polymorfisme_Interfaces.md)
   * [Objecten vergekijken: alles komt samen](12_IsAs/6_equals.md)
   * [Labo-oefeningen](12_IsAs/A_Practica.md)
+
+## Appendix 
+
+* [Ea-ict coding guidelines](B_appendix/codingguidelines.md)
+
+### Semester 1
+
+* [Nice to know stuff](B_appendix/prostuff.md)
+   * [Out en Ref parameters](6_methoden/2_outenref.md)
+   * [Jagged arrays](7_arrays/5_jaggedArrays.md)
+  
+* Oplossingen oefeningen
+    * [H0 - Werken met VS](0_intro/opl_apractica.md)
+    * [H3 - Werken met data](3_data/a_oplpractica.md)
+    * [H4 - Beslissingen](4_beslissingen/a_oplpractica.md)
+    * [Module 1 eindetest](4_beslissingen/b_oplallinonemodule1.md)
+    * [H5 - Herhalingen](5_herhalingen/opl_a_practica.md)
+    * [H6 - Methoden](6_methoden/opl_b_practica.md)
+    * [H7 - Arrays](7_arrays/opl_a_practica.md)
+* All-In-Projecten
+  * [Overzicht](A_DEEL1_AllInOne/0_Deel1_IntroductieAllInOne.md)
+  * [Console Matrix](A_DEEL1_AllInOne/1_ConsoleMatrix.md)
+  * [Ascii filmpjes maken met loops](A_DEEL1_AllInOne/3_AsciiMovieWithLoops.md)
+  * [Ascii filmpjes maken met methoden](A_DEEL1_AllInOne/2_AsciiMoviesWithMethods.md)
+  * [Tekst-gebaseerd Maze game](A_DEEL1_AllInOne/4_MazeGame.md)
+  * [Conway game of life](A_DEEL1_AllInOne/5_conway.md)
+
+## Semester 2
+
 * All-In-Projecten
   * [Overzicht](A_DEEL2_AllInOne/0_Deel2_IntroductieAllInOne.md)
   * [OO Textbased Game](A_DEEL2_AllInOne/2_OOTextGame.md)

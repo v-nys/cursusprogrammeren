@@ -63,3 +63,6 @@ Bouw extra functionaliteit naar keuze bij de StudentOrganizer, zoals:
 * Verwijderen van een student (waarbij alle gegevens worden gewist)
 * Controle in alle methode inbouwen zodat ‘lege studenten’ worden genegeerd. Wanneer bijvoorbeeld menu item 2 wordt uitgevoerd (alle studenten tonen) dan worden enkel de ingevulde studenten getoond.
 
+# Pokedex
+
+Coming soon!
