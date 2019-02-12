@@ -105,7 +105,7 @@
   * [Methoden en access modifiers](6_klassen_en_objecten/0c_simpleobjects.md)
   * [Properties](6_klassen_en_objecten/2_properties.md)
   * [Labo-oefeningen](6_klassen_en_objecten/A_practica.md)
-  * [Grote Pokemon oefening, deel 1 ](6_klassen_en_objecten/A_poke1.md)
+  * [De grote Pokemon oefening ](6_klassen_en_objecten/A_poke1.md)
 
 * H9: Advanced klassen en objecten
   * [Expression bodied members](6_klassen_en_objecten/6_exprbody.md)
