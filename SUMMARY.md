@@ -114,7 +114,7 @@
   * [Operator overloading](6_klassen_en_objecten/8_operatoroverloading.md)
   * [Labo-oefeningen](6_klassen_en_objecten/A_practica2.md)
   
-H10: Referenties en objecten
+* H10: Referenties en objecten
   * [Stack en Heap](6_klassen_en_objecten/6_memorymanagement.md)
   * [Objecten en methoden](6_klassen_en_objecten/6b_objectenenmethoden.md)
   * [Arrays van objecten](6_klassen_en_objecten/7_arraysvanobj.md)
