@@ -56,3 +56,7 @@ Deze cursus is nog volop in opbouw. Hier de lijst van de belangrijkste aspecten 
 * Git
 * Array opwarmers: [TODO](https://codeforwin.org/2015/07/array-programming-exercises-and.html)
 * Generic methods: voorbeeld van rekenmachine methoden
+
+
+# Licensed under Creative Commons Attribution 4.0 International
+Licensed under CC-BY-4.0  as shown [here](LICENSE.MD).
