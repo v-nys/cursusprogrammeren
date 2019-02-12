@@ -197,9 +197,6 @@ array2=array;
 De variabele ``bewaarArray`` houdt dus een referentie naar ``{3,4,5}`` bij en we kunnen dus later via deze variabele alsnog aan de originele data.
 
 
-# Object references en null
-Dit moet dhr Dams nog schrijven. Als je aan dit hoofdstuk bent in de les en deze tekst staat er nog dan is onze dierbare auteur dit vergeten. Attendeer hem er dan even vriendelijk op aub. thx
-
 # Meer weten?
 
 Meer info, lees zeker volgende artikels:

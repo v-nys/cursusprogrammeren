@@ -1,5 +1,7 @@
 
-# Pokémons en constructors
+# Pokémons deel 2
+
+## Constructors
 
 Pas de kennis van constructors toe op je Pokémon-project uit het vorige hoofdstuk. Zorg ervoor dat je Pokémons op 3 kunt aanmaken als volgt:
 
@@ -7,6 +9,13 @@ Pas de kennis van constructors toe op je Pokémon-project uit het vorige hoofdst
 * Via een overloaded constructor die de gebruiker toelaat om de 6 base stats als parameters mee te geven (bv ``new Pokemon(45,42,50,65,34,67)``)
 * Via object initializer syntax waarbij je eender welke stat kunt instellen.
 
+## Static methoden
+
+Voeg volgende static methoden toe aan je klasse. Test ze in je main:
+
+* ``WhoWillWin``: deze methode aanvaardt 2 objecten van het type pokemon. De methode geeft een int terug. 1 indien de eerste van de 2 pokemons wint, 2 indien de tweede. 0 indien gelijkstand. Verzin zelf hoe je aan de hand van de pokemon-properties kunt beslissen welke pokemon het sterkst is
+
+* ``GeneratorRandom``: deze methode heeft geen methoden nodig. De methoden zal een nieuwe Pokemon aanmaken met random eigenschappen en deze vervolgens als resultaat teruggeven.
 
 # Digitale kluis
 

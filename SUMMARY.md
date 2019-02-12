@@ -36,7 +36,7 @@
   * [Oefeningen](3_data/A_Practica.md) 
 * H4: Beslissingen
   * [Beslissingen intro](4_beslissingen/0_beslissingen_intro.md)
-  * [Booleanse expressies, logische en relationele operators](4_beslissingen/1_logic_and_relationsoperator.md)
+  * [Booleanse logica en operators](4_beslissingen/1_logic_and_relationsoperator.md)
   * [If](4_beslissingen/0_if.md)
   * [Scope van variabelen](4_beslissingen/3_scope.md)
   * [enum](B_appendix/enum.md)
@@ -44,8 +44,8 @@
   * [Oefeningen](4_beslissingen/a_practica.md)
 * Module 1 eindetest
   * [Opgave](4_beslissingen/b_allinonemodule1.md)
-  * [Opgave vaardigheidsproef mod 1 2018-2019](4_beslissingen/b_vaardig1819.md)
-  * [Oplossing en veel gemaakte fouten bij vaardigheidsproef 1819](4_beslissingen/b_allinonemodule1errors.md)
+  * [Opgave vaardigheidsproef mod 1 1819](4_beslissingen/b_vaardig1819.md)
+  * [Bespreking vaardigheidsproef mod 1 1819](4_beslissingen/b_allinonemodule1errors.md)
 * H5: Loops
   * [Loops intro](5_herhalingen/0_loops_intro.md)
   * [While en Do While](5_herhalingen/1_while_dowhile.md)
@@ -71,8 +71,8 @@
   
 * Module 2 eindetest
   * [Opgave](7_arrays/b_allinonemodule2.md)
-  * [Opgave vaardigheidsproef mod 2 2018-2019](7_arrays/b_vaardigmod21819.md)
-  * [Veel gemaakte fouten bij vaardigheidsproef 1819](7_arrays/b_allinonemodule2errors.md)
+  * [Opgave vaardigheidsproef mod 2 1819](7_arrays/b_vaardigmod21819.md)
+  * [Bespreking vaardigheidsproef mod 1 1819](7_arrays/b_allinonemodule2errors.md)
 
 ##  Semester 2 : OOP
 
@@ -83,21 +83,23 @@
   * [Methoden en access modifiers](6_klassen_en_objecten/0c_simpleobjects.md)
   * [Properties](6_klassen_en_objecten/2_properties.md)
   * [Labo-oefeningen](6_klassen_en_objecten/A_practica.md)
-  * [De grote Pokemon oefening ](6_klassen_en_objecten/A_poke1.md)
-
-* H9: Advanced klassen en objecten
+  * [De grote Pokemon oefening](6_klassen_en_objecten/A_poke1.md)
+* H9: Geheugenmanagement bij klassen
+  * [Stack en Heap](6_klassen_en_objecten/6_memorymanagement.md)
+  * [Null en NullReferenceException](6_klassen_en_objecten/nullreference.md)
+  * [Objecten en methoden](6_klassen_en_objecten/6b_objectenenmethoden.md)
+  * [Labo-oefeningen](6_klassen_en_objecten/A_practicamethod.md)
+* H10: Advanced klassen en objecten
   * [Expression bodied members](6_klassen_en_objecten/6_exprbody.md)
   * [Constructors](6_klassen_en_objecten/1_constructors.md)
   * [Static](6_klassen_en_objecten/5_static.md)
   * [Operator overloading](6_klassen_en_objecten/8_operatoroverloading.md)
   * [Labo-oefeningen](6_klassen_en_objecten/A_practica3.md)
-* H10: Referenties en objecten
-  * [Stack en Heap](6_klassen_en_objecten/6_memorymanagement.md)
-  * [Objecten en methoden](6_klassen_en_objecten/6b_objectenenmethoden.md)
+* H11: Arrays en klassen
   * [Arrays van objecten](6_klassen_en_objecten/7_arraysvanobj.md)
   * [Foreach en var](7_arrays/3_foreach.md)
   * [Labo-oefeningen](6_klassen_en_objecten/A_practicaMem.md)
-* H11: Overerving
+* H12: Overerving
   * [Overerving intro](7_overerving/0_overerving_intro.MD)
   * [Virtual en override](7_overerving/1_virtual_override.md)
   * [Base keyword](7_overerving/2_base.md)
@@ -105,22 +107,22 @@
   * [System.Object](7_overerving/4_System_Object.md)
   * [Abstract](7_overerving/5_abstract.md)
   * [Labo-oefeningen](7_overerving/A_Practica.md)
-* H12: Compositie
+* H13: Compositie
   * [Compositie intro](8_compositie/0_compositie_intro.MD)
   * [Labo-oefeningen](8_compositie/A_Practica.md)
-* H13: Polymorfisme
+* H14: Polymorfisme
   * [Intro polymorfisme](11_polymorfisme/11_polymo_intro.MD)
   * [Labo-oefeningen](11_polymorfisme/A_Practica.md)
-* H14: Interfaces
+* H15: Interfaces
   * [Interface intro](9_interfaces/1_Interface_intro.MD) 
   * [Interfaces in de praktijk](9_interfaces/2_InterfacesInPraktijk.md)
   * [Labo-oefeningen](9_interfaces/A_practica.md)
-* H15: Generics
+* H16: Generics en collections
   * [Generics methoden en types](10_generics/0_generics_intro.MD)
   * [Generic classes en constraints](10_generics/2_genericclasses_en_constraints.md)
   * [Collections](10_generics/8_Collections.md)
   * [Labo-oefeningen](10_generics/A_Practica.md)
-* H16: Is en As keyword
+* H17: Is en As keyword
   * [Is en As keywords](12_IsAs/1_IsAs.md)
   * [Polymorfisme en interfaces](12_IsAs/2_Polymorfisme_Interfaces.md)
   * [Objecten vergekijken: alles komt samen](12_IsAs/6_equals.md)
