@@ -34,34 +34,32 @@ u.OpenSite();
 Maak een array die tot 20 prijzen (double) kan bewaren. Vraag aan de gebruiker om 20 prijzen in te voeren en bewaar deze in de array. Doorloop vervolgens m.b.v. een foreach-lus de volledige array en toon enkel de elementen op het scherm wiens prijs hoger of gelijk is aan €5.00. Toon op het einde van het programma het gemiddelde van alle prijzen (dus inclusief de lagere prijzen).
 
 
-### Deel 2: Operator Overloading
-Pas de klasse ‘Job’ aan zodat de + operator kan gebruikt worden om 2 job-objecten bij elkaar op te tellen.
-Bv:
+
+# Student Organizer
+
+We gaan nu de Student-klasse gebruiken om een array van studenten te vullen.
+
+Maak daarom een studenten-array aan die 5 studenten bevat :
 ```csharp
-Job epicDuoJob= jobOne+jobTwo;  //jobOne en jobTwo zijn ook van het type Job
+Student[] alleStudenten= new Student[5];
+for(int i =0 ;  i<5;++)
+    alleStudenten[i]= new Student();
 ```
-De som van 2 job-objecten gaat als volgt te werk:
-* Description: beide description worden na elkaar geplakt, waarbij het voegwoord ‘en’ tussen beide wordt gezet.
-* Duration: som van beide durations
-* RatePerHour: gemiddelde de ``rateperhour``van beide objecten
-Toon in je main aan dat je nieuwe klasse werkt en dat je 2 jobs kan samenvoegen. Toon ook aan dat je vervolgens deze nieuwe samenvoeging op zijn beurt kan samenvoegen met een andere job (of zelfs met een andere samengevoegde job!).
+Initialiseer alle fields van iedere student op een standaard-waarde (mbv een for-loop), bv:
+ 
+Het programma start op en geeft de gebruiker een menu waaruit kan gekozen worden:
 
-### Breuk
-Maak een klasse ‘Breuk’ dat dus een breuk zal voorstellen met een noemer en teller.
-
-Voorzie properties voor noemer en teller, waarbij de noemer niet 0 mag zijn (zet deze op 1 indien de gebruiker dit toch probeert).
-
-Voeg 2 constructors toe:
-
-* Default constructor: de breuk wordt ingesteld op 0/1
-* Overloaded constructor: zowel de noemer als teller worden als parameter meegegeven
-
-Voorts:
-1. Voeg een + operator toe die het mogelijk maakt om 2 breuken bij elkaar op te tellen. Wanneer de +operatie is toegepast wordt ook automatisch de Vereenvoudig-methode aangeroepen (zie verder) voor het resultaat wordt teruggegeven. Belangrijk: je dient aan operator overloading te doen. We willen dus dat je bijvoorbeeld kan schrijven Breuk breuksom= breuk1 + breuk2;
-2. Voeg voorts een * operator toe die breuken vermenigvuldigen mogelijk maakt (ook hier wordt het resultaat vereenvoudigd teruggegeven).
-3. Voeg een methode ‘AlsString’ toe die de breuk als string teruggeeft, waarbij de breuklijn als slash wordt voorgesteld.
+1. Student gegevens invoeren (eerstvolgende student wordt ingevuld)
+Vervolgens moet de gebruiker kiezen welke student (nummer) moet ingevuld worden, van 1 tot 5. Vervolgens kan de gebruiker de gegevens 1 voor 1 invullen (oude gegevens worden zonder pardon overschreven).
 
  
-Maak een array van 4 breuken in je main en laat de gebruiker deze alle 4 invullen. Toon vervolgens de som en vermenigvuldiging van deze 4 breuken als strings op het scherm.
+2. Student gegevens tonen (alle studenten)
+Wanneer de gebruiker voor 2 kiest dan wordt de GeefOverzicht-methode aangeroepen van iedere student zodat de 5 ‘rapportjes’ onder elkaar op het scherm 
 
-Pro: Voeg een methode ‘Vereenvoudig’ toe. Deze zal de breuk vereenvoudigen indien mogelijk. Als dus de breuk op 2/4 staat dan wordt deze na het uitvoeren van deze methode 1/2.
+Extra's:
+Bouw extra functionaliteit naar keuze bij de StudentOrganizer, zoals: 
+* Vragen aan de gebruiker of de oude gegevens overschreven mogen worden, indien deze reeds ingevuld zijn.
+* Inbouwen van een eenvoudige zoekfunctie. Je kan bijvoorbeeld zoeken op naam (exacte invoer) of alle studenten tonen die in een bepaalde klas zitten of wiens punten onder/boven een bepaalde waarde zitten. Je kan dit als extra menuitem inbouwen, waarbij een nieuw menu verschijnt dat de gebruiker de verschillende zoekmogelijkheden voorstelt.
+* Verwijderen van een student (waarbij alle gegevens worden gewist)
+* Controle in alle methode inbouwen zodat ‘lege studenten’ worden genegeerd. Wanneer bijvoorbeeld menu item 2 wordt uitgevoerd (alle studenten tonen) dan worden enkel de ingevulde studenten getoond.
+
