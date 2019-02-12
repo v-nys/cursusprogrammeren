@@ -128,7 +128,7 @@
   * [Objecten vergekijken: alles komt samen](12_IsAs/6_equals.md)
   * [Labo-oefeningen](12_IsAs/A_Practica.md)
 
-## Appendix 
+## Appendix
 
 * [Ea-ict coding guidelines](B_appendix/codingguidelines.md)
 
