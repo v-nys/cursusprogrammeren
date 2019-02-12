@@ -54,7 +54,7 @@ Zoek een foto naar keuze (nieuws, privé, etc) waarop meer dan één element ops
 
 Bijvoorbeeld: een foto van een betoging. Je zou minstens 3 klassen kunnen verzinnen (gebouw, politie, betoger). Van ieder van deze klassen maak je dan objecten aan zoals je ze op de foto ziet (uiteraard gaan we geen 30 betoger-instanties maken, enkele zijn genoeg, als voorbeeld).
 
-# Properties en constructors
+# Properties
 
 ## RapportModule
 
@@ -66,7 +66,6 @@ Ontwerp een klasse Resultaat die je zal tonen wat je graad is gegeven een bepaal
 * tussen 75 en 85: grote onderscheiding;
 * > 85: grootste onderscheiding.
 
-Schrijf een overloaded constructor die ervoor zorgt dat het behaalde percentage zo kan ingesteld worden (``Resultaat r= new Resultaat (74);``)
 
 Test je klasse door enkele objecten in je main aan te maken en de verschillende properties waarden te geven en methoden aan te roepen.
 
@@ -107,7 +106,7 @@ Quotient = 0,352941176470588
 
 ## Figuren
 
-Maak een eenvoudige klasse Rechthoek aan die een lengte en breedte als private datafields heeft. Deze kunnen enkel via de constructors (eenmalig) ingesteld worden.
+Maak een eenvoudige klasse Rechthoek aan die een lengte en breedte als private datafields heeft. Deze kunnen enkel via full properties ingesteld worden en nooit onder 1 gaan.
 
 Maak ook een klasse Driehoek die een basis en hoogte als fields heeft.
 
@@ -123,52 +122,3 @@ Maak een klasse Pizza. Deze klasse heeft een aantal private fields:
 * price (double): prijs van de pizza in euro.
 
 Zorg ervoor dat je met behulp van properties deze 3 velden kan uitlezen en aanpassen. Bouw controle in zodat de fields geen foute waarden kunnen gegeven worden (denk maar aan negatieve prijs en diameter, pizza zonder topping, etc.). Maak in je main een aantal pizza-instanties aan en toon de werking van de properties aan.
-
-## Student Organizer Deluxe
-
-Herschrijf de [Student-klasse](../6_klassen_en_objecten/A_practica.md#studentklasse) en zorg ervoor dat iedere public field private is. Vervolgens maak je bijhorende public properties aan die toegang tot deze private fields verzorgen. Controleer in de properties op illegale input zodat bijvoorbeeld geen  de punten enkel getallen tussen 0 en 20 mogen zijn.
-
-Herschrijf de studentmanager zodat deze werkt met deze nieuwe klasse .
-
-## BankManager
-
-Ontwerp een klasse Account die minstens een Naamveld, bedrag en rekeningnummer bevat. Voorzie 3 methoden:
-
-1. WithdrawFunds: bepaald bedrag wordt van rekening verwijderd
-2. PayInFunds: bepaald bedrag (als parameter) wordt op de rekening gezet
-3. GetBalance: het totale bedrag op de rekening wordt teruggegeven
-
-Pas de WithdrawFunds methode aan zodat als returntype het bedrag (int) wordt teruggegeven. Indien het gevraagde bedrag meer dan de balance is dan geef je al het geld terug dat nog op de rekening staat en toon je in de console dat niet al het geld kon worden gegeven.
-
-Maak 2 instanties van het type Account aan en toon aan dat je geld van de ene account aan de andere kunt geven, als volgt:
-
-```csharp
-BankAccount rekening1=new BankAccount();
-BankAccount rekening2=new BankAccount();
-```
-
-Voeg aan de Account-klasse een private field toe zijnde van het type accountState dat een enumeratie bevat. De account kan in volgende states zijn "Geldig", "Geblokkeerd"). 
-Maak een bijhorende publieke Methode  waarmee je de account van state kunt veranderen. Deze methode (noem ze ChangeState) vereist één parameter van het type accountState natuurlijk.
-
-Indien een persoon geld van of naar een Geblokkeerde rekening wil sturen dan zal er een error op het scherm verschijnen.
-Maak een array aan van 10 klanten. Wanneer je met klassen werkt moet je bij de initialisatie van de array ook ieder element afzonderlijk initialiseren, als volgt:
-
-```csharp
-BankAccount[] lijst = new BankAccount[10];
-//Init
-for(int i=O; i<lijst.Length;i++)
-{ 
- lijst[i]= new BankAccount();
-}
-```
-
-Schrijf nu een BankManager systeem. Voorzie  een console- menu waarbij de gebruiker volgende zaken kan doen:
-
-1. Nieuwe klant aanmaken (max 10) 
-2. Status van bestaande klant tonen 
-3. Geld op  bepaalde account zetten 
-4. Geld van bepaalde account afhalen 
-5. Geld tussen 2 accounts overschrijven.
-6. Een totaaloverzicht van alle accounts tonen (Allerlei statistieken zoals de totale som op alle rekeningen samen, rijkste account, etc worden in een tabel getoond)
-
-Voorzie extra functionaliteit naar keuze.

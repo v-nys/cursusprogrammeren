@@ -103,23 +103,24 @@
   * [Klassen en objecten in C#](6_klassen_en_objecten/0b_oopincs.md)
   * [DateTime: leren werken met objecten](6_klassen_en_objecten/datetime.md)
   * [Methoden en access modifiers](6_klassen_en_objecten/0c_simpleobjects.md)
-  * [Constructors](6_klassen_en_objecten/1_constructors.md)
   * [Properties](6_klassen_en_objecten/2_properties.md)
-  * [Autoproperties](6_klassen_en_objecten/3_autoprop.md)
-  * [Expression bodied members](6_klassen_en_objecten/6_exprbody.md)
   * [Labo-oefeningen 1](6_klassen_en_objecten/A_practica.md)
-  * [Labo-oefeningen 2](6_klassen_en_objecten/A_practica2.md)
   * [Labo-oefeningen 3](6_klassen_en_objecten/A_practica3.md)
 
-* H8: Advanced klassen en objecten
+* H9: Advanced klassen en objecten
+  * [Expression bodied members](6_klassen_en_objecten/6_exprbody.md)
+  * [Constructors](6_klassen_en_objecten/1_constructors.md)
   * [Static](6_klassen_en_objecten/5_static.md)
   * [Operator overloading](6_klassen_en_objecten/8_operatoroverloading.md)
-  * [Geheugenmanagement: Stack en Heap](6_klassen_en_objecten/6_memorymanagement.md)
+  * [Labo-oefeningen](6_klassen_en_objecten/A_practica2.md)
+  
+H10: Referenties en objecten
+  * [Stack en Heap](6_klassen_en_objecten/6_memorymanagement.md)
   * [Objecten en methoden](6_klassen_en_objecten/6b_objectenenmethoden.md)
   * [Arrays van objecten](6_klassen_en_objecten/7_arraysvanobj.md)
   * [Foreach en var](7_arrays/3_foreach.md)
   * [Labo-oefeningen](6_klassen_en_objecten/A_practicaMem.md)
-* H10: Overerving
+* H11: Overerving
   * [Overerving intro](7_overerving/0_overerving_intro.MD)
   * [Virtual en override](7_overerving/1_virtual_override.md)
   * [Base keyword](7_overerving/2_base.md)
@@ -127,22 +128,22 @@
   * [System.Object](7_overerving/4_System_Object.md)
   * [Abstract](7_overerving/5_abstract.md)
   * [Labo-oefeningen](7_overerving/A_Practica.md)
-* H11: Compositie
+* H12: Compositie
   * [Compositie intro](8_compositie/0_compositie_intro.MD)
   * [Labo-oefeningen](8_compositie/A_Practica.md)
-* H12: Polymorfisme
+* H13: Polymorfisme
   * [Intro polymorfisme](11_polymorfisme/11_polymo_intro.MD)
   * [Labo-oefeningen](11_polymorfisme/A_Practica.md)
-* H13: Interfaces
+* H14: Interfaces
   * [Interface intro](9_interfaces/1_Interface_intro.MD) 
   * [Interfaces in de praktijk](9_interfaces/2_InterfacesInPraktijk.md)
   * [Labo-oefeningen](9_interfaces/A_practica.md)
-* H14: Generics
+* H15: Generics
   * [Generics methoden en types](10_generics/0_generics_intro.MD)
   * [Generic classes en constraints](10_generics/2_genericclasses_en_constraints.md)
   * [Collections](10_generics/8_Collections.md)
   * [Labo-oefeningen](10_generics/A_Practica.md)
-* H15: Is en As keyword
+* H16: Is en As keyword
   * [Is en As keywords](12_IsAs/1_IsAs.md)
   * [Polymorfisme en interfaces](12_IsAs/2_Polymorfisme_Interfaces.md)
   * [Objecten vergekijken: alles komt samen](12_IsAs/6_equals.md)
