@@ -155,7 +155,8 @@
   * [Conway game of life](A_DEEL1_AllInOne/5_conway.md)
 
 ## Semester 2
-
+* Oplossingen oefeningen
+  * [H8 - Klassen en objecten](6_klassen_en_objecten/opl_apractica.md)
 * All-In-Projecten
   * [Overzicht](A_DEEL2_AllInOne/0_Deel2_IntroductieAllInOne.md)
   * [OO Textbased Game](A_DEEL2_AllInOne/2_OOTextGame.md)
