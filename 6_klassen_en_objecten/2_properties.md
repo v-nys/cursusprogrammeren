@@ -24,7 +24,7 @@ Een ``SithLord`` heeft steeds een verborgen Sith Name en ook een hoeveelheid ene
 
 ```csharp
 SithLord Palpatine= new SithLord();
-Console.WriteLine(Palpatine.sithName);
+Console.WriteLine(Palpatine.sithName); //DIT ZAL DUS NIET WERKEN, daar sithName private is.
 ```
 
 We willen echter wel van buiten uit het energy-level van een sithLord kunnen instellen. Maar ook hier hetzelfde probleem: wat als we de energy-level op -1000 instellen? Terwijl energy nooit onder 0 mag gaan.
