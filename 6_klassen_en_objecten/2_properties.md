@@ -147,7 +147,7 @@ We kunnen de code binnen ``set`` (en ``get``) zo complex als we willen maken.
 ## Property variaties
 We zijn niet verplicht om zowel de ``get`` en de ``set`` code van een property te schrijven. 
 
-### Read-only property
+### Write-only property
 ```csharp
    public int Energy
     {
@@ -158,9 +158,9 @@ We zijn niet verplicht om zowel de ``get`` en de ``set`` code van een property t
         }
     }
 ```
-We kunnen dus enkel ``energy`` uitlezen, maar niet van buitenuit aanpassen.
+We kunnen dus enkel ``energy`` een waarde geven, maar niet van buitenuit aanpassen
 
-### Write-only property
+### Read-only property
 ```csharp
    public int Energy
     {
@@ -170,7 +170,7 @@ We kunnen dus enkel ``energy`` uitlezen, maar niet van buitenuit aanpassen.
         }
     }
 ```
-We kunnen dus enkel ``energy`` een waarde geven, maar niet van buitenuit uitlezen.
+We kunnen dus enkel ``energy`` van buitenuit uitlezen, maar niet aanpassen.
 
 ### Read-only property met private set
 Soms gebeurt het dat we van buitenuit enkel de gebruiker de property read-only willen maken. We willen echter intern (in de klasse zelf) nog steeds controleren dat er geen illegale waarden aan private datafields worden gegeven. Op dat moment definieren we een read-only property met een private setter:
