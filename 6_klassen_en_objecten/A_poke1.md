@@ -5,9 +5,9 @@ Nadruk van deze oefening is het juist gebruiken van properties. Bekijk de cheat 
 
 >Disclaimer: de informatie in deze tekst is een vereenvoudigde versie van de echte Pokémon-stats in de mate dat ik het allemaal een beetje kon begrijpen en juist interpreteren.
 
-## Hoe Pokémons werken
+## Hoe Pokémon werken
 
-Korte uitleg over Pokémons en hun interne werking: Iedere Pokémon wordt uniek gemaakt door z’n base-stats, deze zijn voor iedere Pokémon anders. Deze base-stats  (punt 3) zijn onveranderlijk en blijven dus doorheen het hele leven van een Pokémon dezelfde. Je kan de base-stats als het dna van een Pokémon beschouwen.
+Korte uitleg over Pokémon en hun interne werking: Iedere Pokémon wordt uniek gemaakt door z’n base-stats, deze zijn voor iedere Pokémon anders. Deze base-stats  (punt 3) zijn onveranderlijk en blijven dus doorheen het hele leven van een Pokémon dezelfde. Je kan de base-stats als het dna van een Pokémon beschouwen.
 
 De full-stats (punt 9) zijn echter de stats die de effectieve ‘krachten’ van een Pokémon bepalen in een gevecht. Deze stats worden berekend gebaseerd op de vaste base-stats en het huidige level van de Pokémon. Hoe hoger het level van de Pokémon, hoe hoger dus zijn full-stats. 
 
@@ -49,7 +49,7 @@ a.	Bv: Attack_Full wordt berekend als: ((Attack_Base*Level)/50)+5
 Maak een nieuwe console-applicatie genaamd "Pokémon Tester":
 
 1. voeg de Pokémon-klasse-bestand toe aan dit project. Verander de "namespace" van dit bestand naar de namespace van je nieuwe console-applicatie  (zie "Aanpassen van klasse" in [volgende uitleg](https://codevan1001nacht.wordpress.com/2013/11/06/werken-met-klassen-in-visual-studio/))
-2. Maak enkele Pokemons aan (objecten) en stel hun base stats in. 
+2. Maak enkele Pokémon aan (objecten) en stel hun base stats in. 
 3. Schrijf een applicatie die aan de gebruiker eerst de 6 base-stats vraagt. Vervolgens wordt de pokémon aangemaakt met die stats en worden de full-stats aan de gebruiker getoond
-4. Vraag nu aan de gebruiker tot welke level de pokémon moet gelevelled worden. Roep zoveel keer de LevelUp-methode aan van de Pokémon. (ofkan je dit via een parameter doorgeven aan LevelUp?!)
+4. Vraag nu aan de gebruiker tot welke level de pokémon moet gelevelled worden. Roep zoveel keer de LevelUp-methode aan van de Pokémon. (of kan je dit via een parameter doorgeven aan LevelUp?!)
 5. Toon terug de full-stats van de nu ge-levelde Pokémon
