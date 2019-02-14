@@ -26,3 +26,25 @@ TimeSpan dagenover = verj - DateTime.Now;
 Console.WriteLine($"Je verjaart over {dagenover.Days} dagen");
 ```
 
+# Oefeningen
+
+## RapportModule
+
+```csharp
+class Rapport
+{
+    public int Percentage {get;set;}
+    public void PrintGraad()
+    {
+        if(Percentage < 50)
+            Console.WriteLine("Niet geslaagd");
+        else if(Percentage < 68)
+            Console.WriteLine("Voldoende");
+        else if(Percentage < 68)
+            Console.WriteLine("Onderscheiding");
+        else if(Percentage < 68)
+            Console.WriteLine("Grote onderscheiding");
+        else Console.WriteLine("Grootste onderscheiding");
+    }
+}
+```
