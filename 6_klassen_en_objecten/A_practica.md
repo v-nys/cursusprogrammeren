@@ -1,60 +1,11 @@
 # Klassen objecten introductie
 
-## Sports
-
-Kies je favoriete sport of game (voor zij die enkel pc/console-sporten ). Maak een klasse aan die een speler uit deze sport kan voorstellen. Verzin een 4-tal private datavelden die deze spelers hebben, alsook 2 methoden die de speler moet kunnen uitvoeren. 
-
-Voorzie een methode ``StelIn`` die je toelaat om de private datafields in te stellen: 
-
-Voorzie ook minstens 1 "Naam" (string) dataveld.
-
-Bijvoorbeeld:
-
-* klasse Waterpolospeler
-* datavelden: 
-  * spelerNaam(string), 
-  * mutsnummer (int), 
-  * isDoelman (bool), 
-  * isReserve(bool), 
-  * reeks (string, bv "Cadet"). 
-
-Methoden: GooiBal, Watertrappen, StelIn
-
-De methode ``StelIn`` zou dan zou kunnen aangeroepen worden:
-```csharp
-speler1.StelIn("Tim",5,false, true,"tweedeklas");
-```
-
-Wanneer de methoden worden aangeroepen zal er een tekst (mbv console WriteLine in de methode) op het scherm verschijnen die bv zegt ``Ik (Jos) gooi de bal``. Waarbij de naam van de speler in kwestie uit het Naam dataveld wordt gebruikt om mee getoond te worden.
-
-Maak vervolgens een console-applicatie aan waarin je de werking van de klasse aantoont. Maar in de applicatie een aantal speler-objecten aan, vervolgens stel je (via code) hun datavelden in. Vervolgens roep je enkele methoden van de spelers aan en toon je via (ConsoleWriteLine) ook de datavelden van de individuele spelerobjecten.
-
-Toon maw aan dat je:
-
-* Een klasse kunt maken (in een aparte file!)
-* Instanties (objecten) van deze klasse kunt maken
-* Kunt werken met deze instanties (datavelden instellen én uitlezen, aanroepen van methoden)
-
-Vervolgens:
-Schrijf een methode genaamd:
-``static void SimuleerSpeler(Waterpolospeler testspeler)``
-
-(vervang Waterpolospeler door de klasse die je zelf hebt gemaakt)
-
-De SimuleerSpeler-methode zal beide methoden van je klasse telkens 3x aanroepen m.b.v. een for-loop in de methode (dus in mijn geval 3x GooiBal en 3xWatertrappen)
-
-Test je methode door 2 objecten aan te maken en telkens mee te geven als parameter.
-
-## Pro enums
-Kan je in voorgaande voorbeeld het dataveld ``reeks`` vervangen door een dataveld reeks dat een enum als datatype heeft?
 
 ## Alledaags
 
-Zoek een foto naar keuze (nieuws, privé, etc) waarop meer dan één element opstaat (dus geen pasfoto of foto van blauwe lucht zonder wolken). Tracht de nodige klassen te verzinnen (met enkele private datavelden en methoden)  en maak in een console-applicatie vervolgens objecten van deze klassen aan. Voeg de foto aan je solution-folder toe.
+Zoek een foto naar keuze (nieuws, privé, etc) waarop meer dan één element opstaat (dus geen pasfoto of foto van blauwe lucht zonder wolken). Tracht de nodige klassen te verzinnen en verzin misntens 1 auto-property en 1 methode per klasse.  Maak in een console-applicatie vervolgens objecten van deze klassen aan en test ze. Voeg de foto aan je solution-folder toe.
 
 Bijvoorbeeld: een foto van een betoging. Je zou minstens 3 klassen kunnen verzinnen (gebouw, politie, betoger). Van ieder van deze klassen maak je dan objecten aan zoals je ze op de foto ziet (uiteraard gaan we geen 30 betoger-instanties maken, enkele zijn genoeg, als voorbeeld).
-
-# Properties
 
 ## RapportModule
 
@@ -163,3 +114,59 @@ Programming Principles:   15
 Web Technology:           13
 Gemiddelde:               13.3
 ```
+
+
+
+## Sports
+
+### Sportspeler
+
+Kies je favoriete sport of game (voor zij die enkel pc/console-sporten ). Maak een klasse aan die een speler uit deze sport kan voorstellen. Verzin een 4-tal private datavelden die deze spelers hebben, alsook 2 methoden die de speler moet kunnen uitvoeren. 
+
+Voorzie een methode ``StelIn`` die je toelaat om de private datafields in te stellen: 
+
+Voorzie ook minstens 1 "Naam" (string) dataveld.
+
+Voorzie per data field ook telkens een full property. Waar nodig zorg je er voor dat er geen illegale waarden kunnen ingesteld worden (bv mutsnummer bij waterpolo gaat maar van 1 tot 13).
+
+Bijvoorbeeld:
+
+* klasse Waterpolospeler
+* datavelden:
+  * spelerNaam(string)
+  * mutsnummer (int)
+  * isDoelman (bool)
+  * isReserve(bool)
+  * reeks (string, bv "Cadet")
+
+Methoden: GooiBal, Watertrappen, StelIn
+
+De methode ``StelIn`` zou dan zou kunnen aangeroepen worden:
+```csharp
+speler1.StelIn("Tim",5,false, true,"tweedeklas");
+```
+
+Wanneer de methoden worden aangeroepen zal er een tekst (mbv console WriteLine in de methode) op het scherm verschijnen die bv zegt ``Ik (Jos) gooi de bal``. Waarbij de naam van de speler in kwestie uit het Naam dataveld wordt gebruikt om mee getoond te worden.
+
+Maak vervolgens een console-applicatie aan waarin je de werking van de klasse aantoont. Maar in de applicatie een aantal speler-objecten aan, vervolgens stel je hun properties in. Vervolgens roep je enkele methoden van de spelers aan en toon je via (ConsoleWriteLine) ook de properties van de individuele spelerobjecten.
+
+Toon maw aan dat je:
+
+* Een klasse kunt maken (in een aparte file!)
+* Instanties (objecten) van deze klasse kunt maken
+* Kunt werken met deze instanties (properties instellen én uitlezen, aanroepen van methoden)
+
+### Sport simulator
+
+Schrijf een methode genaamd:
+``static void SimuleerSpeler(Waterpolospeler testspeler)``
+
+(vervang Waterpolospeler door de klasse die je zelf hebt gemaakt)
+
+De SimuleerSpeler-methode zal beide methoden van je klasse telkens 3x aanroepen m.b.v. een for-loop in de methode (dus in mijn geval 3x GooiBal en 3xWatertrappen)
+
+Test je methode door 2 objecten aan te maken en telkens mee te geven als parameter.
+
+### Pro enums
+
+Kan je in voorgaande voorbeeld het dataveld ``reeks`` vervangen door een dataveld reeks dat een enum als datatype heeft?
