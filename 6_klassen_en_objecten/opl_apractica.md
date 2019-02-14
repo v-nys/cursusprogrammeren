@@ -48,3 +48,11 @@ class Rapport
     }
 }
 ```
+
+Gebruik/test:
+
+```csharp
+Rapport tim =new Rapport();
+tim.Percentage = 78;
+tim.PrintGraad();
+```
