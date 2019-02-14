@@ -41,9 +41,28 @@ Deze cursus bevat hier en daar enkele typo's. Die zijn er uiteraard bewust *kuch
 Ook een speciale dank aan de vele studenten die me geregeld feedback geven op zaken die beter, anders, grappiger kunnen. Zoals:
 
 * Dzialak Jan
-* Hattas Zeno
+
 
 Keep'm coming!
+
+# Ultra editors Hall of Fame
+
+Een apart hoofdstuk waarin ik enkele studenten uitdrukkelijk wil bedanken voor hun hardcore input in deze cursus, namelijk:
+
+* Hattas Zeno
+* Van Driel Kevin
+* Van Riel Lennert
+
+## Interesse om te helpen?
+
+Hoe moet je dit doen?
+
+1. Maak een github account
+2. [Fork de cursus naar je eigen account](https://github.com/timdams/csharpbook) : klik linksboven op fork.
+En volg de uitleg [hier](https://help.github.com/articles/fork-a-repo/) om in sync te blijven en een lokale copy te maken.
+3. Zorg ervoor dat je telkens in de nieuwste versie werkt zoals [hier](https://help.github.com/articles/syncing-a-fork ) uitgelegd staat.
+4. Aanpassen maar
+5. Telkens je een batch aanpassingen naar mij wilt sturen doe je dat met behulp van een **pull request**. Letterlijk: je vraag aan mij om jouw aanpassingen "binnen te trekken". Ik moet die dan controleren en (hopelijk) binnentrekken. [Hier zie je hoe je naar mij een pull request moet sturen](https://help.github.com/articles/creating-a-pull-request-from-a-fork/).
 
 ## Todo's
 
