@@ -3,19 +3,19 @@
 
 ## Alledaags
 
-Zoek een foto naar keuze (nieuws, privé, etc) waarop meer dan één element opstaat (dus geen pasfoto of foto van blauwe lucht zonder wolken). Tracht de nodige klassen te verzinnen en verzin misntens 1 auto-property en 1 methode per klasse.  Maak in een console-applicatie vervolgens objecten van deze klassen aan en test ze. Voeg de foto aan je solution-folder toe.
+Zoek een foto naar keuze (nieuws, privé, etc) waarop meer dan één element opstaat (dus geen pasfoto of foto van blauwe lucht zonder wolken). Tracht de nodige klassen te verzinnen en verzin minstens 1 auto-property en 1 methode per klasse.  Maak in een console-applicatie vervolgens objecten van deze klassen aan en test ze. Voeg de foto aan je solution-folder toe.
 
 Bijvoorbeeld: een foto van een betoging. Je zou minstens 3 klassen kunnen verzinnen (gebouw, politie, betoger). Van ieder van deze klassen maak je dan objecten aan zoals je ze op de foto ziet (uiteraard gaan we geen 30 betoger-instanties maken, enkele zijn genoeg, als voorbeeld).
 
 ## RapportModule
 
-Ontwerp een klasse Resultaat die je zal tonen wat je graad is gegeven een bepaalde behaald percentage. Het enige dat je aan een Resultaat-object moet kunnen geven is het behaalde percentage. Enkel het totaal behaalde % wordt bijgehouden via een auto-property. Via een methode PrintGraad kan de behaalde graad worden weergegeven. Dit zijn de mogelijkheden:
+Ontwerp een klasse Resultaat die je zal tonen wat je graad is gegeven een bepaald behaald percentage. Het enige dat je aan een Resultaat-object moet kunnen geven is het behaalde percentage. Enkel het totaal behaalde % wordt bijgehouden via een auto-property. Via een methode PrintGraad kan de behaalde graad worden weergegeven. Dit zijn de mogelijkheden:
 
 * < 50: niet geslaagd;
 * tussen 50 en 68: voldoende;
 * tussen 68 en 75: onderscheiding;
 * tussen 75 en 85: grote onderscheiding;
-* > 85: grootste onderscheiding.
+* \> 85: grootste onderscheiding.
 
 
 Test je klasse door enkele objecten in je main aan te maken en de verschillende properties waarden te geven en methoden aan te roepen.
@@ -27,7 +27,7 @@ Maak een eenvoudige klasse Nummers. Deze klasse bevat 2 getallen (type int) die 
 * ``Som``: geeft som van beide getallen weer
 * ``Verschil``: geeft verschil van beide getallen weer
 * ``Product``: geeft product van beide getallen weer
-* ``Quotient``: geeft deling van beide getallen door. Toon "Error" indien je zou moeten delen door 0.
+* ``Quotient``: geeft deling van beide getallen weer. Toon "Error" indien je zou moeten delen door 0.
 
 Toon in je main aan dat je code werkt.
 
@@ -69,7 +69,7 @@ Toon de werking van het project aan door een aantal instanties van Driehoek en R
 Maak een klasse Pizza. Deze klasse heeft een aantal private fields:
 
 * toppings (string): bevat beschrijving van wat er op ligt, bv. ananas, pepperoni, etc.
-* diameter (integer): doorsnede van de pizza in cm
+* diameter (integer): doorsnede van de pizza in cm.
 * price (double): prijs van de pizza in euro.
 
 Zorg ervoor dat je met behulp van properties deze 3 velden kan uitlezen en aanpassen. Bouw controle in zodat de fields geen foute waarden kunnen gegeven worden (denk maar aan negatieve prijs en diameter, pizza zonder topping, etc.). Maak in je main een aantal pizza-instanties aan en toon de werking van de properties aan.
@@ -84,6 +84,7 @@ Deze klasse heeft 6 properties:
 * PuntenCommunicatie (int)
 * PuntenProgrammingPrinciples (int)
 * PuntenWebTech (int)	 
+
 Daar deze fields allemaal public zijn kunnen we deze dus rechtstreeks veranderen.
 
 Voeg aan de klasse een methode ``BerekenTotaalCijfer`` toe. Wanneer deze methode wordt aangeroepen dan wordt het gemiddelde van de 3 punten  teruggegeven als double zodat dit op het scherm kan getoond worden.
@@ -146,9 +147,9 @@ De methode ``StelIn`` zou dan zou kunnen aangeroepen worden:
 speler1.StelIn("Tim",5,false, true,"tweedeklas");
 ```
 
-Wanneer de methoden worden aangeroepen zal er een tekst (mbv console WriteLine in de methode) op het scherm verschijnen die bv zegt ``Ik (Jos) gooi de bal``. Waarbij de naam van de speler in kwestie uit het Naam dataveld wordt gebruikt om mee getoond te worden.
+Wanneer de methoden worden aangeroepen zal er een tekst (mbv Console.WriteLine in de methode) op het scherm verschijnen die bv zegt ``Ik (Jos) gooi de bal``. Waarbij de naam van de speler in kwestie uit het Naam dataveld wordt gebruikt om mee getoond te worden.
 
-Maak vervolgens een console-applicatie aan waarin je de werking van de klasse aantoont. Maar in de applicatie een aantal speler-objecten aan, vervolgens stel je hun properties in. Vervolgens roep je enkele methoden van de spelers aan en toon je via (ConsoleWriteLine) ook de properties van de individuele spelerobjecten.
+Maak vervolgens een console-applicatie aan waarin je de werking van de klasse aantoont. Maar in de applicatie een aantal speler-objecten aan, vervolgens stel je hun properties in. Vervolgens roep je enkele methoden van de spelers aan en toon je via (Console.WriteLine) ook de properties van de individuele spelerobjecten.
 
 Toon maw aan dat je:
 
@@ -169,4 +170,4 @@ Test je methode door 2 objecten aan te maken en telkens mee te geven als paramet
 
 ### Pro enums
 
-Kan je in voorgaande voorbeeld het dataveld ``reeks`` vervangen door een dataveld reeks dat een enum als datatype heeft?
+Kan je in voorgaand voorbeeld het dataveld ``reeks`` vervangen door een dataveld reeks dat een enum als datatype heeft?
