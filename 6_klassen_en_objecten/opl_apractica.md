@@ -40,9 +40,9 @@ class Rapport
             Console.WriteLine("Niet geslaagd");
         else if(Percentage < 68)
             Console.WriteLine("Voldoende");
-        else if(Percentage < 68)
+        else if(Percentage < 75)
             Console.WriteLine("Onderscheiding");
-        else if(Percentage < 68)
+        else if(Percentage < 85)
             Console.WriteLine("Grote onderscheiding");
         else Console.WriteLine("Grootste onderscheiding");
     }
