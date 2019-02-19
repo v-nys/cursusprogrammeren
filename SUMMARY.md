@@ -72,7 +72,7 @@
 * Module 2 eindetest
   * [Opgave](7_arrays/b_allinonemodule2.md)
   * [Opgave vaardigheidsproef mod 2 1819](7_arrays/b_vaardigmod21819.md)
-  * [Bespreking vaardigheidsproef mod 1 1819](7_arrays/b_allinonemodule2errors.md)
+  * [Bespreking vaardigheidsproef mod 2 1819](7_arrays/b_allinonemodule2errors.md)
 
 ##  Semester 2 : OOP
 
@@ -85,9 +85,9 @@
   * [Labo-oefeningen](6_klassen_en_objecten/A_practica.md)
   * [De grote Pokemon oefening](6_klassen_en_objecten/A_poke1.md)
 * H9: Geheugenmanagement bij klassen
+  * [Objecten en methoden](6_klassen_en_objecten/6b_objectenenmethoden.md)
   * [Stack en Heap](6_klassen_en_objecten/6_memorymanagement.md)
   * [Null en NullReferenceException](6_klassen_en_objecten/nullreference.md)
-  * [Objecten en methoden](6_klassen_en_objecten/6b_objectenenmethoden.md)
   * [Labo-oefeningen](6_klassen_en_objecten/A_practicamethod.md)
 * H10: Advanced klassen en objecten
   * [Expression bodied members](6_klassen_en_objecten/6_exprbody.md)

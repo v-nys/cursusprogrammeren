@@ -427,3 +427,13 @@ Als je in Visual Studio in je code ``prop`` typt en vervolgens twee keer de tabt
 * De toegankelijkheid van get/set (public, private, protected)
 
 Via ``propg`` krijg je aan autoproperty met private setter.
+
+# Methode of property
+
+Een veel gestelde vraag bij beginnende OO-ontwikkelaars is: "Moet dit in een property of in een methode gestoken worden?"
+
+De regel is eenvoudig:
+* Betreft het een actie, iets dat het object moet doen (tekst tonen, iets berekenen, etc) dan plaats je het in een **methode**
+* Betreft het een eigenschap die een bepaalde waarde heeft, dan gebruik je een **property**
+
+[Hier een iets meer uitgebreid PRO antwoord](http://firebreaksice.com/csharp-property-vs-method-guidelines/)
