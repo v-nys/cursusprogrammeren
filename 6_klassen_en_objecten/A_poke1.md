@@ -51,12 +51,12 @@ De eigenschappen van de Pokémon die mee evolueren met het leven gaan we steeds 
 
 * Voeg een read-only HP_Full property (int) toe om de maximum health voor te stellen. Deze wordt berekend als volgt:  ``(( (HP_Base + 50 ) * Level ) / 50 ) + 10 `` (noot: dit is een benadering van hoe het bij "echte" Pokémon is ).
 
-* Voeg voor iedere base-stat een full-stat toe (int). Dus Defense_Full, Speed_Full, etc. Ook deze properties zijn readonly. Deze stats worden berekend als volgt: ``( (stat_Base*Level) / 50 ) + 5``. 
+* Voeg voor iedere base-stat een full-stat toe (int). Dus Defense_Full, Speed_Full, etc. Ook deze properties zijn readonly. Deze stats worden berekend als volgt: ``( (stat_Base*Level) / 50 ) + 5``.
 Attack_Full bijvoorbeeld wordt dus berekend als: ``((Attack_Base*Level)/50)+5``
 
 ### Maak enkele Pokémon
 
-Kies enkele Pokémon uit [deze lijst](http://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_base_stats_(Generation_VI-present) en maak in je Main enkele Pokémon-objecten aan met de juiste eigenschappen.
+Kies enkele Pokémon uit [deze lijst](https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_base_stats) en maak in je Main enkele Pokémon-objecten aan met de juiste eigenschappen.
 
 Opgelet: **Je dient dus enkel de base stats in te stellen. Alle andere zaken zijn op deze stats en het huidige level van de Pokémon gebaseerd**.
 
@@ -72,7 +72,8 @@ Maak een kleine loop die je toelaat om per loop een bepaalde Pokémon z’n leve
 
 ## Deel 2: De Pokémontester
 
-[vergelijk je oplossing uit het vorige deel [met volgende oplossing](/assets/6_klassen/Pokémon.cs) ]
+> vergelijk je oplossing uit het vorige deel [met volgende oplossing](/assets/6_klassen/Pokémon.cs).
+
 Maak een nieuwe console-applicatie genaamd "Pokémon Tester":
 
 1. Voeg de Pokémon-klasse-bestand toe aan dit project. Verander de "namespace" van dit bestand naar de namespace van je nieuwe console-applicatie  (zie "Aanpassen van klasse" in [volgende uitleg](https://codevan1001nacht.wordpress.com/2013/11/06/werken-met-klassen-in-visual-studio/))
