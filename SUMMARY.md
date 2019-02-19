@@ -83,12 +83,11 @@
   * [Methoden en access modifiers](6_klassen_en_objecten/0c_simpleobjects.md)
   * [Properties](6_klassen_en_objecten/2_properties.md)
   * [Labo-oefeningen](6_klassen_en_objecten/A_practica.md)
-  * [De grote Pokemon oefening](6_klassen_en_objecten/A_poke1.md)
 * H9: Geheugenmanagement bij klassen
   * [Objecten en methoden](6_klassen_en_objecten/6b_objectenenmethoden.md)
   * [Stack en Heap](6_klassen_en_objecten/6_memorymanagement.md)
   * [Null en NullReferenceException](6_klassen_en_objecten/nullreference.md)
-  * [Labo-oefeningen](6_klassen_en_objecten/A_practicamethod.md)
+  * [Labo-oefeningen](6_klassen_en_objecten/A_poke1.md)
 * H10: Advanced klassen en objecten
   * [Expression bodied members](6_klassen_en_objecten/6_exprbody.md)
   * [Constructors](6_klassen_en_objecten/1_constructors.md)
