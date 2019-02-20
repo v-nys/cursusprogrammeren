@@ -24,7 +24,7 @@ Een ``SithLord`` heeft steeds een verborgen Sith Name en ook een hoeveelheid ene
 
 ```csharp
 SithLord Palpatine= new SithLord();
-Console.WriteLine(Palpatine.sithName);
+Console.WriteLine(Palpatine.sithName); //DIT ZAL DUS NIET WERKEN, daar sithName private is.
 ```
 
 We willen echter wel van buiten uit het energy-level van een sithLord kunnen instellen. Maar ook hier hetzelfde probleem: wat als we de energy-level op -1000 instellen? Terwijl energy nooit onder 0 mag gaan.
@@ -147,7 +147,7 @@ We kunnen de code binnen ``set`` (en ``get``) zo complex als we willen maken.
 ## Property variaties
 We zijn niet verplicht om zowel de ``get`` en de ``set`` code van een property te schrijven. 
 
-### Read-only property
+### Write-only property
 ```csharp
    public int Energy
     {
@@ -158,9 +158,9 @@ We zijn niet verplicht om zowel de ``get`` en de ``set`` code van een property t
         }
     }
 ```
-We kunnen dus enkel ``energy`` uitlezen, maar niet van buitenuit aanpassen.
+We kunnen dus enkel ``energy`` een waarde geven, maar niet van buitenuit aanpassen
 
-### Write-only property
+### Read-only property
 ```csharp
    public int Energy
     {
@@ -170,7 +170,7 @@ We kunnen dus enkel ``energy`` uitlezen, maar niet van buitenuit aanpassen.
         }
     }
 ```
-We kunnen dus enkel ``energy`` een waarde geven, maar niet van buitenuit uitlezen.
+We kunnen dus enkel ``energy`` van buitenuit uitlezen, maar niet aanpassen.
 
 ### Read-only property met private set
 Soms gebeurt het dat we van buitenuit enkel de gebruiker de property read-only willen maken. We willen echter intern (in de klasse zelf) nog steeds controleren dat er geen illegale waarden aan private datafields worden gegeven. Op dat moment definieren we een read-only property met een private setter:
@@ -427,3 +427,13 @@ Als je in Visual Studio in je code ``prop`` typt en vervolgens twee keer de tabt
 * De toegankelijkheid van get/set (public, private, protected)
 
 Via ``propg`` krijg je aan autoproperty met private setter.
+
+# Methode of property
+
+Een veel gestelde vraag bij beginnende OO-ontwikkelaars is: "Moet dit in een property of in een methode gestoken worden?"
+
+De regel is eenvoudig:
+* Betreft het een actie, iets dat het object moet doen (tekst tonen, iets berekenen, etc) dan plaats je het in een **methode**
+* Betreft het een eigenschap die een bepaalde waarde heeft, dan gebruik je een **property**
+
+[Hier een iets meer uitgebreid PRO antwoord](http://firebreaksice.com/csharp-property-vs-method-guidelines/)

@@ -35,7 +35,7 @@ static void ToonMetingInKleur (Meting inmeting, ConsoleColor kleur)
 }
 ```
 
-## objecten in methoden aanpassen
+## Objecten in methoden aanpassen
 
 Je kan dus ook methoden schrijven die meegegeven objecten aanpassen daar we deze **by reference** doorsturen. Een voorbeeld:
 
@@ -48,7 +48,7 @@ static void ToonMetingEnVerhoog(Meting inmeting)
 }
 ```
 
-Als we deze methode als voglt aanroepen
+Als we deze methode als volgt aanroepen
 ```csharp
 Meting m1 = new Meting();
 m1.Temperatuur = 26; m1.OpgemetenDoor = "Elon Musk";

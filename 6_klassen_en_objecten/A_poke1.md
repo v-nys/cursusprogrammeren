@@ -7,7 +7,7 @@ Nadruk van deze oefening is het juist gebruiken van properties. Bekijk de cheat 
 
 ## Hoe Pokémon werken
 
-Korte uitleg over Pokémon en hun interne werking: Iedere Pokémon wordt uniek gemaakt door z’n base-stats, deze zijn voor iedere Pokémon anders. Deze base-stats  (punt 3) zijn onveranderlijk en blijven dus doorheen het hele leven van een Pokémon dezelfde. Je kan de base-stats als het DNA van een Pokémon beschouwen.
+Korte uitleg over Pokémon en hun interne werking: Iedere Pokémon wordt uniek gemaakt door z’n base-stats, deze zijn voor iedere Pokémon anders. Deze base-stats  (punt 3) zijn onveranderlijk en blijven dus doorheen het hele leven van een Pokémon dezelfde. Je kan de base-stats als het dna van een Pokémon beschouwen.
 
 De full-stats (punt 9) zijn echter de stats die de effectieve ‘krachten’ van een Pokémon bepalen in een gevecht. Deze stats worden berekend gebaseerd op de vaste base-stats en het huidige level van de Pokémon. Hoe hoger het level van de Pokémon, hoe hoger dus zijn full-stats. 
 
@@ -33,7 +33,7 @@ Voorts wordt een Pokémon ook gedefinieerd door z’n naam (string) ,type (strin
 
 ### Level
 
-Voeg een fullproperty Level toe (type int). Deze heeft een public get, maar een private setter.
+Voeg een fullproperty Level toe(type int). Deze heeft een public get, maar een private setter.
 
 Voeg een publieke methode "VerhoogLevel" toe. Deze methode zal , via de private setter van Level (zie vorig punt), de level van de Pokémon met 1 verhogen. Deze methode heeft géén parameters nodig en return niets.
 
@@ -60,13 +60,13 @@ Kies enkele Pokémon uit [deze lijst](https://bulbapedia.bulbagarden.net/wiki/Li
 
 Opgelet: **Je dient dus enkel de base stats in te stellen. Alle andere zaken zijn op deze stats en het huidige level van de Pokémon gebaseerd**.
 
-Toon aan dat de Average, Total , HP en andere stats correct berekend worden (controleer in de tabel op de voorgaande URL).
+Toon aan dat de Average, Total , HP en andere stats correct berekend worden (controleer in de tabel op de voorgaande url).
 
 #### Level-up tester
 
 Maak een kleine loop die je toelaat om per loop een bepaalde Pokémon z’n level met 1 te verhogen en vervolgens toon je dan z’n nieuwe stats.
 
-Test eens hoe de stats na bv. 100 levels evolueren. Je zal zien dat bepaalde stats pas na een paar keer levelen ook effectief beginnen stijgen.
+1Test eens hoe de stats na bv 100 levels evolueren. Je zal zien dat bepaalde stats pas na een paar keer levelen ook effectief beginnen stijgen.
 
 **Voeg extra functionaliteit naar keuze toe**
 
@@ -78,17 +78,17 @@ Maak een nieuwe console-applicatie genaamd "Pokémon Tester":
 
 1. Voeg de Pokémon-klasse-bestand toe aan dit project. Verander de "namespace" van dit bestand naar de namespace van je nieuwe console-applicatie  (zie "Aanpassen van klasse" in [volgende uitleg](https://codevan1001nacht.wordpress.com/2013/11/06/werken-met-klassen-in-visual-studio/))
 2. Maak enkele Pokémon objecten aan en stel hun base stats in.
-3. Schrijf een applicatie die aan de gebruiker eerst de 6 base-stats vraagt. Vervolgens wordt de Pokémon aangemaakt met die stats en worden de full-stats aan de gebruiker getoond.
+3. Schrijf een applicatie die aan de gebruiker eerst de 6 base-stats vraagt. Vervolgens wordt de Pokémon aangemaakt met die stats en worden de full-stats aan de gebruiker getoond
 4. Vraag nu aan de gebruiker tot welke level de Pokémon moet gelevelled worden. Roep zoveel keer de LevelUp-methode aan van de Pokémon. (of kan je dit via een parameter doorgeven aan LevelUp?!)
-5. Toon terug de full-stats van de nu ge-levelde Pokémon.
+5. Toon terug de full-stats van de nu ge-levelde Pokémon
 
 ### Deel 3: Pokémon-battler
 
 Maak een applicatie die een methode met volgende signatuur heeft:
 ``int Battle(Pokemon poke1, Pokemon poke2)``.
 
-De methode zal een getal teruggeven dat aangeeft welke van de twee pokémon een gevecht zou winnen. 1= poke1, 2=poke2, 0= gelijke stand.
+De methode zal een getal teruggeven dat aangeeft welke van de twee pokemons een gevecht zou winnen. 1= poke1, 2=poke2, 0= gelijke stand.
 
-Bepaald zelf hoe pokemons vechten (bv degene met de hoogste average van full-stats). Werk niet enkel met de base-stats, daar deze statisch zijn. Het is leuker dat het level ook een invloed heeft (maar ga niet gewoon het level vergelijken)
+Bepaal zelf hoe pokemons vechten (bv degene met de hoogste average van full-stats). Werk niet enkel met de base-stats, daar deze statisch zijn. Het is leuker dat het level ook een invloed heeft (maar ga niet gewoon het level vergelijken)
 
 Kan je een eenvoudige applicatie maken die de werking van je methode aantoont?

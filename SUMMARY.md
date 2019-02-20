@@ -72,7 +72,7 @@
 * Module 2 eindetest
   * [Opgave](7_arrays/b_allinonemodule2.md)
   * [Opgave vaardigheidsproef mod 2 1819](7_arrays/b_vaardigmod21819.md)
-  * [Bespreking vaardigheidsproef mod 1 1819](7_arrays/b_allinonemodule2errors.md)
+  * [Bespreking vaardigheidsproef mod 2 1819](7_arrays/b_allinonemodule2errors.md)
 
 ##  Semester 2 : OOP
 
@@ -83,12 +83,11 @@
   * [Methoden en access modifiers](6_klassen_en_objecten/0c_simpleobjects.md)
   * [Properties](6_klassen_en_objecten/2_properties.md)
   * [Labo-oefeningen](6_klassen_en_objecten/A_practica.md)
-  * [De grote Pokemon oefening](6_klassen_en_objecten/A_poke1.md)
 * H9: Geheugenmanagement bij klassen
+  * [Objecten en methoden](6_klassen_en_objecten/6b_objectenenmethoden.md)
   * [Stack en Heap](6_klassen_en_objecten/6_memorymanagement.md)
   * [Null en NullReferenceException](6_klassen_en_objecten/nullreference.md)
-  * [Objecten en methoden](6_klassen_en_objecten/6b_objectenenmethoden.md)
-  * [Labo-oefeningen](6_klassen_en_objecten/A_practicamethod.md)
+  * [Labo-oefeningen](6_klassen_en_objecten/A_poke1.md)
 * H10: Advanced klassen en objecten
   * [Expression bodied members](6_klassen_en_objecten/6_exprbody.md)
   * [Constructors](6_klassen_en_objecten/1_constructors.md)
@@ -155,7 +154,8 @@
   * [Conway game of life](A_DEEL1_AllInOne/5_conway.md)
 
 ## Semester 2
-
+* Oplossingen oefeningen
+  * [H8 - Klassen en objecten](6_klassen_en_objecten/opl_apractica.md)
 * All-In-Projecten
   * [Overzicht](A_DEEL2_AllInOne/0_Deel2_IntroductieAllInOne.md)
   * [OO Textbased Game](A_DEEL2_AllInOne/2_OOTextGame.md)
