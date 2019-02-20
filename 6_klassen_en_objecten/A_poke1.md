@@ -74,9 +74,22 @@ Maak een kleine loop die je toelaat om per loop een bepaalde Pokémon z’n leve
 
 > vergelijk je oplossing uit het vorige deel [met volgende oplossing](/assets/6_klassen/Pokemon.cs).
 
-Maak een nieuwe console-applicatie genaamd "Pokémon Tester":
+Het is een heel gedoe om telkens manueel de informatie van een Pokémon op het scherm te outputen. Voeg een methode ``public void ShowInfo()`` toe aan je Pokemon klasse. Deze methode zal alle relevante informatie (alle properties!) in een mooie vorm op het scherm tonen, bv:
 
-1. Voeg de Pokémon-klasse-bestand toe aan dit project. Verander de "namespace" van dit bestand naar de namespace van je nieuwe console-applicatie  (zie "Aanpassen van klasse" in [volgende uitleg](https://codevan1001nacht.wordpress.com/2013/11/06/werken-met-klassen-in-visual-studio/))
+```text
+Pikachu (level 5)
+Base stats:
+    * Health = 56
+    * Speed = 30
+    etc
+Full stats:
+    * Health = 100
+    etc.
+```
+
+Maak nu een nieuwe console-applicatie genaamd "Pokémon Tester":
+
+1. Voeg je Pokemon-klasse-bestand toe aan dit project. Verander de "namespace" van dit bestand naar de namespace van je nieuwe console-applicatie  (zie "Aanpassen van klasse" in [volgende uitleg](https://codevan1001nacht.wordpress.com/2013/11/06/werken-met-klassen-in-visual-studio/))
 2. Maak enkele Pokémon objecten aan en stel hun base stats in.
 3. Schrijf een applicatie die aan de gebruiker eerst de 6 base-stats vraagt. Vervolgens wordt de Pokémon aangemaakt met die stats en worden de full-stats aan de gebruiker getoond
 4. Vraag nu aan de gebruiker tot welke level de Pokémon moet gelevelled worden. Roep zoveel keer de LevelUp-methode aan van de Pokémon. (of kan je dit via een parameter doorgeven aan LevelUp?!)
@@ -84,11 +97,20 @@ Maak een nieuwe console-applicatie genaamd "Pokémon Tester":
 
 ### Deel 3: Pokémon-battler
 
-Maak een applicatie die een methode met volgende signatuur heeft:
-``int Battle(Pokemon poke1, Pokemon poke2)``.
+#### Pokémon generator
 
-De methode zal een getal teruggeven dat aangeeft welke van de twee pokemons een gevecht zou winnen. 1= poke1, 2=poke2, 0= gelijke stand.
+Maak een methode met volgende signatuur: ``static Pokemon GeneratorPokemon()``
+Deze methode zal telkens een Pokémon aanmaken met willekeurige base-stats. Bepaal zelf hoe je dit gaat doet.
 
-Bepaal zelf hoe pokemons vechten (bv degene met de hoogste average van full-stats). Werk niet enkel met de base-stats, daar deze statisch zijn. Het is leuker dat het level ook een invloed heeft (maar ga niet gewoon het level vergelijken)
+#### Battle tester
 
-Kan je een eenvoudige applicatie maken die de werking van je methode aantoont?
+Voeg een methode met volgende signatuur toe aan je hoofdprogramma:
+``static int Battle(Pokemon poke1, Pokemon poke2)``.
+
+De methode zal een getal teruggeven dat aangeeft welke van de twee Pokémons een gevecht zou winnen. 1= poke1, 2 = poke2, 0 = gelijke stand.
+
+Bepaal zelf hoe Pokémons vechten (bv degene met de hoogste average van full-stats). Werk niet enkel met de base-stats, daar deze constant zijn. Het is leuker dat het level ook een invloed heeft (maar ga niet gewoon het level vergelijken)
+
+#### Alles samen
+
+Genereer 2 willekeurige Pokémons met je generator en laat ze vechten met je battle-methode. Toon wat output aan de gebruiker zodat hij ziet wat er allemaal gebeurt (en gebruik zeker de ``ShowInfo`` methode om dit snel te doen). Kan je dit in een loop zetten en wat leuker maken met Pokémons die telkens levelen als ze een gevecht winnen?!
