@@ -1,6 +1,5 @@
 # Klassen objecten introductie
 
-
 ## Alledaags
 
 Zoek een foto naar keuze (nieuws, privé, etc) waarop meer dan één element opstaat (dus geen pasfoto of foto van blauwe lucht zonder wolken). Tracht de nodige klassen te verzinnen en verzin minstens 1 auto-property en 1 methode per klasse.  Maak in een console-applicatie vervolgens objecten van deze klassen aan en test ze. Voeg de foto aan je solution-folder toe.
@@ -75,6 +74,7 @@ Maak een klasse Pizza. Deze klasse heeft een aantal private fields:
 Zorg ervoor dat je met behulp van properties deze 3 velden kan uitlezen en aanpassen. Bouw controle in zodat de fields geen foute waarden kunnen gegeven worden (denk maar aan negatieve prijs en diameter, pizza zonder topping, etc.). Maak in je main een aantal pizza-instanties aan en toon de werking van de properties aan.
 
 ## Studentklasse
+
 Maak een nieuwe klasse ``Student``.
 Deze klasse heeft 6 properties:
 
@@ -83,17 +83,16 @@ Deze klasse heeft 6 properties:
 * Klas (maak dit van een ``enum``)
 * PuntenCommunicatie (int)
 * PuntenProgrammingPrinciples (int)
-* PuntenWebTech (int)	 
-
-Daar deze fields allemaal public zijn kunnen we deze dus rechtstreeks veranderen.
+* PuntenWebTech (int)
 
 Voeg aan de klasse een methode ``BerekenTotaalCijfer`` toe. Wanneer deze methode wordt aangeroepen dan wordt het gemiddelde van de 3 punten  teruggegeven als double zodat dit op het scherm kan getoond worden.
 
 Voeg aan de klasse  ook de methode ``GeefOverzicht`` toe. Deze methode zal een volledig "Rapport" van de student tonen (inclusief het gemiddelde m.b.v. de BerekenTotaalCijfer-methode).
 
 Test je programma door enkele studenten aan te maken en in te stellen. Volgende main zou dan de bijhorende output moeten krijgen:
+
 ```csharp
-    Student student1;
+    Student student1= new Student();
     student1.Klas = Klassen.EA2;
     student1.Leeftijd = 21;
     student1.Naam = "Joske Vermeulen";
@@ -103,8 +102,10 @@ Test je programma door enkele studenten aan te maken en in te stellen. Volgende 
 
     student1.GeefOverzicht();
 ```
+
 Output:
-```csharp
+
+```text
 Joske Vermeulen, 21 jaar
 Klas: EA2
 
@@ -116,15 +117,13 @@ Web Technology:           13
 Gemiddelde:               13.3
 ```
 
-
-
 ## Sports
 
 ### Sportspeler
 
 Kies je favoriete sport of game (voor zij die enkel pc/console-sporten ). Maak een klasse aan die een speler uit deze sport kan voorstellen. Verzin een 4-tal private datavelden die deze spelers hebben, alsook 2 methoden die de speler moet kunnen uitvoeren. 
 
-Voorzie een methode ``StelIn`` die je toelaat om de private datafields in te stellen: 
+Voorzie een methode ``StelIn`` die je toelaat om de private datafields in te stellen:
 
 Voorzie ook minstens 1 "Naam" (string) dataveld.
 
@@ -143,8 +142,9 @@ Bijvoorbeeld:
 Methoden: GooiBal, Watertrappen, StelIn
 
 De methode ``StelIn`` zou dan zou kunnen aangeroepen worden:
+
 ```csharp
-speler1.StelIn("Tim",5,false, true,"tweedeklas");
+speler1.StelIn("Tim", 5, false, true, "tweedeklas");
 ```
 
 Wanneer de methoden worden aangeroepen zal er een tekst (mbv Console.WriteLine in de methode) op het scherm verschijnen die bv zegt ``Ik (Jos) gooi de bal``. Waarbij de naam van de speler in kwestie uit het Naam dataveld wordt gebruikt om mee getoond te worden.

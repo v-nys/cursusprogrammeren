@@ -1,4 +1,4 @@
-# DateTime 
+# DateTime
 
 ## Klokje
 
@@ -55,4 +55,93 @@ Gebruik/test:
 Rapport tim =new Rapport();
 tim.Percentage = 78;
 tim.PrintGraad();
+```
+
+## Nummers
+
+```csharp
+class Nummers
+{
+    public int Getal1 { get; set; }
+    public int Getal2 { get; set; }
+
+    public int Som() { return Getal1 + Getal2; }
+    public int Verschil() { return Getal1 - Getal2; }
+    public int Product() { return Getal1 * Getal2; }
+
+    public double Quotient()
+    {
+        if(Getal2==0)
+        {
+            Console.WriteLine("Error");
+            return 0;
+        }
+        return Getal1 / Getal2;
+    }
+}
+```
+
+## Figure
+
+```csharp
+class Rechthoek
+{
+    private int lengte = 1;
+
+    public int Lengte
+    {
+        get { return lengte; }
+        set { if (value >= 1) lengte = value; }
+    }
+
+    private int breedte = 1;
+
+    public int Breedte
+    {
+        get { return breedte = 1; }
+        set { breedte = value; }
+    }
+
+    public void ToonOppervlakte()
+    {
+        Console.WriteLine($"Oppervlakte is= {Lengte*Breedte}"  );
+    }
+}
+```
+
+Driehoek is quasi zelfde, met uiteraard een andere berekening van de oppervlakte.
+
+## Studentklasse
+
+```csharp
+enum Klassen { EA1, EA2, EA3}
+
+class Student
+{
+    public string Naam { get; set; }
+    public int Leeftijd { get; set; }
+    public Klassen Klas { get; set; }
+
+    public int PuntenCommunicatie { get; set; }
+    public int PuntenProgrammingPrinciples { get; set; }
+    public int PuntenWebTech { get; set; }
+
+    public double BerekenTotaalCijfer()
+    {
+        return (PuntenCommunicatie + PuntenProgrammingPrinciples + PuntenWebTech) / 3.0;
+    }
+
+    public void GeefOverzicht()
+    {
+        Console.WriteLine($"{Naam}, {Leeftijd} jaar");
+        Console.WriteLine($"Klas: {Klas}");
+        Console.WriteLine();
+        Console.WriteLine("Cijferrapport");
+        Console.WriteLine("*************");
+        Console.WriteLine($"Communicatie:\t\t{PuntenCommunicatie}");
+        Console.WriteLine($"Programming Principles:\t{PuntenProgrammingPrinciples}");
+        Console.WriteLine($"Web Technology:\t\t{PuntenWebTech}");
+        Console.WriteLine($"Gemiddelde:\t\t{BerekenTotaalCijfer():0.0}");
+    }
+}
 ```
