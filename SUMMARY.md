@@ -153,7 +153,7 @@
   * [Conway game of life](A_DEEL1_AllInOne/5_conway.md)
 
 ## Semester 2
-* [Nice to know stuff]
+* Nice to know stuff
   * [Operator overloading](6_klassen_en_objecten/8_operatoroverloading.md)
 * Oplossingen oefeningen
   * [H8 - Klassen en objecten](6_klassen_en_objecten/opl_apractica.md)
