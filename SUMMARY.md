@@ -92,7 +92,6 @@
   * [Expression bodied members](6_klassen_en_objecten/6_exprbody.md)
   * [Constructors](6_klassen_en_objecten/1_constructors.md)
   * [Static](6_klassen_en_objecten/5_static.md)
-  * [Operator overloading](6_klassen_en_objecten/8_operatoroverloading.md)
   * [Labo-oefeningen](6_klassen_en_objecten/A_practica3.md)
 * H11: Arrays en klassen
   * [Arrays van objecten](6_klassen_en_objecten/7_arraysvanobj.md)
@@ -130,7 +129,7 @@
 ## Appendix
 
 * [Ea-ict coding guidelines](B_appendix/codingguidelines.md)
-
+* [Oefeningen kerkhof](B_appendix/graveyard.md)
 ### Semester 1
 
 * [Nice to know stuff](B_appendix/prostuff.md)
@@ -154,6 +153,8 @@
   * [Conway game of life](A_DEEL1_AllInOne/5_conway.md)
 
 ## Semester 2
+* [Nice to know stuff]
+  * [Operator overloading](6_klassen_en_objecten/8_operatoroverloading.md)
 * Oplossingen oefeningen
   * [H8 - Klassen en objecten](6_klassen_en_objecten/opl_apractica.md)
 * All-In-Projecten
