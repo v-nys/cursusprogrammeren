@@ -89,6 +89,6 @@ Maak een applicatie die een methode met volgende signatuur heeft:
 
 De methode zal een getal teruggeven dat aangeeft welke van de twee pokemons een gevecht zou winnen. 1= poke1, 2=poke2, 0= gelijke stand.
 
-Bepaald zelf hoe pokemons vechten (bv degene met de hoogste average van full-stats). Werk niet enkel met de base-stats, daar deze statisch zijn. Het is leuker dat het level ook een invloed heeft (maar ga niet gewoon het level vergelijken)
+Bepaal zelf hoe pokemons vechten (bv degene met de hoogste average van full-stats). Werk niet enkel met de base-stats, daar deze statisch zijn. Het is leuker dat het level ook een invloed heeft (maar ga niet gewoon het level vergelijken)
 
 Kan je een eenvoudige applicatie maken die de werking van je methode aantoont?
