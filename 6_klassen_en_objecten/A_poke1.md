@@ -99,12 +99,13 @@ Maak nu een nieuwe console-applicatie genaamd "Pokémon Tester":
 
 #### Pokémon generator
 
-Maak een methode met volgende signatuur: ``static Pokemon GeneratorPokemon()``
-Deze methode zal telkens een Pokémon aanmaken met willekeurige base-stats. Bepaal zelf hoe je dit gaat doet.
+Maak een methode met volgende signatuur: ``static Pokemon GeneratorPokemon()``. Plaats deze methode niét in je Pokémon-klasse, maar in  Program.cs.
+
+Deze methode zal telkens een Pokémon aanmaken met willekeurige base-stats. Bepaal zelf hoe je dit gaat doen.
 
 #### Battle tester
 
-Voeg een methode met volgende signatuur toe aan je hoofdprogramma:
+Voeg een methode met volgende signatuur toe aan je hoofdprogramma (dus ook weer in Program.cs):
 ``static int Battle(Pokemon poke1, Pokemon poke2)``.
 
 De methode zal een getal teruggeven dat aangeeft welke van de twee Pokémons een gevecht zou winnen. 1= poke1, 2 = poke2, 0 = gelijke stand.

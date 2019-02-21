@@ -130,7 +130,8 @@
 
 * [Ea-ict coding guidelines](B_appendix/codingguidelines.md)
 * [Oefeningen kerkhof](B_appendix/graveyard.md)
-### Semester 1
+
+## Semester 1
 
 * [Nice to know stuff](B_appendix/prostuff.md)
    * [Out en Ref parameters](6_methoden/2_outenref.md)
