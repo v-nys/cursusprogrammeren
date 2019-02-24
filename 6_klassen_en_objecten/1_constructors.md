@@ -8,6 +8,7 @@ Student FrankVermeulen = new Student();
 ```
 
  De ``new`` operator doet 2 dingen:
+ 
 * Het maakt een object aan in het geheugen
 * Het roept de **operator** van het object aan voor eventuele extra initialisatie
 
@@ -184,7 +185,7 @@ class Student
 
 ```
 
-## Object initializer syntax
+# Object initializer syntax
 
 Uit voorgaande merk je dat je moet opletten dat je niet tientallen overloaded constructor schrijft voor iedere combinatie van parameters die je mogelijk nodig hebt. Meestal beperken we het tot de default constructor en 1 of 2 heel veel gebruikte overloaded constructor.
 
@@ -215,8 +216,8 @@ Enkele opmerkingen hierbij:
 
 ```csharp
 TemperatuurMeting eenMeting = new TemperatuurMeting();
-eenMeting.Temperatuur= 3.4;
-eenMeting.IsGeconfirmeerd=true;
+eenMeting.Temperatuur = 3.4;
+eenMeting.IsGeconfirmeerd = true;
 ```
 
 * Je hoeft niet alle (publieke) properties via deze syntax in te stellen, enkel de zaken die je wilt meegeven.
