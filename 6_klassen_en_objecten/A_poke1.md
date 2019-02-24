@@ -95,15 +95,15 @@ Maak nu een nieuwe console-applicatie genaamd "Pokémon Tester":
 4. Vraag nu aan de gebruiker tot welke level de Pokémon moet gelevelled worden. Roep zoveel keer de LevelUp-methode aan van de Pokémon. (of kan je dit via een parameter doorgeven aan LevelUp?!)
 5. Toon terug de full-stats van de nu ge-levelde Pokémon
 
-### Deel 3: Pokémon-battler
+## Deel 3: Pokémon-battler
 
-#### Pokémon generator
+### Pokémon generator
 
 Maak een methode met volgende signatuur: ``static Pokemon GeneratorPokemon()``. Plaats deze methode niét in je Pokémon-klasse, maar in  Program.cs.
 
 Deze methode zal telkens een Pokémon aanmaken met willekeurige base-stats. Bepaal zelf hoe je dit gaat doen.
 
-#### Battle tester
+### Battle tester
 
 Voeg een methode met volgende signatuur toe aan je hoofdprogramma (dus ook weer in Program.cs):
 ``static int Battle(Pokemon poke1, Pokemon poke2)``.
@@ -114,6 +114,6 @@ Controleer steeds of 1 of beide van de meegegeven Pokémons niet ``null`` zijn. 
 
 Bepaal zelf hoe Pokémons vechten (bv degene met de hoogste average van full-stats). Werk niet enkel met de base-stats, daar deze constant zijn. Het is leuker dat het level ook een invloed heeft (maar ga niet gewoon het level vergelijken)
 
-#### Alles samen
+### Alles samen
 
 Genereer 2 willekeurige Pokémons met je generator en laat ze vechten met je battle-methode. Toon wat output aan de gebruiker zodat hij ziet wat er allemaal gebeurt (en gebruik zeker de ``ShowInfo`` methode om dit snel te doen). Kan je dit in een loop zetten en wat leuker maken met Pokémons die telkens levelen als ze een gevecht winnen?!

@@ -5,10 +5,12 @@ Objecten die je aanmaakt komen niet zomaar tot leven. Nieuwe objecten maken we a
 
 ```csharp
 Student FrankVermeulen = new Student();
+
+private int leeftijd= 35;
 ```
 
  De ``new`` operator doet 2 dingen:
- 
+
 * Het maakt een object aan in het geheugen
 * Het roept de **operator** van het object aan voor eventuele extra initialisatie
 
