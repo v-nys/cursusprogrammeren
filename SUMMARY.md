@@ -89,7 +89,6 @@
   * [Null en NullReferenceException](6_klassen_en_objecten/nullreference.md)
   * [Labo-oefeningen](6_klassen_en_objecten/A_poke1.md)
 * H10: Advanced klassen en objecten
-  * [Expression bodied members](6_klassen_en_objecten/6_exprbody.md)
   * [Constructors](6_klassen_en_objecten/1_constructors.md)
   * [Static](6_klassen_en_objecten/5_static.md)
   * [Labo-oefeningen](6_klassen_en_objecten/A_practica3.md)
@@ -156,6 +155,7 @@
 ## Semester 2
 * Nice to know stuff
   * [Operator overloading](6_klassen_en_objecten/8_operatoroverloading.md)
+  * [Expression bodied members](6_klassen_en_objecten/6_exprbody.md)
 * Oplossingen oefeningen
   * [H8 - Klassen en objecten](6_klassen_en_objecten/opl_apractica.md)
 * All-In-Projecten
