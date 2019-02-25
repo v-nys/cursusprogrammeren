@@ -218,3 +218,120 @@ Zoals je ziet is de ``Main`` methode als ``static`` gedefinieerd. Willen we dus 
 
 Uiteraard ka je wel niet-static zake gebruiken en daarom kan je dus gewone objecten etc in je static methoden aanmaken.
 
+# Een use-case met static
+
+Beeld je in dat je (weer) een pong-variant moet maken waarbij meerdere balletjes over het scherm moeten botsen. Je wilt echter niet dat de balletjes zelf allemaal apart moeten weten wat de grenzen van het scherm zijn. Mogelijk wil bijvoorbeeld dat je code ook werkt als het speelveld kleiner is dan het eigenlijke Console-scherm.
+
+We gaan dit oplossen met een static property waarin we de grenzen voor alle balletjes bijhouden. Onze basis-klasse wordt dan al vast:
+
+```csharp
+class Mover
+{
+    static public int Width { get; set; }
+    static public int Height { get; set; }
+
+    public void Update()
+    {
+        //Soon
+    }
+
+    public void Draw()
+    {
+        //Soon
+    }
+}
+```
+
+Elders kunnen we nu dit doen:
+
+```csharp
+Mover.Height = Console.WindowHeight;
+Mover.Width = Console.WindowWidth;
+
+Mover m1 = new Mover();
+Mover m2= new Mover();
+```
+
+Maar dat hoeft dus niet, even goed maken we de grenzen voor alle balletjes kleiner:
+
+```csharp
+Mover.Height = 20;
+Mover.Width = 10;
+
+Mover m1 = new Mover();
+Mover m2= new Mover();
+```
+
+De interne werking van de balletjes hoeft dus geen rekening meer te houden met de grenzen van het scherm.
+De klasse ``Mover`` bereiden we nu uit naar de standaard "beweeg" en "teken jezelf" code:
+
+```csharp
+class Mover
+{
+    public Mover(int xi, int yi, int dxi, int dyi)
+    {
+        x = xi;
+        y = yi;
+        dx = dxi;
+        dy = dyi;
+    }
+
+    static public int Width { get; set; }
+    static public int Height { get; set; }
+
+    private int dx=1;
+    private int dy=0;
+    private int x=0;
+    private int y=0;
+
+    public void Update()
+    {
+        x += dx;
+        if(x>=Mover.Width|| x<0)  //hier gebruiken we de static Width
+        {
+            dx *= -1;
+            x += dx;
+        }
+
+        y += dy;
+        if (y >= Mover.Height || y<0)
+        {
+            dy *= -1;
+            y += dy;
+        }
+    }
+
+    public void Draw()
+    {
+        Console.SetCursorPosition(x, y);
+        Console.Write("O");
+    }
+}
+```
+
+En nu kunnen we vlot balletjes laten rondbewegen op het scherm:
+
+```csharp
+static void Main(string[] args)
+{
+    Console.CursorVisible = false; //handig dit hoor
+    Mover.Height = Console.WindowHeight;
+    Mover.Width = Console.WindowWidth;
+
+    Mover m1 = new Mover(1,1,1,1);
+    Mover m2 = new Mover(6,7,-2,1);
+    
+    while (true)
+    {
+        m1.Update();
+        m1.Draw();
+
+        m2.Update();
+        m2.Draw();
+
+      
+        System.Threading.Thread.Sleep(50);
+        Console.Clear();
+    }
+}
+```
