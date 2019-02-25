@@ -335,3 +335,13 @@ static void Main(string[] args)
     }
 }
 ```
+
+Stel dat we nu elke seconden het speelveld met 1 willen vergroten, dan hoeven we hiervoor enkel een extra variabele ``int count==0`` voor de loop te zetten en dan in de loop het volgende te doen:
+
+```csharp
+ if(count%20==0) //iedere seconde (daar we telkens 50ms slapen (1seconde =1000 ms => 1000ms/50ms == 20))
+{
+    Bal.Width++;
+    Bal.Height++;
+}
+```
