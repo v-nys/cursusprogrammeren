@@ -57,3 +57,7 @@ Voorzie 2 constructors:
 * Overloaded constructor: waarbij je de 3 velden (behalve TotalFee) kan aanpassen tijdens de constructie van een Job-object
 
 Toon de werking van je klasse aan door enkele objecten aan te maken met zowel de default als de overloaded constructor. Toon vervolgens dat TotalFee correct werkt.
+
+# Werken met string en csv
+
+Opgelet! Er is geen aparte oefening waar wordt gewerkt rond string en het verwerken van csv-bestanden. Zorg dat je dit beheerst door bijvoorbeeld zelf een oefening uit te werken waairn je een csv-betand verwerkt!
