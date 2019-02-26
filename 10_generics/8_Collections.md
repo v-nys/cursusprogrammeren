@@ -1,3 +1,7 @@
+#TODO
+
+Aantonen met klassen
+
 # Collections
 ## Nadelen van arrays
 We hebben al eerder gezien hoe we arrays kunnen gebruiken om gegevens van hetzelfde type in één datastructuur voor te stellen. Hoewel arrays handig zijn, hebben ze ook een aantal nadelen:
@@ -68,8 +72,9 @@ Een List collectie is de meest standaard collectie die je kan beschouwen als een
 
 ```csharp
 List<String> myStringList = new List<String>();
-``` 
 myStringList.Add("This is the first item in my list!");
+``` 
+
 Het leuke van een List is dat je deze ook kan gebruiken als een gewone array, waarbij je mbv de indexer elementen kan aanroepen. Stel bijvoorbeeld dat we een lijst hebben met minstens 4 strings in. Volgende code toont hoe we de string op positie 3 kunnen uitlezen en hoe we die op positie 2 overschrijven:
 
 ```csharp
@@ -85,7 +90,7 @@ Interessante methoden en properties voorts zijn:
 myStringList.Insert(3,”A fourth sentence”); 
 ```
 voegt de string toe op de verde (3+1) plek.
- * ``Contain(T item)``: geef als parameter een specifiek object mee (van het type dat de List<> bevat) om te weten te komen of dat specifieke object in de List<> terug te vinden is. Indien ja dan zal true worden teruggeven.
+* ``Contains(T item)``: geef als parameter een specifiek object mee (van het type dat de List<> bevat) om te weten te komen of dat specifieke object in de List<> terug te vinden is. Indien ja dan zal true worden teruggeven.
 * ``IndexOf(T item)``: geeft de index terug van het element item in de rij. Indien deze niet in de lijst aanwezig is dan wordt 0 teruggegeven.
 
 ### Foreach loops

@@ -35,10 +35,10 @@ Een getal is een *narcistisch getal* of *armstronggetal* als het de som is van z
 * 154 is geen  Armstrong nummer, want: 154 != 1^3 + 5^3 + 4^3 = 1 + 125 + 64 = 190
 Schrijf een programma dat aan de gebruiker een getal vraagt en vervolgens toont of het ingevoerde getal een Armstrong-nummer is of niet.
 
-
 > Je zou deze oefening kunnen oplossen door het ingevoerde getal als string op te splitsen in individuele char's. Maar ik raad je aan om de "wiskunde" weg te volgen zodat je terdege leert met loops te wiskunde.*
 
 Tip 1: Stel dat je het getal 4560 hebt:
+
 * Eerst deel je 4563 door 1000. Dit geeft **4**. 
 * We trekken 4x1000 van 4563 af. Dit geeft 563.
 * Deel 563 door 100. Dit geeft **5**.
@@ -48,6 +48,7 @@ Tip 1: Stel dat je het getal 4560 hebt:
 
 Tip 2:
 Je kan aan een string vragen hoe groot deze is als volgt:
+
 ```csharp
 int lengte= myInputGetal.Length;  //veronderstellend dat myInputGetal van het type string is
 ```

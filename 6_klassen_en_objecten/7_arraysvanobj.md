@@ -46,3 +46,40 @@ Merk op dat het eerste vraagteken controleer of de array niet ``null``is. Het tw
 # Arrays als parameters en return
 
 Ook arrays mag je als parameters en returntype gebruiken in methoden. De werking hiervan is identiek aan die van value-types.
+
+# CSV uitlezen naar klasse
+
+We herbekijken het voorbeeld van de csv-parser uit het [vorige hoofdstuk over strings splitsen en csv-bestanden](6_klassen_en_objecten/strings.md)
+
+We maken nu een klasse Speler:
+
+```csharp
+class Speler
+{
+    public string Voornaam { get;set;}
+    public string Achternaam { get;set;}
+    public int GebJaar { get;set;}
+}
+
+We herschrijven dan het parsen naar:
+
+```csharp
+string[] lines = File.ReadAllLines(@"c:\soccerstars.csv");
+Speler[] spelers= new Speler[lines.Length];
+
+for (int i = 0; i < lines.Length; i++)
+{
+    string[] splitted = lines[i].Split(';');
+
+    Speler temp=new Speler();
+    temp.Voornaam= splitted[1];
+    temp.Achternaam= splitted[0];
+    temp.GebJaar= splitted[2]:
+
+    spelers[i]= temp;
+}
+```
+
+## (PRO) CSVHelper 
+
+De opensource bibliotheek ``csvhelper`` is een nuttige toevoeging om vorige zaken een deel te automatiseren. Je kan deze eenvoudig als een ``nuget`` installeren. Alle uitleg en werking vind je op de website: [https://joshclose.github.io/CsvHelper/](https://joshclose.github.io/CsvHelper/).

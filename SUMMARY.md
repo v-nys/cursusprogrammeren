@@ -91,6 +91,7 @@
 * H10: Advanced klassen en objecten
   * [Constructors](6_klassen_en_objecten/1_constructors.md)
   * [Static](6_klassen_en_objecten/5_static.md)
+  * [Spelen met strings](6_klassen_en_objecten/strings.md)
   * [Labo-oefeningen](6_klassen_en_objecten/A_practica3.md)
 * H11: Arrays en klassen
   * [Arrays van objecten](6_klassen_en_objecten/7_arraysvanobj.md)
