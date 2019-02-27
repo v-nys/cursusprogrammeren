@@ -174,7 +174,7 @@ for (int i = 1; i < lines.Length-1; i++)
     /*
         * #,Name,Type 1,Type 2,Total,HP,Attack,Defense,Sp. Atk,Sp. Def,Speed,Generation,Legendary
         * 1,Bulbasaur,Grass,Poison,318,45,49,49,65,65,45,1,False
-        */
+    */
 
     string[] data = singlePoke_Line.Split(',');
     Pokemon poketemp = new Pokemon()
