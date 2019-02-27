@@ -134,3 +134,24 @@ In dit voorbeeld gaan we er vanuit dat de eerste lijn in het bestand een "header
 ## (PRO) WebClient
 
 We hebben maar een héél klein stukje van ``WebClient`` bekeken. Deze hoort niet bij de leerstof, maar is toch voor de geïnteresseerden en zeer nuttige klasse. Kijk bijvoorbeeld eens naar volgende [voorbeelden](https://www.dotnetperls.com/webclient).
+
+## Tekst wegschrijven
+
+Je kan tekst uit een bestand lezen, maar uiteraard kan je ook naar een bestand wegschrijven. De 2 eenvoudigste manieren zijn:
+
+* ``File.WriteAllText``: deze gebruik je als je 1 enkele string wilt wegschrijven
+* ``File.WriteAllLines``: deze is de omgekeerde van ``ReadAllLines()`` en zal een array van strings wegschrijven.
+
+Een voorbeeld:
+
+```csharp
+string[] stringArray = new string[]
+    {
+        "cat",
+        "dog",
+        "arrow"
+    };
+File.WriteAllLines("file.txt", stringArray);
+```
+
+**Opgelet met het schrijven naar bestanden: dit zal onherroepelijk het target bestand overschrijven.** .Gebruik ``if(File.Exists(pathtofile))`` om te controleren of een bestand bestaat of niet. Eventueel kan je dan aan de gebruiker bevestiging vragen of je deze effectief wilt overschrijven.
