@@ -96,3 +96,41 @@ for (int i = 0; i < lines.Length; i++)
     Console.WriteLine($"Geboortejaar speler {i}= {splitted[2]}");
 }
 ```
+
+## CSV downloaden
+
+Vaak zal je een online bestand willen verwerken. De ``WebClient`` klasse heeft tal van manieren om met online bronnen te werken. Deze klasse bevindt zich in de ``System.Net`` namespace en vereist dus dat je bovenaan je code volgende lijn toevoegt:
+
+```csharp
+using System.Net
+```
+
+Volgende code toont hoe we een bestand van een specifieke locatie kunnen downloaden:
+
+```csharp
+WebClient wc = new WebClient();
+string csv = wc.DownloadString("www.fakeaddress.com/mydata.csv");
+```
+
+Dit bestand is 1 platte tekst. Willen we deze vervolgens verwerken dan moeten we deze splitsen in lijnen:
+
+```csharp
+string[] split = csv.Split('\n');
+```
+
+We hebben nu een ``for`` nodig die lijn per lijn zal splitsen:
+
+```csharp
+for (int i = 1; i < splitted.Length; i++)
+{
+    string[] lijnsplit = splitted[i].Split(',');
+    Console.WriteLine("Data 1="+lijnsplit[0]);
+    Console.WriteLine("Data 2=" + lijnsplit[1]);
+}
+```
+
+In dit voorbeeld gaan we er vanuit dat de eerste lijn in het bestand een "header" bevat, die we dus moeten overslaan. Daarom starten we de loop vanaf lijn 1.
+
+## (PRO) WebClient
+
+We hebben maar een héél klein stukje van ``WebClient`` bekeken. Deze hoort niet bij de leerstof, maar is toch voor de geïnteresseerden en zeer nuttige klasse. Kijk bijvoorbeeld eens naar volgende [voorbeelden](https://www.dotnetperls.com/webclient).
