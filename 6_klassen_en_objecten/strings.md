@@ -155,3 +155,42 @@ File.WriteAllLines("file.txt", stringArray);
 ```
 
 **Opgelet met het schrijven naar bestanden: dit zal onherroepelijk het target bestand overschrijven.** .Gebruik ``if(File.Exists(pathtofile))`` om te controleren of een bestand bestaat of niet. Eventueel kan je dan aan de gebruiker bevestiging vragen of je deze effectief wilt overschrijven.
+
+
+# Uitgewerkt met Pokémon
+
+
+```csharp
+System.Net.WebClient wc = new System.Net.WebClient();
+string downloaded = wc.DownloadString("https://bit.ly/2tE4CB0"); //laatste is een nul
+string[] lines = downloaded.Split('\n');
+//string[] lines = File.ReadAllLines("pokemon.csv");
+List<Pokemon> pokedex = new List<Pokemon>(); //zien we verderop in de cursus
+
+for (int i = 1; i < lines.Length-1; i++)
+{
+    string singlePoke_Line = lines[i];
+
+    /*
+        * #,Name,Type 1,Type 2,Total,HP,Attack,Defense,Sp. Atk,Sp. Def,Speed,Generation,Legendary
+        * 1,Bulbasaur,Grass,Poison,318,45,49,49,65,65,45,1,False
+        */
+
+    string[] data = singlePoke_Line.Split(',');
+    Pokemon poketemp = new Pokemon()
+    {
+        Naam = data[1],
+        Nummer = Convert.ToInt32(data[0]),
+        HP_Base = Convert.ToInt32(data[5]),
+        Attack_Base = Convert.ToInt32(data[6])
+    };
+
+    pokedex.Add(poketemp);
+}
+
+
+for (int i = 0; i < pokedex.Count; i++)
+{
+    Console.WriteLine(pokedex[i].Naam);
+}
+```
