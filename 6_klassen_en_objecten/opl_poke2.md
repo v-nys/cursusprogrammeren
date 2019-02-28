@@ -32,6 +32,7 @@ public static Pokemon GeneratorPokemon ()
     temp.Attack_base=ran.Next(1,100);
     return temp;
 }
+```
 
 Aanroep:
 
@@ -59,3 +60,4 @@ public static int Battle(Pokemon poke1, Pokemon poke2)
 
     return 0;
 }
+```
