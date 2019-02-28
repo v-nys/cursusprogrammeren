@@ -41,7 +41,8 @@ Een niet-generieke colletion is **niet type-safe** . Een generieke collection is
 
 Volgende 2 code-voorbeelden tonen dit.
 
-In het niet-generieke geval zal deze code compileren maar **tijdens de uitvoer** zal de laatste lijn een fout (Exception) geven::
+In het niet-generieke geval zal deze code compileren maar **tijdens de uitvoer** zal de laatste lijn een fout (Exception) geven:
+
 ```csharp
 ArrayList nietGeneriekeList=new ArrayList();
 string naam= "Tim";
@@ -50,6 +51,7 @@ int leeftijd = (int)nietGeneriekeList[0];
 ```
 
 Bij een generieke collection zal er bij soortgelijk code een compiler-error optreden (gedrag dat meestal wenselijk is) en de code zal dus niet gecompileerd kunnen worden:
+
 ```csharp
 List<string> generiekeList=new List<string>();
 string naam= "Tim";
@@ -58,6 +60,7 @@ int leeftijd = (int)nietGeneriekeList[0]; // compilererror: cannot convert type 
 ```
 
 # Generic collections
+
 Generic collecties zijn ‘strongly typed’ en bieden een betere veiligheid op gebied van ‘type safety’, hun gebruik is echter quasi identiek aan dat van de niet generieke collecties.
 
 We hebben reeds 1 generic collectie-klasse veel gebruikt, namelijk de List<>-klasse, waarbij we tussen de haakjes het type opgaven dat de List kon bevatten , bv List of List. Met andere woorden, je hebt reeds vorig academiejaar generics gebruikt zonder het goed en wel te beseffen!
@@ -66,47 +69,10 @@ Een volledig overzicht van alle mogelijk generic collections vind je hier terug 
 
 We beschrijven nu de werking van een aantal typische collecties, merk op dat deze werking quasi identiek is als die voor de niet-generische versie.
 
-## List collectie
+## List<> collectie
 
-Een List collectie is de meest standaard collectie die je kan beschouwen als een veiligere variant op een een doodnormale array. Via de Add(T item) methode kan je elementen toevoegen aan de lijst. In volgende voorbeeld maken we een List aan die objecten van het type string mag bevatten:
+Deze werd reeds besproken in het [hoofdstuk over arrays](../7_arrays/list.md).
 
-```csharp
-List<String> myStringList = new List<String>();
-myStringList.Add("This is the first item in my list!");
-``` 
-
-Het leuke van een List is dat je deze ook kan gebruiken als een gewone array, waarbij je mbv de indexer elementen kan aanroepen. Stel bijvoorbeeld dat we een lijst hebben met minstens 4 strings in. Volgende code toont hoe we de string op positie 3 kunnen uitlezen en hoe we die op positie 2 overschrijven:
-
-```csharp
-Console.WriteLine(myStringList[3]);
-myStringList[2] = "andere zin";`
-```
-Interessante methoden en properties voorts zijn:
-
-* ``Count``: property die teruggeeft hoeveel elementen in de lijst aanwezig zijn.
-* ``Clear()`` :methode die de volledige lijst leegmaakt
-* ``Insert()``: methode om element op specifieke plaats in lijst toe te voegen, bijvoorbeeld:
-```csharp
-myStringList.Insert(3,”A fourth sentence”); 
-```
-voegt de string toe op de verde (3+1) plek.
-* ``Contains(T item)``: geef als parameter een specifiek object mee (van het type dat de List<> bevat) om te weten te komen of dat specifieke object in de List<> terug te vinden is. Indien ja dan zal true worden teruggeven.
-* ``IndexOf(T item)``: geeft de index terug van het element item in de rij. Indien deze niet in de lijst aanwezig is dan wordt 0 teruggegeven.
-
-### Foreach loops
-Je kan met een eenvoudige for of while-loop over een list-object itereren, maar het gebruik van een foreach-loop is toch handiger ([ook al eerder besproken hier](/3_herhalingen/3_foreach.md)). Dit is dan ook de meestgebruikte operatie om eenvoudig (je kan ook Linq overwegen!) en snel een bepaald stuk code toe te passen op ieder element van de lijst:
-
-```csharp
-List<int> integerList=new List<int>();
-integerList.Add(2);
-integerList.Add(3);
-integerList.Add(7);
-
-foreach(int prime in integerList)
-{
-   Console.WriteLine(prime);
-}
-```
 
 ## Queue<> collectie
 Een queue (Ned. : rij) stelt een FIFO-lijst voor. Een queue stelt dus de rijen voor die we in het echte leven ook hebben wanneer we bijvoorbeeld aanschuiven aan een ticketverkoop. Met deze klasse kunnen we zo’n rij simuleren en ervoor zorgen dat steeds het ‘eerste/oudste’ element in de rij als eerste wordt behandeld. Nieuwe elementen worden achteraan de rij toegevoegd.
