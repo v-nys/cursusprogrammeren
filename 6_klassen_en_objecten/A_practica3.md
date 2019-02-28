@@ -3,7 +3,7 @@
 
 ## Constructors
 
-Pas de kennis van constructors toe op je Pokémon-project uit het vorige hoofdstuk. Zorg ervoor dat je Pokémons op 3 kunt aanmaken als volgt:
+Pas de kennis van constructors toe op je Pokémon-project uit het vorige hoofdstuk. Zorg ervoor dat je Pokémons op 3 manieren kunt aanmaken als volgt:
 
 * Via een default constructor: alle base stats worden daarbij op 10 standaard ingesteld via de constructor
 * Via een overloaded constructor die de gebruiker toelaat om de 6 base stats als parameters mee te geven (bv ``new Pokemon(45,42,50,65,34,67)``)
@@ -11,7 +11,7 @@ Pas de kennis van constructors toe op je Pokémon-project uit het vorige hoofdst
 
 ## Static methoden
 
-* Verhuis de methoden (``GeneratorPokemon`` en ``Battle``) die je maakte in deel 3 van de Pokémon -opdracht in vorige hoofdstuk naar de klasse ``Pokemon`` zelf en test of deze nog steeds werkt. (Is dit een logischere plek?)
+* Verhuis de methoden (``GeneratorPokemon`` en ``Battle``) die je maakte in deel 3 van de Pokémon-opdracht in vorige hoofdstuk naar de klasse ``Pokemon`` zelf en test of deze nog steeds werkt. (Is dit een logischere plek?)
 * Voeg enkele static properties met private set toe om bij te houden:
     * Hoe vaak een Pokémon z'n level werd verhoogd (dus telkens bij aanroep van ``VerhoogLevel``)
     * Hoe veel Battles er al zijn geweest (verhoogt telkens ``Battle`` wordt uitgevoerd)
@@ -45,19 +45,19 @@ Maak een klasse ``Job``. Deze klasse heeft vier private fields
 * Description (``string``) bijvoorbeeld "ruiten wassen"
 * Duration (``int``) , stelt tijd voor die nodig is om job uit te voeren
 * RatePerHour (``int``), stelt kostprijs per uur voor van deze job
-* TotalFee (``int``), stelt totale prijs voor zijnde  duration x rateperhour
+* TotalFee (``int``), stelt totale prijs voor zijnde  ``Duration * RatePerHour``
 
-Voorzie properties voor deze 4 velden, echter de TotalFee heeft geen ‘set’  daar deze een berekening van andere properties is en dus een read-only property is.
+Voorzie properties voor deze 4 velden, echter de TotalFee heeft geen ‘set’ daar deze een berekening van andere properties is en dus een read-only property is.
 
 Telkens de Duration of RatePerHour wordt aangepast (set) wordt de TotalFee herberekend (je zal dus een private totalFee nodig hebben waar de public property TotalFee z’n waarde van krijgt).
 
 Voorzie 2 constructors:
 
-* Default constructor: stelt de description in op "onbekend" en zet duration en rateperhour in op 0.
-* Overloaded constructor: waarbij je de 3 velden (behalve TotalFee) kan aanpassen tijdens de constructie van een Job-object
+* Default constructor: stelt de description in op "onbekend" en zet duration en rateperhour op 0.
+* Overloaded constructor: waarbij je de 3 velden (behalve TotalFee) kan aanpassen tijdens de constructie van een Job-object.
 
 Toon de werking van je klasse aan door enkele objecten aan te maken met zowel de default als de overloaded constructor. Toon vervolgens dat TotalFee correct werkt.
 
 # Werken met string en csv
 
-Opgelet! Er is geen aparte oefening waar wordt gewerkt rond string en het verwerken van csv-bestanden. Zorg dat je dit beheerst door bijvoorbeeld zelf een oefening uit te werken waairn je een csv-betand verwerkt!
+Opgelet! Er is geen aparte oefening waar wordt gewerkt rond string en het verwerken van csv-bestanden. Zorg dat je dit beheerst door bijvoorbeeld zelf een oefening uit te werken waarin je een csv-bestand verwerkt!
