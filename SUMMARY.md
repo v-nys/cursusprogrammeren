@@ -160,6 +160,7 @@
   * [Expression bodied members](6_klassen_en_objecten/6_exprbody.md)
 * Oplossingen oefeningen
   * [H8 - Klassen en objecten](6_klassen_en_objecten/opl_apractica.md)
+  * [H9 - Geheugenmanagement bij klassen](6_klassen_en_objecten/opl_poke2.md)
 * All-In-Projecten
   * [Overzicht](A_DEEL2_AllInOne/0_Deel2_IntroductieAllInOne.md)
   * [OO Textbased Game](A_DEEL2_AllInOne/2_OOTextGame.md)
