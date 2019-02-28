@@ -43,6 +43,7 @@ for(int i = 0 ; i < myStringList.Count; i++)
 {
     Console.WriteLine(myStringList[i])
 }
+```
 
 ## Wat kan een List nog?
 
@@ -51,7 +52,7 @@ Interessante methoden en properties voorts zijn:
 * ``Clear()`` :methode die de volledige lijst leegmaakt
 * ``Insert()``: methode om element op specifieke plaats in lijst toe te voegen, bijvoorbeeld:
 ```csharp
-myStringList.Insert(1,"A fourth sentence"); 
+myStringList.Insert(1,"A fourth sentence");
 ```
 voegt de string toe op de tweede plek en schuift de rest naar achter
 * ``Contains()``: geef als parameter een specifiek object mee (van het type dat de List<> bevat) om te weten te komen of dat specifieke object in de List<> terug te vinden is. Indien ja dan zal true worden teruggeven.
