@@ -31,7 +31,7 @@ Probeer je objecten te benaderen die nog niet bestaan dan zal je uiteraard een `
 Je kan ook een variant op de object initializer syntax gebruiken waarbij de objecten reeds van bij de start in de array worden aangemaakt. Als extra'tje zorgt dit er ook voor dat we geen lengte moeten meegeven, de compiler zal deze zelf bepalen. Volgende voorbeeld maakt een nieuwe array aan die bestaat uit 2 nieuwe studenten, alsook 1 bestaande (``jos``):
 
 ```csharp
-Student jos=new Student
+Student jos=new Student();
 Student[] mijnKlas = new Student[]
     {
         new Student(),
@@ -40,6 +40,8 @@ Student[] mijnKlas = new Student[]
         new Student()
     };
 ```
+
+Let op de kommapunt helemaal achteraan. Die wordt als eens vergeten.
 
 ## Individueel object benaderen
 
