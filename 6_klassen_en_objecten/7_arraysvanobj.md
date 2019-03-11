@@ -26,6 +26,21 @@ Uiteraard kan dit ook in een loop indien relevant voor de opgave.
 
 Probeer je objecten te benaderen die nog niet bestaan dan zal je uiteraard een ``NullReferenceException`` krijgen.
 
+### Array initializer syntax
+
+Je kan ook een variant op de object initializer syntax gebruiken waarbij de objecten reeds van bij de start in de array worden aangemaakt. Als extra'tje zorgt dit er ook voor dat we geen lengte moeten meegeven, de compiler zal deze zelf bepalen. Volgende voorbeeld maakt een nieuwe array aan die bestaat uit 2 nieuwe studenten, alsook 1 bestaande (``jos``):
+
+```csharp
+Student jos=new Student
+Student[] mijnKlas = new Student[]
+    {
+        new Student(),
+        new Student(),
+        jos,
+        new Student()
+    };
+```
+
 ## Individueel object benaderen
 
 Van zodra een object in de array staat kan je deze vanuit de array aanspreken d.m.v. de index :
