@@ -38,26 +38,6 @@ De klasse heeft volgende elementen:
 
 Maak enkele Digitale Kluis objecten aan in je main en test of je bovenstaande klasse correct is geïmplementeerd.
 
-# APCenture-Job Agency
-
-Maak een klasse ``Job``. Deze klasse heeft vier private fields
-
-* Description (``string``) bijvoorbeeld "ruiten wassen"
-* Duration (``int``) , stelt tijd voor die nodig is om job uit te voeren
-* RatePerHour (``int``), stelt kostprijs per uur voor van deze job
-* TotalFee (``int``), stelt totale prijs voor zijnde  ``Duration * RatePerHour``
-
-Voorzie properties voor deze 4 velden, echter de TotalFee heeft geen ‘set’ daar deze een berekening van andere properties is en dus een read-only property is.
-
-Telkens de Duration of RatePerHour wordt aangepast (set) wordt de TotalFee herberekend (je zal dus een private totalFee nodig hebben waar de public property TotalFee z’n waarde van krijgt).
-
-Voorzie 2 constructors:
-
-* Default constructor: stelt de description in op "onbekend" en zet duration en rateperhour op 0.
-* Overloaded constructor: waarbij je de 3 velden (behalve TotalFee) kan aanpassen tijdens de constructie van een Job-object.
-
-Toon de werking van je klasse aan door enkele objecten aan te maken met zowel de default als de overloaded constructor. Toon vervolgens dat TotalFee correct werkt.
-
 # Werken met string en csv
 
 Opgelet! Er is geen aparte oefening waar wordt gewerkt rond string en het verwerken van csv-bestanden. Zorg dat je dit beheerst door bijvoorbeeld zelf een oefening uit te werken waarin je een csv-bestand verwerkt!

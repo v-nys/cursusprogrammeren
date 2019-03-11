@@ -1,5 +1,27 @@
 Op deze pagina vind je alle briljante en minder briljante oefeningen terug die niet meer bij een bepaald hoofdstuk staan. Meestal staan deze oefeningen hier omdat ze leerstof behandelen die niet meer bij de verplichte leerstof hoort.
 
+# APCenture-Job Agency
+
+> Opgave is niet erg duidelijk.
+> 
+Maak een klasse ``Job``. Deze klasse heeft vier private fields
+
+* Description (``string``) bijvoorbeeld "ruiten wassen"
+* Duration (``int``) , stelt tijd voor die nodig is om job uit te voeren
+* RatePerHour (``int``), stelt kostprijs per uur voor van deze job
+* TotalFee (``int``), stelt totale prijs voor zijnde  ``Duration * RatePerHour``
+
+Voorzie properties voor deze 4 velden, echter de TotalFee heeft geen ‘set’ daar deze een berekening van andere properties is en dus een read-only property is.
+
+Telkens de Duration of RatePerHour wordt aangepast (set) wordt de TotalFee herberekend (je zal dus een private totalFee nodig hebben waar de public property TotalFee z’n waarde van krijgt).
+
+Voorzie 2 constructors:
+
+* Default constructor: stelt de description in op "onbekend" en zet duration en rateperhour op 0.
+* Overloaded constructor: waarbij je de 3 velden (behalve TotalFee) kan aanpassen tijdens de constructie van een Job-object.
+
+Toon de werking van je klasse aan door enkele objecten aan te maken met zowel de default als de overloaded constructor. Toon vervolgens dat TotalFee correct werkt.
+
 # APCenture-Job Agency, deel 2: Operator Overloading
 
 Pas de klasse ``Job`` aan zodat de + operator kan gebruikt worden om 2 job-objecten bij elkaar op te tellen.
