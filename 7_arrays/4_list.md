@@ -60,7 +60,7 @@ voegt de string toe op de tweede plek en schuift de rest naar achter
 
 ## Foreach loops
 
-Je kan met een eenvoudige ``for`` of while-loop over een lijst itereren, maar het gebruik van een foreach-loop is toch handiger ([ook al eerder besproken hier](/3_herhalingen/3_foreach.md)).
+Je kan met een eenvoudige ``for`` of while-loop over een lijst itereren, maar het gebruik van een foreach-loop is toch handiger.
 
 Dit is dan ook de meestgebruikte operatie om eenvoudig ([Pro's: je kan ook Linq overwegen!](https://www.tutorialspoint.com/linq/)) en snel een bepaald stuk code toe te passen op ieder element van de lijst:
 
