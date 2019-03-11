@@ -56,12 +56,8 @@ Vervolgens moet de gebruiker kiezen welke student (nummer) moet ingevuld worden,
 Wanneer de gebruiker voor 2 kiest dan wordt de GeefOverzicht-methode aangeroepen van iedere student zodat de 5 ‘rapportjes’ onder elkaar op het scherm 
 
 Extra's:
-Bouw extra functionaliteit naar keuze bij de StudentOrganizer, zoals: 
+Bouw extra functionaliteit naar keuze bij de StudentOrganizer, zoals:
 * Vragen aan de gebruiker of de oude gegevens overschreven mogen worden, indien deze reeds ingevuld zijn.
 * Inbouwen van een eenvoudige zoekfunctie. Je kan bijvoorbeeld zoeken op naam (exacte invoer) of alle studenten tonen die in een bepaalde klas zitten of wiens punten onder/boven een bepaalde waarde zitten. Je kan dit als extra menuitem inbouwen, waarbij een nieuw menu verschijnt dat de gebruiker de verschillende zoekmogelijkheden voorstelt.
 * Verwijderen van een student (waarbij alle gegevens worden gewist)
 * Controle in alle methode inbouwen zodat ‘lege studenten’ worden genegeerd. Wanneer bijvoorbeeld menu item 2 wordt uitgevoerd (alle studenten tonen) dan worden enkel de ingevulde studenten getoond.
-
-# Pokedex
-
-Coming soon!

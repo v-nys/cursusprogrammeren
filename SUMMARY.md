@@ -98,7 +98,7 @@
   * [Foreach en var](7_arrays/3_foreach.md)
   * [List](7_arrays/4_list.md)
   * [Labo-oefeningen](6_klassen_en_objecten/A_practicaMem.md)
-* Module 3 eindetest (soon)
+* [Module 3 eindetest](7_arrays/b_allinonemodule3.md)
 * H12: Overerving
   * [Overerving intro](7_overerving/0_overerving_intro.MD)
   * [Virtual en override](7_overerving/1_virtual_override.md)
