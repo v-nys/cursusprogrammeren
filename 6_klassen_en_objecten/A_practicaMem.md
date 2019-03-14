@@ -22,9 +22,10 @@ class BookMark
     public string URL { get; set; }
     public void OpenSite()
     {
-        Process.Start("Iexplore.exe", URL);
+        Process.Start("Iexplore.exe", URL);  //Voeg bovenaan using System.Diagnostics; toe
     }
 }
+
 ```
 **Voorbeeld van hoe de bookmark klasse zal werken:** 
 ```csharp
