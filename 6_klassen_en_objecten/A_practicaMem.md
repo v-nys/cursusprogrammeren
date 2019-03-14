@@ -46,7 +46,7 @@ Maak daarom een studenten-array aan die 5 studenten bevat :
 
 ```csharp
 Student[] alleStudenten= new Student[5];
-for(int i =0 ;  i<5; i++)
+for(int i =0;  i< alleStudenten.Length; i++)
     alleStudenten[i]= new Student();
 ```
 
