@@ -135,7 +135,7 @@ In dit voorbeeld gaan we er vanuit dat de eerste lijn in het bestand een "header
 
 We hebben maar een héél klein stukje van ``WebClient`` bekeken. Deze hoort niet bij de leerstof, maar is toch voor de geïnteresseerden en zeer nuttige klasse. Kijk bijvoorbeeld eens naar volgende [voorbeelden](https://www.dotnetperls.com/webclient).
 
-## Tekst wegschrijven
+## CSV wegschrijven
 
 Je kan tekst uit een bestand lezen, maar uiteraard kan je ook naar een bestand wegschrijven. De 2 eenvoudigste manieren zijn:
 
@@ -151,11 +151,28 @@ string[] stringArray = new string[]
         "dog",
         "arrow"
     };
+
+
 File.WriteAllLines("file.txt", stringArray);
 ```
 
 **Opgelet met het schrijven naar bestanden: dit zal onherroepelijk het target bestand overschrijven.** .Gebruik ``if(File.Exists(pathtofile))`` om te controleren of een bestand bestaat of niet. Eventueel kan je dan aan de gebruiker bevestiging vragen of je deze effectief wilt overschrijven.
 
+Wil je CSV-bestand maken dan zal je eerst met ``String.Join`` een komma-separated lijst maken, bijvoorbeeld:
+
+```csharp
+string[] namen = { "Tim", "Jos", "Mo" };
+int[] leeftijden = { 34, 76, 23 };
+
+string[] lines = new string[namen.Length];
+for (int i = 0; i < lines.Length; i++)
+{
+    lines[i] = $"{i},{namen[i]},{leeftijden[i]}";
+
+}
+
+System.IO.File.WriteAllLines("ages.csv", lines);
+            ```
 
 # Uitgewerkt met Pokémon
 

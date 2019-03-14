@@ -71,7 +71,7 @@ Bouw extra functionaliteit naar keuze bij de StudentOrganizer, zoals:
 
 ### StudentKlasse
 ```csharp
-enum Klassen { EA1, EA2, EA3}
+enum Klassen { EA1, EA2, EA3, EA4}
 
 class Student
 {
