@@ -22,9 +22,11 @@ class BookMark
     public string URL { get; set; }
     public void OpenSite()
     {
-        Process.Start("Iexplore.exe", URL);  //Voeg bovenaan using System.Diagnostics; toe
+        Process.Start("chrome.exe", URL);  //Voeg bovenaan using System.Diagnostics; toe
     }
 }
+
+Opmerking: je mag gerust een andere browser hier zetten (bv ``iexplore.exe``). Om te weten of hij dat proces kent, klikt op Start->Run/uitvoeren en voer daar bijvoorbeeld ``chrome.exe`` in. Als je op enter duwt en je browser opent, dan weet je dat hij dat proces zal vinden.
 
 ```
 **Voorbeeld van hoe de bookmark klasse zal werken:** 
