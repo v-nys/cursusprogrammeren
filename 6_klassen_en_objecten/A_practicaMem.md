@@ -50,7 +50,7 @@ for(int i =0;  i< alleStudenten.Length; i++)
     alleStudenten[i]= new Student();
 ```
 
-Initialiseer alle fields van iedere student op een standaard-waarde (mbv een for-loop), bv:
+Initialiseer alle properties van iedere student op een standaard-waarde via de default constructor.
  
 Het programma start op en geeft de gebruiker een menu waaruit kan gekozen worden:
 
