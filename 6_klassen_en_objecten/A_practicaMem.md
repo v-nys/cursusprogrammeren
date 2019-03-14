@@ -43,11 +43,13 @@ u.OpenSite();
 We gaan nu de Student-klasse uit een vorige hoofdstuk (zie onderaan de opgave) gebruiken om een array van studenten te vullen.
 
 Maak daarom een studenten-array aan die 5 studenten bevat :
+
 ```csharp
 Student[] alleStudenten= new Student[5];
-for(int i =0 ;  i<5;++)
+for(int i =0 ;  i<5; i++)
     alleStudenten[i]= new Student();
 ```
+
 Initialiseer alle fields van iedere student op een standaard-waarde (mbv een for-loop), bv:
  
 Het programma start op en geeft de gebruiker een menu waaruit kan gekozen worden:
