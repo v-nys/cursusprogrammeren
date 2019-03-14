@@ -40,7 +40,7 @@ u.OpenSite();
 
 # Student Organizer
 
-We gaan nu de Student-klasse gebruiken om een array van studenten te vullen.
+We gaan nu de Student-klasse uit een vorige hoofdstuk (zie onderaan de opgave) gebruiken om een array van studenten te vullen.
 
 Maak daarom een studenten-array aan die 5 studenten bevat :
 ```csharp
@@ -65,3 +65,38 @@ Bouw extra functionaliteit naar keuze bij de StudentOrganizer, zoals:
 * Inbouwen van een eenvoudige zoekfunctie. Je kan bijvoorbeeld zoeken op naam (exacte invoer) of alle studenten tonen die in een bepaalde klas zitten of wiens punten onder/boven een bepaalde waarde zitten. Je kan dit als extra menuitem inbouwen, waarbij een nieuw menu verschijnt dat de gebruiker de verschillende zoekmogelijkheden voorstelt.
 * Verwijderen van een student (waarbij alle gegevens worden gewist)
 * Controle in alle methode inbouwen zodat ‘lege studenten’ worden genegeerd. Wanneer bijvoorbeeld menu item 2 wordt uitgevoerd (alle studenten tonen) dan worden enkel de ingevulde studenten getoond.
+
+
+### StudentKlasse
+```csharp
+enum Klassen { EA1, EA2, EA3}
+
+class Student
+{
+    public string Naam { get; set; }
+    public int Leeftijd { get; set; }
+    public Klassen Klas { get; set; }
+
+    public int PuntenCommunicatie { get; set; }
+    public int PuntenProgrammingPrinciples { get; set; }
+    public int PuntenWebTech { get; set; }
+
+    public double BerekenTotaalCijfer()
+    {
+        return (PuntenCommunicatie + PuntenProgrammingPrinciples + PuntenWebTech) / 3.0;
+    }
+
+    public void GeefOverzicht()
+    {
+        Console.WriteLine($"{Naam}, {Leeftijd} jaar");
+        Console.WriteLine($"Klas: {Klas}");
+        Console.WriteLine();
+        Console.WriteLine("Cijferrapport");
+        Console.WriteLine("*************");
+        Console.WriteLine($"Communicatie:\t\t{PuntenCommunicatie}");
+        Console.WriteLine($"Programming Principles:\t{PuntenProgrammingPrinciples}");
+        Console.WriteLine($"Web Technology:\t\t{PuntenWebTech}");
+        Console.WriteLine($"Gemiddelde:\t\t{BerekenTotaalCijfer():0.0}");
+    }
+}
+```
