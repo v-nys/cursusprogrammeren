@@ -104,25 +104,27 @@
   * [Base keyword](7_overerving/2_base.md)
   * [Constructors bij overerving](7_overerving/3_constructors_inheritance.md)
   * [Virtual en override](7_overerving/1_virtual_override.md)
+  * [Labo-oefeningen](7_overerving/A_PracticaSimpel.md)
+* H13: Advanced overerving
   * [System.Object](7_overerving/4_System_Object.md)
   * [Abstract](7_overerving/5_abstract.md)
   * [Labo-oefeningen](7_overerving/A_Practica.md)
-* H13: Compositie
+* H14: Compositie
   * [Compositie intro](8_compositie/0_compositie_intro.MD)
   * [Labo-oefeningen](8_compositie/A_Practica.md)
-* H14: Polymorfisme
+* H15: Polymorfisme
   * [Intro polymorfisme](11_polymorfisme/11_polymo_intro.MD)
   * [Labo-oefeningen](11_polymorfisme/A_Practica.md)
-* H15: Interfaces
+* H16: Interfaces
   * [Interface intro](9_interfaces/1_Interface_intro.MD) 
   * [Interfaces in de praktijk](9_interfaces/2_InterfacesInPraktijk.md)
   * [Labo-oefeningen](9_interfaces/A_practica.md)
-* H16: Generics en collections
+* H17: Generics en collections
   * [Generics methoden en types](10_generics/0_generics_intro.MD)
   * [Generic classes en constraints](10_generics/2_genericclasses_en_constraints.md)
   * [Collections](10_generics/8_Collections.md)
   * [Labo-oefeningen](10_generics/A_Practica.md)
-* H17: Is en As keyword
+* H18: Is en As keyword
   * [Is en As keywords](12_IsAs/1_IsAs.md)
   * [Polymorfisme en interfaces](12_IsAs/2_Polymorfisme_Interfaces.md)
   * [Objecten vergekijken: alles komt samen](12_IsAs/6_equals.md)
