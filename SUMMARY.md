@@ -101,9 +101,9 @@
 * [Module 3 eindetest](7_arrays/b_allinonemodule3.md)
 * H12: Overerving
   * [Overerving intro](7_overerving/0_overerving_intro.MD)
-  * [Virtual en override](7_overerving/1_virtual_override.md)
   * [Base keyword](7_overerving/2_base.md)
   * [Constructors bij overerving](7_overerving/3_constructors_inheritance.md)
+  * [Virtual en override](7_overerving/1_virtual_override.md)
   * [System.Object](7_overerving/4_System_Object.md)
   * [Abstract](7_overerving/5_abstract.md)
   * [Labo-oefeningen](7_overerving/A_Practica.md)

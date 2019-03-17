@@ -1,5 +1,5 @@
 # Base keyword
-Het **base** keyword laat ons toe om bij een overiden methode of property in de child-klasse toch te verplichten om de parent-implementatie toe te passen.
+Het **base** keyword laat ons toe om bij een overriden methode of property in de child-klasse toch te verplichten om de parent-implementatie toe te passen.
 
 Stel dat we volgende 2 klassen hebben:
 ```csharp
