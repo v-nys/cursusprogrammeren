@@ -13,6 +13,8 @@ Voorbeeld: De ``Student`` klasse zou je kunnen overerven naar een ``WerkStudent`
  Test wat er gebeurt als je al je bookmarks vervangt door ``HiddenBookmarks``.
 
 Afhankelijk van de browser die je wilt aanroepen moet je de incognito parameter iets anders doorgeven:
+**Let op de spatie na "-private ", deze moet er staan anders plak je je url aan de parameter:**
+
 ```csharp
 Process.Start("iexplore.exe", "-private " + url);
 Process.Start("chrome.exe", "-incognito " + url);
