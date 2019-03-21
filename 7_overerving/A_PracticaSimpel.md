@@ -10,6 +10,17 @@ Voorbeeld: De ``Student`` klasse zou je kunnen overerven naar een ``WerkStudent`
 
  De ``HiddenBookmark`` is een ``Bookmark`` klasse die de browser in Incognito-modus zal opstarten bij het openen van de bookmark. Dit kan je bewerkstelligen door ``-incognito`` achter ``chrome.exe`` te plaatsen. Maak de ``OpenSite`` methode ``virtual``  in ``BookMark`` om vervolgens via ``override`` in ``HiddenBookmark`` dit op te lossen.
 
+ Test wat er gebeurt als je al je bookmarks vervangt door ``HiddenBookmarks``.
+
+Afhankelijk van de browser die je wilt aanroepen moet je de incognito parameter iets anders doorgeven:
+```csharp
+Process.Start("iexplore.exe", "-private " + url);
+Process.Start("chrome.exe", "-incognito " + url);
+Process.Start("firefox.exe", "-private-window " + url);
+Process.Start("iexplore.exe", "-private " + url);
+```
+
+
 # Ziekenhuis
 
 ## Deel 1 
