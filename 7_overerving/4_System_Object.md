@@ -60,16 +60,18 @@ public virtual string ToString()
  
  
  ## Equals()
- Ook deze methode kan je dus overriden om twee objecten met elkaar te testen. Op het  [einde van deze cursus](6_equals.md) zal dieper in ``Equals`` ingaan worden om objecten te vergelijken, maar we tonen hier reeds een voorbeeld:
+ Ook deze methode kan je dus overriden om twee objecten met elkaar te testen. Op het  [einde van deze cursus](../12_IsAs/6_equals.md) zal dieper in ``Equals`` ingaan worden om objecten te vergelijken, maar we tonen hier reeds een voorbeeld:
  ```csharp
 if(stud1.Equals(stud2))
    //...
 ```
-De ``Equals`` methode heeft dus als signatuur: ``public virtual bool Equals(Object o)`` 
+
+De ``Equals`` methode heeft dus als signatuur: ``public virtual bool Equals(Object o)``
 Twee objecten zijn gelijk voor .NET als aan volgende afspraken wordt voldaan:
+
 * Het moet ``false`` teruggeven indien het argument o ``null`` is
 * Het moet ``true`` teruggeven indien je het object met zichzelf vergelijkt (bv ``stud1.Equals(stud1)``)
-* Het mag enkel ``true`` teruggeven als volgende statements beide waar zijn: 
+* Het mag enkel ``true`` teruggeven als volgende statements beide waar zijn:
 ```csharp
 stud1.Equals(stud2);
 stud2.Equals(stud1);
@@ -77,6 +79,7 @@ stud2.Equals(stud1);
 * Indien ``stud1.Equals(stud2)`` true teruggeeft en ``stud1.Equals(stud3)`` ook true is, dan moet ``stud2.Equals(stud3)`` ook true zijn.
 
 ### Equals overriden
+
 Stel dat we vinden dat een student gelijk is aan een andere student indien z'n Naam en Leeftijd dezelfde is, we kunnen dan de Equals-methode overriden als volgt:
 
 ```csharp
@@ -97,7 +100,7 @@ public override bool Equals(Object o)
 }
 ```
 
-De lijn ``Student temp = (Student)o;`` zal het ``object o`` casten naar een ``Student``. Doe je dit niet dan kan je niet aan de interne Student-variabelen van het ``object o``. 
+De lijn ``Student temp = (Student)o;`` zal het ``object o`` casten naar een ``Student``. Doe je dit niet dan kan je niet aan de interne Student-variabelen van het ``object o``.
 
 [Dit concept heet polymorfisme en wordt later uitgelegd](../11_polymorfisme/11_polymo_intro.MD).
 
@@ -108,4 +111,4 @@ Bekijk volgende [StackOverflow post](https://stackoverflow.com/questions/9827911
 
 # Ik ben nog niet helemaal mee?
 Niet getreurd, je bent niet de enige. Overerving,System.object, Equals,...het is allemaal een hoop nieuwe kennis om te verwerken. 
-Aan het [einde van deze cursus](./12_IsAs/6_equals.md) gaan we dieper in bovenstaande materie in om een volledige ``Equals`` methode op te bouwen en we bij iedere stap uitgebreide uitleg geven.
+Aan het [einde van deze cursus](../12_IsAs/6_equals.md) gaan we dieper in bovenstaande materie in om een volledige ``Equals`` methode op te bouwen en we bij iedere stap uitgebreide uitleg geven.
