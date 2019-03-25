@@ -1,3 +1,40 @@
+# Extra ToString aan bestaande projecten
+Voeg ToString to aan bestaande van volgende projecten. Ik raad aan dat je dit even test in een nieuwe applicatie waarin je de bestaande klasse even toevoegt en niet de hele main overneemt.
+
+## Pokémon extra
+
+Implementeer de ToString() methode in je ``Pokemon`` klasse zodat deze z'n full stats toont wanneer je schrijft:
+```csharp
+Console.WriteLine(myPokemon);
+```
+
+## Bookmark extra
+
+Implementeer de ToString() methode in zowel de ``Bookmark`` als de ``HiddenBookmark`` klasse. Bij bookmark moet de output bestaan uit de titel van de site, gevolgd door de url tussen haakjes, bv:
+
+```text
+Google (www.google.com)
+```
+
+Bij ``HiddenBookmark`` wordt er achteraan nog "---HIDDEN---" gezet:
+
+```text
+Google (www.google.com)  ---HIDDEN---
+```
+
+Zorg ervoor dat er géén dubbele code in HiddenBookmark staat (tip: ``base()``).
+
+Test door volgende code in een eenvoudig programma uit te voeren:
+
+```csharp
+HiddenBookmark hbm=new HiddenBookmark();
+//extra props invullen
+Bookmark bm = new Bookmark();
+//extra props invullen
+Console.WriteLine(hbm);
+Console.WriteLine(bm);
+```
+
 # Book
 ## Deel 1
 Maak een klasse ``Book``  en gebruik auto-properties voor de velden:
@@ -10,13 +47,14 @@ Maak een child-klasse die van Book overerft genaamd ‘TextBook. Een textbook he
 * GradeLevel (int)
 Maak een child-klasse die van Book overerft genaamd ‘CoffeeTableBook’. Deze klasse heeft geen extra velden.
 
-Voorts kunnen boeken "opgeteld" worden om als omnibus uitgebracht te worden. De titel wordt dan "Omnibus van [X]". waarbij X de Authors bevat, gescheiden met een komma. De prijs van een Omnibus is steeds de som van beide boeken gedeeld door 2.
+Voorts kunnen boeken "opgeteld" worden om als omnibus uitgebracht te worden. De titel wordt dan "Omnibus van [X]". waarbij X de Authors bevat, gescheiden met een komma. De prijs van een Omnibus is steeds de som van beide boeken gedeeld door 2. **Schrijf een methode ``TelOp`` die twee ``Book`` objecten als parameter aanvaardt en als returntype een nieuw ``Book`` teruggeeft.**
 
-In beide child-klassen, override de Price-setter zodat 
+In beide child-klassen, override de Price-setter zodat:
 a)	Bij Textbook de prijs enkel tussen 20 en 80 kan liggen
 b)	Bij CoffeeTableBooks de prijs enkel tussen 35 en 100 kan liggen
 
 ## Deel 2
+
 * Zorg ervoor dat boeken de ToString overriden zodat je boekobjecten eenvoudig via Console.WriteLine(myBoek) hun info op het scherm tonen. Ze tonen deze info als volgt: "Title - Auteur (ISBN) _ Price"  (bv The Shining - Stephen King (05848152) _ 50)
 * Zorg ervoor dat de equals methode werkt op alle boeken. Boeken zijn gelijk indien ze hetzelfde ISBN nummer hebben
 
@@ -52,10 +90,13 @@ Maak een console-applicatie waarin je een zelfverzonnen abstract klasse Dier in 
 
 Vervolgens vraag je aan de gebruiker wat voor dieren er in deze lijst moeten toegevoegd worden.  Wanneer de gebruiker 'q' kiest stopt het programma met vragen welke dieren moeten toegevoegd worden en komt er een nieuw keuze menu. 
 Het keuze menu heeft volgende opties:
+
 a. Dier verwijderen , gevolgd door de gebruiker die invoert het hoeveelste dier weg moet uit de List.
+
 b. Diergewicht gemiddelde: het gemiddelde van alle dieren hun gewicht wordt getoond
+
 c. Dier praten: alle dieren hun Zegt() methode wordt aangeroepen en via WriteLine getoond
+
 d. Opnieuw beginnen: de List wordt leeggemaakt en het programma zal terug van voor af aan beginnen.
 
-Probeer zo modulair (methoden en oo!) te werken.
-
+Probeer zo modulair mogelijk te werken.
