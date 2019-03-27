@@ -13,7 +13,7 @@ class Meting
 }
 ```
 
-In ons hoofdprogramma schrijven we een methode ``ToonMetingInKleur`` die ons toelaat om deze meting op het scherm te tonen in een bepaalde kleer. Het gebruik en de methode zelf zouden er zo kunnen uitzien:
+In ons hoofdprogramma schrijven we een methode ``ToonMetingInKleur`` die ons toelaat om deze meting op het scherm te tonen in een bepaalde kleur. Het gebruik en de methode zelf zouden er zo kunnen uitzien:
 
 ```csharp
 static void Main(string[] args)

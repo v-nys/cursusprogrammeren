@@ -29,6 +29,7 @@ Deze cursus bevat hier en daar enkele typo's. Die zijn er uiteraard bewust *kuch
 |Van Ingelghem Brian|   6 |
 |De Vree Bart|         5 |
 |Van Breedam Arne|     3 |
+|Hendrikx Ben| 3|
 |Zeno Hattas |           2 |
 |Strauven Wannes|       2 |
 |Yoncalik Arafa|       1 |
@@ -36,7 +37,7 @@ Deze cursus bevat hier en daar enkele typo's. Die zijn er uiteraard bewust *kuch
 |Baert Jonas|   1 |
 |Teka Sala Brain| 1|
 |Schrauwen Stijn| 1|
-|Hendrikx Ben| 1|
+
 
 
 Ook een speciale dank aan de vele studenten die me geregeld feedback geven op zaken die beter, anders, grappiger kunnen. Zoals:
