@@ -38,11 +38,13 @@ Console.WriteLine(bm);
 # Book
 ## Deel 1
 Maak een klasse ``Book``  en gebruik auto-properties voor de velden:
+
 * ISBN (int)
 * Title (string)
 * Author (string)
-Maak voorts een property voor Price, met bijhorende private price field.
-* Price (double)
+ 
+Maak voorts een full property voor Price (double)
+
 Maak een child-klasse die van Book overerft genaamd ‘TextBook. Een textbook heeft één extra field:
 * GradeLevel (int)
 Maak een child-klasse die van Book overerft genaamd ‘CoffeeTableBook’. Deze klasse heeft geen extra velden.
