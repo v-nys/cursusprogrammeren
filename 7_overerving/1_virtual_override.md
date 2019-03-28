@@ -57,3 +57,38 @@ Uitvoer:
 Het vliegtuig vliegt rustig door de wolken.
 De raket verdwijnt in de ruimte.
 ```
+
+# Properties overriden
+
+Ook properties kan je virtual instellen en override'n. Stel dat je volgende klasse hebt:
+
+```csharp
+    class Auto
+    {
+        virtual public int Fuel { get; set; }
+    }
+```
+
+We maken nu een meer luxueuze auto die een lichtje heeft dat aangaat wanneer de benzine-tank vol genoeg is, dit kan via override, als volgt:
+
+> Opgelet: Visual Studio gebruikt lambda syntax (=>) om properties te overriden. Deze syntax kenne we niet en is 
+
+```csharp
+class LuxeAuto : Auto
+{
+   public bool HeeftVolleTank { get; set; }
+
+   public override int Fuel
+   {
+      get { return base.Fuel; }
+      set
+      {
+            if (value > 100)
+            {
+               HeeftVolleTank = true;
+            }
+            base.Fuel = value;
+      }
+   }
+}
+```
