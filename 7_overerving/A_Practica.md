@@ -46,7 +46,9 @@ Maak een klasse ``Book``  en gebruik auto-properties voor de velden:
 Maak voorts een full property voor Price (double)
 
 Maak een child-klasse die van Book overerft genaamd ‘TextBook. Een textbook heeft één extra field:
+
 * GradeLevel (int)
+
 Maak een child-klasse die van Book overerft genaamd ‘CoffeeTableBook’. Deze klasse heeft geen extra velden.
 
 Voorts kunnen boeken "opgeteld" worden om als omnibus uitgebracht te worden. De titel wordt dan "Omnibus van [X]". waarbij X de Authors bevat, gescheiden met een komma. De prijs van een Omnibus is steeds de som van beide boeken gedeeld door 2. **Schrijf een methode ``TelOp`` die twee ``Book`` objecten als parameter aanvaardt en als returntype een nieuw ``Book`` teruggeeft.**
