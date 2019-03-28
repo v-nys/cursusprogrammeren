@@ -345,3 +345,32 @@ Stel dat we nu elke seconden het speelveld met 1 willen vergroten, dan hoeven we
     Mover.Height++;
 }
 ```
+
+## Maximum grootte
+
+Als je voorgaande code zou runnen zal je zien dat je redelijk snel een error krijgt. Dit komt omdat de hoogte en breedte van een Console maar tot bepaalde waardes kunnen verhogen. 
+
+We kunnen dit opvangen door in de klasse ``Mover`` volgende twee autoproperties:
+
+```csharp
+    static public int Width { get; set; }
+    static public int Height { get; set; }
+```
+
+Te vervangen door fullproperties die controleren of er niet over de grenzen wordt gegaan mbv ``Console.LargestWindowWidth`` en ``Console.LargestWindowHeight``. Voor ``Width`krijgen we dan:
+
+```csharp
+private static int width;
+
+public static int Width
+{
+    get { return width; }
+    set
+    {
+        if (value > 0 && value <  Console.LargestWindowWidth)
+            width = value;
+    }
+}
+```
+
+
