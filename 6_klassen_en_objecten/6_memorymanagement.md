@@ -183,7 +183,7 @@ In dit voorbeeld zien we dit in actie:
 ```
 int[] array1= {1,2,3};
 int[] array2= {3,4,5};
-array2=array;
+array2=array1;
 ```
 Vanaf de laatste lijn zal er geen referentie meer naar ``{3,4,5}`` in de heap zijn, daar we deze hebben overschreven met een referentie naar ``{1,2,3}``.De GC zal dus deze data verwijderen.
 
