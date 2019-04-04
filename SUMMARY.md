@@ -99,8 +99,8 @@
   * [List](7_arrays/4_list.md)
   * [Labo-oefeningen](6_klassen_en_objecten/A_practicaMem.md)
 * Module 3 eindetest
-    *[Opgave](7_arrays/b_allinonemodule3.md)
-    *[Opgave vaardigheidsproef mod 3 1819](7_arrays/b_vaardig1819.md)
+    * [Opgave](7_arrays/b_allinonemodule3.md)
+    * [Opgave vaardigheidsproef mod 3 1819](7_arrays/b_vaardig1819.md)
 * H12: Overerving
   * [Overerving intro](7_overerving/0_overerving_intro.MD)
   * [Base keyword](7_overerving/2_base.md)
