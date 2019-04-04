@@ -1,8 +1,8 @@
 
 # Goal
 
-Een goed mentale gezondheid – quality of life (Qal) - is even belangrijk als je fysieke gezondheid. 
-De firma “GetWeller” heeft je gevraagd om een prototype te maken van een QualityOfLife-diary app, waarin de gebruiker kan bijhouden hoe het met z’n mentale gezondheid is gesteld.
+Een goed mentale gezondheid – quality of life (Qal) - is even belangrijk als je fysieke gezondheid.
+De firma "GetWeller" heeft je gevraagd om een prototype te maken van een QualityOfLife-diary app, waarin de gebruiker kan bijhouden hoe het met z’n mentale gezondheid is gesteld.
 
 Je dient dit prototype in een C# console applicatie te maken zodat GetWeller kan zien of ze jouw firma willen inhuren om de volledige mobiele applicatie nadien te ontwikkelen.
 
