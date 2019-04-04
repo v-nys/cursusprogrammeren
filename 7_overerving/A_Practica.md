@@ -45,7 +45,7 @@ Maak een klasse ``Book``  en gebruik auto-properties voor de velden:
  
 Maak voorts een full property voor Price (double)
 
-Maak een child-klasse die van Book overerft genaamd ‘TextBook. Een textbook heeft één extra field:
+Maak een child-klasse die van Book overerft genaamd ‘TextBook. Een textbook heeft één extra property:
 
 * GradeLevel (int)
 
