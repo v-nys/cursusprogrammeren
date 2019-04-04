@@ -168,7 +168,8 @@
   * [H9 - Geheugenmanagement bij klassen](6_klassen_en_objecten/opl_poke2.md)
   * [H10 - Advanced klassen en objecten](6_klassen_en_objecten/opl_practica3.md)
   * [H11 - arrays van klasse](7_arrays/opl_practica3.md)
-  
+  * [H12 - Overerving](7_overerving/opl_practica3.md)
+  * [H13 - Advanced Overerving](7_overerving/opl_practica4.md)
 * All-In-Projecten
   * [Overzicht](A_DEEL2_AllInOne/0_Deel2_IntroductieAllInOne.md)
   * [OO Textbased Game](A_DEEL2_AllInOne/2_OOTextGame.md)

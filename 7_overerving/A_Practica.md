@@ -73,20 +73,21 @@ Maak enkele klassen die een bank kan gebruiken.
 3. Een klasse ``SpaarRekening`` die een Rekening is. De rente van een SpaarRekening bedraagt steeds 2%.
 4. Een klasse ``ProRekening`` die een SpaarRekening is. De ProRekening hanteert de Rente-berekening van een SpaarRekening (``base.BerekenRente``) maar zal per 1000 euro saldo nog eens 10 euro verhogen. 
 
-Schrijf deze klasse en toon de werking ervan in je main.
+Schrijf deze klassen en toon de werking ervan in je main.
 
 # Geometric figures
 
-Maak een abstracte klasse ``GeometricFigure``. Iedere figuur heeft een hoogte, breedte en oppervlakte. Maak properties voor deze 3 fields. De oppervlakte is read-only want deze wordt berekend gebaseerd op de hoogte en breedte . 
+Maak een abstracte klasse ``GeometricFigure``. Iedere figuur heeft een hoogte, breedte en oppervlakte. Maak autoproperties voor van ``Hoogte`` en ``Breedte``. De oppervlakte is een read-only property want deze wordt berekend gebaseerd op de hoogte en breedte.
 
-Voorzie een abstracte methode “BerekenOppervlakte” die een int teruggeeft.
+Voorzie een abstracte methode ``BerekenOppervlakte`` die een int teruggeeft.
+
 Maak 3 klassen:
-* Rechthoek: erft over van GeometricFigure. Oppervlakte is gedefinieerd als breedte * hoogte.
+
+* Rechthoek: erft over van GeometricFigure. Oppervlakte is gedefinieerd als ``breedte * hoogte``.
 * Vierkant: erft over van Rechthoek. Voorzie een constructor die lengte en breedte als parameter aanvaard: deze moeten gelijk zijn, indien niet zet je deze tijdens de constructie gelijk. Voorzie een 2e constructor die één parameter aanvaardt dat dan geldt als zowel de lengte als breedte. Deze klasse gebruikt de methode BerekenOppervlakte van de Rechthoek-klasse.
-* Driehoek: erft over van GeometricFigure. Oppervlakte is gedefinieerd als breedte*hoogte/2.
+* Driehoek: erft over van GeometricFigure. Oppervlakte is gedefinieerd als ``breedte*hoogte/2``.
 
 Maak een applicatie waarin je de werking van deze klassen aantoont
-
 
 
 # Dierentuin
