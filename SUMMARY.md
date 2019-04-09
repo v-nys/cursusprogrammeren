@@ -77,12 +77,12 @@
 ##  Semester 2 : OOP
 
 * H8: Klassen en objecten
-  * [OOP Intro](6_klassen_en_objecten/0_oop_intro.md)
-  * [Klassen en objecten in C#](6_klassen_en_objecten/0b_oopincs.md)
-  * [DateTime: leren werken met objecten](6_klassen_en_objecten/datetime.md)
-  * [Methoden en access modifiers](6_klassen_en_objecten/0c_simpleobjects.md)
-  * [Properties](6_klassen_en_objecten/2_properties.md)
-  * [Labo-oefeningen](6_klassen_en_objecten/A_practica.md)
+  * [OOP Intro](8_klassen/0_oop_intro.md)
+  * [Klassen en objecten in C#](8_klassen/0b_oopincs.md)
+  * [DateTime: leren werken met objecten](8_klassen/datetime.md)
+  * [Methoden en access modifiers](8_klassen/0c_simpleobjects.md)
+  * [Properties](8_klassen/2_properties.md)
+  * [Labo-oefeningen](8_klassen/A_practica.md)
 * H9: Geheugenmanagement bij klassen
   * [Objecten en methoden](6_klassen_en_objecten/6b_objectenenmethoden.md)
   * [Stack en Heap](6_klassen_en_objecten/6_memorymanagement.md)

@@ -20,7 +20,7 @@ class Mens
 
 We zien twee nieuwe aspecten:
 
-* Het keyword **``static``** komt bij een klasse niet aan te pas (of toch minder zoals we [later zullen zien](5_static.md))
+* Het keyword **``static``** komt bij een klasse niet aan te pas (of toch minder zoals we [later zullen zien](/6_klassen_en_objecten/5_static.md))
 * Voor de methode plaatsen we ``public`` : dit leggen we zo meteen uit
 
 Je kan nu elders objecten aanmaken en ieder object z'n methode ``Praat`` aanroepen:
