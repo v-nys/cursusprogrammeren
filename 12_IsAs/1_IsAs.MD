@@ -70,7 +70,7 @@ if(tim is IDeletable)
 Ouput: ``I can delete game of thrones``.
 
 ## As keyword met voorbeeld
-Wanneer we objecten van het ene naar het andere type willen omzetten dan doen we dit vaak met behulp van [casting](/1_csharpbasics/4_converteren_casting.md):
+Wanneer we objecten van het ene naar het andere type willen omzetten dan doen we dit vaak met behulp van [casting](../3_data/4_converteren_casting.md):
 ```csharp
 Student fritz= new Student();
 Mens jos = (Mens)fritz;
