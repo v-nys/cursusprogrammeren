@@ -6,7 +6,7 @@ We zullen stap voor stap opbouwen en motiveren waarom dit de enige correcte mani
 Als leuk zij-effect krijgen we het feit dat deze uitleg aardig wat reeds opgedane kennis vereist: we kunnen deze zaken dus ineens herhalen en toelichten in de context van de ``Equals`` methode.
 
 ## Heap en stack
-C# programma’s gebruiken twee soorten geheugens zoals we reeds [in dit hoofdstuk lazen](../6_klassen_en_objecten/6_memorymanagement.md)
+C# programma’s gebruiken twee soorten geheugens zoals we reeds [in dit hoofdstuk lazen](../9_meminoop/6_memorymanagement.md)
 * De stack
 * De heap
 
@@ -83,7 +83,7 @@ Hoe kunnen we dan wel 2 objecten vergelijken? Hiervoor dienen we, manueel, alle 
 if(punt1.X== punt2.X && punt1.Y== punt2.Y)
 ```
 
-We zouden dit dan in een handige [static methode](../6_klassen_en_objecten/5_static.md) kunnen plaatsen :
+We zouden dit dan in een handige [static methode](../10_advancedklassen/5_static.md) kunnen plaatsen :
 
 ```csharp
 static bool VergelijkPunten(Point p1, Point p2)

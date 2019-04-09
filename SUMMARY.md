@@ -84,20 +84,20 @@
   * [Properties](8_klassen/2_properties.md)
   * [Labo-oefeningen](8_klassen/A_practica.md)
 * H9: Geheugenmanagement bij klassen
-  * [Objecten en methoden](6_klassen_en_objecten/6b_objectenenmethoden.md)
-  * [Stack en Heap](6_klassen_en_objecten/6_memorymanagement.md)
-  * [Null en NullReferenceException](6_klassen_en_objecten/nullreference.md)
-  * [Labo-oefeningen](6_klassen_en_objecten/A_poke1.md)
+  * [Objecten en methoden](9_meminoop/6b_objectenenmethoden.md)
+  * [Stack en Heap](9_meminoop/6_memorymanagement.md)
+  * [Null en NullReferenceException](9_meminoop/nullreference.md)
+  * [Labo-oefeningen](9_meminoop/A_poke1.md)
 * H10: Advanced klassen en objecten
-  * [Constructors](6_klassen_en_objecten/1_constructors.md)
-  * [Static](6_klassen_en_objecten/5_static.md)
-  * [Spelen met strings](6_klassen_en_objecten/strings.md)
-  * [Labo-oefeningen](6_klassen_en_objecten/A_practica3.md)
+  * [Constructors](10_advancedklassen/1_constructors.md)
+  * [Static](10_advancedklassen/5_static.md)
+  * [Spelen met strings](10_advancedklassen/strings.md)
+  * [Labo-oefeningen](10_advancedklassen/A_practica3.md)
 * H11: Arrays en klassen
-  * [Arrays van objecten](6_klassen_en_objecten/7_arraysvanobj.md)
-  * [Foreach en var](7_arrays/3_foreach.md)
-  * [List](7_arrays/4_list.md)
-  * [Labo-oefeningen](6_klassen_en_objecten/A_practicaMem.md)
+  * [Arrays van objecten](11_arraysvanklassen/7_arraysvanobj.md)
+  * [Foreach en var](11_arraysvanklassen/3_foreach.md)
+  * [List](11_arraysvanklassen/4_list.md)
+  * [Labo-oefeningen](11_arraysvanklassen/A_practicaMem.md)
 * Module 3 eindetest
     * [Opgave](EindeTests/Mod3/Opgave.md)
     * [Opgave vaardigheidsproef mod 3 1819](EindeTests/Mod3/Opgave_1819.md)
@@ -161,13 +161,13 @@
 
 ## Semester 2
 * Nice to know stuff
-  * [Operator overloading](6_klassen_en_objecten/8_operatoroverloading.md)
-  * [Expression bodied members](6_klassen_en_objecten/6_exprbody.md)
+  * [Operator overloading](B_appendix/8_operatoroverloading.md)
+  * [Expression bodied members](B_appendix/6_exprbody.md)
 * Oplossingen oefeningen
-  * [H8 - Klassen en objecten](6_klassen_en_objecten/opl_apractica.md)
-  * [H9 - Geheugenmanagement bij klassen](6_klassen_en_objecten/opl_poke2.md)
-  * [H10 - Advanced klassen en objecten](6_klassen_en_objecten/opl_practica3.md)
-  * [H11 - arrays van klasse](7_arrays/opl_practica3.md)
+  * [H8 - Klassen en objecten](8_klassen/opl_apractica.md)
+  * [H9 - Geheugenmanagement bij klassen](9_meminoop/opl_poke2.md)
+  * [H10 - Advanced klassen en objecten](10_advancedklassen/opl_practica3.md)
+  * [H11 - arrays van klasse](11_arraysvanklassen/opl_practica3.md)
   * [H12 - Overerving](7_overerving/opl_practica3.md)
   * [H13 - Advanced Overerving](7_overerving/opl_practica4.md)
 * All-In-Projecten

@@ -261,5 +261,5 @@ for(int i = 0; i<ploegen.Length; i++)
 }
 ```
 
-**Opgelet: wanneer je met arrays van objecten ([zie later](../6_klassen_en_objecten/7_arraysvanobj.md)) werkt dan zal bovenstaande mogelijk niet het gewenste resultaten geven daar we nu de individuele referenties van een object kopieren!**
+**Opgelet: wanneer je met arrays van objecten ([zie later](../11_arraysvanklassen/7_arraysvanobj.md)) werkt dan zal bovenstaande mogelijk niet het gewenste resultaten geven daar we nu de individuele referenties van een object kopieren!**
 

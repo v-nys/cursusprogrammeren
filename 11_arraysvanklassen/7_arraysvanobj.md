@@ -66,7 +66,7 @@ Ook arrays mag je als parameters en returntype gebruiken in methoden. De werking
 
 # CSV uitlezen naar klasse
 
-We herbekijken het voorbeeld van de csv-parser uit het [vorige hoofdstuk over strings splitsen en csv-bestanden](../6_klassen_en_objecten/strings.md)
+We herbekijken het voorbeeld van de csv-parser uit het [vorige hoofdstuk over strings splitsen en csv-bestanden](../10_advancedklassen/strings.md)
 
 We maken nu een klasse Speler:
 

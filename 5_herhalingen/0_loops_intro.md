@@ -22,7 +22,7 @@ Er zijn 3 manieren om zogenaamde loops te maken in C#:
 * ``for``: een alternatieve iets compactere manier om loops te beschrijven
 
 Voorts zullen we ook een speciale loop variant zien in het volgende semester wanneer we arrays en objecten leren kennen:
-* [``foreach``](../7_arrays/3_foreach.md)
+* [``foreach``](../11_arraysvanklassen/3_foreach.md)
 
 
 ## NEVER EVAH USE GOTO

@@ -71,7 +71,7 @@ We beschrijven nu de werking van een aantal typische collecties, merk op dat dez
 
 ## List<> collectie
 
-Deze werd reeds besproken in het [hoofdstuk over arrays](../7_arrays/4_list.md).
+Deze werd reeds besproken in het [hoofdstuk over arrays](../11_arraysvanklassen/4_list.md).
 
 
 ## Queue<> collectie

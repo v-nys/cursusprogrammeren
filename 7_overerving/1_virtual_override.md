@@ -62,7 +62,7 @@ De raket verdwijnt in de ruimte.
 
 Ook properties kan je virtual instellen en override'n. 
 
-**Opgelet**: Visual Studio gebruikt Expression Body Member syntax (herkenbaar aan de `` =>``) om properties te overriden. Deze syntax kennen we niet (lees er gerust meer over [hier](../6_klassen_en_objecten/6_exprbody.md)). **Je schrijft dus best manueel de override van properties**
+**Opgelet**: Visual Studio gebruikt Expression Body Member syntax (herkenbaar aan de `` =>``) om properties te overriden. Deze syntax kennen we niet (lees er gerust meer over [hier](../B_appendix/6_exprbody.md)). **Je schrijft dus best manueel de override van properties**
 
 Stel dat je volgende klasse hebt:
 
