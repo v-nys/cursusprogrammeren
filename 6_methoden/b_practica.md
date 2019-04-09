@@ -77,6 +77,6 @@ Toon aan in je main dat de methode werkt met zowel 1, 2 als 3 parameters. Toon o
 Kan je code uit vorige hoofdstukken herbruiken door deze in handige methoden te plaatsen zodat je code leesbaarder én bruikbaarder wordt?
 
 ## Module 1 test herschrijven
-Bekijk terug jouw (of mijn) oplossing van de vaardigheidsproef 18/19 of de [module 1 eindetest](../4_beslissingen/b_allinonemodule1.md) in deze cursus. 
+Bekijk terug jouw (of mijn) oplossing van de vaardigheidsproef 18/19 of de [module 1 eindetest](../EindeTests/Mod1/Opgave.md) in deze cursus. 
 
 Kan je deze code leesbaarder maken door methoden (en loops) toe te voegen?

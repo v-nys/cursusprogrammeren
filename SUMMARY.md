@@ -39,13 +39,13 @@
   * [Booleanse logica en operators](4_beslissingen/1_logic_and_relationsoperator.md)
   * [If](4_beslissingen/0_if.md)
   * [Scope van variabelen](4_beslissingen/3_scope.md)
-  * [enum](B_appendix/enum.md)
+  * [enum](4_beslissingen/enum.md)
   * [Switch](4_beslissingen/2_switch.md)
   * [Oefeningen](4_beslissingen/a_practica.md)
 * Module 1 eindetest
-  * [Opgave](4_beslissingen/b_allinonemodule1.md)
-  * [Opgave vaardigheidsproef mod 1 1819](4_beslissingen/b_vaardig1819.md)
-  * [Bespreking vaardigheidsproef mod 1 1819](4_beslissingen/b_allinonemodule1errors.md)
+  * [Opgave](EindeTests/Mod1/Opgave.md)
+  * [Opgave vaardigheidsproef mod 1 1819](EindeTests/Mod1/Opgave_1819.md)
+  * [Bespreking vaardigheidsproef mod 1 1819](EindeTests/Mod1/Oplossing_1819.md)
 * H5: Loops
   * [Loops intro](5_herhalingen/0_loops_intro.md)
   * [While en Do While](5_herhalingen/1_while_dowhile.md)
