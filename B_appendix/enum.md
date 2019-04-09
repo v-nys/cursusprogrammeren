@@ -128,7 +128,7 @@ switch(dagKeuze)
 ## Conversie
 Intern worden de enum-variabelen als ints bewaard. In het geval van de ``Weekdagen`` zal maandag de waarde 0 krijgen, dinsdag 1, etc.
 
-Volgende conversies met behulp van [casting](../2a_data/4_converteren_casting.md) zijn dan ook perfect toegelaten:
+Volgende conversies met behulp van [casting](../3_data/4_converteren_casting.md) zijn dan ook perfect toegelaten:
 ```csharp
 int keuze= 3;
 

@@ -6,7 +6,7 @@ We zullen stap voor stap opbouwen en motiveren waarom dit de enige correcte mani
 Als leuk zij-effect krijgen we het feit dat deze uitleg aardig wat reeds opgedane kennis vereist: we kunnen deze zaken dus ineens herhalen en toelichten in de context van de ``Equals`` methode.
 
 ## Heap en stack
-C# programma’s gebruiken twee soorten geheugens zoals we reeds [in dit hoofdstuk lazen](./5_arrays/6_memorymanagement.md)
+C# programma’s gebruiken twee soorten geheugens zoals we reeds [in dit hoofdstuk lazen](../6_klassen_en_objecten/6_memorymanagement.md)
 * De stack
 * De heap
 
@@ -83,7 +83,7 @@ Hoe kunnen we dan wel 2 objecten vergelijken? Hiervoor dienen we, manueel, alle 
 if(punt1.X== punt2.X && punt1.Y== punt2.Y)
 ```
 
-We zouden dit dan in een handige [static methode](./6_klassen_en_objecten/5_static.md) kunnen plaatsen :
+We zouden dit dan in een handige [static methode](../6_klassen_en_objecten/5_static.md) kunnen plaatsen :
 
 ```csharp
 static bool VergelijkPunten(Point p1, Point p2)
@@ -126,7 +126,7 @@ if(punt1.IsDitPuntGelijk(punt2))
 In de wereld waar we overerving nog niet kennen zou dit een mooi einde zijn van de oefening…maar we kennen overerving en gaan dus een stapje verder.
 
 # System.Object: De grondlegger van alles
-Uit een [vorige hoofdstuk](./7_overerving/4_System_Object.md) weten we dat alle klassen overerven van ``System.Object`` en dat deze een methode Equals bevat. Deze werd speciaal toegevoegd om objecten op gelijkheid te testen. We moeten echter de implementatie zelf schrijven, daar .NET niet kan voorspellen hoe jij vindt dat objecten dezelfde zijn.
+Uit een [vorige hoofdstuk](../7_overerving/4_System_Object.md) weten we dat alle klassen overerven van ``System.Object`` en dat deze een methode Equals bevat. Deze werd speciaal toegevoegd om objecten op gelijkheid te testen. We moeten echter de implementatie zelf schrijven, daar .NET niet kan voorspellen hoe jij vindt dat objecten dezelfde zijn.
 
 Wat we vorige keer niet zagen is dat er twee versies van de ``Equals`` methode beschikbaar zijn in ``System.Object``:
 * Een static versie

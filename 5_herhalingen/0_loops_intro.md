@@ -21,8 +21,8 @@ Er zijn 3 manieren om zogenaamde loops te maken in C#:
 * `` do while``: zal minimaal 1 keer uitgevoerd worden
 * ``for``: een alternatieve iets compactere manier om loops te beschrijven
 
-Voorts zullen we ook een speciale loop variant zien wanneer we arrays leren gebruiken:
-* [``foreach``](../5_arrays/3_foreach.md)
+Voorts zullen we ook een speciale loop variant zien in het volgende semester wanneer we arrays en objecten leren kennen:
+* [``foreach``](../7_arrays/3_foreach.md)
 
 
 ## NEVER EVAH USE GOTO

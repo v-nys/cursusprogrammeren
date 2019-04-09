@@ -4,7 +4,7 @@ Arrays zijn een veelgebruikt principe in vele programmeertalen. Het grote voorde
 
 Een array is niet meer dan een verzameling waarden van hetzelfde type (bijvoorbeeld een verzameling ints, doubles of chars). Deze waarden kunnen benaderd worden via 1 enkele variabele, de array zelf. Door middel van een *index* kan ieder afzonderlijk element uit de array aangepast of uitgelezen worden.
 
-Een nadeel van arrays is dat, eens we de lengte van een array hebben ingesteld, deze lengte niet meer kan veranderen. Later zullen we leren werken met lists en andere collections die dit nadeel niet meer hebben (zie [hier](../8_Collections/8_Collections.md)).
+Een nadeel van arrays is dat, eens we de lengte van een array hebben ingesteld, deze lengte niet meer kan veranderen. Later zullen we leren werken met lists en andere collections die dit nadeel niet meer hebben (zie [hier](../10_generics/8_Collections.md)).
 
 ## Nut van arrays
 
@@ -261,5 +261,5 @@ for(int i = 0; i<ploegen.Length; i++)
 }
 ```
 
-**Opgelet: wanneer je met arrays van objecten ([zie later](../6_klassen_en_objecten/README.MD)) werkt dan zal bovenstaande mogelijk niet het gewenste resultaten geven daar we nu de individuele referenties van een object kopieren!**
+**Opgelet: wanneer je met arrays van objecten ([zie later](../6_klassen_en_objecten/7_arraysvanobj.md)) werkt dan zal bovenstaande mogelijk niet het gewenste resultaten geven daar we nu de individuele referenties van een object kopieren!**
 

@@ -262,7 +262,7 @@ Output:
 Schrijf een methode VermenigvuldigMatrix die 2 matrices als invoer verwacht en als resultaat een nieuwe matrix teruggeeft die het product van beide matrices bevat.
 
 ## Robot Simulator
-Volgende opgave komt uit [https://exercism.io](Exercism.io)
+Volgende opgave komt uit [Exercism.io](https://exercism.io.io)
 
 "
 Write a robot simulator.
