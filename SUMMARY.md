@@ -24,7 +24,7 @@
 * H2: Tekst in code
   * [Strings en chars](2_tekst/5_chars_strings.md)
   * [Strings samenvoegen](2_tekst/6_stringInterpolation.md)
-  * [Unicode tonen](B_appendix/unicode.md) 
+  * [Unicode tonen](2_tekst/7_unicode.md) 
   * [Oefeningen](2_tekst/a_practica.md)
   
 * H3: Werken met data
