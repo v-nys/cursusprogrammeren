@@ -140,14 +140,14 @@
 ## Semester 1
 
 * [Nice to know stuff](B_appendix/prostuff.md)
-   * [Out en Ref parameters](6_methoden/2_outenref.md)
-   * [Jagged arrays](7_arrays/5_jaggedArrays.md)
+   * [Out en Ref parameters](B_appendix/2_outenref.md)
+   * [Jagged arrays](B_appendix/5_jaggedArrays.md)
   
 * Oplossingen oefeningen
     * [H0 - Werken met VS](0_intro/opl_apractica.md)
     * [H3 - Werken met data](3_data/a_oplpractica.md)
     * [H4 - Beslissingen](4_beslissingen/a_oplpractica.md)
-    * [Module 1 eindetest](4_beslissingen/b_oplallinonemodule1.md)
+    * [Module 1 eindetest](EindeTests/Mod1/Oplossing.md)
     * [H5 - Herhalingen](5_herhalingen/opl_a_practica.md)
     * [H6 - Methoden](6_methoden/opl_b_practica.md)
     * [H7 - Arrays](7_arrays/opl_a_practica.md)
