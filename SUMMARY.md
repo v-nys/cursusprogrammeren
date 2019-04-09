@@ -70,9 +70,9 @@
   * [Oefeningen](7_arrays/A_practica.md)
   
 * Module 2 eindetest
-  * [Opgave](7_arrays/b_allinonemodule2.md)
-  * [Opgave vaardigheidsproef mod 2 1819](7_arrays/b_vaardigmod21819.md)
-  * [Bespreking vaardigheidsproef mod 2 1819](7_arrays/b_allinonemodule2errors.md)
+  * [Opgave](EindeTests/Mod2/Opgave.md)
+  * [Opgave vaardigheidsproef mod 2 1819](EindeTests/Mod2/Opgave_1819.md)
+  * [Bespreking vaardigheidsproef mod 2 1819](EindeTests/Mod2/Oplossing_1819.md)
 
 ##  Semester 2 : OOP
 
@@ -99,8 +99,8 @@
   * [List](7_arrays/4_list.md)
   * [Labo-oefeningen](6_klassen_en_objecten/A_practicaMem.md)
 * Module 3 eindetest
-    * [Opgave](7_arrays/b_allinonemodule3.md)
-    * [Opgave vaardigheidsproef mod 3 1819](7_arrays/b_vaardig1819.md)
+    * [Opgave](EindeTests/Mod3/Opgave.md)
+    * [Opgave vaardigheidsproef mod 3 1819](EindeTests/Mod3/Opgave_1819.md)
 * H12: Overerving
   * [Overerving intro](7_overerving/0_overerving_intro.MD)
   * [Base keyword](7_overerving/2_base.md)
