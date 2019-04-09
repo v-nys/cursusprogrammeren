@@ -87,7 +87,7 @@ for(int i =0; i<mensjes.Length; i++)
     }
 }
 ```
-Vervolgens kunnen we binnen deze if het huidige object tijdelijk omzetten ([casten](/1_csharpbasics/4_converteren_casting.md)) naar een IVloeker object en laten vloeken:
+Vervolgens kunnen we binnen deze if het huidige object tijdelijk omzetten ([casten](/3_data/4_converteren_casting.md)) naar een IVloeker object en laten vloeken:
 ```csharp
 if(mensjes[i] is IVloeker)
 {

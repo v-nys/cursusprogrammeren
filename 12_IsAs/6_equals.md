@@ -1,5 +1,5 @@
 # Objecten testen op gelijkheid: the missing manual
-In dit hoofdstuk gaan we dieper in hoe we objecten kunnen vergelijken op gelijkheid met behulp van de ``Equals`` methode die in ``System.Object`` gedefinieerd wordt. We hebben dit reeds behandeld in het hoofdstuk over [System.Object](./7_overerving/4_System_Object.md). We hebben nu echter voldoende bagage dankzij de voorgaande hoofdstukken om een complete oplossing te vinden.
+In dit hoofdstuk gaan we dieper in hoe we objecten kunnen vergelijken op gelijkheid met behulp van de ``Equals`` methode die in ``System.Object`` gedefinieerd wordt. We hebben dit reeds behandeld in het hoofdstuk over [System.Object](../7_overerving/4_System_Object.md). We hebben nu echter voldoende bagage dankzij de voorgaande hoofdstukken om een complete oplossing te vinden.
 
 We zullen stap voor stap opbouwen en motiveren waarom dit de enige correcte manier is. 
 
@@ -303,4 +303,4 @@ public override bool Equals (object obj)
 
 ![](/assets/care.jpg)
 
-Let's be honest. Als je aan dit punt en geen flauw benul hebt waarom je in godsnaam je hier ies van moet aantrekken, wel dan wordt het dringend tijd om deze cursus van voor naar achter, links naar rechts en onder tot boven terug door te nemen ;).
+Let's be honest. Als je aan dit punt en geen flauw benul hebt waarom je in godsnaam je hier iets van moet aantrekken, wel dan wordt het dringend tijd om deze cursus van voor naar achter, links naar rechts en onder tot boven terug door te nemen ;).

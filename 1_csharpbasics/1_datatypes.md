@@ -64,7 +64,7 @@ Het ``bool`` (**boolean**) is het eenvoudigste datatype van C#. Het kan maar 2 m
 
 Het gebeurt vaak dat beginnende programmeurs een ``int`` variabele gebruiken terwijl ze toch weten dat de variabele maar 2 mogelijke waarden zal hebben. Om dus onnodig geheugen te verbruiken is het aan te raden om in die gevallen steeds met een ``bool`` variabele te werken.
 
-We zullen het ``bool`` datatype erg veel nodig hebben wanneer we met [beslissingen](../4_beslissingen/0_beslissingen_intro.md) zullen werken , specifiek de [``if`` statements](../4_beslissingen/if.md) die afhankelijk van de uitslag van een ``bool`` bepaalde code wel of niet zullen doen uitvoeren.
+We zullen het ``bool`` datatype erg veel nodig hebben wanneer we met [beslissingen](../4_beslissingen/0_beslissingen_intro.md) zullen werken , specifiek de [``if`` statements](../4_beslissingen/0_if.md) die afhankelijk van de uitslag van een ``bool`` bepaalde code wel of niet zullen doen uitvoeren.
 
 # Tekst/String datatype
 We besteden een heel apart hoofdstuk verderop om te tonen hoe je tekst en enkele karakters kan bewaren in variabelen. Sneak preview: 
