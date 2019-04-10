@@ -60,7 +60,7 @@ public virtual string ToString()
  
  
  ## Equals()
- Ook deze methode kan je dus overriden om twee objecten met elkaar te testen. Op het  [einde van deze cursus](../12_IsAs/6_equals.md) zal dieper in ``Equals`` ingaan worden om objecten te vergelijken, maar we tonen hier reeds een voorbeeld:
+ Ook deze methode kan je dus overriden om twee objecten met elkaar te testen. Op het  [einde van deze cursus](../18_IsAs/6_equals.md) zal dieper in ``Equals`` ingaan worden om objecten te vergelijken, maar we tonen hier reeds een voorbeeld:
  ```csharp
 if(stud1.Equals(stud2))
    //...
@@ -102,7 +102,7 @@ public override bool Equals(Object o)
 
 De lijn ``Student temp = (Student)o;`` zal het ``object o`` casten naar een ``Student``. Doe je dit niet dan kan je niet aan de interne Student-variabelen van het ``object o``.
 
-[Dit concept heet polymorfisme en wordt later uitgelegd](../11_polymorfisme/11_polymo_intro.MD).
+[Dit concept heet polymorfisme en wordt later uitgelegd](../15_polymorfisme/11_polymo_intro.MD).
 
 ## GetHashcode
 Indien je Equals override dan moet je eigenlijk ook GetHashCode overriden, daar er wordt verondersteld dat twee gelijke objecten ook dezelfde unieke hashcode teruggeven. Wil je dit dus implementeren dan zal je dus een (bestaand) algoritme moeten schrijven dat een uniek nummer genereert voor ieder niet-gelijke object. 
@@ -111,4 +111,4 @@ Bekijk volgende [StackOverflow post](https://stackoverflow.com/questions/9827911
 
 # Ik ben nog niet helemaal mee?
 Niet getreurd, je bent niet de enige. Overerving,System.object, Equals,...het is allemaal een hoop nieuwe kennis om te verwerken. 
-Aan het [einde van deze cursus](../12_IsAs/6_equals.md) gaan we dieper in bovenstaande materie in om een volledige ``Equals`` methode op te bouwen en we bij iedere stap uitgebreide uitleg geven.
+Aan het [einde van deze cursus](../18_IsAs/6_equals.md) gaan we dieper in bovenstaande materie in om een volledige ``Equals`` methode op te bouwen en we bij iedere stap uitgebreide uitleg geven.

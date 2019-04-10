@@ -6,7 +6,7 @@ Een List<> collectie is de meest standaard collectie die je kan beschouwen als e
 
 ## List aanmaken
 
-De klasse ``List<>`` is een zogenaamde generieke klasse ([zien we later](../10_generics/0_generics_intro.MD)). Tussen de ``< >``tekens plaatsen we het type dat de lijst zal moeten gaan bevatten. Bijvoorbeeld:
+De klasse ``List<>`` is een zogenaamde generieke klasse ([zien we later](../17_gencols/0_generics_intro.MD)). Tussen de ``< >``tekens plaatsen we het type dat de lijst zal moeten gaan bevatten. Bijvoorbeeld:
 
 * ``List<int> alleGetallen= new List<int>();``
 * ``List<bool> binaryList = new List<bool>();``
