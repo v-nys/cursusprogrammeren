@@ -1,8 +1,8 @@
-﻿# Zie scherp
+\# Zie scherp
 
-Deze cursus is nog in opbouw en zal de komende weken en maanden steeds meer vorm krijgen. Deze cursus wordt gebruikt als handboek binnen de [opleiding professionele bachelor elektronica-ict van de AP Hogeschool](https://www.ap.be/opleiding/elektronica-ict). 
+Deze cursus is nog in opbouw en zal de komende weken en maanden steeds meer vorm krijgen. Deze cursus wordt gebruikt als handboek binnen de [opleiding professionele bachelor elektronica-ict van de AP Hogeschool](https://www.ap.be/opleiding/elektronica-ict).
 
-Concreet is dit het handboek voor de eerste 2 semesters omtrent 'leren programmeren met C#':
+Concreet is dit het handboek voor de eerste 2 semesters omtrent 'leren programmeren met C\#':
 
 * Deel 1: Programming Principles, eerste semester
 * Deel 2: Object Oriented Programming, tweede semester
@@ -17,7 +17,7 @@ Tim Dams
 
 ![](/assets/0_intro/tdams.jpg)
 
-PS Besef dat goed kunnen programmeren enkel kan (aan)geleerd worden indien je ook effectief veel programmeert. Je kan ook niet leren fietsen door enkel een handboek "Fietsen met Merckx" te lezen, je zal op de fiets moeten springen! En vallen...véél vallen.
+PS Besef dat goed kunnen programmeren enkel kan \(aan\)geleerd worden indien je ook effectief veel programmeert. Je kan ook niet leren fietsen door enkel een handboek "Fietsen met Merckx" te lezen, je zal op de fiets moeten springen! En vallen...véél vallen.
 
 # Woord van dank
 
@@ -27,15 +27,17 @@ Aardig wat mensen, grotendeels studenten 1EA van 2019-2020, hebben me met deze c
 
 Lees dan zeker [volgende pagina](helpen.md).
 
-# Licensed under Creative Commmons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)
+[helpen.md](helpen.md)
 
-![Licenicon](/assets/ccicon.png)
-![Licenicon](/assets/ccat.png)
+# Licensed under Creative Commmons Attribution-NonCommercial 4.0 International \(CC BY-NC 4.0\)
+
+![Licenicon](/assets/ccicon.png)  
+![Licenicon](/assets/ccat.png)  
 ![Licenicon](/assets/ccnc.png)
 
 Licensed under CC-BY-NC 4.0 as shown [here](LICENSE.MD).
 
-This is a human-readable summary of (and not a substitute for) the [license](LICENSE.MD).
+This is a human-readable summary of \(and not a substitute for\) the [license](LICENSE.MD).
 
 ## You are free to
 
@@ -47,7 +49,8 @@ The licensor cannot revoke these freedoms as long as you follow the license term
 
 ## Under the following terms
 
-**Attribution** : You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+**Attribution** : You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.  
 **NonCommercial** : You may not use the material for commercial purposes.
 
 **No additional restrictions** : You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
+
