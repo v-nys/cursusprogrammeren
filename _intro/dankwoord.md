@@ -1,4 +1,7 @@
 
+
+Aardig wat mensen, grotendeels studenten 1EA van 2019-2020, hebben me met deze cursus geholpen. **Waarvoor dank!** Hieronder een zo volledige lijst mogelijk van de vele typo-hunters, inputgevers, reviewers en schouderklopjesgevers.
+
 # Ultra editors Hall of Fame
 
 Eerst wil ik drie studenten apart bedankt voor hun hardcore input in deze cursus, namelijk:
@@ -6,7 +9,6 @@ Eerst wil ik drie studenten apart bedankt voor hun hardcore input in deze cursus
 * Hattas Zeno
 * Van Driel Kevin
 * Van Riel Lennert
-
 
 Zonder jullie zou deze cursus een pak meer fouten, onduidelijkheden en Pokemons in plaats van Pokémons bevatten. Merci heren!
 

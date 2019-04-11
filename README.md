@@ -1,4 +1,4 @@
-\# Zie scherp
+# Zie scherp
 
 Deze cursus is nog in opbouw en zal de komende weken en maanden steeds meer vorm krijgen. Deze cursus wordt gebruikt als handboek binnen de [opleiding professionele bachelor elektronica-ict van de AP Hogeschool](https://www.ap.be/opleiding/elektronica-ict).
 
@@ -18,14 +18,6 @@ Tim Dams
 ![Logo ikke](/assets/0_intro/tdams.jpg)
 
 PS Besef dat goed kunnen programmeren enkel kan geleerd worden indien je ook effectief veel programmeert. Je kan ook niet leren fietsen door enkel een handboek "Fietsen met Merckx" te lezen, je zal op de fiets moeten springen! En vallen...véél vallen.
-
-# Woord van dank
-
-Aardig wat mensen, grotendeels studenten 1EA van 2019-2020, hebben me met deze cursus geholpen. **Waarvoor dank!** De volledige lijst van typo-hunters, inputgevers, reviewers en schouderklopjesgevers kan je [hier](/_intro/dankwoord.md) terugvinden.
-
-## Interesse om te helpen?
-
-Lees dan zeker [volgende pagina](/_intro/helpen.md).
 
 # Licensed under Creative Commmons Attribution-NonCommercial 4.0 International \(CC BY-NC 4.0\)
 
