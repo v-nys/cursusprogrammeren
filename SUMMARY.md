@@ -182,4 +182,4 @@
 
 ## Pro (geen leerstof)
 * H19: Events
-  * [Chat server](chatserver.md)
+  * [Chat server](19_events/chatserver.md)
