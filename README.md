@@ -15,13 +15,13 @@ Veel leer-en leesplezier,
 
 Tim Dams
 
-![](/assets/0_intro/tdams.jpg)
+![Logo ikke](/assets/0_intro/tdams.jpg)
 
-PS Besef dat goed kunnen programmeren enkel kan \(aan\)geleerd worden indien je ook effectief veel programmeert. Je kan ook niet leren fietsen door enkel een handboek "Fietsen met Merckx" te lezen, je zal op de fiets moeten springen! En vallen...véél vallen.
+PS Besef dat goed kunnen programmeren enkel kan geleerd worden indien je ook effectief veel programmeert. Je kan ook niet leren fietsen door enkel een handboek "Fietsen met Merckx" te lezen, je zal op de fiets moeten springen! En vallen...véél vallen.
 
 # Woord van dank
 
-Aardig wat mensen, grotendeels studenten 1EA van 2019-2020, hebben me met deze cursus geholpen. **Waarvoor dank!** De volledige lijst van typo-hunters, inputgevers en reviewers kan je [hier](dankwoord.md) terugvinden
+Aardig wat mensen, grotendeels studenten 1EA van 2019-2020, hebben me met deze cursus geholpen. **Waarvoor dank!** De volledige lijst van typo-hunters, inputgevers, reviewers en schouderklopjesgevers kan je [hier](dankwoord.md) terugvinden.
 
 ## Interesse om te helpen?
 
