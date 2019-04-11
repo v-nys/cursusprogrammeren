@@ -1,4 +1,4 @@
-# Zie scherp
+﻿# Zie scherp
 
 Deze cursus is nog in opbouw en zal de komende weken en maanden steeds meer vorm krijgen. Deze cursus wordt gebruikt als handboek binnen de [opleiding professionele bachelor elektronica-ict van de AP Hogeschool](https://www.ap.be/opleiding/elektronica-ict). 
 
@@ -25,7 +25,7 @@ Aardig wat mensen, grotendeels studenten 1EA van 2019-2020, hebben me met deze c
 
 ## Interesse om te helpen?
 
-Lees dan zeker [volgende pagina](helpen.md).
+Lees dan zeker [volgende pagina](../helpen.md).
 
 # Licensed under Creative Commmons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)
 
