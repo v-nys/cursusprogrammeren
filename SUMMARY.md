@@ -134,6 +134,8 @@
   * [Objecten vergekijken: alles komt samen](18_IsAs/6_equals.md)
   * [Labo-oefeningen](18_IsAs/A_Practica.md)
 
+
+  
 ## Appendix
 
 * [Ea-ict coding guidelines](B_appendix/codingguidelines.md)
@@ -177,3 +179,7 @@
   * [OO Textbased Game](A_DEEL2_AllInOne/2_OOTextGame.md)
   * [War Simulator](A_DEEL2_AllInOne/3_WarGame.md)
   * [Map Maker](A_DEEL2_AllInOne/1_MapMapker.md) 
+
+## Pro (geen leerstof)
+* H19: Events
+  * [Chat server](chatserver.md)
