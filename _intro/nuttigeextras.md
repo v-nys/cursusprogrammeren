@@ -54,7 +54,7 @@ Ideale manier om programmeren meer in de vingers te krijgen op een speelse manie
 * [C-sharp.be](http://www.c-sharp.be) : Nederlandstalige cursus met veel toffe oefeningen waarvan je sommige zelfs in deze cursus zal terugvinden.
 * [Microsoft Virtual Academy](https://mva.microsoft.com/en-us/training-courses/c-fundamentals-for-absolute-beginners-16169?l=Lvld4EQIC_2706218949):  Microsoft heeft een virtual academy cursus "C# fundamentals" uitgebracht. Ik kan deze cursus zeer erg aanbevelen.
 * [Rob Miles's The C# Programming Yellow book](http://www.robmiles.com/c-yellow-book/): Zeer vermakelijk, vlot geschreven C# boek(je)
-* [Code van 1001 Nacht](https://codevan1001nacht.wordpress.com/) :  Hier plaats ik geregeld korte tutorials over een specifiek probleem/onderwerp omtrent C#. De meeste content daar werd reeds in deze cursus verwerkt.
+* [Open Source Game Clones](https://osgameclones.com/): "This site tries to gather open-source remakes of great old games in one place." Je vindt er ook tal van C# projecten terug zoals [GTA 2](https://code.google.com/archive/p/gta2net/).Klik bovenaan op "languages" en filter maar eens op C#.
 
 ## Oefenvragen
 
@@ -76,3 +76,4 @@ Ja hoor, ze bestaan. Meer en meer professionele én beginnende programmeurs stre
 * [Visual Studio Twitch](https://www.twitch.tv/visualstudio)
 * [NoopKat](https://www.twitch.tv/noopkat)
 * [The Coding train](https://www.youtube.com/channel/UCvjgXvBlbQiydffZU7m1_aw)
+
