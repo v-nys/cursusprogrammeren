@@ -21,11 +21,11 @@ PS Besef dat goed kunnen programmeren enkel kan geleerd worden indien je ook eff
 
 # Woord van dank
 
-Aardig wat mensen, grotendeels studenten 1EA van 2019-2020, hebben me met deze cursus geholpen. **Waarvoor dank!** De volledige lijst van typo-hunters, inputgevers, reviewers en schouderklopjesgevers kan je [hier](dankwoord2.md) terugvinden.
+Aardig wat mensen, grotendeels studenten 1EA van 2019-2020, hebben me met deze cursus geholpen. **Waarvoor dank!** De volledige lijst van typo-hunters, inputgevers, reviewers en schouderklopjesgevers kan je [hier](/_intro/dankwoord.md) terugvinden.
 
 ## Interesse om te helpen?
 
-Lees dan zeker [volgende pagina](helpen.md).
+Lees dan zeker [volgende pagina](/_intro/helpen.md).
 
 # Licensed under Creative Commmons Attribution-NonCommercial 4.0 International \(CC BY-NC 4.0\)
 
