@@ -5,7 +5,7 @@
 # De opwarmers
 Bekijk maak de oefeningen 8 tot en met 13 van hoofdstuk 4 in volgende [pdf](/assets/docs/oefenvragen2010.pdf) 
 
-> Ter info: Dit document staat ook in de lijst onderaan bij de nuttige extra's [hier](../0_intro/nuttigeextras.md).
+> Ter info: Dit document staat ook in de lijst onderaan bij de nuttige extra's [hier](../_intro/nuttigeextras.md).
 
 # De oefeningen
 > Indien niet expliciet vermeld mag je kiezen met wat voor loop (for, while, do while) je het probleem zal oplossen.
