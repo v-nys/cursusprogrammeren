@@ -6,7 +6,21 @@ Wanneer twee objecten  een "heeft een"-relatie hebben dan spreken we over compos
 * Een auto heeft een motor 
 * Een computer heeft een harde schijf
 
-Het lijdende voorwerp zal steeds het object zijn dat binnen het onderwerp zal geplaatst worden (motor in auto, schijf in computer).
+Het lijdende voorwerp zal steeds het object zijn dat binnen het onderwerp zal geplaatst worden (*motor* in auto, *schijf* in computer).
+
+## Aanduiding
+
+Compositie duiden we aan met een lijn die begint met een volle ruit aan de kant van de klasse die de objecten in zich heeft:
+
+![](/assets/6_klassen/compuml.png)
+[bron](https://www.visual-paradigm.com/guide/uml-unified-modeling-language/uml-aggregation-vs-composition/)
+
+Optioneel duidt een getal aan iedere kant van de lijn de verhouding aan. Bijvoorbeeld:
+
+![](/assets/6_klassen/multipplecompuml.png)
+[bron](http://www.jot.fm/issues/issue_2004_11/column5/)
+
+Herinner je: Overerving duiden we aan met een pijl die wijst naar de parent-klasse
 
 ## In de praktijk
 
@@ -70,14 +84,16 @@ class PC
 myPC.CDisk= new Disk();
 ```
 
-
-
 ## Kortom
+
 Alle manieren die ja al kende om met bestaande types objecten aan te maken gelden nog steeds. Compositie deed je al de hele tijd wanneer je bijvoorbeeld zij "een student heeft een leeftijd" en dan een variabele ``int age`` aanmaakte. Het grote verschil is echter dat objecten moeten geïnstantieerd worden , wat niet moest met value-types. 
+
 ## NullReference is een klassieke fout
+
 Een veelvoorkomende fout bij compositie van objecten is dat je een object aanspreekt dat nooit werd geïnstantieerd. Je krijgt dan een ``NullReferenceException``.
 
 # "Heeft meerdere"- relatie
+
 Wanneer een object meerdere objecten van een specifiek type heeft (denk maar aan "een boek heeft meerdere pagina's" of "een boom heeft bladeren") dan zullen we een array of een list als compositie-object gebruiken. 
 
 Voorbeeld:
@@ -121,3 +137,4 @@ class Book
 //Elders
 myBook.AllPages.Insert(new Page(), 5); 
 ```
+
