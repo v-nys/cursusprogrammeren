@@ -22,6 +22,8 @@ Optioneel duidt een getal aan iedere kant van de lijn de verhouding aan. Bijvoor
 
 Herinner je: Overerving duiden we aan met een pijl die wijst naar de parent-klasse
 
+Pro: bekijk zeker eens een complexer UML-diagramma zoals bijvoorbeeld van schaken [hier](https://stackoverflow.com/questions/17631125/trying-to-convert-diagram-of-a-chess-game-to-java-code-abstract)
+
 ## In de praktijk
 
 We bekijken het voorbeeld van de computer en de harde schijf. We hebben twee klassen
