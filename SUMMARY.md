@@ -115,7 +115,7 @@
   * [Labo-oefeningen](13_advancedovererving/A_Practica.md)
 * H14: Compositie
   * [Compositie intro](14_compositie/0_compositie_intro.MD)
-  * [Labo-oefeningen](14_compositie/A_Practica.md)
+  * [Labo-oefeningen ](14_compositie/A_Practica.md)
 * H15: Polymorfisme
   * [Intro polymorfisme](15_polymorfisme/11_polymo_intro.MD)
   * [Labo-oefeningen](15_polymorfisme/A_Practica.md)
