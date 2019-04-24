@@ -103,6 +103,7 @@
 * Module 3 eindetest
     * [Opgave](EindeTests/Mod3/Opgave.md)
     * [Opgave vaardigheidsproef mod 3 1819](EindeTests/Mod3/Opgave_1819.md)
+    * [Bespreking vaardigheidsproef mod 3 1819](EindeTests/Mod3/Oplossing_1819.md)
 * H12: Overerving
   * [Overerving intro](12_overerving/0_overerving_intro.MD)
   * [Base keyword](12_overerving/2_base.md)
