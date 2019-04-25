@@ -35,14 +35,35 @@ class Varken: Dier
 Dankzij polymorfisme kunnen we nu elders objecten van Paard en Varken in een ``Dier`` bewaren, maar toch hun eigen geluid laten reproduceren:
 ```csharp
 Dier someAnimal = new Varken();
-Dier anotherAniemal = new Paard();
+Dier anotherAnimal = new Paard();
 Console.WriteLine(someAnimal.MaakGeluid()); //Hinnikhinnik
 Console.WriteLine(anotherAnimal.MaakGeluid()); //Oinkoink
 ```
 
+Het is belangrijk te beseffen dat  ``someAnimal`` en ``anotherAnimal`` van het type ``Dier`` zijn en dus enkel die dingen kunnen die in ``Dier`` beschreven staan. Enkel zaken die ``override`` zijn in de child-klasse zullen met de specialisatie-code werken.
+
+### Arrays en polymorfisme
+
+Arrays en lijsten laten heel krachtige code toe. Je kan een lijst van de basis-klasse maken en deze vullen met allerlei objecten van de basis-klasse **én de child-klassen**. 
+
+Een voorbeeld:
+
+```csharp
+List<Dier> zoo = new List<Dier>();
+zoo.Add(new Varken());
+zoo.Add(new Paard());
+foreach(var dier in zoo)
+{
+  Console.WriteLine(dier.MaakGeluid());
+}
+```
+
 ## Polymorfisme in de praktijk: Presidenten
-![](/assets/9_interfaces/president.jpg)
+
+![Gezocht: wie weet waar deze still vandaan komt? Ik heb geen flauw benul. We zien Robert Redford en Bush Senior, uit een film ofzo?](/assets/9_interfaces/president.jpg)
+
 Beeld je in dat je een klasse President hebt met een methode "RunTheCountry" (voorbeeld van [StackOverflow](https://stackoverflow.com/questions/1031273/what-is-polymorphism-what-is-it-for-and-how-is-it-used) ). De President heeft toegang tot tal van adviseurs die hem kunnen helpen (inzake miltair, binnenlands beleid, economie). Zonder de voordelen van polymorfisme zou de klasse President er zo kunnen uitzien, **slechte manier**:
+
 ```csharp
 public class President
 {
@@ -69,9 +90,11 @@ public class President
     }
 }
 ```
+
 Je merkt dat de President (of de programmeur van deze klasse) aardig wat specifieke kennis moet hebben van de vele verschillende departementen van het land. Uiteraard is dat onmogelijk (een fictief voorbeeld: stel je Trump voor...Denk je echt dat die zo veel weet?) . Bovenstaande code is dus zeer slecht. Telkens er zaken binnen een specifiek landsonderdeel wijzigen moet dit ook in de klasse President aangepast worden. 
 
 Dankzij polymorfisme kunnen we dit alles veel mooier oplossen:
+
 1. We verplichten alle adviseurs dat ze overerven van de abstracte klasse ``Advisor`` die maar 1 abstracte methode heeft ``Advise``:
 
 ```csharp
@@ -88,17 +111,9 @@ class MilitaryMinistor:Advisor
        improveSecurity();
        payContractors();
   }
-  private void increaseTroopNumbers() 
-  {
-  //...
-  }
-    private void improveSecurity() 
-  {
-  //...
-  }
-    private void improveSecurity() 
-  {
-  //...
+  private void increaseTroopNumbers(){ ... }
+  private void improveSecurity(){ ... }
+  private void payContractors(){ ... }
   }
 }
 
@@ -111,6 +126,7 @@ class HealthOfficial:Advisor
   //...
 }
 ```
+
 2° Het leven van de President wordt plots véél makkelijker:
 
 ```csharp
@@ -129,17 +145,17 @@ public class MisterPresident
 ```
 
 3° En we kunnen hem nog helpen door met een array of ``List<Advisor>`` te werken zodat hij ook niet steeds de "namen" van z'n adviseurs moet kennen:
+
 ```csharp
 public class MisterPresident
 {
     public void RunTheCountry()
-    {
-    
+    {   
         List<Advisor> allMinisters= new List<Advisor>();
         allMinisters.Add(new MilitaryAdvisor());
         allMinisters.Add(new ForeignSecretary());
         allMinisters.Add(new HealthOfficial());
-        
+
         //Ask advise from each:
         foreach (Advisor minister in allMinisters)
         {
@@ -148,9 +164,11 @@ public class MisterPresident
     }
 }
 ```
+
 En wie zei dat het presidentsschap moeilijk was?!
 
 ## Nog voorbeelden van polymorfisme nodig?
+
 Volgende tekst heeft een leuke insteek om polymorfisme uit te leggen... aan de hand van...wait for it... Zeemeerminnen! :) [Lezen maar!](http://www.techoschool.com/Technology/Dotnet/Csharp-for-Beginners_Csharp-Polymorphism)
 
 Volgende voorbeeld is iets praktischer: [Arena with a mage in C# .NET (inheritance and polymorphism)](https://www.ict.social/csharp/oop/arena-with-mage-in-csharp-net-inheritance-and-polymorphism)

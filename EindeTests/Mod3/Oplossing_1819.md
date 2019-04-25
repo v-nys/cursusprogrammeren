@@ -3,21 +3,21 @@
 ## Main (Program.cs)
 
 ```csharp
-    Console.WriteLine("Rise and shine");
-    Console.WriteLine($"Het is nu {DateTime.Now.Hour}:{DateTime.Now.Minute}");
-    var log = QalAnalyzer.CreateDiary();
-    QalAnalyzer.AnalyseDiary(log);
+Console.WriteLine("Rise and shine");
+Console.WriteLine($"Het is nu {DateTime.Now.Hour}:{DateTime.Now.Minute}");
+var log = QalAnalyzer.CreateDiary();
+QalAnalyzer.AnalyseDiary(log);
 
-    QalAnalyzer.SummariseDiary(log);
+QalAnalyzer.SummariseDiary(log);
 
-    Console.WriteLine("Dagboek wegschrijven?(j/n");
-    string csv = Console.ReadLine();
-    if(csv=="j")
-    {
-        Console.WriteLine("Geef bestandsnaam");
-        string nm = Console.ReadLine();
-        QalAnalyzer.WriteDiary(log,nm);
-    }
+Console.WriteLine("Dagboek wegschrijven?(j/n");
+string csv = Console.ReadLine();
+if(csv=="j")
+{
+    Console.WriteLine("Geef bestandsnaam");
+    string nm = Console.ReadLine();
+    QalAnalyzer.WriteDiary(log,nm);
+}
 ```
 
 ## DagboekEntry Klasse

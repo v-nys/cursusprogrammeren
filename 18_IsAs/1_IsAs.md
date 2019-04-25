@@ -1,6 +1,6 @@
 # Is en As
 
-We introduceren twee nieuwe C# keywords: ``is`` en ``as``. 
+We introduceren twee nieuwe C# keywords: ``is`` en ``as``.
 
 ## Is keyword
 Het ``is`` keyword is een operator die je kan gebruiken om te weten te komen of:

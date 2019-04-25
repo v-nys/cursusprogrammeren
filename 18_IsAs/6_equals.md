@@ -1,4 +1,5 @@
 # Objecten testen op gelijkheid: the missing manual
+
 In dit hoofdstuk gaan we dieper in hoe we objecten kunnen vergelijken op gelijkheid met behulp van de ``Equals`` methode die in ``System.Object`` gedefinieerd wordt. We hebben dit reeds behandeld in het hoofdstuk over [System.Object](../13_advancedovererving/4_System_Object.md). We hebben nu echter voldoende bagage dankzij de voorgaande hoofdstukken om een complete oplossing te vinden.
 
 We zullen stap voor stap opbouwen en motiveren waarom dit de enige correcte manier is. 
@@ -12,6 +13,7 @@ C# programma’s gebruiken twee soorten geheugens zoals we reeds [in dit hoofdst
 
 De volledige werking van deze geheugens gaan we niet terug herhalen. Voor ons belangrijk is te weten dat variabelen van built-in .NET types (int , char, etc.) in de stack worden bewaard.
 Objecten daarentegen worden in de heap bewaard. Indien je een object aanmaakt met de new operator en deze bewaard in een lokale variabele zoals hier:
+
 ```csharp
 Point punt1 = new Point();
 ```

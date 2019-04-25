@@ -118,17 +118,12 @@
   * [Compositie](14_compositie/0_compositie_intro.MD)
   * [Labo-oefeningen](14_compositie/A_PracticaComp.md)
 * H15: Polymorfisme
-  * [Intro polymorfisme](15_polymorfisme/11_polymo_intro.MD)
+  * [Polymorfisme](15_polymorfisme/11_polymo_intro.MD)
   * [Labo-oefeningen](15_polymorfisme/A_Practica.md)
 * H16: Interfaces
   * [Interface intro](16_interfaces/1_Interface_intro.MD)
   * [Interfaces in de praktijk](16_interfaces/2_InterfacesInPraktijk.md)
   * [Labo-oefeningen](16_interfaces/A_practica.md)
-* H17: Generics en collections
-  * [Generics methoden en types](17_gencols/0_generics_intro.MD)
-  * [Generic classes en constraints](17_gencols/2_genericclasses_en_constraints.md)
-  * [Collections](17_gencols/8_Collections.md)
-  * [Labo-oefeningen](17_gencols/A_Practica.md)
 * H18: Is en As keyword
   * [Is en As keywords](18_IsAs/1_IsAs.md)
   * [Polymorfisme en interfaces](18_IsAs/2_Polymorfisme_Interfaces.md)
@@ -179,8 +174,14 @@
   * [Overzicht](A_DEEL2_AllInOne/0_Deel2_IntroductieAllInOne.md)
   * [OO Textbased Game](A_DEEL2_AllInOne/2_OOTextGame.md)
   * [War Simulator](A_DEEL2_AllInOne/3_WarGame.md)
-  * [Map Maker](A_DEEL2_AllInOne/1_MapMapker.md) 
+  * [Map Maker](A_DEEL2_AllInOne/1_MapMapker.md)
 
 ## Pro (geen leerstof)
+* H17: Generics en collections
+  * [Generics methoden en types](17_gencols/0_generics_intro.MD)
+  * [Generic classes en constraints](17_gencols/2_genericclasses_en_constraints.md)
+  * [Collections](17_gencols/8_Collections.md)
+  * [Labo-oefeningen](17_gencols/A_Practica.md)
 * H19: Events
+  * [Events](19_events/events.md)
   * [Chat server](19_events/chatserver.md)
