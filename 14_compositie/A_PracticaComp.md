@@ -20,8 +20,8 @@ Iedere module moet via een property langs buiten ingesteld worden. (beeld je in 
 
 ```csharp
 Moederbord Z390E_GAMING = new Moederbord();
-Z390E_GAMING.AGP= new GeForceRTX2080();
-Z390E_GAMING.CPU= new IntelCorei9_9900K();
+Z390E_GAMING.AGP= new AGPSlot("GeForceRTX2080");
+Z390E_GAMING.CPU= new CPUSlot("IntelCorei9_9900K");
 //etc.
 ```
 
