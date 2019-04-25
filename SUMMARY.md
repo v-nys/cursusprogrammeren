@@ -128,7 +128,7 @@
   * [Polymorfisme en interfaces](18_IsAs/2_Polymorfisme_Interfaces.md)
   * [Labo-oefeningen](16_interfaces/A_practica.md)
 * Module 4 eindetest
-    * [Opgave](EindeTests/Mod4/Opgave.md)
+  * [Opgave](EindeTests/Mod4/Opgave.md)
 
 ## Appendix
 
