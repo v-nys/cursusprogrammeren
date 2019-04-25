@@ -47,6 +47,7 @@ Ideale manier om programmeren meer in de vingers te krijgen op een speelse manie
 * [RPG Game in C#](http://scottlilly.com/learn-c-by-building-a-simple-rpg-index/) (behandelt leerstof van volledig eerste jaar en meer)
 * [Advent of code](https://adventofcode.com) Pittige programmeeroefeningen die jaarlijks in december verschijnen.
 * [Free Programming Book](https://books.goalkicker.com/) Handig vorm gegeven gratis ebooks met tal van onderwerpen waaronder ook C# en het .NET Framework.
+* [Tutorials teachcer](https://www.tutorialsteacher.com/csharp/csharp-tutorials): De uitgebreidere, Engelstalige variant van deze cursus zeg maar.
 
 ## Tutorials
 

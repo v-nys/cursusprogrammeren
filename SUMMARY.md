@@ -119,18 +119,14 @@
   * [Labo-oefeningen](14_compositie/A_PracticaComp.md)
 * H15: Polymorfisme
   * [Polymorfisme](15_polymorfisme/11_polymo_intro.MD)
+  * [Is en As keywords](18_IsAs/1_IsAs.md)
+  * [Objecten vergekijken: alles komt samen](18_IsAs/6_equals.md)
   * [Labo-oefeningen](15_polymorfisme/A_Practica.md)
 * H16: Interfaces
   * [Interface intro](16_interfaces/1_Interface_intro.MD)
   * [Interfaces in de praktijk](16_interfaces/2_InterfacesInPraktijk.md)
-  * [Labo-oefeningen](16_interfaces/A_practica.md)
-* H18: Is en As keyword
-  * [Is en As keywords](18_IsAs/1_IsAs.md)
   * [Polymorfisme en interfaces](18_IsAs/2_Polymorfisme_Interfaces.md)
-  * [Objecten vergekijken: alles komt samen](18_IsAs/6_equals.md)
-  * [Labo-oefeningen](18_IsAs/A_Practica.md)
-
-
+  * [Labo-oefeningen](16_interfaces/A_practica.md)
   
 ## Appendix
 
