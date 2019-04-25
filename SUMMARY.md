@@ -127,7 +127,9 @@
   * [Interfaces in de praktijk](16_interfaces/2_InterfacesInPraktijk.md)
   * [Polymorfisme en interfaces](18_IsAs/2_Polymorfisme_Interfaces.md)
   * [Labo-oefeningen](16_interfaces/A_practica.md)
-  
+* Module 4 eindetest
+    * [Opgave](EindeTests/Mod4/Opgave.md)
+
 ## Appendix
 
 * [Ea-ict coding guidelines](B_appendix/codingguidelines.md)
@@ -173,11 +175,11 @@
   * [Map Maker](A_DEEL2_AllInOne/1_MapMapker.md)
 
 ## Pro (geen leerstof)
-* H17: Generics en collections
+* Generics en collections
   * [Generics methoden en types](17_gencols/0_generics_intro.MD)
   * [Generic classes en constraints](17_gencols/2_genericclasses_en_constraints.md)
   * [Collections](17_gencols/8_Collections.md)
   * [Labo-oefeningen](17_gencols/A_Practica.md)
-* H19: Events
+* Events
   * [Events](19_events/events.md)
   * [Chat server](19_events/chatserver.md)
