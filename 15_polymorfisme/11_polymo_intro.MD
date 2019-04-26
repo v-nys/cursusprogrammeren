@@ -67,6 +67,10 @@ Beeld je in dat je een klasse President hebt met een methode "RunTheCountry" (vo
 ```csharp
 public class President
 {
+    MilitaryMinister Petraeus= new MilitaryMinister();
+    ForeignSecretary Condi = new ForeignSecretary();
+    HealthOfficial MrX = new HealthOfficial();
+
     public void RunTheCountry()
     {
         // people walk into the Presidents office and he tells them what to do
@@ -91,6 +95,24 @@ public class President
 }
 ```
 
+De MilitaryMinister zou er zo kunnen uitzien:
+```csharp
+class MilitaryMinister
+{
+  public void IncreaseTroopNumbers()
+  {
+    //..
+  }
+  public void ImproveSecurity()
+  {
+    //..
+  }
+  etc
+}
+```
+
+De HealthOfficial-klasse heeft dan weer heel andere publieke methoden. En die Foreignminister ook weer totaal andere.
+
 Je merkt dat de President (of de programmeur van deze klasse) aardig wat specifieke kennis moet hebben van de vele verschillende departementen van het land. Uiteraard is dat onmogelijk (een fictief voorbeeld: stel je Trump voor...Denk je echt dat die zo veel weet?) . Bovenstaande code is dus zeer slecht. Telkens er zaken binnen een specifiek landsonderdeel wijzigen moet dit ook in de klasse President aangepast worden. 
 
 Dankzij polymorfisme kunnen we dit alles veel mooier oplossen:
@@ -103,7 +125,7 @@ abstract class Advisor
   abstract public void Advise();
 }
 
-class MilitaryMinistor:Advisor
+class MilitaryMinister:Advisor
 {
   public override void Advise()
   {
