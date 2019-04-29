@@ -57,6 +57,7 @@ myStringList.Insert(1,"A fourth sentence");
 voegt de string toe op de tweede plek en schuift de rest naar achter
 * ``Contains()``: geef als parameter een specifiek object mee (van het type dat de List<> bevat) om te weten te komen of dat specifieke object in de List<> terug te vinden is. Indien ja dan zal true worden teruggeven.
 * ``IndexOf()``: geeft de index terug van het element item in de rij. Indien deze niet in de lijst aanwezig is dan wordt -1 teruggegeven.
+* ``RemoveAt()``: verwijder een element op de index die je als parameter meegeeft.
 
 ## Foreach loops
 

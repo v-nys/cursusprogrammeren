@@ -60,6 +60,36 @@ class Zorro: ISuperHeld
 ```
 Zolang de klasse Zorro niet exact de interface inhoud implementeert zal deze klasse niet gecompileerd kunnen worden.
 
+## Is keyword met interfaces
+We kunnen``is`gebruiken om te weten of een klasse een specifieke interface heeft.
+
+Stel:
+```csharp
+interface IDeletable{ ...};
+
+class Book: IDeletable { ... };
+
+class Person { ... };
+```
+
+In actie:
+```csharp
+Person tim= new Person();
+Book gameofthrones = new Book();
+
+if(gameofthrones is IDeletable)
+{
+    Console.WriteLine("I can delete game of thrones");
+}
+if(tim is IDeletable)
+{
+    Console.WriteLine("I can delete tim");
+}
+```
+
+Ouput: ``I can delete game of thrones``.
+
+
 ## Meerder interfaces
 Een nadeel van overerving is dat een klasse maar van 1 klasse kan overerven. Een klasse mag echter wel meerdere interfaces met zich meedragen:
 ```csharp
@@ -79,6 +109,7 @@ Ook mogen interfaces van elkaar overerven:
 interface IGod:ISuperHeld
 {...}
 ```
+
 
 ## Voorbeeld: Presidenten en interfaces
 In het hoofdstuk Polymorfisme bespraken we een voorbeeld van een klasse ``President`` die enkele ``Advisor``-klassen gebruikt om hem te helpen ([lees hier na](../15_polymorfisme/11_polymo_intro.md)).

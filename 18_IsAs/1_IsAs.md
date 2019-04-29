@@ -41,34 +41,6 @@ if(rambo is Vehicle)
 
 De uitvoer zal worden:``The first object is a Vehicle``.
 
-### Is voorbeeld 2
-Ook kunnen we dus ``is`gebruiken om te weten of een klasse een specifieke interface heeft.
-Stel:
-```csharp
-interface IDeletable{ ...};
-
-class Book: IDeletable { ... };
-
-class Person { ... };
-```
-
-In actie:
-```csharp
-Person tim= new Person();
-Book gameofthrones = new Book();
-
-if(gameofthrones is IDeletable)
-{
-    Console.WriteLine("I can delete game of thrones");
-}
-if(tim is IDeletable)
-{
-    Console.WriteLine("I can delete tim");
-}
-```
-
-Ouput: ``I can delete game of thrones``.
-
 ## As keyword met voorbeeld
 Wanneer we objecten van het ene naar het andere type willen omzetten dan doen we dit vaak met behulp van [casting](../3_data/4_converteren_casting.md):
 ```csharp
