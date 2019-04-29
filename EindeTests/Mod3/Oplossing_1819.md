@@ -60,13 +60,13 @@ class DagboekEntry
         get { return qal; }
         set
         {
-            if (value > 0 && value < 100)
+            if (value >= 0 && value <= 100)
 
                 qal = value;
             else if (value < 0)
                 qal = 0;
-            else if (value >= 100)
-                qal = 99;
+            else if (value > 100)
+                qal = 100;
         }
     }
     private bool isPrivate = false;
@@ -124,8 +124,9 @@ class QalAnalyzer
                 sominspired++;
         }
 
-        Console.WriteLine("Gemiddelde Quality of Life in deze periode (zonder private) " + qal);
-        Console.WriteLine("Aantal geïnspireerde dagen: " + sominspired);
+
+        Console.WriteLine("Totale Quality of Life in deze periode (zonder private) " + qal);
+        Console.WriteLine("Gemiddelde geïnspireerde dagen: " + (double)sominspired/log.Count);
     }
 
     internal static void WriteDiary(List<DagboekEntry> log, string filename)
