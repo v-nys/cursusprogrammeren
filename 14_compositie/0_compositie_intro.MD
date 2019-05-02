@@ -114,7 +114,7 @@ Indien je nu een pagina wenst toe te voegen dan moet je ook deze individuele arr
 ```csharp
 class Book
 {
-   public InsertPage(Page toAdd, int Position)
+   public void InsertPage(Page toAdd, int Position)
    {
        allPages[Position]= toAdd
    }
