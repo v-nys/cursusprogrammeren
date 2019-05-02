@@ -2,7 +2,7 @@
 
 Visual Studio (VS) is een pakket dat een groot deel tools samenvoegt (debuger, code editor, compiler, etc) zodat je niet tientallen paketten moet gebruiken om software te schrijven.
 
-![VS2018 Logo](/assets/0_intro/vslogo.png)
+![VS2018 Logo](../assets/0_intro/vslogo.png)
 
 Visual Studio is een zogenaamde IDE("Integrated Development Environment") en is op maat gemaakt om C#.NET applicaties te ontwikkelen. Je bent echter verre van verplicht om enkel C# applicaties in VS te ontwikkelen, je kan gerust VB.NET, TypeScript, Python en andere talen gebruiken.
 
