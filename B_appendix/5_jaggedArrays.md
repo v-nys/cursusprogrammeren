@@ -4,7 +4,7 @@ Jagged arrays (letterlijk *gekartelde arrays*) zijn arrays van arrays maar van v
 In tegenstelling tot de eerdere meer-dimensionale arrays moeten de interne arrays steeds dezelfde lengte hebben, bijvoorbeld 3 bij 2 bij 4.
 Bij jagged arrays hoeft dat dus niet:
 
-![jagged array](/assets/5_arrays/jagged.png)
+![jagged array](../assets/5_arrays/jagged.png)
 
 ### Jagged arrays aanmaken
 
@@ -33,4 +33,4 @@ Zoals je kan zien moeten de interne arrays dus niet de zelfde grootte hebben.
 ### Indexering
 
 De indexering blijft dezelfde, uiteraard moet je er wel rekening mee houden dat niet eender welke index binnen een bepaalde sub-array zal werken.
-![indexering bij jagged arrays](/assets/5_arrays/jagged2.png)
+![indexering bij jagged arrays](../assets/5_arrays/jagged2.png)

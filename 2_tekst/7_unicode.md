@@ -3,7 +3,7 @@
 Niets is zo leuk als de vreemdste tekens op het scherm tonen. In oude console-games werden deze tekens vaak gebruikt om *complexe* tekeningen op het scherm te tonen:
 Om je filmpjes nog cooler te maken leggen we daarom uit hoe je dit kan tewerkstelligen, gebruikmakende van je kennis over converteren.
 
-![Dwarven fortress](/assets/0_intro/kerosenethunder_mockup.png)
+![Dwarven fortress](../assets/0_intro/kerosenethunder_mockup.png)
 
 ## Unicode karakters tonen
 
@@ -25,7 +25,7 @@ Console.WriteLine("˧");
 
 Noteer de hexadecimale code van het karakter dat in de tabel staat.
 
-![](/assets/0_intro/letter.jpg)
+![](../assets/0_intro/letter.jpg)
 
 In dit geval is de code 0x02e7.
 

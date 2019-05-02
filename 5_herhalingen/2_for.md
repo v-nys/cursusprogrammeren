@@ -28,7 +28,7 @@ for (setup; finish test; update)
 * *finish test*: Hier plaatsen we een booleaanse expressie die de wachter-variabele uit de setup gebruikt om te testen of de loop-code moet uitgevoerd worden.
 * *update*: Hier plaatsen we wat er moet gebeuren telkens de loop z'n codeblock heeft uitgevoerd. Meestal zullen we hier de wachter-variabele verhogen of verlagen.
 
- ![](/assets/3_loops/for.png)
+ ![](../assets/3_loops/for.png)
  
 Gebruiken we deze kennis nu, dan kunnen we de eerder vermelde code om de even getallen van 0 tot en met 10 tonen als volgt:
 

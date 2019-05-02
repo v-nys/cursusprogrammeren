@@ -51,7 +51,7 @@ Voorgaande beschrijving is een ‘minimale’ beschrijving. Voorzie extra functi
 * Verder schieten, of schieten in andere richtingen.
 
 ## Klasse-schema
-![](/assets/9_interfaces/practgame.png)
+![](../assets/9_interfaces/practgame.png)
 
 ``Location`` is van het type ``Point`` (compositie). ``Point`` is een zelfgemaakte mini klasse die er als volgt uit (minimaal uitziet): 
 ```csharp
@@ -66,7 +66,7 @@ En dus in je abstracte klasse MapElement zal iets krijgen in de trend van: ``pub
 
 ## Enkele screenshots
 
-![](/assets/9_interfaces/practgame2.png)
-![](/assets/9_interfaces/practgame3.png)
+![](../assets/9_interfaces/practgame2.png)
+![](../assets/9_interfaces/practgame3.png)
 
 

@@ -3,7 +3,7 @@
 > De oefening zijn , in de mate van het mogelijke, gerangschikt op moeilijkheid.
 
 # De opwarmers
-Bekijk maak de oefeningen 8 tot en met 13 van hoofdstuk 4 in volgende [pdf](/assets/docs/oefenvragen2010.pdf) 
+Bekijk maak de oefeningen 8 tot en met 13 van hoofdstuk 4 in volgende [pdf](../assets/docs/oefenvragen2010.pdf) 
 
 > Ter info: Dit document staat ook in de lijst onderaan bij de nuttige extra's [hier](../_intro/nuttigeextras.md).
 

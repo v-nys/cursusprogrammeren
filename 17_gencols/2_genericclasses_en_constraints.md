@@ -48,7 +48,7 @@ Meting<Student> m3= new Meting<Student>(new Student("Tim Dams"));
 Console.WriteLine(m3);
 ```
 De uitvoer van dit programma zou dan zijn:
-![](/assets/10_generics/generics1.png)
+![](../assets/10_generics/generics1.png)
 
 # Meerdere types in generics
 Zoals reeds eerder vermeld is de T aanduiding enkel maar een afspraak. Je kan echter zoveel T-parameters meegeven als je wenst. Stel dat je bijvoorbeeld een klasse wenst te maken waarbij 2 verschillende types kunnen gebruikt worden. De klassedefinitie zou er dan als volgt uit zien:
@@ -76,7 +76,7 @@ Het gebruik ervan:
 DataBewaarder<int, string> d1 = new DataBewaarder<int, string>(4, "Ok");
 ```
 Met als uitvoer:
-![](/assets/10_generics/generics2.png)
+![](../assets/10_generics/generics2.png)
 
 
 # Constraints
@@ -116,6 +116,6 @@ Verschillende zaken kunnen als constraint optreden. Naast de verplichting dat ee
 * Moet overerven van een bepaalde klasse
 
 # Why should I care?
-![](/assets/care.jpg)
+![](../assets/care.jpg)
 
 Goh, eerlijk is eerlijk: in je prille programmeursbestaan zal je niet heel vaak de nood zien om je eigen generieke klasse te schrijven. Laat staan dat je ook nog eens allerlei constraints gaat definiëren. 

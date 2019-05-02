@@ -50,7 +50,7 @@ int invoer= Convert.ToInt32(Console.ReadLine()) - 1 ;
 # Weerstandberekenaar
 Stel dat je in het labo een weerstand vastneemt en je kent de kleurcodes van de streepjes wel, maar niet hoe je die kunt omzetten naar de effectieve weerstandswaarde. In dit programma kunnen we de gebruiker helpen.
 
-![](/assets/1_csharpbasics/colors.jpg)
+![](../assets/1_csharpbasics/colors.jpg)
 
 (Bron afbeelding: [https://www.esdsite.nl](https://www.esdsite.nl))
 
@@ -77,11 +77,11 @@ Hier enkele nuttige tekens:
 ```
 
 Gebruik $-string interpolatie om de informatie in de tabel te tonen zodat je volgende uitvoer kunt genereren:
-![](/assets/1_csharpbasics/tabel.png)
+![](../assets/1_csharpbasics/tabel.png)
 
 of:
 
-![](/assets/1_csharpbasics/tabel2.png)
+![](../assets/1_csharpbasics/tabel2.png)
 
 ## [PRO²] Deel 3
 

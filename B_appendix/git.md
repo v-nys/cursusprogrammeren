@@ -5,7 +5,7 @@ In dit hoofdstuk geven we een summier overzicht over git. Bedoeling is dat je gi
 Een [goede uitleg vind je hier](https://www.sitepoint.com/git-for-beginners/).
 
 ## File lifecycle
-  ![file lifecycle](/assets/b_git/filelife.png)
+  ![file lifecycle](../assets/b_git/filelife.png)
 
 ## Belangrijkste commando's
 
@@ -14,7 +14,7 @@ Een [goede uitleg vind je hier](https://www.sitepoint.com/git-for-beginners/).
   * Bij bestanden en folder die je nog niet volgde: vanaf nu zullen veranderingen in dit bestand of folder door git gevolgd worden
   * Bij reeds gevolgde bestanden: de veranderingen in dit bestand zullen bij de eerstvolgende commit toegevoegd worden.
 
-* ``git commit``: alle te volgen veranderingen (via ``add``) worden naar een commit geschreven. Je maakt als het ware een snapshot van de huidige staat van je gevolgde bestanden.   ![Verschil git add en git commit](/assets/b_git/addcommit.png)
+* ``git commit``: alle te volgen veranderingen (via ``add``) worden naar een commit geschreven. Je maakt als het ware een snapshot van de huidige staat van je gevolgde bestanden.   ![Verschil git add en git commit](../assets/b_git/addcommit.png)
 * ``git status``: kijk hoe je repo er voor staat. Zijn er veranderingen die je nog niet hebt gecommit, etc?
 
-![Alles samen](/assets/b_git/alltoget.png)
+![Alles samen](../assets/b_git/alltoget.png)

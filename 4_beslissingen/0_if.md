@@ -32,7 +32,7 @@ B
 ```
 Indien ``number`` groter of gelijk aan 5 was dan zou er enkel ``B`` op het scherm zijn verschenen. De lijn ``Console.WriteLine("B")`` zal sowieso uitgevoerd worden zoals je ook kan zijn aan de volgende flowchart:
 
-![](/assets/2_beslissingen/ifflow.png)
+![](../assets/2_beslissingen/ifflow.png)
 
 ## if met een block
 Het is aangeraden om steeds na de if-expressie met accolades te werken. Dit zorgt ervoor dat alle code tussen het block (de accolades) zal uitgevoerd worden indien de booleanse expressie waar was. **Gebruik je geen accolades dan zal enkel de eerste lijn na de ``if`` uitgevoerd worden bij ``true``.
@@ -47,7 +47,7 @@ if ( number < 5 )
 
 ```
 
-![](/assets/2_beslissingen/iffflowblock.png)
+![](../assets/2_beslissingen/iffflowblock.png)
 
 De booleaanse expressie die je tussen de ``if`` haakjes plaats moet een stuk code zijn dat altijd een ``bool`` als resultaat teruggeeft. 
 
@@ -59,11 +59,11 @@ Er zijn enkele veelgemaakte fouten waar je op moet letten:
 * **Appelen en peren vergelijken**: de types in je booleanse expressie moeten steeds vergelijkbaar zijn. Volgende code is dus fout: ``if( "4" > 3)`` daar we hier een ``string`` met een ``int``vergelijken.
 * **Accolades vergeten** om een codeblock aan te duiden, maar je code toch zodanig outlinen (met tabs) dat het lijkt of je een heel codeblock hebt. Het gevolg zal zijn dat enkel de eerste lijn na de ``if`` zal uitgevoerd worden indien ``true```. De volgende lijn zal vervolgens altijd uitgevoerd worden:
   
-  ![](/assets/2_beslissingen/ifflownobrace.png)
+  ![](../assets/2_beslissingen/ifflownobrace.png)
 
 * **Een puntkomma plaatsen** na de booleanse expressie. Dit zal ervoor zorgen dat er eigenlijk geen codeblock bij de if hoort en je dus een nietszeggende ``if`` het geschreven. De code na het puntkomma zal uitgvoerd worden ongeacht de ``if``:
 
-  ![](/assets/2_beslissingen/ifflowsemicolon.png)
+  ![](../assets/2_beslissingen/ifflowsemicolon.png)
   
 
 ## Gebruik relationele operators
@@ -167,7 +167,7 @@ else
 }
 ```
 
-  ![](/assets/2_beslissingen/ifelseflow.png)
+  ![](../assets/2_beslissingen/ifelseflow.png)
 ## If/else if
 Met een if/ else if constructie kunnen we meerdere criteria opgeven die waar/niet waar moeten zijn voor een bepaald stukje code kan uitgevoerd worden. Sowieso begint men steeds met een if. Als men vervolgens een else if plaats dan zal de code van deze else if uitgevoerd worden enkel en alleen als de eerste expressie (van de if) niet waar was en de expressie van deze else if wel waar is.
 

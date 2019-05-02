@@ -4,7 +4,7 @@ Net zoals we hebben gezien dat de Math-klasse een hele boel nuttige methoden in 
 
 Wanneer een array hebt gemaakt, dan kan je met de IntelliSense van Visual studio bekijken wat je allemaal kan doen met de array:
 
-![](/assets/5_arrays/arrays2.png)
+![](../assets/5_arrays/arrays2.png)
 
 
 Al deze methoden hier beschrijven zal ons te ver nemen. De volgende methoden zijn echter zeer handig om te gebruiken:

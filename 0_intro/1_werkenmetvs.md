@@ -21,7 +21,7 @@ In deze cursus zullen de voorbeelden steeds met de Enterprise editie van VS gema
 
 Het is belangrijk bij de installatie dat je minimaal de **.NET desktop development**workload selecteert als te installeren tools. Uiteraard ben je vrij om meerdere zaken te installeren.
 
-![VS Installeren](/assets/0_intro/vsinstall.png)
+![VS Installeren](../assets/0_intro/vsinstall.png)
 
 > Bekijk [volgende video](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=fecd350e-a402-45cf-b57e-a91100cad93f) voor een stap voor uitleg over de installatie.  **De stap ivm de key is zeer belangrijk**
 
@@ -29,7 +29,7 @@ Het is belangrijk bij de installatie dat je minimaal de **.NET desktop developme
 
 Na het opstarten van VS krijg je het startvenster te zien van waaruit je verschillende dingen kan doen, zoals eerder aangemaakte projecten opstarten, informatie opzoeken of een totaal nieuw project starten.
 
-![VS Opstarten](/assets/0_intro/vsstart.png)
+![VS Opstarten](../assets/0_intro/vsstart.png)
 
 ## Een nieuw project aanmaken
 
@@ -40,7 +40,7 @@ Het "New Project" venster dat nu verschijnt geeft je hopelijk al een glimp van d
 Dit semester kiezen we steeds als Project Type **‘Visual C#’** en als template **Console Application (.NET Framework)**. Onderaan kan je een naam geven voor je project alsook de locatie op de harde schijf waar het project dient opgeslagen te worden. **Onthoudt waar je je project aanmaakt zodat je dit later terugvindt**.
 
 Geef volgende informatie op en druk op 'ok':
-![VS Project maken](/assets/0_intro/vsproject.png)
+![VS Project maken](../assets/0_intro/vsproject.png)
 
 
 VS heeft nu reeds een aantal bestanden aangemaakt die je nodig hebt om een ‘Console Applicatie’ te maken. 
@@ -61,7 +61,7 @@ Laat je niet afschrikken door VS. Het is een imponerend programma, maar je zal e
 
 We zullen nu eerst eens bekijken wat we allemaal zien in VS na het aanmaken van een nieuw programma.
 
-![VS Ide Overzicht](/assets/0_intro/vside.png)
+![VS Ide Overzicht](../assets/0_intro/vside.png)
 
 * Je kan meerdere bestanden tegelijkertijd openen in VS. Ieder bestand zal z’n eigen tab krijgen. De actieve tab is het bestand wiens inhoud je in het hoofdgedeelte eronder te zien krijgt. Merk op dat enkel open bestanden een tab krijgen.
 
@@ -76,7 +76,7 @@ De layout van VS kan je volledig naar je hand zetten. Je kan ieder (deel-)venste
 * Om eenvoudig een venster terug te krijgen, bijvoorbeeld het properties window of de solution explorer: klik bovenaan in de menubalk op "View" en kies dan het gewenste venster (soms staat dit in een submenu)
 * Je kan ook altijd je layout in z'n geheel resetten: ga naar "Window" en kies "Reset window layout".
 
-![VS Layout resetten](/assets/0_intro/vsreset.png)
+![VS Layout resetten](../assets/0_intro/vsreset.png)
 
 # Je programma starten
 
@@ -84,7 +84,7 @@ De code die VS voor je heeft gemaakt is reeds een werkend, maar weinig nuttig, p
 
 Je kan nu je gecompileerde bestand uitvoeren door te kiezen voor Debug-&gt;Start without debugging (of door te drukken op ctrl+F5).
 
-![Command shell](/assets/0_intro/vscmd.png)
+![Command shell](../assets/0_intro/vscmd.png)
 
 Veel doet je programma nog niet natuurlijk, dus sluit dit venster maar terug af door een willekeurige toets in te drukken.
 

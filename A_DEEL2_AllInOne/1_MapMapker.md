@@ -151,7 +151,7 @@ We kunnen nu ongelooflijk veel objecten op het scherm tonen (laten we veronderst
 ```
 Dankzij polymorfisme kunnen we alle objecten die overgeërfd zijn van MapObject in de MapObject-list plaatsen. Wanneer we dan Paint aanroepen gebruiken we de implementatie van het object zelf indien aanwezig.
  
-![](/assets/7_overerving/mapmaker1.png)
+![](../assets/7_overerving/mapmaker1.png)
  
 ## Maken van een grafisch menu
 Het maken van een semi-grafisch menu is verrassend eenvoudig. 
@@ -242,8 +242,8 @@ De map  verplaatsen is wederom verrassend eenvoudig. Stel dat je je map naar ben
 
         }
 ```
-![](/assets/7_overerving/mapmaker2.png)
-![](/assets/7_overerving/mapmaker3.png)
+![](../assets/7_overerving/mapmaker2.png)
+![](../assets/7_overerving/mapmaker3.png)
 
  
 ## Composiet-klassen
@@ -277,7 +277,7 @@ Merk op dat we rekening moeten houden met het feit dat de locatie van het salon 
             SalonElement salon1= new SalonElement(new Point(6,5));
             salon1.Paint();
 ```
-![](/assets/7_overerving/mapmaker4.png)
+![](../assets/7_overerving/mapmaker4.png)
 Dan verschijnen onze zetels wel, maar niet op de locatie zoals we wilden (nu verschijnen de zetels op locatie (2,2) en (5,9), terwijl we liever hebben dat ze verschijnen op (2+6, 2+5) en (5+6, 9+5), dus rekening houdende met de locatie van het salon zelf
 
 ## Interface 

@@ -63,7 +63,7 @@ Console.WriteLine($"Gevonden! Het te zoeken getal was inderdaad {getal} je had e
 **Deel 2:** Pas het programma zo aan dat de tekst die verschijnt bij het inlezen van de volgende poging het resterende interval aangeeft. Gebruik hiervoor twee extra variabelen "ondergrens" en "bovengrens" die als beginwaarden respectievelijk 0 en 100 krijgen. Bij het inlezen van de volgende waarde voor poging zal deze toegekend worden aan ondergrens of bovengrens naargelang ze groter dan wel kleiner dan het te zoeken getal is. 
 
 Zie hieronder een voorbeeldoutput:
- ![](/assets/3_loops/raadgetaloutput.png)
+ ![](../assets/3_loops/raadgetaloutput.png)
 
 **Deel 3:**
 Bouw in het programma een controle in die er voor zorgt dat je geen waarde meer kan ingeven die buiten het opgegeven interval ligt (dus ook indien de grenzen aangepast worden moet deze controle blijven werken!)

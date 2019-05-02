@@ -29,12 +29,12 @@ Maak een programma dat aan de gebruiker vraagt om 10 waarden (int) in te voeren 
 
 Vervolgens vraagt het programma de gebruiker om een getal in te voeren. Het programma toont dan alle getallen die groter of gelijk zijn aan dit ingevoerde getal zijn die in de array aanwezig zijn. Indien geen getallen groter zijn dan verschijnt een bericht `` Niets is groter`` op het scherm.
 
-![](/assets/5_arrays/practarray1.png)
+![](../assets/5_arrays/practarray1.png)
 
 ## ArrayOefener 2
 Maak een programma dat aan de gebruiker vraagt om 2 keer 5 getallen in te voeren. Bewaar de eerste reeks waarden in een array A, de tweede reeks waarden in array B. Maak een nieuwe array C aan die steeds de som bevat van het respectievelijke element uit arrays A en B. Toon het resultaat.
 
-![](/assets/5_arrays/practarray2.png)
+![](../assets/5_arrays/practarray2.png)
 
 ## Vraag Array
 Maak een array die 5 strings kan bevatten. Ieder element van de array bevat een vraag (naar keuze te verzinnen) als string waar de gebruiker met een getal op moet antwoorden.
@@ -42,7 +42,7 @@ Maak een array aan die tot 5 ints kan bevatten. Lees 1 voor 1 de vraag uit de ar
 
 Na de 5 vragen toon je vervolgens de 10 vragen met achter iedere vraag het antwoord van de gebruiker.
 
-![](/assets/5_arrays/arvraag.png)
+![](../assets/5_arrays/arvraag.png)
 
 ## Array Zoeker
 
@@ -56,7 +56,7 @@ Toon vervolgens alle waarden van de array.
 
 Indien de te zoeken waarde meer dan 1 keer voorkomt, wordt enkel de eerst gevonden waarde verwijderd.
 
-![](/assets/5_arrays/practarray3.png)
+![](../assets/5_arrays/practarray3.png)
 
 ## LeveringsBedrijf
 Maak een programma voor een koeriersbedrijf.  Maak een array die 10 postcodes bevat (zelf te kiezen) van gemeenten waar het bedrijf naar levert. Maak een tweede array die de prijs bevat per  kg van iedere respectievelijke gemeente.  Het eerste element  van deze array bevat dus de prijs/kg om naar de gemeente die als eerste in de array met postcodes staat.
@@ -119,11 +119,11 @@ Schrijf een programma dat het verschuldigde bedrag toont gegeven de duur van een
 Voorbeeldoutput:
 Opstart:
 
-![](/assets/5_arrays/practarray4.png)
+![](../assets/5_arrays/practarray4.png)
  
 Resultaat:
 
-![](/assets/5_arrays/practarray5.png)
+![](../assets/5_arrays/practarray5.png)
 
 
 ## Voetbalcoach
@@ -177,7 +177,7 @@ VisualiseerArray(array2);
 
 Geeft volgende output:
 
-![](/assets/5_arrays/practarray6.png)
+![](../assets/5_arrays/practarray6.png)
 
 ## Caesar-encryptie
 
@@ -191,7 +191,7 @@ Toon in je main aan dat je methoden werken (door bijvoorbeeld aan de gebruiker e
 
 > Een klassiek encryptie-algoritme uit de oudheid is de Caesar substitutie. Hierbij gaan we het alfabet met x  plaatsen opschuiven en vervolgens de te vercijferen tekst letter per letter te vervangen met z’n respectievelijke opgeschoven versie. Hierbij is x dus de geheime sleutel die zender en ontvanger moeten afspreken.
 
-![](/assets/5_arrays/practarray8.png) 
+![](../assets/5_arrays/practarray8.png) 
 
 Stel bijvoorbeeld dat x=3  dan krijgen we volgende nieuwe alfabet:
 
@@ -295,7 +295,7 @@ Maak een spel , vergelijkbaar als galgje, waarin de speler een woord moet raden.
 
 Voorbeeld  output:
 
-![](/assets/5_arrays/practarray9.png) 
+![](../assets/5_arrays/practarray9.png) 
 
 ## Grote Som
 Maak een methode Som() die eender welke hoeveelheid paramaters van het type ``int`` aanvaardt en vervolgens de som van al deze parameters teruggeeft (als int).

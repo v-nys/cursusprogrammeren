@@ -26,7 +26,7 @@ Voorts zullen we ook een speciale loop variant zien in het volgende semester wan
 
 
 ## NEVER EVAH USE GOTO
-![](/assets/attention.jpg)
+![](../assets/attention.jpg)
 
 Het moet hier alvast even uit m'n systeem. ``goto`` is weliswaar een officieel C# keyword, toch zal je het in deze cursus **nooit** zien terugkomen in code. Je kan alle problemen in je algoritmes oplossen zonder ooit ``goto`` nodig te hebben. Voel je toch de drang: don't! Simpelweg, don't. Het is het niet waard. Geloof me.
 **NEVER USE GOTO**.

@@ -30,7 +30,7 @@ static void EenVoorbeeldMethode(ref int[6] inArray)
 ```
 En zal volgende error genereren:
 
-![](/assets/5_arrays/arrays3.png)
+![](../assets/5_arrays/arrays3.png)
 
 ## Arraymethode voorbeeld
 

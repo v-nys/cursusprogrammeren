@@ -15,7 +15,7 @@ char eenGetal = '7';`` weliswaar een getal als teken opslaat, maar dat intern de
 # String
 Een string is een reeks (eigenlijk [array](../7_arrays/1_ArraysBasics.md)) van 0, 1 of meerdere `char`-elementen, zoals je ook kan zien als je even met je muis boven een string keyword *hovert* in je code:
 
-![](/assets/1_csharpbasics/stringenchars.png)
+![](../assets/1_csharpbasics/stringenchars.png)
 
 ## Strings declareren
 Merk op dat we bij een string literal gebruik maken van aanhalingstekens (`"`) terwijl bij chars we een apostrof gebruiken (`'`). Dit is de manier om een string van een char te herkennen.

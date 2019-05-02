@@ -11,7 +11,7 @@ Korte uitleg over Pokémon en hun interne werking: Iedere Pokémon wordt uniek g
 
 De full-stats (punt 9) zijn echter de stats die de effectieve ‘krachten’ van een Pokémon bepalen in een gevecht. Deze stats worden berekend gebaseerd op de vaste base-stats en het huidige level van de Pokémon. Hoe hoger het level van de Pokémon, hoe hoger dus zijn full-stats. 
 
-![Pokémon](/assets/6_klassen/pokemon.png)
+![Pokémon](../assets/6_klassen/pokemon.png)
 
 ## De Pokémonopdracht
 
@@ -72,7 +72,7 @@ Maak een kleine loop die je toelaat om per loop een bepaalde Pokémon z’n leve
 
 ## Deel 2: De Pokémontester
 
-> vergelijk je oplossing uit het vorige deel [met volgende oplossing](/assets/6_klassen/Pokemon.cs).
+> vergelijk je oplossing uit het vorige deel [met volgende oplossing](../assets/6_klassen/Pokemon.cs).
 
 Het is een heel gedoe om telkens manueel de informatie van een Pokémon op het scherm te outputen. Voeg een methode ``public void ShowInfo()`` toe aan je Pokemon klasse. Deze methode zal alle relevante informatie (alle properties!) in een mooie vorm op het scherm tonen, bv:
 

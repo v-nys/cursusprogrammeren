@@ -106,7 +106,7 @@ Een andere interessante methode is de **Peek()** methode; hiermee kunnen we kijk
 ### Stack collectie
 Daar waar een queue first-in-first-out is, is een stack last-in first out. M.a.w. het recentst toegevoegde element zal steeds vooraan staan en als eerste verwerkt worden. Je kan dit vergelijken met een stapel waar je steeds bovenop een nieuw object legt.
 
-![](/assets/10_generics/generics3.png)
+![](../assets/10_generics/generics3.png)
 
 We gebruiken volgende 2 methoden om met een stack te werken:
 
@@ -177,6 +177,6 @@ studentenLijst.Remove("AB12");
 ```
 
 # Why should I care?
-![](/assets/care.jpg)
+![](../assets/care.jpg)
 
 Als je die vraag moet stellen dan heb je niet veel begrepen van arrays en dit hoofdstuk. Arrays zijn fijn en krachtig, toch zal je vaak allerlei extra methoden beginnen schrijven om het werken met je array wat eenvoudiger te maken. Van zodra je code schrijft om sneller elementen aan arrays toe te voegen, verwijderen, verzetten, etc. dan wordt het tijd om te overwegen om een of andere generieke collection te gebruiken.

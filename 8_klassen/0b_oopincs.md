@@ -37,7 +37,7 @@ Je kan "eender waar" een klasse aanmaken, maar het is een goede gewoonte om per 
 
 **De naam van je klasse moet voldoen aan de identifier regels die ook gelden voor het aanmaken van variabelen!**
 
-![Klasse toevoegen in VS](/assets/6_klassen/klassadd.png)
+![Klasse toevoegen in VS](../assets/6_klassen/klassadd.png)
 
 ## Objecten aanmaken
 
@@ -56,6 +56,6 @@ Let goed op dat je dus op de juiste plekken dit alles doen (bekijk de onderstaan
 * Klassen maak je aan als aparte files in je project
 * Objecten creëer je in je code op de plekken dat je deze nodig hebt, bijvoorbeeld in je ``Main`` methode bij een Console-applicatie
 
-![basics oop same in vv](/assets/6_klassen/allessamen.png)
+![basics oop same in vv](../assets/6_klassen/allessamen.png)
 
 > Je hebt dus in het verleden ook al objecten aangemaakt. Telkens je met Random werkt deed je dit al. Dit wil zeggen dat er dus in .NET ergens reeds een voorgeprogrammeerde klasse ``Random`` bestaat met de interne werking.

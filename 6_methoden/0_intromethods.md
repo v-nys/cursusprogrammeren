@@ -236,7 +236,7 @@ static int Macht(int grondtal, int exponent)
 
 Wanneer we nu elders de methode ``Macht`` gebruiken dan krijgen we automatische extra informatie:
 
-![Hoe comment getoond wordt](/assets/4_methoden/comment.png)
+![Hoe comment getoond wordt](../assets/4_methoden/comment.png)
 
 # Nut van methoden
 

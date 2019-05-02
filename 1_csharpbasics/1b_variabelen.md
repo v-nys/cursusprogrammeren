@@ -71,7 +71,7 @@ eenGetal = "4";
 
 Als je bovenstaande probeert te compileren dan krijg je volgende error-boodschappen:
 
-![](/assets/0_intro/errorliteraltoekenning.png)
+![](../assets/0_intro/errorliteraltoekenning.png)
 
 ### Literal bepaald het datatype
 De manier waarop je een literal schrijft in je code zal bepalen wat het datatype van de literal is:

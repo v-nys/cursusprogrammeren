@@ -28,7 +28,7 @@ Als programmeur van eigen klassen zijn er 3 opties voor je:
 
 ## Constructors zijn soms gratis, soms niet
 
-![Opgelet](/assets/attention.jpg)
+![Opgelet](../assets/attention.jpg)
 
 Een lege default constructor voor je klasse krijg je standaard wanneer je een nieuwe klasse aanmaakt. Je ziet deze niet en kan deze niet aanpassen. Je kan echter daarom altijd objecten met ``new myClass()`` aanmaken.
 

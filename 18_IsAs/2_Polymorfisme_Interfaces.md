@@ -7,7 +7,7 @@ We tonen dit in een voorbeeld.
 De idee is de volgende: mensen kunnen spreken. Leraren, Studenten, Politieker, en ja zelfs Advocaten zijn mensen. Echter, enkel Politiekers en Advocaten hebben ook de interface IVloeker die hen toelaat eens goed te vloeken.  Brave leerkrachten en studenten doen dat niet. We willen een programma dat lijsten van mensen bevat waarbij we de vloekers kunnen doen vloeken zonder complexe code te moeten schrijven.
 
 We hebben volgende klasse-structuur:
-![](/assets/12_isas/polyinterface.png)
+![](../assets/12_isas/polyinterface.png)
 
 
 Als basse-is klasse ``Mens``  hebben we dan:
@@ -114,7 +114,7 @@ for(int i =0; i<mensjes.Length; i++)
 ```
 
 # Why should I care 
-![](/assets/care.jpg)
+![](../assets/care.jpg)
 
 In de echte C# wereld houdt men van interfaces. Het is veel beter om 'tegen interfaces' te programmeren dan tegen klassen. Het maakt je code veel beter qua onderhoud en complexiteit.
 

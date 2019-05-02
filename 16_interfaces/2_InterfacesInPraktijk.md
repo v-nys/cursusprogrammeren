@@ -38,7 +38,7 @@ Wanneer we nu proberen:
 Array.Sort(eurolanden);
 ```
 Dan treedt er een uitzondering op:``InvalidOperationException: Failed to compare two elements in the array`` 
-![](/assets/9_interfaces/interfaceexep.png)
+![](../assets/9_interfaces/interfaceexep.png)
 
 ### Stap 2: IComparable onderzoeken
 We kunnen dit oplossen door de ``IComparable`` interface in de klasse ``Land`` te implementeren. We bekijken daarom eerst de documentatie van deze interface ([hier](https://msdn.microsoft.com/en-us/library/system.icomparable.aspx)).
@@ -98,6 +98,6 @@ public int CompareTo(object obj)
 ```
 
 # Why should I care?
-![](/assets/care.jpg)
+![](../assets/care.jpg)
 
 Als ik niet overtuigend genoeg was over het nut van interfaces in het vorige hoofdstuk, dan hoop ik dat bovenstaande voorbeelden je al een beetje hebben kunnen doen proeven van de kracht van interfaces. Gedaan met ons druk te maken wat er allemaal in een klasse gebeurt. Werk gewoon 'tegen' de interfaces van een klasse en we krijgen de ultieme black-box revelatie (see what I did there? :p )!

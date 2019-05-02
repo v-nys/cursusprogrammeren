@@ -16,7 +16,7 @@ Zolang de conditie ``true`` is zal de code binnen de accolades uitgevoerd worden
 Telkens wanneer aan het programma einde van het while codeblock komt springt het terug naar de conditie bovenaan en zal de test wederom uitvoeren. Is deze weer ``true`` dan wordt de code weer uitgevoerd. Van zodra de test ``false`` is zal de code voorbij het codeblock springen en na de ``while`` doorgaan.
 
 Het diagramma is duidelijk:
- ![](/assets/3_loops/while.png)
+ ![](../assets/3_loops/while.png)
 
 
 Een voorbeeld van een eenvoudige while loop:
@@ -41,7 +41,7 @@ In tegenstelling tot een while loop, zal een do-while loop sowieso **minstens 1 
 
 Vergelijk volgende diagramma van de ``do while``:
 
- !do while[](/assets/3_loops/dowhile.png)
+ !do while[](../assets/3_loops/dowhile.png)
 
  met die hierboven van de ``while``.
 

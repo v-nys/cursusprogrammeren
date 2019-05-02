@@ -14,7 +14,7 @@ Zonder jullie zou deze cursus een pak meer fouten, onduidelijkheden en Pokemons 
 
 # Typohunters Hall of Fame
 
-![Landscape with Hunters door Pieter Van Laer](/assets/0_intro/halloffame.png)
+![Landscape with Hunters door Pieter Van Laer](../assets/0_intro/halloffame.png)
 
 Deze cursus bevat hier en daar enkele typo's. Die zijn er uiteraard bewust *kuch* in geplaatst. Zij die er vinden zullen voor eeuwig in deze hall of fame opgenomen worden. Ere aan de volgende typohunters:
 

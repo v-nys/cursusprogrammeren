@@ -101,7 +101,7 @@ We plaatsen de naam van de array, gevolgd door brackets waarbinnen een getal i a
 
 **De index van een C#-array start steeds bij 0. Indien je dus een array aanmaakt met lengte 10 dan heb je de indices 0 tot en met 9.**
 
-![](/assets/5_arrays/arrays1.png)
+![](../assets/5_arrays/arrays1.png)
 
 ### Veelgemaakte foute: Lengte en indexering van een arrays
 Het gebeurt vaak dat beginnende programmeurs verward geraken omtrent het aanmaken van een array aan de hand van de lengte en het indexeren.

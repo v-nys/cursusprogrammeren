@@ -25,7 +25,7 @@ Als je volgende tabel begrijpt dan beheers je geheugenmanagement in C#:
 | Beginwaarde | ``0``,``0.0``, ``""``,``false``, etc.      |    ``null`` |
 | Effect van = operator | Kopieert de actuele waarde     |   Kopieert het adres naar de actuele waarde |
 
-![](/assets/5_arrays/gc1.png)
+![](../assets/5_arrays/gc1.png)
 
 ## Waarom twee geheugens?
 

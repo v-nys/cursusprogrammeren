@@ -146,7 +146,7 @@ else if (tussenkomst <= 5)
     ```
     Mogelijk heeft de student te traag gewerkt, maar kijken we eens naar de code in z'n geheel dan zien we volgende beeld:
 
-    ![](/assets/2_beslissingen/bigcode.jpg)
+    ![](../assets/2_beslissingen/bigcode.jpg)
 
     What went wrong?
 

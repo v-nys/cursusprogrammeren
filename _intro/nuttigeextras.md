@@ -21,9 +21,9 @@ Leren programmeren door enkele de opdrachten in deze cursus te maken zal je niet
 
 ## Cheat sheet
 
-Volgende document bevat een overzicht van de basis C# syntax zaken van het eerste en (deel van het) tweede semester: [download hier](/assets/0_intro/cheat-sheet.pdf)
+Volgende document bevat een overzicht van de basis C# syntax zaken van het eerste en (deel van het) tweede semester: [download hier](../assets/0_intro/cheat-sheet.pdf)
 
-![Cheat sheet preview](/assets/0_intro/cheatprev.jpg)
+![Cheat sheet preview](../assets/0_intro/cheatprev.jpg)
 
 ## Game-based programmeren
 
@@ -60,7 +60,7 @@ Ideale manier om programmeren meer in de vingers te krijgen op een speelse manie
 
 ## Oefenvragen
 
-* [Een lijst met oude oefenvragen uit 2010](/assets/docs/oefenvragen2010.pdf): nog steeds relevant.
+* [Een lijst met oude oefenvragen uit 2010](../assets/docs/oefenvragen2010.pdf): nog steeds relevant.
 * [Veel kleine, fijne oefeningen](https://www.w3resource.com/csharp-exercises/)
 * [Een dagelijkse programmeeruitdaging op reddit](https://www.reddit.com/r/dailyprogrammer/)
 * Pittige vragen van de jaarlijkse Vlaamse Programmeerwedstrijd:

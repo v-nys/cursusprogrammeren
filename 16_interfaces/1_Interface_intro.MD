@@ -27,7 +27,7 @@ Het is in de klassen dat we nu vervolgens verplicht zijn deze methode en propert
 
 >**Een interface is een beschrijving hoe een component een andere component kan gebruiken, zonder te zeggen hoe dit moet gebeuren. De interface is met andere woorden 100% scheiding tussen de methode/Property-signatuur en de eigenlijke implementatie ervan.**
 
-![](/assets/9_interfaces/scuminterface.jpg)
+![](../assets/9_interfaces/scuminterface.jpg)
 
 ## Interface regels
 * Je kan geen  membervariabelen (fields) declareren in een interface (dat hoort bij de implementatie)
@@ -206,7 +206,7 @@ class MilitaryMinistor:IAdvisor
 ```
 
 # Why should I care?
-![](/assets/care.jpg)
+![](../assets/care.jpg)
 
 In kleine projecten lijken interfaces wat overkill, en dat zijn ze vaak wel. Van zodra je een iets complexer project krijgt met meerdere klasse die onderling met elkaar allerlei zaken moeten doen, dan zijn interfaces je dikke vrienden!
 Je hebt misschien al over de [SOLID programmeerprincipes gehoord](https://en.wikipedia.org/wiki/SOLID)? 
