@@ -54,11 +54,12 @@ interface IComparable
 
 
 Daarbij moet de methode een int  teruggeven als volgt:
+
 | Waarde        | Betekenis           |
-| ------------- |:-------------:| 
-| Getal kleiner dan 0      | Huidig object komt **voor** het ``obj`` dat als parameter werd meegegeven | 
-|  0      | Huidig object komt op **dezelfde** positie als  ``obj``  werd meegegeven | 
-| Getal groter dan 0      | Huidig object komt **na** het ``obj`` dat als parameter werd meegegeven | 
+| ------------- |:-------------:|
+| Getal kleiner dan 0      | Huidig object komt **voor** het ``obj`` dat als parameter werd meegegeven |
+|  0      | Huidig object komt op **dezelfde** positie als  ``obj``  werd meegegeven |
+| Getal groter dan 0      | Huidig object komt **na** het ``obj`` dat als parameter werd meegegeven |
 
 ### Stap 3: IComparable in Land implementeren
 We zorgen er nu voor dat ``Land`` deze interface implementeert. Daarbij willen we dat de landen volgens oppervlakte worden gesorteerd :
