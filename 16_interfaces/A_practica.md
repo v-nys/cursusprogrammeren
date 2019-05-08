@@ -4,9 +4,9 @@ Gebruik je [Rechthoek-klasse uit de Figuren oefening](../8_klassen/A_practica.md
 
 Toon de werking aan in een klein voorbeeld programma. 
 
-# Mapmaker
+# Mapmaker afwerken
 
-Maak het all-in-project "[Map Maker](A_DEEL2_AllInOne/1_MapMapker.md)". Kan je zelf extra zaken toevoegen zoals andere kamers, andere functionaliteit, etc.
+Vervolledig het all-in-project  "[Map Maker](../A_DEEL2_AllInOne/1_MapMapker.md)". Inclusief interfaces en is/as .Kan je zelf extra zaken toevoegen zoals andere kamers, andere functionaliteit, etc.
 
 # Game
 
