@@ -64,7 +64,7 @@ Laten we nu een nieuwe klasse aanmaken dat overerft van de abstract klasse MapOb
 ```
 De methode van Paint moeten we verplicht overriden (daar ze abstract was in de base klasse), voorts is het aan te raden om een default constructor te maken. De Paint-methode bevat zeer eenvoudigweg volgende 2 lijntjes code:
 ```csharp
-            Console.SetCursorPosition(Location.x, Location.y);
+            Console.SetCursorPosition(Location.X, Location.Y);
             Console.Write(DrawChar);
 ```
 
@@ -93,9 +93,9 @@ We hebben nu een basis om andere zaken te maken. Stel dat we grotere objecten op
 
         public override void Paint()
         {
-            for (int i = Location.x; i < Location.x + UnitSize; i++)
+            for (int i = Location.X; i < Location.X + UnitSize; i++)
             {
-                for (int j = Location.y; j < Location.y + UnitSize; j++)
+                for (int j = Location.Y; j < Location.Y + UnitSize; j++)
                 {
                     if (i < Console.WindowWidth && j < Console.WindowHeight)
                     {
@@ -237,7 +237,7 @@ De map  verplaatsen is wederom verrassend eenvoudig. Stel dat je je map naar ben
             //Beweeg kaart naar beneder
             for(int i=0;i<list.Count;i++)
             {
-                list[i].Location = new Point(list[i].Location.x, list[i].Location.y + 1);
+                list[i].Location = new Point(list[i].Location.X, list[i].Location.Y + 1);
             }
 
         }
@@ -256,8 +256,8 @@ Voorts kunnen we bijvoorbeeld nu meerdere klassen aanmaken (tafels, stoelen, deu
         public SalonElement(Point salonLoc)
         {
           
-            elementen.Add(new ZetelElement(new Point(2, 2), 3, ‘+’));
-            elementen.Add(new ZetelElement(new Point(5, 9), 3, ‘+’));
+            elementen.Add(new ZetelElement(new Point(2, 2), 3, '+'));
+            elementen.Add(new ZetelElement(new Point(5, 9), 3, '+'));
 
             Location = salonLoc;
         }
@@ -328,8 +328,8 @@ De UpdateElements methode zou er dan als volgt kunnen uitzien:
             for (int i = 0; i < elementen.Count; i++)
             {
                 Point elementLoc = elementen[i].Location;
-                elementLoc.x += offset.x;
-                elementLoc.y += offset.y;
+                elementLoc.X += offset.X;
+                elementLoc.Y += offset.Y;
                 elementen[i].Location = elementLoc;
             }
 ```
@@ -349,8 +349,8 @@ Daar Location bij MapObject hoort, moeten we dus in die klasse een aanpassing do
                 if (location != null)
                 {
                    
-                    offset.x = value.x - prevloc.x;
-                    offset.y = value.y - prevloc.y;
+                    offset.X = value.X - prevloc.X;
+                    offset.Y = value.Y - prevloc.Y;
                 }
                 
                 location = value;

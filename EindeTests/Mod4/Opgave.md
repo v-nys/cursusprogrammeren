@@ -69,7 +69,8 @@ Vul de 3 klassen aan klassen om aan bovenstaand schema te voldoen:
   * Deck heeft een lijst van kaarten genaamd Kaarten, van het type ``List<Card>`` 
   * Deck heeft een default constructor: wanneer deze aangeroepen wordt zullen er 10 willekeurige kaarten (3 Centrale, 2 Hero, 5 Land) in de Kaarten-list geplaatst worden
   * Deck heeft een methode ``DrawCards``: deze zal de ``DrawCard`` van alle Kaarten aanroepen
-  * Deck heeft een methode ``UpdateCosts``: deze zal de ``UpdateCost`` van alle Kaarten aanroepen
+  * Deck heeft een methode ``UpdateCosts``: deze zal de ``UpdateCost`` van alle Kaarten aanroepen die dat kunnen.
+  * Deck heeft een methode ``GeneratePoints``: deze zal de ``GeneratePointss`` van alle Kaarten aanroepen die dat kunnen.
   * Kaarten-list is beschikbaar vanuit een readonly-property
 
 ## Deel 2: Basis game loop (8 punten)
