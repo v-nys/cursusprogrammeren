@@ -111,7 +111,7 @@ abstract class Card
     }
 
     public abstract void DrawCard();
-    private int cost;
+    protected int cost;
 
     private string name;
 
