@@ -43,7 +43,7 @@ Zolang de speler geen 10 punten heeft zal de speler steeds een beurt spelen best
 
 **Gebruik de gegeven klassen (onderaan de opgave) in je project en pas ze aan waar nodig**
 
-![](../assets/Aallinone/heroap0.png) 
+![](../../assets/Aallinone/heroap0.png) 
  
 Vul de 3 klassen aan klassen om aan bovenstaand schema te voldoen:
 * **``Land``:** 
@@ -85,7 +85,7 @@ Maak een basis-versie van het spel.
      * **Fase 2**: vraag aan gebruiker welk land mana moet genereren
      * **Fase 3**: vraag aan gebruiker welke held punten moet genereren
    * Na iedere fase ververs je het beeld (``Console.Clear()``) en herteken je de kaarten en toon je de volgende extra info aan de gebruiker, namelijk Mana, Punten en Beurt
-   ![](../assets/Aallinone/heroap1.png) 
+   ![](../../assets/Aallinone/heroap1.png) 
 3. Na de loop wordt getoond hoeveel beurten de gebruiker heeft nodig gehad
 
 
@@ -96,7 +96,7 @@ Maak een basis-versie van het spel.
 
 # Voorbeeld spelverloop: 
  
-![](../assets/Aallinone/heroap.png) 
+![](../../assets/Aallinone/heroap.png) 
 
 # Start klasen
 
