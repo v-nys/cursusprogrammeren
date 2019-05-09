@@ -217,7 +217,7 @@ Als we het volgende schrijven dan begint Visual Studio te huilen:
 ```csharp
 public override bool Equals (object obj)
 {
-    if(X=obj.X && Y= obj.Y) //BAAAAD CODE
+    if(X==obj.X && Y== obj.Y) //BAAAAD CODE
         return true;
     return false
 }
@@ -234,7 +234,7 @@ Laten we even veronderstellen dat we de Equals methode in onze Point klasse alti
 public override bool Equals (object obj)
 {
     Point tijdelijk= (Point)obj;
-    if(X=tijdelijk.X && Y= tijdelijk.Y) 
+    if(X==tijdelijk.X && Y== tijdelijk.Y) 
         return true;
     return false
 }
@@ -267,7 +267,7 @@ public override bool Equals (object obj)
     if(obj is Point)
     {
         Point tijdelijk= (Point)obj;
-        if(X=tijdelijk.X && Y= tijdelijk.Y) 
+        if(X==tijdelijk.X && Y== tijdelijk.Y) 
             return true;
     }
     return false
@@ -293,7 +293,7 @@ public override bool Equals (object obj)
         if(obj is Point)
         {
             Point tijdelijk= (Point)obj;
-            if(X=tijdelijk.X && Y= tijdelijk.Y) 
+            if(X==tijdelijk.X && Y== tijdelijk.Y) 
                 return true;
         }
     }
