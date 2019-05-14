@@ -173,6 +173,7 @@
   * [OO Textbased Game](A_DEEL2_AllInOne/2_OOTextGame.md)
   * [War Simulator](A_DEEL2_AllInOne/3_WarGame.md)
   * [Map Maker](A_DEEL2_AllInOne/1_MapMapker.md)
+  * [Magic The Gathering API](A_DEEL2_AllInOne/mtgapi.md)
 
 ## Pro (geen leerstof)
 * Generics en collections
