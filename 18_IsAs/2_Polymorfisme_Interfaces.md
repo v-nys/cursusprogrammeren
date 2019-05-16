@@ -57,7 +57,7 @@ class Advocaat: Mens, IVloeker
 We maken een array van mensen aan:
 
 ```csharp
-Mens[] mensjes = new Mens[4],
+Mens[] mensjes = new Mens[4];
 mensjes[0]= new Leraar();
 mensjes[1]= new Politieker();
 mensjes[2]= new Student();
