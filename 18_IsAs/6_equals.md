@@ -94,7 +94,7 @@ static bool VergelijkPunten(Point p1, Point p2)
     {
         return true;
     }
-    return false;
+    else{return false; }
 }
 ```
 
@@ -113,7 +113,7 @@ class Point
         {
             return true;
         }
-        return false;
+        else{return false;}
     }
 }
 ```
@@ -235,8 +235,8 @@ public override bool Equals (object obj)
 {
     Point tijdelijk= (Point)obj;
     if(X==tijdelijk.X && Y== tijdelijk.Y) 
-        return true;
-    return false
+        {return true; }
+    else {return false; }
 }
 ```
 
@@ -270,7 +270,7 @@ public override bool Equals (object obj)
         if(X==tijdelijk.X && Y== tijdelijk.Y) 
             return true;
     }
-    return false
+    else {return false; }
 }
 ```
 
@@ -297,7 +297,7 @@ public override bool Equals (object obj)
                 return true;
         }
     }
-    return false
+    else {return false; }
 }
 ```
 
