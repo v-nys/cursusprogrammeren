@@ -168,6 +168,10 @@
   * [H11 - arrays van klasse](11_arraysvanklassen/opl_practica3.md)
   * [H12 - Overerving](12_overerving/opl_practica3.md)
   * [H13 - Advanced Overerving](13_advancedovererving/opl_practica4.md)
+  * [H14 - Compositie](14_compositie/opl_practica.md)
+  * [H15 - Polymorfisme](15_polymorfisme/opl_practica.md)
+  * [H16 - Interfaces](16_interfaces/opl_practica.md)
+
 * All-In-Projecten
   * [Overzicht](A_DEEL2_AllInOne/0_Deel2_IntroductieAllInOne.md)
   * [OO Textbased Game](A_DEEL2_AllInOne/2_OOTextGame.md)

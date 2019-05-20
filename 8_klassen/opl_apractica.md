@@ -87,7 +87,6 @@ class Nummers
 class Rechthoek
 {
     private int lengte = 1;
-
     public int Lengte
     {
         get { return lengte; }
@@ -98,9 +97,9 @@ class Rechthoek
 
     public int Breedte
     {
-        get { return breedte = 1; }
-        set { breedte = value; }
-    }
+        get { return  breedte; }
+        set { if (value >= 1) breedte = value; }
+        }
 
     public void ToonOppervlakte()
     {
