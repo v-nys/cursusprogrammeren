@@ -19,6 +19,7 @@ C# bestaat zoals gezegd uit enkel grammaticale regels. Grammatica zonder woorden
 In deze cursus zullen we stelselmatig deze keywords leren kennen en gebruiken op een correcte manier om zo werkende code te maken.
 
 Deze keywords zijn:
+
 |   |     |     |   |
 |----|----|-----|----|
 |*abstract*|*as*|*base*|**bool**|
@@ -40,7 +41,7 @@ Deze keywords zijn:
 |**true**|try|typeof|**uint**|
 |**ulong**|unchecked|unsafe|**ushort**|
 |using|using static|*virtual*|**void**|
-|volatile|**while**| |
+|volatile|**while**| | |
 
 > De keywords in vet zijn keywords die we dit semester zullen kennen. Die in cursief in het tweede semester. De overige zal je zelf moeten leren ;)
 
@@ -76,6 +77,7 @@ De code die we gaan schrijven moet voldoen aan een hoop regels. Wanneer we in on
 ### Enkele voorbeelden
 
 Enkele voorbeelden van toegelaten en niet toegelaten identifiers:
+
 | identifier  | toegelaten?    |   uitleg indien niet toegelaten  |
 |----|----|-----|
 |werknemer| ja |  |
