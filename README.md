@@ -43,5 +43,3 @@ The licensor cannot revoke these freedoms as long as you follow the license term
 **NonCommercial** : You may not use the material for commercial purposes.
 
 **No additional restrictions** : You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
-
-# γεια σας
