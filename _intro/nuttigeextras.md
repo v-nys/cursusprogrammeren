@@ -12,7 +12,7 @@ Er zijn oneindig veel boeken over C# geschreven, althans zo lijkt het. Hier een 
 
 ## Geavanceerd
 
-* [C# Unleashed](https://www.bol.com/nl/f/c-5-0-unleashed/9200000009902560/?country=BE) van Bart De Smet: in mijn opinie d� referentie om C# tot op het bot te begrijpen. Geschreven door een Belg die bij Microsoft in Redmond aan C# werkt.
+* [C# Unleashed](https://www.bol.com/nl/f/c-5-0-unleashed/9200000009902560/?country=BE) van Bart De Smet: in mijn opinie dé referentie om C# tot op het bot te begrijpen. Geschreven door een Belg die bij Microsoft in Redmond aan C# werkt.
 * [Code Complete](https://www.amazon.de/Code-Complete-Practical-Construction-Costruction/dp/0735619670) van Steve McConnell: een referentiewerk over 'programmeren in het algemeen'. Het boek is al jaar en dag het te lezen boek als je je als programmeur wilt verdiepen in wat nu 'correct programmeren' behelst. Als je op je CV kunt zetten dat je dit boek door en door kent dan zal elk IT-bedrijf je stante pede aannemen ;)
 
 # Online 
