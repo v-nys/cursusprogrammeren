@@ -47,11 +47,11 @@ class Boat
     private Engine mainEngine = new Engine();
     private  List<Propeller> propellers = new List<Propeller>(); //todo: propeller objecten inplaatsen, zie voorbeeld Car-constructor
 }
-
+```
 
 # Een eigen huis
 
-##Main:
+## Main:
 
 ```csharp
 Huis myHuis = new Huis();
