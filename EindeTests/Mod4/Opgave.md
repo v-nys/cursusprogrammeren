@@ -2,7 +2,7 @@
  
  *Volgende opgave komt uit een examen van augustus 2018 van deze cursus*
 
-
+** Opgelet: deze opgave is erg brak en niet conform mijn gewoonlijke standaard.Waarvoor excuses**
 
 ## Inleiding
 Heroes of AP is een single-player kaartspel dat we als consolespel spelenwaarbij de speler in zo weinig mogelijk beurten maximaal punten wil scoren. Het spel is een combinatie van geluk en strategie.
