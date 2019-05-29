@@ -1,6 +1,6 @@
 # Constructors bij overerving
 
-Wanneer je een object instantiëert van ee child-klasse dan gebeuren er meerdere zaken na elkaar, in volgende volgorde:
+Wanneer je een object instantiëert van een child-klasse dan gebeuren er meerdere zaken na elkaar, in volgende volgorde:
 
 * Eerst wordt de constructor aangeroepen van de basis-klasse: dus steeds eerst die van ``System.Object``
 * Gevolgd door de constructors van alle parent-klassen
@@ -33,7 +33,7 @@ Soldier reporting in
 Who needs healing?
 ```
 
-Er wordt dus verondersteld in dit geval dat er een default constructor in de basis-klasse aanwezig is. 
+Er wordt dus verondersteld in dit geval dat er een default constructor in de basis-klasse aanwezig is.
 
 ## Overloaded constructors
 
