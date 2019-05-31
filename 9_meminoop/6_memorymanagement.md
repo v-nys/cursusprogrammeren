@@ -59,7 +59,7 @@ int anderGetal= getal;
 
 Vanaf nu zal ``anderGetal`` de waarde ``3`` hebben. Als we nu een van beide variabelen aanpassen dan zal dit **geen** effect hebben op de andere variabelen.
 
-We zien het zelfde effect wanner we een methode maken die een parameter van het value type aanvaardt- we geven een kopie van de variabele mee:
+We zien het zelfde effect wanneer we een methode maken die een parameter van het value type aanvaardt- we geven een kopie van de variabele mee:
 
 ```csharp
 void DoeIets(int a)
