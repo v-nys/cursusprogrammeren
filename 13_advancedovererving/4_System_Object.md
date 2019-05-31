@@ -12,7 +12,7 @@ Wanneer je een lege klasse maakt dan zal je zien dat instanties van deze klasse 
 |``Equals()``| Gebruikt om te ontdekken of twee instanties gelijk zijn. |
 |``GetHashCode()``| Geeft een unieke code (hash) terug van het object; nuttig om o.a. te sorteren.|
 |``GetType()``| Geeft het type (of klasse) van het object terug.|
-|``ToPrint()``| Geeft een string terug die het object voorstel.|
+|``ToString()``| Geeft een string terug die het object voorstel.|
 
 ## GetType()
 Stel dat je een klasse Student hebt gemaakt in je project. Je kan dan op een object van deze klasse de GetType() -methode aanroepen om te weten wat het type van dit object is:
