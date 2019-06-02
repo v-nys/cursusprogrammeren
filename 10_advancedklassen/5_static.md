@@ -216,7 +216,7 @@ public class Program
 
 Zoals je ziet is de ``Main`` methode als ``static`` gedefinieerd. Willen we dus vanuit deze methode andere methoden aanroepen dan moeten deze als ``static`` aangeduid zijn.
 
-Uiteraard ka je wel niet-static zake gebruiken en daarom kan je dus gewone objecten etc in je static methoden aanmaken.
+Uiteraard kan je wel niet-static zaken gebruiken en daarom kan je dus gewone objecten etc. in je static methoden aanmaken.
 
 # Een use-case met static
 
