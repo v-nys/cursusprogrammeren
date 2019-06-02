@@ -88,3 +88,25 @@ class Dier
    protected int leeftijd;
 }
 ```
+
+## Sealed
+
+Soms wil je niet dat van een klasse nog nieuwe klasse kunnen overgeërfd worden. Je lost dit op door het keyword ``sealed`` voor de klasse te zetten:
+
+```csharp
+sealed class DoNotInheritMe
+{
+   //...
+}
+```
+
+Als je later dan dit probeert:
+
+```csharp
+class ChildClass:DoNotInheritMe
+{
+   //...
+}
+```
+
+zal dit resulteren in een foutoodschap, namelijk ``cannot derive from sealed type 'DoNotInheritMe'``.
