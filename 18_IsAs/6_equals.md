@@ -139,7 +139,7 @@ object object1= new object();
 object object2= new object();
 
 //object methode versie
-if(object1.Eqauals(object2))
+if(object1.Equals(object2))
     Console.WriteLine("gelijk!");
 
 //static versie
