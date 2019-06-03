@@ -4,14 +4,14 @@
 Pokemon aPoke= new Pokemon();
 Console.WriteLine("Geef hp:");
 aPoke.HP_Base= Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Geef attack:"):
+Console.WriteLine("Geef attack:");
 aPoke.Attack_base= Convert.ToInt32(Console.ReadLine());
 
 //enz
 
 aPoke.ShowInfo();
 
-Console.WriteLine("Tot welke level wilt u leveren?);
+Console.WriteLine("Tot welke level wilt u leveren?");
 int levels= Convert.ToInt32(Console.ReadLine());
 for(int i=0;i<levels;i++)
 {

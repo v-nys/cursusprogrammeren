@@ -22,10 +22,10 @@ Deze cursus bevat hier en daar enkele typo's. Die zijn er uiteraard bewust *kuch
 | ------------- | -----:|
 |van Driel Kevin|      27 |
 |Van Riel Lennert|     21 |
+|Hendrikx Ben| 8|
 |Van Ingelghem Brian|   6 |
 |De Vree Bart|         5 |
 |Strauven Wannes|       4 |
-|Hendrikx Ben| 4|
 |Van Breedam Arne|     3 |
 |Zeno Hattas |           2 |
 |Yoncalik Arafa|       1 |
