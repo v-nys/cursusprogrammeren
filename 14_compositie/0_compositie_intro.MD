@@ -116,7 +116,7 @@ class Book
 {
    public void InsertPage(Page toAdd, int Position)
    {
-       allPages[Position]= toAdd
+       allPages[Position]= toAdd;
    }
 
    private Page[] allPages= new Page[100];

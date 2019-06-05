@@ -20,7 +20,7 @@ Deze cursus bevat hier en daar enkele typo's. Die zijn er uiteraard bewust *kuch
 
 | Typohunter        |  # gevonden|
 | ------------- | -----:|
-|van Driel Kevin|      27 |
+|van Driel Kevin|      33 |
 |Van Riel Lennert|     21 |
 |Hendrikx Ben| 8|
 |Van Ingelghem Brian|   6 |
@@ -33,7 +33,7 @@ Deze cursus bevat hier en daar enkele typo's. Die zijn er uiteraard bewust *kuch
 |Baert Jonas|   1 |
 |Teka Sala Brain| 1|
 |Schrauwen Stijn| 1|
-
+|Ahmad Saqib Shan  |1|
 Ook een speciale dank aan de vele studenten die me geregeld feedback geven op zaken die beter, anders, grappiger kunnen. Zoals:
 
 * Dzialak Jan

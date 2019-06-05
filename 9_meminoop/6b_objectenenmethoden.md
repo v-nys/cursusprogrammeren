@@ -19,9 +19,11 @@ In ons hoofdprogramma schrijven we een methode ``ToonMetingInKleur`` die ons toe
 static void Main(string[] args)
 {
     Meting m1 = new Meting();
-    m1.Temperatuur = 26; m1.OpgemetenDoor = "Elon Musk";
+    m1.Temperatuur = 26; 
+    m1.OpgemetenDoor = "Elon Musk";
     Meting m2 = new Meting();
-    m2.Temperatuur = 34; m1.OpgemetenDoor = "Dennis Rodman";
+    m2.Temperatuur = 34; 
+    m2.OpgemetenDoor = "Dennis Rodman";
 
     ToonMetingInKleur(m1, ConsoleColor.Red);
     ToonMetingInKleur(m2, ConsoleColor.Gray);

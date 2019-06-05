@@ -36,8 +36,8 @@ Dankzij polymorfisme kunnen we nu elders objecten van Paard en Varken in een ``D
 ```csharp
 Dier someAnimal = new Varken();
 Dier anotherAnimal = new Paard();
-Console.WriteLine(someAnimal.MaakGeluid()); //Hinnikhinnik
-Console.WriteLine(anotherAnimal.MaakGeluid()); //Oinkoink
+Console.WriteLine(someAnimal.MaakGeluid()); //Oinkoink
+Console.WriteLine(anotherAnimal.MaakGeluid()); //Hinnikhinnik
 ```
 
 Het is belangrijk te beseffen dat  ``someAnimal`` en ``anotherAnimal`` van het type ``Dier`` zijn en dus enkel die dingen kunnen die in ``Dier`` beschreven staan. Enkel zaken die ``override`` zijn in de child-klasse zullen met de specialisatie-code werken.

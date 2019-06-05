@@ -18,8 +18,8 @@ class Car: Vehicle{}
 
 class Person {}
 ```
-Een Car **is** een Vehikel.
-Een Person **is geen** Vehikel.
+Een Car **is** een Vehicle.
+Een Person **is geen** Vehicle.
 
 Stel dat we enkele variabelen hebben als volgt:
 ```csharp
@@ -50,7 +50,7 @@ Mens jos = (Mens)fritz;
 
  Het probleem bij casting is dat dit niet altijd lukt. Indien de conversie niet mogelijk is zal een Exception gegenereerd worden en je programma zal  crashen als  je niet aan [Exception handling doet](https://codevan1001nacht.wordpress.com/2013/11/06/exception-handling/).
 
- Het ``as`` keyword lost dit op. Het keyword zegt aan de compiler 'probeer dit object te converteren.Als het niet lukt, zet het dan op ``null`` in plaats van een Exception te werpen.
+ Het ``as`` keyword lost dit op. Het keyword zegt aan de compiler 'probeer dit object te converteren. Als het niet lukt, zet het dan op ``null`` in plaats van een Exception te werpen.
  
  De code van daarnet herschrijven we dan naar:
 

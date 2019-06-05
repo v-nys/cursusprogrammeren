@@ -61,6 +61,13 @@ De correcte manier om strings te vergelijken is met de ``Compare(string s1, stri
 
 # Tekst files uitlezen
 
+De ``System.IO`` namespace bevat tal van nuttige methoden en klassen om met bestanden te werken.
+Om gebruik hiervan te maken plaats je bovenaan je file:
+
+```csharp
+using System.IO;
+```
+
 Via ``System.File.ReadAllLines()`` kunnen we een tekstbestand uitlezen. De methode geeft een array van string terug. Per lijn die eindigt met een newline (``\r\n``) zal een nieuwe string aan de array toegevoegd worden.
 
 ```csharp

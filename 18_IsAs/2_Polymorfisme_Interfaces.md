@@ -10,7 +10,7 @@ We hebben volgende klasse-structuur:
 ![](../assets/12_isas/polyinterface.png)
 
 
-Als basse-is klasse ``Mens``  hebben we dan:
+Als basis klasse ``Mens``  hebben we dan:
 ```csharp
 public class Mens
 {
@@ -69,7 +69,7 @@ for(int i =0; i<mensjes.Length; i++)
 }
 ```
 
-**Het probleem: hoe kan ik in de array van mensen (bestaande uit een mix van studenten, leraren, advocaten en politiekers) s *enkel de vloekende mensen laten vloeken*?**
+**Het probleem:** hoe kan ik in de array van mensen (bestaande uit een mix van studenten, leraren, advocaten en politiekers) **enkel de vloekende mensen laten vloeken?**
 
 ## Oplossing 1 - Vloekende mensen: ``is`` to the rescue
 De eerste oplossing is door gebruik te maken van het ``is`` keyword.
