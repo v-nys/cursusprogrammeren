@@ -22,6 +22,13 @@ Console.WriteLine(stud1.GetType());
 ```
 Dit zal als uitvoer de namespace gevolgd door het type op het scherm geven. Als je project bijvoorbeeld "StudentManager" heet (en je namespace dus ook) dan zal er op het scherm verschijnen: ``StudentManager.Student``.
 
+Wil je enkel het type zonder namespace dan is het nuttig te beseffen dat GetType() een object teruggeeft van het type ``Type`` met meerdere eigenschappen, waaronder ``Name``. Volgende code zal dus enkel ``Student`` op het scherm tonen:
+
+```csharp
+Student stud1= new Student();
+Console.WriteLine(stud1.GetType().Name);
+```
+
 ## ToString()
 Deze is de nuttigste waar je al direct leuke dingen mee kan doen. 
 Wanneer je schrijft:

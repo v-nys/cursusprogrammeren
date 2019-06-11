@@ -1,134 +1,162 @@
-# Heroes of AP
+*Volgende opgave kwam uit de vaardigheidsproef module 4 van dit vak juni 2019.*
+
+# Hammertje Tik
+Maak een digitale console-versie van het klassieke kinderspel hamertje Tik
  
- *Volgende opgave komt uit een examen van augustus 2018 van deze cursus*
+In dit spel heeft het kind een hele hoop kleurige blokjes ter beschikking waarmee hij op een kurken bord eender welke ‘tekening’ kan maken door de blokjes in de kurk met een nagel te kloppen.
+# Opbouw project
+Het project bestaat uit enkele delen.
+* Klassen  	- Deel 1 (11 punten) : maken van de nodige klassen die Vormen voorstellen
+* Menu		- Deel 2 (5 punten): maken van een menu die toelaat dat de gebruiker verschillende vormen op het scherm kan manipuleren
+* PRO 		-Deel 3 (4 punten): een iets pittigere pro-gedeelte voor zij die nog tijd hebben
 
-** Opgelet: deze opgave is erg brak en niet conform mijn gewoonlijke standaard.Waarvoor excuses**
 
-## Inleiding
-Heroes of AP is een single-player kaartspel dat we als consolespel spelenwaarbij de speler in zo weinig mogelijk beurten maximaal punten wil scoren. Het spel is een combinatie van geluk en strategie.
-Spelregels
-Heroes of AP bestaat uit een deck van tien kaarten met drie soorten kaarten:
-* Landen: deze genereren mana 
-  * Per beurt dat een kaart gedekt ligt verhoogt z’n mana-waarde (=COST)
-* Centrales:
-  * Per beurt genereert een centrale 1 punt indien deze zichtbaar is 
-* Helden: deze gebruiken mana om punten te genereren
-  * Per beurt dat een kaart gedekt ligt verlaagt z’n mana-waarde (=COST), maar nooit onder 1
-  * Een held genereert een willekeurig aantal punten indien hij zichtbaar is afhankelijk van wat de gebruiker aan Mana betaald:
-    * Om 1 punten te genereren moet de speler de Cost van de held in mana betalen
-    * Het overschot aan mana dat de speler betaald zal ervoor zorgen dat de held mogelijk meer punten maakt, namelijk tussen 1 en het extra aan mana.
+# DEEL 1  (11 PUNTEN)
+We gaan volgende klasse-structuur in de volgende stappen maken:
 
-## Opzetten spel
+![](/assets/Aallinone/mod4class.png)
 
-* De speler krijgt 10 willekeurige kaarten  voor zich die gedekt blijven liggen. 
-* Vijf kaarten zijn landkaarten,3 kaarten zijn centrales, 2 kaarten zijn helden
-  * Iedere kaart heeft een willekeurige kost tussen 5 en 10
 
-## Spelen spel
+## Stap 1: 	/2PUNTEN
+Maak een abstracte klasse Vorm die z’n locatie (via x,y coördinaten als autoprops) op het scherm kan bijhouden alsook een abstracte methode  ``TekenVorm``.
+Voeg voorts een virtual property Kleur toe van het type ``ConsoleColor``. Deze property is read-only en geeft ConsoleColor.Red terug.
 
-Zolang de speler geen 10 punten heeft zal de speler steeds een beurt spelen bestaande uit 4 fasen:
-* **Fase 0 - Upkeep**: 
-  *  alle landen die gedekt liggen zullen hun Cost met 1 verhogen (deze landen kunnen dus meer mana genereren van zodra de speler ze omdraait)
-  *   alle helden die nog gedekt zijn hun Cost verlaagt met 1 (maar nooit lager dan 1)
-  * alle centrale die zichtbaar zijn genereren 1 punt (hun Cost wordt niet gebruikt)
-* **Fase 1 - FlipCard**: de speler kiest een kaart die moet omgekeerd worden.
-  * Enkel kaarten die nog niet omgekeerd werden kunnen uiteraard omgekeerd worden.
-* **Fase 2 - GenerateMana**: De speler kiest welke land mana genereert (enkel mogelijk indien er zichtbare landen zijn)
-   * Een land genereert evenveel mana als de Cost van de kaart
-* **Fase 3 - GeneratePoint**: De speler kiest welke held punten genereert (enkel mogelijk indien er zichtbare helden zijn)
-  * De speler betaald hiervoor de cost van de held in mana. De held genereert vervolgens een willekeurig aantal punten tussen 1 en de cost van de held.
+De klasse ``Vorm`` heeft een overloaded constructor die steeds de x,y coördinaten verwacht als parameters vervolgens instelt in de bijhorende autoprops.
 
-# Basisspel maken
-## Deel 1 (8 punten)
+De Vorm heeft géén default constructor.
 
-**Gebruik de gegeven klassen (onderaan de opgave) in je project en pas ze aan waar nodig**
+De locatie van de vormen die we hierna zullen definiëren is steeds het punt linksboven indien we een rechthoek omheen de vorm zouden tekenen. Het voorbeeld hier toont deze plek bij het vliegtuig van stap 3: 
 
-![](../../assets/Aallinone/heroap0.png) 
+![linkerbovenhoek is de oorsprong](/assets/Aallinone/vliegtuigcoord.png)
+
  
-Vul de 3 klassen aan klassen om aan bovenstaand schema te voldoen:
-* **``Land``:** 
-  * Land is een ``Card``
-  * Heeft een methode ``GenerateMana`` die mana zal returnen gelijk aan de ``Cost`` van het land, maar enkel indien het land zichtbaar is (``IsHidden==false``)
-  * Heeft als ``Name`` altijd "Land"
-  * Zal bij de ``DrawCard`` methode zichzelf in groene tekst op het scherm zetten, namelijk z’n ``Name``, gevolgd door z’n Cost (bv ``"Land 5"``)
-  * Verhoogt z’n ``Cost`` met 1 wanneer ``UpdateCost`` wordt aangeroepen
-* **``Centrale``:**
-  * Centrale is een ``Card``
-  * Heeft als Name altijd "Centrale"
-  * Zal bij de ``DrawCard`` methode zichzelf in geel tekst op het scherm zetten, namelijk z’n Name (bv ``"Centrale"``)
-  * Heeft de interface ``IPointGenerator``
-  * Zal steeds 1 punt genereren bij ``GeneratePoints`` (de parameter die wordt meegegeven wordt niet gebruikt).
-* **``Hero``:**
-  * Hero is een ``Card``
-  *	Heeft als ``Name`` altijd "Hero"
-  * Heeft de interface ``IPointGenerator``
-  * Zal bij de ``DrawCard`` methode zichzelf in gele tekst op het scherm zetten, namelijk z’n Name, gevolgd door z’n Cost (bv ``"Hero 6"``)
-  * Heeft een methode ``GeneratePoints`` die 1 parameter aanvaardt van het type int. Indien de parameter gelijk is aan Cost zal de methode een willekeurig getal tussen 1 en Cost teruggeven als punten. 
- 
-* **``Deck``:**
-  * Deck heeft een lijst van kaarten genaamd Kaarten, van het type ``List<Card>`` 
-  * Deck heeft een default constructor: wanneer deze aangeroepen wordt zullen er 10 willekeurige kaarten (3 Centrale, 2 Hero, 5 Land) in de Kaarten-list geplaatst worden
-  * Deck heeft een methode ``DrawCards``: deze zal de ``DrawCard`` van alle Kaarten aanroepen
-  * Deck heeft een methode ``UpdateCosts``: deze zal de ``UpdateCost`` van alle Kaarten aanroepen die dat kunnen.
-  * Deck heeft een methode ``GeneratePoints``: deze zal de ``GeneratePoints`` van alle Kaarten aanroepen die dat kunnen.
-  * Kaarten-list is beschikbaar vanuit een readonly-property
+## Stap 2:	/2punten
+Maak twee klassen die allebei een Vorm zijn:
+* ``Rechthoek``
+* ``Lijn``
 
-## Deel 2: Basis game loop (8 punten)
+Zorg ervoor dat beide vormen via TekenVorm zichzelf op het scherm kunnen tonen in hun eigen kleur.
 
-Maak een basis-versie van het spel. 
+**Lijn:**
+* Heeft een Lengte autoproperty
+* Heeft 1 overloaded constructor die x,y en lengte vraagt
+* Heeft als kleur ``ConsoleColor.Green``
+* Een lijn bestaat uit een reeks sterretjes (*)  horizontaal naast elkaar, gelijk aan de lengte die je via de constructor van bij de start kunt meegeven. Bijvoorbeeld bij lengte 3:
 
-1. Genereren van een Deck-object en de kaarten op het scherm tonen via DrawCards
-2. Een loop die blijft herhalen tot de gebruiker 10 punten heeft
-   * Alle interactie met de kaarten gebeurt uiteraard via het Deck-object
-   * Bestaat uit de 4 fasen die al dan niet vragen aan de gebruiker wat er moet gebeuren
-     * **Fase 0**: update costs van verborgen kaarten + Genereer punt per zichtbare Centrale
-     * **Fase 1**: vraag aan gebruiker welke kaart moet omgekeerd worden
-     * **Fase 2**: vraag aan gebruiker welk land mana moet genereren
-     * **Fase 3**: vraag aan gebruiker welke held punten moet genereren
-   * Na iedere fase ververs je het beeld (``Console.Clear()``) en herteken je de kaarten en toon je de volgende extra info aan de gebruiker, namelijk Mana, Punten en Beurt
-   ![](../../assets/Aallinone/heroap1.png) 
-3. Na de loop wordt getoond hoeveel beurten de gebruiker heeft nodig gehad
-
-
-## Deel 3 Extras
-
-* 1 punt: Gebruik een enum om bij te houden in welke fase van een beurt je bent.
-* 2 punten: plaats alle spel-logica in deck zodat de gameloop enkel nog maar bestaat uit de aanroep van een ``SpeelBeurt()``-methode en een check of de loop moet gestopt worden.
-
-# Voorbeeld spelverloop: 
- 
-![](../../assets/Aallinone/heroap.png) 
-
-# Start klasen
-
-## Card
-
-```csharp
-abstract class Card
-{
-    public Card(string naamin)
-    {
-        Name = naamin;
-    }
-
-    public abstract void DrawCard();
-    protected int cost;
-
-    private string name;
-
-    public string Name
-    {
-        get { return name; }
-        private set { name = value; }
-    }
-}
+```text
+	* * *
 ```
 
-## IPointGenerator
+**Rechthoek:**
 
-```csharp
-interface IPointGenerator
-{
-    int GeneratePoints(int payedmana);
-}
+* Heeft een Lengte en Breedte autoproperty
+* Heeft 2 constructors:
+  * 1 overloaded die x,y, lengte en breedte vraagt
+  * default die standaard een rechthoek op locatie 1,1 zet met lengte en breedte 2
+* Heeft als kleur ``ConsoleColor.Yellow``
+* Een rechthoek verwacht een lengte en breedte bij het aanmaken en kan zichzelf ook tekenen. Als je lengte 4 en breedte 2 ingaf zou deze er als volgt uitzien:
+
+```text
+ 	* * 
+	* * 
+	* * 
+	* *
+```
+
+## Stap 3:	/3punten
+Maak een klasse Vliegtuig dat ook een Vorm is. Een vliegtuig bestaat (compositie!) uit 1 Rechthoek en 2 Lijn-objecten en ziet er altijd hetzelfde uit, namelijk
+* Een rechthoek van 2 bij 5
+* Links en rechts van deze rechthoek een lijn van 3 breed, telkens in de helft van de lengte van deze rechthoek 
+* Enkel de locatie op het scherm kan anders zijn per vliegtuig, hun afmetingen echter niet.
+
+```text
+	   * * 
+	   * * 
+     * * * * * * * * 
+	   * * 
+	   * *
+```
+
+Een Vliegtuig heeft een constructor die de x,y locatie vraagt (zie tekening vorige pagina i.v.m. coördinaten) en zal in de constructor de 3 vormen (2 lijnen en 1 rechthoek) aanmaken.
+
+Merk op dat dus dat het lichaam (de Rechthoek) geel zal zijn, en de twee vleugels groen (van de lijnen).
+
+## Stap 4:	/2punten
+Maak een klasse Vloot dat ook een Vorm is. Een vloot bestaat uit 1 of meerdere vliegtuigen. Je kan via de constructor instellen hoeveel vliegtuigen er moeten zijn in 1 Vloot, alsook de x,y coördinaten (linksboven).De nodige vliegtuigen worden in de constructor aangemaakt en in een lijst bijgehouden in het Vloot-object zelf.
+
+Houdt via een lijst in de klasse de vliegtuigen bij. Een vloot vliegtuigen dat getekend wordt tekent gewoon alle vliegtuigen onder mekaar.
+
+Een vloot van 3 vliegtuigen zal er als volgt uitzien op het scherm:
+```text
+        * * 
+        * *
+  * * * * * * * * 
+        * * 
+        * *
+        * * 
+        * *
+  * * * * * * * * 
+        * * 
+        * *
+        * * 
+        * *
+  * * * * * * * * 
+        * * 
+        * *
+```
+
+Merk op dat de vliegtuigen hun originele kleuren behouden uit de vorige stap.
+ 
+##	Stap 5:	/2 punten
+Maak een interface ``IBeweegbaar``, bestaande uit 1 methode ``Beweeg``. Deze geeft niets terug en heeft 1 parameter van het type ``Richting``.
+
+``Richting`` is een enum-type dat 4 mogelijke waarden heeft: Links, Rechts, Boven, Beneden.
+
+Pas de interface toe op Vliegtuig en Vloot. Deze methode zal de Locatie van het object 1 plekje opschuiven in de richting die in de parameter werd meegegeven. Als dus vervolgens het object opnieuw wordt getekend zal het object 1 plek naar rechts opgeschoven zijn.
+
+Vormen verplaatsen is gewoon een kwestie van de X,Y coördinaten aan te passen. Meer is niet nodig.
+
+  
+# Deel 2		(5 PUNTEN)
+
+##	Stap 6	/5punten
+
+Maak nu een hammertje tik programma: een console-programma dat de gebruiker steeds volgende vragen stelt en vervolgens de gevraagde vormen toevoegt aan het scherm. Op de duur zal de gebruiker grote, complexe tekeningen kunnen maken door meerdere vormen en types te combineren. 
+Iedere vorm die wordt toegevoegd zal in een lijst worden bijgehouden.
+
+Een loop zal steeds volgende stappen uitvoeren tot de gebruiker het programma afsluit. 
+1. Alle vormen die reeds zijn toegevoegd in de lijst op het scherm tekenen via TekenVorm
+2. Aan gebruiker vragen wat er moet gebeuren
+3. Beeld leegmaken
+
+
+De vragen die gesteld kunnen 
+1. *Lijst  leegmaken* => alle vormen verdwijnen en de gebruiker kan terug opnieuw beginnen
+2. *Vorm toevoegen* => zal de gewenste vorm toevoegen aan een lijst nadat volgende 2 of 3 extra zaken aan de gebruiker werden gevraagd:
+   1. *Welke vorm?* (rechthoek, lijn, vliegtuig, vloot)
+   2. *Locatie* (x,y) op het scherm
+   3. Vormafhankelijke informatie? (bv aantal vliegtuigen)
+3. *Afsluiten* => programma sluit af
+4. *Verplaats object naar…*: gevolgd door de vraag in welke richting moet verplaatst worden. Wanneer de gebruiker deze optie zullen alle objecten die de IBeweegbaar hebben 1 plekje in de ingegeven richting verschoven worden
+
+
+# DEEL 3	(4 PUNTEN)
+
+##	STAP 7:	/2 punten
+
+Voeg een nieuw menu-item toe namelijk *Vergroot vloot*. Wanneer de gebruiker deze optie kiest zullen alle Vloot-objecten in de lijst 1 extra vliegtuig bijkrijgen. Je zal hiervoor een extra methode ``VergrootVloot`` aan de Vloot-klasse moeten toevoegen.
+
+## STAP 8: 	/2 punten
+
+Voeg een nieuw menu-item ``Sorteer`` toe, indien de gebruiker dit kiest dan worden alle Vormen gesorteerd op hun x-locatie, hoe kleiner x, hoe eerder in de lijst. Bij gelijke x wordt gekeken naar de y-locatie waar degene met de laagste y voor die met hogere komt.
+
+Vervolgens worden de objecten met een loop op het scherm beschreven als volgt:
+VormType, x, y
+
+Dus bijvoorbeeld:
+
+```text
+Rechthoek, 3, 5
+Rechthoek, 3,6
+Vliegtuig, 5,2
 ```
