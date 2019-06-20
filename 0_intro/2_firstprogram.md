@@ -11,21 +11,17 @@ Via **``Console.WriteLine()``** kunnen we tekst op het scherm tonen en met behul
 
 Maak een nieuw console-project aan (noem het Demo1) en open het Program.cs bestand (indien het niet open). **Veeg de code die hier reeds staat niet weg!**
 
-Voeg binnen de accolades van ``Main`` volgende zin toe:
+
+Voeg onder de lijn ``Console.WriteLine("Hello World!");`` volgende code toe:
 
 ```csharp
 Console.WriteLine("Hoi, ik ben het!");
-Console.ReadKey();
 ```
 
 Zodat je dus volgende code krijgt:
 
 ```csharp
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Demo1
 {
@@ -33,14 +29,14 @@ namespace Demo1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hoi, ik ben het!");
-            Console.ReadKey();
+            Console.WriteLine("Hello World!");
+            Console.WriteLine("Hoi, ik ben het");
         }
     }
 }
 ```
 
-Compileer deze code en voer ze uit: druk hiervoor op het groene driehoekje met "Start" naast. Of via het menu Debug en dan Start Debugging.
+Compileer deze code en voer ze uit: **druk hiervoor op het groene driehoekje. Of via het menu Debug en dan Start Debugging.
 
 **Let erop dat je iedere 'zin' eindigt met een puntkomma.**
 
@@ -49,19 +45,21 @@ Compileer deze code en voer ze uit: druk hiervoor op het groene driehoekje met "
 We gaan nu iedere lijn code kort bespreken. Sommige lijnen code zullen lange tijd niet belangrijk zijn.  Onthoud nu alvast dat: **alle belangrijke code staat tussen de accolades onder de lijn ``static void Main(string[] args)``**!
 
 * ``using System;`` :  Alle ``Console``-commando's die we verderop gebruiken zitten in de ``System`` bibliotheek. Als we deze lijn (een zogenaamde **directive**) niet zouden schrijven dan moesten we ``System.Console.WriteLine`` i.p.v. ``Console.WriteLine`` schrijven verderop in de code. 
-* Andere ``using`` directives: standaard zet Visual Studio de meest gebruikte bibliotheken reeds klaar. Veeg ze gerust weg als je zeker bent dat je bijvoorbeeld niets met Linq gaat doen. Bij twijfel: laten staan!
 * ``namespace Demo1``: Dit is de unieke naam waarbinnen we ons programma zullen steken, en het is niet toevallig de naam van je project. Verander dit nooit tenzij je weet wat je aan het doen bent.
 * ``class Program{}``: Hier start je echte programma. Alle code binnen deze Program accolades zullen gecompileerd worden naar een uitvoerbaar bestand.
 * ``static void Main(string[] args)``: Het startpunt van iedere console-applicatie. Wat hier gemaakt wordt is een **methode** genaamd ``Main``. Je programma kan meerdere methoden (of functies) bevatten, maar enkel degene genaamd ``Main`` zal door de compiler als het startpunt van het programma gemaakt worden.
-* ``Console.WriteLine("Hoi, ik ben het!");``: Dit is een **statement** dat de WriteLine-methode aanroept van de ``Console``-klasse. Het zal alle tekst die tussen de aanhalingstekens staat op het scherm tonen. 
-* ``Console.ReadKey();`` : Een truukje (zie hierna) dat het programma zal pauzeren tot de gebruiker op een toets heeft geduwd.
+* ``Console.WriteLine("Hello world");``: Dit is een **statement** dat de WriteLine-methode aanroept van de ``Console``-klasse. Het zal alle tekst die tussen de aanhalingstekens staat op het scherm tonen. 
+* ``Console.WriteLine("Hoi ik ben het");``: en ook deze lijn komt op het scherm.
+* Sluitende accolades: vervolgens moet voor iedere openende accolade eerder in de code nu ook een bijhorende sluitende volgen
 
+# Say wat now?!
+>![](../assets/care.jpg)
+Oh boy...Wat was dit allemaal?! We hebben al aardig wat vreemde code zien passeren en het is niet meer dan normaal dat je nu denkt "dit ga ik nooit kunnen". Wees echter niet bevreesd: je zal sneller dan je denkt bovenstaande code als 'kinderspel' gaan bekijken. Een tip nodig? Test en experimenteer met wat je al kunt!
 
-### LEES MIJ! (veel voorkomende fout): waarom ReadKey?
+Laat deze info rustig inzinken en onthoudt alvast volgende belangrijke zaken:
 
-De lijn met ``ReadKey`` is een klein truukje: ReadKey verwerkt input van de gebruiker maar in het voorgaande stuk code doen we niets met die input. Test echter eens wat er gebeurt als je de lijn ``Console.ReadKey();`` weglaat en dan probeert te starten.
-
-Inderdaad het programma sluit zich ogenblikkelijk af en je hebt amper tijd om te lezen wat er op het scherm verscheen. Dankzij ReadKey bouwen we dus een "pauze/wachtpunt" in aan het einde van ons programma. Dit is een goede gewoonte als je console-applicaties aan het schrijven bent.
+* Al je code komt binnen de ``Main`` accolades
+* Eindig iedere lijn code daar met een kommapunt;
 
 ## WriteLine: Tekst op het scherm
 
@@ -76,18 +74,28 @@ De WriteLine methode zal alle tekst tonen die tussen de  "  " staan tussen de ha
 Je programma is nu:
 
 ```csharp
+using System;
+
 namespace Demo1
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hoi, ik ben het!");
+            Console.WriteLine("Hello World!");
+            Console.WriteLine("Hoi, ik ben het");
             Console.WriteLine("Wie ben jij?!");
-            Console.ReadKey);
         }
     }
 }
 ```
 
-> Oh boy...Wat was dit allemaal?! We hebben al aardig wat vreemde code zien passeren en het is niet meer dan normaal dat je nu denkt "dit ga ik nooit kunnen". Wees echter niet bevreesd: je zal sneller dan je denkt bovenstaande code als 'kinderspel' gaan bekijken. Een tip nodig? Test en experimenteer met wat je al kunt!
+Kan je ook deze code uitvoeren?! Make it happen en ga dan gezwind naar het volgende hoofdstuk!
+
+## Moet ik niets bewaren?
+
+>![](../assets/attention.jpg)
+
+Neen. Telkens je op de groene "build en run" knop duwt worden al je aanpassingen bewaard. Trouwens: **Kies nooit voor "save as..."**!!!!
+
+Dit zal aardig wat problemen in je project veroorzaken, geloof me maar.

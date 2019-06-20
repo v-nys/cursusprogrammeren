@@ -2,6 +2,9 @@
 
 # γεια σας
 
+
+* filmpje werkenmetvs.md updaten
+
 # Todo's
 
 Deze cursus is nog volop in opbouw. Hier de lijst van de belangrijkste aspecten die nog moeten gebeuren:

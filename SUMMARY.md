@@ -14,6 +14,7 @@
   * [Werken met Visual Studio](0_intro/1_werkenmetvs.md) 
   * [Je eerste programma](0_intro/2_firstprogram.md)
   * [Input verwerken met ReadLine](0_intro/3_console.md)
+  * [Fouten in je code](0_intro/4_fouten.md)
   * [Oefeningen](0_intro/A_Practica.md)
 
 * H1: Variabelen en datatypes
