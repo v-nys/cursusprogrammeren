@@ -15,6 +15,7 @@
   * [Je eerste programma](0_intro/2_firstprogram.md)
   * [Input verwerken met ReadLine](0_intro/3_console.md)
   * [Fouten in je code](0_intro/4_fouten.md)
+  * [Kleuren in Console](0_intro/5_kleuren.md)
   * [Oefeningen](0_intro/A_Practica.md)
 
 * H1: Variabelen en datatypes

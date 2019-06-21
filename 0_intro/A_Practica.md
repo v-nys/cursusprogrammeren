@@ -8,13 +8,8 @@ Maak het programma "grappig" door de antwoorden op de verkeerde plek te gebruike
 
 # Kleuren veranderen
 
-Je kan met de volgende expressie de console-kleur veranderen, bijvoorbeeld in blauw:
-
-```csharp
-Console.BackgroundColor = ConsoleColor.Blue;
-```
-
 Kan je je programma van zonet aanpassen zodat iedere zin in een andere kleur is?
 
 Bekijk de werking van Console.Write(). Kan je ieder woord in een andere kleur zetten?
+
 Go nuts!
