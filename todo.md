@@ -1,17 +1,15 @@
-
-
-# γεια σας
-
-
-* filmpje werkenmetvs.md updaten
-
 # Todo's
-
-Deze cursus is nog volop in opbouw. Hier de lijst van de belangrijkste aspecten die nog moeten gebeuren:
-* Mermaids https://mermaidjs.github.io/
-* Titels in hoofding laten overeenstemmen met titels in inhoudsopgave
+## Inhoud:
+* Class Library DLL uitleg+labo (bv studenten sturen dll naar mekaar)
 * Hoofdstuk debugging schrijven
+## Layout
 
+* Titels in hoofding laten overeenstemmen met titels in inhoudsopgave
+## Research
+* Mermaids https://mermaidjs.github.io/
+
+* Zombie flowchart (ik heb geen flauw idee meer wat ik hier in godsnaam mee bedoel)
+* Uitleg kleur veranderen uit oefening halen en naar "theorie" verplaatsen + Console.ResetColor() toevoegen
 * Git
 * Array opwarmers: [TODO](https://codeforwin.org/2015/07/array-programming-exercises-and.html)
 * Generic methods: voorbeeld van rekenmachine methoden

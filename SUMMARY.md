@@ -76,7 +76,8 @@
 * Module 2 eindetest
   * [Opgave](EindeTests/Mod2/Opgave.md)
   * [Opgave vaardigheidsproef mod 2 1819](EindeTests/Mod2/Opgave_1819.md)
-  * [Bespreking vaardigheidsproef mod 2 1819](EindeTests/Mod2/Oplossing_1819.md)
+  * [Oplossing](EindeTests/Mod2/Oplossing_1819.md)
+  * [Bespreking vaardigheidsproef mod 2 1819](EindeTests/Mod2/Bespreking_1819.md)
 
 ##  Semester 2 : OOP
 

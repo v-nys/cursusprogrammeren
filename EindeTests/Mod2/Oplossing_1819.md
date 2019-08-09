@@ -1,195 +1,218 @@
-# Bugs in vaardigheidsproef 1819
-
-We bespreken en tonen hier kort de meest voorkomende fouten in de vaardigheidsproef 1819. Ook lezers van deze cursus in verdere jaren zullen hier veel uit kunnen leren!
-
-# Random perikelen
-
-## Random te veel
-
-Ongeacht hoeveel willekeurige getallen je nodig hebt in een stuk code, je hebt nooit meer dan 1 ``Random`` number generator nodig, volgende code is er dus 1 te veel:
-
 ```csharp
-Random rekengetal1 = new Random();
-Random rekengetal2 = new Random();
-```
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-## Random te veel oplossen?
-
-Voorgaande fout zal dus twee generators maken die mooi synchroon dezelfde getallen genereren, wat we waarschijnlijk niet wensen. De oplossing is er maar 1 gebruiken...of volgende originele, maar niet erg goede manier:
-
-```csharp
-Random get1 = new Random();
-Thread.Sleep(250); //250ms wachten voor de volgende random te generen. Anders altijd hetzelfde getal.
-Random get2 = new Random();
-```
-
-Een bewuste vertraging in je code inbouwen is nooit erg goed, zeker niet voor je eindgebruiker die zo nuttige tijd van hun leven verslijten met het wachten tot je programma terug werkt...
-
-# Beslissingen
-
-## == vs =
-
-Nooit in een if een enkele ``=`` gebruiken, je hebt er altijd twee nodig wanneer je een test op gelijkheid wenst te doen:
-
-```csharp
-if(getal=4)
-```
-
-## Dubbele code
-
-Àls je bij twee checks identieke code moet schrijven dan heb je een verkeerde voorwaarde geschreven:
-
-```csharp
-if (raad < juist)
+namespace _1819_PPVaardigMod2_1ekans
 {
-    pogingen++;
-    Console.WriteLine($""Neen, dat is het niet. Probeer opnieuw (aantal pogingen is {pogingen})"");
-    Console.WriteLine($""Welk getal is het (aantal pogingen is { pogingen})"");
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            if (SetupCasino("tim", 20, 80))
+            {
+                int keuze = 0;
+                int geld = 0;
+                while (keuze != -1)
+                {
+                    Console.Clear();
+                    Console.WriteLine($"Je hebt {geld} euro.");
+                    keuze = ToonMenu();
+                    Console.Clear();
+                    switch (keuze)
+                    {
+                        case 1:
+                            geld += RaadHetGetal();
+                            break;
+                        case 2:
+                            geld += RekenenMaar();
+                            break;
+                        case 3:
+                            geld += ArrayGame();
+                            break;
+                        default:
+                            ShowEnding(geld);
+                            break;
+
+                    }
+                    Console.WriteLine("Druk toets om verder te gaan");
+                    Console.ReadKey();
+                }
+
+            }
+            else
+            {
+                Console.WriteLine("Ongeldige hoogte en/of breedte");
+            }
+        }
+
+        private static int ArrayGame(int lengte=10)
+        {
+            bool[] guess = new bool[lengte];
+            Random r = new Random();
+            for (int i = 0; i < guess.Length; i++)
+            {
+                if (r.Next(0, 2) == 0)
+                    guess[i] = true;
+                else guess[i] = false;
+            }
+
+            Console.WriteLine("Hoe lang kan jij de sequentie raden?Geef 0 (false) of 1 (true) in.");
+            int curr = 0;
+            bool correct = true;
+            do
+            {
+                Console.WriteLine("Komt er juist of fout? (1 of 0)");
+                int c = Convert.ToInt32(Console.ReadLine());
+                if ((guess[curr] == true && c == 1) || guess[curr] == false && c == 0)
+                {
+                    Console.WriteLine("Goed zo!");
+                    curr++;
+                }
+                else
+                    correct = false;
+            } while (curr < guess.Length && correct == true);
+
+            Console.WriteLine($"Je behaalde een sequentie van {curr} juiste gokken. Dat is {curr*5} euro waard.");
+
+            Console.WriteLine("De correcte sequentie was:");
+            for (int i = 0; i < guess.Length; i++)
+            {
+                Console.Write(guess[i] + ",");
+            }
+            Console.WriteLine();
+            return curr*5;
+        }
+
+
+
+        private static int RekenenMaar()
+        {
+            int winst = 0;
+            Console.WriteLine("Je krijgt nu 5 reken oefeningen. Per juiste krijg je 5 euro. Per foute verlies je 5 euro.");
+            Random r = new Random();
+            for (int i = 0; i < 5; i++)
+            {
+                int a = r.Next(1, 10);
+                int b = r.Next(1, 10);
+                Console.WriteLine($"Hoeveel is {a}x{b}?");
+                int uit = Convert.ToInt32(Console.ReadLine());
+                if (uit == a * b)
+                {
+                    Console.WriteLine("Mooi zo! Je winst verhoogt.");
+                    winst += 5;
+                }
+                else
+                {
+                    Console.WriteLine("Dat is fout. Je winst verlaagt");
+                    winst -= 5;
+                }
+
+
+            }
+            Console.WriteLine($"Je totale winst dit spel is {winst}");
+            return winst;
+
+        }
+
+        private static int RaadHetGetal()
+        {
+            Console.WriteLine("Welkom bij raad het getal!");
+            Console.WriteLine("Je moet een getal van 1 tot 10 raden. Hoe veel keer denk je nodig te hebben?");
+            int grens = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Hier gaan we dan.");
+            Random r = new Random();
+            int getaltezoeken = r.Next(1, 11);
+            int guess = -1;
+            int tries = 0;
+            while (guess != getaltezoeken)
+            {
+                Console.WriteLine($"Welk getal is het (aantalpogingen is {tries}.)?");
+                guess = Convert.ToInt32(Console.ReadLine());
+                if (guess != getaltezoeken)
+                    Console.WriteLine("Neen, dat is het niet. Probeer opnieuw");
+                tries++;
+            }
+            Console.WriteLine("Jeuj. Je hebt het geraden!");
+            //Berekening
+            if (tries == grens)
+            {
+                Console.WriteLine("Wow. Je wist hoe vaak je ging raden.Je verdient 50 euro!");
+                return 10;
+            }
+
+            int dif = Math.Abs(tries - grens);
+            if (dif < 3)
+            {
+                Console.WriteLine("Je zat er minder dan 3 af van het aantal keer dat je ging raden.Je verdient 5 euro.");
+                return 5;
+            }
+            Console.WriteLine("Je zat er  3 of meer keer af van het aantal keer dat je ging raden.Je verliest 5 euro.");
+            return -5;
+        }
+
+        private static void ShowEnding(int geld)
+        {
+            if (geld < 0)
+                Console.WriteLine("Bankroet...Niet goed hoor!");
+            if (geld == 0)
+                Console.WriteLine("Geen geld verloren, geen geld verdiend.");
+            if (geld > 0)
+                Console.WriteLine($"Je hebt {geld} euro verdient");
+        }
+
+        private static int ToonMenu()
+        {
+
+            int keuze = 0;
+
+            do
+            {
+                Console.WriteLine("Geef keuze");
+                Console.WriteLine("\t1. Raad het getal");
+                Console.WriteLine("\t2. Rekenen maar");
+                Console.WriteLine("\t3. Raad de sequentie");
+                Console.WriteLine("*****");
+                Console.WriteLine("-1 is stoppen");
+                keuze = Convert.ToInt32(Console.ReadLine());
+                Console.Clear();
+            } while (keuze != 1 && keuze != 2 && keuze != -1 && keuze !=3);
+
+            return keuze;
+        }
+
+        private static bool SetupCasino(string name, int hoogte=60, int breedte=60)
+        {
+            if (hoogte < 1 || breedte < 1)
+            {
+                return false;
+            }
+
+            Console.WindowWidth = breedte;
+            Console.WindowHeight = hoogte;
+
+            for (int i = 0; i < breedte; i++)
+            {
+                Console.SetCursorPosition(i, 0);
+                Console.Write("*");
+                Console.SetCursorPosition(i, 2);
+                Console.Write("*");
+            }
+
+            Console.SetCursorPosition(1, 1);
+            Console.Write($"Welkom bij Casino AP {name}");
+
+            Console.SetCursorPosition(1, 3);
+            Console.WriteLine("Druk op toets om voort te gaan");
+            Console.ReadKey();
+            Console.Clear();
+            return true;
+        }
+    }
 }
-else if(raad > juist)
-{
-    pogingen++;
-    Console.WriteLine($""Neen, dat is het niet. Probeer opnieuw (aantal pogingen is {pogingen})"");
-    Console.WriteLine($""Welk getal is het (aantal pogingen is { pogingen})"");
-}
-```
 
-Je kan dit reduceren tot 1 ``if(raad!=juist)`` en dus niet je code moet kopieren.
-
-## Onnodige check
-
-Soms heb je een tweede of derde else if check niet meer nodig als die reeds alle voorwaarden bevat die nog overblijven:
-
-```csharp
-if (geld <0)
-{
-    Console.WriteLine(""bankroet..... dasss no good"");
-}
-else if (geld == 0)
-{
-    Console.WriteLine(""you are right where you started"");
-}
-else if (geld > 0) 
-{
-    Console.WriteLine($""je hebt {geld} verdient"");
-}
-```
-
-Je kan dus even goed dit schrijven:
-```csharp
-if (geld <0)
-{
-    Console.WriteLine(""bankroet..... dasss no good"");
-}
-else if (geld == 0)
-{
-    Console.WriteLine(""you are right where you started"");
-}
-else 
-{
-    Console.WriteLine($""je hebt {geld} verdient"");
-}
-```
-
-Stel dat je derde else if niet klopte dan bestond er dus een kans dat bepaalde code nooit werd uitgevoerd.
-
-# Methoden
-
-## Methoden naar void zette
-
-In de opgave moesten enkele methoden geschreven worden die een bepaald iets teruggaven. Deze methoden zullen dus nooit ``void`` als returntype hebben, ook al is dat het enige soort methode waar je momenteel zo te zien mee kunt werken. **Zorg dat je methoden beheerst en zaken UIT de methode kunt krijgen door middel van ``return``**
-
-## Methoden aanpassen
-
-Wanneer je methoden in de opgave krijgt volgende bepaalde specificaties qua returntype en parameters, dan moet er altijd een alarmbelletje afgaan wanneer je deze specificaties moet aanpassen om je code werkende te krijgen. Vermoedelijk ben je dan de methoden niet juist aan het gebruiken en klopt er iets niet.
-
-## Na return gebeurt er niets
-
-Code schrijven na een ``return`` is code schrijven die NOOIT zal uitgevoerd, en heeft dus 0 komma 0 nut:
-
-```csharp
-return getal;
-Console.WriteLine("Klaar");
-```
-
-## Return het gewoon
-
-Wanneer je iets wil return...return het dan. Je hoeft er niet eerst een variabele voor aan te maken:
-
-```csharp
-scherm = false;
-return scherm;
-
-```
-
-Dit kan je dus beter schrijven als:
-
-```csharp
-return false;
-```
-
-Dit kwam in de buurt, maar is dus even nutteloos:
-
-```csharp
-return scherm = true;
-```
-
-## Waarom parameter vragen
-
-Als je in je methode-definitie een parameter vraagt dan is het onbeleefd (en nutteloos) om deze direct bij de start van de methode van waarde te veranderen. Waarom heb je ze dan gevraagd? Of begrijp je misschien nog niet goed hoe parameters bij methoden werken?
-
-```csharp
-static int ShowEnding(int input_geld)
-{
-
-    input_geld = 0;
-```
-
-# Loops
-
-## Loops en arrays hebben een nut
-
-Loops en array zijne r voor je om dit soort code nooit te moeten schrijven:
-
-```csharp
-int maal1 = 1;
-int maal2 = 2;
-int maal3 = 3;
-int maal4 = 4;
-int maal5 = 5;
-int maal6 = 6;
-int maal7 = 7;
-int maal8 = 8;
-int maal9 = 9;
-int maal10 = 10;
-```
-
-## Echt waar ze hebben een nut
-
-```csharp
-bool[] RandomBool = new bool[10];
-Random Random = new Random();
-bool RandomBoolke0 = Convert.ToBoolean(Random.Next()); //NEEE
-bool RandomBoolke1 = Convert.ToBoolean(Random.Next());
-bool RandomBoolke2 = Convert.ToBoolean(Random.Next());
-bool RandomBoolke3 = Convert.ToBoolean(Random.Next());
-bool RandomBoolke4 = Convert.ToBoolean(Random.Next());
-bool RandomBoolke5 = Convert.ToBoolean(Random.Next());
-bool RandomBoolke6 = Convert.ToBoolean(Random.Next());
-bool RandomBoolke7 = Convert.ToBoolean(Random.Next());
-bool RandomBoolke8 = Convert.ToBoolean(Random.Next());
-bool RandomBoolke9 = Convert.ToBoolean(Random.Next());
-
-
-
-RandomBool[0] = RandomBoolke0;
-RandomBool[1] = RandomBoolke1;
-RandomBool[2] = RandomBoolke2;
-RandomBool[3] = RandomBoolke3;
-RandomBool[4] = RandomBoolke4;
-RandomBool[5] = RandomBoolke5;
-RandomBool[6] = RandomBoolke6;
-RandomBool[7] = RandomBoolke7;
-RandomBool[8] = RandomBoolke8;
-RandomBool[9] = RandomBoolke9;
 ```
