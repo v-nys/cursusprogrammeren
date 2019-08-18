@@ -1,8 +1,8 @@
-<<<<<<< HEAD
 # Todo's
 ## Inhoud:
 * Class Library DLL uitleg+labo (bv studenten sturen dll naar mekaar)
 * Hoofdstuk debugging schrijven
+* 2e zit proeven toevoegen
 ## Layout
 
 * Titels in hoofding laten overeenstemmen met titels in inhoudsopgave
@@ -12,7 +12,6 @@
 * Zombie flowchart (ik heb geen flauw idee meer wat ik hier in godsnaam mee bedoel)
 * Uitleg kleur veranderen uit oefening halen en naar "theorie" verplaatsen + Console.ResetColor() toevoegen
 * Git
-=======
 
 
 # Todo's
@@ -23,7 +22,6 @@
 * filmpje werkenmetvs.md updaten
 * Hoofdstuk debugging schrijven
 * hoofdstuk en labo's git
->>>>>>> b1d90219513b8e7f69796b3d54fd6b41dfc73659
 * Array opwarmers: [TODO](https://codeforwin.org/2015/07/array-programming-exercises-and.html)
 * Generic methods: voorbeeld van rekenmachine methoden
 * [Exception handling](https://codevan1001nacht.wordpress.com/2013/11/06/exception-handling/)
