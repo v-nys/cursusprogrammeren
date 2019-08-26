@@ -133,7 +133,7 @@
   * [Labo-oefeningen](16_interfaces/A_practica.md)
 * Module 4 eindetest
   * [Opgave](EindeTests/Mod4/Opgave.md)
-
+  * [Opgave vaardigheidsproef  1819 2e kans](EindeTests/Mod4/Opgave_1819_2ezit.md)
 ## Appendix
 
 * [Ea-ict coding guidelines](B_appendix/codingguidelines.md)
