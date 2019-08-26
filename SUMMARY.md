@@ -78,6 +78,7 @@
   * [Opgave vaardigheidsproef mod 2 1819](EindeTests/Mod2/Opgave_1819.md)
   * [Oplossing](EindeTests/Mod2/Oplossing_1819.md)
   * [Bespreking vaardigheidsproef mod 2 1819](EindeTests/Mod2/Bespreking_1819.md)
+ * [Opgave vaardigheidsproef mod 2 1819 2e kans](EindeTests/Mod2/Opgave_1819_2ezit.md)
 
 ##  Semester 2 : OOP
 
