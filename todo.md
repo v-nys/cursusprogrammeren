@@ -1,22 +1,3 @@
-# Todo's
-## Inhoud:
-* Class Library DLL uitleg+labo (bv studenten sturen dll naar mekaar)
-* Hoofdstuk debugging schrijven
-* 2e zit proeven toevoegen
-## Layout
-
-* Titels in hoofding laten overeenstemmen met titels in inhoudsopgave
-## Research
-* Mermaids https://mermaidjs.github.io/
-
-* Zombie flowchart (ik heb geen flauw idee meer wat ik hier in godsnaam mee bedoel)
-* Uitleg kleur veranderen uit oefening halen en naar "theorie" verplaatsen + Console.ResetColor() toevoegen
-* Git
-
-
-# Todo's
-
-
 ## Inhoud
 * labo + uitleg class libraries (studenten sturen dll naar mekaar)
 * filmpje werkenmetvs.md updaten
