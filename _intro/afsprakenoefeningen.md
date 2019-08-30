@@ -14,18 +14,19 @@ Eerst krijg je een omschrijving in tekst van wat de algemene bedoeling is van je
 Je hoeft niet altijd alle code zelf te schrijven. Code die je nog niet verondersteld wordt zelf te kunnen schrijven, of code die gewoon veel tijd in beslag neemt, krijg je. Bij de stukken code staat telkens de naam van het bestand waarin ze thuishoort. Commentaar bij de te wijzigen stukken code geeft aan welke aanpassingen je moet doen. Bijvoorbeeld:
 
 #### Program.cs
-> ```csharp
-> using System;
-> 
-> namespace Programmeren {
->     class Program {
->         public static void Main(string[] args) {
->             // zorg er zelf voor dat een regel tekst die gebruiker intypt weer verschijnt
->             string message;
->             Console.WriteLine(message);
->         }
->     }
-> }
+```csharp
+using System;
+
+namespace Programmeren {
+    class Program {
+        public static void Main(string[] args) {
+            // zorg er zelf voor dat een regel tekst die gebruiker intypt weer verschijnt
+            string message;
+            Console.WriteLine(message);
+        }
+    }
+}
+```
 
 ### voorbeeldinteractie
 Ten slotte worden één of meerdere voorbeelden getoond van hoe je programma zich gedraagt. In deze voorbeelden stellen regels die niet beginnen met `>` iets voor dat op het scherm verschijnt. Regels die wel beginnen met `>` stellen iets voor dat door de gebruiker zelf wordt ingetypt. Bijvoorbeeld, voor het programma dat we hier als leidraad gebruiken:
@@ -39,17 +40,18 @@ We gebruiken de speciale syntax `<EOF>` om aan te geven dat er een end-of-file s
 Deze verschijnt pas nadat de deadline om de oefening te maken verstreken is en volgt hetzelfde formaat als het vertrekpunt, bijvoorbeeld:
 
 #### Program.cs
-> ```csharp
-> using System;
-> 
-> namespace Programmeren {
->     class Program {
->         public static void Main(string[] args) {
->             string message = Console.ReadLine();
->             Console.WriteLine(message);
->         }
->     }
-> }
+```csharp
+using System;
+
+namespace Programmeren {
+    class Program {
+        public static void Main(string[] args) {
+            string message = Console.ReadLine();
+            Console.WriteLine(message);
+        }
+    }
+}
+```
 
 We plaatsen de modeloplossing hier alleen voor jullie leesgemak. We zullen ook een speciale website voorzien (een "Git repository") waar je de oplossingen kan downloaden.
 
