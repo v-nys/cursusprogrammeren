@@ -1,4 +1,4 @@
-# Afspraken
+# Afspraken code
 Voor de graduaatsopleiding volgen we een reeks afspraken (ook "conventies" genoemd) die bepalen welke code wel en niet aanvaardbaar is. Wanneer een groep programmeurs dezelfde afspraken volgt, is het voor iedereen makkelijker code uit te wisselen.
 
 Als je deze pagina voor de eerste keer ziet, zullen de meeste van deze afspraken je nog niet veel zeggen. Dat is logisch. We zullen je tijdens de les wijzen op de afspraken die horen bij een nieuw concept, maar hier heb je een handig overzicht:
@@ -12,12 +12,13 @@ Onderstaande richtlijnen zijn gebaseerd op [deze algemeen aanvaarde richtlijnen]
 | Methode          | PascalCase | meervoud toegestaan | [A-z]+[0-9] | `public`                |
 | Argument         | camelCase  | meervoud toegestaan | [A-z]+[0-9] | niet van toepassing     |
 | Lokale variabele | camelCase  | meervoud toegestaan | [A-z]+[0-9] | niet van toepassing     |
-| Constante        | PascalCase | altijd              | [A-z]+[0-9] | meestal `public`        |
+| Constante        | PascalCase | altijd              | [A-z]+[0-9] | `public`                |
 | Veld             | camelCase  | meervoud toegestaan | [A-z]+[0-9] | `private`               |
 | Property         | PascalCase | meervoud toegestaan | [A-z]+[0-9] | `public`                |
 | Enum type        | PascalCase | altijd              | [A-z]+      | `public`                |
 | Waarde enum      | PascalCase | altijd              | [A-z]+      | niet van toepassing     |
 
+* We kiezen namen in het Engels. Enkel tekst die aan de gebruiker getoond wordt, schrijven we in het Nederlands.
 * Merk op dat het verschil tussen PascalCase en camelCase samenhangt met de default zichtbaarheid. Wanneer afgeweken wordt van de default zichtbaarheid, kan de conventie voor de notatie ook veranderen. Wij zullen ons in deze cursussen voor de eenvoud strikt aan de default zichtbaarheid houden.
 * "meervoud toegestaan" betekent dat we iets noteren als een meervoud als de data ook meerdere objecten voorstelt. Bijvoorbeeld een lokale variabele met naam `studenten` en datatype `Student[]`, maar een lokale variabele `student` met datatype `Student`.
 * We beginnen niet elke identifier voor een `private` member met een underscore. Sommige programmeurs doen dit wel, maar wij volgen één richtlijn.

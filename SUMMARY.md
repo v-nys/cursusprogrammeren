@@ -3,7 +3,8 @@
 * [Welkom](README.md)
 * Inleiding
   * [Benodigdheden](_intro/benodigdheden.md)
-  * [Afspraken](_intro/afspraken.md)
+  * [Afspraken code](_intro/afsprakencode.md)
+  * [Afspraken oefeningen](_intro/afsprakenoefeningen.md)
   * [Nuttige extras](_intro/nuttigeextras.md)
   * [Dankwoord](_intro/dankwoord.md)
   * [Mee helpen?](_intro/helpen.md)
