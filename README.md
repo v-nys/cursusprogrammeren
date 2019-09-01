@@ -7,7 +7,7 @@ Concreet is dit het handboek voor de eerste 2 semesters omtrent 'leren programme
 * Deel 1: Programmeren
 * Deel 2: Objectgericht programmeren
 
-Deze cursus is gebaseerd op [de overeenkomstige cursus van de bacheloropleiding toegepaste informatica](timdams.gitbook.io).
+Deze cursus is gebaseerd op [de overeenkomstige cursus van de bacheloropleiding toegepaste informatica](apwt.gitbook.io).
 
 Veel leer-en leesplezier,
 
