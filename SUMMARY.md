@@ -38,7 +38,8 @@
   * [Bitwise operators](3_data/bitwise.md)
   * [Random](3_data/random.md)
   * [Debuggen](3_data/5_debuggen.md)
-  * [Oefeningen](3_data/A_Practica.md) 
+  * [Oefeningen](3_data/A_Practica.md)
+
 * H4: Beslissingen
   * [Beslissingen intro](4_beslissingen/0_beslissingen_intro.md)
   * [Booleanse logica en operators](4_beslissingen/1_logic_and_relationsoperator.md)
@@ -47,10 +48,12 @@
   * [enum](4_beslissingen/enum.md)
   * [Switch](4_beslissingen/2_switch.md)
   * [Oefeningen](4_beslissingen/a_practica.md)
+
 * Module 1 eindetest
   * [Opgave](EindeTests/Mod1/Opgave.md)
   * [Opgave vaardigheidsproef mod 1 1819](EindeTests/Mod1/Opgave_1819.md)
   * [Bespreking vaardigheidsproef mod 1 1819](EindeTests/Mod1/Oplossing_1819.md)
+
 * H5: Loops
   * [Loops intro](5_herhalingen/0_loops_intro.md)
   * [While en Do While](5_herhalingen/1_while_dowhile.md)
@@ -79,9 +82,9 @@
   * [Opgave vaardigheidsproef mod 2 1819](EindeTests/Mod2/Opgave_1819.md)
   * [Oplossing](EindeTests/Mod2/Oplossing_1819.md)
   * [Bespreking vaardigheidsproef mod 2 1819](EindeTests/Mod2/Bespreking_1819.md)
- * [Opgave vaardigheidsproef mod 2 1819 2e kans](EindeTests/Mod2/Opgave_1819_2ezit.md)
+  * [Opgave vaardigheidsproef mod 2 1819 2e kans](EindeTests/Mod2/Opgave_1819_2ezit.md)
 
-##  Semester 2 : OOP
+## Semester 2 : OOP
 
 * H8: Klassen en objecten
   * [OOP Intro](8_klassen/0_oop_intro.md)
@@ -90,70 +93,82 @@
   * [Methoden en access modifiers](8_klassen/0c_simpleobjects.md)
   * [Properties](8_klassen/2_properties.md)
   * [Labo-oefeningen](8_klassen/A_practica.md)
+
 * H9: Geheugenmanagement bij klassen
   * [Objecten en methoden](9_meminoop/6b_objectenenmethoden.md)
   * [Stack en Heap](9_meminoop/6_memorymanagement.md)
   * [Null en NullReferenceException](9_meminoop/nullreference.md)
   * [Labo-oefeningen](9_meminoop/A_poke1.md)
+
 * H10: Advanced klassen en objecten
   * [Constructors](10_advancedklassen/1_constructors.md)
   * [Static](10_advancedklassen/5_static.md)
   * [Spelen met strings](10_advancedklassen/strings.md)
   * [Labo-oefeningen](10_advancedklassen/A_practica3.md)
+
 * H11: Arrays en klassen
   * [Arrays van objecten](11_arraysvanklassen/7_arraysvanobj.md)
   * [Foreach en var](11_arraysvanklassen/3_foreach.md)
   * [List](11_arraysvanklassen/4_list.md)
   * [Labo-oefeningen](11_arraysvanklassen/A_practicaMem.md)
+
 * Module 3 eindetest
   * [Opgave](EindeTests/Mod3/Opgave.md)
   * [Opgave vaardigheidsproef mod 3 1819](EindeTests/Mod3/Opgave_1819.md)
   * [Bespreking vaardigheidsproef mod 3 1819](EindeTests/Mod3/Oplossing_1819.md)
+
 * H12: Overerving
   * [Overerving intro](12_overerving/0_overerving_intro.MD)
   * [Base keyword](12_overerving/2_base.md)
   * [Constructors bij overerving](12_overerving/3_constructors_inheritance.md)
   * [Virtual en override](12_overerving/1_virtual_override.md)
   * [Labo-oefeningen](12_overerving/A_PracticaSimpel.md)
+
 * H13: Advanced overerving
   * [System.Object](13_advancedovererving/4_System_Object.md)
   * [Abstract](13_advancedovererving/5_abstract.md)
   * [Labo-oefeningen](13_advancedovererving/A_Practica.md)
+
 * H14: Compositie
   * [Compositie](14_compositie/0_compositie_intro.MD)
   * [Labo-oefeningen](14_compositie/A_PracticaComp.md)
+
 * H15: Polymorfisme
   * [Polymorfisme](15_polymorfisme/11_polymo_intro.MD)
   * [Is en As keywords](18_IsAs/1_IsAs.md)
   * [Objecten vergekijken: alles komt samen](18_IsAs/6_equals.md)
   * [Labo-oefeningen](15_polymorfisme/A_Practica.md)
+
 * H16: Interfaces
   * [Interface intro](16_interfaces/1_Interface_intro.MD)
   * [Interfaces in de praktijk](16_interfaces/2_InterfacesInPraktijk.md)
   * [Polymorfisme en interfaces](18_IsAs/2_Polymorfisme_Interfaces.md)
   * [Labo-oefeningen](16_interfaces/A_practica.md)
+
 * Module 4 eindetest
   * [Opgave](EindeTests/Mod4/Opgave.md)
   * [Opgave vaardigheidsproef  1819 2e kans](EindeTests/Mod4/Opgave_1819_2ezit.md)
+
 ## Appendix
 
 * [Ea-ict coding guidelines](B_appendix/codingguidelines.md)
 * [Oefeningen kerkhof](B_appendix/graveyard.md)
 
-## Semester 1
+## Semester 1 appendix
 
 * [Nice to know stuff](B_appendix/prostuff.md)
-   * [Out en Ref parameters](B_appendix/2_outenref.md)
-   * [Jagged arrays](B_appendix/5_jaggedArrays.md)
+  * [Out en Ref parameters](B_appendix/2_outenref.md)
+  * [Jagged arrays](B_appendix/5_jaggedArrays.md)
   
 * Oplossingen oefeningen
-    * [H0 - Werken met VS](0_intro/opl_apractica.md)
-    * [H3 - Werken met data](3_data/a_oplpractica.md)
-    * [H4 - Beslissingen](4_beslissingen/a_oplpractica.md)
-    * [Module 1 eindetest](EindeTests/Mod1/Oplossing.md)
-    * [H5 - Herhalingen](5_herhalingen/opl_a_practica.md)
-    * [H6 - Methoden](6_methoden/opl_b_practica.md)
-    * [H7 - Arrays](7_arrays/opl_a_practica.md)
+  * [H0 - Werken met VS](0_intro/opl_apractica.md)
+  * [H3 - Werken met data](3_data/a_oplpractica.md)
+  * [H4 - Beslissingen](4_beslissingen/a_oplpractica.md)
+  * [Module 1 eindetest](EindeTests/Mod1/Oplossing.md)
+  * [H5 - Herhalingen](5_herhalingen/opl_a_practica.md)
+  * [H6 - Methoden](6_methoden/opl_b_practica.md)
+  * [H7 - Arrays](7_arrays/opl_a_practica.md)
+
 * All-In-Projecten
   * [Overzicht](A_DEEL1_AllInOne/0_Deel1_IntroductieAllInOne.md)
   * [Console Matrix](A_DEEL1_AllInOne/1_ConsoleMatrix.md)
@@ -162,10 +177,12 @@
   * [Tekst-gebaseerd Maze game](A_DEEL1_AllInOne/4_MazeGame.md)
   * [Conway game of life](A_DEEL1_AllInOne/5_conway.md)
 
-## Semester 2
+## Semester 2 appendix
+
 * Nice to know stuff
   * [Operator overloading](B_appendix/8_operatoroverloading.md)
   * [Expression bodied members](B_appendix/6_exprbody.md)
+
 * Oplossingen oefeningen
   * [H8 - Klassen en objecten](8_klassen/opl_apractica.md)
   * [H9 - Geheugenmanagement bij klassen](9_meminoop/opl_poke2.md)
@@ -177,6 +194,7 @@
   * [H15 - Polymorfisme](15_polymorfisme/opl_practica.md)
   * [H16 - Interfaces](16_interfaces/opl_practica.md)
   * [Module 4 eindetest](EindeTests/Mod4/Oplossing.md)
+
 * All-In-Projecten
   * [Overzicht](A_DEEL2_AllInOne/0_Deel2_IntroductieAllInOne.md)
   * [OO Textbased Game](A_DEEL2_AllInOne/2_OOTextGame.md)
@@ -184,12 +202,14 @@
   * [Map Maker](A_DEEL2_AllInOne/1_MapMapker.md)
   * [Magic The Gathering API](A_DEEL2_AllInOne/mtgapi.md)
 
-## Pro (geen leerstof)
+## Pro (geen leerstof en/of in opbouw)
+
 * Generics en collections
   * [Generics methoden en types](17_gencols/0_generics_intro.MD)
   * [Generic classes en constraints](17_gencols/2_genericclasses_en_constraints.md)
   * [Collections](17_gencols/8_Collections.md)
   * [Labo-oefeningen](17_gencols/A_Practica.md)
+
 * Events
   * [Events](19_events/events.md)
   * [Chat server](19_events/chatserver.md)
