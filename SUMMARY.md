@@ -210,6 +210,11 @@
   * [Collections](17_gencols/8_Collections.md)
   * [Labo-oefeningen](17_gencols/A_Practica.md)
 
+* Exception handling
+  * [Werken met exceptions](20_exceptions/0_exceptionhandling.md)
+  * [Waar exceptions plaatsen](20_exceptions/waarplaatsen.md)
+  * [Zelf uitzonderingen maken](20_exceptions/1_eigenuitzondering.md)
+
 * Events
   * [Events](19_events/events.md)
   * [Chat server](19_events/chatserver.md)
