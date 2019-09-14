@@ -41,6 +41,7 @@ We baseren ons op [de afspraken van Microsoft](https://docs.microsoft.com/en-us/
 * Elk zelf gedefinieerd datatype (klasse, struct, interface, enum type, later ook delegate) plaatsen we in een afzonderlijk bestand met dezelfde naam als dat datatype.
 
 ### strings bouwen
+* In de eerste twee lessen mag dit met behulp van `+`.
 * Gebruik stringinterpolatie om kleine aantallen strings aan elkaar te hangen of data weer te geven in stringformaat.
 * Gebruik een `StringBuilder` om strings aan elkaar te hangen in een lus.
 
