@@ -50,7 +50,7 @@ Dit semester kiezen we steeds als Project Type  **Console App (.NET Core)**. Kie
 
 Geef je project de naam "MyFirstProject" en kies een goede locatie (ik raad je aan dit steeds in Dropbox of Onedrive te doen)
 
-![VS Project maken](../assets/0_intro/vsprojectname.png)
+![VS Project maken](../assets/0_intro/vsprojectname.PNG)
 
 **Klik nu op create**.
 
