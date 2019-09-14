@@ -5,7 +5,7 @@
 Je code kan niet gecompileerd en uitgevoerd worden zolang er fouten in je code staan (dit bespraken we reeds in [een eerder hoofdstuk](0_intrototcs.md)).
 
 Indien je op de groene start knop duwt en volgende waarschuwing krijgt **KLIK DAN NOOIT OP YES EN DUIDT NOOIT DE CHECKBOX AAN**:
->![Zie je de fout?](../assets/0_intro/errorwarning.png) De eerste die dit wél doet trakteert de hele klas als ik dit ontdek.
+>![Zie je de fout?](../assets/0_intro/errorwarning.PNG) De eerste die dit wél doet trakteert de hele klas als ik dit ontdek.
 
 > Lees de boodschap eens: wat denk je dat er gebeurt als je op 'yes' duwt? Inderdaad, VS zal de laatste goed gelukte code uitvoeren en dus niet de code die je nu hebt staan waarin nog fouten staan.
 
@@ -16,13 +16,13 @@ Zolang er dus fouten in je code staan moet je deze eerst oplossen voor je verder
 * Fouten in code worden met een rode squigly onderlijnt.
 * Onderaan zie je in de statusbalk of je fouten hebt
 
-![Zie je de fout?](../assets/0_intro/error.png)
+![Zie je de fout?](../assets/0_intro/error.PNG)
 
 ## Fouten vinden
 
 Uiteraard ga je vaak code hebben die meerdere schermen omvat. Je kan via de error-list snel naar al je fouten gaan. Open deze door op het error-icoontje onderaan te klikken:
 
-![De errorlist](../assets/0_intro/errorlist.png)
+![De errorlist](../assets/0_intro/errorlist.PNG)
 
 In deze list kan je nu op iedere error klikken om ogenblikkelijk naar de correct lijn te gaan.
 
