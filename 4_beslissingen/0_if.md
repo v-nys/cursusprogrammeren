@@ -1,5 +1,4 @@
 #If statements
-> De flowchart afbeeldingen komen uit het handboek ["Microsoft Visual C# 2015: An Introduction to Object-Oriented Programming" van Joyce Farrell](https://books.google.be/books/about/Microsoft_Visual_C_2015_An_Introduction.html?id=Xy-dBAAAQBAJ&source=kp_cover&redir_esc=y). Op termijn zullen de illustraties door mezelf gemaakt worden.
 
 In dit deel  zullen we bekijken hoe we ons programma dynamischer kunnen maken met behulp van het if-statement.
 
@@ -40,11 +39,10 @@ Het is aangeraden om steeds na de if-expressie met accolades te werken. Dit zorg
 Een voorbeeld:
 ```csharp
 if ( number < 5 )
-{        
+{
     Console.WriteLine ("C");
     Console.WriteLine ("D");
 }
-
 ```
 
 ![](../assets/2_beslissingen/iffflowblock.png)
@@ -56,12 +54,30 @@ De booleaanse expressie die je tussen de ``if`` haakjes plaats moet een stuk cod
 ## Veelgemaakte if-fouten
 Er zijn enkele veelgemaakte fouten waar je op moet letten:
 
-* **Appelen en peren vergelijken**: de types in je booleanse expressie moeten steeds vergelijkbaar zijn. Volgende code is dus fout: ``if( "4" > 3)`` daar we hier een ``string`` met een ``int``vergelijken.
-* **Accolades vergeten** om een codeblock aan te duiden, maar je code toch zodanig outlinen (met tabs) dat het lijkt of je een heel codeblock hebt. Het gevolg zal zijn dat enkel de eerste lijn na de ``if`` zal uitgevoerd worden indien ``true```. De volgende lijn zal vervolgens altijd uitgevoerd worden:
-  
-  ![](../assets/2_beslissingen/ifflownobrace.png)
+### Appelen en peren vergelijken
+De types in je booleanse expressie moeten steeds vergelijkbaar zijn. Volgende code is dus fout: ``if( "4" > 3)`` daar we hier een ``string`` met een ``int``vergelijken.
+### Accolades vergeten
+Om een codeblock aan te duiden, maar je code toch zodanig outlinen (met tabs) dat het lijkt of je een heel codeblock hebt. Het gevolg zal zijn dat enkel de eerste lijn na de ``if`` zal uitgevoerd worden indien ``true```. Gebruiken we de if met bock van daarnet maar zonder accolades dan zal de laatste lijn altijd uitgevoerd worden ongeacht de if:
 
-* **Een puntkomma plaatsen** na de booleanse expressie. Dit zal ervoor zorgen dat er eigenlijk geen codeblock bij de if hoort en je dus een nietszeggende ``if`` het geschreven. De code na het puntkomma zal uitgvoerd worden ongeacht de ``if``:
+```csharp
+if ( number < 5 )
+    Console.WriteLine ("C");
+    Console.WriteLine ("D");
+```
+
+![](../assets/2_beslissingen/ifflownobrace.png)
+
+Merk ook op dat je code anders uitlijnen géén invloed heeft op de uitvoer (wat bijvoorbeeld wel zo is bij de programmeertaal Python).
+
+### Een puntkomma plaatsen na de booleanse expressie. 
+
+Dit zal ervoor zorgen dat er eigenlijk geen codeblock bij de if hoort en je dus een nietszeggende ``if`` het geschreven. De code na het puntkomma zal uitgevoerd worden ongeacht de ``if``:
+
+```csharp
+if ( number < 5 );
+    Console.WriteLine ("C");
+    Console.WriteLine ("D");
+```
 
   ![](../assets/2_beslissingen/ifflowsemicolon.png)
   
@@ -167,7 +183,8 @@ else
 }
 ```
 
-  ![](../assets/2_beslissingen/ifelseflow.png)
+> Kan je zelf een flowchart van bovenstaande code tekenen? Try it!
+
 ## If/else if
 Met een if/ else if constructie kunnen we meerdere criteria opgeven die waar/niet waar moeten zijn voor een bepaald stukje code kan uitgevoerd worden. Sowieso begint men steeds met een if. Als men vervolgens een else if plaats dan zal de code van deze else if uitgevoerd worden enkel en alleen als de eerste expressie (van de if) niet waar was en de expressie van deze else if wel waar is.
 
@@ -196,7 +213,7 @@ We kunnen met behulp van nesting ook complexere programma flows maken. Hierbij g
 
 Volgende voorbeeld toont dit aan (bekijk wat er gebeurt als je emergencyValve aan ``closed`` gelijkstelt) :
 
-````csharp
+```csharp
 int reactorTemp = 1500;
 string emergencyValve = " ";
  

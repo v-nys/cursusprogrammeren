@@ -39,13 +39,10 @@ double complex= 3+ DerdeMachtVan20 * Math.Round(sineHoekA)
 ```
 
 Twijfel je over de werking van een methode, gebruik dan de help als volgt:
-1) schrijf de Methode zonder argumenten. Bijvoorbeeld ``Math.Pow()`` (je mag de rode error negeren)
-
-![](../assets/4_methoden/math.png)
-
-2) plaats je cursos op Pow
-3) druk op F1 op je toetsenbord. 
-4) Je krijgt nu de help-files te zien van deze methode op MDSDN
+1. schrijf de Methode zonder argumenten. Bijvoorbeeld ``Math.Pow()`` (je mag de rode error negeren) ![](../assets/4_methoden/math.png)
+2. plaats je cursor op ``Pow``
+3. druk op ``F1`` op je toetsenbord.
+4. Je krijgt nu de help-files te zien van deze methode op MDSDN
 
 ### PI 
 Ook het getal Pi , 3.14159265358979323846, is beschikbaar in de Math-library. Het witte icoontje voor PI bij Intellisense toont aan dat het hier om en ‘field’ gaat; een eenvoudige variabele met een specifieke waarde. In dit geval gaat het zelfs om een const field, met de waarde van Pi van het type double.

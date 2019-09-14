@@ -1,8 +1,8 @@
-# Kennismaken met C# en Visual Studio {#kennismaken-met-c-en-visual-studio}
+# Kennismaken met C# en Visual Studio
 
 Visual Studio (VS) is een pakket dat een groot deel tools samenvoegt (debuger, code editor, compiler, etc) zodat je niet tientallen paketten moet gebruiken om software te schrijven.
 
-![VS2018 Logo](../assets/0_intro/vslogo.png)
+![VS2019 Logo](../assets/0_intro/vslogo.png)
 
 Visual Studio is een zogenaamde IDE("Integrated Development Environment") en is op maat gemaakt om C#.NET applicaties te ontwikkelen. Je bent echter verre van verplicht om enkel C# applicaties in VS te ontwikkelen, je kan gerust VB.NET, TypeScript, Python en andere talen gebruiken.
 
@@ -17,41 +17,53 @@ Het hart van Visual Studio bestaat uit de **compiler** die we hiervoor besproken
 
 # Visual Studio Installeren
 
-In deze cursus zullen de voorbeelden steeds met de Enterprise editie van VS gemaakt zijn. Je kan deze als AP-student gratis downloaden en installeren via oftewel [DreamSpark](http://dreamspark.ap.be) of via [Microsoft](https://www.visualstudio.com/thank-you-downloading-visual-studio-imagine/?sku=Enterprise&rel=15) (maar dan dien je wel een key via DreamSpark aan te vragen).
+In deze cursus zullen de voorbeelden steeds met de **Enterprise** editie van VS gemaakt zijn. Je kan deze als AP-student gratis downloaden en installeren  via [visualstudio.microsoft.com](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Enterprise).
 
-Het is belangrijk bij de installatie dat je minimaal de **.NET desktop development**workload selecteert als te installeren tools. Uiteraard ben je vrij om meerdere zaken te installeren.
+Het is belangrijk bij de installatie dat je minimaal 
+* de **.NET desktop development** workload selecteert als te installeren tools. ![VS Installeren](../assets/0_intro/vsinstall.png)
+* bij "Individual components" dien je onder de sectie **code tools** zeker ook de **class designer** en **code map** te installeren (zie de screenshot hieronder welke extra tools ik ook aanbeveel)![VS Installeren](../assets/0_intro/vsinstallextra.png)
+* Uiteraard ben je vrij om meerdere zaken te installeren
 
-![VS Installeren](../assets/0_intro/vsinstall.png)
 
-> Bekijk [volgende video](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=fecd350e-a402-45cf-b57e-a91100cad93f) voor een stap voor uitleg over de installatie.  **De stap ivm de key is zeer belangrijk**
 
 # Visual studio opstarten
 
-Na het opstarten van VS krijg je het startvenster te zien van waaruit je verschillende dingen kan doen, zoals eerder aangemaakte projecten opstarten, informatie opzoeken of een totaal nieuw project starten.
+Na het opstarten van VS krijg je het startvenster te zien van waaruit je verschillende dingen kan doen.
 
 ![VS Opstarten](../assets/0_intro/vsstart.png)
 
 ## Een nieuw project aanmaken
 
-We zullen nu een nieuw project aanmaken. Dit kan op verschillende manieren. De eenvoudigste manier is door te klikken op File -&gt; New -&gt; Project…
+We zullen nu een nieuw project aanmaken, kies hiervoor "Create a new project".
 
-Het "New Project" venster dat nu verschijnt geeft je hopelijk al een glimp van de veelzijdigheid van VS. In het linkerdeel zie je bijvoorbeeld alle Project Types staan. M.a.w. dit zijn alle soorten programma’s die je kan maken in VS. Naargelang de geïnstalleerde opties en bibliotheken zal deze lijst groter of kleiner zijn.
+> Het "New Project" venster dat nu verschijnt geeft je hopelijk al een glimp van de veelzijdigheid van VS. In het rechterdeel zie je bijvoorbeeld alle Project Types staan. M.a.w. dit zijn alle soorten programma’s die je kan maken in VS. Naargelang de geïnstalleerde opties en bibliotheken zal deze lijst groter of kleiner zijn.
 
-Dit semester kiezen we steeds als Project Type **‘Visual C#’** en als template **Console Application (.NET Framework)**. Onderaan kan je een naam geven voor je project alsook de locatie op de harde schijf waar het project dient opgeslagen te worden. **Onthoudt waar je je project aanmaakt zodat je dit later terugvindt**.
+Dit semester kiezen we steeds als Project Type  **Console App (.NET Core)**. Kies dit type en klik 'Next'.
 
-Geef volgende informatie op en druk op 'ok':
 ![VS Project maken](../assets/0_intro/vsproject.png)
 
+ Op het volgende scherm kan je een naam geven voor je project alsook de locatie op de harde schijf waar het project dient opgeslagen te worden. **Onthoudt waar je je project aanmaakt zodat je dit later terugvindt**.
+
+**De solution name blijf je af (deze moet momenteel dezelfde naam zijn als je project)**
+
+ > Geef je projectnamen ogenblikkelijk duidelijke namen zodat je niet opgezadeld geraakt met projecten zoals Project201.
+
+Geef je project de naam "MyFirstProject" en kies een goede locatie (ik raad je aan dit steeds in Dropbox of Onedrive te doen)
+
+![VS Project maken](../assets/0_intro/vsprojectname.png)
+
+**Klik nu op create**.
 
 VS heeft nu reeds een aantal bestanden aangemaakt die je nodig hebt om een ‘Console Applicatie’ te maken. 
 Een console applicatie is een programma dat alle uitvoer naar een zogenaamde ‘console’ stuurt, een shell. Maw, je kan enkel tekst (Unicode) als uitvoer genereren en dus geen multimedia elementen zoals afbeeldingen, geluid, etc.
 
-### Goed nakijken
-Kijk steeds goed volgende zaken na voor je je nieuwe project aanmaakt:
+# Registreren (eenmalig)
 
-* Kies **Visual C#** als taal (en niet bijvoorbeeld Visual Basic)
-* Kies **Console Application** (en niet bijvoorbeeld Windows Form Application)
-* Zet al je projecten op een vaste locatie op je hd (of nog beter op je dropbox o.i.d.)
+**Volgende stap dien je maar 1 maal te doen indien je VS ergens nieuw hebt geïnstalleerd: het registeren van de installatie.**
+
+![VS Project maken](../assets/0_intro/register.png)
+
+Kies 'sign in' en login met je AP-studenten account (je sxxxxx@student.Ap.be account). Als alles goed gaat is nu je versie geregistreerd.
 
 # IDE Layout
 
@@ -63,7 +75,7 @@ We zullen nu eerst eens bekijken wat we allemaal zien in VS na het aanmaken van 
 
 ![VS Ide Overzicht](../assets/0_intro/vside.png)
 
-* Je kan meerdere bestanden tegelijkertijd openen in VS. Ieder bestand zal z’n eigen tab krijgen. De actieve tab is het bestand wiens inhoud je in het hoofdgedeelte eronder te zien krijgt. Merk op dat enkel open bestanden een tab krijgen.
+* Je kan meerdere bestanden tegelijkertijd openen in VS. Ieder bestand zal z'n eigen **tab** krijgen. De actieve tab is het bestand wiens inhoud je in het hoofdgedeelte eronder te zien krijgt. Merk op dat enkel open bestanden een tab krijgen.
 
 * De "**solution explorer**" toont alle bestanden en elementen die tot het huidige project behoren. Als we dus later nieuwe bestanden toevoegen dan kan je die hier zien (en openen).
 
@@ -74,22 +86,25 @@ We zullen nu eerst eens bekijken wat we allemaal zien in VS na het aanmaken van 
 De layout van VS kan je volledig naar je hand zetten. Je kan ieder (deel-)venster en tab verzetten, verankeren en zelfs verplaatsen naar een ander bureaublad. Experimenteer hier gerust mee en besef dat je steeds alles kan herstellen. Het gebeurt namelijk al eens dat je layout een beetje om zeep is:
 
 * Om eenvoudig een venster terug te krijgen, bijvoorbeeld het properties window of de solution explorer: klik bovenaan in de menubalk op "View" en kies dan het gewenste venster (soms staat dit in een submenu)
-* Je kan ook altijd je layout in z'n geheel resetten: ga naar "Window" en kies "Reset window layout".
+* Je kan ook altijd je layout in z'n geheel **resetten**: ga naar "Window" en kies "Reset window layout".
 
 ![VS Layout resetten](../assets/0_intro/vsreset.png)
 
 # Je programma starten
 
-De code die VS voor je heeft gemaakt is reeds een werkend, maar weinig nuttig, programma. Je kan de code compileren naar een uitvoerbaar bestand door te klikken op Build-&gt;Build Solution. Als dit gelukt is zal er onderaan VS in de statusbar ‘Build succeeded’ verschijnen.
+De code die VS voor je heeft gemaakt is reeds een werkend, maar weinig nuttig, programma. Je kan de code compileren en uitvoeren door op de groene driehoek bovenaan te klikken:
 
-Je kan nu je gecompileerde bestand uitvoeren door te kiezen voor Debug-&gt;Start without debugging (of door te drukken op ctrl+F5).
+![Command shell](../assets/0_intro/startprogram.png)
+
+Als alles goed gaat krijg je nu "Hello world" te zien en wat extra informatie omtrent het programma dat net werd uitgevoerd:
 
 ![Command shell](../assets/0_intro/vscmd.png)
 
 Veel doet je programma nog niet natuurlijk, dus sluit dit venster maar terug af door een willekeurige toets in te drukken.
 
+# TODO
 > In [volgende video](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=1889dae4-d6cf-4ca3-b959-a91100ceeca9) overloop ik de belangrijkste zaken van dit hoofdstuk.
 
 ## Is dit alles?
 
-Nee hoor. Visual Studio is lekker groot. Was bovenstaande uitleg toch niet zo verhelderend als ik hoopte. Bekijk dan volgende korte, maar zeer duidelijke uitleg over Visual Studio en de verschillende onderdelen (klik zeker op de chapters in de linkermenu om verder te lezen): [Getting started with VS 2017](https://tutorials.visualstudio.com/vs-get-started/intro).
+Nee hoor. Visual Studio is lekker groot. Was bovenstaande uitleg toch niet zo verhelderend als ik hoopte. Bekijk dan volgende korte, maar zeer duidelijke uitleg over Visual Studio en de verschillende onderdelen (klik zeker op de chapters in de linkermenu om verder te lezen): [hier](https://tutorials.visualstudio.com/vs-get-started/intro).

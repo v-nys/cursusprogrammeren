@@ -3,15 +3,17 @@
 We nemen terug ons eerste programma erbij en gaan hier aan verder werken:
 
 ```csharp
+using System;
+
 namespace Demo1
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hoi, ik ben het!");
+            Console.WriteLine("Hello World!");
+            Console.WriteLine("Hoi, ik ben het");
             Console.WriteLine("Wie ben jij?!");
-            Console.ReadKey();
         }
     }
 }
@@ -55,13 +57,13 @@ namespace Demo1
             Console.WriteLine("Wie ben jij?!");
             string result;
             result = Console.ReadLine();
-            Console.ReadKey();
+
         }
     }
 }
 ```
 
-Start nogmaals je programma. Je zal merken dat je programma nu een cursor toont en wacht op invoer. Als je eender welke karakters op het toetsenbord intypt en drukt op enter dan zal je programma stoppen met ``Druk op een toets om door te gaan. . .`` (dit zal in de taal staan waarin je computer op is ingesteld).
+Start nogmaals je programma. Je zal merken dat je programma nu een cursor toont en wacht op invoer. Je kan nu eender wat intypen en van zodra je op enter duwt gaat het programma verder (in dit geval stopt het programma hierna dus).
 
 ## Input gebruiker verwerken en gebruiken
 
@@ -73,7 +75,9 @@ Console.WriteLine(result);
 Console.WriteLine(" hoe gaat het met je?");
 ```
 
-In de tweede lijn hier gebruiken we de variabele ``result`` (waar de invoer van de gebruiker in bewaard wordt) als parameter in de ``WriteLine``-methode. Met andere woorden: de ``WriteLine`` methode zal op het scherm tonen wat de gebruiker even daarvoor heeft ingevoerd.
+In de tweede lijn hier gebruiken we de variabele ``result`` (waar de invoer van de gebruiker in bewaard wordt) als parameter in de ``WriteLine``-methode. 
+
+Met andere woorden: de ``WriteLine`` methode zal op het scherm tonen wat de gebruiker even daarvoor heeft ingevoerd.
 
 Je volledige programma ziet er dus nu zo uit:
 
@@ -99,7 +103,6 @@ namespace Demo1
             Console.WriteLine("Dag");
             Console.WriteLine(result);
             Console.WriteLine("hoe gaat het met je?");
-            Console.ReadKey();
         }
     }
 }
@@ -136,7 +139,7 @@ hoe gaat het met je?
 
 ## Write en WriteLine
 
-De ``WriteLine``-methode zal steeds een line break ([enter] zeg maar) aan het einde van de lijn zetten zodat de cursor naar de volgende lijn springt.
+De ``WriteLine``-methode zal steeds een line break (een 'enter' ) aan het einde van de lijn zetten zodat de cursor naar de volgende lijn springt.
 
 De ``Write``-methode zal geen enter aan het einde van de lijn toevoegen. Als je dus vervolgens iets toevoegt (met een volgende ``Write`` of ``WriteLine``) **dan zal dit aan dezelfde lijn toegevoegd worden.**
 
@@ -193,6 +196,8 @@ Console.Write("Dag_");
 .Console.Write(result);
 Console.Write("_hoe gaat het met je?");
 ```
+
+> Een leuke conversatie uit de oude doos:
 
 > fuck0ff: hi, does someone here know the escape sequence for a blank?  
 fuck0ff: hello? a blank ?  
