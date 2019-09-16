@@ -24,7 +24,7 @@ Console.WriteLine("En deze in het rood met blauwe achtergrond");
 
 Als je deze code uitvoert krijg je als resultaat:
 
-![Resultaat voorgaande code](../assets/0_intro/kleuren.png)
+![Resultaat voorgaande code](../assets/0_intro/kleuren.PNG)
 
 
 > Kleur in console gebruiken is nuttig om je gebruikers ene minder eentonig en meer informatieve applicatie aan te bieden. Je zou bijvoorbeeld alle foutmeldingen in het rood kunnen laten verschijnen.
