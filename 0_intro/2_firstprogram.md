@@ -9,7 +9,7 @@ Via **``Console.WriteLine()``** kunnen we tekst op het scherm tonen en met behul
 
 # Je eerste console programma
 
-Maak een nieuw console-project aan (noem het Demo1) en open het Program.cs bestand (indien het niet open). **Veeg de code die hier reeds staat niet weg!**
+Maak een nieuw console-project aan (noem het Demo1) en open het Program.cs bestand (indien het nog niet open is). **Veeg de code die hier reeds staat niet weg!**
 
 
 Voeg onder de lijn ``Console.WriteLine("Hello World!");`` volgende code toe:
@@ -50,7 +50,7 @@ We gaan nu iedere lijn code kort bespreken. Sommige lijnen code zullen lange tij
 * ``static void Main(string[] args)``: Het startpunt van iedere console-applicatie. Wat hier gemaakt wordt is een **methode** genaamd ``Main``. Je programma kan meerdere methoden (of functies) bevatten, maar enkel degene genaamd ``Main`` zal door de compiler als het startpunt van het programma gemaakt worden.
 * ``Console.WriteLine("Hello world");``: Dit is een **statement** dat de WriteLine-methode aanroept van de ``Console``-klasse. Het zal alle tekst die tussen de aanhalingstekens staat op het scherm tonen. 
 * ``Console.WriteLine("Hoi ik ben het");``: en ook deze lijn komt op het scherm.
-* Sluitende accolades: vervolgens moet voor iedere openende accolade eerder in de code nu ook een bijhorende sluitende volgen
+* Sluitende accolades: vervolgens moet voor iedere openende accolade eerder in de code nu ook een bijhorende sluitende volgen.
 
 # Say what now?!
 
