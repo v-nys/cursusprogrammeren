@@ -21,7 +21,10 @@ In deze cursus zullen de voorbeelden steeds met de **Enterprise** editie van VS 
 
 Het is belangrijk bij de installatie dat je minimaal 
 * de **.NET desktop development** workload selecteert als te installeren tools. ![VS Installeren](../assets/0_intro/vsinstall.png)
-* bij "Individual components" dien je onder de sectie **code tools** zeker ook de **class designer** en **code map** te installeren (zie de screenshot hieronder welke extra tools ik ook aanbeveel)![VS Installeren](../assets/0_intro/vsinstallextra.png)
+* kies aan de rechterzijde dat ook ".NET Core 2.2 development tools" moet geïnstalleerd worden
+  ![VS Installeren](../assets/0_intro/core.png)
+* bij "Individual components" dien je onder de sectie **code tools** zeker ook de **class designer** en **code map** te installeren (zie de screenshot hieronder welke extra tools ik ook aanbeveel)
+ ![VS Installeren](../assets/0_intro/vsinstallextra.PNG)
 * Uiteraard ben je vrij om meerdere zaken te installeren
 
 
@@ -94,7 +97,7 @@ De layout van VS kan je volledig naar je hand zetten. Je kan ieder (deel-)venste
 
 De code die VS voor je heeft gemaakt is reeds een werkend, maar weinig nuttig, programma. Je kan de code compileren en uitvoeren door op de groene driehoek bovenaan te klikken:
 
-![Command shell](../assets/0_intro/startprogram.png)
+![Command shell](../assets/0_intro/startprogram.PNG)
 
 Als alles goed gaat krijg je nu "Hello world" te zien en wat extra informatie omtrent het programma dat net werd uitgevoerd:
 
