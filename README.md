@@ -7,7 +7,7 @@ Concreet is dit het handboek voor de eerste 2 semesters omtrent 'leren programme
 * Deel 1: Programming Principles, eerste semester
 * Deel 2: Object Oriented Programming, tweede semester
 
-Indien bepaalde hoofdstukken of onderdelen niet duidelijk zijn of fouten bevatten, aarzel dan niet om me te contacteren. Normaal gezien is alle tekst en afbeeldingen de mijne, tenzij ik anders vermeld. Uiteraard maak ik soms fouten, als je dus een niet geattribueerde tekst of afbeelding ontdekt, aarzel dan niet om me te contacteren.
+Indien bepaalde hoofdstukken of onderdelen niet duidelijk zijn of fouten bevatten, aarzel dan niet om me te contacteren. Normaal gezien zijn alle tekst en afbeeldingen de mijne, tenzij ik anders vermeld. Uiteraard maak ik soms fouten, als je dus een niet geattribueerde tekst of afbeelding ontdekt, aarzel dan niet om me te contacteren.
 
 Alle feedback is zéér welkom.
 
