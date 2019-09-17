@@ -17,7 +17,7 @@ Het hart van Visual Studio bestaat uit de **compiler** die we hiervoor besproken
 
 # Visual Studio Installeren
 
-In deze cursus zullen de voorbeelden steeds met de **Enterprise** editie van VS gemaakt zijn. Je kan deze als AP-student gratis downloaden en installeren  via [visualstudio.microsoft.com](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Enterprise).
+In deze cursus zullen de voorbeelden steeds met de **Enterprise** editie van VS gemaakt zijn. Je kan deze als AP-student gratis downloaden en installeren  via [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/).
 
 Het is belangrijk bij de installatie dat je minimaal 
 * de **.NET desktop development** workload selecteert als te installeren tools. ![VS Installeren](../assets/0_intro/vsinstall.png)
