@@ -230,10 +230,22 @@ Console.Write("Dag "+ "result" + " hoe gaat het met je?");
 Als je  meerdere inputs van de gebruiker tegelijkertijd wenst te bewaren dan zal je meerdere geheugenplekken nodig hebben om de invoer te bewaren. Bijvoorbeeld:
 
 ```csharp
-string leeftijd;
+Console.WriteLine("Geef leeftijd");
+string leeftijd;  //eerste geheugenplekje aanmaken
+leeftijd = Console.ReadLine();
+Console.WriteLine("Geef adres");
+string adres; //tweede geheugenplekje aanmaken
+adres = Console.ReadLine();
+```
+
+Je mag echter ook de geheugenplekken al vroeger maken. In C# zet men de geheugenplek creatie zo dicht mogelijk bij de code waar je die plek gebruikt (zoals vorig voorbeeld), maar dat is geen verplichting. Dit mag dus ook:
+
+
+```csharp
+string leeftijd;  //eerste geheugenplekje aanmaken
+string adres; //tweede geheugenplekje aanmaken
 Console.WriteLine("Geef leeftijd");
 leeftijd = Console.ReadLine();
 Console.WriteLine("Geef adres");
-string adres;
 adres = Console.ReadLine();
 ```
