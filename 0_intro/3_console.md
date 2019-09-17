@@ -193,7 +193,7 @@ Correct:
 
 ```csharp
 Console.Write("Dag_");
-.Console.Write(result);
+Console.Write(result);
 Console.Write("_hoe gaat het met je?");
 ```
 
