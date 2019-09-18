@@ -1,6 +1,6 @@
 # Kleuren in console
 
-Je kan in console-applicaties zelf bepalen in welke kleur nieuwe tekst op het scherm verschijnt. Je kan zowel de kleur van het lettertype instellen (via ``ForegroundColor``) als de achtergrondkleur (``BackgroundColor``)
+Je kan in console-applicaties zelf bepalen in welke kleur nieuwe tekst op het scherm verschijnt. Je kan zowel de kleur van het lettertype instellen (via ``ForegroundColor``) als de achtergrondkleur (``BackgroundColor``).
 
 Je kan met de volgende expressies de console-kleur veranderen, bijvoorbeeld de achtergrond in blauw en de letters in groen:
 
@@ -27,11 +27,11 @@ Als je deze code uitvoert krijg je als resultaat:
 ![Resultaat voorgaande code](../assets/0_intro/kleuren.PNG)
 
 
-> Kleur in console gebruiken is nuttig om je gebruikers ene minder eentonig en meer informatieve applicatie aan te bieden. Je zou bijvoorbeeld alle foutmeldingen in het rood kunnen laten verschijnen.
+> Kleur in console gebruiken is nuttig om je gebruikers een minder eentonig en meer informatieve applicatie aan te bieden. Je zou bijvoorbeeld alle foutmeldingen in het rood kunnen laten verschijnen.
 
 # Mogelijke kleuren
 
-Alle kleuren die beschikbaar zijn beschreven in ``ConsoleColor`` en zijn:
+Alle kleuren die beschikbaar zijn zijn beschreven in ``ConsoleColor`` en zijn:
 
 * ConsoleColor.Black
 * ConsoleColor.DarkBlue

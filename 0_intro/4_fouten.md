@@ -5,7 +5,8 @@
 Je code kan niet gecompileerd en uitgevoerd worden zolang er fouten in je code staan (dit bespraken we reeds in [een eerder hoofdstuk](0_intrototcs.md)).
 
 Indien je op de groene start knop duwt en volgende waarschuwing krijgt **KLIK DAN NOOIT OP YES EN DUIDT NOOIT DE CHECKBOX AAN**:
->![Zie je de fout?](../assets/0_intro/errorwarning.PNG) De eerste die dit wél doet trakteert de hele klas als ik dit ontdek.
+![Zie je de fout?](../assets/0_intro/errorwarning.PNG)
+>De eerste die dit wél doet trakteert de hele klas als ik dit ontdek.
 
 > Lees de boodschap eens: wat denk je dat er gebeurt als je op 'yes' duwt? Inderdaad, VS zal de laatste goed gelukte code uitvoeren en dus niet de code die je nu hebt staan waarin nog fouten staan.
 
@@ -14,7 +15,7 @@ Indien je op de groene start knop duwt en volgende waarschuwing krijgt **KLIK DA
 Zolang er dus fouten in je code staan moet je deze eerst oplossen voor je verder kan. Gelukkig helpt VS je daarmee op 2 manieren:
 
 * Fouten in code worden met een rode squigly onderlijnt.
-* Onderaan zie je in de statusbalk of je fouten hebt
+* Onderaan zie je in de statusbalk of je fouten hebt.
 
 ![Zie je de fout?](../assets/0_intro/error.PNG)
 
@@ -36,10 +37,10 @@ Je kan hier op klikken en heel vaak krijg je dan ineens een mogelijke oplossing.
 
 ## Meest voorkomende fouten
 
-De meest voorkomende fouten in deze eerste weken zullen zijn;
+De meest voorkomende fouten in deze eerste weken zullen zijn:
 
-* **Kommapunt** vergeten
-* **Schrijffouten** in je code RaedLine i.p.v. ReadLine
-* Geen rekening gehouden met **hoofdletter gevoeligheid** Readline i.p.v. ReadLine (zie volgende hoofdstuk)
+* **Kommapunt** vergeten.
+* **Schrijffouten** in je code RaedLine i.p.v. ReadLine.
+* Geen rekening gehouden met **hoofdletter gevoeligheid** Readline i.p.v. ReadLine (zie volgende hoofdstuk).
 * Per ongeluk **accolades verwijderd**.
-* Code geschreven op plekken waar dat niet mag (je mag enkel binnen de accolades van ``Main`` schrijven)
+* Code geschreven op plekken waar dat niet mag (je mag enkel binnen de accolades van ``Main`` schrijven).

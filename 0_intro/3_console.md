@@ -216,9 +216,9 @@ We kunnen dit hele verhaal een pak korter tonen. De plus-operator (``+``) in C# 
 Console.WriteLine("Dag " + result + " hoe gaat het met je?");
 ```
 
-Merk op dat result dus NIET tussen aanhalingstekens staat, in tegenstelling de andere stukken zin. Waarom is dit? Aanhalingstekens in C# duiden aan dat een stuk tekst moet beschouwd worden als tekst van het type string. Als je geen aanhalingsteken gebruikt dan zal C# de tekst beschouwen als een variabele met die naam.
+Merk op dat result dus NIET tussen aanhalingstekens staat, in tegenstelling tot de andere stukken zin. Waarom is dit? Aanhalingstekens in C# duiden aan dat een stuk tekst moet beschouwd worden als tekst van het type string. Als je geen aanhalingsteken gebruikt dan zal C# de tekst beschouwen als een variabele met die naam.
 
-Bekijk zelf eens wat het verschil wanneer je volgende lijn code vervangt door de lijn er onder:
+Bekijk zelf eens wat het verschil wordt wanneer je volgende lijn code vervangt door de lijn er onder:
 
 ```csharp
 Console.WriteLine("Dag "+ result + " hoe gaat het met je?");
