@@ -23,24 +23,35 @@ Process.Start("firefox.exe", "-private-window " + url);
 Process.Start("iexplore.exe", "-private " + url);
 ```
 
-## Ziekenhuis
+## Oefening: H12-ziekenhuis
+### Leerdoelen
+* werken met methodes
+* methodes overschrijfbaar maken
+* code specifieker maken met behulp van subklassen
 
-### Deel 1
+### Functionele analyse
+Dit programma berekent de doktersrekening van een patiënt, op basis van een basisbedrag (€50) en een extra kost (€20/uur). In het geval van een verzekerde patiënt worden de kosten met 10% verlaagd.
 
-Maak een basisklasse `Patient` die een programma kan gebruiken om de doktersrekening te berekenen. Een patiënt heeft:
+### Technische analyse
+#### UI
+console applicatie
+#### voorbeeldinteractie(s)
+```
+Vincent, een gewone patiënt die 12 uur in het ziekenhuis gelegen heeft, betaalt €290.
+Tim, een verzekerde patiënt die 12 uur in het ziekenhuis gelegen heeft, betaalt €261.
+```
 
-* een naam
-* het aantal uur dat hij in het ziekenhuis heeft gelegen
+### Technische hulp
+#### Programmaverloop
+Per patiënt worden een naam en een verblijfsduur in het ziekenhuis bijgehouden (als velden van een klasse). Per patiënt wordt de uitvoer getoond door middel van een methode `ShowInfo`. De berekening van de kost wordt uitgevoerd door een methode `CmputeCost`. In het geval van een verzekerde patiënt is dit een verfijnde versie van de methode voor niet-verzekerde patiënten.
 
-Een `virtual` methode `BerekenKost` zal de totaalkost berekenen. Deze bestaat uit 50euro+ 20euro per uur dat de patiënt in het ziekenhuis lag.
+#### Testscenario's
+* Test uit met een verblijf van 1 uur.
+* Test uit met een verblijf van 0 uur.
+* Test uit met de patiënten beschreven in de voorbeeldinteractie.
 
-Maak een methode `ToonInfo` die steeds de naam van de patiënt toont gevolgd door het aantal uur en z'n kosten.
-
-### Deel 2
-
-Maak een specialisatieklasse `VerzekerdePatient`. Deze klasse heeft alles dat een gewone `Patient` heeft, echter de berekening van de kosten zal steeds gevolgd worden door een 10% reductie.
-
-Toon de werking aan van deze klasse.
+### Ondersteunend materiaal
+Hou het voorlopig op de cursus.
 
 ## Ballspel met overerving
 
