@@ -54,15 +54,32 @@ Product = 408
 Quotient = 0,352941176470588
 ```
 
-## Figuren
+## Oefening: H8-figuren
+### Leerdoelen
+* werken met klassen en objecten
+* gebruik maken van properties om geldige waarden af te dwingen
 
-Maak een eenvoudige klasse Rechthoek aan die een lengte en breedte als private datafields heeft. Deze kunnen enkel via full properties ingesteld worden en nooit onder 1 gaan.
+### Functionele analyse
+Dit programma maakt enkele rechthoeken en driehoeken met gegeven afmetingen (in m.) aan, berekent hun oppervlakte en toont deze info aan de gebruiker. De rechthoeken en driehoeken die worden aangemaakt, zijn al gecodeerd in het programma. De gebruiker hoeft dus niets anders te doen dan het programma te starten.
 
-Maak ook een klasse Driehoek die een basis en hoogte als fields heeft.
+### Technische analyse
+#### UI
+console applicatie
+#### voorbeeldinteractie(s)
+```
+Een rechthoek met een breedte van 2.2m en een hoogte van 1.5 m heeft een oppervlakte van 3.3m².
+Een rechthoek met een breedte van 3m en een hoogte van 1 m heeft een oppervlakte van 3m².
+Een driehoek met een basis van 3m en een hoogte van 1 m heeft een oppervlakte van 1.5m².
+Een driehoek met een basis van 2m en een hoogte van 2 m heeft een oppervlakte van 2m².
+```
 
-Beide klassen hebben een methode ``ToonOppervlakte`` die de oppervlakte van de figuur in kwestie op het scherm toont.
+### Technische hulp
+#### Programmaverloop
+Er is een klasse `Rectangle` met **properties** `width` en `height` en een klasse `Triangle` met `base` en `height`. Je programma maakt de figuren die hierboven beschreven worden aan via constructoren zonder parameters en stelt daarna hun afmetingen in. Wanneer je de setter probeert uit te voeren met een waarde kleiner dan 1, wordt er een exception gegooid.
 
-Toon de werking van het project aan door een aantal instanties van Driehoek en Rechthoek te maken, met verschillende groottes. Roep van iedere figuur de ToonOppervlakte-methode aan.
+#### Testscenario's
+* Test uit dat je geen enkele afmeting kleiner kan maken dan 1, of het nu gaat om rechthoeken of driehoeken.
+* Test uit met de figuren beschreven in de voorbeeldinteractie.
 
 ## PizzaTime
 Maak een klasse Pizza. Deze klasse heeft een aantal private fields:

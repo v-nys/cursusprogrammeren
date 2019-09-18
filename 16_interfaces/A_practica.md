@@ -1,8 +1,29 @@
-# Figures with interfaces
-Gebruik je [Rechthoek-klasse uit de Figuren oefening](../8_klassen/A_practica.md#figures) die je eerder  hebt aangemaakt. Maak een List aan waarin je een 10 rechthoek-objecten plaatsen, allen met een verschillende grootte. Zorg ervoor dat je nu je rechthoeken met de Sort()-methode kan sorteren op oppervlakte.
+## Oefening: H16-figuren-met-interfaces
+### Leerdoelen
+* verschillende klassen groeperen met een gemeenschappelijke interface
+* werken met lijsten van onbepaalde lengte
 
+### Functionele analyse
+Dit programma toont de oppervlakte van een reeks vormen.
 
-Toon de werking aan in een klein voorbeeld programma. 
+### Technische analyse
+#### UI
+console applicatie
+#### voorbeeldinteractie(s)
+```
+Een rechthoek met een breedte van 2.2m en een hoogte van 1.5 m heeft een oppervlakte van 3.3m².
+Een rechthoek met een breedte van 3m en een hoogte van 1 m heeft een oppervlakte van 3m².
+Een driehoek met een basis van 3m en een hoogte van 1 m heeft een oppervlakte van 1.5m².
+Een driehoek met een basis van 2m en een hoogte van 2 m heeft een oppervlakte van 2m².
+```
+
+### Technische hulp
+#### Programmaverloop
+Zoals in hoofdstuk 8 worden er vaste vormen aangemaakt, maar er wordt geen variabele voorzien voor elke vorm. In plaats daarvan wordt elke vorm in een `List<IShape>` geplaatst. `IShape` is een interface voor allerlei soorten vormen. Alle vormen hebben gemeenschappelijk dat hun oppervlakte berekend kan worden, dus dit gedrag wordt deel van de interface.
+
+#### Testscenario's
+* Test uit dat je geen enkele afmeting kleiner kan maken dan 1, of het nu gaat om rechthoeken of driehoeken.
+* Test uit met de figuren beschreven in de voorbeeldinteractie.
 
 # Mapmaker afwerken
 
