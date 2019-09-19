@@ -17,7 +17,7 @@ Het hart van Visual Studio bestaat uit de **compiler** die we hiervoor besproken
 
 # Visual Studio Installeren
 
-In deze cursus zullen de voorbeelden steeds met de **Enterprise** editie van VS gemaakt zijn. Je kan deze als AP-student gratis downloaden en installeren  via [visualstudio.microsoft.com](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Enterprise).
+In deze cursus zullen de voorbeelden steeds met de **Community** editie van VS gemaakt zijn. Je kan deze gratis downloaden en installeren  via [visualstudio.microsoft.com](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/).
 
 Het is belangrijk bij de installatie dat je minimaal 
 * de **.NET desktop development** workload selecteert als te installeren tools. ![VS Installeren](../assets/0_intro/vsinstall.png)
@@ -56,14 +56,6 @@ Geef je project de naam "MyFirstProject" en kies een goede locatie (ik raad je a
 
 VS heeft nu reeds een aantal bestanden aangemaakt die je nodig hebt om een ‘Console Applicatie’ te maken. 
 Een console applicatie is een programma dat alle uitvoer naar een zogenaamde ‘console’ stuurt, een shell. Maw, je kan enkel tekst (Unicode) als uitvoer genereren en dus geen multimedia elementen zoals afbeeldingen, geluid, etc.
-
-# Registreren (eenmalig)
-
-**Volgende stap dien je maar 1 maal te doen indien je VS ergens nieuw hebt geïnstalleerd: het registeren van de installatie.**
-
-![VS Project maken](../assets/0_intro/register.png)
-
-Kies 'sign in' en login met je AP-studenten account (je sxxxxx@student.Ap.be account). Als alles goed gaat is nu je versie geregistreerd.
 
 # IDE Layout
 
