@@ -81,9 +81,6 @@ Je volledige programma ziet er dus nu zo uit:
 
 ```csharp
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace Demo1
 {

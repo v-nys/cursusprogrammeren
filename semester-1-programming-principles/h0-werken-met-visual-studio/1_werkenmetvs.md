@@ -42,7 +42,7 @@ Dit semester kiezen we steeds als Project Type **Console App \(.NET Core\)**. Ki
 
 ![VS Project maken](../../.gitbook/assets/vsproject.png)
 
-Op het volgende scherm kan je een naam geven voor je project alsook de locatie op de harde schijf waar het project dient opgeslagen te worden. **Onthoudt waar je je project aanmaakt zodat je dit later terugvindt**.
+Op het volgende scherm kan je een naam geven voor je project alsook de locatie op de harde schijf waar het project dient opgeslagen te worden. **Kies één map voor heel deze cursus en onthoud welke map dit is.**
 
 **De solution name blijf je af \(deze moet momenteel dezelfde naam zijn als je project\)**
 
