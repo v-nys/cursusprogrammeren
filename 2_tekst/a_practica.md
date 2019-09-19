@@ -21,7 +21,7 @@ Zoals je ziet wordt het geheugen in bytes teruggegeven. Zorg ervoor dat het gehe
 
 **Formateer de informatie met behulp van de $-notatie  zodat deze  deftig getoond worden en de gebruiker snel de belangrijke informatie over z'n systeem te zien krijgt.**
 
-
+> Vanaf nu zal geregeld oefeningen tegenkomen waar PRO voor staat. Dit zijn iets pittigere oefeningen die je enkel vlot zal kunnen als je de standaard oefeningen hebt gemaakt. Ik raad iedereen echter aan ze te (proberen) maken.
 ## [PRO] Deel 2
 
 Ook informatie over de harde schijven kan je verkrijgen (in bits). 
@@ -50,6 +50,7 @@ long totalsize = DriveInfo.GetDrives()[invoer].TotalSize;
  ```
 
 # Weerstandberekenaar
+
 Stel dat je in het labo een weerstand vastneemt en je kent de kleurcodes van de streepjes wel, maar niet hoe je die kunt omzetten naar de effectieve weerstandswaarde. In dit programma kunnen we de gebruiker helpen.
 
 ![](../assets/1_csharpbasics/colors.jpg)
@@ -57,7 +58,9 @@ Stel dat je in het labo een weerstand vastneemt en je kent de kleurcodes van de 
 (Bron afbeelding: [https://www.esdsite.nl](https://www.esdsite.nl))
 
 ## Deel 1
+
 Maak een programma dat de weerstandwaarde berekent gebaseerd op:
+
 * Ring 1: die de tientallen voorstelt
 * Ring 2: die de eenheden voorstel
 * [ENKEL VOOR PRO] Ring 3: die de exponent (10 tot de macht) voorstelt. (tip:``Math.Pow(10,ring3``))
@@ -67,9 +70,11 @@ Gebruik twee variabelen van het type ``int`` waar je getal van 0 tot 9 telkens a
 Test dat je "formule/berekening" klopt om gebaseerd op 2 (of 3) ringen de weerstandswaarde te berekenen. 
 
 ## Deel 2
+
 Plaats het geheel in een mooie UNICODE/Asci-tabel
 
 Hier enkele nuttige tekens:
+
 ```
 ╔═══════════════╦═══════════════╗
 ║ 
