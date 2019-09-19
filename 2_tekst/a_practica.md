@@ -1,20 +1,29 @@
+# ASCII Art
+
+Genereer je naam in ASCII Art met een van de vele online generators. Plaats deze aan de start van een van je bestaande programma's zodat nu je naam wordt getoond wanneer het programma start, gevolgd door de rest.
+
 # String interpolation
+
 Kies 2 oefeningen uit het vorige hoofdstuk waarin je output op het scherm moest geven. Pas string interpolatie m.b.v. ``$`` (manier 2) toe in deze 2 oefeningen.
 
 > Volgende 2 oefeningen zijn al iets stevigers. Iedere oefening eindigt met een [PRO] gedeelte dat je best enkel doet als je een uitdaging wenst.
 
 # Systeem informatie
+
 ## Deel 1
+
 Maak een applicatie die de belangrijkste computer-informatie (geheugen, etc) aan de gebruiker toont.
 
 Deze computer-informatie kan je verkrijgen mbv de Environment-klasse. Hier enkele voorbeelden (kijk zelf of er nog nuttige properties over je computer in staan):
+
 ```csharp
 bool is64bit = Environment.Is64BitOperatingSystem;
 string pcname = Environment.MachineName;
 int proccount = Environment.ProcessorCount;
 string username = Environment.UserName;
-long memory = Environment.WorkingSet; //zal ongeveer 10 Mb teruggeven. 
+long memory = Environment.WorkingSet; //zal ongeveer 10 Mb teruggeven.
 ```
+
 > **WorkingSet** geeft terug hoeveel geheugen het programma van windows toegewezen krijgt. Als je dus op 'run' klikt om je code te runnen dan zal dit programma geheugen krijgen en via WorkingSet kan het programma dus zelf zien hoeveel het krijgt. (wat een vreemde lange zin).
 
 Zoals je ziet wordt het geheugen in bytes teruggegeven. Zorg ervoor dat het geheugen steeds in mega of gigabytes op het scherm wordt getoond.
@@ -22,6 +31,7 @@ Zoals je ziet wordt het geheugen in bytes teruggegeven. Zorg ervoor dat het gehe
 **Formateer de informatie met behulp van de $-notatie  zodat deze  deftig getoond worden en de gebruiker snel de belangrijke informatie over z'n systeem te zien krijgt.**
 
 > Vanaf nu zal geregeld oefeningen tegenkomen waar PRO voor staat. Dit zijn iets pittigere oefeningen die je enkel vlot zal kunnen als je de standaard oefeningen hebt gemaakt. Ik raad iedereen echter aan ze te (proberen) maken.
+> 
 ## [PRO] Deel 2
 
 Ook informatie over de harde schijven kan je verkrijgen (in bits). 
@@ -115,17 +125,18 @@ process.WaitForExit();
 //Continue
 Console.WriteLine("Klaar");
 ```
+
 > Let er op dat dit voorbeeld niet perfect werkt met een shell-commando dat even duurt. Denk bijvoorbeeld aan ``ping``. De output komt namelijk pas op het scherm als het commando is afgelopen. Test zelf maar eens!
 
 Maak enkele kleine C# programma's die bepaalde shell-commando's zullen uitvoeren , eventueel na input van de gebruiker.
 Enkele nuttige shell-commando's in de netwerk-sfeer zijn bijvoorbeeld:
 
-```text 
+```text
 hostname
 
 arp -a
 
-getmac 
+getmac
 
 nslookup google.com
 
