@@ -145,73 +145,195 @@ Uiteindelijk geef je dan het resultaat weer in de console.
 
 Hou het voorlopig op de cursus.
 
-## Simple maths
 
-Schrijf een programma dat de uitkomst van volgende resultaten op het scherm toont:
 
--1 + 4 \* 6
 
-\( 35+ 5 \) % 7
+## Oefening: H1-beetje-wiskunde
 
-14 + -4 \* 6 / 11
+### Leerdoelen
 
-2 + 15 / 6 \* 1 - 7 % 2
+* expressies schrijven
+* voorrang van operatoren
+* effect van operaties naargelang datatype begrijpen
 
-## Gemiddelde
+### Functionele analyse
 
-Schrijf een programma dat het gemiddele van drie int-variabelen berekend \(de variabelen geef je uiteraard een waarde in code\).
+Je schrijft een programma dat de rol vervult van een rekenmachine. Het voert volgende berekeningen uit:
 
-## Euro naar dollar
+* -1 + 4 * 6
+* ( 35+ 5 ) % 7
+* 14 + -4 * 6 / 11
+* 2 + 15 / 6 * 1 - 7 % 2
 
-Ontwerp een toepassing waarmee je een bedrag, inclusief komma-getallen in euro kan omrekenen naar dollar. Gebruik hierbij de huidige wisselkoers Je hoeft niet af te ronden. Het resultaat in een label wordt als volgt weergegeven: `[x] EUR is gelijk aan [y] USD`.
+### Technische analyse
 
-## Tafel en Console.Clear\(\)
+#### UI
 
-Met het statement `Console.Clear();` kan je de console ...je raadt het nooit... leegmaken. Test deze code in het volgende programma.
+console applicatie
 
-Schrijf een programma dat de tafels van vermenigvuldigen geeft van 411 \(dus 1x411=411, 2x411= 822 tot en met 10x411=4110\). Toon telkens 1 zin en wacht dan tot de gebruiker op enter duwt om de volgende vermenigvuldiging op een nieuw scherm te tonen. De output ziet er dus als volgt uit:
+#### voorbeeldinteractie\(s\)
 
 ```text
-1 x 411 = 411
-Druk op enter voor de volgende lijn. 
-[Scherm leeg gemaakt]
-2 x 411 = 822
-Druk op enter voor de volgende lijn
-[Scherm leeg gemaakt]
-...
+23
+5
+12
+3
 ```
 
-**Plaats 411 in een variabele aan de start van het programma en gebruik deze in je berekeningen verderop. Toon dat je code ook werkt door de inhoud van de variabele in een ander getal te veranderen zodat je van dat nieuwe getal nu de tafels van vermenigvuldiging krijgt.**
+### Technische hulp
 
-## Kill/Death-ratio
+#### Programmaverloop
 
-Maak twee variabelen `double kills` en `double deaths` aan. Wijs er jouw typische scores aan toe die je haalt in een spel naar keuze. Bereken en toon vervolgens je kill/death-ratio.
+Eerst wordt een resultaat berekend, daarna wordt het geprint.
 
-\(**opgelet: begrijp je waarom we best een van beide variabelen in double zetten?** Lees de warning bij Expressies zeker nog eens na...OF test eens wat er gebeurt indien je met int zou werken\)
+#### Testscenario's
 
-## Gewicht in space
+* Test uit met getallen van het type `int`.
+* Test uit met getallen van het type `float`.
 
-Je massa is overal dezelfde. Je gewicht daarentegen is afhankelijk van de zwaartekracht van de plek waar je bent. Zo is je gewicht veel groter op Jupiter dan op Mars.
+### Ondersteunend materiaal
 
-Maak een variabele `double gewichtOpAarde` aan. Wijs een gewicht toe \(bv het jouwe\). Schrijf nu een programma dat onder elkaar jouw gewicht op verschillende planeten toont.
+[Hier](https://www.programiz.com/csharp-programming/operator-precedence-associativity) vind je een tabel terug die uitlegt welke operaties voorrang hebben.
 
-Hier de omzettingstabel \(je gewicht op Mercurius is dus je gewicht op aarde x 0.38\):
+## Oefening: H1-gemiddelde
 
-* Mercurius: 0.38
+### Leerdoelen
+
+* expressies schrijven
+* voorrang van operatoren
+* effect van operaties naargelang datatype begrijpen
+
+### Functionele analyse
+
+Je schrijft een programma dat het gemiddelde van 18, 11 en 8 berekent, d.w.z. deze drie getallen optelt en de som deelt door drie.
+
+### Technische analyse
+
+#### UI
+
+console applicatie
+
+#### voorbeeldinteractie\(s\)
+
+```text
+12
+```
+
+### Technische hulp
+
+#### Programmaverloop
+
+Eerst wordt het resultaat berekend, daarna wordt het geprint.
+
+#### Testscenario's
+
+* Test uit met getallen van het type `int`.
+* Test uit met getallen van het type `float`.
+
+### Ondersteunend materiaal
+
+Hou het voorlopig op de cursus.
+
+## Oefening: H1-maaltafels
+
+### Leerdoelen
+
+* de console leegmaken
+* werken met wiskundige operatoren
+* interactie met de gebruiker
+
+### Functionele analyse
+
+Je schrijft een programma dat de tafel van vermenigvuldiging voor 411 geeft. Dit programma wacht steeds tot de gebruiker op ENTER duwt voor het het volgend resultaat toont. Verder maakt het steeds het scherm leeg voor het een nieuw resultaat toont. Zie "programmaverloop".
+
+### Technische analyse
+
+#### UI
+
+console applicatie
+
+#### voorbeeldinteractie\(s\)
+
+```text
+1 * 411 is 411.
+```
+
+```text
+2 * 411 is 822.
+```
+
+(enzovoort)
+
+```text
+10 * 411 is 4110.
+```
+
+### Technische hulp
+
+#### Programmaverloop
+
+Voor elk resultaat wordt het scherm eerst leeggemaakt. Daarna pas wordt het resultaat getoond. Wanneer de gebruiker op ENTER duwt, wordt deze handeling herhaald voor het volgende resultaat (of eindigt het programma, na het tiende resultaat). Het scherm leegmaken doe je met `Console.Clear()`. Plaats 411 ook in een variabele.
+
+#### Testscenario's
+
+* Test uit zoals gegeven.
+* Test uit voor 511. Je zou maar één teken in je code moeten aanpassen als je de instructies hebt gevolgd.
+
+### Ondersteunend materiaal
+
+Hou het voorlopig op de cursus.
+
+## Oefening: H1-ruimte
+
+### Leerdoelen
+
+* werken met kommagetallen
+
+### Functionele analyse
+
+Je massa is overal dezelfde en wordt uitgedrukt in kilogram. Je gewicht daarentegen is afhankelijk van de zwaartekracht van de plek waar je bent en wordt uitgedrukt in Newton. Zo is je gewicht veel groter op Jupiter dan op Mars, omdat Jupiter meer zwaartekracht uitoefent dan Mars. Schrijf een programma dat je gewicht op aarde omzet naar je gewicht op een ander hemellichaam. Je krijgt volgende omzettingstabel:
+
+* Mercurius: 0.38 (een persoon van 100kg heeft er een gewicht van 38 Newton) 
 * Venus: 0.91
-* Aarde: 1.00
+* Aarde: 1.00 (een persoon van 100kg heeft er een gewicht van 100 Newton)
 * Mars: 0.38
 * Jupiter: 2.34
 * Saturnus: 1.06
 * Uranus: 0.92
 * Neptunus: 1.19
-* Pluto: 0.06  \(we laten de discussie achterwege of pluto wel of niet een planeet is\)
+* Pluto: 0.06 
 
-De output zijn verschillende lijnen onder elkaar in de vorm van:
+### Technische analyse
 
-`Je weegt op [planeet] [gewichtopdieplaneet] kg.`
+#### UI
 
-Plaats de zin met Jupiter in het rood, daar je daar het zwaarst weegt, en die van pluto in het groen.
+console applicatie
 
-> In de verdere hoofdstukken zal je geregeld oefeningen tegenkomen waar PRO voor staat. Dit zijn iets pittigere oefeningen die je enkel vlot zal kunnen als je de standaard oefeningen hebt gemaakt. Ik raad iedereen echter aan ze te \(proberen\) maken.
+#### voorbeeldinteractie\(s\)
 
+```text
+Op Mercurius heb je een gewicht van 26.22 N.
+Op Venus heb je een gewicht van 62.79 N.
+Op Aarde heb je een gewicht van 69 N.
+Op Mars heb je een gewicht van 26.22 N.
+Op Jupiter heb je een gewicht van 161.46 N.
+Op Saturnus heb je een gewicht van 73.14 N.
+Op Uranus heb je een gewicht van 63.48 N.
+Op Neptunus heb je een gewicht van 82.11 N.
+Op Pluto heb je een gewicht van 4.14 N.
+```
+
+### Technische hulp
+
+#### Programmaverloop
+
+Plaats je gewicht in een variabele. Kies zelf een geschikt type.
+
+#### Testscenario's
+
+* Test uit voor je eigen gewicht.
+* Test uit voor het gewicht van een persoon met een massa van 100kg.
+
+### Ondersteunend materiaal
+
+Hou het voorlopig op de cursus.
