@@ -17,7 +17,7 @@ Tim Dams
 
 ![Logo ikke](/assets/0_intro/tdams.jpg)
 
-PS Besef dat goed kunnen programmeren enkel kan geleerd worden indien je ook effectief veel programmeert. Je kan ook niet leren fietsen door enkel een handboek "Fietsen met Merckx" te lezen, je zal op de fiets moeten springen! En vallen...véél vallen.
+PS: Besef dat goed kunnen programmeren enkel kan geleerd worden indien je ook effectief veel programmeert. Je kan ook niet leren fietsen door enkel een handboek "Fietsen met Merckx" te lezen, je zal op de fiets moeten springen! En vallen...véél vallen.
 
 # Licensed under Creative Commmons Attribution-NonCommercial 4.0 International \(CC BY-NC 4.0\)
 

@@ -49,7 +49,7 @@ Druk op enter voor de volgende lijn
 
 Maak twee variabelen ``double kills`` en ``double deaths`` aan. Wijs er jouw typische scores aan toe die je haalt in een spel naar keuze. Bereken en toon vervolgens je kill/death-ratio.
 
-(**opgelet: begrijp je waarom we best een van beide variabelen in double zetten?** Lees de warning bij Expressies zeker nog eens na...OF test eens wat er gebeurt indien je met int zou werken)
+(**opgelet: begrijp je waarom we best een van beide variabelen in double zetten?** Lees de warning bij Expressies zeker nog eens na... OF test eens wat er gebeurt indien je met int zou werken).
 
 # Gewicht in space
 
@@ -73,4 +73,5 @@ De output zijn verschillende lijnen onder elkaar in de vorm van:
 
 ``Je weegt op [planeet] [gewichtopdieplaneet] kg.``
 
-Plaats de zin met Jupiter in het rood, daar je daar het zwaarst weegt, en die van pluto in het groen.
+Plaats de zin met Jupiter in het rood, daar je daar het zwaarst weegt en die van pluto in het groen.
+

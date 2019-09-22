@@ -6,7 +6,7 @@ Het resultaat van deze expressie is 5. [Meer informatie over expressies hier](ht
 
 ## Expressie-resultaat toewijzen
 
-Meestal zul je expressies schrijven waarin je bewerkingen op en met variabelen uitvoert. Vervolgens zal je het resultaat van die expressie willen bewaren voor verder gebruik in je code.
+Meestal zal je expressies schrijven waarin je bewerkingen op en met variabelen uitvoert. Vervolgens zal je het resultaat van die expressie willen bewaren voor verder gebruik in je code.
 
 Voorbeeld van **expressie**-resultaat toekennen:
 
@@ -23,7 +23,7 @@ int tussenResultaat= temperatuurGisteren - temperatuurVandaag;
 int temperatuursVerschil = tussenResultaat;
 ```
 
-Een ander voorbeeld van en expressie-resultaat toewijzen maar nu met literal \(stel dat we temperatuursVerschil reeds hebben gedeclareerd eerder\):
+Een ander voorbeeld van een **expressie**-resultaat toewijzen maar nu met literals \(stel dat we temperatuursVerschil reeds hebben gedeclareerd eerder\):
 
 ```csharp
 temperatuursVerschil = 21 - 25;
@@ -37,7 +37,7 @@ int hoogte = 20 * breedte;
 ```
 
 # Operators
-Operators in C# zijn de welgekende 'wiskundige bewerkingen' zoals optellen (`+`), aftrekken (`-`), vermenigvuldigen (`*`) en delen (`/`). Deze volgende de wiskundige regels van **volgorde van berekeningen**:
+Operators in C# zijn de welgekende 'wiskundige bewerkingen' zoals optellen (`+`), aftrekken (`-`), vermenigvuldigen (`*`) en delen (`/`). Deze volgen de wiskundige regels van **volgorde van berekeningen**:
 
 1. Haakjes
 2. Vermenigvuldigen : ``*`` en ``/`` (alsook `%` die we later zien)
@@ -67,7 +67,7 @@ De modulo operator die we in C# aanduiden met ``%`` verdient wat meer uitleg. De
 10%5=> zal 0 geven, daar 10 gedeeld door 5, 2 met rest 0 geeft 
 ```
 
-De modulo-operator zal je geregeld gebruiken om bijvoorbeeld te weten of een getal een veelvoud van iets is. Als de rest van 0 is weet je dat het getal een veelvoud is van het getal waar je het door deelde:
+De modulo-operator zal je geregeld gebruiken om bijvoorbeeld te weten of een getal een veelvoud van iets is. Als de rest dan 0 is weet je dat het getal een veelvoud is van het getal waar je het door deelde.
 
 Bijvoorbeeld om te testen of getal even is gebruiken we ``%2``:
 ```csharp
@@ -85,15 +85,15 @@ Stel dat we een variabele ``int getal`` hebben:
 | ``getal++;`` | ``getal= getal+1;``| variabele met 1 verhogen|
 | ``getal--;`` | ``getal= getal-1;``| variabele met 1 verlagen|
 | ``getal+=3;`` | ``getal= getal+3;``| variabele verhogen met een getal|
-| ``getal*=7;`` | ``getal= getal*7*;``| variabele vermenigvuldigen met een getal|
-| ``getal/=2;`` | ``getal= getal/2;``| variabele delen door een getal|
 | ``getal-=6;`` | ``getal= getal-6;``| variabele verminderen met een getal|
+| ``getal*=7;`` | ``getal= getal*7;``| variabele vermenigvuldigen met een getal|
+| ``getal/=2;`` | ``getal= getal/2;``| variabele delen door een getal|
 
-Je zal deze verkorte notatie vaak tegenkomen. Ze zijn identiek aan elkaar en zullen dus je code niet versnellen. Ze zal enkel compacter om te lezen zijn. Bij twijfel, gebruik gewoon de lange notatie. 
+Je zal deze verkorte notatie vaak tegenkomen. Ze zijn identiek aan elkaar en zullen dus je code niet versnellen. Ze zal enkel compacter zijn om te lezen. Bij twijfel, gebruik gewoon de lange notatie. 
 #  Expressiedatatypes 
 ![](../assets/attention.jpg)
 
-De types die je in je berekeningen gebruikt bepalen ook het type van het resultaat. Als je bijvoorbeeld twee ``int`` variabelen of literals optelt zal het resultaat terug een ``int``geven.
+De types die je in je berekeningen gebruikt bepalen ook het type van het resultaat. Als je bijvoorbeeld twee ``int`` variabelen of literals optelt zal het resultaat terug een ``int`` geven.
 
 ```csharp
 int result= 3+4;
@@ -107,7 +107,7 @@ int otherResult= 3.1/45.2;
 
 **Let hier op!**
 
-But wait...it gets worse! 
+But wait... it gets worse! 
 
 Wat als je een ``int`` door een ``int`` deelt? Het resultaat is terug een ``int``. ** Je bent gewoon alle informatie na de komma kwijt. Kijk maar:
 ```csharp
@@ -128,14 +128,14 @@ Volgende niet:
 int result= 3/5.6;
 ```
 
-Wil je dus het probleem oplossen om 9 delen door 2 dan zal je minstens 1 van de 2 literals of variabelen door een double moeten omzetten. Het voorbeeld van hierboven herschrijven we dan naar:
+Wil je dus het probleem oplossen om 9 te delen door 2 dan zal je minstens 1 van de 2 literals of variabelen door een double moeten omzetten. Het voorbeeld van hierboven herschrijven we dan naar:
 ```csharp
 int getal1= 9;
 double getal2= 2.0;
 double result= getal1/getal2;
 Console.WriteLine(result);
 ```
-En nu krijgen we wel ``4.5``
+En nu krijgen we wel ``4.5``.
 
 ## En complexer?
 
