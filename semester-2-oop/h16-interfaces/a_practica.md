@@ -13,10 +13,10 @@ Dit programma toont de oppervlakte van een reeks vormen.
 console applicatie
 #### voorbeeldinteractie(s)
 ```
-Een rechthoek met een breedte van 2.2m en een hoogte van 1.5 m heeft een oppervlakte van 3.3m².
-Een rechthoek met een breedte van 3m en een hoogte van 1 m heeft een oppervlakte van 3m².
-Een driehoek met een basis van 3m en een hoogte van 1 m heeft een oppervlakte van 1.5m².
-Een driehoek met een basis van 2m en een hoogte van 2 m heeft een oppervlakte van 2m².
+Een vorm heeft een oppervlakte van 3.3m².
+Een vorm heeft een oppervlakte van 3m².
+Een vorm heeft een oppervlakte van 1.5m².
+Een vorm heeft een oppervlakte van 2m².
 ```
 
 ### Technische hulp
@@ -25,7 +25,7 @@ Zoals in hoofdstuk 8 worden er vaste vormen aangemaakt, maar er wordt geen varia
 
 #### Testscenario's
 * Test uit dat je geen enkele afmeting kleiner kan maken dan 1, of het nu gaat om rechthoeken of driehoeken.
-* Test uit met de figuren beschreven in de voorbeeldinteractie.
+* Test uit met de figuren beschreven in de voorbeeldinteractie. Dit moet de resultaten uit de voorbeeldinteractie tonen.
 
 ## Mapmaker afwerken
 
