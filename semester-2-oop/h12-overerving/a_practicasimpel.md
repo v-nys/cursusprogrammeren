@@ -43,7 +43,7 @@ Tim, een verzekerde patiënt die 12 uur in het ziekenhuis gelegen heeft, betaalt
 
 ### Technische hulp
 #### Programmaverloop
-Per patiënt worden een naam en een verblijfsduur in het ziekenhuis bijgehouden (als velden van een klasse). Per patiënt wordt de uitvoer getoond door middel van een methode `ShowInfo`. De berekening van de kost wordt uitgevoerd door een methode `CmputeCost`. In het geval van een verzekerde patiënt is dit een verfijnde versie van de methode voor niet-verzekerde patiënten.
+Per patiënt worden een naam en een verblijfsduur in het ziekenhuis bijgehouden (als velden van een klasse). Per patiënt wordt de uitvoer getoond door middel van een methode `ShowInfo`. De berekening van de kost wordt uitgevoerd door een methode `ComputeCost`. In het geval van een verzekerde patiënt is dit een verfijnde versie van de methode voor niet-verzekerde patiënten.
 
 #### Testscenario's
 * Test uit met een verblijf van 1 uur.
