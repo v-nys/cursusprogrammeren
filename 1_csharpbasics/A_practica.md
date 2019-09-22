@@ -21,7 +21,7 @@ Ontwerp een toepassing waarmee je een bedrag, inclusief komma-getallen  in euro 
 Je hoeft niet af te ronden. Het resultaat in een label wordt als volgt weergegeven: ``[x] EUR is gelijk aan [y] USD``.
 
 # Tafel en Console.Clear()
-Met het statement ``Console.Clear();`` kan je de console ...je raadt het nooit... leegmaken. Test deze code in het volgende programma.
+Met het statement ``Console.Clear();`` kan je de console ... je raadt het nooit... leegmaken. Test deze code in het volgende programma.
 
 Schrijf een programma dat de tafels van vermenigvuldigen geeft van 411 (dus 1x411=411, 2x411= 822 tot en met 10x411=4110). Toon telkens 1 zin en wacht dan tot de gebruiker op enter duwt om de volgende vermenigvuldiging op een nieuw scherm te tonen. De output ziet er dus als volgt uit:
 
@@ -39,7 +39,7 @@ Druk op enter voor de volgende lijn
 # Kill/Death-ratio
 Maak twee variabelen ``double kills`` en ``double deaths`` aan. Wijs er jouw typische scores aan toe die je haalt in een spel naar keuze. Bereken en toon vervolgens je kill/death-ratio. 
 
-(**opgelet: begrijp je waarom we best een van beide variabelen in double zetten?** Lees de warning bij Expressies zeker nog eens na...OF test eens wat er gebeurt indien je met int zou werken)
+(**opgelet: begrijp je waarom we best een van beide variabelen in double zetten?** Lees de warning bij Expressies zeker nog eens na... OF test eens wat er gebeurt indien je met int zou werken).
 
 # Gewicht in space
 Je massa is overal dezelfde. Je gewicht daarentegen is afhankelijk van de zwaartekracht van de plek waar je bent. Zo is je gewicht veel groter op Jupiter dan op Mars.
@@ -62,7 +62,7 @@ De output zijn verschillende lijnen onder elkaar in de vorm van:
 
 ``Je weegt op [planeet] [gewichtopdieplaneet] kg.``
 
-Plaats de zin met Jupiter in het rood, daar je daar het zwaarst weegt, en die van pluto in het groen.
+Plaats de zin met Jupiter in het rood, daar je daar het zwaarst weegt en die van pluto in het groen.
 
 
 
