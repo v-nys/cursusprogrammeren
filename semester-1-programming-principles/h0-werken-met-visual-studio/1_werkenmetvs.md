@@ -23,7 +23,8 @@ In deze cursus zullen de voorbeelden steeds met de **Community** editie van VS g
 Het is belangrijk bij de installatie dat je minimaal
 
 * de **.NET desktop development** workload selecteert als te installeren tools. ![VS Installeren](../../.gitbook/assets/vsinstall.png)
-* bij "Individual components" dien je onder de sectie **code tools** zeker ook de **class designer** en **code map** te installeren \(zie de screenshot hieronder welke extra tools ik ook aanbeveel\)![VS Installeren](https://github.com/v-nys/cursusprogrammeren/tree/028488226871c55a14a4fa8b12ca40716d9ca590/assets/0_intro/vsinstallextra.png)
+* de **.NET Core cross-platform development** workload selecteert als te installeren tools.
+* bij "Individual components" dien je onder de sectie **code tools** zeker ook de **class designer** te installeren \(zie de screenshot hieronder welke extra tools ik ook aanbeveel\)![VS Installeren](https://github.com/v-nys/cursusprogrammeren/tree/028488226871c55a14a4fa8b12ca40716d9ca590/assets/0_intro/vsinstallextra.png)
 * Uiteraard ben je vrij om meerdere zaken te installeren
 
 ## Visual studio opstarten
@@ -55,14 +56,6 @@ Geef je project de naam "MyFirstProject" en kies een goede locatie \(ik raad je 
 **Klik nu op create**.
 
 VS heeft nu reeds een aantal bestanden aangemaakt die je nodig hebt om een ‘Console Applicatie’ te maken. Een console applicatie is een programma dat alle uitvoer naar een zogenaamde ‘console’ stuurt, een shell. Maw, je kan enkel tekst \(Unicode\) als uitvoer genereren en dus geen multimedia elementen zoals afbeeldingen, geluid, etc.
-
-## Registreren \(eenmalig\)
-
-**Volgende stap dien je maar 1 maal te doen indien je VS ergens nieuw hebt geïnstalleerd: het registeren van de installatie.**
-
-![VS Project maken](../../.gitbook/assets/register.png)
-
-Kies 'sign in' en login met je AP-studenten account \(je sxxxxx@student.Ap.be account\). Als alles goed gaat is nu je versie geregistreerd.
 
 ## IDE Layout
 
