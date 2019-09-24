@@ -45,6 +45,18 @@ Druk op enter voor de volgende lijn
 
 **Plaats 411 in een variabele aan de start van het programma en gebruik deze in je berekeningen verderop. Toon dat je code ook werkt door de inhoud van de variabele in een ander getal te veranderen zodat je van dat nieuwe getal nu de tafels van vermenigvuldiging krijgt.**
 
+
+Je kan wachten tot de gebruiker op enter duwt door gewoon een lege ``Console.ReadLine`` te doen, zoals volgende voorbeeld toont:
+
+```csharp
+Console.WriteLine("Eerste beeld");
+Console.WriteLine("Druk enter om voort te gaan");
+Console.Clear();
+Console.WriteLine("tweede beeld");
+```
+
+> Merk op dat Console.Clear niet werkt zoals verwacht op Mac. (ik zoek nog een oplossing)
+
 # Kill/Death-ratio
 
 Maak twee variabelen ``double kills`` en ``double deaths`` aan. Wijs er jouw typische scores aan toe die je haalt in een spel naar keuze. Bereken en toon vervolgens je kill/death-ratio.
