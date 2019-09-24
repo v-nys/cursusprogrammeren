@@ -51,6 +51,7 @@ Je kan wachten tot de gebruiker op enter duwt door gewoon een lege ``Console.Rea
 ```csharp
 Console.WriteLine("Eerste beeld");
 Console.WriteLine("Druk enter om voort te gaan");
+Console.ReadLine();
 Console.Clear();
 Console.WriteLine("tweede beeld");
 ```
