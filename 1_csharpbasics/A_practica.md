@@ -55,7 +55,7 @@ Console.Clear();
 Console.WriteLine("tweede beeld");
 ```
 
-> Merk op dat Console.Clear niet werkt zoals verwacht op Mac. (ik zoek nog een oplossing)
+> Merk op dat ``Console.Clear()`` niet werkt zoals verwacht op Mac. (ik zoek nog een oplossing)
 
 # Kill/Death-ratio
 
