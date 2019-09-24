@@ -1,3 +1,6 @@
+> Bekijk volgende kennisclip waarin wordt uitgelegd hoe je meerdere projecten in 1 solution in VS kunt plaatsen:[Kennisclip link](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=f2c322cd-7607-4624-b0cd-a969006f8b2a).
+**Probeer vanaf nu per hoofdstuk 1 solution aan te maken met daarin meerdere projecten (1 project per oefening)**
+
 # ASCII Art
 
 Genereer je naam in ASCII Art met een van de vele online generators. Plaats deze aan de start van een van je bestaande programma's zodat nu je naam wordt getoond wanneer het programma start, gevolgd door de rest.

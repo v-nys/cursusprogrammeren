@@ -1,6 +1,3 @@
-> Bekijk volgende kennisclip waarin wordt uitgelegd hoe je meerdere projecten in 1 solution in VS kunt plaatsen:[Kennisclip link](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=f2c322cd-7607-4624-b0cd-a969006f8b2a).
-**Probeer vanaf nu per hoofdstuk 1 solution aan te maken met daarin meerdere projecten (1 project per oefening)**
-
 # BMI met if
 
 Pas je BMI-programma ([zie practica vorige hoofdstuk](../3_data/A_Practica.md#bmi-berekenaar)) aan zodat je programma feedback aan de gebruiker geeft naargelang de berekende BMI.
