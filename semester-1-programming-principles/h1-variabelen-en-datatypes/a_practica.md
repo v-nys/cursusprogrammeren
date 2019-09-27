@@ -121,6 +121,10 @@ console applicatie
 
 #### voorbeeldinteractie\(s\)
 
+{% hint style="danger" %}
+De screenshot vermeldt het afgeronde verbruik, maar dat hoef je niet te tonen. De instructie om af te ronden heb je nog niet gezien.
+{% endhint %}
+
 ![](../../.gitbook/assets/image.png)
 
 ### Technische hulp
@@ -288,11 +292,11 @@ Hou het voorlopig op de cursus.
 
 ### Functionele analyse
 
-Je massa is overal dezelfde en wordt uitgedrukt in kilogram. Je gewicht daarentegen is afhankelijk van de zwaartekracht van de plek waar je bent en wordt uitgedrukt in Newton. Zo is je gewicht veel groter op Jupiter dan op Mars, omdat Jupiter meer zwaartekracht uitoefent dan Mars. Schrijf een programma dat je gewicht op aarde omzet naar je gewicht op een ander hemellichaam. Je krijgt volgende omzettingstabel:
+Je massa is overal dezelfde en wordt uitgedrukt in kilogram. Je gewicht daarentegen is afhankelijk van de zwaartekracht van de plek waar je bent en wordt uitgedrukt in Newton. Je hebt dus een ander gewicht op andere planeten. Zo is je gewicht veel groter op Jupiter dan op Mars, omdat Jupiter meer zwaartekracht uitoefent dan Mars. Schrijf een programma dat je gewicht op aarde omzet naar je gewicht op een ander hemellichaam. Je krijgt volgende omzettingstabel:
 
-* Mercurius: 0.38 \(een persoon van 100kg heeft er een gewicht van 38 Newton\) 
+* Mercurius: 0.38 \(een persoon van 100kg voelt zich alsof hij 38kg weegt\) 
 * Venus: 0.91
-* Aarde: 1.00 \(een persoon van 100kg heeft er een gewicht van 100 Newton\)
+* Aarde: 1.00 \(een persoon van 100kg voelt zich alsof hij 100kg weegt\)
 * Mars: 0.38
 * Jupiter: 2.34
 * Saturnus: 1.06
@@ -309,15 +313,15 @@ console applicatie
 #### voorbeeldinteractie\(s\)
 
 ```text
-Op Mercurius heb je een gewicht van 26.22 N.
-Op Venus heb je een gewicht van 62.79 N.
-Op Aarde heb je een gewicht van 69 N.
-Op Mars heb je een gewicht van 26.22 N.
-Op Jupiter heb je een gewicht van 161.46 N.
-Op Saturnus heb je een gewicht van 73.14 N.
-Op Uranus heb je een gewicht van 63.48 N.
-Op Neptunus heb je een gewicht van 82.11 N.
-Op Pluto heb je een gewicht van 4.14 N.
+Op Mercurius heb je een schijnbaar gewicht van 26.22kg.
+Op Venus heb je een schijnbaar gewicht van 62.79kg.
+Op Aarde heb je een schijnbaar gewicht van 69kg.
+Op Mars heb je een schijnbaar gewicht van 26.22kg.
+Op Jupiter heb je een schijnbaar gewicht van 161.46kg.
+Op Saturnus heb je een schijnbaar gewicht van 73.14kg.
+Op Uranus heb je een schijnbaar gewicht van 63.48kg.
+Op Neptunus heb je een schijnbaar gewicht van 82.11kg.
+Op Pluto heb je een schijnbaar gewicht van 4.14kg.
 ```
 
 ### Technische hulp
