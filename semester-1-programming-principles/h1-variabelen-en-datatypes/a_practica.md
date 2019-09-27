@@ -24,9 +24,9 @@ console applicatie
 
 #### Programmaverloop
 
-Lees de gebruikersinvoer van de console en slaag dit op in een variabele. 
+Lees de gebruikersinvoer van de console en slaag dit op in een variabele.
 
-Zet de inhoud van deze variabele om in hoofdletters. 
+Zet de inhoud van deze variabele om in hoofdletters. Je kan dit doen door `ToUpper()` toe te voegen aan een variabele van het type `string`. Bijvoorbeeld `myText.ToUpper()` in plaats van `myText`.
 
 Uiteindelijk geef je dan deze variabele weer in de console.
 
@@ -96,9 +96,9 @@ Hou het voorlopig op de cursus.
 
 ### Functionele analyse
 
-Een applicatie zal voor jou het gemiddelde verbruik van een wagen berekenen. 
+Een applicatie zal voor jou het gemiddelde verbruik van een wagen berekenen.
 
-Hiervoor worden volgende vragen gesteld: 
+Hiervoor worden volgende vragen gesteld:
 
 1. Hoeveel liter is er nog aanwezig in de benzinetank. 
 2. Hoeveel liter zit er nog in de benzinetank na de rit. 
@@ -127,11 +127,11 @@ console applicatie
 
 #### Programmaverloop
 
-Lees de gebruikersinvoer van de console en slaag dit op in variabelen. 
+Lees de gebruikersinvoer van de console en slaag dit op in variabelen.
 
-Zorg ervoor dat je het juiste gegevenstype kiest voor de verschillende variabelen. 
+Zorg ervoor dat je het juiste gegevenstype kiest voor de verschillende variabelen.
 
-Nadien voer je de berekening uit om op basis van de ingevoerde gegevens het gemiddeld verbruik te berekenen \(100 \* \(aantalLiterinTank1 - aantalLiterinTank2\) / \(kilometerstand2 - kilometerstand1\)\) 
+Nadien voer je de berekening uit om op basis van de ingevoerde gegevens het gemiddeld verbruik te berekenen \(100 \* \(aantalLiterinTank1 - aantalLiterinTank2\) / \(kilometerstand2 - kilometerstand1\)\)
 
 Uiteindelijk geef je dan het resultaat weer in de console.
 
@@ -145,9 +145,6 @@ Uiteindelijk geef je dan het resultaat weer in de console.
 
 Hou het voorlopig op de cursus.
 
-
-
-
 ## Oefening: H1-beetje-wiskunde
 
 ### Leerdoelen
@@ -160,10 +157,10 @@ Hou het voorlopig op de cursus.
 
 Je schrijft een programma dat de rol vervult van een rekenmachine. Het voert volgende berekeningen uit:
 
-* -1 + 4 * 6
-* ( 35+ 5 ) % 7
-* 14 + -4 * 6 / 11
-* 2 + 15 / 6 * 1 - 7 % 2
+* -1 + 4 \* 6
+* \( 35+ 5 \) % 7
+* 14 + -4 \* 6 / 11
+* 2 + 15 / 6 \* 1 - 7 % 2
 
 ### Technische analyse
 
@@ -262,7 +259,7 @@ console applicatie
 2 * 411 is 822.
 ```
 
-(enzovoort)
+\(enzovoort\)
 
 ```text
 10 * 411 is 4110.
@@ -272,7 +269,7 @@ console applicatie
 
 #### Programmaverloop
 
-Voor elk resultaat wordt het scherm eerst leeggemaakt. Daarna pas wordt het resultaat getoond. Wanneer de gebruiker op ENTER duwt, wordt deze handeling herhaald voor het volgende resultaat (of eindigt het programma, na het tiende resultaat). Het scherm leegmaken doe je met `Console.Clear()`. Plaats 411 ook in een variabele.
+Voor elk resultaat wordt het scherm eerst leeggemaakt. Daarna pas wordt het resultaat getoond. Wanneer de gebruiker op ENTER duwt, wordt deze handeling herhaald voor het volgende resultaat \(of eindigt het programma, na het tiende resultaat\). Het scherm leegmaken doe je met `Console.Clear()`. Plaats 411 ook in een variabele.
 
 #### Testscenario's
 
@@ -293,9 +290,9 @@ Hou het voorlopig op de cursus.
 
 Je massa is overal dezelfde en wordt uitgedrukt in kilogram. Je gewicht daarentegen is afhankelijk van de zwaartekracht van de plek waar je bent en wordt uitgedrukt in Newton. Zo is je gewicht veel groter op Jupiter dan op Mars, omdat Jupiter meer zwaartekracht uitoefent dan Mars. Schrijf een programma dat je gewicht op aarde omzet naar je gewicht op een ander hemellichaam. Je krijgt volgende omzettingstabel:
 
-* Mercurius: 0.38 (een persoon van 100kg heeft er een gewicht van 38 Newton) 
+* Mercurius: 0.38 \(een persoon van 100kg heeft er een gewicht van 38 Newton\) 
 * Venus: 0.91
-* Aarde: 1.00 (een persoon van 100kg heeft er een gewicht van 100 Newton)
+* Aarde: 1.00 \(een persoon van 100kg heeft er een gewicht van 100 Newton\)
 * Mars: 0.38
 * Jupiter: 2.34
 * Saturnus: 1.06
@@ -337,3 +334,4 @@ Plaats je gewicht in een variabele. Kies zelf een geschikt type.
 ### Ondersteunend materiaal
 
 Hou het voorlopig op de cursus.
+

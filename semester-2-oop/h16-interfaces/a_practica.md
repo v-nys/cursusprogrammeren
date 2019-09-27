@@ -1,18 +1,25 @@
 # Labo-oefeningen
 
 ## Oefening: H16-figuren-met-interfaces
+
 ### Leerdoelen
+
 * verschillende klassen groeperen met een gemeenschappelijke interface
 * werken met lijsten van onbepaalde lengte
 
 ### Functionele analyse
+
 Dit programma toont de oppervlakte van een reeks vormen.
 
 ### Technische analyse
+
 #### UI
+
 console applicatie
-#### voorbeeldinteractie(s)
-```
+
+#### voorbeeldinteractie\(s\)
+
+```text
 Een vorm heeft een oppervlakte van 3.3m².
 Een vorm heeft een oppervlakte van 3m².
 Een vorm heeft een oppervlakte van 1.5m².
@@ -20,10 +27,13 @@ Een vorm heeft een oppervlakte van 2m².
 ```
 
 ### Technische hulp
+
 #### Programmaverloop
+
 Zoals in hoofdstuk 8 worden er vaste vormen aangemaakt, maar er wordt geen variabele voorzien voor elke vorm. In plaats daarvan wordt elke vorm in een `List<IShape>` geplaatst. `IShape` is een interface voor allerlei soorten vormen. Alle vormen hebben gemeenschappelijk dat hun oppervlakte berekend kan worden, dus dit gedrag wordt deel van de interface.
 
 #### Testscenario's
+
 * Test uit dat je geen enkele afmeting kleiner kan maken dan 1, of het nu gaat om rechthoeken of driehoeken.
 * Test uit met de figuren beschreven in de voorbeeldinteractie. Dit moet de resultaten uit de voorbeeldinteractie tonen.
 

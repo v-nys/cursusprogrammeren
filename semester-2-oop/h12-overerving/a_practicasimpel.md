@@ -24,33 +24,44 @@ Process.Start("iexplore.exe", "-private " + url);
 ```
 
 ## Oefening: H12-ziekenhuis
+
 ### Leerdoelen
+
 * werken met methodes
 * methodes overschrijfbaar maken
 * code specifieker maken met behulp van subklassen
 
 ### Functionele analyse
-Dit programma berekent de doktersrekening van een patiënt, op basis van een basisbedrag (€50) en een extra kost (€20/uur). In het geval van een verzekerde patiënt worden de kosten met 10% verlaagd.
+
+Dit programma berekent de doktersrekening van een patiënt, op basis van een basisbedrag \(€50\) en een extra kost \(€20/uur\). In het geval van een verzekerde patiënt worden de kosten met 10% verlaagd.
 
 ### Technische analyse
+
 #### UI
+
 console applicatie
-#### voorbeeldinteractie(s)
-```
+
+#### voorbeeldinteractie\(s\)
+
+```text
 Vincent, een gewone patiënt die 12 uur in het ziekenhuis gelegen heeft, betaalt €290.
 Tim, een verzekerde patiënt die 12 uur in het ziekenhuis gelegen heeft, betaalt €261.
 ```
 
 ### Technische hulp
+
 #### Programmaverloop
-Per patiënt worden een naam en een verblijfsduur in het ziekenhuis bijgehouden (als velden van een klasse). Per patiënt wordt de uitvoer getoond door middel van een methode `ShowInfo`. De berekening van de kost wordt uitgevoerd door een methode `ComputeCost`. In het geval van een verzekerde patiënt is dit een verfijnde versie van de methode voor niet-verzekerde patiënten.
+
+Per patiënt worden een naam en een verblijfsduur in het ziekenhuis bijgehouden \(als velden van een klasse\). Per patiënt wordt de uitvoer getoond door middel van een methode `ShowInfo`. De berekening van de kost wordt uitgevoerd door een methode `ComputeCost`. In het geval van een verzekerde patiënt is dit een verfijnde versie van de methode voor niet-verzekerde patiënten.
 
 #### Testscenario's
+
 * Test uit met een verblijf van 1 uur.
 * Test uit met een verblijf van 0 uur.
 * Test uit met de patiënten beschreven in de voorbeeldinteractie.
 
 ### Ondersteunend materiaal
+
 Hou het voorlopig op de cursus.
 
 ## Ballspel met overerving

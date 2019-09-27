@@ -173,7 +173,7 @@ Dag tim hoe gaat het met je?
 
 ### Opletten met spaties
 
-Spaties zijn ook tekens die op scherm moeten komen \(ook al zien we ze niet\) en je dient dus binnen de aanhalingstekens spaties toe te voegen. Indien je deze erbuiten plaats dan heeft dit geen effect \(je wist al uit het eerste hoofdstuk dat C\# alle witregels negeert die niet tussen aanhalingstekens staan\). _In volgend voorbeeld zijn de spaties aangegeven als liggende streepjes \( \_ \)_.
+Spaties zijn ook tekens die op scherm moeten komen \(ook al zien we ze niet\) en je dient dus binnen de aanhalingstekens spaties toe te voegen. Indien je deze erbuiten plaats dan heeft dit geen effect \(je wist al uit het eerste hoofdstuk dat C\# alle witregels negeert die niet tussen aanhalingstekens staan\). _In volgend voorbeeld zijn de spaties aangegeven als liggende streepjes \( \_ \)\_.
 
 Fout \(de code zal werken maar je spaties worden genegeerd\):
 
