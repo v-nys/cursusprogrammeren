@@ -1,24 +1,85 @@
 # Oefeningen
 
-## String interpolation
+## Oefening: H2-string-interpolation
 
-Kies 2 oefeningen uit het vorige hoofdstuk waarin je output op het scherm moest geven. Pas string interpolatie m.b.v. `$` \(manier 2\) toe in deze 2 oefeningen.
+### Leerdoelen
 
-> Volgende 2 oefeningen zijn al iets stevigers. Iedere oefening eindigt met een \[PRO\] gedeelte dat je best enkel doet als je een uitdaging wenst.
+* gebruik van string interpolation
 
-## Systeem informatie
+### Functionele analyse
 
-### Deel 1
+Oefening H1-maaltafels en H1-ruimte dienen we te herschrijven volgens de principes van string interpolation.
+
+### Technische analyse
+
+#### UI
+
+console applicatie
+
+#### voorbeeldinteractie\(s\)
+
+Zie oefening H1-maaltafels en H1-ruimte.
+
+### Technische hulp
+
+#### Programmaverloop
+
+Pas string interpolatie mbv `$` \(manier 2\) toe.
+
+#### Testscenario's
+
+* Zie oefening H1-maaltafels en H1-ruimte.
+
+### Ondersteunend materiaal
+
+Hou het voorlopig op de cursus.
+
+## 
+
+> Volgende oefeningen zijn al iets stevigers.   
+> Iedere oefening eindigt met een \[PRO\] gedeelte.
+
+
+
+## Oefening: H2-systeem-informatie
+
+### Leerdoelen
+
+* gebruik van string interpolation
+* gebruik van environment class
+
+### Functionele analyse
 
 Maak een applicatie die de belangrijkste computer-informatie \(geheugen, etc\) aan de gebruiker toont.
 
-Deze computer-informatie kan je verkrijgen mbv de Environment-klasse. Hier enkele voorbeelden \(kijk zelf of er nog nuttige properties over je computer in staan\):
+### Technische analyse
+
+#### UI
+
+console applicatie
+
+#### voorbeeldinteractie\(s\)
+
+```text
+Uw computer heeft een 64-bit besturingssysteem: True
+De naam van uw pc is: LAPTOP
+Uw pc heeft 4 processorkernen.
+ikke is uw gebruikersnaam.
+Je gebruikt 12439552 bytes aan geheugen
+```
+
+### Technische hulp
+
+#### Programmaverloop
+
+Pas string interpolatie mbv `$` \(manier 2\) toe.  
+De computerinformatie kan je verkrijgen mbv de Environment-klasse. Hier enkele voorbeelden \(kijk zelf of er nog nuttige properties over je computer in staan en voorzie deze ook binnen jouw code\):
 
 ```csharp
 bool is64bit = Environment.Is64BitOperatingSystem;
-string pcname = Environment.MachineName;
-int proccount = Environment.ProcessorCount;
-string username = Environment.UserName;
+string pcName = Environment.MachineName;
+int procCount = Environment.ProcessorCount;
+string userName = Environment.UserName;
 long memory = Environment.WorkingSet; //zal ongeveer 10 Mb teruggeven.
 ```
 
@@ -28,15 +89,53 @@ Zoals je ziet wordt het geheugen in bytes teruggegeven. Zorg ervoor dat het gehe
 
 **Formateer de informatie met behulp van de $-notatie zodat deze deftig getoond worden en de gebruiker snel de belangrijke informatie over z'n systeem te zien krijgt.**
 
-### \[PRO\] Deel 2
+#### Testscenario's
+
+* wat gebeurt er wanneer je het datatype string zou wijzigen in int?
+
+### Ondersteunend materiaal
+
+Hou het voorlopig op de cursus.
+
+## Oefening: H2-systeem-informatie-pro
+
+### Leerdoelen
+
+* gebruik van string interpolation
+* gebruik van system.io
+
+### Functionele analyse
+
+Informatie over de harde schijven van uw pc dienen te worden weergeven. 
+
+### Technische analyse
+
+#### UI
+
+console applicatie
+
+#### voorbeeldinteractie\(s\)
+
+```text
+Vrije ruimte op jouw c-schijf: 10803744768
+Totale ruimte van jouw c-schijf: 159671906304
+
+********************************************************************************
+Geef met nummer 1 t/m ... aan over welke harde schijf van jouw pc je info wenst: 1
+De vrije ruimte van C:\ is 108 Gb
+```
+
+### Technische hulp
+
+#### Programmaverloop
 
 Ook informatie over de harde schijven kan je verkrijgen \(in bits\). Dit vereist wel dat je bovenaan je programma volgende lijn bijschrijft: `using System.IO`.
 
 Vervolgens kan je in je programma schrijven:
 
 ```csharp
-long cdriveinbytes = DriveInfo.GetDrives()[0].AvailableFreeSpace;  
-long totalsize = DriveInfo.GetDrives()[0].TotalSize;
+long cDriveInBytes = DriveInfo.GetDrives()[0].AvailableFreeSpace;  
+long totalSize = DriveInfo.GetDrives()[0].TotalSize;
 ```
 
 De lijn met `using` is om aan te geven dat we iets uit de `System.IO` bibliotheek nodig hebben, namelijk `DriveInfo`. Schrijven we dat niet dan moeten we in onze code DriveInfo aanroepen met z'n volledige path: `System.IO.DriveInfo....`
@@ -48,9 +147,17 @@ Vraag aan de gebruiker het nummer van de harde schijf waar meer informatie over 
 Opgelet: sta toe dat de gebruiker 1 voor de eerste harde schijf mag gebruiken, 2 voor de tweede, enzovoort. Je zal dus in code nog manueel 1 moeten aftrekken van de invoer van de gebruiken. Bv:
 
 ```csharp
-int invoer= Convert.ToInt32(Console.ReadLine()) - 1 ;
-long totalsize = DriveInfo.GetDrives()[invoer].TotalSize;
+int input= Convert.ToInt32(Console.ReadLine()) - 1 ;
+long totalSize = DriveInfo.GetDrives()[input].TotalSize;
 ```
+
+#### Testscenario's
+
+* wat gebeurt er wanneer je het datatype int zou wijzigen in string?
+
+### Ondersteunend materiaal
+
+Hou het voorlopig op de cursus.
 
 ## Weerstandberekenaar
 
