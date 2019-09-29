@@ -2,7 +2,7 @@
 
 1. Bekijk volgende kennisclip waarin wordt uitgelegd hoe je meerdere projecten in 1 solution in VS kunt plaatsen:[Kennisclip link](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=f2c322cd-7607-4624-b0cd-a969006f8b2a).
 **Probeer vanaf nu per hoofdstuk 1 solution aan te maken met daarin meerdere projecten (1 project per oefening)**
-2. Sommige oefeningen zullen soms [PRO] in de titel hebben. Dit zijn pittigere oefeningen. Probeer ze zeker, maar laat je niet ontmoedigen als ze niet direct lukken. Het kan erg nuttig zijn om enkele weken later nog eens terug naar oudere hoofdstukken te gaan zien of er nog PRO-oefeningen zijn die je ondertussen wel mogelijks kan oplossen.
+2. Sommige oefeningen zullen soms [PRO] in de titel hebben. Dit zijn pittigere oefeningen. Probeer ze zeker, maar laat je niet ontmoedigen als ze niet direct lukken. Het kan erg nuttig zijn om enkele weken later nog eens terug naar oudere hoofdstukken te gaan zien of er nog PRO-oefeningen zijn die je ondertussen wel mogelijks kan oplossen. [PRO²] oefeningen zijn nog iets pittiger (of bevatten zaken die niet bij de leerstof horen).
 
 # ASCII Art
 
@@ -39,8 +39,6 @@ long memory = Environment.WorkingSet; //zal ongeveer 10 Mb teruggeven.
 Zoals je ziet wordt het geheugen in bytes teruggegeven. Zorg ervoor dat het geheugen steeds in mega of gigabytes op het scherm wordt getoond.
 
 **Formateer de informatie met behulp van de $-notatie  zodat deze  deftig getoond worden en de gebruiker snel de belangrijke informatie over z'n systeem te zien krijgt.**
-
-> Vanaf nu zal geregeld oefeningen tegenkomen waar PRO voor staat. Dit zijn iets pittigere oefeningen die je enkel vlot zal kunnen als je de standaard oefeningen hebt gemaakt. Ik raad iedereen echter aan ze te (proberen) maken.
 
 ## [PRO] Deel 2
 
