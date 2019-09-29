@@ -1,10 +1,8 @@
-# Vooraf 1:
-Bekijk volgende kennisclip waarin wordt uitgelegd hoe je meerdere projecten in 1 solution in VS kunt plaatsen:[Kennisclip link](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=f2c322cd-7607-4624-b0cd-a969006f8b2a).
+# Enkele opmerkingen vooraf
+
+1. Bekijk volgende kennisclip waarin wordt uitgelegd hoe je meerdere projecten in 1 solution in VS kunt plaatsen:[Kennisclip link](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=f2c322cd-7607-4624-b0cd-a969006f8b2a).
 **Probeer vanaf nu per hoofdstuk 1 solution aan te maken met daarin meerdere projecten (1 project per oefening)**
-
-# Vooraf 2:
-
-Sommige oefeningen zullen soms [PRO] in de titel hebben. Dit zijn pittigere oefeningen. Probeer ze zeker, maar laat je niet ontmoedigen als ze niet direct lukken. Het kan erg nuttig zijn om enkele weken later nog eens terug naar oudere hoofdstukken te gaan zien of er nog PRO-oefeningen zijn die je ondertussen wel mogelijks kan oplossen.
+2. Sommige oefeningen zullen soms [PRO] in de titel hebben. Dit zijn pittigere oefeningen. Probeer ze zeker, maar laat je niet ontmoedigen als ze niet direct lukken. Het kan erg nuttig zijn om enkele weken later nog eens terug naar oudere hoofdstukken te gaan zien of er nog PRO-oefeningen zijn die je ondertussen wel mogelijks kan oplossen.
 
 # ASCII Art
 
