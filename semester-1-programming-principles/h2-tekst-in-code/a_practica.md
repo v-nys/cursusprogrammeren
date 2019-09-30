@@ -202,6 +202,14 @@ Gebruik twee variabelen van het type `int` waar je getal van 0 tot 9 telkens aan
 
 Test dat je "formule/berekening" klopt om gebaseerd op 2 \(of 3\) ringen de weerstandswaarde te berekenen.
 
+#### Testscenario's
+
+* wat gebeurt er wanneer je een hoger getal dan 9 zou invoeren?
+
+### Ondersteunend materiaal
+
+Hou het voorlopig op de cursus.
+
 ## Oefening: H2-weerstandberekenaar-deel2
 
 ### Leerdoelen
@@ -234,11 +242,25 @@ of:
 
 ![](../../.gitbook/assets/tabel2.png)
 
+#### Testscenario's
+
+* wat gebeurt er wanneer je een waarde van circle 1, 2 of 3 uit meer dan twee cijfers bestaat?
+
+### Ondersteunend materiaal
+
+Hou het voorlopig op de cursus.
+
 ### \[PRO\] Deel 3
 
 Kan je afhankelijk van de ringwaarde het getal in de tabel in de juiste kleur zetten conform de weerstandskleuren \(tip: je zal `Write` en `if` moeten leren gebruiken\)
 
-## \[PRO\] Shell-starter
+## Oefening: H2-shell-starter
+
+### Leerdoelen
+
+* gebruik van `Process.Start()`
+
+### Functionele analyse
 
 Je kan de output van een `Process.Start()` programma naar je console scherm sturen. Dit vereist wat meer code. Volgende voorbeeld zal de output van het commando `ipconfig /all` op het scherm tonen:
 
@@ -262,6 +284,10 @@ Console.WriteLine("Klaar");
 ```
 
 > Let er op dat dit voorbeeld niet perfect werkt met een shell-commando dat even duurt. Denk bijvoorbeeld aan `ping`. De output komt namelijk pas op het scherm als het commando is afgelopen. Test zelf maar eens!
+
+### Technische hulp
+
+#### Programmaverloop
 
 Maak enkele kleine C\# programma's die bepaalde shell-commando's zullen uitvoeren , eventueel na input van de gebruiker. Enkele nuttige shell-commando's in de netwerk-sfeer zijn bijvoorbeeld:
 
@@ -289,4 +315,12 @@ Of de naam van een bestand dat je wilt openen, maar dan met het hele path:
 ```text
 c:\Temp\mydocument.docx
 ```
+
+#### Testscenario's
+
+* Zie programmaverloop.
+
+### Ondersteunend materiaal
+
+Hou het voorlopig op de cursus.
 
