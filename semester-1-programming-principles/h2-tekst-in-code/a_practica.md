@@ -159,7 +159,7 @@ long totalSize = DriveInfo.GetDrives()[input].TotalSize;
 
 Hou het voorlopig op de cursus.
 
-## Oefening: H2-weerstandberekenaar
+## Oefening: H2-weerstandberekenaar-deel1
 
 ### Leerdoelen
 
@@ -202,9 +202,21 @@ Gebruik twee variabelen van het type `int` waar je getal van 0 tot 9 telkens aan
 
 Test dat je "formule/berekening" klopt om gebaseerd op 2 \(of 3\) ringen de weerstandswaarde te berekenen.
 
-### Deel 2
+## Oefening: H2-weerstandberekenaar-deel2
 
-Plaats het geheel in een mooie UNICODE/Asci-tabel
+### Leerdoelen
+
+* gebruik van UNICODE/Asci-tabel
+
+### Functionele analyse
+
+Zie deel 1.
+
+### Technische hulp
+
+#### Programmaverloop
+
+Zie deel 1 en plaats het geheel in een mooie UNICODE/Asci-tabel
 
 Hier enkele nuttige tekens:
 
@@ -222,7 +234,7 @@ of:
 
 ![](../../.gitbook/assets/tabel2.png)
 
-### \[PRO²\] Deel 3
+### \[PRO\] Deel 3
 
 Kan je afhankelijk van de ringwaarde het getal in de tabel in de juiste kleur zetten conform de weerstandskleuren \(tip: je zal `Write` en `if` moeten leren gebruiken\)
 
