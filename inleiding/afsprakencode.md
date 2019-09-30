@@ -10,6 +10,7 @@ Onderstaande richtlijnen zijn gebaseerd op [deze algemeen aanvaarde richtlijnen]
 
 | Soort data | Notatie | Enkelvoud? | Vorm | Default zichtbaarheid |
 | :--- | :--- | :--- | :--- | :--- |
+| Namespace | PascalCase | meervoud toegestaan | \[A-z\]+\[0-9\] | niet van toepassing |
 | Klasse | PascalCase | altijd | \[A-z\]+\[0-9\] | `public` |
 | Methode | PascalCase | meervoud toegestaan | \[A-z\]+\[0-9\] | `public` |
 | Argument | camelCase | meervoud toegestaan | \[A-z\]+\[0-9\] | niet van toepassing |
