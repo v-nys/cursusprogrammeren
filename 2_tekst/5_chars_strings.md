@@ -17,7 +17,7 @@ Een string is een reeks (eigenlijk [array](../7_arrays/1_ArraysBasics.md)) van 0
 ![](../assets/1_csharpbasics/stringenchars.png)
 
 ## Strings declareren
-Merk op dat we bij een string literal gebruik maken van aanhalingstekens (`"`) terwijl bij chars we een apostrof gebruiken (`'`). Dit is de manier om een string van een char te herkennen.
+Merk op dat we bij een string literal gebruik maken van aanhalingstekens (`"`) terwijl bij chars we een apostrof gebruiken (`'`). Dit is de manier om een string van een char te onderscheiden.
 
 Volgende code geeft dus drie keer het cijfer 1 onder elkaar op het scherm, maar de eerste keer behelst het een char (enkelvoudig teken), dan een een string (reeks van tekens) en dan een int (effectief getal):
 
@@ -48,7 +48,7 @@ int eenGetal = '1'; //fout
 
 1. In de eerste toekenning proberen we dus een literal van het type string toe te kennen een variabele van het type char.
 2. In de tweede toekenning proberen we een literal van het type char toe te kennen een variabele van het type string.
-3. En in de laatste toekenning proberen we een literal van het type char toe te kennen een variabele van het type int.
+3. En in de laatste toekenning proberen we een literal van het type char toe te kennen aan een variabele van het type int.
 
 # Escape characters
 Naast letters en tekens mogen in string en chars ook escape characters staan. Escape characters worden met een backslash (`\`) gestart, gevolgd door het karakter dat we wensen te tonen. In C# hebben bepaalde tekens namelijk een speciale functie, zoals de dubbele aanhalingstekens (") om het begin of einde van een string-literal aan te geven .
@@ -84,7 +84,7 @@ v\uxxxx` – Unicode escape sequence for character with hex value xxxx
 * `\xn[n][n][n]` – Unicode escape sequence for character with hex value nnnn (variable length version of \uxxxx)
 * `\Uxxxxxxxx` – Unicode escape sequence for character with hex value xxxxxxxx (for generating surrogates)
 
-Je kan in grote Unicode-tabellen opzoeken wat de unicode ( voorstelling van het teken in een geheel getal) van eender welk teken is. Je kan deze code dan gebruiken om eender welk teken, zelfs die niet op je toetsenbord staan, toch te gebruiken. Je kan de unicode opzoeken op [https://unicode-table.com/en/](https://unicode-table.com/en/).
+Je kan in grote Unicode-tabellen opzoeken wat de unicode (voorstelling van het teken in een geheel getal) van eender welk teken is. Je kan deze code dan gebruiken om eender welk teken, zelfs die die niet op je toetsenbord staan, toch te gebruiken. Je kan de unicode opzoeken op [https://unicode-table.com/en/](https://unicode-table.com/en/).
 
 > Wil je weten hoe je coole 'console'-tekeningen kan maken? Kijk dan zeker naar de appendix-sectie  ["Vreemde tekens in console tonen"](../B_appendix/prostuff.md).
 
@@ -96,14 +96,14 @@ We gebruiken vooral escape characters in strings, om bijvoorbeeld witregels en t
 ```csharp
 string eenString = "Eerst een zin.\t dan een zin na een tab \n Dan eentje op een nieuwe regel";
 ```
-Het is belangrijk dat je vlot kan werken met escape characters in string, daar we dit geregeld zullen nodig hebben.
+Het is belangrijk dat je vlot kan werken met escape characters in string, daar we dit geregeld nodig zullen hebben.
 
 **De belangrijkste escape chars zijn: `` \t \n \" \'``**
 
 ``\a`` mag je enkel gebruiken als je een koptelefoon op hebt ;) .
 
 ## Optellen van char 
-Stel dat we volgende char-variabele aanmaken. Bij string mogen we de +-operator gebruiken om 2 strings aan elkaar te plakken. Bij char mag dat niet!
+Stel dat we volgende char-variabelen aanmaken. Bij string mogen we de +-operator gebruiken om 2 strings aan elkaar te plakken. Bij char mag dat niet!
 
 ```csharp
 char letter1 = 'A';
