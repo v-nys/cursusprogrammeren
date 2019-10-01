@@ -81,7 +81,7 @@ Alle toegelaten escape characters in C# ([bron](https://blogs.msdn.microsoft.com
 * `\r` – Carriage return (character 13)
 * `\t` – Horizontal tab (character 9)
 * `\v` – Vertical quote (character 11)
-v\uxxxx` – Unicode escape sequence for character with hex value xxxx
+* `v\uxxxx` – Unicode escape sequence for character with hex value xxxx
 * `\xn[n][n][n]` – Unicode escape sequence for character with hex value nnnn (variable length version of \uxxxx)
 * `\Uxxxxxxxx` – Unicode escape sequence for character with hex value xxxxxxxx (for generating surrogates)
 
