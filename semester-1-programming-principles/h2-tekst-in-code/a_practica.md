@@ -259,6 +259,7 @@ Kan je afhankelijk van de ringwaarde het getal in de tabel in de juiste kleur ze
 ### Leerdoelen
 
 * gebruik van `Process.Start()`
+* verwerken van uitvoer
 
 ### Functionele analyse
 
@@ -274,51 +275,33 @@ process.StartInfo.RedirectStandardError = true;
 process.Start(); //start process
 
 // Read the output (or the error)
-string output = process.StandardOutput.ReadToEnd(); //normal output
+string output = process.StandardOutput.ReadToEnd();
 Console.WriteLine(output);
-string err = process.StandardError.ReadToEnd(); //error output (if any)
+string err = process.StandardError.ReadToEnd();
 Console.WriteLine(err);
-process.WaitForExit();
 //Continue
 Console.WriteLine("Klaar");
 ```
 
-> Let er op dat dit voorbeeld niet perfect werkt met een shell-commando dat even duurt. Denk bijvoorbeeld aan `ping`. De output komt namelijk pas op het scherm als het commando is afgelopen. Test zelf maar eens!
+Onder macOS heb je een ander commando nodig. Gebruik daar `"ifconfig"` voor het (uitvoerbaar) bestand en geef een lege string mee voor de argumenten.
 
 ### Technische hulp
 
 #### Programmaverloop
 
-Maak enkele kleine C\# programma's die bepaalde shell-commando's zullen uitvoeren , eventueel na input van de gebruiker. Enkele nuttige shell-commando's in de netwerk-sfeer zijn bijvoorbeeld:
+Maak enkele kleine C\# programma's die bepaalde shell-commando's zullen uitvoeren en die de uitvoer in hoofdletters weergeven in plaats van in de gewone vorm. Enkele nuttige shell-commando's in de netwerk-sfeer zijn bijvoorbeeld:
 
 ```text
 hostname
-
 arp -a
-
-getmac 
-
+getmac (enkel onder Windows)
 nslookup google.com
-
 netstat
-```
-
-Andere toffe commando's kunnen zijn:
-
-```text
-chrome.exe ap.be
-notepad mytest.txt
-```
-
-Of de naam van een bestand dat je wilt openen, maar dan met het hele path:
-
-```text
-c:\Temp\mydocument.docx
 ```
 
 #### Testscenario's
 
-* Zie programmaverloop.
+* Probeer van bovenstaande programma's al die, die compatibel zijn met je besturingssysteem.
 
 ### Ondersteunend materiaal
 
