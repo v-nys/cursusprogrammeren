@@ -4,7 +4,7 @@ Je kan strings en variabelen samenvoegen tot een nieuwe string op verschillende 
 * $ string interpolation 
 * Of de oude manier:  ``String.Format()`` 
 
-> We prefereren **manier 2** , de string interpolatie, in deze cursus. Dit is de meest moderne aanpak.
+> We prefereren **manier 2**, de string interpolatie, in deze cursus. Dit is de meest moderne aanpak.
 
 
 ## In dit hoofdstuk
@@ -12,25 +12,25 @@ We gaan van volgende informatie uit:
 
 Stel dat je 2 variabelen hebt ``int age=13`` en ``string name="Finkelstein"``.
 We willen de inhoud van deze variabelen samenvoegen in een nieuwe ``string result`` die zal bestaan uit de tekst:
-```Ik ben Finkelstein en ik ben 13 jaar oud``` **
+```Ik ben Finkelstein en ik ben 13 jaar oud```
 
 Volgende 3 manieren tonen hoe je steeds tot voorgaande string zal komen.
 
 ## Manier 1: String samenvoegen met de +-operator
-Je kan string en variabelen eenvoudig 'bij elkaar' optellen. Ze worden dan achter elkaar geplakt als het waren. 
+Je kan string en variabelen eenvoudig 'bij elkaar' optellen. Ze worden dan achter elkaar geplakt als het ware. 
 ```csharp
 string result= "Ik ben "+ name + "en ik ben "+ age+ " jaar oud";
 ```
 Let er op dat je tussen de aanhalingsteken (binnen de strings) spaties zet indien je het volgende deel niet 'tegen het vorige stringstuk' wilt plakken.
 
 ## Manier 2: String interpolation met $
-In de oude dagen van C# gebruiken we ``String.Format()`` (zie hieronder) om meerdere string(s) en variabelen samen te voegen tot een string. Nu kan dat met string interpolation waarbij we het $-teken gebruiken.
+In de oude dagen van C# gebruikten we ``String.Format()`` (zie hieronder) om meerdere strings en variabelen samen te voegen tot één string. Nu kan dat met string interpolation waarbij we het $-teken gebruiken.
 
 Door het $-teken **VOOR** de string te plaatsen geef je aan dat alle delen in de string die tussen accolades staan { } als code mogen beschouwd worden. Een voorbeeld maakt dit duidelijk:
 ```csharp
 string result= $"Ik ben {name} en ik ben {age} jaar oud";
 ```
-In dit geval zal dus de inhoud van de variabele ``name`` tussen de string op de plek waar nu ``{name}`` staat vervangen worden. Idem voor ``age``.
+In dit geval zal dus de inhoud van de variabele ``name`` tussen de string op de plek waar nu ``{name}`` staat geplaatst worden. Idem voor ``age``.
 Zoals je kan zien is dit veel meer leesbare code dan de eerste manier.
 
 ### Berekeningen doen bij string interpolatie
@@ -56,7 +56,7 @@ string result= String.Format("Ik ben {0} en ik ben {1} jaar oud",name,age);
 ```
 Het getal tussen de accolades geeft aan de hoeveelste parameter na de string hier in de plaats moet gezet worden (0= de eerste, 1= de tweede, enz).
 
-Volgende code een ander resultaat geven:
+Volgende code zal een ander resultaat geven:
 ```csharp
 string result= String.Format("Ik ben {1} en ik ben {1} jaar oud",name,age);
 ```

@@ -34,7 +34,7 @@ string username = Environment.UserName;
 long memory = Environment.WorkingSet; //zal ongeveer 10 Mb teruggeven.
 ```
 
-> **WorkingSet** geeft terug hoeveel geheugen het programma van windows toegewezen krijgt. Als je dus op 'run' klikt om je code te runnen dan zal dit programma geheugen krijgen en via WorkingSet kan het programma dus zelf zien hoeveel het krijgt. (wat een vreemde lange zin).
+> **WorkingSet** geeft terug hoeveel geheugen het programma van windows toegewezen krijgt. Als je dus op 'run' klikt om je code te runnen dan zal dit programma geheugen krijgen en via WorkingSet kan het programma dus zelf zien hoeveel het krijgt. (Wat een vreemde lange zin.)
 
 Zoals je ziet wordt het geheugen in bytes teruggegeven. Zorg ervoor dat het geheugen steeds in mega of gigabytes op het scherm wordt getoond.
 
@@ -89,7 +89,7 @@ Test dat je "formule/berekening" klopt om gebaseerd op 2 (of 3) ringen de weerst
 
 ## Deel 2
 
-Plaats het geheel in een mooie UNICODE/Asci-tabel
+Plaats het geheel in een mooie UNICODE/Ascii-tabel
 
 Hier enkele nuttige tekens:
 
@@ -113,7 +113,7 @@ of:
 Kan je afhankelijk van de ringwaarde het getal in de tabel in de juiste kleur zetten conform de weerstandskleuren (tip: je zal ``Write`` en ``if`` moeten leren gebruiken)
 
 # [PRO] Shell-starter
-Je kan de output van een ``Process.Start()`` programma naar je console scherm sturen. Dit vereist wat meer code. Volgende voorbeeld zal de output van het commando ``ipconfig /all`` op het scherm tonen:
+Je kan de output van een ``Process.Start()`` programma naar je console scherm sturen. Dit vereist wat meer code. Volgend voorbeeld zal de output van het commando ``ipconfig /all`` op het scherm tonen:
 
 ```csharp
 System.Diagnostics.Process process = new System.Diagnostics.Process();
@@ -136,7 +136,7 @@ Console.WriteLine("Klaar");
 
 > Let er op dat dit voorbeeld niet perfect werkt met een shell-commando dat even duurt. Denk bijvoorbeeld aan ``ping``. De output komt namelijk pas op het scherm als het commando is afgelopen. Test zelf maar eens!
 
-Maak enkele kleine C# programma's die bepaalde shell-commando's zullen uitvoeren , eventueel na input van de gebruiker.
+Maak enkele kleine C# programma's die bepaalde shell-commando's zullen uitvoeren, eventueel na input van de gebruiker.
 Enkele nuttige shell-commando's in de netwerk-sfeer zijn bijvoorbeeld:
 
 ```text
