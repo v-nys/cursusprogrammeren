@@ -36,17 +36,12 @@ Hou het voorlopig op de cursus.
 
 ## 
 
-> Volgende oefeningen zijn al iets stevigers.   
-> Iedere oefening eindigt met een \[PRO\] gedeelte.
-
-
-
 ## Oefening: H2-systeem-informatie
 
 ### Leerdoelen
 
 * gebruik van string interpolation
-* gebruik van environment class
+* gebruik van `Environment` class
 
 ### Functionele analyse
 
@@ -65,7 +60,7 @@ Uw computer heeft een 64-bit besturingssysteem: True
 De naam van uw pc is: LAPTOP
 Uw pc heeft 4 processorkernen.
 ikke is uw gebruikersnaam.
-Je gebruikt 12439552 bytes aan geheugen
+Je gebruikt 11 megabytes aan geheugen
 ```
 
 ### Technische hulp
@@ -80,80 +75,18 @@ bool is64bit = Environment.Is64BitOperatingSystem;
 string pcName = Environment.MachineName;
 int procCount = Environment.ProcessorCount;
 string userName = Environment.UserName;
-long memory = Environment.WorkingSet; //zal ongeveer 10 Mb teruggeven.
+long memory = Environment.WorkingSet; //zal ongeveer 11 MB teruggeven.
 ```
 
 > **WorkingSet** geeft terug hoeveel geheugen het programma van windows toegewezen krijgt. Als je dus op 'run' klikt om je code te runnen dan zal dit programma geheugen krijgen en via WorkingSet kan het programma dus zelf zien hoeveel het krijgt. \(wat een vreemde lange zin\).
 
 Zoals je ziet wordt het geheugen in bytes teruggegeven. Zorg ervoor dat het geheugen steeds in mega of gigabytes op het scherm wordt getoond.
 
-**Formateer de informatie met behulp van de $-notatie zodat deze deftig getoond worden en de gebruiker snel de belangrijke informatie over z'n systeem te zien krijgt.**
+**Formatteer de informatie met behulp van de $-notatie zodat deze deftig getoond worden en de gebruiker snel de belangrijke informatie over z'n systeem te zien krijgt.**
 
 #### Testscenario's
 
 * wat gebeurt er wanneer je het datatype string zou wijzigen in int?
-
-### Ondersteunend materiaal
-
-Hou het voorlopig op de cursus.
-
-## Oefening: H2-systeem-informatie-pro
-
-### Leerdoelen
-
-* gebruik van string interpolation
-* gebruik van system.io
-
-### Functionele analyse
-
-Informatie over de harde schijven van uw pc dienen te worden weergeven. 
-
-### Technische analyse
-
-#### UI
-
-console applicatie
-
-#### voorbeeldinteractie\(s\)
-
-```text
-Vrije ruimte op jouw c-schijf: 10803744768
-Totale ruimte van jouw c-schijf: 159671906304
-
-********************************************************************************
-Geef met nummer 1 t/m ... aan over welke harde schijf van jouw pc je info wenst: 1
-De vrije ruimte van C:\ is 108 Gb
-```
-
-### Technische hulp
-
-#### Programmaverloop
-
-Ook informatie over de harde schijven kan je verkrijgen \(in bits\). Dit vereist wel dat je bovenaan je programma volgende lijn bijschrijft: `using System.IO`.
-
-Vervolgens kan je in je programma schrijven:
-
-```csharp
-long cDriveInBytes = DriveInfo.GetDrives()[0].AvailableFreeSpace;  
-long totalSize = DriveInfo.GetDrives()[0].TotalSize;
-```
-
-De lijn met `using` is om aan te geven dat we iets uit de `System.IO` bibliotheek nodig hebben, namelijk `DriveInfo`. Schrijven we dat niet dan moeten we in onze code DriveInfo aanroepen met z'n volledige path: `System.IO.DriveInfo....`
-
-De 0 tussen rechte haakjes is de index van welke schijf je informatie wenst. 0 is de eerste harde schijf, 1 de tweede, enzovoort. \(Ter info: dit zijn arrays, zie later\)
-
-Vraag aan de gebruiker het nummer van de harde schijf waar meer informatie over moet getoond worden.
-
-Opgelet: sta toe dat de gebruiker 1 voor de eerste harde schijf mag gebruiken, 2 voor de tweede, enzovoort. Je zal dus in code nog manueel 1 moeten aftrekken van de invoer van de gebruiken. Bv:
-
-```csharp
-int input= Convert.ToInt32(Console.ReadLine()) - 1 ;
-long totalSize = DriveInfo.GetDrives()[input].TotalSize;
-```
-
-#### Testscenario's
-
-* wat gebeurt er wanneer je het datatype int zou wijzigen in string?
 
 ### Ondersteunend materiaal
 
@@ -214,7 +147,7 @@ Hou het voorlopig op de cursus.
 
 ### Leerdoelen
 
-* gebruik van UNICODE/Asci-tabel
+* gebruik van UNICODE
 
 ### Functionele analyse
 
@@ -224,7 +157,7 @@ Zie deel 1.
 
 #### Programmaverloop
 
-Zie deel 1 en plaats het geheel in een mooie UNICODE/Asci-tabel
+Zie deel 1 en plaats het geheel in een mooie UNICODE-tabel.
 
 Hier enkele nuttige tekens:
 
@@ -249,10 +182,6 @@ of:
 ### Ondersteunend materiaal
 
 Hou het voorlopig op de cursus.
-
-### \[PRO\] Deel 3
-
-Kan je afhankelijk van de ringwaarde het getal in de tabel in de juiste kleur zetten conform de weerstandskleuren \(tip: je zal `Write` en `if` moeten leren gebruiken\)
 
 ## Oefening: H2-shell-starter
 

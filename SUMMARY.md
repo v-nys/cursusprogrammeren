@@ -30,6 +30,7 @@
   * [Strings samenvoegen](semester-1-programming-principles/h2-tekst-in-code/6_stringinterpolation.md)
   * [Unicode tonen](semester-1-programming-principles/h2-tekst-in-code/7_unicode.md)
   * [Oefeningen](semester-1-programming-principles/h2-tekst-in-code/a_practica.md)
+  * [Uitbreidingsoefeningen](semester-1-programming-principles/h2-tekst-in-code/b_practica.md)
 * [H3: Werken met data](semester-1-programming-principles/h3-werken-met-data/README.md)
   * [Casting, conversie en parsing](semester-1-programming-principles/h3-werken-met-data/4_converteren_casting.md)
   * [Input verwerken en omzetten](semester-1-programming-principles/h3-werken-met-data/4b_inputconverten.md)
