@@ -93,7 +93,7 @@ Het is belangrijk dat je vlot kan werken met escape characters in string, daar w
 
 **De belangrijkste escape chars zijn: `` \t \n \" \'``**
 
-``\a`` mag je enkel gebruiken als je een koptelefoon op hebt ;) .
+``\a`` mag je enkel gebruiken als je een koptelefoon op hebt daar dit het escape character is om de computer een biep te laten doen (mogelijk doet dit niets bij jou, dit hangt van de je computerinstellingen af) .
 
 ## Optellen van char 
 Stel dat we volgende char-variabelen aanmaken. Bij string mogen we de +-operator gebruiken om 2 strings aan elkaar te plakken. Bij char mag dat niet!
