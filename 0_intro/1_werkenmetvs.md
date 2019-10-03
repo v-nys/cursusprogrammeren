@@ -21,10 +21,7 @@ In deze cursus zullen de voorbeelden steeds met de **Community** editie van VS g
 
 Het is belangrijk bij de installatie dat je minimaal 
 * de **.NET desktop development** workload selecteert als te installeren tools. ![VS Installeren](../assets/0_intro/vsinstall.png)
-* kies aan de rechterzijde dat ook ".NET Core 2.2 development tools" moet geïnstalleerd worden. (mogelijk is dit ondertussen al een hoger getal (bv 3.0)kies gewoon de hoogste .NET Core versie die je ziet!) Lukt dit niet, installeer dan .NET Core appart via [deze link](https://dotnet.microsoft.com/download) (**Kies de downloadlink naast Build apps**)
-  ![VS Installeren](../assets/0_intro/core.png)
-* bij "Individual components" dien je onder de sectie **code tools** zeker ook de **class designer** en **code map** te installeren (zie de screenshot hieronder welke extra tools ik ook aanbeveel).
- ![VS Installeren](../assets/0_intro/vsinstallextra.PNG)
+* kies verderop ook **.NET Core cross-platform development** ![VS Installeren](../assets/1_csharpbasics/coreinst.png)
 * Uiteraard ben je vrij om meerdere zaken te installeren.
 
 
