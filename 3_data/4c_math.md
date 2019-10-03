@@ -7,7 +7,7 @@ De Math bibliotheek bevat aardig wat handige methoden. Deze bibliotheek bevat me
 
 Stel dat je de derde macht van een variabele ``getal`` wenst te berekenen. ZONDER de Math-bibliotheek zou dat er zou uitzien:
 ```csharp
-double result= getal*getal*getal;  //SLECHTE MANIRE
+double result= getal*getal*getal;  //SLECHTE MANIER
 ```
 
 MET de bibliotheek kunnen we schrijven:
