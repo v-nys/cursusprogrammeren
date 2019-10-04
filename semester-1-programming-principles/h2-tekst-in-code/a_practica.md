@@ -223,7 +223,6 @@ hostname
 arp -a
 getmac (enkel onder Windows)
 nslookup google.com
-netstat
 ```
 
 #### Testscenario's
