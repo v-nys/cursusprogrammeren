@@ -34,8 +34,6 @@ Pas string interpolatie mbv `$` \(manier 2\) toe.
 
 Hou het voorlopig op de cursus.
 
-## 
-
 ## Oefening: H2-systeem-informatie
 
 ### Leerdoelen
@@ -117,7 +115,7 @@ console applicatie
 ```text
 Geef de waarde (uitgedrukt in een getal van 0 tot 9) van de eerste ring: 2
 Geef de waarde (uitgedrukt in een getal van 0 tot 9) van de tweede ring: 2
-Geef de waarde (uitgedrukt in een getal van 0 tot 9) van de derde ring (exponent): 2
+Geef de waarde (uitgedrukt in een getal van -2 tot 7) van de derde ring (exponent): 2
 Resultaat is 2200 Ohm, ofwel 22x100.
 ```
 
@@ -212,7 +210,7 @@ Console.WriteLine(err);
 Console.WriteLine("Klaar");
 ```
 
-Onder macOS heb je een ander commando nodig. Gebruik daar `"ifconfig"` voor het (uitvoerbaar) bestand en geef een lege string mee voor de argumenten.
+Onder macOS heb je een ander commando nodig. Gebruik daar `"ifconfig"` voor het \(uitvoerbaar\) bestand en geef een lege string mee voor de argumenten.
 
 ### Technische hulp
 
