@@ -129,7 +129,7 @@ Maak een programma dat de weerstandwaarde berekent gebaseerd op:
 * Ring 2: die de eenheden voorstel
 * Ring 3: die de exponent \(10 tot de macht\) voorstelt. \(tip:`Math.Pow(10,ring3`\)\)
 
-Gebruik twee variabelen van het type `int`. \(we veronderstellen dus dat de gebruiker de kleurcode heeft omgezet naar een getal en dat toewijst aan de variabele\)
+Gebruik drie variabelen van het type `int`. \(we veronderstellen dus dat de gebruiker de kleurcode heeft omgezet naar een getal en dat toewijst aan de variabele\)
 
 Test dat je "formule/berekening" klopt om gebaseerd op 2 \(of 3\) ringen de weerstandswaarde te berekenen.
 
