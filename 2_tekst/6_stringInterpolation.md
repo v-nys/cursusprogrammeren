@@ -19,7 +19,7 @@ Volgende 3 manieren tonen hoe je steeds tot voorgaande string zal komen.
 ## Manier 1: String samenvoegen met de +-operator
 Je kan string en variabelen eenvoudig 'bij elkaar' optellen. Ze worden dan achter elkaar geplakt als het ware. 
 ```csharp
-string result= "Ik ben "+ name + "en ik ben "+ age+ " jaar oud";
+string result= "Ik ben "+ name + " en ik ben "+ age+ " jaar oud";
 ```
 Let er op dat je tussen de aanhalingsteken (binnen de strings) spaties zet indien je het volgende deel niet 'tegen het vorige stringstuk' wilt plakken.
 
