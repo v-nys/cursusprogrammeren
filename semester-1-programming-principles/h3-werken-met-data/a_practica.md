@@ -2,15 +2,33 @@
 
 **Gebruik je kennis van debuggen om vanaf dit hoofstuk problemen op te lossen. Gebruik niet `Console.WriteLine()` om de waarde van een variabele te controleren at-runtime, maar gebruik daarentegen breakpoints!**
 
-## Supercomputer
+## Oefening: H3-geometric-fun
 
-> Vanaf dit punt zullen de meeste oefeningen "iets vragen aan de gebruiker". Hiermee wordt bedoeld dat je z'n input via ReadLine moet inlezen en indien nodig moet converteren naar het gewenste type.
+### Leerdoelen
 
-Vraag aan de gebruiker 3 kommagetallen. Bereken het gemiddelde van deze 3 getallen
+* gebruik van de `Math` namespace
 
-## Geometric-fun
+### Functionele analyse
 
-Vraag aan de gebruiker een hoek in graden. Zet deze om naar radialen \(rad= x° \* \(Pi/180°\)\) , gebruik `Math.PI` voor Pi. Gebruik vervolgens de verschillende geometrische functies in de `Math.` bibliotheek om de Sin, Cosinus en Tangens van de hoek aan de gebruiker te tonen \(deze functies werken in radialen, daarom moeten we deze eerst omzetten\)
+Je moet verschillende vaakgebruikte meetkundige berekeningen uitvoeren. Vraag aan de gebruiker een hoek in graden. Zet deze om naar radialen. Gebruik vervolgens de verschillende geometrische functies in de `Math` namespace om de sinus, cosinus en tangens van de hoek aan de gebruiker te tonen. Je moet eerst omzetten naar radialen omdat deze functies dat formaat verwachten. Toon alle resultaten tot twee cijfers na de komma.
+
+### Technische analyse
+Omzetting van graden naar radialen werkt als volgt, als `rad` een aantal radialen is en `deg` een aantal graden: \(rad=deg \* \(Π/180\)\). De verschillende wiskundige functies die je nodig hebt, vind je [hier](https://docs.microsoft.com/en-us/dotnet/api/system.math.sin?view=netcore-3.0) (zie "Methods" in de linkerbalk). Het getal Π vind je (bij benadering) onder `Math.Pi`. Zie het hoofdstuk rond werken met tekst om twee cijfers na de komma te tonen.
+
+#### UI
+
+console applicatie
+
+#### voorbeeldinteractie\(s\)
+
+```text
+Geef een hoek, uitgedrukt in graden.
+> 45
+45 graden is 0.79 radialen.
+De sinus is 0.71.
+De cosinus is 0.71.
+De tangens is 1.00.
+```
 
 ## BMI berekenaar
 

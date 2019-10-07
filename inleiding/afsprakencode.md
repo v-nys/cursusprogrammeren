@@ -18,7 +18,7 @@ Onderstaande richtlijnen zijn gebaseerd op [deze algemeen aanvaarde richtlijnen]
 | Constante | PascalCase | altijd | \[A-z\]+\[0-9\] | `public` |
 | Veld | camelCase | meervoud toegestaan | \[A-z\]+\[0-9\] | `private` |
 | Property | PascalCase | meervoud toegestaan | \[A-z\]+\[0-9\] | `public` |
-| Enum type | PascalCase | altijd | \[A-z\]+ | `public` |
+| Enum type | PascalCase | meervoud | \[A-z\]+ | `public` |
 | Waarde enum | PascalCase | altijd | \[A-z\]+ | niet van toepassing |
 
 * We kiezen namen in het Engels. Enkel tekst die aan de gebruiker getoond wordt, schrijven we in het Nederlands.
