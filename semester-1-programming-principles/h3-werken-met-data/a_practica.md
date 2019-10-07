@@ -30,8 +30,6 @@ De cosinus is 0.71.
 De tangens is 1.00.
 ```
 
-
-
 ## H3-BMI-berekenaar
 
 ### Leerdoelen
@@ -65,17 +63,40 @@ Je BMI bedraagt 21.78.
 
 
 
-## Binaire god
+## H3-binaire-god
 
-Vraag een getal aan de gebruiker \(als int\). Gebruik enkel bitwise operators om
+### Leerdoelen
+* werken met binaire getallen
+* werken met conversiefuncties
 
-* het getal met 1 te verhogen
-* het getal te verdubelen
-* het getal van teken te veranderen
+### Functionele analyse
+Vraag een getal aan de gebruiker \(als int\). Gebruik enkel bitwise operators om na elkaar:
 
-Doe hetzelfde maar vraag nu aan de gebruiker een string met de binaire voorstelling van een getal \(bv `"0011"`\) en zit dit eerst om naar een int. Toon telkens het resultaat zowel als int en als een binaire string voorstelling.
+* de rest na deling door 2 weg te werken, d.w.z. oneven getallen verminderen met 1 en even getallen zo laten
+* het getal te verachtvoudigen
 
-## Op-de-poef
+Vraag vervolgens een string met de binaire voorstelling van een getal \(bv `"0011"`\) en zit dit eerst om naar een int. Pas hier dezelfde operaties op toe en toon het resultaat op het scherm in een binaire notatie.
+
+### Technische analyse
+Maak je geen zorgen om erg grote inputs of negatieve getallen. Denk eerst na over hoe dit op papier werkt voor een paar binaire getallen.
+Tip om een binaire string in te lezen: zoek [hier](https://docs.microsoft.com/en-us/dotnet/api/system.convert.toint32?view=netcore-3.0) naar een omzettingsmethode. Zoek naar de woorden "in a specified base". Die "base" is 2, omdat je 2 cijfers hebt: 0 en 1. Om hem uit te schrijven zoek je ook [hier](https://docs.microsoft.com/en-us/dotnet/api/system.convert.tostring?view=netcore-3.0) naar "in a specified base".
+
+#### UI
+console applicatie
+
+#### voorbeeldinteractie\(s\)
+```text
+Geef een getal.
+> 7
+Het getal is nu 6.
+Het getal is nu 48.
+Geef een binaire string.
+> 1011
+Het getal is nu 1010.
+Het getal is nu 1010000.
+```
+
+## H3-op-de-poef
 
 Een vaste klant in je café besteld altijd "op-de-poef". Dat wil zeggen dat hij niet betaald en dat z'n rekeningen worden neergeschreven. Ooit zal de klant dan gevraagd worden de hele som te betalen. Schrijf een programma 5 dat keer na elkaar aan de barman vraagt om een bedrag in te voeren. Het ingevoerde bedrag wordt opgeteld bij wat er reeds op de rekening staat. Na 5 keer wordt de totale som getoond alsook hoeveel weken het duurt indien de klant wekelijks 10 euro afbetaald.
 
