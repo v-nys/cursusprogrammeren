@@ -31,6 +31,7 @@
   * [Strings samenvoegen](2_tekst/6_stringInterpolation.md)
   * [Unicode tonen](2_tekst/7_unicode.md) 
   * [_Oefeningen](2_tekst/a_practica.md)
+  * [_Slides_](2_tekst/slides.md)
   
 * H3: Werken met data
   * [Casting, conversie en parsing](3_data/4_converteren_casting.md)
@@ -40,7 +41,7 @@
   * [Random](3_data/random.md)
   * [Debuggen](3_data/5_debuggen.md)
   * [_Oefeningen](3_data/A_Practica.md)
-
+  * [_Slides_](3_data/slides.md)
 * H4: Beslissingen
   * [Beslissingen intro](4_beslissingen/0_beslissingen_intro.md)
   * [Booleanse logica en operators](4_beslissingen/1_logic_and_relationsoperator.md)
