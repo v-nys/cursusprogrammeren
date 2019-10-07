@@ -1,6 +1,6 @@
 
 # Berekeningen
-Een groot deel van je leven als ontwikkelaar zal bestaan uit het bewerken van variabelen in code. Meestal zullen die bewerkingen voorafgaan van berekeningen. Good ol' wiskunde , met andere woorden. In dit hoofdstuk bespreken we de 'tools' die je daarin kunnen helpen, namelijk:
+Een groot deel van je leven als ontwikkelaar zal bestaan uit het bewerken van variabelen in code. Meestal zullen die bewerkingen voorafgaan van berekeningen. Good ol' wiskunde, met andere woorden. In dit hoofdstuk bespreken we de 'tools' die je daarin kunnen helpen, namelijk:
 
 * De Math-bibliotheek 
 * Leren debuggen (volgende hoofdstuk)
@@ -8,7 +8,7 @@ Een groot deel van je leven als ontwikkelaar zal bestaan uit het bewerken van va
 
 
 ## De Math bibliotheek
-De Math bibliotheek bevat aardig wat handige methoden. Deze bibliotheek bevat methoden voor een groot aantal typische wiskundige methoden zowel Sinus, Cosinus, Vierkantswortel, Macht, Afronden, etc. en kan je dus helpen om leesbaardere expressies te schrijven.
+De Math bibliotheek bevat aardig wat handige methoden. Deze bibliotheek bevat methoden voor een groot aantal typische wiskundige methoden (Sinus, Cosinus, Vierkantswortel, Macht, Afronden, etc.) en kan je dus helpen om leesbaardere expressies te schrijven.
 
 Stel dat je de derde macht van een variabele ``getal`` wenst te berekenen. ZONDER de Math-bibliotheek zou dat er zou uitzien:
 ```csharp
@@ -35,7 +35,7 @@ De meeste methoden zijn zeer makkelijk in gebruik en werken op dezelfde manier. 
 ```csharp
 double sineHoekA= Math.Sin(345); //IN RADIALEN!
 double DerdeMachtVan20= Math.Pow(20, 3);
-double complex= 3+ DerdeMachtVan20 * Math.Round(sineHoekA)
+double complex= 3+ DerdeMachtVan20 * Math.Round(sineHoekA);
 ```
 
 Twijfel je over de werking van een methode, gebruik dan de help als volgt:
@@ -45,7 +45,7 @@ Twijfel je over de werking van een methode, gebruik dan de help als volgt:
 4. Je krijgt nu de help-files te zien van deze methode op MDSDN
 
 ### PI 
-Ook het getal Pi , 3.14159265358979323846, is beschikbaar in de Math-library. Het witte icoontje voor PI bij Intellisense toont aan dat het hier om en ‘field’ gaat; een eenvoudige variabele met een specifieke waarde. In dit geval gaat het zelfs om een const field, met de waarde van Pi van het type double.
+Ook het getal Pi , 3.14159265358979323846, is beschikbaar in de Math-library. Het witte icoontje voor PI bij Intellisense toont aan dat het hier om een ‘field’ gaat; een eenvoudige variabele met een specifieke waarde. In dit geval gaat het zelfs om een const field, met de waarde van Pi van het type double.
 
 ```csharp
 public const double PI;
