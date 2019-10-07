@@ -22,7 +22,7 @@ Console.WriteLine(getal3);
 ```
 
 # Next mogelijkheden
-Je kan de ``Next`` methode ook 2 parameters meegeven, namelijk de grenzen waarbinnen het getal moet gegenereerd worden. De tweede parameter is exclusief dit getal zelf. Wil je dus een getal tot en met 10 dan schrijf je 11 , niet 10.
+Je kan de ``Next`` methode ook 2 parameters meegeven, namelijk de grenzen waarbinnen het getal moet gegenereerd worden. De tweede parameter is exclusief dit getal zelf. Wil je dus een getal tot en met 10 dan schrijf je 11, niet 10.
 
 Enkele voorbeelden:
 ```csharp
