@@ -1,3 +1,9 @@
+# Enkele opmerkingen vooraf
+
+1. Bekijk volgende kennisclip waarin wordt uitgelegd hoe je meerdere projecten in 1 solution in VS kunt plaatsen:[Kennisclip link](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=f2c322cd-7607-4624-b0cd-a969006f8b2a).
+**Probeer vanaf nu per hoofdstuk 1 solution aan te maken met daarin meerdere projecten (1 project per oefening)**
+2. Sommige oefeningen zullen soms [PRO] in de titel hebben. Dit zijn pittigere oefeningen. Probeer ze zeker, maar laat je niet ontmoedigen als ze niet direct lukken. Het kan erg nuttig zijn om enkele weken later nog eens terug naar oudere hoofdstukken te gaan zien of er nog PRO-oefeningen zijn die je ondertussen wel mogelijks kan oplossen. [PRO²] oefeningen zijn nog iets pittiger (of bevatten zaken die niet bij de leerstof horen).
+
 # ASCII Art
 
 Genereer je naam in ASCII Art met een van de vele online generators. Plaats deze aan de start van een van je bestaande programma's zodat nu je naam wordt getoond wanneer het programma start, gevolgd door de rest.
@@ -7,6 +13,10 @@ Genereer je naam in ASCII Art met een van de vele online generators. Plaats deze
 Kies 2 oefeningen uit het vorige hoofdstuk waarin je output op het scherm moest geven. Pas string interpolatie m.b.v. ``$`` (manier 2) toe in deze 2 oefeningen.
 
 > Volgende 2 oefeningen zijn al iets stevigers. Iedere oefening eindigt met een [PRO] gedeelte dat je best enkel doet als je een uitdaging wenst.
+
+# ASCII Art & Colors
+
+Gebruik je kennis van het verschil tussen `Console.Write`  en `Console.WriteLine`, alsook de werking van kleuren in console-applicaties, om je ASCII-art naam van de eerdere oefening nu van kleur te voorzien. Zorg ervoor dat minstens 1 letter in een andere kleur is.
 
 # Systeem informatie
 
@@ -30,8 +40,6 @@ Zoals je ziet wordt het geheugen in bytes teruggegeven. Zorg ervoor dat het gehe
 
 **Formateer de informatie met behulp van de $-notatie  zodat deze  deftig getoond worden en de gebruiker snel de belangrijke informatie over z'n systeem te zien krijgt.**
 
-> Vanaf nu zal geregeld oefeningen tegenkomen waar PRO voor staat. Dit zijn iets pittigere oefeningen die je enkel vlot zal kunnen als je de standaard oefeningen hebt gemaakt. Ik raad iedereen echter aan ze te (proberen) maken.
-> 
 ## [PRO] Deel 2
 
 Ook informatie over de harde schijven kan je verkrijgen (in bits). 

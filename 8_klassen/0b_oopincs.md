@@ -42,7 +42,7 @@ Je kan "eender waar" een klasse aanmaken, maar het is een goede gewoonte om per 
 ## Objecten aanmaken
 
 Je kan nu objecten aanmaken van de klasse die je hebt gedefinieerd.
-Je doet door eerst een variabele te definieren en vervolgens een object te **instantiëren** met behulp van het ``new`` keyword:
+Je doet dit door eerst een variabele te definiëren en vervolgens een object te **instantiëren** met behulp van het ``new`` keyword:
 
 ```csharp
 Auto mijnEerste = new Auto();

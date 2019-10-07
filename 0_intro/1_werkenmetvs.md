@@ -1,6 +1,6 @@
 # Kennismaken met C# en Visual Studio
 
-Visual Studio (VS) is een pakket dat een groot deel tools samenvoegt (debuger, code editor, compiler, etc) zodat je niet tientallen paketten moet gebruiken om software te schrijven.
+Visual Studio (VS) is een pakket dat een groot deel tools samenvoegt (debugger, code editor, compiler, etc) zodat je niet tientallen paketten moet gebruiken om software te schrijven.
 
 ![VS2019 Logo](../assets/0_intro/vslogo.png)
 
@@ -17,14 +17,11 @@ Het hart van Visual Studio bestaat uit de **compiler** die we hiervoor besproken
 
 # Visual Studio Installeren
 
-In deze cursus zullen de voorbeelden steeds met de **Enterprise** editie van VS gemaakt zijn. Je kan deze als AP-student gratis downloaden en installeren  via [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/).
+In deze cursus zullen de voorbeelden steeds met de **Community** editie van VS gemaakt zijn. Je kan deze als AP-student gratis downloaden en installeren  via [visualstudio.microsoft.com/vs](https://visualstudio.microsoft.com/vs/).
 
 Het is belangrijk bij de installatie dat je minimaal 
 * de **.NET desktop development** workload selecteert als te installeren tools. ![VS Installeren](../assets/0_intro/vsinstall.png)
-* kies aan de rechterzijde dat ook ".NET Core 2.2 development tools" moet geïnstalleerd worden.
-  ![VS Installeren](../assets/0_intro/core.png)
-* bij "Individual components" dien je onder de sectie **code tools** zeker ook de **class designer** en **code map** te installeren (zie de screenshot hieronder welke extra tools ik ook aanbeveel).
- ![VS Installeren](../assets/0_intro/vsinstallextra.PNG)
+* kies verderop ook **.NET Core cross-platform development** ![VS Installeren](../assets/1_csharpbasics/coreinst.png)
 * Uiteraard ben je vrij om meerdere zaken te installeren.
 
 
@@ -59,14 +56,6 @@ Geef je project de naam "MyFirstProject" en kies een goede locatie (ik raad je a
 
 VS heeft nu reeds een aantal bestanden aangemaakt die je nodig hebt om een ‘Console Applicatie’ te maken. 
 Een console applicatie is een programma dat alle uitvoer naar een zogenaamde ‘console’ stuurt, een shell. M.a.w., je kan enkel tekst (Unicode) als uitvoer genereren en dus geen multimedia elementen zoals afbeeldingen, geluid, etc.
-
-# Registreren (eenmalig)
-
-**Volgende stap dien je maar 1 maal te doen indien je VS ergens nieuw hebt geïnstalleerd: het registeren van de installatie.**
-
-![VS Project maken](../assets/0_intro/register.png)
-
-Kies 'sign in' en login met je AP-studenten account (je sxxxxx@student.Ap.be account). Als alles goed gaat is nu je versie geregistreerd.
 
 # IDE Layout
 
@@ -105,9 +94,10 @@ Als alles goed gaat krijg je nu "Hello world" te zien en wat extra informatie om
 
 Veel doet je programma nog niet natuurlijk, dus sluit dit venster maar terug af door een willekeurige toets in te drukken.
 
-# TODO
-> In [volgende video](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=1889dae4-d6cf-4ca3-b959-a91100ceeca9) overloop ik de belangrijkste zaken van dit hoofdstuk.
-
 ## Is dit alles?
 
 Nee hoor. Visual Studio is lekker groot. Was bovenstaande uitleg toch niet zo verhelderend als ik hoopte. Bekijk dan volgende korte, maar zeer duidelijke uitleg over Visual Studio en de verschillende onderdelen (klik zeker op de chapters in het linkermenu om verder te lezen): [hier](https://tutorials.visualstudio.com/vs-get-started/intro).
+
+# Liever VS Enterprise?
+
+Als AP-student heb je ook recht op een Visual Studio Enterprise licentie. Wil je deze gebruiken, download deze dan via [https://visualstudio.microsoft.com/vs/](https://visualstudio.microsoft.com/vs/) en zorg ervoor dat je een key aanvraagt via de tab 'Software' op [Azure for education](https://azureforeducation.microsoft.com/devtools). Je kan deze sleutel vervolgens via Help->Register in VS invoeren.

@@ -375,10 +375,12 @@ public class Person
 Beide klassen hebben exact dezelfde functionaliteit, echter de klasse aan de rechterzijde is aanzienlijk eenvoudig om te lezen en te typen. 
 
 ## Beginwaarde van autoprops
+
 Je mag autoproperties beginwaarden geven door de waarde achter de property te geven, als volgt:
+
 ```csharp
 public int Age {get;set;} = 45;
-````
+```
 
 ## Altijd auto-properties? 
 Merk op dat je dit enkel kan doen indien er geen extra logica in de property aanwezig is.

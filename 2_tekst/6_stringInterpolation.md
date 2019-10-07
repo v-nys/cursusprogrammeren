@@ -19,7 +19,7 @@ Volgende 3 manieren tonen hoe je steeds tot voorgaande string zal komen.
 ## Manier 1: String samenvoegen met de +-operator
 Je kan string en variabelen eenvoudig 'bij elkaar' optellen. Ze worden dan achter elkaar geplakt als het ware. 
 ```csharp
-string result= "Ik ben "+ name + "en ik ben "+ age+ " jaar oud";
+string result= "Ik ben "+ name + " en ik ben "+ age+ " jaar oud";
 ```
 Let er op dat je tussen de aanhalingsteken (binnen de strings) spaties zet indien je het volgende deel niet 'tegen het vorige stringstuk' wilt plakken.
 
@@ -66,8 +66,8 @@ Namelijk:  ``Ik ben 13 en ik ben 13 jaar oud``
 Wens je meer informatie over ``string.Format``, kijk dan [hier](https://codevan1001nacht.wordpress.com/2013/11/05/placeholders-aka-string-formatters/).
 
 
-# Mooier formateren
-Zowel bij manier 2 en 3 kan je ook bepalen hoe te tonen variabelen en expressies juist moeten geoutput worden. Je geeft dit aan door na de expressie, binnen de accolades, een dubbelpunt te plaatsen gevolgd door de manier waarop moet geformateerd worden:
+# Mooier formatteren
+Zowel bij manier 2 en 3 kan je ook bepalen hoe te tonen variabelen en expressies juist moeten geoutput worden. Je geeft dit aan door na de expressie, binnen de accolades, een dubbelpunt te plaatsen gevolgd door de manier waarop moet geformatteerd worden:
 
 Wil je bijvoorbeeld een kommagetal tonen met maar 2 cijfers na de komma dan schrijf je :
 
@@ -76,7 +76,7 @@ double number = 12.345;
 Console.WriteLine($"{number:F2}");
 ```
 Nog enkele nuttige vormen:
-* D5: geheel getal bestaande uit 5 cijfers (``123`` wordt ``00123``)
+* D5: geheel getal bestaande uit 5 cijfers (``123`` wordt ``00123``) (werkt enkel op gehele getallen!)
 * E2: wetenschappelijke notatie met 2 cijfers precisie (``12000000`` wordt ``1,20E+007``)
 * C: geldbedrag (``12,34`` wordt € 12,34: teken van valuta afhankelijk van instellingen pc)
   

@@ -1,10 +1,7 @@
 
 # Berekeningen
-Een groot deel van je leven als ontwikkelaar zal bestaan uit het bewerken van variabelen in code. Meestal zullen die bewerkingen voorafgaan van berekeningen. Good ol' wiskunde, met andere woorden. In dit hoofdstuk bespreken we de 'tools' die je daarin kunnen helpen, namelijk:
 
-* De Math-bibliotheek 
-* Leren debuggen (volgende hoofdstuk)
-* Lopende sommen
+Een groot deel van je leven als ontwikkelaar zal bestaan uit het bewerken van variabelen in code. Meestal zullen die bewerkingen voorafgaan van berekeningen. De ``Math`` bibliotheek zal ons hier bij kunnen helpen.
 
 
 ## De Math bibliotheek
@@ -12,7 +9,7 @@ De Math bibliotheek bevat aardig wat handige methoden. Deze bibliotheek bevat me
 
 Stel dat je de derde macht van een variabele ``getal`` wenst te berekenen. ZONDER de Math-bibliotheek zou dat er zou uitzien:
 ```csharp
-double result= getal*getal*getal;
+double result= getal*getal*getal;  //SLECHTE MANIER
 ```
 
 MET de bibliotheek kunnen we schrijven:
@@ -28,9 +25,10 @@ Als je in Visual Studio ``Math`` schrijft, gevolgd door een punt ``.`` krijg je 
 ![](../assets/4_methoden/methoden3.png)
 
 
-Een doosje voor een naam wil zeggen dat het om een **Methode** gaat (zoals Console.ReadLine()). Een vierkantje met twee streepjes in zijn constanten (zoals Pi en E).
+Een doosje voor een naam wil zeggen dat het om een **Methode** gaat (zoals ``Console.ReadLine()``). Een vierkantje met twee streepjes in zijn constanten (zoals ``Pi`` en ``E``).
 
 ### Methoden gebruiken
+
 De meeste methoden zijn zeer makkelijk in gebruik en werken op dezelfde manier. Meestal moet je 1 of meerdere "argumenten" tussen de haken meegeven en het resultaat moet je altijd in een nieuwe variabele opvangen. Enkele voorbeelden:
 ```csharp
 double sineHoekA= Math.Sin(345); //IN RADIALEN!
@@ -39,13 +37,15 @@ double complex= 3+ DerdeMachtVan20 * Math.Round(sineHoekA);
 ```
 
 Twijfel je over de werking van een methode, gebruik dan de help als volgt:
-1. schrijf de Methode zonder argumenten. Bijvoorbeeld ``Math.Pow()`` (je mag de rode error negeren) ![](../assets/4_methoden/math.png)
-2. plaats je cursor op ``Pow``
-3. druk op ``F1`` op je toetsenbord.
+
+1. Schrijf de Methode zonder argumenten. Bijvoorbeeld ``Math.Pow()`` (je mag de rode error negeren) ![](../assets/4_methoden/math.png)
+2. Plaats je cursor op ``Pow``.
+3. Druk op ``F1`` op je toetsenbord.
 4. Je krijgt nu de help-files te zien van deze methode op MDSDN
 
-### PI 
-Ook het getal Pi , 3.14159265358979323846, is beschikbaar in de Math-library. Het witte icoontje voor PI bij Intellisense toont aan dat het hier om een ‘field’ gaat; een eenvoudige variabele met een specifieke waarde. In dit geval gaat het zelfs om een const field, met de waarde van Pi van het type double.
+### PI
+
+Ook het getal Pi  (``3.141...``) is beschikbaar in de Math-library. Het witte icoontje voor PI bij Intellisense toont aan dat het hier om en ‘field’ gaat; een eenvoudige variabele met een specifieke waarde. In dit geval gaat het zelfs om een const field, met de waarde van Pi van het type double.
 
 ```csharp
 public const double PI;

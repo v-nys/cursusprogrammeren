@@ -29,9 +29,10 @@ Voorgaande code veronderstelt dat de gebruiker géén fouten invoert. De convers
 
 De komende hoofdstukken **moet**  je er altijd van uitgaan dat de gebruiker foutloze input geeft.
 
+**Opgelet**: de invoer van kommagetallen door de gebruiker is afhankelijk van de landinstellingen van je besturingssysteem. Staat deze in Belgisch/Nederlands dan moet je kommagetallen met een KOMMA invoeren (dus ``9,81``) , staat deze in het Engels dan moet je een PUNT gebruiken (``9.81``)
 
-> **Opgelet**: de invoer van kommagetallen door de gebruiker is afhankelijk van de landinstellingen van je besturingssysteem. Staat deze in Belgisch/Nederlands dan moet je kommagetallen met een KOMMA invoeren (dus ``9,81``), staat deze in het Engels dan moet je een PUNT gebruiken (``9.81``).
-> **Opgelet 2**: In je C# code moet je doubles ALTIJD met een punt schrijven. Dit is onafhankelijk van je taalinstellingen.
+**Opgelet 2**: In je C# code moet je doubles ALTIJD met een punt schrijven. Dit is onafhankelijk van je taalinstellingen.
+
 
 # Fouten in input
 En wat als je toch foute invoer wilt opvangen? Dan is ``TryParse`` je vriend. We zullen dit bespreken wanneer we aan Methoden komen. Ongeduldig? [Lees hier alles over TryParse](https://www.dotnetperls.com/parse).

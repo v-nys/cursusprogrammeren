@@ -68,21 +68,14 @@ char apostrof= '\'';
 ```
 Er zijn echter nog een heleboel andere escape characters die je geregeld zal moeten gebruiken, waaronder `` \n``  om een nieuwe lijn aan te geven en \t om een tab in de tekst te plaatsen.
 
-Alle toegelaten escape characters in C# ([bron](https://blogs.msdn.microsoft.com/csharpfaq/2004/03/12/what-character-escape-sequences-are-available/)):
+Er zijn verschillende escape characters in C# toegelaten, we lijsten hier de belangrijkste op (Voor een totaal overzicht kijk [hier](https://blogs.msdn.microsoft.com/csharpfaq/2004/03/12/what-character-escape-sequences-are-available/):
 * `\'` – single quote, needed for character literals
 * `\"` – double quote, needed for string literals
 * `\\` – backslash
-* `\0` – Unicode character 0
-* `\a` – Alert (character 7)
-* `\b` – Backspace (character 8)
-* `\f` – Form feed (character 12)
-* `\n` – New line (character 10)
-* `\r` – Carriage return (character 13)
-* `\t` – Horizontal tab (character 9)
-* `\v` – Vertical quote (character 11)
-v\uxxxx` – Unicode escape sequence for character with hex value xxxx
-* `\xn[n][n][n]` – Unicode escape sequence for character with hex value nnnn (variable length version of \uxxxx)
-* `\Uxxxxxxxx` – Unicode escape sequence for character with hex value xxxxxxxx (for generating surrogates)
+* `\n` – New line (zogenaamde 'enter')
+* `\t` – Horizontal tab 
+* `v\uxxxx` – Unicode escape sequence for character with hex value xxxx
+
 
 Je kan in grote Unicode-tabellen opzoeken wat de unicode (voorstelling van het teken in een geheel getal) van eender welk teken is. Je kan deze code dan gebruiken om eender welk teken, zelfs die die niet op je toetsenbord staan, toch te gebruiken. Je kan de unicode opzoeken op [https://unicode-table.com/en/](https://unicode-table.com/en/).
 
@@ -100,7 +93,7 @@ Het is belangrijk dat je vlot kan werken met escape characters in string, daar w
 
 **De belangrijkste escape chars zijn: `` \t \n \" \'``**
 
-``\a`` mag je enkel gebruiken als je een koptelefoon op hebt ;) .
+``\a`` mag je enkel gebruiken als je een koptelefoon op hebt daar dit het escape character is om de computer een biep te laten doen (mogelijk doet dit niets bij jou, dit hangt van de je computerinstellingen af) .
 
 ## Optellen van char 
 Stel dat we volgende char-variabelen aanmaken. Bij string mogen we de +-operator gebruiken om 2 strings aan elkaar te plakken. Bij char mag dat niet!
