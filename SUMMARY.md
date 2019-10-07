@@ -23,7 +23,6 @@
   * [Datatypes](1_csharpbasics/1_datatypes.md)
   * [Variabelen](1_csharpbasics/1b_variabelen.md)
   * [Expressies en operators](1_csharpbasics/2_expressies.md)
-  * ---------
   * [Oefeningen](1_csharpbasics/A_practica.md)
   * [Slides](1_csharpbasics/slides.md)
   
