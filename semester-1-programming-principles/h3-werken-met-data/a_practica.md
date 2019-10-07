@@ -13,7 +13,7 @@
 Je moet verschillende vaakgebruikte meetkundige berekeningen uitvoeren. Vraag aan de gebruiker een hoek in graden. Zet deze om naar radialen. Gebruik vervolgens de verschillende geometrische functies in de `Math` namespace om de sinus, cosinus en tangens van de hoek aan de gebruiker te tonen. Je moet eerst omzetten naar radialen omdat deze functies dat formaat verwachten. Toon alle resultaten tot twee cijfers na de komma.
 
 ### Technische analyse
-Omzetting van graden naar radialen werkt als volgt, als `rad` een aantal radialen is en `deg` een aantal graden: \(rad=deg \* \(Π/180\)\). De verschillende wiskundige functies die je nodig hebt, vind je [hier](https://docs.microsoft.com/en-us/dotnet/api/system.math.sin?view=netcore-3.0) (zie "Methods" in de linkerbalk). Het getal Π vind je (bij benadering) onder `Math.Pi`. Zie het hoofdstuk rond werken met tekst om twee cijfers na de komma te tonen.
+Omzetting van graden naar radialen werkt als volgt, als `rad` een aantal radialen is en `deg` een aantal graden: rad=deg \* \(Π/180\). De verschillende wiskundige functies die je nodig hebt, vind je [hier](https://docs.microsoft.com/en-us/dotnet/api/system.math.sin?view=netcore-3.0) (zie "Methods" in de linkerbalk). Het getal Π vind je (bij benadering) onder `Math.PI`. Zie het hoofdstuk rond werken met tekst om twee cijfers na de komma te tonen.
 
 #### UI
 
@@ -30,13 +30,40 @@ De cosinus is 0.71.
 De tangens is 1.00.
 ```
 
-## BMI berekenaar
 
-Maak een programma dat aan de gebruiker z'n lengte en gewicht vraagt en vervolgens z'n berekende BMI \(Body Mass Index\) toont. Gebruik `Math.Round` om de uitkomst tot maximum 2 cijfers na de komma te tonen.
 
-Reken na met je rekenmachine of je uitkomst wel degelijk klopt!
+## H3-BMI-berekenaar
+
+### Leerdoelen
+
+* gebruik van de `Math` namespace
+* je programma's delen met anderen
+* kommagetallen parsen
+* stringinterpolatie en formattering
+
+### Functionele analyse
+Maak een programma dat aan de gebruiker z'n lengte en gewicht vraagt en vervolgens z'n berekende BMI \(Body Mass Index\) toont.
+
+### Technische analyse
+De formule voor de BMI is BMI = kg / m², waarbij kg het de massa van een persoon voorstelt en m zijn lengte in meter (dus typisch als kommagetal tussen 1 en 2). Je vindt een functie om getallen af te ronden in de `Math` namespace. Je kan hieraan als eerste waarde aan getal meegeven dat je wil afronden en als tweede een aantal cijfers na de komma.
+
+#### UI
+
+console applicatie
+
+#### voorbeeldinteractie\(s\)
+```text
+Hoe veel weeg je in kg?
+> 69.0
+Hoe groot ben je in m?
+> 1.78
+Je BMI bedraagt 21.78.
+```
 
 > Bekijk de volgende [kennisclip](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=6381a023-ae87-4662-91ed-a969006d3d9b) en geef je uitvoerbaar bestand van het programma aan een klasgenoot. Kijk of hij het kan uitvoeren.
+
+
+
 
 ## Binaire god
 
