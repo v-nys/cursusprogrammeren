@@ -60,9 +60,6 @@ Je BMI bedraagt 21.78.
 
 > Bekijk de volgende [kennisclip](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=6381a023-ae87-4662-91ed-a969006d3d9b) en geef je uitvoerbaar bestand van het programma aan een klasgenoot. Kijk of hij het kan uitvoeren.
 
-
-
-
 ## H3-binaire-god
 
 ### Leerdoelen
@@ -98,10 +95,20 @@ Het getal is nu 1010000.
 
 ## H3-op-de-poef
 
-Een vaste klant in je café besteld altijd "op-de-poef". Dat wil zeggen dat hij niet betaald en dat z'n rekeningen worden neergeschreven. Ooit zal de klant dan gevraagd worden de hele som te betalen. Schrijf een programma 5 dat keer na elkaar aan de barman vraagt om een bedrag in te voeren. Het ingevoerde bedrag wordt opgeteld bij wat er reeds op de rekening staat. Na 5 keer wordt de totale som getoond alsook hoeveel weken het duurt indien de klant wekelijks 10 euro afbetaald.
+### Leerdoelen
+* tussenresultaten bijhouden
+* werken met de `Math` namespace
 
-Voorbeeldwerking:
+### Functionele analyse
+Een vaste klant in je café bestelt altijd "op de poef". Dat wil zeggen dat hij niet betaalt en dat z'n rekeningen worden neergeschreven. Ooit zal de klant dan gevraagd worden de hele som te betalen. Schrijf een programma dat 5 keer na elkaar aan de barman vraagt om een bedrag in te voeren. Het ingevoerde bedrag wordt opgeteld bij wat er reeds op de rekening staat. Na 5 keer wordt de totale som getoond alsook hoeveel weken het duurt indien de klant wekelijks 10 euro afbetaalt.
 
+### Technische analyse
+Gebruik een variabele om de totale som van de rekeningen bij te houden. De bedragen zullen "vrij klein" zijn, dus nooit meer dan €100. Het zijn ook gehele getallen. Je hoeft geen interest aan te rekenen.
+
+#### UI
+console applicatie
+
+#### voorbeeldinteractie\(s\)
 ```text
 Voer bedrag in?
 12
@@ -119,7 +126,8 @@ Voer bedrag in?
 2
 De poef staat op 39 euro
 *************************
-Het totaal van  de poef is 39 en zal 4 weken duren om volledig afbetaald te worden
+Het totaal van  de poef is 39 euro.
+Dit zal 4 afbetalingen vragen.
 ```
 
 ## Feestkassa
