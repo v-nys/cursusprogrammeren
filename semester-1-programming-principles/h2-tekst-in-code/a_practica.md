@@ -34,8 +34,6 @@ Pas string interpolatie mbv `$` \(manier 2\) toe.
 
 Hou het voorlopig op de cursus.
 
-## 
-
 ## Oefening: H2-systeem-informatie
 
 ### Leerdoelen
@@ -117,7 +115,7 @@ console applicatie
 ```text
 Geef de waarde (uitgedrukt in een getal van 0 tot 9) van de eerste ring: 2
 Geef de waarde (uitgedrukt in een getal van 0 tot 9) van de tweede ring: 2
-Geef de waarde (uitgedrukt in een getal van 0 tot 9) van de derde ring (exponent): 2
+Geef de waarde (uitgedrukt in een getal van -2 tot 7) van de derde ring (exponent): 2
 Resultaat is 2200 Ohm, ofwel 22x100.
 ```
 
@@ -131,7 +129,7 @@ Maak een programma dat de weerstandwaarde berekent gebaseerd op:
 * Ring 2: die de eenheden voorstel
 * Ring 3: die de exponent \(10 tot de macht\) voorstelt. \(tip:`Math.Pow(10,ring3`\)\)
 
-Gebruik twee variabelen van het type `int`. \(we veronderstellen dus dat de gebruiker de kleurcode heeft omgezet naar een getal en dat toewijst aan de variabele\)
+Gebruik drie variabelen van het type `int`. \(we veronderstellen dus dat de gebruiker de kleurcode heeft omgezet naar een getal en dat toewijst aan de variabele\)
 
 Test dat je "formule/berekening" klopt om gebaseerd op 2 \(of 3\) ringen de weerstandswaarde te berekenen.
 
@@ -212,7 +210,7 @@ Console.WriteLine(err);
 Console.WriteLine("Klaar");
 ```
 
-Onder macOS heb je een ander commando nodig. Gebruik daar `"ifconfig"` voor het (uitvoerbaar) bestand en geef een lege string mee voor de argumenten.
+Onder macOS heb je een ander commando nodig. Gebruik daar `"ifconfig"` voor het \(uitvoerbaar\) bestand en geef een lege string mee voor de argumenten.
 
 ### Technische hulp
 
@@ -225,7 +223,6 @@ hostname
 arp -a
 getmac (enkel onder Windows)
 nslookup google.com
-netstat
 ```
 
 #### Testscenario's

@@ -1,4 +1,4 @@
-# Oefeningen
+# Uitbreidingsoefeningen
 
 Volgende oefeningen zijn al iets stevigers. Ze gebruiken concepten die nog niet aan bod gekomen zijn in de cursus en je wordt niet verondersteld ze te kunnen maken aan het begin van het semester. Je kan ze wel bekijken als je eerder al geprogrammeerd hebt of wanneer je aan het studeren bent voor het examen.
 
@@ -67,3 +67,4 @@ Hou het voorlopig op de cursus.
 ## Oefening: H2-weerstandsberekendaar-deel3
 
 Deze bouwt voort op H2-weerstandsberekendaar-deel2. Kan je afhankelijk van de ringwaarde het getal in de tabel in de juiste kleur zetten conform de weerstandskleuren? \(tip: je zal `Write` en `if` moeten leren gebruiken\)
+
