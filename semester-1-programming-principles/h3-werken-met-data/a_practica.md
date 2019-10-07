@@ -111,19 +111,19 @@ console applicatie
 #### voorbeeldinteractie\(s\)
 ```text
 Voer bedrag in?
-12
+> 12
 De poef staat op 12 euro
 Voer bedrag in?
-14
+> 14
 De poef staat op 26 euro
 Voer bedrag in?
-3
+> 3
 De poef staat op 29 euro
 Voer bedrag in?
-8
+> 8
 De poef staat op 37 euro
 Voer bedrag in?
-2
+> 2
 De poef staat op 39 euro
 *************************
 Het totaal van  de poef is 39 euro.
@@ -165,7 +165,26 @@ Het orakel zal enkel realistische getallen geven. Maw, getallen tussen de 5 en 1
 
 > We gaan geregeld een oefening in een later hoofdstuk verder uitbreiden. Het orakeltje van Delphi is er zo eentje.
 
-## Random invoer
+## H3-random-invoer
+Pas oefening H3-op-de-poef aan zodat de gebruiker vervangen wordt door een randomgenerator en de gebruiker op de hoogte brengt van de gegenereerde getallen (tussen 1 en 50 inclusief). Dit levert een output als volgt:
 
-Pas 1 van bovenstaande programma's aan waarbij je de invoer niet aan de gebruiker meer vraagt, maar deze genereert door een random generator. Zorg ervoor dat je realistische waarden genereert.
-
+```text
+Voer bedrag in?
+Automatisch gegenereerd: 12
+De poef staat op 12 euro
+Voer bedrag in?
+Automatisch gegenereerd: 14
+De poef staat op 26 euro
+Voer bedrag in?
+Automatisch gegenereerd: 3
+De poef staat op 29 euro
+Voer bedrag in?
+Automatisch gegenereerd: 8
+De poef staat op 37 euro
+Voer bedrag in?
+Automatisch gegenereerd: 2
+De poef staat op 39 euro
+*************************
+Het totaal van  de poef is 39 euro.
+Dit zal 4 afbetalingen vragen.
+```
