@@ -93,7 +93,7 @@ Het getal is nu 1010.
 Het getal is nu 1010000.
 ```
 
-## H3-op-de-poef
+## Oefening: H3-op-de-poef
 
 ### Leerdoelen
 * tussenresultaten bijhouden
@@ -130,30 +130,33 @@ Het totaal van  de poef is 39 euro.
 Dit zal 4 afbetalingen vragen.
 ```
 
-## Feestkassa
+## Oefening: Feestkassa
+### Leerdoelen
+* tussenresultaten bijhouden
 
+### Functionele analyse
 De plaatselijke voetbalclub organiseert een mosselfestijn. Naast mosselen met frietjes \(20 EUR\) bieden ze voor de kinderen de mogelijkheid om een koninginnehapje \(10 EUR\) te kiezen. Verder is er een ijsje als nagerecht voorzien \(3 EUR\). Om het gemakkelijk te maken kosten alle dranken 2 EUR.
 
 Ontwerp een applicatie zodat de vrijwilliger aan de kassa alleen maar de juiste aantallen moet ingeven ,lijn per lijn. \(frietjes, koninginenhapje, ijsje, drank\) om de totaal te betalen prijs te berekenen.
 
 Het resultaat wordt als volgt weergegeven: `Het totaal te betalen bedrag is x EURO`.
 
-Voorbeeld:
+### Technische analyse
+Je gebruikt best een variabele om de voorlopig som bij te houden. Zo moet je minder code herhalen.
 
+#### UI
+console applicatie
+
+#### voorbeeldinteractie\(s\)
 ```text
 Frietjes?
-3   
-Tussenprijs= 60 euro
-Koninginenhapjes?
-5
-Tussenprijs= 60 euro + 50 euro
+> 3
+Koninginnenhapjes?
+> 5
 Ijsjes?
-2
-Tussenprijs= 60 euro + 50 euro + 6 euro
+> 2
 Dranken?
-5
-Tussenprijs= 60 euro + 50 euro + 6 euro + 10 euro
-
+> 5
 Het totaal te betalen bedrag is 126 EURO
 ```
 
@@ -165,7 +168,7 @@ Het orakel zal enkel realistische getallen geven. Maw, getallen tussen de 5 en 1
 
 > We gaan geregeld een oefening in een later hoofdstuk verder uitbreiden. Het orakeltje van Delphi is er zo eentje.
 
-## H3-random-invoer
+## Oefening: H3-random-invoer
 Pas oefening H3-op-de-poef aan zodat de gebruiker vervangen wordt door een randomgenerator en de gebruiker op de hoogte brengt van de gegenereerde getallen (tussen 1 en 50 inclusief). Dit levert een output als volgt:
 
 ```text
