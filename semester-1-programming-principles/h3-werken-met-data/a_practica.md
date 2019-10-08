@@ -161,12 +161,30 @@ Het totaal te betalen bedrag is 126 EURO
 ```
 
 ## Het Orakeltje van Delphi
+### Leerdoelen
+* werken met willekeurige getallen
 
-Gebruik de random generator om een orakel/waarzegger te maken, namelijk de kleine broer of zus van het [Orakel van Delphi](https://nl.wikipedia.org/wiki/Orakel_van_Delphi). Het programma zal aan de gebruiker vertellen hoe lang deze nog zal leven. Bijvoorbeeld: "Je zal nog 15 jaar leven.".
+### Functionele analyse
+Maak een orakel/waarzegger, namelijk de kleine broer of zus van het [Orakel van Delphi](https://nl.wikipedia.org/wiki/Orakel_van_Delphi). Het programma zal aan de gebruiker vertellen hoe lang deze nog zal leven. Bijvoorbeeld: "Je zal nog 15 jaar leven.".
 
 Het orakel zal enkel realistische getallen geven. Maw, getallen tussen de 5 en 125 jaar \(onder de 5 zou grof zijn\).
 
 > We gaan geregeld een oefening in een later hoofdstuk verder uitbreiden. Het orakeltje van Delphi is er zo eentje.
+
+### Technische analyse
+Je moet hier een willekeurig getal bepalen en dat dan in een mooie vorm presenteren aan de gebruiker. Gebruik hiervoor de klasse `Random`.
+
+#### UI
+console applicatie
+
+#### voorbeeldinteractie\(s\)
+```text
+Je zal nog 7 jaar leven.
+```
+
+```text
+Je zal nog 64 jaar leven.
+```
 
 ## Oefening: H3-random-invoer
 Pas oefening H3-op-de-poef aan zodat de gebruiker vervangen wordt door een randomgenerator en de gebruiker op de hoogte brengt van de gegenereerde getallen (tussen 1 en 50 inclusief). Dit levert een output als volgt:
