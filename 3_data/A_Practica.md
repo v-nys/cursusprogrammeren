@@ -17,9 +17,13 @@ Maak een programma dat aan de gebruiker z'n lengte en gewicht vraagt en vervolge
 >Bekijk de volgende [kennisclip](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=6381a023-ae87-4662-91ed-a969006d3d9b) en geef je uitvoerbaar bestand van het programma aan een klasgenoot. Kijk of hij het kan uitvoeren.
 
 # Binaire god
+
+> Deze leerstof werd niet in het hoorcollege gezien. NEem zelf het hoofdstuk "Bitwise operators" door.
+
 Vraag een getal aan de gebruiker (als int). Gebruik enkel bitwise operators om:
-* het getal te halveren
-* het getal te verdubelen
+
+* het getal te verdubelen: onderzoek zelf hoe je binair verdubbelt (wat is de binaire voorstelling van 1,2,4, 8 bijvoorbeeld? Zie je het?)
+* het getal te halveren: merk op dat dit enkel werkt voor even getallen
 * het getal van teken te veranderen
 
 Doe hetzelfde maar vraag nu aan de gebruiker een string met de binaire voorstelling van een getal (bv ``"0011"``) en zit dit eerst om naar een int. Toon telkens het resultaat zowel als int en als een binaire string voorstelling.
