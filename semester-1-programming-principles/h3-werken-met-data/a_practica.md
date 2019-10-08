@@ -130,7 +130,7 @@ Het totaal van  de poef is 39 euro.
 Dit zal 4 afbetalingen vragen.
 ```
 
-## Oefening: Feestkassa
+## Oefening: H3-feestkassa
 ### Leerdoelen
 * tussenresultaten bijhouden
 
@@ -160,7 +160,7 @@ Dranken?
 Het totaal te betalen bedrag is 126 EURO
 ```
 
-## Het Orakeltje van Delphi
+## H3-orakeltje
 ### Leerdoelen
 * werken met willekeurige getallen
 
