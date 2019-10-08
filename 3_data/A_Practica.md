@@ -17,8 +17,8 @@ Maak een programma dat aan de gebruiker z'n lengte en gewicht vraagt en vervolge
 >Bekijk de volgende [kennisclip](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=6381a023-ae87-4662-91ed-a969006d3d9b) en geef je uitvoerbaar bestand van het programma aan een klasgenoot. Kijk of hij het kan uitvoeren.
 
 # Binaire god
-Vraag een getal aan de gebruiker (als int). Gebruik enkel bitwise operators om
-* het getal met 1 te verhogen
+Vraag een getal aan de gebruiker (als int). Gebruik enkel bitwise operators om:
+* het getal te halveren
 * het getal te verdubelen
 * het getal van teken te veranderen
 
