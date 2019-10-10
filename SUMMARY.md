@@ -37,7 +37,6 @@
   * [Casting, conversie en parsing](3_data/4_converteren_casting.md)
   * [Input verwerken en omzetten](3_data/4b_inputconverten.md)
   * [Math-library en berekeningen](3_data/4c_math.md)
-  * [Bitwise operators](3_data/bitwise.md)
   * [Random](3_data/random.md)
   * [Debuggen](3_data/5_debuggen.md)
   * [_Oefeningen](3_data/A_Practica.md)
@@ -207,6 +206,8 @@
   * [Magic The Gathering API](A_DEEL2_AllInOne/mtgapi.md)
 
 ## Pro (geen leerstof en/of in opbouw)
+
+* [Bitwise operators](3_data/bitwise.md)
 
 * Generics en collections
   * [Generics methoden en types](17_gencols/0_generics_intro.MD)

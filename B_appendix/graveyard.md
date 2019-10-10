@@ -1,5 +1,17 @@
 Op deze pagina vind je alle briljante en minder briljante oefeningen terug die niet meer bij een bepaald hoofdstuk staan. Meestal staan deze oefeningen hier omdat ze leerstof behandelen die niet meer bij de verplichte leerstof hoort.
 
+# Binaire god
+
+> Deze leerstof werd niet in het hoorcollege gezien. NEem zelf het hoofdstuk "Bitwise operators" door.
+
+Vraag een getal aan de gebruiker (als int). Gebruik enkel bitwise operators om:
+
+* het getal te verdubelen: onderzoek zelf hoe je binair verdubbelt (wat is de binaire voorstelling van 1,2,4, 8 bijvoorbeeld? Zie je het?)
+* het getal te halveren: merk op dat dit enkel werkt voor even getallen
+* het getal van teken te veranderen
+
+Doe hetzelfde maar vraag nu aan de gebruiker een string met de binaire voorstelling van een getal (bv ``"0011"``) en zit dit eerst om naar een int. Toon telkens het resultaat zowel als int en als een binaire string voorstelling.
+
 # APCenture-Job Agency
 
 > Opgave is niet erg duidelijk.
