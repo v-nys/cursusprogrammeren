@@ -74,4 +74,4 @@ Console.WriteLine($"Gemiddelde temperatuur deze week was: {totaal/7}");
 
 # Kennisclip
 ![](../assets/infoclip.png)
-* [Expressies](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=4d790ab9-e3b9-4e4b-bf59-a976007197fa)
+* [De Math-bibliotheek](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=4d790ab9-e3b9-4e4b-bf59-a976007197fa)
