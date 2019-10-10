@@ -164,6 +164,7 @@
   
 * Oplossingen oefeningen
   * [H0 - Werken met VS](0_intro/opl_apractica.md)
+  * [H1 - Variabelen en datatypes](1_csharpbasics/opl_apractica.md)
   * [H2 - Tekst in code](2_tekst/a_oplpractica.md)
   * [H3 - Werken met data](3_data/a_oplpractica.md)
   * [H4 - Beslissingen](4_beslissingen/a_oplpractica.md)

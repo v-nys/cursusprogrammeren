@@ -101,3 +101,9 @@ Nee hoor. Visual Studio is lekker groot. Was bovenstaande uitleg toch niet zo ve
 # Liever VS Enterprise?
 
 Als AP-student heb je ook recht op een Visual Studio Enterprise licentie. Wil je deze gebruiken, download deze dan via [https://visualstudio.microsoft.com/vs/](https://visualstudio.microsoft.com/vs/) en zorg ervoor dat je een key aanvraagt via de tab 'Software' op [Azure for education](https://azureforeducation.microsoft.com/devtools). Je kan deze sleutel vervolgens via Help->Register in VS invoeren.
+
+# Kennisclip
+![](../assets/infoclip.png)
+* [De VS omgeving](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=7f6e9867-6b45-4c98-9255-aacd00880111)
+* [De fodlerstructuur van projecten](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=f021b918-db11-43e4-93bf-a969006a6868)
+

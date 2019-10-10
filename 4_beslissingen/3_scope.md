@@ -59,3 +59,8 @@ Dit is wel geldig, daar de scope van de eerste variabele afgesloten wordt door d
     int getal= 5;
 }
 ```
+
+
+# Kennisclip
+![](../assets/infoclip.png)
+* [Scope ](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=20538981-ceaf-4129-a54a-a91100c81b2f)

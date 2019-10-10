@@ -1,3 +1,10 @@
+
+![](../assets/movie.png)
+
+* [Bespreking oplossingen hoofdstuk 3](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=0c5972b4-e091-40dc-84dc-a97600d27428)
+
+# Code
+
 ## BMI Berekenaar
 ```csharp
 Console.WriteLine("Geef je gewicht in kg");

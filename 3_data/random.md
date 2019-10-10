@@ -45,3 +45,7 @@ double randomgetal= myran.NextDouble() * 10.0;
 # Ik krijg dezelfde random getallen :(
 
 [Zie hier voor meer informatie indien je dezelfde random nummers genereert](http://csharpindepth.com/Articles/Chapter12/Random.aspx)
+
+# Kennisclip
+![](../assets/infoclip.png)
+* [Random toepassen](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=ffa0ea68-0b47-4446-9922-a91100d3f61e)

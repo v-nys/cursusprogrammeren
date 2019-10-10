@@ -1,3 +1,10 @@
+
+![](../assets/movie.png)
+
+* [Micro-tips om loop-opgaven op te lossen](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=ea69bf95-f828-4b45-afca-f0ae911ab7c4)
+
+
+
 # Oplossing practica deel 1
 ## Oplossing Tafels van vermenigvuldiging:
 ```csharp
