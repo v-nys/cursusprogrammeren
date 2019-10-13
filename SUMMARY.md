@@ -39,6 +39,7 @@
   * [Random](semester-1-programming-principles/h3-werken-met-data/random.md)
   * [Debuggen](semester-1-programming-principles/h3-werken-met-data/5_debuggen.md)
   * [Oefeningen](semester-1-programming-principles/h3-werken-met-data/a_practica.md)
+  * [Uibreidingsoefeningen](semester-1-programming-principles/h3-werken-met-data/b_practica.md)
 * [H4: Beslissingen](semester-1-programming-principles/h4-beslissingen/README.md)
   * [Beslissingen intro](semester-1-programming-principles/h4-beslissingen/0_beslissingen_intro.md)
   * [Booleanse logica en operators](semester-1-programming-principles/h4-beslissingen/1_logic_and_relationsoperator.md)
