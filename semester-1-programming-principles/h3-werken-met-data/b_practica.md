@@ -10,7 +10,7 @@
 
 ### Functionele analyse
 
-De opdracht is gelijkaardig aan die van H1-maaltafels. Ditmaal vermenigvuldig je echter niet steeds hetzelfde getal, maar wel een willekeurig getal tussen 1 en 10 (beide inclusief). Bovendien toont het programma de resulterende getallen als 9 bits.
+De opdracht is gelijkaardig aan die van H1-maaltafels. Ditmaal vermenigvuldig je echter niet steeds hetzelfde getal, maar wel een willekeurig getal tussen 1 en 10 (beide inclusief). Bovendien toont het programma alle getallen als reeksen van bits.
 
 ### Technische analyse
 Gebruik hiervoor de `Convert` klasse en stringformattering.
@@ -21,8 +21,50 @@ console applicatie
 
 #### voorbeeldinteractie\(s\)
 
+
+{% hint style="warning" %}
+Bij jou moeten de bitreeksen aan de linkerkant van `*` er hetzelfde uitzien als in deze reeks resultaten, maar de andere zijn niet gegarandeerd er hetzelfde uit te zien. Als je nog niet vertrouwd bent met binaire operatoren, doe je er goed aan uit te tellen of je resultaten kloppen.
+{% endhint %}
+
+
 ```text
-TODO
+1 * 1001 is 1001
+```
+
+```text
+10 * 110 is 1100
+```
+
+```text
+11 * 1 is 11
+```
+
+```text
+100 * 11 is 1100
+```
+
+```text
+101 * 111 is 100011
+```
+
+```text
+110 * 10 is 1100
+```
+
+```text
+111 * 10 is 1110
+```
+
+```text
+1000 * 1 is 1000
+```
+
+```text
+1001 * 110 is 110110
+```
+
+```text
+1010 * 1000 is 1010000
 ```
 
 ## Oefening: H3-xor
