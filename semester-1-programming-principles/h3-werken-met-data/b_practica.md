@@ -87,7 +87,14 @@ console applicatie
 #### voorbeeldinteractie\(s\)
 
 ```text
-TODO
+
+Geef een eerste getal?
+520
+Geef een tweede getal?
+7
+Geef nummer van de bit (te tellen vanaf de kleinste)?
+1
+Precies één bit met waarde 1: True
 ```
 
 ## Oefening: H3-zonder-xor
@@ -109,6 +116,4 @@ console applicatie
 
 #### voorbeeldinteractie\(s\)
 
-```text
-TODO
-```
+Dit programma gedraagt zich exact hetzelfde als het vorige.
