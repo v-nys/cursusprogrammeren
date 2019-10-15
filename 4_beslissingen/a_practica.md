@@ -39,6 +39,12 @@ Vul de oefening aan uit het vorige hoofdstuk (zie [hier](../3_data/A_Practica.md
 Mannen leven maximum tot hun 120 jaar. Vrouwen tot 150 jaar. Laat het orakel een duur voorspellen die kan. Als een vrouw van 50 de vraag stelt dan zal het orakel dus een getal tussen 5 en 100 (``150-50``) genereren. Een man van 35 zal tussen de 5 en 85 (``120-35``) jaren langer kunnen leven. 
 
 
+# Casino
+ Genereer  een random getal maar toon dit niet aan de gebruiker. Vraag aan de gebruiker welk getal hij denkt dat de computer heeft "geworpen". Indien de gebruiker juist raadt verschijnt er "proficiat" op het scherm. Anders: "you lose".
+
+ # Casino 3
+ Vul de voorgaande oefening aan, maar laat de gebruiker 3x na mekaar raden. Enkel als hij juist raadt mag hij nog eens raden. Als hij ook de derde juist raadt wint hij. In alle andere gevallen niet.
+
 # Quiz
 Maak een quiz. Maak gebruik van het ``switch``-statement om de input van de gebruiker (a,b,c of d) te verwerken en bij iedere vraag aan te geven of dit juist/fout is. Voorzie 3 multiple choice vragen. Houdt bij hoe vaak de speler juist antwoordde en geef op het einde de eindscore (Juist is +2 , fout is -1)
 
@@ -57,3 +63,14 @@ Kan jij volgende ludieke stemwijzer van GuntherD in een eenvoudig programma gier
 
 
 ![](../assets/2_beslissingen/stemwijzer.png)
+
+# Enum seizoenen
+Maak een enum die de seizoenen van het jaar bevat. Vraag aan de gebruiker om een maandnummer in te voeren. Gebruik vervolgens een switch om te bepalen in welk seizoen deze maand (grotendeels) ligt. Wijs deze enum toe aan een variabele in de switch.
+Vervolgens gebruik je een if om , gebaseerd op deze enum-variabele, te tonen of het om een koud seizoen (Winter en Herfst) of een warm seizoen (Zomer en Lente) gaat.
+
+# Enum bij BMI
+
+Maak een enum die de verschillende soorten gewichten voorsteld (Obese, Zwaarlijvig,NormaalGewicht, etc.) Pas de bestaande "BMI met if" oefening aan zodat je deze enum gebruikt om je code leesbaarder te maken. 
+
+# Kleurcode weerstand naar ohm, met enum
+Open de "Kleurcode weerstand naar ohm" die je eerder in dit hoofdstuk hebt gemaakt. Gebruik enum om de weerstandskleuren voor te stellen zodat je veel leesbaardere code krijgt.
