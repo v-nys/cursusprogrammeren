@@ -11,9 +11,16 @@ De kleur tussen haakjes geeft aan in welke kleur je deze tekst zet:
 * Boven de 40 (magenta): ernstige zwaarlijvigheid. Je moet dringend vermageren want je gezondheid is in gevaar (of je hebt je lengte of gewicht in verkeerde eenheid ingevoerd)
 
 # Schoenverkoper
-a) Maak een oefening die aan de gebruiker vraagt hoeveel paar schoenen hij wenst te kopen. Ieder paar schoenen kost steeds 20euro. Indien de gebruiker 10 paar koopt kosten ze maar 10euro. Toon aan de gebruiker de totale prijs.
+a) Maak een oefening die aan de gebruiker vraagt hoeveel paar schoenen hij wenst te kopen. Ieder paar schoenen kost steeds 20euro. Indien de gebruiker 10 paar of meer koopt kosten de eerste 9 paar nog steeds 20euro, de overige kosten echter maar 10euro. Toon aan de gebruiker de totale prijs.
 
-b) Voeg nu toe dat het programma eerst aan de kassier vraagt vanaf hoeveel paar de klant korting zal krijgen. Als de gebruiker dus 5 indient zal reeds bij 5 paar de kost per paar 10euro zijn.
+Voorbeeld:  
+* 8 schoenen kost 8x20 = 160 euro
+* 12 schoenen kost 9x20 + 3x10 = 210 euro
+
+b) Voeg nu toe dat het programma eerst aan de kassier vraagt vanaf hoeveel paar de klant korting zal krijgen. 
+
+Voorbeeld:
+* De kassiester voert in dat vanaf 6 schoenen de korting geldt. Dan kosten 8 schoenen: 5x20 + 3x10 = 130 euro.
 
 # Ohm-berekenaar
 Vraag aan de gebruiker wat hij wenst te berekenen: Spanning, Weerstand of Stroomsterkte. Vraag vervolgens de 2 andere waarden (als dus de gebruiker "Spanning" kiest vraag je aan de gebruiker de stroomsterkte en de weerstand) en bereken m.b.v. de wet van Ohm de gewenste waarde.
