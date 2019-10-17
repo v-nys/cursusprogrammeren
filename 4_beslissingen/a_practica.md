@@ -17,10 +17,10 @@ Voorbeeld:
 * 8 schoenen kost 8x20 = 160 euro
 * 12 schoenen kost 9x20 + 3x10 = 210 euro
 
-b) Voeg nu toe dat het programma eerst aan de kassier vraagt vanaf hoeveel paar de klant korting zal krijgen. 
+b) Voeg nu toe dat het programma eerst aan de kassier vraagt tot hoeveel schoenen de korting niet geldt. 
 
 Voorbeeld:
-* De kassiester voert in dat vanaf 6 schoenen de korting geldt. Dan kosten 8 schoenen: 5x20 + 3x10 = 130 euro.
+* De kassiester voert 6 in. Dan kosten 8 schoenen: 6x20 + 2x10 = 140 euro.
 
 # Ohm-berekenaar
 Vraag aan de gebruiker wat hij wenst te berekenen: Spanning, Weerstand of Stroomsterkte. Vraag vervolgens de 2 andere waarden (als dus de gebruiker "Spanning" kiest vraag je aan de gebruiker de stroomsterkte en de weerstand) en bereken m.b.v. de wet van Ohm de gewenste waarde.
