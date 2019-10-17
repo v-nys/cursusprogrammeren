@@ -48,7 +48,7 @@ met die hierboven van de `while`.
 De syntax van een do-while is eveneens verraderlijk eenvoudig:
 
 ```csharp
-do{
+do {
       // C# die zal uitgevoegd worden zolang de booleaanse expressie waar is
 } while (booleaanse expressie);
 ```
@@ -98,7 +98,7 @@ Volgende twee voorbeelden tonen dit:
 
   ```csharp
   int teller = 0; 
-  while(teller<10)
+  while(teller < 10)
   {
   Console.WriteLine(teller);
   teller--;    //oops, dit had teller++ moeten zijn
@@ -112,11 +112,11 @@ Volgende twee voorbeelden tonen dit:
 Let er op dat de [scope](../h4-beslissingen/3_scope.md) van variabelen bij loops zeer belangrijk is. Indien je een variabelen binnen de loop definieert dan zal deze steeds terug "gereset" worden wanneer de volgende cyclus van de loop start. Volgende code toont bijvoorbeeld **foutief** hoe je de som van de eerste 10 getallen \(1+2+3+...+10\) zou maken:
 
 ```csharp
-int teller=1;
-while(teller<=10)
+int teller = 1;
+while(teller <= 10)
 {
-   int som=0;
-   som= som+teller;
+   int som = 0;
+   som = som + teller;
    teller++;
 }
 Console.WriteLine(som); //deze lijn zal fout genereren
@@ -125,12 +125,12 @@ Console.WriteLine(som); //deze lijn zal fout genereren
 De **correcte** manier om dit op te lossen is te beseffen dat de variabele som enkel binnen de accolades van de while-loop gekend is. Op de koop toe wordt deze steeds terug op 0 gezet en er kan dus geen som van alle teller-waarden bijgehouden worden:
 
 ```csharp
-int teller=1;
-int som=0;  
-while(teller<=10)
+int teller = 1;
+int som = 0;  
+while(teller <= 10)
 {
 
-   som= som+teller;
+   som = som + teller;
    teller++
 }
 Console.WriteLine(som);
@@ -142,7 +142,7 @@ Dankzij loops kunnen we nu ook eenvoudiger omgaan met foutieve input van de gebr
 
 ```csharp
 Console.WriteLine("Geef uw keuze in: a,b of c");
-string input= Console.ReadLine();
+string input = Console.ReadLine();
 ```
 
 Met een loop kunnen we nu deze vragen blijven stellen tot de gebruiker een geldige input geeft:
@@ -152,7 +152,7 @@ string input;
 do
 {
   Console.WriteLine("Geef uw keuze in: a,b of c");
-  input= Console.ReadLine();
+  input = Console.ReadLine();
 }while( input != "a"  && input != "b" && input != "c");
 ```
 

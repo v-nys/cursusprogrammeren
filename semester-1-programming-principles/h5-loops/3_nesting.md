@@ -11,14 +11,14 @@ We spreken steeds over de **outer loop** als de omhullende of "grootste" loop. W
 Volgende code toont bijvoorbeeld 2 loops die genest werden:
 
 ```csharp
-int tellerA=0;
-int tellerB=0;
+int tellerA = 0;
+int tellerB = 0;
 
-while(tellerA<3 )  //outer loop
+while(tellerA < 3 )  //outer loop
 {
     tellerA++;
-    tellerB=0;
-    while(tellerB<5)
+    tellerB = 0;
+    while(tellerB < 5)
     {
         tellerB++;
         Console.WriteLine($"Teller:{tellerA}, Teller2:{tellerB}")
