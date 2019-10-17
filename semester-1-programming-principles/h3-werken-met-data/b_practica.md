@@ -1,4 +1,4 @@
-# Oefeningen
+# Uibreidingsoefeningen
 
 ## Oefening: H3-maaltafels-binair
 
@@ -10,9 +10,10 @@
 
 ### Functionele analyse
 
-De opdracht is gelijkaardig aan die van H1-maaltafels. Ditmaal vermenigvuldig je echter niet steeds hetzelfde getal, maar wel een willekeurig getal tussen 1 en 10 (beide inclusief). Bovendien toont het programma alle getallen als reeksen van bits.
+De opdracht is gelijkaardig aan die van H1-maaltafels. Ditmaal vermenigvuldig je echter niet steeds hetzelfde getal, maar wel een willekeurig getal tussen 1 en 10 \(beide inclusief\). Bovendien toont het programma alle getallen als reeksen van bits.
 
 ### Technische analyse
+
 Gebruik hiervoor de `Convert` klasse en stringformattering.
 
 #### UI
@@ -21,11 +22,9 @@ console applicatie
 
 #### voorbeeldinteractie\(s\)
 
-
 {% hint style="warning" %}
 Bij jou moeten de bitreeksen aan de linkerkant van `*` er hetzelfde uitzien als in deze reeks resultaten, maar de andere zijn niet gegarandeerd er hetzelfde uit te zien. Als je nog niet vertrouwd bent met binaire operatoren, doe je er goed aan uit te tellen of je resultaten kloppen.
 {% endhint %}
-
 
 ```text
 1 * 1001 is 1001
@@ -75,9 +74,10 @@ Bij jou moeten de bitreeksen aan de linkerkant van `*` er hetzelfde uitzien als 
 
 ### Functionele analyse
 
-De gebruiker geeft drie getallen in. De eerste twee stellen zichzelf voor. Het derde stelt een bepaalde bit voor, te tellen vanaf die met de kleinste waarde (dus 1 stelt de bit voor die bepaalt of een getal even of oneven is). Het programma zegt of precies één van de twee eerste getallen diezelfde bit op 1 heeft staan.
+De gebruiker geeft drie getallen in. De eerste twee stellen zichzelf voor. Het derde stelt een bepaalde bit voor, te tellen vanaf die met de kleinste waarde \(dus 1 stelt de bit voor die bepaalt of een getal even of oneven is\). Het programma zegt of precies één van de twee eerste getallen diezelfde bit op 1 heeft staan.
 
 ### Technische analyse
+
 Gebruik hiervoor een combinatie van de `^` operator en van een verschuiving.
 
 #### UI
@@ -87,7 +87,6 @@ console applicatie
 #### voorbeeldinteractie\(s\)
 
 ```text
-
 Geef een eerste getal?
 520
 Geef een tweede getal?
@@ -108,6 +107,7 @@ Precies één bit met waarde 1: True
 De opdracht is dezelfde als in H3-zonder-xor. Maar je mag de `^` operator niet gebruiken!
 
 ### Technische analyse
+
 Denk na welke combinatie van andere operatoren hetzelfde uitdrukt als `^`!
 
 #### UI
@@ -117,3 +117,4 @@ console applicatie
 #### voorbeeldinteractie\(s\)
 
 Dit programma gedraagt zich exact hetzelfde als het vorige.
+
