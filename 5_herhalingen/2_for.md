@@ -55,3 +55,7 @@ Om iemand op StackOverflow te quoten:
 [Bron StackOverFlow: Are `break` and `continue` bad programming practices? ](https://softwareengineering.stackexchange.com/questions/58237/are-break-and-continue-bad-programming-practices)
 
 Lees meer over het gebruik van ``break`` [hier](https://www.dotnetperls.com/break)
+
+# Kennisclip
+![](../assets/infoclip.png)
+* [De for loop](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=2df9d5bb-ecc8-489b-a1d4-a99800b79a5c)

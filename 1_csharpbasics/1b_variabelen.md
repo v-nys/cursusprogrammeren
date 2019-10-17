@@ -127,3 +127,7 @@ int temperatuurEerGisteren= temperatuurGisteren; //Vorige temperatuur in eergist
 temperatuurGisteren = 25; //temperatuur nu overschrijven
 ```
 We hebben dus aan het einde van het programma zowel de temperatuur van eergisteren, ``20``, als die van vandaag, ``25``.
+
+# Kennisclip
+![](../assets/infoclip.png)
+* [Variabelen en datatypes](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=22d326cf-b619-4cf0-80fc-a966007ffef5)
