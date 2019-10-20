@@ -1,5 +1,3 @@
-> De layout van deze pagina is om zeep. Ik probeer het goed te krijgen :(
-
 # Zoek de fouten
 Volgende bugs, fouten, minder goede oplossingen komen uit oplossingen van vaardigheidsproeven. Kan jij ontdekken wat er mis? De oplossingen staan achteraan dit document.
 (de code is hier en daar ingeperkt om de focus op de fout te leggen)
