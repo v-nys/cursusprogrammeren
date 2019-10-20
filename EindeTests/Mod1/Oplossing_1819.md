@@ -3,12 +3,12 @@ Volgende bugs, fouten, minder goede oplossingen komen uit oplossingen van vaardi
 (de code is hier en daar ingeperkt om de focus op de fout te leggen)
 
 ## Opgaven
-1.
+1. 
 ```csharp
 int keuze = Convert.ToInt16(Console.ReadLine());
 ```
 
-2.
+2. 
 ```csharp
 switch (keuze) {
 case 1:
@@ -35,7 +35,6 @@ case 2:
 ```
 
 3. 
-
 ```csharp
  Console.WriteLine("Laten we starten met de bestelling. Druk op 1 voor de pizzabodem, daarna 2 voor de topping, vervolgens 3 voor de chefs extra en tot slot 4 voor het afleveradres.");
 keuze = Convert.ToInt32(Console.ReadLine());
@@ -45,12 +44,10 @@ MartianMeal = Convert.ToString(Console.ReadLine());
 PegasusLime = Convert.ToString(Console.ReadLine());
 EndraliPies = Convert.ToString(Console.ReadLine());
 
-
 //Je moet een paar keer ENTER drukken alvorens je tot de vraag komt.
 //Pizzabodem
 if (keuze == 1)
 {
-
 ```
 
 4. 
@@ -60,7 +57,6 @@ int toegestaanafstand = 1;      //  0 is nee en 1 is ja.
 ```
 
 5. 
-
 ```csharp
 if (ToppingsKeuzeBodem1 == 1)
 {
