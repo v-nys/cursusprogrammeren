@@ -1,5 +1,5 @@
 > De layout van deze pagina is om zeep. Ik probeer het goed te krijgen :(
->
+
 # Zoek de fouten
 Volgende bugs, fouten, minder goede oplossingen komen uit oplossingen van vaardigheidsproeven. Kan jij ontdekken wat er mis? De oplossingen staan achteraan dit document.
 (de code is hier en daar ingeperkt om de focus op de fout te leggen)
@@ -38,6 +38,7 @@ switch (keuze) {
 ```
 
 3. Zie je de fout?
+
 ```csharp
 Console.WriteLine("Laten we starten met de bestelling. Druk op 1 voor de pizzabodem, daarna 2 voor de topping, vervolgens 3 voor de chefs extra en tot slot 4 voor het afleveradres.");
 keuze = Convert.ToInt32(Console.ReadLine());
@@ -53,6 +54,7 @@ if (keuze == 1){
 ```
 
 4. 
+
 ```csharp            
 int toegestaanleeftijd = 1;     //  0 is nee en 1 is ja.
 int toegestaanafstand = 1;      //  0 is nee en 1 is ja.
