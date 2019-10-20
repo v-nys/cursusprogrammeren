@@ -51,14 +51,14 @@ if (keuze == 1)
 
 ```
 
- 4. 
+4. 
  ```csharp            
  int toegestaanleeftijd = 1;     //  0 is nee en 1 is ja.
  int toegestaanafstand = 1;      //  0 is nee en 1 is ja.
  ```
 
- 5. 
- ```csharp
+5. 
+```csharp
  if (ToppingsKeuzeBodem1 == 1)
 {
     Console.WriteLine("Wat is de afstand van het afleveradres in lichtjaren?");
@@ -83,6 +83,7 @@ else if (ToppingsKeuzeBodem1 == 2)
     {
 
 ```
+
 6. 
 ```csharp
 PizzaTotaal = 25 + 5 + 10;
@@ -113,6 +114,7 @@ goto end;
 ```
 
 10. 
+
 ```csharp
 double tussenkomst = adres / 5;
 int Tonnen = 0;
@@ -141,14 +143,16 @@ else if (tussenkomst <= 5)
 ```
 
 11. Onderaan de code van een oplossing stond volgende commentaar:
-    ```csharp 
-    // TE WEINIG TIJD AKA MISSCHIEN TE TRAAG GEWERKT SORRY
-    ```
-    Mogelijk heeft de student te traag gewerkt, maar kijken we eens naar de code in z'n geheel dan zien we volgende beeld:
 
-    ![](../assets/2_beslissingen/bigcode.jpg)
+```csharp 
+// TE WEINIG TIJD AKA MISSCHIEN TE TRAAG GEWERKT SORRY
+```
 
-    What went wrong?
+Mogelijk heeft de student te traag gewerkt, maar kijken we eens naar de code in z'n geheel dan zien we volgende beeld:
+
+![](../../assets/2_beslissingen/bigcode.jpg)
+
+What went wrong?
 
 
 ## Oplossingen
