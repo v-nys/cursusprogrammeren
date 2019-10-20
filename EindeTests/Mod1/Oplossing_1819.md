@@ -1,10 +1,12 @@
+> De layout van deze pagina is om zeep. Ik probeer het goed te krijgen :(
+>
 # Zoek de fouten
 Volgende bugs, fouten, minder goede oplossingen komen uit oplossingen van vaardigheidsproeven. Kan jij ontdekken wat er mis? De oplossingen staan achteraan dit document.
 (de code is hier en daar ingeperkt om de focus op de fout te leggen)
 
 ## Opgaven
 
-1. 
+1. Wat is er mis? 
 ```csharp
 int keuze = Convert.ToInt16(Console.ReadLine());
 ```
@@ -12,30 +14,30 @@ int keuze = Convert.ToInt16(Console.ReadLine());
 2. 
 ```csharp
 switch (keuze) {
-case 1:
-    totaal += 5;
-    int pType = Convert.ToInt16(Console.ReadLine()); // 
+    case 1:
+        totaal += 5;
+        int pType = Convert.ToInt16(Console.ReadLine()); // 
 
-    switch (pType)
-    {
-        case 1:
-            totaal += 10;
-            topping = 1;
-            break;
-        case 2:
-            totaal += 5.5;
-            topping = 2;
-            break;
-        case 3:
-            totaal += 0;
-            break;
-    }
-    break;
-case 2:
-// enzovoort
+        switch (pType)
+        {
+            case 1:
+                totaal += 10;
+                topping = 1;
+                break;
+            case 2:
+                totaal += 5.5;
+                topping = 2;
+                break;
+            case 3:
+                totaal += 0;
+                break;
+        }
+        break;
+    case 2:
+    / enzovoort
 ```
 
-3. 
+3. Zie je de fout?
 ```csharp
 Console.WriteLine("Laten we starten met de bestelling. Druk op 1 voor de pizzabodem, daarna 2 voor de topping, vervolgens 3 voor de chefs extra en tot slot 4 voor het afleveradres.");
 keuze = Convert.ToInt32(Console.ReadLine());
