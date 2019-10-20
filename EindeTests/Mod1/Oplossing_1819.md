@@ -33,7 +33,9 @@ case 1:
 case 2:
 // enzovoort
 ```
-3.
+
+3. 
+
 ```csharp
  Console.WriteLine("Laten we starten met de bestelling. Druk op 1 voor de pizzabodem, daarna 2 voor de topping, vervolgens 3 voor de chefs extra en tot slot 4 voor het afleveradres.");
 keuze = Convert.ToInt32(Console.ReadLine());
@@ -58,8 +60,9 @@ if (keuze == 1)
  ```
 
 5. 
+
 ```csharp
- if (ToppingsKeuzeBodem1 == 1)
+if (ToppingsKeuzeBodem1 == 1)
 {
     Console.WriteLine("Wat is de afstand van het afleveradres in lichtjaren?");
     int AfleverAdres = Convert.ToInt32(Console.ReadLine());
@@ -73,7 +76,9 @@ if (keuze == 1)
         int PizzaTotaal = (int)Math.Sqrt(AfleverAdres / 15) + martian + topping;
         Console.WriteLine($"Het totaal is gelijk aan {PizzaTotaal} IC");
     }
-    else { Console.ForegroundColor = ConsoleColor.Red; Console.WriteLine("ERROR"); }
+    else 
+    { Console.ForegroundColor = ConsoleColor.Red; Console.WriteLine("ERROR"); 
+    }
 }
 else if (ToppingsKeuzeBodem1 == 2)
 {
@@ -81,10 +86,9 @@ else if (ToppingsKeuzeBodem1 == 2)
     int AfleverAdres = Convert.ToInt32(Console.ReadLine());
     if (AfleverAdres < 10)
     {
-
 ```
 
-6. 
+6.  
 ```csharp
 PizzaTotaal = 25 + 5 + 10;
 
