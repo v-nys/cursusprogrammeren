@@ -53,14 +53,13 @@ EndraliPies = Convert.ToString(Console.ReadLine());
 if (keuze == 1){
 ```
 
-4. 
-
+4. Cringy...
 ```csharp            
 int toegestaanleeftijd = 1;     //  0 is nee en 1 is ja.
 int toegestaanafstand = 1;      //  0 is nee en 1 is ja.
 ```
 
-5. 
+5. aiaiai...
 ```csharp
 if (ToppingsKeuzeBodem1 == 1)
 {
