@@ -78,7 +78,12 @@ Hoe veel paar schoenen wil je kopen?
 Je moet 80 euro betalen.
 ```
 
-## Ohm-berekenaar
+## H4-Ohm-berekenaar
+
+### Leerdoelen
+
+* conditionele berekeningen
+
 
 {% hint style="info" %}
 De wet van Ohm houdt in dat een elektrische stroom (voorgesteld als `I`)  gelijk is aan een spanningsverschil (`U`) gedeeld door een weerstand (`R`), dus I = V / R.
@@ -108,40 +113,96 @@ Wat is de weerstand?
 De stroomsterkte bedraagt 1.5.
 ```
 
-## Kleurcode weerstand naar ohm
+## H4-kleurcodes
 
-Vraag aan de gebruiker om de ringkleuren van de eerste 3 ringen in te voeren als tekst \(bv `groen`\). Toon vervolgens de de waarde van deze weerstand. Als dus de gebruiker na elkaar invoert:
+### Leerdoelen
+* conditionele berekeningen
+* werken met `switch`
+
+### Functionele analyse
+Deze oefening bouwt voort op H2-weerstandberekenaar-deel1. Vraag nu aan de gebruiker om de ringkleuren van de eerste 3 ringen in te voeren als tekst \(bv `groen`\). Toon vervolgens de de waarde van deze weerstand.
+
+### Technische analyse
+Je zal elke kleur moeten omzetten in een getal en dan je eerdere oplossing hergebruiken. Omzetten doe je door de ingevoerde tekst te vergelijken met een vaste string en naargelang het resultaat variabelen voor ring 1, 2 en 3 in te vullen. **Los deze oefening op met `switch`!**
+
+#### UI
+
+console applicatie
+
+#### voorbeeldinteractie\(s\)
 
 ```text
-rood
-paars
-rood
+> rood
+> paars
+> rood
+Deze weerstand heeft waarde van 2700 Ohm
 ```
 
-Dan zal het programma tonen:
+## H4-orakeltje
 
-`Deze weerstand heeft waarde van 2700 Ohm`
+### Leerdoelen
+* conditionele berekeningen
+* werken met `switch`
+* werken met `enum`s
 
-Indien je deze oefening maakt nadat je reeds `switch` hebt leren gebruiken, los deze oefening dan met `switch` op. Nog niet gezien? Ga voor `if`-`if else` code.
+### Functionele analyse
+Vul de oefening aan uit het vorige hoofdstuk \(zie [hier](../h3-werken-met-data/a_practica.md#h-3-orakeltje)\). Voor het orakel je vertelt hoe lang je te leven hebt zal eerst vragen naar je geslacht, dat je ingeeft als `v` of `m`. Dan vraagt ze je leeftijd. Mannen leven maximum tot hun 120 jaar. Vrouwen tot 150 jaar. Het orakel moet rekening houden met je huidige leeftijd, dus het mag niet zeggen dan een man nog 110 jaar te leven heeft als hij al 50 is, want dan zou hij ouder worden dan 120.
 
-## Orakeltje van Delphi, part deux
+### Technische analyse
+* Je mag veronderstellen dat de huidige leeftijd onder het theoretische maximum ligt.
+* Gebruik een `enum`, met als naam `Sexes` en als waarden `Male` en `Female` om de geslachten voor te stellen.
+  * Het programma zou in dit geval misschien iets simpeler zijn zonder, maar dan gebruik je dit een eerste keer.
+* Je kan vermijden dat de voorspelde leeftijd te hoog gaat door je `.Next`-call aan te passen, zodat de hoogst mogelijke waarde diegene is waarbij je de maximale leeftijd voor het gegeven geslacht bereikt.
 
-Vul de oefening aan uit het vorige hoofdstuk \(zie [hier](../h3-werken-met-data/a_practica.md#het-orakeltje-van-delphi)\). Voor het orakel je vertelt hoe lang je te leven hebt zal het eerste vragen of je een vrouw \(`v`\) of een man \(`m`\)bent. Dan vraagt ze je leeftijd. Mannen leven maximum tot hun 120 jaar. Vrouwen tot 150 jaar. Laat het orakel een duur voorspellen die kan. Als een vrouw van 50 de vraag stelt dan zal het orakel dus een getal tussen 5 en 100 \(`150-50`\) genereren. Een man van 35 zal tussen de 5 en 85 \(`120-35`\) jaren langer kunnen leven.
+#### UI
 
-## Quiz
+console applicatie
 
-Maak een quiz. Maak gebruik van het `switch`-statement om de input van de gebruiker \(a,b,c of d\) te verwerken en bij iedere vraag aan te geven of dit juist/fout is. Voorzie 3 multiple choice vragen. Houd bij hoe vaak de speler juist antwoordde en geef op het einde de eindscore \(Juist is +2 , fout is -1\)
+#### voorbeeldinteractie\(s\)
 
-Zoek op hoe je de kleur van de letters en de achtergrond in een console-applicatie kunt aanpassen en pas dit toe op je quiz om deze er iets boeiender uit te laten zien. Toon iedere vraag op een nieuw scherm.
+```text
+Wat is je geslacht?
+> m
+Hoe oud ben je?
+> 32
+Je hebt nog 80 jaar te leven!
+```
 
-## Schrikkeljaar
+## H4-Schrikkeljaar
 
-De gebruiker voert een jaartal in en jouw programma toont of het wel of geen schrikkeljaar is. Een schrikkeljaar is deelbaar door 4, behalve als het ook deelbaar is door 100, tenzij het wél deelbaar is door 400. Bijvoorbeeld:
+### Leerdoelen
+* conditionele berekeningen
+* geneste condities
 
-* 1997: geen schrikkeljaar
-* 1996: wél schrikkeljaar
-* 1900: geen schrikkeljaar
-* 2000: wél schrikkeljaar
+### Functionele analyse
+De gebruiker voert een jaartal in en jouw programma toont of het wel of geen schrikkeljaar is. Een schrikkeljaar is deelbaar door 4, behalve als het ook deelbaar is door 100, tenzij het wél deelbaar is door 400.
+
+### Technische analyse
+* gebruik de modulo-operator (`%`) om deelbaarheid door 4 na te gaan
+* gebruik een constructie met geneste `if`s (en `else`s) om alle gevallen af te handelen
+
+#### UI
+
+console applicatie
+
+#### voorbeeldinteractie\(s\)
+
+```text
+> 1997
+geen schrikkeljaar
+```
+```text
+> 1996
+schrikkeljaar
+```
+```text
+> 1900
+geen schrikkeljaar
+```
+```text
+> 2000
+schrikkeljaar
+```
 
 ## H4-ruimte-specifiek
 
