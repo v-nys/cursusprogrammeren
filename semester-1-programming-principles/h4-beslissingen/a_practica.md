@@ -86,7 +86,7 @@ Je moet 80 euro betalen.
 
 
 {% hint style="info" %}
-De wet van Ohm houdt in dat een elektrische stroom (voorgesteld als `I`)  gelijk is aan een spanningsverschil (`U`) gedeeld door een weerstand (`R`), dus I = V / R.
+De wet van Ohm houdt in dat een elektrische stroom (voorgesteld als `I`)  gelijk is aan een spanning (`U`) gedeeld door een weerstand (`R`), dus I = U / R.
 {% endhint %}
 
 ### Functionele analyse
