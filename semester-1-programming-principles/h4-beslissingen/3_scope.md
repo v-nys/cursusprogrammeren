@@ -9,8 +9,8 @@ Zeker wanneer je begint met `if`, loops, methoden, etc zal de scope belangrijk z
 ```csharp
 if( something == true)
 {
-    int getal =0 ;  //Start scope getal
-    getal = 6;
+    int getal = 0 ;  //Start scope getal
+    getal =  6;
 } // einde scope getal
 
 getal = 4 // zal niet werken daar de scope van getal al gedaan was
@@ -19,7 +19,7 @@ getal = 4 // zal niet werken daar de scope van getal al gedaan was
 Wil je dus getal ook nog buiten de `if` gebruiken zal je je code moeten herschrijven zodat getal VOOR de `if` wordt aangemaakt:
 
 ```csharp
-int getal =0 ;  //Start scope getal
+int getal = 0 ;  //Start scope getal
 if( something == true)
 {
 
@@ -39,9 +39,9 @@ Volgende code is dus niet toegestaan:
 
 ```csharp
 {
-    int getal=0;
+    int getal = 0;
     {
-        int getal =5; //Deze lijn is niet toegestaan
+        int getal = 5; //Deze lijn is niet toegestaan
     }
 
 }
@@ -55,12 +55,12 @@ Dit is wel geldig, daar de scope van de eerste variabele afgesloten wordt door d
 
 ```csharp
 {
-    int getal =0 ;
+    int getal = 0 ;
     //....
 }
 //Verder in code
 {
-    int getal= 5;
+    int getal = 5;
 }
 ```
 
