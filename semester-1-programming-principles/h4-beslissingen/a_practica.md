@@ -35,15 +35,78 @@ normaal gewicht
 De tekst zou in het groen moeten verschijnen maar Gitbook staat dit niet meteen toe.
 {% endhint %}
 
-## Schoenverkoper
 
-a\) Maak een oefening die aan de gebruiker vraagt hoeveel paar schoenen hij wenst te kopen. Ieder paar schoenen kost steeds 20euro. Indien de gebruiker 10 paar koopt kosten ze maar 10euro. Toon aan de gebruiker de totale prijs.
+## H4-schoenverkoper
 
-b\) Voeg nu toe dat het programma eerst aan de kassier vraagt vanaf hoeveel paar de klant korting zal krijgen. Als de gebruiker dus 5 indient zal reeds bij 5 paar de kost per paar 10euro zijn.
+### Leerdoelen
+
+* conditionele berekeningen
+
+### Functionele analyse
+Maak een programma dat aan de gebruiker vraagt hoeveel paar schoenen hij wenst te kopen. Ieder paar schoenen kost normaal 20 euro. Indien de gebruiker 10 paar of meer koopt, kost elk paar maar 10 euro. Toon aan de gebruiker de totale prijs.
+
+Breid in een tweede stap je programma uit zodat gevraagd wordt vanaf welk aantal schoenen de prijs daalt naar 10 euro.
+
+### Technische analyse
+Hou variabelen bij voor de prijs, de gereduceerde prijs en het aantal paar dat nodig is om korting te krijgen. De eerste twee variabelen maak je `const`.
+
+#### UI
+
+console applicatie
+
+#### voorbeeldinteractie\(s\)
+
+```text
+Hoe veel paar schoenen wil je kopen?
+> 3
+Je moet 60 euro betalen.
+```
+
+```text
+Hoe veel paar schoenen wil je kopen?
+> 12
+Je moet 120 euro betalen.
+```
+
+(Na de uitbreiding)
+
+```text
+Vanaf welk aantal geldt de korting?
+> 7
+Hoe veel paar schoenen wil je kopen?
+> 8
+Je moet 80 euro betalen.
+```
 
 ## Ohm-berekenaar
 
-Vraag aan de gebruiker wat hij wenst te berekenen: Spanning, Weerstand of Stroomsterkte. Vraag vervolgens de 2 andere waarden \(als dus de gebruiker "Spanning" kiest vraag je aan de gebruiker de stroomsterkte en de weerstand\) en bereken m.b.v. de wet van Ohm de gewenste waarde.
+{% hint style="info" %}
+De wet van Ohm houdt in dat een elektrische stroom (voorgesteld als `I`)  gelijk is aan een spanningsverschil (`U`) gedeeld door een weerstand (`R`), dus I = V / R.
+{% endhint %}
+
+### Functionele analyse
+Vraag aan de gebruiker wat hij wenst te berekenen: Spanning, Weerstand of Stroomsterkte. Vraag vervolgens de twee andere waarden \(als dus de gebruiker "Spanning" kiest vraag je aan de gebruiker de stroomsterkte en de weerstand\) en bereken m.b.v. de wet van Ohm de gewenste waarde en toon aan de gebruiker.
+
+### Technische analyse
+Denk eraan dat de gegeven formule wiskundig gedefinieerd is. In C♯ zal je rekening moeten houden met het feit dat deze drie maten uitgedrukt kunnen worden in kommagetallen. 
+
+Je mag hier gewoon strings gebruiken om na te gaan welke maat de gebruiker heeft ingetypt. Je mag veronderstellen dat de getallen uitgedrukt zijn in de gewoonlijke eenheden (volt, ampère, ohm) zodat je ze gewoon kan invullen in de formule.
+
+#### UI
+
+console applicatie
+
+#### voorbeeldinteractie\(s\)
+
+```text
+Wat wil je berekenen? spanning, weerstand of stroomsterkte?
+> stroomsterkte
+Wat is de spanning?
+> 30
+Wat is de weerstand?
+> 20
+De stroomsterkte bedraagt 1.5.
+```
 
 ## Kleurcode weerstand naar ohm
 
