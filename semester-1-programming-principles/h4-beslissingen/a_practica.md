@@ -113,61 +113,6 @@ Wat is de weerstand?
 De stroomsterkte bedraagt 1.5.
 ```
 
-## H4-kleurcodes
-
-### Leerdoelen
-* conditionele berekeningen
-* werken met `switch`
-
-### Functionele analyse
-Deze oefening bouwt voort op H2-weerstandberekenaar-deel1. Vraag nu aan de gebruiker om de ringkleuren van de eerste 3 ringen in te voeren als tekst \(bv `groen`\). Toon vervolgens de de waarde van deze weerstand.
-
-### Technische analyse
-Je zal elke kleur moeten omzetten in een getal en dan je eerdere oplossing hergebruiken. Omzetten doe je door de ingevoerde tekst te vergelijken met een vaste string en naargelang het resultaat variabelen voor ring 1, 2 en 3 in te vullen. **Los deze oefening op met `switch`!**
-
-#### UI
-
-console applicatie
-
-#### voorbeeldinteractie\(s\)
-
-```text
-> rood
-> paars
-> rood
-Deze weerstand heeft waarde van 2700 Ohm
-```
-
-## H4-orakeltje
-
-### Leerdoelen
-* conditionele berekeningen
-* werken met `switch`
-* werken met enumeraties
-
-### Functionele analyse
-Vul de oefening aan uit het vorige hoofdstuk \(zie [hier](../h3-werken-met-data/a_practica.md#h-3-orakeltje)\). Voor het orakel je vertelt hoe lang je te leven hebt zal eerst vragen naar je geslacht, dat je ingeeft als `v` of `m`. Dan vraagt ze je leeftijd. Mannen leven maximum tot hun 120 jaar. Vrouwen tot 150 jaar. Het orakel moet rekening houden met je huidige leeftijd, dus het mag niet zeggen dan een man nog 110 jaar te leven heeft als hij al 50 is, want dan zou hij ouder worden dan 120.
-
-### Technische analyse
-* Je mag veronderstellen dat de huidige leeftijd onder het theoretische maximum ligt.
-* Gebruik een `enum`, met als naam `Sexes` en als waarden `Male` en `Female` om de geslachten voor te stellen.
-  * Het programma zou in dit geval misschien iets simpeler zijn zonder, maar dan gebruik je dit een eerste keer.
-* Je kan vermijden dat de voorspelde leeftijd te hoog gaat door je `.Next`-call aan te passen, zodat de hoogst mogelijke waarde diegene is waarbij je de maximale leeftijd voor het gegeven geslacht bereikt.
-
-#### UI
-
-console applicatie
-
-#### voorbeeldinteractie\(s\)
-
-```text
-Wat is je geslacht?
-> m
-Hoe oud ben je?
-> 32
-Je hebt nog 80 jaar te leven!
-```
-
 ## H4-Schrikkeljaar
 
 ### Leerdoelen
@@ -203,6 +148,67 @@ geen schrikkeljaar
 > 2000
 schrikkeljaar
 ```
+
+
+## H4-kleurcodes
+
+### Leerdoelen
+* conditionele berekeningen
+* werken met `switch`
+
+### Functionele analyse
+Deze oefening bouwt voort op H2-weerstandberekenaar-deel1. Vraag nu aan de gebruiker om de ringkleuren van de eerste 3 ringen in te voeren als tekst \(bv `groen`\). Toon vervolgens de de waarde van deze weerstand.
+
+### Technische analyse
+Je zal elke kleur moeten omzetten in een getal en dan je eerdere oplossing hergebruiken. Omzetten doe je door de ingevoerde tekst te vergelijken met een vaste string en naargelang het resultaat variabelen voor ring 1, 2 en 3 in te vullen. **Los deze oefening op met `switch`!**
+
+#### UI
+
+console applicatie
+
+#### voorbeeldinteractie\(s\)
+
+```text
+> rood
+> paars
+> rood
+Deze weerstand heeft waarde van 2700 Ohm
+```
+
+{% hint style="info" %}
+Voel je je vandaag extra leergierig? Maak dan een extra `enum`, `ResistorColors` en zet de ingegeven tekst om naar waarden binnen deze `enum` vooraleer je de berekening uitvoert.
+{% endhint %}
+
+## H4-orakeltje
+
+### Leerdoelen
+* conditionele berekeningen
+* werken met `switch`
+* werken met enumeraties
+
+### Functionele analyse
+Vul de oefening aan uit het vorige hoofdstuk \(zie [hier](../h3-werken-met-data/a_practica.md#h-3-orakeltje)\). Voor het orakel je vertelt hoe lang je te leven hebt zal eerst vragen naar je geslacht, dat je ingeeft als `v` of `m`. Dan vraagt ze je leeftijd. Mannen leven maximum tot hun 120 jaar. Vrouwen tot 150 jaar. Het orakel moet rekening houden met je huidige leeftijd, dus het mag niet zeggen dan een man nog 110 jaar te leven heeft als hij al 50 is, want dan zou hij ouder worden dan 120.
+
+### Technische analyse
+* Je mag veronderstellen dat de huidige leeftijd onder het theoretische maximum ligt.
+* Gebruik een `enum`, met als naam `Sexes` en als waarden `Male` en `Female` om de geslachten voor te stellen.
+  * Het programma zou in dit geval misschien iets simpeler zijn zonder, maar dan gebruik je dit een eerste keer.
+* Je kan vermijden dat de voorspelde leeftijd te hoog gaat door je `.Next`-call aan te passen, zodat de hoogst mogelijke waarde diegene is waarbij je de maximale leeftijd voor het gegeven geslacht bereikt.
+
+#### UI
+
+console applicatie
+
+#### voorbeeldinteractie\(s\)
+
+```text
+Wat is je geslacht?
+> m
+Hoe oud ben je?
+> 32
+Je hebt nog 80 jaar te leven!
+```
+
 
 ## H4-ruimte-specifiek
 
