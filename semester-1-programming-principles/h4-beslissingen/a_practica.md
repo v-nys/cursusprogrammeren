@@ -143,7 +143,7 @@ Deze weerstand heeft waarde van 2700 Ohm
 ### Leerdoelen
 * conditionele berekeningen
 * werken met `switch`
-* werken met `enum`s
+* werken met enumeraties
 
 ### Functionele analyse
 Vul de oefening aan uit het vorige hoofdstuk \(zie [hier](../h3-werken-met-data/a_practica.md#h-3-orakeltje)\). Voor het orakel je vertelt hoe lang je te leven hebt zal eerst vragen naar je geslacht, dat je ingeeft als `v` of `m`. Dan vraagt ze je leeftijd. Mannen leven maximum tot hun 120 jaar. Vrouwen tot 150 jaar. Het orakel moet rekening houden met je huidige leeftijd, dus het mag niet zeggen dan een man nog 110 jaar te leven heeft als hij al 50 is, want dan zou hij ouder worden dan 120.
@@ -212,7 +212,7 @@ Dit is een complexere oefening dan de vorige! Pak het stapje voor stapje aan en 
 
 ### Leerdoelen
 
-* werken met `enum`s
+* werken met enumeraties
 * conversie van enums van en naar getallen
 * werken met `switch`
 
