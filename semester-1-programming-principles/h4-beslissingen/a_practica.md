@@ -56,10 +56,3 @@ De gebruiker voert een jaartal in en jouw programma toont of het wel of geen sch
 * 1996: wél schrikkeljaar
 * 1900: geen schrikkeljaar
 * 2000: wél schrikkeljaar
-
-## GuntherD Stemwijzer
-
-Kan jij volgende ludieke stemwijzer van GuntherD in een eenvoudig programma gieren dat door een reeks j/n vragen aan de gebruiker uiteindelijk zijn "stemprofiel" toont?
-
-![](../../.gitbook/assets/stemwijzer.png)
-
