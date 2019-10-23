@@ -67,44 +67,21 @@ Zelf een `enum` type maken gebeurt in 2 stappen: 1. Het type en de mogelijke waa
 
 #### Stap 1: het type definiëren
 
-We maken eerst een enum type aan. In je console-applicaties moet dit binnen `class Program` gebeuren, maar niét binnen de \(`main`\) methoden:
+We maken eerst een enum type aan. **Wij spreken af dit in een aparte file te doen, net zoals we dat voor alle eigen datatypes zullen doen.** Deze file heeft de naam van je nieuw type, gevolgd door de `.cs`-extensie.
+
+Bijvoorbeeld, in `Weekdagen.cs`:
 
 ```csharp
-enum Weekdagen {Maandag, Dinsdag, Woensdag, Donderdag, Vrijdag, Zaterdag, Zondag}
-```
-
-Vanaf nu kan je variabelen van het type `Weekdagen` aanmaken.
-
-Merk op dat er **geen puntkomma** achteraan komt.
-
-**Locatie enum definitie**
-
-Let er op dat je je `enum` op de juiste locatie in je code schrijft:
-
-```csharp
-public class Program
-{
+namespace Programmeren {
     enum Weekdagen {Maandag, Dinsdag, Woensdag, Donderdag, Vrijdag, Zaterdag, Zondag}
-
-    public static void Main(string[] args)
-    {
-
-    }
 }
 ```
 
-**Dit is fout:**
+Vanaf nu kan je variabelen van het type `Weekdagen` aanmaken, zo lang je toegang hebt tot de namespace `Programmeren`. Als `class Program` in dezelfde namespace staat als je enumeratie, is dat sowieso het geval.
 
-```csharp
-public class Program
-{
-
-    public static void Main(string[] args)
-    {
-        enum Weekdagen {Maandag, Dinsdag, Woensdag, Donderdag, Vrijdag, Zaterdag, Zondag}   
-    }
-}
-```
+{% hint style="warning" %}
+Let op de gehanteerde afspraken rond enkelvoud en meervoud, kleine letters en hoofdletters voor enums. Zie [de pagina met afspraken](https://apwt.gitbook.io/cursus-pro-oo/inleiding/afsprakencode).
+{% endhint %}
 
 #### Stap 2: variabelen van het type aanmaken en gebruiken.
 
@@ -196,22 +173,22 @@ De eerste kennismaking met enumeraties is wat bevreemdend: je kan plots je eigen
 Wanneer gebruik je `enum`? Telkens je een variabele \(of meerdere\) nodig hebt waarvan je perfect op voorhand weet welke handvol mogelijke waarde ze mogen hebben. Ze worden bijvoorbeeld vaak gebruikt in **finite state machines**. Bij game development willen we bijhouden bijhouden in welke staat het programma zich bevindt: `intro`,`startmenu`, `ingame`,`gameover`,`optionsscreen`, etc. Dit is een typisch `enum` verhaal. We definiëren hiervoor het volgende type:
 
 ```csharp
-enum gamestate {intro, startmenu, ingame, gameover, optionsscreen}
+enum GameStates {Intro, StartMenu, InGame, GameOver, OptionsScreen}
 ```
 
 En vervolgens kunnen we dan met een eenvoudige switch in ons hoofdprogramma snel de relevante code uitvoeren:
 
 ```csharp
 //Bij opstart:
-gamestate playerGameState= gamestate.intro;
+GameStates playerGameState= GameStates.Intro;
 
 //later:
 switch(playerGameState)
 {
-    case gamestate.intro:
+    case GameStates.Intro:
         //show fancy movie
         break;
-    case gamestate.startmenu:
+    case GameStates.StartMenu:
         //show start menu
         break;
     //etc...

@@ -4,7 +4,7 @@ In dit deel zullen we bekijken hoe we ons programma dynamischer kunnen maken met
 
 ## If
 
-De `if` uitdrukking is 1 van de elementairste uitdrukking in een programmeertaal. De syntax is als volgt:
+De `if` uitdrukking is een van de meest elementaire uitdrukkingen in een programmeertaal. De syntax is als volgt:
 
 ```csharp
 if (boolean expression) 
@@ -38,7 +38,7 @@ Indien `number` groter of gelijk aan 5 was dan zou er enkel `B` op het scherm zi
 
 ## if met een block
 
-Het is aangeraden om steeds na de if-expressie met accolades te werken. Dit zorgt ervoor dat alle code tussen het block \(de accolades\) zal uitgevoerd worden indien de booleanse expressie waar was. \*\*Gebruik je geen accolades dan zal enkel de eerste lijn na de `if` uitgevoerd worden bij `true`.
+Het is aangeraden om steeds na de if-expressie met accolades te werken. Dit zorgt ervoor dat alle code tussen het block \(de accolades\) zal uitgevoerd worden indien de booleanse expressie waar was. **Gebruik je geen accolades dan zal enkel de eerste lijn na de `if` uitgevoerd worden bij `true`.**
 
 Een voorbeeld:
 
@@ -54,6 +54,10 @@ if ( number < 5 )
 
 De booleaanse expressie die je tussen de `if` haakjes plaats moet een stuk code zijn dat altijd een `bool` als resultaat teruggeeft.
 
+{% hint style="warning" %}
+We verwachten dat je `if` altijd met een block gebruikt, omdat dat leesbaarder is. De versie zonder block zien we als een stijlfout!
+{% endhint %}
+
 ## Veelgemaakte if-fouten
 
 Er zijn enkele veelgemaakte fouten waar je op moet letten:
@@ -64,7 +68,7 @@ De types in je booleanse expressie moeten steeds vergelijkbaar zijn. Volgende co
 
 ### Accolades vergeten
 
-Om een codeblock aan te duiden, maar je code toch zodanig outlinen \(met tabs\) dat het lijkt of je een heel codeblock hebt. Het gevolg zal zijn dat enkel de eerste lijn na de `if` zal uitgevoerd worden indien \`\`true\`\`\`. Gebruiken we de if met bock van daarnet maar zonder accolades dan zal de laatste lijn altijd uitgevoerd worden ongeacht de if:
+Om een codeblock aan te duiden, maar je code toch zodanig outlinen \(met tabs\) dat het lijkt of je een heel codeblock hebt. Het gevolg zal zijn dat enkel de eerste lijn na de `if` zal uitgevoerd worden indien \`\`true\`\`\`. Gebruiken we de if met het block van daarnet maar zonder accolades dan zal de laatste lijn altijd uitgevoerd worden ongeacht de if:
 
 ```csharp
 if ( number < 5 )
@@ -199,29 +203,6 @@ else
 
 > Kan je zelf een flowchart van bovenstaande code tekenen? Try it!
 
-## If/else if
-
-Met een if/ else if constructie kunnen we meerdere criteria opgeven die waar/niet waar moeten zijn voor een bepaald stukje code kan uitgevoerd worden. Sowieso begint men steeds met een if. Als men vervolgens een else if plaats dan zal de code van deze else if uitgevoerd worden enkel en alleen als de eerste expressie \(van de if\) niet waar was en de expressie van deze else if wel waar is.
-
-Een voorbeeld:
-
-```csharp
-int x = 9;
-
-if (x == 10)
-{
-     Console.WriteLine ("x is 10");
-}
-else if (x == 9)
-{
-     Console.WriteLine ("x is 9");
-}
-else if (x == 8)
-{
-     Console.WriteLine ("x is 8");
-}
-```
-
 ## Nesting
 
 We kunnen met behulp van nesting ook complexere programma flows maken. Hierbij gebruiken we de accolades om het blok code aan te duiden dat bij een if/else/if else hoort. Binnen dit blok kunnen nu echter opnieuw if/else/if else structuren worden aangemaakt.
@@ -246,3 +227,29 @@ else
 }
 ```
 
+## If/else if
+
+Met een if/ else if constructie kunnen we meerdere criteria opgeven die waar/niet waar moeten zijn voor een bepaald stukje code kan uitgevoerd worden. Sowieso begint men steeds met een if. Als men vervolgens een else if plaats dan zal de code van deze else if uitgevoerd worden enkel en alleen als de eerste expressie \(van de if\) niet waar was en de expressie van deze else if wel waar is.
+
+Een voorbeeld:
+
+```csharp
+int x = 9;
+
+if (x == 10)
+{
+     Console.WriteLine ("x is 10");
+}
+else if (x == 9)
+{
+     Console.WriteLine ("x is 9");
+}
+else if (x == 8)
+{
+     Console.WriteLine ("x is 8");
+}
+```
+
+{% hint style="info" %}
+Merk op dat `else if` niet meer is dan een verkorte schrijfwijze voor nesting van een `if` in een `else`-block.
+{% endhint %}
