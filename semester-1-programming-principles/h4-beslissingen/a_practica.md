@@ -1,16 +1,39 @@
 # Oefeningen
 
-## BMI met if
+## H4-BMI-if
 
-Pas je BMI-programma \([zie practica vorige hoofdstuk](../h3-werken-met-data/a_practica.md#bmi-berekenaar)\) aan zodat je programma feedback aan de gebruiker geeft naargelang de berekende BMI.
+### Leerdoelen
 
-De kleur tussen haakjes geeft aan in welke kleur je deze tekst zet:
+* conditionele boodschappen
 
-* Onder de 18,5 \(rood\): ondergewicht.
-* Tussen de 18,5 en de 24,9 \(groen\): normaal gewicht. 
-* Tussen de 25 en de 29,9 \(donkergeel\): overgewicht. Je loopt niet echt een risico, maar je mag niet dikker worden.
-* Tussen de 30 en de 39,9 \(rood\): Zwaarlijvigheid \(obesitas\). Verhoogde kans op allerlei aandoeningen zoals diabetes, hartaandoeningen en rugklachten. Je zou 5 tot 10 kg moeten vermageren.
-* Boven de 40 \(magenta\): ernstige zwaarlijvigheid. Je moet dringend vermageren want je gezondheid is in gevaar \(of je hebt je lengte of gewicht in verkeerde eenheid ingevoerd\)
+### Functionele analyse
+
+Deze opgave bouwt verder op H3-BMI-berekenaar. Meerbepaald moet je de gebruiker niet alleen zijn of haar BMI tonen, maar moet je ook een gekleurde boodschap tonen die laat weten of de BMI goed zit of niet.
+
+Voor een BMI lager dan 18,5 toon je de boodschap "ondergewicht" in rode tekst. Voor een BMI die hoger ligt dan 18,5 maar lager dan 25, toon je de boodschap "normaal gewicht" in groene tekst. Voor een hogere BMI, maar lager dan 30, toon je in gele tekst "overgewicht". Voor een hogere BMI, maar lager dan 40, toon je "zwaarlijvig" in rode tekst. Voor een hogere BMI toon je "ernstige obesitas" in magenta.
+
+### Technische analyse
+Via `if` en `else` (en dus ook `else if`) kan je gevallen onderscheiden. Gebruik `ConsoleColor.Red`, `ConsoleColor.Green`, `ConsoleColor.Yellow` en `ConsoleColor.Magenta`.
+
+
+#### UI
+
+console applicatie
+
+#### voorbeeldinteractie\(s\)
+
+```text
+Hoe veel weeg je in kg?
+> 69.0
+Hoe groot ben je in m?
+> 1.78
+Je BMI bedraagt 21.78.
+normaal gewicht
+```
+
+{% hint style="info" %}
+De tekst zou in het groen moeten verschijnen maar Gitbook staat dit niet meteen toe.
+{% endhint %}
 
 ## Schoenverkoper
 
@@ -56,3 +79,51 @@ De gebruiker voert een jaartal in en jouw programma toont of het wel of geen sch
 * 1996: wél schrikkeljaar
 * 1900: geen schrikkeljaar
 * 2000: wél schrikkeljaar
+
+## H4-ruimte-specifiek
+
+{% hint style="danger" %}
+Dit is een complexere oefening dan de vorige! Pak het stapje voor stapje aan en gebruik indien nodig de debugger.
+{% endhint %}
+
+### Leerdoelen
+
+* werken met `enum`s
+* conversie van enums van en naar getallen
+* werken met `switch`
+
+### Functionele analyse
+
+Deze opgave bouwt verder op H1-ruimte. Eerst vraag je de gebruiker om zijn of haar gewicht in te voeren. Daarna geef je een lijst van de planeten in ons zonnestelsel (Pluto inbegrepen, ook al is dat officieel geen planeet). Iedere planeet wordt voorafgegaan door een nummer. Dan selecteert de gebruiker het nummer van een van deze planeten en ten slotte toont het programma hoe veel de persoon weegt op de planeet in kwestie.
+
+### Technische analyse
+Je hebt hier verschillende zaken nodig:
+
+* conversie naar een `double` om een gewicht in te lezen
+* een `enum` om de planeten voor te stellen
+* conversie van de planeten naar getallen om de gebruiker een nummer voor elke planeet te tonen
+* conversie in de omgekeerde richting om de keuze van de gebruiker te verstaan
+* een `switch` om de juiste vermenigvuldigingsfactor te bepalen
+
+#### UI
+
+console applicatie
+
+#### voorbeeldinteractie\(s\)
+
+```text
+Hoe veel weeg je?
+> 69.0
+Voor welke planeet wil je je gewicht kennen?
+1. Mercurius
+2. Venus
+3. Aarde
+4. Mars
+5. Jupiter
+6. Saturnus
+7. Uranus
+8. Neptunus
+9. Pluto
+> 2
+Daar weeg je 62.79kg.
+```
