@@ -2,7 +2,7 @@
 
 ## Scope van variabelen
 
-De locatie waar je een variabele aanmaakt bepaalt de **scope**, oftewel de levensduur, van de variabele. Een variabele (dus een link tussen een naam en een waarde) verdwijnt wanneer het block is afgewerkt waarin deze variabele is gedeclareerd. Indien je de variabele dus buiten die accolades nodig hebt dan heb je een probleem: de variabele is enkel bereikbaar binnen de accolades vanaf het punt in de code waarin het werd aangemaakt.
+De locatie waar je een variabele aanmaakt bepaalt de **scope**, oftewel de levensduur, van de variabele. Een variabele \(dus een link tussen een naam en een waarde\) verdwijnt wanneer het block is afgewerkt waarin deze variabele is gedeclareerd. Indien je de variabele dus buiten die accolades nodig hebt dan heb je een probleem: de variabele is enkel bereikbaar binnen de accolades vanaf het punt in de code waarin het werd aangemaakt.
 
 Zeker wanneer je begint met `if`, loops, methoden, etc zal de scope belangrijk zijn: deze code-constructies gebruiken steeds accolades om codeblocks aan te tonen. Een variabele die je dus binnen een if-blok aanmaakt zal enkel binnen dit blok bestaan, niet er buiten.
 

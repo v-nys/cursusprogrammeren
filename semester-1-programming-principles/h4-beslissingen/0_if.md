@@ -253,3 +253,4 @@ else if (x == 8)
 {% hint style="info" %}
 Merk op dat `else if` niet meer is dan een verkorte schrijfwijze voor nesting van een `if` in een `else`-block.
 {% endhint %}
+
