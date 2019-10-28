@@ -3,7 +3,7 @@
 De locatie waar je een variabele aanmaakt bepaald de **scope**, oftewel de zichtbaarheid, van de variabele.
 Eenvoudig gezegd zullen steeds de omliggende accolades de scope van de variabele bevatten. Indien je de variabele dus buiten die accolades nodig hebt dan heb je een probleem: de variabele is enkel bereikbaar binnen de accolades vanaf het punt in de code waarin het werd aangemaakt.
 
-Zeker wanneer je begint met ``if``, loops, methoden, etc zal de scope belangrijk zijn: deze code-constructies gebruiken steeds accolades om codeblocks aan te tonen. Een variabele die je dus binnen een if-blok aanmaakt zal enkel binnen dit blok bestaan, niet er buiten.
+Zeker wanneer je begint met ``if``, loops, methoden, etc. zal de scope belangrijk zijn: deze code-constructies gebruiken steeds accolades om codeblocks aan te tonen. Een variabele die je dus binnen een if-blok aanmaakt zal enkel binnen dit blok bestaan, niet er buiten.
 ```csharp
 if( something == true)
 {
