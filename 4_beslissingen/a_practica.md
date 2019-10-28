@@ -8,7 +8,7 @@ De kleur tussen haakjes geeft aan in welke kleur je deze tekst zet:
 * Tussen de 18,5 en de 24,9 (groen): normaal gewicht. 
 * Tussen de 25 en de 29,9 (donkergeel): overgewicht. Je loopt niet echt een risico, maar je mag niet dikker worden.
 * Tussen de 30 en de 39,9 (rood): Zwaarlijvigheid (obesitas). Verhoogde kans op allerlei aandoeningen zoals diabetes, hartaandoeningen en rugklachten. Je zou 5 tot 10 kg moeten vermageren.
-* Boven de 40 (magenta): ernstige zwaarlijvigheid. Je moet dringend vermageren want je gezondheid is in gevaar (of je hebt je lengte of gewicht in verkeerde eenheid ingevoerd)
+* Boven de 40 (magenta): ernstige zwaarlijvigheid. Je moet dringend vermageren want je gezondheid is in gevaar (of je hebt je lengte of gewicht in verkeerde eenheid ingevoerd).
 
 # Schoenverkoper
 a) Maak een oefening die aan de gebruiker vraagt hoeveel paar schoenen hij wenst te kopen. Ieder paar schoenen kost steeds 20euro. Indien de gebruiker 10 paar koopt kosten ze maar 10euro. Toon aan de gebruiker de totale prijs.
