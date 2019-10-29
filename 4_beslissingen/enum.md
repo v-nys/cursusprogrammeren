@@ -188,3 +188,7 @@ switch(playerGameState)
         break;
     //etc...
 ```
+
+# Kennisclip
+![](../assets/infoclip.png)
+* [Enums gebruiken](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=9273e56b-1bfa-4393-a14a-aaed00bd4eaf)

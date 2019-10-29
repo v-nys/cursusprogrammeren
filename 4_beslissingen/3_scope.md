@@ -11,7 +11,7 @@ if( something == true)
     getal = 6;
 } // einde scope getal
 
-getal = 4 // zal niet werken daar de scope van getal al gedaan was
+Console.WriteLine(getal); // zal niet werken daar de scope van getal al gedaan was
 ```
 
 Wil je dus getal ook nog buiten de ``if`` gebruiken zal je je code moeten herschrijven zodat getal VOOR de ``if`` wordt aangemaakt:
@@ -24,7 +24,7 @@ if( something == true)
     getal = 6;
 } 
 
-getal = 4 
+Console.WriteLine(getal); 
 ```
 
 > Scope van variabelen is soms wat verwarrend. Hopelijk kan volgende kennis je helpen:[Kennisclip "Scope van variabelen](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=20538981-ceaf-4129-a54a-a91100c81b2f).

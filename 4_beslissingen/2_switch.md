@@ -66,3 +66,26 @@ switch (option)
 ## Opgelet:
 
 De case waarden moeten constanten zijn en mogen dus geen variabelen zijn. Constanten zijn de welgekende *literals* (``1, "1", 1.0, 1.d, '1'``, etc.)
+
+# Falthrough
+
+Some wil je dat dezelfde code moet uitgevoerd bij 2 of meer cases. Je kan ook zogenaamde fallthrough cases beschrijven wat er als volgt uit ziet:
+
+```csharp
+switch (option)
+{
+    case 1:
+        Console.WriteLine("Afbreken gekozen");
+        break;
+    case 2:
+    case 3:
+        Console.WriteLine("Laden of opslaan gekozen");
+        break;
+    default:
+        Console.WriteLine("Onbekende keuze");
+        break;
+  }
+```
+
+In dit geval zullen zowel de waarden ``2`` en ``3`` resulteren in de zin "Laden of opslaan gekozen" op het scherm.
+
