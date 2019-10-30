@@ -12,7 +12,7 @@ if (boolean expression)
 }
 
 ```
-Enkel indien de booleaanse expressie waar is, en dus ``true`` als resultaat heeft zal de code binnen de accolades van het if-blok uitgevoerd worden. Indien de expressie niet waar is (``false``) dan wordt het blok overgeslagen en gaat het programma verder met de code eronder.
+Enkel indien de booleaanse expressie waar is, en dus ``true`` als resultaat heeft, zal de code binnen de accolades van het if-blok uitgevoerd worden. Indien de expressie niet waar is (``false``) dan wordt het blok overgeslagen en gaat het programma verder met de code eronder.
 
 
 
@@ -57,7 +57,7 @@ Er zijn enkele veelgemaakte fouten waar je op moet letten:
 ### Appelen en peren vergelijken
 De types in je booleanse expressie moeten steeds vergelijkbaar zijn. Volgende code is dus fout: ``if( "4" > 3)`` daar we hier een ``string`` met een ``int``vergelijken.
 ### Accolades vergeten
-Om een codeblock aan te duiden, maar je code toch zodanig outlinen (met tabs) dat het lijkt of je een heel codeblock hebt. Het gevolg zal zijn dat enkel de eerste lijn na de ``if`` zal uitgevoerd worden indien ``true```. Gebruiken we de if met bock van daarnet maar zonder accolades dan zal de laatste lijn altijd uitgevoerd worden ongeacht de if:
+Om een codeblock aan te duiden, maar je code toch zodanig outlinen (met tabs) dat het lijkt of je een heel codeblock hebt. Het gevolg zal zijn dat enkel de eerste lijn na de ``if`` zal uitgevoerd worden indien ``true``. Gebruiken we de if met block van daarnet maar zonder accolades dan zal de laatste lijn altijd uitgevoerd worden ongeacht de if:
 
 ```csharp
 if ( number < 5 )
@@ -71,7 +71,7 @@ Merk ook op dat je code anders uitlijnen géén invloed heeft op de uitvoer (wat
 
 ### Een puntkomma plaatsen na de booleanse expressie. 
 
-Dit zal ervoor zorgen dat er eigenlijk geen codeblock bij de if hoort en je dus een nietszeggende ``if`` het geschreven. De code na het puntkomma zal uitgevoerd worden ongeacht de ``if``:
+Dit zal ervoor zorgen dat er eigenlijk geen codeblock bij de if hoort en je dus een nietszeggende ``if`` hebt geschreven. De code na het puntkomma zal uitgevoerd worden ongeacht de ``if``:
 
 ```csharp
 if ( number < 5 );
@@ -83,7 +83,7 @@ if ( number < 5 );
   
 
 ## Gebruik relationele operators
-Met de relationele operators (==, !=, <, >, <= en >=) kunnen we complexere expressies schrijven die als uitkomst waar (true) of niet waar (false) geven:
+Met de relationele operators (==, !=, <, >, <= en >=) kunnen we complexere expressies schrijven die als uitkomst waar (true) of niet waar (false) geven.
 
 Een voorbeeld:
 ```csharp
@@ -168,7 +168,7 @@ Uitvoer van dit programma zal zijn:
 ```
 
 ## If/else
-Met if/else kunnen we niet enkel zeggen welke code moet uitgevoerd worden als de conditie waar is maar ook welke specifieke code indien de conditatie niet waar (false). Volgende voorbeeld geeft een typisch gebruik van een if/else structuur om 2 waarden met elkaar te vergelijken:
+Met if/else kunnen we niet enkel zeggen welke code moet uitgevoerd worden als de conditie waar is maar ook welke specifieke code indien de conditie niet waar (false) is. Volgende voorbeeld geeft een typisch gebruik van een if/else structuur om 2 waarden met elkaar te vergelijken:
 
 ```csharp
 int x = 10;
@@ -209,7 +209,7 @@ else if (x == 8)
 
 
 ## Nesting
-We kunnen met behulp van nesting ook complexere programma flows maken. Hierbij gebruiken we de accolades om het blok code aan te duiden dat bij een if/else/if else hoort. Binnen dit blok kunnen nu echter opnieuw if/else/if else structuren worden aangemaakt.
+We kunnen met behulp van nesting ook complexere programma flows maken. Hierbij gebruiken we de accolades om het blok code aan te duiden dat bij een if/else if/else hoort. Binnen dit blok kunnen nu echter opnieuw if/else if/else structuren worden aangemaakt.
 
 Volgende voorbeeld toont dit aan (bekijk wat er gebeurt als je emergencyValve aan ``closed`` gelijkstelt) :
 

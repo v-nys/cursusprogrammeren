@@ -1,6 +1,6 @@
 # Binaire bewerkingen
 
-Je kan ook met binaire getallen werken in C#. Dit kan nuttig zijn wanneer je bijvoorbeeld met een stuk hardware wilt communiceren via C# en je bepaalde bits moet in/uit schakelen. [Deze uitleg](https://playground.arduino.cc/Code/BitMath/#common) toont enkele toffe voorbeelden waarom bitwise operators nuttig zijn wanneer je met Arduino werkt en [hier](https://stackoverflow.com/questions/38997913/python-bitwise-logic-to-operate-leds) met een Raspberry Pi
+Je kan ook met binaire getallen werken in C#. Dit kan nuttig zijn wanneer je bijvoorbeeld met een stuk hardware wilt communiceren via C# en je bepaalde bits moet in/uit schakelen. [Deze uitleg](https://playground.arduino.cc/Code/BitMath/#common) toont enkele toffe voorbeelden waarom bitwise operators nuttig zijn wanneer je met Arduino werkt en [hier](https://stackoverflow.com/questions/38997913/python-bitwise-logic-to-operate-leds) met een Raspberry Pi.
 
 ## Omzetten van en naar binaire voorstelling
 

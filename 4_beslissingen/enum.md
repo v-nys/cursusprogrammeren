@@ -55,7 +55,7 @@ In C# zitten al veel Enum-types ingebouwd. Denk maar aan ``ConsoleColor``: wanne
 ## Zelf enum maken
 Zelf een ``enum`` type maken gebeurt in 2 stappen:
 1. Het type en de mogelijke waarden definiëren
-2. Variabele(n) van het nieuwe type aanmaken gebruiken in je code
+2. Variabele(n) van het nieuwe type aanmaken en gebruiken in je code
 
 ### Stap 1: het type definiëren
 We maken eerst een enum type aan. In je console-applicaties moet dit binnen ``class Program`` gebeuren, maar niét binnen de (``main``) methoden:
@@ -139,7 +139,7 @@ Weekdagen dagKeuze = (Weekdagen)keuze;
 Wil je dus bijvoorbeeld 1 dag bijtellen dan kan je schrijven:
 ```csharp
 Weekdagen dagKeuze= Weekdagen.Dinsdag;
-int extradag= = (int)dagKeuze + 1;
+int extradag= (int)dagKeuze + 1;
 Weekdagen nieuweDag= (Weekdagen)extradag;
 //extraDag heeft de waarde Weekdagen.Woensdag
 ```
@@ -148,13 +148,13 @@ Weekdagen nieuweDag= (Weekdagen)extradag;
 Standaard worden de waarden dus genummerd intern beginnende bij 0, enz. Je kan dit ook manueel veranderen door bij het maken van de ``enum`` expliciet aan te geven wat de interne waarde moet zijn, als volgt:
 
 ```csharp
-enum WeekDagen {Maandag =1, Dinsdag,Woensdag, Donderdag, Vrijdag, Zaterdag, Zondag}
+enum WeekDagen {Maandag =1, Dinsdag, Woensdag, Donderdag, Vrijdag, Zaterdag, Zondag}
 ```
 De dagen zullen nu vanaf 1 genummerd worden, dus ``WeekDagen.Woensdag`` zal de waarde 3 hebben.
 
 We kunnen ook nog meer informatie meegeven, bijvoorbeeld:
 ```csharp
-enum WeekDagen {Maandag =1, Dinsdag,Woensdag, Donderdag, Vrijdag, Zaterdag=50, Zondag=60}
+enum WeekDagen {Maandag =1, Dinsdag, Woensdag, Donderdag, Vrijdag, Zaterdag=50, Zondag=60}
 ```
 
 In dit geval zullen Maandag tot Vrijdag intern als 1 tot en met 5 bewaard worden, Zaterdag als 50, en Zondag als 60.
@@ -166,7 +166,7 @@ Je kan perfect leven zonder ``enum``. Vele programmeurs voor je hebben dit bewez
 
 De eerste kennismaking met enumeraties is wat bevreemdend: je kan plots je eigen datatypes aanmaken?! Van zodra je ze in de vingers hebt zal je ontdekken dat je veel leesbaardere code kunt schrijven én dat Visual Studio je kan helpen met het opsporen van bugs. 
 
-Wanneer gebruik je ``enum``? Telkens je een variabele (of meerdere) nodig hebt waarvan je perfect op voorhand weet welke handvol mogelijke waarde ze mogen hebben. Ze worden bijvoorbeeld vaak gebruikt in **finite state machines**. Bij game development willen we bijhouden bijhouden in welke staat het programma zich bevindt: ``intro``,``startmenu``, ``ingame``,``gameover``,``optionsscreen``, etc.
+Wanneer gebruik je ``enum``? Telkens je een variabele (of meerdere) nodig hebt waarvan je perfect op voorhand weet welke handvol mogelijke waarde ze mogen hebben. Ze worden bijvoorbeeld vaak gebruikt in **finite state machines**. Bij game development willen we bijhouden in welke staat het programma zich bevindt: ``intro``, ``startmenu``, ``ingame``, ``gameover``, ``optionsscreen``, etc.
 Dit is een typisch ``enum`` verhaal. We definiëren hiervoor het volgende type:
 ```csharp
 enum gamestate {intro, startmenu, ingame, gameover, optionsscreen}

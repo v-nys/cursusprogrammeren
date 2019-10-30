@@ -29,7 +29,7 @@ Je kan de niet-operator voor een expressie zetten om het resultaat hiervan om te
 Een booleaanse expressie is een stuk C# code dat een ``bool`` als resultaat zal geven. 
 
 De logische operators van hierboven zijn operators die een ``bool`` teruggeven. Ze zijn zogenaamde test-operators: ze testen of iets waar is of niet. 
-"is b kleiner dan c?" schrijf je dan als de booleaanse expressie: ``b<c``>
+"is b kleiner dan c?" schrijf je dan als de booleaanse expressie: ``b<c``
 
 Test maar eens wat er op je scherm komt als je in code schrijft: ``Console.WriteLine(45<=55);``. 
 

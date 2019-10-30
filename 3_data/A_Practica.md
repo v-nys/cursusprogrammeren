@@ -3,10 +3,10 @@
 # Supercomputer
 > Vanaf dit punt zullen  de meeste oefeningen "iets vragen aan de gebruiker". Hiermee wordt bedoeld dat je z'n input via ReadLine moet inlezen en indien nodig moet converteren naar het gewenste type.
 
-Vraag aan de gebruiker 3 kommagetallen. Bereken het gemiddelde van deze 3 getallen
+Vraag aan de gebruiker 3 kommagetallen. Bereken het gemiddelde van deze 3 getallen.
 
 # Geometric-fun
-Vraag aan de gebruiker een hoek in graden. Zet deze om naar radialen (rad= x° * (Pi/180°)) , gebruik ``Math.PI`` voor Pi. Gebruik vervolgens de verschillende geometrische functies in de ``Math.`` bibliotheek om de Sin, Cosinus en Tangens van de hoek aan de gebruiker te tonen (deze functies werken in radialen, daarom moeten we deze eerst omzetten)
+Vraag aan de gebruiker een hoek in graden. Zet deze om naar radialen (rad= x° * (Pi/180°)), gebruik ``Math.PI`` voor Pi. Gebruik vervolgens de verschillende geometrische functies in de ``Math.`` bibliotheek om de Sin, Cosinus en Tangens van de hoek aan de gebruiker te tonen (deze functies werken in radialen, daarom moeten we deze eerst omzetten).
 
 # BMI berekenaar
 Maak een programma dat aan de gebruiker z'n lengte en gewicht vraagt en vervolgens z'n berekende BMI (Body Mass Index) toont.
@@ -24,21 +24,21 @@ Voorbeeldwerking:
 ```text
 Voer bedrag in?
 12
-De poef staat op 12 euro
+De poef staat op 12 euro.
 Voer bedrag in?
 14
-De poef staat op 26 euro
+De poef staat op 26 euro.
 Voer bedrag in?
 3
-De poef staat op 29 euro
+De poef staat op 29 euro.
 Voer bedrag in?
 8
-De poef staat op 37 euro
+De poef staat op 37 euro.
 Voer bedrag in?
 2
-De poef staat op 39 euro
+De poef staat op 39 euro.
 *************************
-Het totaal van  de poef is 39 en zal 4 weken duren om volledig afbetaald te worden
+Het totaal van  de poef is 39 en zal 4 weken duren om volledig afbetaald te worden.
 ```
 
 
@@ -46,7 +46,7 @@ Het totaal van  de poef is 39 en zal 4 weken duren om volledig afbetaald te word
 De plaatselijke voetbalclub organiseert een mosselfestijn. Naast mosselen met frietjes (20 EUR) bieden ze voor de kinderen de mogelijkheid om een koninginnehapje (10 EUR) te kiezen. Verder is er een ijsje als nagerecht voorzien (3 EUR). Om het gemakkelijk te maken kosten alle dranken 2 EUR.
 
 
-Ontwerp een applicatie zodat de vrijwilliger aan de kassa alleen maar de juiste aantallen moet ingeven ,lijn per lijn. (frietjes, koninginenhapje, ijsje, drank) om de totaal te betalen prijs te berekenen. 
+Ontwerp een applicatie zodat de vrijwilliger aan de kassa alleen maar de juiste aantallen moet ingeven, lijn per lijn. (frietjes, koninginenhapje, ijsje, drank) om de totaal te betalen prijs te berekenen. 
 
 Het resultaat wordt als volgt weergegeven: ``Het totaal te betalen bedrag is x EURO``.
 
@@ -65,13 +65,13 @@ Dranken?
 5
 Tussenprijs= 60 euro + 50 euro + 6 euro + 10 euro
 
-Het totaal te betalen bedrag is 126 EURO
+Het totaal te betalen bedrag is 126 EURO.
 ```
 
  # Het Orakeltje van Delphi
  Gebruik de random generator om een orakel/waarzegger te maken, namelijk de kleine broer of zus van het [Orakel van Delphi](https://nl.wikipedia.org/wiki/Orakel_van_Delphi). Het programma zal aan de gebruiker vertellen hoe lang deze nog zal leven. Bijvoorbeeld: "Je zal nog 15 jaar leven.".
  
- Het orakel zal enkel realistische getallen geven. Maw, getallen tussen de 5 en 125 jaar (onder de 5 zou grof zijn).
+ Het orakel zal enkel realistische getallen geven. M.a.w., getallen tussen de 5 en 125 jaar (onder de 5 zou grof zijn).
 
  > We gaan geregeld een oefening in een later hoofdstuk verder uitbreiden. Het orakeltje van Delphi is er zo eentje.
 
