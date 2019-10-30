@@ -208,6 +208,13 @@ Deze is **FOUT** en zal niet compileren:
 ToonInfo(37, "Tim");
 ```
 
+
+# Kennisclip
+![](../assets/infoclip.png)
+* [Introductie methoden](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=500f8c7e-874c-4e01-a2e5-aaf600dcda06)
+
+
+
 ## Commentaar toevoegen
 
 Het is aan te raden om steeds boven een methode een Block-commentaar te plaatsen als volgt (dit werkt enkel bij methoden): ``///``
