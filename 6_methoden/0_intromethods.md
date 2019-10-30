@@ -241,7 +241,7 @@ Wanneer we nu elders de methode ``Macht`` gebruiken dan krijgen we automatische 
 # Kennisclip
 ![](../assets/infoclip.png)
 * [Introductie methoden](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=500f8c7e-874c-4e01-a2e5-aaf600dcda06)
-
+* [Sneller methoden schrijven m.b.v. IntelliSense](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=b93447e7-88a1-49ec-992f-a9af00b22dde)
 
 
 
