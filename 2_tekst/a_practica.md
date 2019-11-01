@@ -132,7 +132,6 @@ string output = process.StandardOutput.ReadToEnd(); //normal output
 Console.WriteLine(output);
 string err = process.StandardError.ReadToEnd(); //error output (if any)
 Console.WriteLine(err);
-process.WaitForExit();
 //Continue
 Console.WriteLine("Klaar");
 ```
