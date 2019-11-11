@@ -1,3 +1,0 @@
-
-
-![](../assets/dependencies.svg)

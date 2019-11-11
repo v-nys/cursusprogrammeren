@@ -225,6 +225,3 @@
 * Events
   * [Events](19_events/events.md)
   * [Chat server](19_events/chatserver.md)
-
-* OOP Playground
-  * [Test](20_ooptest/test.md)
