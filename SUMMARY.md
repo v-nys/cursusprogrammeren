@@ -54,7 +54,8 @@
   * [Opgave 1](EindeTests/Mod1/Opgave.md)
   * [Opgave 2: vaardigheidsproef deel 19-20](EindeTests/Mod1/Opgave_1920.md)
   * [Opgave 3: vaardigheidsproef deel 18-19](EindeTests/Mod1/Opgave_1819.md)
-  * [Bespreking Opgave 3](EindeTests/Mod1/Oplossing_1819.md)
+  * [Bespreking en oplossing Opgave 2](EindeTests/Mod1/Oplossing_1920.md)
+  * [Bespreking en oplossing Opgave 3](EindeTests/Mod1/Oplossing_1819.md)
 
 * H5: Loops
   * [Loops intro](5_herhalingen/0_loops_intro.md)

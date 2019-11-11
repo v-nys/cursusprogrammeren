@@ -47,7 +47,9 @@ De overige 75% keren dat fase B wordt bereikt verschijnt er enkel "Mooi zo, alle
 Voorbeeld 1 fase C:
  
 ![Flowchart](../../assets/2_beslissingen/vaardig1920a.png)
+
 Voorbeeld 2 fase C:
+
 ![Flowchart](../../assets/2_beslissingen/vaardig1920b.png)
 
 * De gebruiker krijgt een bon voor een gratis reparatie indien hij een 64 bit computer gebruikt. Bevraag dit via de Environment-bibliotheek en toon "Hier een bon!" indien een 64 bit processor aanwezig is.
