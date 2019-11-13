@@ -29,10 +29,10 @@
 * H2: Tekst in code
   * [Strings en chars](2_tekst/5_chars_strings.md)
   * [Strings samenvoegen](2_tekst/6_stringInterpolation.md)
-  * [Unicode tonen](2_tekst/7_unicode.md) 
+  * [Unicode tonen](2_tekst/7_unicode.md)
+  * [Environment bibliotheek](2_tekst/8_environment.md) 
   * [_Oefeningen](2_tekst/a_practica.md)
 
-  
 * H3: Werken met data
   * [Casting, conversie en parsing](3_data/4_converteren_casting.md)
   * [Input verwerken en omzetten](3_data/4b_inputconverten.md)
