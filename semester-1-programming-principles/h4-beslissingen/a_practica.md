@@ -179,8 +179,11 @@ console applicatie
 #### voorbeeldinteractie\(s\)
 
 ```text
+Wat is de kleur van de eerste ring?
 > rood
+Wat is de kleur van de tweede ring?
 > paars
+Wat is de kleur van de derde ring?
 > rood
 Deze weerstand heeft waarde van 2700 Ohm
 ```
