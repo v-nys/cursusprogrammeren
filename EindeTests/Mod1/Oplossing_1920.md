@@ -3,6 +3,7 @@ Oplossing hier met ``enum`` , maar dit had je uiteraard ook met een ``string`` (
 
 ```csharp
 enum fases { A, B, C, Onbekend }
+
 static void Main(string[] args)
 {
     fases finalFase= fases.Onbekend;
