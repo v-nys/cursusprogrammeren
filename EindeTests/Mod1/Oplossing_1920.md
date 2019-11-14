@@ -88,7 +88,7 @@ static void Main(string[] args)
             Console.WriteLine("1 processor");
             Console.ResetColor();
         }
-        else
+        else 
         {
             Console.ForegroundColor = ConsoleColor.Blue;
             Console.BackgroundColor = ConsoleColor.Green;
