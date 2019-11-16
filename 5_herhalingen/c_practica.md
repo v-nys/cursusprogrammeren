@@ -6,6 +6,10 @@ Probeer niet alle oefeningen met hetzelfde type loop te doen, wissel tussen ``wh
 
 > Opgelet: de oplossing van dit soort oefeningen vindt je overal. Weersta hier aan, en probeer ZELF de oplossing te vinden. Dat is de enige manier om dit te leren.
 
+> Niet zeker van je oplossing? Test of je met minimale aanpassing de grenzen van je programma kunt aanpassen. Als je bijvoorbeeld de getallen van 1 tot 100 moet tonen dan zou je met 2 wijzigingen maximum dit moeten kunnen aanpassen naar de getallen van -1000 tot 21234.
+
+# Deel 1
+
 * Toon alle natuurlijke getallen van 1 tot *n*.
 * Toon alle natuurlijke getallen van *n* tot 1.
 * Toon alle even getallen tussen 1 en 100.
@@ -13,8 +17,8 @@ Probeer niet alle oefeningen met hetzelfde type loop te doen, wissel tussen ``wh
 * Toon de som van alle getallen van 1 tot *n* (dus 1+2+3+4+...+n).
 * Toon de som van alle even getallen van 1 tot *n*.
 * Toon de som van alle oneven getallen van 1 tot *n*.
-* Schrijf een programma dat het aantal digits in een getal telt (het getal 12348 heeft bijvoorbeeld 5 digits).
-* (PRO) Schrijf een programma dat een ingevoerd getal als tekst uitschrijft. Als de gebruiker dus 123 invoert zal de uitvoer zijn: honderd drie en twintig.
+* (PRO) Schrijf een programma dat het aantal digits in een getal telt (het getal 12348 heeft bijvoorbeeld 5 digits).
+* Schrijf een programma dat een ingevoerd getal als tekst uitschrijft. Als de gebruiker dus 123 invoert zal de uitvoer zijn: honderd drie en twintig.
 * Schrijf een programma dat alle ascii karakters en hun waarde toont van 10 tot *n* (tip: ``char c = Convert.ToChar(65); `` zal hoofdletter ``A`` tonen) 
 * Toon het alfabet van a tot z.
 * Schrijf een programma dat de macht van een getal toont. De gebruiker voor eerst het getal in, gevolgd door de macht (bv 2 en 4 zal als resultaat 16 geven (2 tot de 4e)).
@@ -23,3 +27,24 @@ Probeer niet alle oefeningen met hetzelfde type loop te doen, wissel tussen ``wh
 * Toon ale priemgetallen van 1 tot *n*.
 * Toon de reeks van [Fibonacci](https://en.wikipedia.org/wiki/Fibonacci_number) tot *n* termen.
 
+
+# Deel 2
+
+* Toon alle getallen die een veelvoud van 3 zijn en oneven zijn
+* Toon alle kwadraten van van een getal door de gebruiker ingevoerd
+* Toon de tafels tot 10 van ieder getal van 1 tot en met n .N wordt door gebruiker ingevoerd. Toon iedere tafel horizontaal!
+  Als de gebruiker 8 invoert verschijnt er:
+  ```text
+  1x1 = 1, 2x1 = 2, 3x1 = 3, 4x1 = 4, 5x1 = 5, 6x1 = 6, 7x1 = 7, 8x1 = 8 
+  ... 
+  1x10 = 10, 2x10 = 20, 3x10 = 30, 4x10 = 40, 5x10 = 50, 6x10 = 60, 7x10 = 70, 8x10 = 80 
+  ```
+
+* Schrijf een programma om de eerste n termen van een harmonische reeks te tonen en bereken vervolgens de som van deze termen. N wordt door de gebruiker ingevoerd.
+  Als de gebruiker bijvoorbeeld 5 invoert  verschijnt er:
+  ```text
+  1/1 + 1/2 + 1/3 + 1/4 + 1/5
+  Som= 2.283334 
+  ```
+* Schrijf een programma dat de som van de serie 9+99+999+9999+99999+999999 berekent (mét loop uiteraard)
+* Vraag aan de gebruiker getallen tot hij -1 invoert. Toon het gemiddelde van de ingevoerde getallen
