@@ -31,7 +31,7 @@ Probeer niet alle oefeningen met hetzelfde type loop te doen, wissel tussen ``wh
 # Deel 2
 
 * Toon alle getallen die een veelvoud van 3 zijn en oneven zijn tot en met 100
-* Toon alle kwadraten van van een getal door de gebruiker ingevoerd
+* Toon alle machten tot 5 van van een getal door de gebruiker ingevoerd
 * Toon de tafels tot 10 van ieder getal van 1 tot en met n .N wordt door gebruiker ingevoerd. Toon iedere tafel horizontaal!
   Als de gebruiker 8 invoert verschijnt er:
   ```text
