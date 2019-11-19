@@ -13,7 +13,7 @@ do
     x= Convert.ToInt32(instring);
     //....
 
-}while (x != 32767)
+}while (x != 32767);
 Console.WriteLine($"Som is{y}");
 ```
 
