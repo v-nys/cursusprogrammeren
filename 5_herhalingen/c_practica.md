@@ -21,7 +21,7 @@ Probeer niet alle oefeningen met hetzelfde type loop te doen, wissel tussen ``wh
 * Schrijf een programma dat een ingevoerd getal als tekst uitschrijft. Als de gebruiker dus 123 invoert zal de uitvoer zijn: honderd drie en twintig.
 * Schrijf een programma dat alle ascii karakters en hun waarde toont van 10 tot *n* (tip: ``char c = Convert.ToChar(65); `` zal hoofdletter ``A`` tonen) 
 * Toon het alfabet van a tot z.
-* Schrijf een programma dat de macht van een getal toont. De gebruiker voor eerst het getal in, gevolgd door de macht (bv 2 en 4 zal als resultaat 16 geven (2 tot de 4e)).
+* Schrijf een programma dat de macht van een getal toont. De gebruiker voor eerst het getal in, gevolgd door de macht (bv 2 en 4 zal als resultaat 16 geven (2 tot de 4e)). Merk op dat je niet gebruik mag maken van ``Math.Pow``. Je dient zelf de vermenigvuldiging helemaal (m.b.v. loops) uit te voeren;
 * Schrijf een programma een getal *n* ontbindt in [factoren](https://nl.wikipedia.org/wiki/Factorisatie). Factoren zijn de getallen waardoor je *n* kan delen zonder rest (van  bijvoorbeeld het getal 100 zijn de factoren 1,2,4,5,10,20,25,50,100  ).
 * Schrijf een programma dat controleert of een getal priem is of niet.
 * Toon ale priemgetallen van 1 tot *n*.
@@ -31,7 +31,7 @@ Probeer niet alle oefeningen met hetzelfde type loop te doen, wissel tussen ``wh
 # Deel 2
 
 * Toon alle getallen die een veelvoud van 3 zijn en oneven zijn tot en met 100
-* Toon alle machten tot 5 van van een getal door de gebruiker ingevoerd
+* Toon alle machten tot 5 van een getal door de gebruiker ingevoerd
 * Toon de tafels tot 10 van ieder getal van 1 tot en met n .N wordt door gebruiker ingevoerd. Toon iedere tafel horizontaal!
   Als de gebruiker 8 invoert verschijnt er:
   ```text

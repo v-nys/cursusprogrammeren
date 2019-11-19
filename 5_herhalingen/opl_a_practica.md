@@ -2,7 +2,6 @@
 ![](../assets/movie.png)
 
 * [Micro-tips om loop-opgaven op te lossen](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=ea69bf95-f828-4b45-afca-f0ae911ab7c4)
-* [Oplossen van de basis loop oefeningen](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=7d5b4399-8c6c-4207-8e4d-a9af00b4ac58)
 
 # Oplossing practica deel 1
 ## Oplossing Tafels van vermenigvuldiging:
