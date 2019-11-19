@@ -35,6 +35,7 @@ Deze 4 getallen worden steeds geüpdate en getoond wanneer de gebruiker een nieu
 ```csharp
 int getal;
 int poging = 0;
+int aantalPogingen=0;
 string pogingString;
 bool gevonden= false;
 Random rand= new Random();
@@ -42,8 +43,9 @@ getal= rand.Next(0,10);
 
 while(!gevonden)
 {
+    aantalPogingen++;
     Console.WriteLine("Geef een getal tussen 0 en 10");
-    pogingString= Console.ReadLine();
+    pogingString= Console.ReadLine(); 
     poging = int.Parse(pogingString);
 
     if(getal>poging)
@@ -57,7 +59,7 @@ while(!gevonden)
     else 
         gevonden=true;
 }
-Console.WriteLine($"Gevonden! Het te zoeken getal was inderdaad {getal} je had er {poging} pogingen voor nodig.");
+Console.WriteLine($"Gevonden! Het te zoeken getal was inderdaad {getal} je had er {aantalPogingen} pogingen voor nodig.");
 ```
 
 **Deel 2:** Pas het programma zo aan dat de tekst die verschijnt bij het inlezen van de volgende poging het resterende interval aangeeft. Gebruik hiervoor twee extra variabelen "ondergrens" en "bovengrens" die als beginwaarden respectievelijk 0 en 100 krijgen. Bij het inlezen van de volgende waarde voor poging zal deze toegekend worden aan ondergrens of bovengrens naargelang ze groter dan wel kleiner dan het te zoeken getal is. 
