@@ -108,6 +108,17 @@ CATCGTAATGACGGCCT
 ^ ^ ^  ^ ^    ^^
 ```
 
+## [PRO]  Password generator
+Ontwerp een consoletoepassing waarmee je een wachtwoord genereert voor een gebruiker. Het wachtwoord is opgebouwd uit:
+
+de 2 eerste letters van de familienaam: de 1ste letter is een hoofdletter, de 2de letter is een kleine letter. 
+Daarna worden de 2 letters gewisseld;
+het zonenummer van het telefoonnummer zonder de 0;
+het eerste cijfer van de postcode in het kwadraat.
+
+> Gebruik de ``ToCharArray()`` methode die je op een string kunt toepassen, zoals hier getoond:  ``char[] chars = myEpicName.ToCharArray();`` 
+
+
 # Methoden met arrays als parameter
 
 ## Parkeergarage

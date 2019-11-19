@@ -118,14 +118,6 @@ while (true)
 
 Vul de code aan zodat de karakters random kleuren krijgen. Kan je het nog cooler maken?
 
-# [PRO]  Password generator
-Ontwerp een consoletoepassing waarmee je een wachtwoord genereert voor een gebruiker. Het wachtwoord is opgebouwd uit:
-
-de 2 eerste letters van de familienaam: de 1ste letter is een hoofdletter, de 2de letter is een kleine letter. 
-Daarna worden de 2 letters gewisseld;
-het zonenummer van het telefoonnummer zonder de 0;
-het eerste cijfer van de postcode in het kwadraat.
-
 # BeerSong
 Schrijf een BeerSong-generator zoals onderstaande output. Merk op dat de laatste 6 zinnen anders zijn:
 
