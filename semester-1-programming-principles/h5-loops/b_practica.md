@@ -21,16 +21,53 @@ do
 Console.WriteLine($"Som is{y}");
 ```
 
-### Boekhouder
+## Oefening: H5-boekhouder
 
-1° Maak een 'boekhoud-programma': de gebruiker kan continu positieve en negatieve getallen invoeren. Telkens hij op enter duwt wordt de huidige invoer aan de balans bijgevoegd. Je houdt volgende zaken bij:
+### Leerdoelen
 
-* De balans van alle ingevoerde getallen: dit is gewoon de som van de getallen. Als de gebruiker dus de getallen 4,-10, 8 invoerde dan zal de balans op +2 staan  \(4 -10 + 8\)
-* De som van alle negatieve invoeren. Als de gebruiker dus 4,-10,8,-6 invoerde dan zal dit getal op -16 staan \(= -10 -6\) .
-* De som van alle positieve invoeren. Als de gebruiker dus 4,-10,8,-6 invoerde dan zal dit getal op +12 staan \(= 4+8\) . 
-* Het gemiddelde van alle ingevoerde getallen 
+* een taak herhaaldelijk uitvoeren met een lus
 
-Deze 4 getallen worden steeds geüpdate en getoond wanneer de gebruiker een nieuw getal invoert en op enter duwt.
+### Functionele analyse
+
+Maak een 'boekhoud-programma': de gebruiker kan continu positieve en negatieve getallen invoeren. Dit programma houdt volgende zaken bij:
+
+* de totale balans
+* de som van de positieve getallen
+* de som van de negatieve getallen
+* het gemiddelde
+
+### Technische analyse
+
+Voor de eerste drie zaken kom je toe met een variabele. Voor de laatste is dit lastiger, omdat elk nieuw getal een kleiner effect heeft om het gemiddelde dan het vorige. Je houdt beter een teller bij met het aantal ingevoerde getallen. Dan is het gemiddelde de totale balans gedeeld door het aantal ingevoerde getallen.
+
+#### UI
+
+console applicatie
+
+#### voorbeeldinteractie\(s\)
+
+```text
+Geef een getal
+> 7
+De balans is 7
+De som van de positieve getallen is 7
+De som van de negatieve getallen is 0
+Het gemiddelde is 7
+Geef een getal
+> -3
+De balans is 4
+De som van de positieve getallen is 7
+De som van de negatieve getallen is -3
+Het gemiddelde is 2
+Geef een getal
+> 11
+De balans is 15
+De som van de positieve getallen is 18
+De som van de negatieve getallen is -3
+Het gemiddelde is 5
+```
+
+(Dit programma kan blijven verder lopen zo lang je wil.)
 
 ### Raad het getal
 
