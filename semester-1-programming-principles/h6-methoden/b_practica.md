@@ -81,7 +81,7 @@ Kan je code uit vorige hoofdstukken herbruiken door deze in handige methoden te 
 
 ### Module 1 test herschrijven
 
-Bekijk terug jouw \(of mijn\) oplossing van de vaardigheidsproef 18/19 of de [module 1 eindetest](../module-1-eindetest/opgave.md) in deze cursus.
+Bekijk terug jouw \(of mijn\) oplossing van de vaardigheidsproef 18/19 of de [module 1 eindetest]() in deze cursus.
 
 Kan je deze code leesbaarder maken door methoden \(en loops\) toe te voegen?
 

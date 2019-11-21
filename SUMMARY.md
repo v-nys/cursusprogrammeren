@@ -48,10 +48,6 @@
   * [enum](semester-1-programming-principles/h4-beslissingen/enum.md)
   * [Switch](semester-1-programming-principles/h4-beslissingen/2_switch.md)
   * [Oefeningen](semester-1-programming-principles/h4-beslissingen/a_practica.md)
-* [Module 1 eindetest](semester-1-programming-principles/module-1-eindetest/README.md)
-  * [Opgave](semester-1-programming-principles/module-1-eindetest/opgave.md)
-  * [Opgave vaardigheidsproef mod 1 1819](semester-1-programming-principles/module-1-eindetest/opgave_1819.md)
-  * [Bespreking vaardigheidsproef mod 1 1819](semester-1-programming-principles/module-1-eindetest/oplossing_1819.md)
 * [H5: Loops](semester-1-programming-principles/h5-loops/README.md)
   * [Loops intro](semester-1-programming-principles/h5-loops/0_loops_intro.md)
   * [While en Do While](semester-1-programming-principles/h5-loops/1_while_dowhile.md)
@@ -72,12 +68,6 @@
   * [Arrays en methoden](semester-1-programming-principles/h7-arrays/3_arrays_en_methoden.md)
   * [N-dimensionale arrays](semester-1-programming-principles/h7-arrays/4_ndimensionalarrays.md)
   * [Oefeningen](semester-1-programming-principles/h7-arrays/a_practica.md)
-* [Module 2 eindetest](semester-1-programming-principles/module-2-eindetest/README.md)
-  * [Opgave](semester-1-programming-principles/module-2-eindetest/opgave.md)
-  * [Opgave vaardigheidsproef mod 2 1819](semester-1-programming-principles/module-2-eindetest/opgave_1819.md)
-  * [Oplossing](semester-1-programming-principles/module-2-eindetest/oplossing_1819.md)
-  * [Bespreking vaardigheidsproef mod 2 1819](semester-1-programming-principles/module-2-eindetest/bespreking_1819.md)
-  * [Opgave vaardigheidsproef mod 2 1819 2e kans](semester-1-programming-principles/module-2-eindetest/opgave_1819_2ezit.md)
 
 ## Semester 2 : OOP
 
