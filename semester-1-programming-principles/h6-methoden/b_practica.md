@@ -41,9 +41,32 @@ Zorg er voor dat je nu je naam, leeftijd en adres via parameters kan meegeven en
 MyIntro("Jos",34, "Trammezantlei 21");
 ```
 
-### Grootste methode
+## Oefening: H6-grootste-methode
 
-Schrijf een methode die 3 ints aanvaardt en vervolgens de grootste van de 3 parameters als resultaat terug geeft.
+### Leerdoelen
+
+* methodes
+
+### Functionele analyse
+Schrijf een methode die drie `int`s aanvaardt en de grootste als resultaat teruggeeft.
+
+### Technische analyse
+Aangezien het maar om 3 argumenten gaat, kan je dit oplossen met `if`s die het eerste en het tweede argument vergelijken, het eerste en het derde argument,...
+Test je methode uit in een voorbeeldprogrammaatje.
+
+#### UI
+
+console applicatie
+
+#### voorbeeldinteractie\(s\)
+
+```text
+Geef 3 ints.
+> 7
+> 10
+> 4
+Het grootste getal is 10.
+```
 
 ### Rekenmachine
 
