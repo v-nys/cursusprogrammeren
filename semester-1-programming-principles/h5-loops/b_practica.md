@@ -107,18 +107,78 @@ Zie hieronder een voorbeeldoutput: ![](../../.gitbook/assets/raadgetaloutput.png
 
 **Deel 3:** Bouw in het programma een controle in die er voor zorgt dat je geen waarde meer kan ingeven die buiten het opgegeven interval ligt \(dus ook indien de grenzen aangepast worden moet deze controle blijven werken!\) **Deel 4:** Pas het programma aan zodat er een maximum aantal pogingen is toegestaan. Om dit maximum te bepalen moet je uitgaan van de beginwaarden van "ondergrens" en "bovengrens". Ga dus na hoeveel pogingen er in het ideale geval \(bij het zoeken telkens de middelste waarde als nieuwe poging ingeven\) maximaal nodig zijn om een interval te doorzoeken.
 
-### Steen schaar papier
+## Oefening: H5-schaar-steen-papier
 
-Maak een applicatie waarbij de gebruiker steen-schaar-papier met de computer kan spelen. De gebruiker kiest telkens steen, schaar of papier en drukt op enter. Vervolgens kiest de computer willekeurig steen, schaar of papier \(gebruik de Random.Next\(\) methode, waarbij je deze tussen 1 en 3 laat varieren\). Vervolgens krijgt de winnaar 1 punt:
+### Leerdoelen
+
+* een taak herhaaldelijk uitvoeren met een lus
+
+### Functionele analyse
+
+Maak een applicatie waarbij de gebruiker steen-schaar-papier met de computer kan spelen.
+De gebruiker kiest telkens steen, schaar of papier en drukt op enter.
+Vervolgens kiest de computer willekeurig steen, schaar of papier.
+
+Vervolgens krijgt de winnaar 1 punt:
 
 * Steen wint van schaar, verliest van papier
 * Papier wint van steen, verliest van schaar
 * Schaar wint van papier, verliest van steen
 * Indien beide hetzelfde hebben wint niemand een punt.
 
-Op het scherm wordt telkens getoond wie de huidige ronde heeft gewonnen en hoeveel de tussenscore is. De eerste \(pc of gebruiker\) die 10 punten haalt wint.
+De eerste (pc of gebruiker) die 10 punten haalt wint.
 
-Teken een flowchart van je applicatie.
+### Technische analyse
+
+* Genereer een willekeurig getal tussen 1 en 3 om de computer te laten kiezen.
+* Teken een flowchart!
+
+#### UI
+
+console applicatie
+
+#### voorbeeldinteractie\(s\)
+
+```text
+Maak een keuze:
+1 voor schaar
+2 voor steen
+3 voor papier
+> 2
+De computer kiest steen!
+Niemand wint deze ronde!
+Jij hebt 0 punten, de computer heeft 0 punten.
+Maak een keuze:
+1 voor schaar
+2 voor steen
+3 voor papier
+> 1
+De computer kiest papier!
+Jij wint deze ronde!
+Jij hebt 1 punt, de computer heeft 0 punten.
+Maak een keuze:
+1 voor schaar
+2 voor steen
+3 voor papier
+> 1
+De computer kiest steen!
+De computer wint deze ronde!
+Jij hebt 1 punt, de computer heeft 1 punt.
+```
+
+(Helemaal op het einde)
+
+```text
+Jij hebt 10 punten, de computer heeft 8 punten.
+Jij bent gewonnen!
+```
+
+of
+
+```text
+Jij hebt 8 punten, de computer heeft 10 punten.
+De computer is gewonnen!
+```
 
 ## Become Neo
 
