@@ -8,14 +8,14 @@ Een extra grote hoop oefeningen om je methoden te drillen \([originele bron](htt
 
 Iedere oefening verwacht dat je steeds een methode schrijft en de werking ervan aantoont:
 
-* Methode `Kwadraat` die het kwadraat van een ingevoerd getal berekend.
-* Methode `BerekenStraal` die de straal van een cirkel kan berekenen waarvan je de diameter meegeeft
-* Idem voor omtrek en oppervlakte
-* Methode die het grootste van 2 getallen teruggeeft
-* Methode `IsEven` die bepaald of een getal even of oneven is \(geeft een `bool` terug die `true` is indien even\)
-* Methode `IsArmstrong` die bepaald of een getal een Armstrong getal is.
-* Methode `ToonEvenNummers` die alle oneven getallen van 1 tot n toont waarbij n als parameter wordt meegegeven.
-* Methode `ToonArmstrongNummers` die idem alle [Armstrong](https://github.com/v-nys/cursusprogrammeren/tree/13ea122a2e92d805feb8b618811589d4f57a8b23/5_herhalingen/a_practica.md#armstrong-nummer) nummers tot n toont.
+1. Methode `Kwadraat` die het kwadraat van een ingevoerd getal berekend.
+2. Methode `BerekenStraal` die de straal van een cirkel kan berekenen waarvan je de diameter meegeeft
+3. Idem voor omtrek en oppervlakte
+4. Methode die het grootste van 2 getallen teruggeeft
+5. Methode `IsEven` die bepaald of een getal even of oneven is \(geeft een `bool` terug die `true` is indien even\)
+6. Methode `IsArmstrong` die bepaald of een getal een Armstrong getal is.
+7. Methode `ToonEvenNummers` die alle oneven getallen van 1 tot n toont waarbij n als parameter wordt meegegeven.
+8. Methode `ToonArmstrongNummers` die idem alle [Armstrong](https://github.com/v-nys/cursusprogrammeren/tree/13ea122a2e92d805feb8b618811589d4f57a8b23/5_herhalingen/a_practica.md#armstrong-nummer) nummers tot n toont.
 
 ## Deel 1 - De basics
 
