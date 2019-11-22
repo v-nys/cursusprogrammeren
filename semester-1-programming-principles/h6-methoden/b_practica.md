@@ -72,9 +72,29 @@ Het grootste getal is 10.
 
 Maak minimaal methoden genaamd `TelOp`, `TrekAf`, `VermenigVuldig` en `Deel`. Je kan aan deze methoden steeds twee doubles meegeven en het resultaat dat terugkomt is uiteraard de bewerking van die twee parameters. Maak een eenvoudig programma'tje waarin je die methoden test. Kan je een eenvoudige rekenmachine maken? \(inclusief geheugen\) Voeg extra methoden naar keuze toe \(denk aan Macht, Sinus, Cosinus, Modulo, etc.\)
 
-### Paswoord generator methode
+## Oefening: H6-paswoord-generator
 
-Maak een paswoord generator die paswoorden van bepaalde lengte genereert en bestaat uit willekeurige letters, hoofdletters en cijfers. Plaats deze ode in een methode die 1 parameter aanvaardt namelijk de lengte van het paswoord dat gemaakt moet worden. De methode geeft het gegenereerde paswoord terug als resultaat.
+### Leerdoelen
+
+* methodes
+
+### Functionele analyse
+
+Maak een paswoord generator die paswoorden van bepaalde lengte genereert en bestaat uit willekeurige letters, hoofdletters en cijfers. Plaats deze code in een methode met 1 parameter, namelijk de lengte van het paswoord dat gemaakt moet worden. De methode geeft het gegenereerde paswoord terug als resultaat.
+
+### Technische analyse
+Maak gebruik van `Random` en een `for`-lus. Een `Random` genereert normaal alleen getallen, maar via casting kan je die getallen omzetten in `char`s. Raadpleeg een Unicode tabel voor de juiste getallen *of* (iets sneller) cast eerst `'a'` en `'z'` naar getallen en gebruik die om te bepalen welke willekeurige resultaten je mag genereren. Demonstreer je methode met een kort programma.
+
+#### UI
+
+console applicatie
+
+#### voorbeeldinteractie\(s\)
+
+```text
+> 8
+dIh8ez10
+```
 
 ## Deel 2 Geavanceerde methode concepten
 
