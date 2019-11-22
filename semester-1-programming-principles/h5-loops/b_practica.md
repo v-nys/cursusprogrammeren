@@ -7,17 +7,17 @@
 Vervolledig deze code zodat ook getoond wordt welke de grootste waarde is die werd ingevoerd.
 
 ```csharp
-int x=0;
-int y=0;
+short x=0;
+short y=0;
 do
 {
-    y=y+x;
+    y=(short)(y+x);
     Console.WriteLine("Voer gehele waarden in (32767=stop)");
     string instring= Console.ReadLine();
-    x= Convert.ToInt32(instring);
+    x= Convert.ToInt16(instring);
     //....
 
-}while (x != 32767)
+}while (x <= 32767 && x >= -32768)
 Console.WriteLine($"Som is{y}");
 ```
 
