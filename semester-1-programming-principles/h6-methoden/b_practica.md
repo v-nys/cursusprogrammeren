@@ -92,6 +92,7 @@ console applicatie
 #### voorbeeldinteractie\(s\)
 
 ```text
+Hoe veel karakters moet je wachtwoord bevatten?
 > 8
 dIh8ez10
 ```
