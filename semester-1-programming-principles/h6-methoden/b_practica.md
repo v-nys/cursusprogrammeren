@@ -2,20 +2,65 @@
 
 > Ook dit hoofdstuk bevat meer oefeningen dan je lief zijn. Zoek zelf de oefeningen uit die je aanspreken en focus je op het leren werken met methoden en deze te integreren in een grotere applicatie.
 
+
+## Oefening: H6-veel-kleintjes
+
+### Leerdoelen
+
+* methodes
+
+### Functionele analyse
+Schrijf een hele reeks methodes die je samen test:
+
+1. Methode `Square` die het kwadraat van een ingevoerd getal berekend.
+2. Methode `Radius` die de straal van een cirkel kan berekenen waarvan je de diameter meegeeft
+3. Methodes `Circumference` en `Surface` (in de formule gebruik je `Math.PI`)
+4. Methode `Largest` die het grootste van 2 getallen teruggeeft
+5. Methode `IsEven` die bepaalt of een getal even of oneven is \(geeft een `bool` terug die `true` is indien even\)
+6. Methode `ShowOdd` die alle oneven getallen van 1 tot n **toont** waarbij n als parameter wordt meegegeven.
+
+### Technische analyse
+Schrijf een voorbeeldprogramma dat in de `Main`-methode elke methode kort demonstreert. Toon alle getallen tot op twee cijfers na de komma. Voor `ShowOddNumbers` kan je nog geen resultaat teruggeven, maar je kan het wel afprinten.
+
+#### UI
+
+console applicatie
+
+#### voorbeeldinteractie\(s\)
+
+```text
+Wat moet ik kwadrateren?
+> 2
+4
+Wat is de diameter?
+> 6
+3
+Wat is de diameter?
+> 2
+De omtrek is 6.28
+De oppervlakte is 3.14
+Welke twee getallen wil je vergelijken?
+> 3
+> 9
+9 is het grootste getal
+Geef een getal en ik zeg of het even is:
+> 4
+Het getal is even.
+Geef een getal en ik zoek de oneven getallen:
+> 7
+1
+3
+5
+7
+```
+
+
+
 ## Deel 0 - Opwarmers
 
 Een extra grote hoop oefeningen om je methoden te drillen \([originele bron](https://codeforwin.org/2016/03/functions-programming-exercises-and-solutions-in-c.html)\). De oefeningen zijn ongeveergerangschikt naar moeilijkheid, je moet deze allemaal met loops oplossen! Hoe ver geraak je?
 
 Iedere oefening verwacht dat je steeds een methode schrijft en de werking ervan aantoont:
-
-1. Methode `Kwadraat` die het kwadraat van een ingevoerd getal berekend.
-2. Methode `BerekenStraal` die de straal van een cirkel kan berekenen waarvan je de diameter meegeeft
-3. Idem voor omtrek en oppervlakte
-4. Methode die het grootste van 2 getallen teruggeeft
-5. Methode `IsEven` die bepaald of een getal even of oneven is \(geeft een `bool` terug die `true` is indien even\)
-6. Methode `IsArmstrong` die bepaald of een getal een Armstrong getal is.
-7. Methode `ToonEvenNummers` die alle oneven getallen van 1 tot n toont waarbij n als parameter wordt meegegeven.
-8. Methode `ToonArmstrongNummers` die idem alle [Armstrong](https://github.com/v-nys/cursusprogrammeren/tree/13ea122a2e92d805feb8b618811589d4f57a8b23/5_herhalingen/a_practica.md#armstrong-nummer) nummers tot n toont.
 
 ## Deel 1 - De basics
 
