@@ -65,7 +65,7 @@ Maak volgende opdracht van [projecteuler.net](http://projecteuler.net):
 
 > Indien we alle natuurlijke getallen van 0 tot en met 10 oplijsten die een meervoud van 3 of 5 zijn, dan krijgen we de getallen 3,5,6,9 en 10. De som van deze 4 getallen is 33. Maak nu een programma dat de som van alle veelvouden van 3 of 5 weergeeft onder van 0 tot 1000 \(dit zou 234168\) moeten geven.
 
-**Tip: module is je grote held hier. Een getal is een veelvoud van x indien `getal%x` 0 als resultaat geeft.**
+**Tip: modulo is je grote held hier. Een getal is een veelvoud van x indien `getal%x` 0 als resultaat geeft.**
 
 ### PRO: For doordenker
 
