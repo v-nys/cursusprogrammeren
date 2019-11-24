@@ -66,7 +66,7 @@ double  gewichtOpMars= (gewichtOpAarde/zwaartekrachtAarde)* zwaartekrachtMars; /
 Console.WriteLine($"Je weeg op Mars {gewichtOpMars} kg");
 ```
 
-### Module operator `%`
+### Modulo operator `%`
 
 De modulo operator die we in C\# aanduiden met `%` verdient wat meer uitleg. Deze operator zal als resultaat de gehele rest teruggeven wanneer we het linkse getal door het rechtse getal delen:
 
