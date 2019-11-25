@@ -163,10 +163,11 @@ class EmailMessage
 ```
 
 ### Lage Cohesie
-![lage cohesie](../assets/20_SE/LowCohesion.PNG)
+
+![lage cohesie](../assets/20_se/LowCohesion.PNG)
 
 ### Hoge Cohesie
-![hoge cohesie](../assets/20_SE/HighCohesion.PNG)
+![hoge cohesie](../assets/20_se/HighCohesion.PNG)
 
 
 De Login methode and username klasse variabele heeft niets te maken met de EmailMessage klassen hoofddoel. Daarom zeggen we dat er een lage cohesie is.
@@ -348,7 +349,7 @@ Single responsibility is niet enkel op klasse maar ook op method niveau.
 
 Er is je gevraagd om software te schrijven voor  een online video shop. Het programma berekent en print de rekening van een klant bij onze online shop. Onderstaande paragraaf geeft ons de voorbeeldcode van het programma. We zullen deze oplossing grondig analyseren en bekijken hoe we de code kunnen verbeteren. Aan het programma wordt meegegeven welke film de klant heeft gehuurd, en voor hoe lang. Daarna wordt de rekening gemaakt – afhankelijk van hoe lang de film gehuurd geweest is, en welk type film (nieuwe release, kinder, gewone).  UML notatie:
 
-![movie architectuur](../assets/20_SE/moviearchitectuur.PNG)
+![movie architectuur](../assets/20_se/moviearchitectuur.PNG)
 
 
 ### Voorbeeld van de MAIN functie 
@@ -671,7 +672,7 @@ public string Statement()
 
 Het klasse diagramma is nu veranderd naar: 
 
-![movie architectuur](../assets/20_SE/moviearchitectuur2.PNG)
+![movie architectuur](../assets/20_se/moviearchitectuur2.PNG)
 
 
 Als we terug naar de statement() functie kijken dan is de variabele thisAmount redundant, en veranderen we naar: 
@@ -1880,7 +1881,7 @@ Omdat we verschillende types films hebben, die elk een verschillende GetCharge()
  
 Klassediagramma:
 
-![klassediagram](../assets/20_SE/klassediagram.PNG)
+![klassediagram](../assets/20_se/klassediagram.PNG)
 
 Op deze manier heb je het switch statement (getCharge() functie) in de klasse Movie niet meer nodig! 
 
@@ -1961,7 +1962,7 @@ Indien je nu van m2 een RegularMovie wil maken, zal je de variabele opnieuw moet
 Met andere woorden, onze objecten kunnen niet van klasse veranderen gedurende hun levenstijd. 
 Er is wel een oplossing voor, namelijk gebruik maken van het strategy Patroon. 
 
-![strategy](../assets/20_SE/strategy.PNG)
+![strategy](../assets/20_se/strategy.PNG)
 
 In plaats van te subklassen met Movie (RegularMovie, NewReleaseMovie, ChildrensMovie,) gaan we dit op een indirecte manier doen en van price subklassen maken. (zie klassediagramma hierboven). Op die manier kunnen we van een movie object steeds de prijs veranderen, zonder dat we het ganse movie object opnieuw moeten instantiëren.  
 
