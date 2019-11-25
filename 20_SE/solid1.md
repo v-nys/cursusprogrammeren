@@ -93,12 +93,10 @@ Eigenschappen van SRP zijn:
 
 > Cohesion: wat een klasse zou moeten doen. Lage cohesie betekent dat een klasse verschillende zaken doet, en niet gefocust is op de taak die hij zou moeten doen. Terwijl hoge cohesie betekent dat een klasse doet wat hij moet doen, en maar 1 taak uitvoert. Probeer er voor te zorgen dat alle methoden in een klasse betrekking hebben tot 1 doel, maw er een hoge cohesie heerst.
 
-
-
 > Coupling: Hangt een klasse van nog andere klassen af. Of hoeveel weet een klasse over de werking (inner working) van een andere klasse af.
 
 
- **Men streeft naar "low coupling" en "high cohesion"**
+**Men streeft naar "low coupling" en "high cohesion"**
 
 ### Waarop letten?
 
@@ -113,7 +111,6 @@ Klassen mogen maar een beperkt aantal instantievariabelen hebben. De methoden va
 Een klasse met hoge cohesie:
 
 ```csharp
-
 class EmailMessage
 {
     private string sendTo;
@@ -130,8 +127,6 @@ class EmailMessage
         // send message using sendTo, subject and message
     }
 }
-
-
 ```
 
 Een voorbeeld van lage cohesie :
@@ -159,7 +154,6 @@ class EmailMessage
         // code to login
     }
 }
-
 ```
 
 ### Lage Cohesie
@@ -177,25 +171,29 @@ De Login methode and username klasse variabele heeft niets te maken met de Email
 Bijvoorbeeld iPods. Eens de batterij kapot is moet je een nieuwe iPod kopen, want de batterij is gesoldeerd in het apparaat, en kan dus niet loskomen. Bij lage koppeling (of loosly coupled) zou je de batterij moeten kunnen vervangen. Deze zelfde 1:1 relatie gaat op in software engineering.
 
 Een voorbeeld van high coupling:
-```csharp
-classA{
 
+```csharp
+class A
+{
     elementA;
     
-    MethodA(){
-        if(elementA){
+    MethodA()
+    {
+        if(elementA)
             return new classB().elementB;
-        }
-    MethodC(){
-        new classB().MethodB();
     }
+    MethodC()
+    {
+        new classB().MethodB();
     }
 }
 
-classB{
+class B
+{
     elementB;
-    MethodB(){
-        ..
+    MethodB()
+    {
+        //..
     }
 }
 ```
@@ -207,65 +205,69 @@ Waarom high coupling? Klasse A instantiëert objecten van klasse B, en heeft toe
 We kunnen tight coupling oplossen door de dependencies te inverteren. Dit is het toevoegen van een extra laag. Bijvoorbeeld een interface toevoegen. Op deze manier zal klasseA enkel afhankelijk zijn van de interface en niet van de actuele implementatie van klasse B.
 
 ```csharp
-class A{
-        elementA;
-        ISomeInteface _interface;
-        A(ISomeInterface i)
-        {
-            _interface = i;
-        }
-        MethodA()
-        {
-            if(elementA){
+class A
+{
+    elementA;
+    ISomeInteface _interface;
+
+    A(ISomeInterface i)
+    {
+        _interface = i;
+    }
+
+    MethodA()
+    {
+        if(elementA)
             _interface.elementB;
-            }
-        MethodC()
-        {
-            _interface.MethodB();
-        }
+    }
+
+    MethodC()
+    {
+        _interface.MethodB();
     }
 }
 
-interface ISomeInterface{
+interface ISomeInterface
+{
     MethodB();
     prop elementB;
 }
 ```
+
 ### SRP voorbeeld
 
 ```csharp
- public class Werknemer
+public class Werknemer
+{
+    Database db;
+    public Werknemer()
     {
-        Database db;
-        public Werknemer()
-        {
-            db = new Database();
+        db = new Database();
+    }
+    void Insert(){
+
+        try {
+
+            string sql = "insert into werknemers(voornaam,achternaam,stad) values ('Tom', 'Peeters', 'Antwerpen')";
+            db.query(sql);
         }
-        void Insert(){
-
-            try {
-
-                string sql = "insert into werknemers(voornaam,achternaam,stad) values ('Tom', 'Peeters', 'Antwerpen')";
-                db.query(sql);
-            }
-            catch(Exception e)
-            {
-                //Log error
-                System.IO.File.WriteAllText(@"c:\Error.txt", e.ToString());
-            }
-        }
-
-        void Delete()
+        catch(Exception e)
         {
-
-        }
-
-        void Update()
-        {
-
+            //Log error
+            System.IO.File.WriteAllText(@"c:\Error.txt", e.ToString());
         }
     }
 
+    void Delete()
+    {
+
+    }
+
+    void Update()
+    {
+
+    }
+}
 ```
 
 De werknemer klasse is nu verantwoordelijk voor CRUD operaties, maar ook voor het loggen van errors. Dus meer dan 1 verantwoordelijkeheid. Indien we beslissen om niet meer naar een bestand te loggen, moeten we de klasse aanpassen.
@@ -274,71 +276,69 @@ Daarom is het beter om dit als volgt te coderen:
 
 ```csharp
 public class Werknemer
+{
+    Database db;
+    FileLogger logger;
+    public Werknemer()
     {
-        Database db;
-        FileLogger logger;
-        public Werknemer()
-        {
-            db = new Database();
-            logger = new FileLogger();
-
-        }
-        void Insert(){
-
-            try {
-
-                string sql = "insert into werknemers(voornaam,achternaam,stad) values ('Tom', 'Peeters', 'Antwerpen')";
-                db.query(sql);
-            }
-            catch(Exception e)
-            {
-                //Log error
-                logger.Log(e.ToString());
-            }
-        }
-       
+        db = new Database();
+        logger = new FileLogger();
     }
+    void Insert(){
 
+        try {
+
+            string sql = "insert into werknemers(voornaam,achternaam,stad) values ('Tom', 'Peeters', 'Antwerpen')";
+            db.query(sql);
+        }
+        catch(Exception e)
+        {
+            //Log error
+            logger.Log(e.ToString());
+        }
+    }  
+}
 ```
 
-De klasse FileLogger:
+De klasse ``FileLogger``:
 
 ```csharp
-
- public class FileLogger
+public class FileLogger
+{
+    public void Log(string error)
     {
-        public void Log(string error)
-        {
-            System.IO.File.WriteAllText(@"c:\Error.txt", e.ToString());
-        }
+        System.IO.File.WriteAllText(@"c:\Error.txt", e.ToString());
     }
-
+}
 ```
 
-Met deze FileLogger verhoog je de "coupling" graad, en moet je een extra
+Met deze ``FileLogger`` verhoog je de "coupling" graad, en moet je een extra
 laag toevoegen, bijvoorbeeld een interface.
+
 ```csharp
-public interface ILogger{
+public interface ILogger
+{
     void Log(string error);
 }
 
-public class FileLogger:ILogger{
-
+public class FileLogger:ILogger
+{
 }
 
-public class Werknemer{
-
+public class Werknemer
+{
     ILogger log;
     public Werknemer(ILogger _log){
         log = _log
     }
 }
 
-Main(){
+static void Main(string[] args) 
+{
 
     ILogger log = new FileLogger();
     Werknemer wn = new Werknemer(log);
-    
+  
 }
 ```
 Single responsibility is niet enkel op klasse maar ook op method niveau.
@@ -358,168 +358,156 @@ Er is je gevraagd om software te schrijven voor  een online video shop. Het prog
 
 ```csharp
 static void Main(string[] args) 
-        { 
-            List<Customer> _list = new List<Customer>(); 
-             
-            Customer c = new Customer("Peeters"); 
-            c.AddRental(new Rental(new Movie("Godfather", 0),3)); 
-            _list.Add(c); 
- 
-            Customer c2 = new Customer("Vandeperre"); 
-            c2.AddRental(new Rental(new Movie("Lion King", 2),2)); 
-            _list.Add(c2); 
- 
- 
-            Customer c3 = new Customer("Verlinden"); 
-            c3.AddRental(new Rental(new Movie("Rundskop", 1),4)); 
-            _list.Add(c3); 
- 
- 
-            Customer c4 = new Customer("Dams"); 
-            c4.AddRental(new Rental(new Movie("Top Gun", 0),1)); 
-            _list.Add(c4); 
- 
-            foreach (Customer cust in _list) 
-            { 
-               Console.WriteLine( cust.Statement() ); 
-            } 
- 
-            Console.ReadLine(); 
- 
- 
-        } 
+{ 
+    List<Customer> _list = new List<Customer>(); 
+        
+    Customer c = new Customer("Peeters"); 
+    c.AddRental(new Rental(new Movie("Godfather", 0),3)); 
+    _list.Add(c); 
 
+    Customer c2 = new Customer("Vandeperre"); 
+    c2.AddRental(new Rental(new Movie("Lion King", 2),2)); 
+    _list.Add(c2); 
+
+
+    Customer c3 = new Customer("Verlinden"); 
+    c3.AddRental(new Rental(new Movie("Rundskop", 1),4)); 
+    _list.Add(c3); 
+
+
+    Customer c4 = new Customer("Dams"); 
+    c4.AddRental(new Rental(new Movie("Top Gun", 0),1)); 
+    _list.Add(c4); 
+
+    foreach (Customer cust in _list) 
+    { 
+        Console.WriteLine( cust.Statement() ); 
+    } 
+
+} 
 ```
  
-Movie klasse .. een simpele klasse 
+### Movie klasse .. een simpele klasse 
 
 ```csharp
-
 public class Movie 
+{ 
+    public  const int CHILDRENS = 2; 
+    public  const int REGULAR = 0; 
+    public  const int NEW_RELEASE = 1;      
+
+    public Movie(string title, int priceCode) 
     { 
-        public  const int CHILDRENS = 2; 
-        public  const int REGULAR = 0; 
-        public  const int NEW_RELEASE = 1; 
- 
-         
- 
-        public Movie(string title, int priceCode) 
-        { 
-            Title = title; 
-            PriceCode = priceCode; 
-         } 
- 
-          public int PriceCode { get; set; } 
- 
-   public string Title { get; set; } 
+        Title = title; 
+        PriceCode = priceCode; 
     } 
- 
+
+    public int PriceCode { get; set; } 
+
+    public string Title { get; set; } 
+} 
 ```
  
-Rental klasse 
+### Rental klasse 
 
 Deze klasse stelt voor hoe lang een klant een bepaalde film gehuurd heeft. 
 
 ```csharp
 public class Rental 
+{ 
+    private Movie _movie; 
+        
+    public Rental(Movie movie, int daysRented) 
     { 
-        private Movie _movie; 
-         
-        public Rental(Movie movie, int daysRented) 
-        { 
-            _movie = movie; 
-            DaysRented = daysRented; 
-        } 
- 
-public int DaysRented { get; set; } 
- 
- 
-        public Movie GetMovie() 
-        { 
-            return _movie; 
-        } 
+        _movie = movie; 
+        DaysRented = daysRented; 
     } 
 
+    public int DaysRented { get; set; } 
+
+    public Movie GetMovie() 
+    { 
+        return _movie; 
+    } 
+} 
 ``` 
 
-Customer klasse 
+### Customer klasse 
 
 Deze klasse stelt de klant van de winkel voor 
 
 ```csharp
+public class Customer
+{
 
-  public class Customer
+    List<Rental> _rentals = new List<Rental>();
+
+    public Customer(string name)
     {
-
-        List<Rental> _rentals = new List<Rental>();
-
-        public Customer(string name)
-        {
-            Name = name;
-        }
-
-        public void AddRental(Rental arg)
-        {
-            _rentals.Add(arg);
-        }
-
-        public string Name { get; }
-
-        public string Statement()
-        {
-            double totalAmount = 0;
-
-            string result = "Rental Record for " + Name + "\n";
-
-            foreach (Rental r in _rentals)
-            {
-                double thisAmount = 0;
-                switch (r.GetMovie().PriceCode)
-                {
-                    case Movie.REGULAR:
-                        thisAmount += 2;
-                        if (r.DaysRented > 2)
-                        {
-                            thisAmount += (r.DaysRented - 2) * 1.5;
-                        }
-                        break;
-
-                    case Movie.NEW_RELEASE:
-                        thisAmount += r.DaysRented * 3;
-                        break;
-
-                    case Movie.CHILDRENS:
-                        thisAmount += 1.5;
-                        if (r.DaysRented > 3)
-                        {
-                            thisAmount += (r.DaysRented - 3) * 1.2;
-                        }
-                        break;
-                }
-
-                //Show figures for this rental 
-                result += "\t" + r.GetMovie().Title + "\t" + thisAmount.ToString() + "\n";
-                totalAmount += thisAmount;
-            }
-
-            //Add footer lines 
-            result += "Amount owned is " + totalAmount.ToString() + "\n";
-
-            return result;
-
-        }
+        Name = name;
     }
 
+    public void AddRental(Rental arg)
+    {
+        _rentals.Add(arg);
+    }
+
+    public string Name { get; }
+
+    public string Statement()
+    {
+        double totalAmount = 0;
+
+        string result = "Rental Record for " + Name + "\n";
+
+        foreach (Rental r in _rentals)
+        {
+            double thisAmount = 0;
+            switch (r.GetMovie().PriceCode)
+            {
+                case Movie.REGULAR:
+                    thisAmount += 2;
+                    if (r.DaysRented > 2)
+                    {
+                        thisAmount += (r.DaysRented - 2) * 1.5;
+                    }
+                    break;
+
+                case Movie.NEW_RELEASE:
+                    thisAmount += r.DaysRented * 3;
+                    break;
+
+                case Movie.CHILDRENS:
+                    thisAmount += 1.5;
+                    if (r.DaysRented > 3)
+                    {
+                        thisAmount += (r.DaysRented - 3) * 1.2;
+                    }
+                    break;
+            }
+
+            //Show figures for this rental 
+            result += "\t" + r.GetMovie().Title + "\t" + thisAmount.ToString() + "\n";
+            totalAmount += thisAmount;
+        }
+
+        //Add footer lines 
+        result += "Amount owned is " + totalAmount.ToString() + "\n";
+
+        return result;
+
+    }
+}
 ```
 
 
 ## Analyse van onze architectuur 
 
-Voor een dergelijke (“simpele”) applicatie is design/architectuur niet zo belangrijk.  We zien echter dat dit niet echt object georiënteerde code is, wat een invloed heeft op het gemak waarmee de toepassing kan uitgebreid en veranderd worden.  
+Voor een dergelijke (*simpele*) applicatie is design/architectuur niet zo belangrijk.  We zien echter dat dit niet echt object georiënteerde code is, wat een invloed heeft op het gemak waarmee de toepassing kan uitgebreid en veranderd worden.  
 
 Enkele bemerkingen: de statement functie in onze Customer klasse is te lang en doet te veel.  Veel zaken die we hier in doen, zouden naar andere klasses overgedragen moeten worden. 
 
-Ook al werkt ons programma (mooi geschreven code of lelijke code speelt echt geen rol voor een compiler), we moeten ons steeds het volgende afvragen: als in onze applicatie toevoegingen of veranderingen moeten aangebracht worden, moet er “iemand” zijn die dit kan klaar spelen, en een zwak gedesigned systeem is moeilijk te veranderen.  Het vergt dan heel wat analysetijd van de programmeur om je programma te doorgronden. 
+Ook al werkt ons programma (mooi geschreven code of lelijke code speelt echt geen rol voor een compiler), we moeten ons steeds het volgende afvragen: als in onze applicatie toevoegingen of veranderingen moeten aangebracht worden, moet er *iemand* zijn die dit kan klaar spelen, en een zwak gedesigned systeem is moeilijk te veranderen.  Het vergt dan heel wat analysetijd van de programmeur om je programma te doorgronden. 
 
 Een voorbeeld van verandering: stel dat je klant vraagt om je rekening ook op een webpagina in HTML af te drukken. Welke impact heeft dit op je programma? Als we naar onze code kijken, merken we dat voor dergelijke vraagstelling het niet mogelijk is code te hergebruiken. Dus moeten we een nieuwe functie maken, die veel gedrag van de reeds bestaande statement functie kopieert. Op zich nog niet echt een probleem, want met wat copy-paste werk kan je de statement functie dupliceren en hernoemen naar htmlstatement() en de result string aanpassen met bijvoorbeeld: ``result+=”<b>”blabla</b>” ``. 
 
@@ -527,9 +515,9 @@ Maar bedenk eens wat je allemaal moet doen als één regel in het rekening maken
 
 Nog een andere opmerking. Als de winkel beslist om de classificatie (gewone film, kinder, nieuwe release) te veranderen, maar nog niet zeker is hoe, kan het zijn dat ze je vragen de mogelijke ideeën uit te testen.  Dat heeft dan ook een invloed op hoe kosten voor films en huurpunten worden berekend. Als professionele software ontwikkelaar in spe ga ik je reeds verwittigen dat dergelijke veranderingen heel regelmatig voorkomen! 
 
-De statement() functie is de plaats waar de veranderingen in classificatie en berekeningen gebeuren. Dus ook niet te vergeten consistente veranderingen te maken in de htmlstatement() functie. Als de berekeningsmethodes steeds complexer worden, zal het met ons design ook steeds moeilijker worden om deze veranderingen door te voeren. 
+De ``statement()`` functie is de plaats waar de veranderingen in classificatie en berekeningen gebeuren. Dus ook niet te vergeten consistente veranderingen te maken in de ``htmlstatement()`` functie. Als de berekeningsmethodes steeds complexer worden, zal het met ons design ook steeds moeilijker worden om deze veranderingen door te voeren. 
 
-Wat nu volgt zijn voorstellen om onze software architectuur stap voor stap te veranderen totdat we object georiënteerde code hebben geschreven die ons in staat stelt dergelijke veranderingen op een “makkelijke” manier te realiseren. 
+Wat nu volgt zijn voorstellen om onze software architectuur stap voor stap te veranderen totdat we object georiënteerde code hebben geschreven die ons in staat stelt dergelijke veranderingen op een *makkelijke* manier te realiseren. 
  
   
 ### Analyseren van de statement functie 
@@ -539,79 +527,71 @@ Tracht steeds korte functies/methodes te schrijven. Tracht lange functies onder 
 We zoeken in onze statement() functie naar deze lijnen code: 
 
 ```csharp
-
 switch( r.GetMovie().PriceCode ) 
-                { 
-                    case Movie.REGULAR: 
-                        thisAmount += 2; 
-                        if (r.GetDaysRented() > 2) 
-                        { 
-                            thisAmount += (r.GetDaysRented() - 2) * 1.5; 
-                        } 
-                        break; 
- 
-                    case Movie.NEW_RELEASE: 
-                        thisAmount += r.GetDaysRented() * 3; 
-                        break; 
- 
-                    case Movie.CHILDRENS: 
-                        thisAmount += 1.5; 
-                        if (r.GetDaysRented() > 3) 
-                        { 
-                            thisAmount += (r.GetDaysRented() - 3) * 1.5; 
-                        } 
-                        break; 
-                } 
- 
+{ 
+    case Movie.REGULAR: 
+        thisAmount += 2; 
+        if (r.GetDaysRented() > 2) 
+        { 
+            thisAmount += (r.GetDaysRented() - 2) * 1.5; 
+        } 
+        break; 
+
+    case Movie.NEW_RELEASE: 
+        thisAmount += r.GetDaysRented() * 3; 
+        break; 
+
+    case Movie.CHILDRENS: 
+        thisAmount += 1.5; 
+        if (r.GetDaysRented() > 3) 
+        { 
+            thisAmount += (r.GetDaysRented() - 3) * 1.5; 
+        } 
+        break; 
+} 
 ```
 
 En maken hiervoor een aparte functie: 
 
 ```csharp
- 
 private double AmountFor(Rental r) 
-        { 
-            double thisAmount=0; 
-            switch (r.GetMovie().GetPriceCode()) 
+{ 
+    double thisAmount=0; 
+    switch (r.GetMovie().GetPriceCode()) 
+    { 
+        case Movie.REGULAR: 
+            thisAmount += 2; 
+            if (r.GetDaysRented() > 2) 
             { 
-                case Movie.REGULAR: 
-                    thisAmount += 2; 
-                    if (r.GetDaysRented() > 2) 
-                    { 
-                        thisAmount += (r.GetDaysRented() - 2) * 1.5; 
-                    } 
-                    break; 
- 
-                case Movie.NEW_RELEASE: 
-                    thisAmount += r.GetDaysRented() * 3; 
-                    break; 
- 
-                case Movie.CHILDRENS: 
-                    thisAmount += 1.5; 
-                    if (r.GetDaysRented() > 3) 
-                    { 
-                        thisAmount += (r.GetDaysRented() - 3) * 1.5; 
-                    } 
-                    break; 
+                thisAmount += (r.GetDaysRented() - 2) * 1.5; 
             } 
-            return thisAmount; 
-        } 
+            break; 
 
+        case Movie.NEW_RELEASE: 
+            thisAmount += r.GetDaysRented() * 3; 
+            break; 
+
+        case Movie.CHILDRENS: 
+            thisAmount += 1.5; 
+            if (r.GetDaysRented() > 3) 
+            { 
+                thisAmount += (r.GetDaysRented() - 3) * 1.5; 
+            } 
+            break; 
+    } 
+    return thisAmount; 
+} 
 ```
  
 Terwijl we in de statement functie deze verandering maken: 
 
 ```csharp
- 
 foreach (Rental r in _rentals) 
 { 
- 
-      double thisAmount = 0; 
-      thisAmount = AmountFor(r); 
-… 
-
+    double thisAmount = 0; 
+    thisAmount = AmountFor(r); 
+    //...
 ```
-
 (zie volledige C# code - project SoftwareArchitectuur2) [TODO]
 
 #### Analyse van AmountFor functie 
@@ -619,55 +599,52 @@ foreach (Rental r in _rentals)
 Als we naar onze nieuwe AmountFor(Rental r) functie kijken, valt het op dat we hier met Rental data werken, en eigenlijk geen data van de customer klasse gebruiken.  In de meeste gevallen moeten functies/methodes in die klasse staan vanwaar ze data gebruiken, dus in dit geval van de Rental klasse. 
 
 ```csharp
-
 public double GetCharge() 
-        { 
-            double result = 0; 
-            switch (GetMovie().GetPriceCode()) 
+{ 
+    double result = 0; 
+    switch (GetMovie().GetPriceCode()) 
+    { 
+        case Movie.REGULAR: 
+            result += 2; 
+            if (GetDaysRented() > 2) 
             { 
-                case Movie.REGULAR: 
-                    result += 2; 
-                    if (GetDaysRented() > 2) 
-                    { 
-                        result += (GetDaysRented() - 2) * 1.5; 
-                    } 
-                    break; 
- 
-                case Movie.NEW_RELEASE: 
-                    result += GetDaysRented() * 3; 
-                    break; 
- 
-                case Movie.CHILDRENS: 
-                    result += 1.5; 
-                    if (GetDaysRented() > 3) 
-                    { 
-                        result += (GetDaysRented() - 3) * 1; 
-                    } 
-                    break; 
+                result += (GetDaysRented() - 2) * 1.5; 
             } 
-            return result; 
-        } 
- 
+            break; 
+
+        case Movie.NEW_RELEASE: 
+            result += GetDaysRented() * 3; 
+            break; 
+
+        case Movie.CHILDRENS: 
+            result += 1.5; 
+            if (GetDaysRented() > 3) 
+            { 
+                result += (GetDaysRented() - 3) * 1; 
+            } 
+            break; 
+    } 
+    return result; 
+} 
 ```
 
 Bij deze heb ik ook de naam van de functie veranderd in GetCharge(),  omwille van de duidelijkheid. Tracht altijd naamgevingen te gebruiken die direct duidelijk maken wat je programmeert. 
 Dus in de Customer klasse staat nu 
 
 ```csharp
-
 public string Statement() 
-        { 
-            double totalAmount = 0; 
-            int frequentRenterPoints = 0; 
- 
-            string result = "Rental Record for " + GetName() + "\n"; 
- 
-            foreach (Rental r in _rentals) 
-            { 
-                double thisAmount = 0; 
-                thisAmount += r.GetCharge(); 
-… 
+{ 
+    double totalAmount = 0; 
+    int frequentRenterPoints = 0; 
 
+    string result = "Rental Record for " + GetName() + "\n"; 
+
+    foreach (Rental r in _rentals) 
+    { 
+        double thisAmount = 0; 
+        thisAmount += r.GetCharge(); 
+
+    // etc.
 ```
 
 Het klasse diagramma is nu veranderd naar: 
@@ -678,30 +655,27 @@ Het klasse diagramma is nu veranderd naar:
 Als we terug naar de statement() functie kijken dan is de variabele thisAmount redundant, en veranderen we naar: 
 
 ```csharp
-
 public string Statement() 
- 
-        { 
-            double totalAmount = 0; 
-            int frequentRenterPoints = 0; 
- 
-            string result = "Rental Record for " + GetName() + "\n"; 
- 
-            foreach (Rental r in _rentals) 
-            { 
-                
- 
-                //Show figures for this rental 
-                result += "\t" + r.GetMovie().GetTitle() + "\t" + r.GetCharge().ToString() + "\n"; 
-                totalAmount += r.GetCharge(); 
-            } 
- 
-            //Add footer lines 
-            result += "Amount owned is " + totalAmount.ToString() + "\n"; 
- 
-            return result; 
-        } 
+{ 
+    double totalAmount = 0; 
+    int frequentRenterPoints = 0; 
 
+    string result = "Rental Record for " + GetName() + "\n"; 
+
+    foreach (Rental r in _rentals) 
+    { 
+        
+
+        //Show figures for this rental 
+        result += "\t" + r.GetMovie().GetTitle() + "\t" + r.GetCharge().ToString() + "\n"; 
+        totalAmount += r.GetCharge(); 
+    } 
+
+    //Add footer lines 
+    result += "Amount owned is " + totalAmount.ToString() + "\n"; 
+
+    return result; 
+} 
 ```
 
 Best is om tijdelijke variabelen te verwijderen, omdat  je makkelijk vergeet waarvoor ze dienen. Je zou in bovenstaand geval toch kunnen kiezen voor een temporary variabele thisAmount, omdat de getCharge() tweemaal wordt opgeroepen dus tweemaal een berekening maakt, als we dan naar performantie kijken. 
@@ -709,45 +683,39 @@ Best is om tijdelijke variabelen te verwijderen, omdat  je makkelijk vergeet waa
 In de Customer klasse: 
 
 ```csharp
-
 private double getTotalCharge() 
-        { 
-            double result = 0; 
- 
-            foreach (Rental r in _rentals) 
-            { 
-                result += r.GetCharge(); 
-            } 
- 
-            return result; 
- 
-        } 
- 
+{ 
+    double result = 0; 
+
+    foreach (Rental r in _rentals) 
+    { 
+        result += r.GetCharge(); 
+    } 
+
+    return result; 
+} 
 ``` 
  
 Met de statement functie als: 
 
 ```csharp
-
 public string Statement() 
-        { 
-            string result = "Rental Record for " + GetName() + "\n"; 
- 
-            foreach (Rental r in _rentals) 
-            { 
-                 
-                //Show figures for this rental 
-                result += "\t" + r.GetMovie().GetTitle() + "\t" +  r.GetCharge().ToString() + "\n";                 
-            } 
- 
-            //Add footer lines 
-            result += "Amount owned is " +getTotalCharge().ToString() + "\n"; 
-            result += "You earned " + getTotalFrequentRenterPoints().ToString() + "frequent renter points"; 
- 
-            return result; 
- 
-        } 
+{ 
+    string result = "Rental Record for " + GetName() + "\n"; 
 
+    foreach (Rental r in _rentals) 
+    { 
+            
+        //Show figures for this rental 
+        result += "\t" + r.GetMovie().GetTitle() + "\t" +  r.GetCharge().ToString() + "\n";                 
+    } 
+
+    //Add footer lines 
+    result += "Amount owned is " +getTotalCharge().ToString() + "\n"; 
+    result += "You earned " + getTotalFrequentRenterPoints().ToString() + "frequent renter points"; 
+
+    return result; 
+} 
 ```
 
 
@@ -757,60 +725,55 @@ public string Statement()
 In plaats van tekst te loggen wil ik mijn prijsberekening naar een HTML pagina schrijven. Dit is nu vrij simpel, en bij veranderingen in de prijsberekening moet ik de customer klasse niet meer aanpassen!
  
 ```csharp
-
 public string HtmlStatement() 
-        { 
-            string result = "<h1>Rental Record for " + GetName() + "</h1>"; 
- 
-            foreach (Rental r in _rentals) 
-            { 
-                //Show figures for this rental 
-              result += "<p>" + r.GetMovie().GetTitle() + " &nbsp; " + r r.GetCharge().ToString() + "</br></p"; 
-            } 
- 
-            //Add footer lines 
-            result += "<p>Amount owned is " + getTotalCharge().ToString() + "</br>"; 
-result += "You earned " + getTotalFrequentRenterPoints().ToString() + "frequent renter points</p>"; 
- 
-            return result; 
- 
-} 
+{ 
+    string result = "<h1>Rental Record for " + GetName() + "</h1>"; 
 
+    foreach (Rental r in _rentals) 
+    { 
+        //Show figures for this rental 
+        result += "<p>" + r.GetMovie().GetTitle() + " &nbsp; " + r r.GetCharge().ToString() + "</br></p"; 
+    } 
+
+    //Add footer lines 
+    result += "<p>Amount owned is " + getTotalCharge().ToString() + "</br>"; 
+    result += "You earned " + getTotalFrequentRenterPoints().ToString() + "frequent renter points</p>"; 
+
+    return result; 
+} 
 ```
  
 Bij een verandering aan de berekening, of toevoeging van nieuwe types films worden de statement functies niet meer gewijzigd, waardoor we duidelijk meer onderhoudvriendelijke code hebben geschreven. 
 
 
 ```csharp
-
- public double GetCharge() 
-        { 
-            double thisAmount = 0; 
-            switch (GetMovie().GetPriceCode()) 
+public double GetCharge() 
+{ 
+    double thisAmount = 0; 
+    switch (GetMovie().GetPriceCode()) 
+    { 
+        case Movie.REGULAR: 
+            thisAmount += 2; 
+            if (GetDaysRented() > 2) 
             { 
-                case Movie.REGULAR: 
-                    thisAmount += 2; 
-                    if (GetDaysRented() > 2) 
-                    { 
-                        thisAmount += (GetDaysRented() - 2) * 1.5; 
-                    } 
-                    break; 
- 
-                case Movie.NEW_RELEASE: 
-                    thisAmount += GetDaysRented() * 3; 
-                    break; 
- 
-                case Movie.CHILDRENS: 
-                    thisAmount += 1.5; 
-                    if (GetDaysRented() > 3) 
-                    { 
-                        thisAmount += (GetDaysRented() - 3) * 1; 
-                    } 
-                    break; 
+                thisAmount += (GetDaysRented() - 2) * 1.5; 
             } 
-            return thisAmount; 
-        } 
+            break; 
 
+        case Movie.NEW_RELEASE: 
+            thisAmount += GetDaysRented() * 3; 
+            break; 
+
+        case Movie.CHILDRENS: 
+            thisAmount += 1.5; 
+            if (GetDaysRented() > 3) 
+            { 
+                thisAmount += (GetDaysRented() - 3) * 1; 
+            } 
+            break; 
+    } 
+    return thisAmount; 
+} 
 ```
 
 
@@ -821,47 +784,42 @@ We moeten dan wel het aantal huurdagen meegeven als parameter van deze nieuwe fu
 De Rental klasse: 
 
 ```csharp
-
 public double GetCharge() 
-        { 
-            return GetMovie().GetCharge(DaysRented); 
-                       
-        } 
-
+{ 
+    return GetMovie().GetCharge(DaysRented);              
+} 
 ```
-
 
 In de klasse Movie zit nu: 
 
 ```csharp
 public double GetCharge(int daysRented) 
-        { 
-            double result = 0; 
-            switch (GetPriceCode()) 
+{ 
+    double result = 0; 
+    switch (GetPriceCode()) 
+    { 
+        case Movie.REGULAR: 
+            result += 2; 
+            if (daysRented > 2) 
             { 
-                case Movie.REGULAR: 
-                    result += 2; 
-                    if (daysRented > 2) 
-                    { 
-                        result += (daysRented - 2) * 1.5; 
-                    } 
-                    break; 
- 
-                case Movie.NEW_RELEASE: 
-                    result += daysRented * 3; 
-                    break; 
- 
-                case Movie.CHILDRENS: 
-                    result += 1.5; 
-                    if (daysRented > 3) 
-                    { 
-                        result += (daysRented - 3) * 1; 
-                    } 
-                    break; 
+                result += (daysRented - 2) * 1.5; 
             } 
-            return result; 
-        } 
-        
+            break; 
+
+        case Movie.NEW_RELEASE: 
+            result += daysRented * 3; 
+            break; 
+
+        case Movie.CHILDRENS: 
+            result += 1.5; 
+            if (daysRented > 3) 
+            { 
+                result += (daysRented - 3) * 1; 
+            } 
+            break; 
+    } 
+    return result; 
+}       
 ```
 
 
@@ -886,7 +844,6 @@ Gesloten voor wijziging betekent dat het gedrag mag veranderd worden zonder de b
 Een typisch voorbeeld:
 
 ```csharp
-
 public class Rectangle
 {
     public double Width { get; set; }
@@ -898,50 +855,44 @@ public class Rectangle
 Nu bouwen we een applicatie die de oppervlakte van een collectie rechthoeken zal berekenen.
 
 ```csharp
+public class OppBerekenaar
+{
 
- public class OppBerekenaar
+    public double Opp(Rechthoek[] shapes)
     {
-
-        public double Opp(Rechthoek[] shapes)
+        double opp = 0;
+        foreach (var shape in shapes)
         {
-            double opp = 0;
-            foreach (var shape in shapes)
-            {
-                opp += shape.Width * shape.Height;
-            }
-
-            return opp;
+            opp += shape.Width * shape.Height;
         }
+
+        return opp;
     }
-    
+} 
 ```
 
 En we schrijven ons testprogramma:
 
 ```csharp
+static void Main(string[] args)
+{
 
- static void Main(string[] args)
-        {
+    Rechthoek rh1 = new Rechthoek() { Width = 49, Height = 30 };
+    Rechthoek rh2 = new Rechthoek() { Width = 30, Height = 20 };
+    Rechthoek rh3 = new Rechthoek() { Width = 22, Height = 10 };
+    Rechthoek rh4 = new Rechthoek() { Width = 44, Height = 35 };
 
-            Rechthoek rh1 = new Rechthoek() { Width = 49, Height = 30 };
-            Rechthoek rh2 = new Rechthoek() { Width = 30, Height = 20 };
-            Rechthoek rh3 = new Rechthoek() { Width = 22, Height = 10 };
-            Rechthoek rh4 = new Rechthoek() { Width = 44, Height = 35 };
+    Rechthoek[] rechthoeken = new Rechthoek[4];
+    rechthoeken[0] = rh1;
+    rechthoeken[1] = rh2;
+    rechthoeken[2] = rh3;
+    rechthoeken[3] = rh4;
 
-            Rechthoek[] rechthoeken = new Rechthoek[4];
-            rechthoeken[0] = rh1;
-            rechthoeken[1] = rh2;
-            rechthoeken[2] = rh3;
-            rechthoeken[3] = rh4;
+    OppBerekenaar opb = new OppBerekenaar();
+    double totaal = opb.Opp(rechthoeken);
 
-            OppBerekenaar opb = new OppBerekenaar();
-            double totaal = opb.Opp(rechthoeken);
-
-            Console.WriteLine("totaal: "+ totaal);
-            Console.ReadLine();
-        }
-        
-
+    Console.WriteLine("totaal: "+ totaal);
+}
 ```
 
 De volgende vraag komt op: kunnen we het programma uitbreiden zodat we ook de oppervlakte van een cirkel kunnen berekenen?
@@ -949,25 +900,22 @@ De volgende vraag komt op: kunnen we het programma uitbreiden zodat we ook de op
 We passsen de code als volgt aan:
 
 ```csharp
+public double Opp(Object[] shapes)
+{
+    double opp = 0;
+    foreach (var shape in shapes)
+    {
+        if(shape is Rechthoek)
+            opp += ((Rechthoek)shape).Width * ((Rechthoek)shape).Height; //CAST to Rechthoek
 
- public double Opp(Object[] shapes)
-        {
-            double opp = 0;
-            foreach (var shape in shapes)
-            {
-                if(shape is Rechthoek)
-                    opp += ((Rechthoek)shape).Width * ((Rechthoek)shape).Height; //CAST to Rechthoek
 
+        if (shape is Cirkel)
+            opp += ((Cirkel)shape).Straal * ((Cirkel)shape).Straal * Math.PI;  //CAST to cirkel
+    }
 
-                if (shape is Cirkel)
-                    opp += ((Cirkel)shape).Straal * ((Cirkel)shape).Straal * Math.PI;  //CAST to cirkel
-            }
-
-            return opp;
-        }
-
+    return opp;
+}
 ```
-
 
 Wat later krijgen we de vraag om de OppBereken klasse uit te breiden zodat we ook de oppervlakte van driehoeken kunnen opnemen.
 Dit druist in tegen het principe  "gesloten voor wijziging!"
@@ -987,9 +935,7 @@ Een interface in de programmeertaal als Java of C# is een soort abstracte klasse
 
 Wat is een abstracte klasse?
 
-**
-In de informatica is een abstracte klasse een klasse die ongedefinieerde methoden kan bevatten. Deze methoden worden geïmplementeerd in een subklasse van de abstracte klasse. Het is niet mogelijk om een object te maken van abstracte klassen maar wel van niet-abstracte subklassen. Door middel van overerving is het wel mogelijk om de methoden die wel gedefinieerd zijn in de abstracte klasse te erven en in de subklassen te gebruiken.
-**
+**In de informatica is een abstracte klasse een klasse die ongedefinieerde methoden kan bevatten. Deze methoden worden geïmplementeerd in een subklasse van de abstracte klasse. Het is niet mogelijk om een object te maken van abstracte klassen maar wel van niet-abstracte subklassen. Door middel van overerving is het wel mogelijk om de methoden die wel gedefinieerd zijn in de abstracte klasse te erven en in de subklassen te gebruiken.**
 
 >Een klasse kan meerdere interfaces implementeren maar alleen van één klasse (rechtstreeks) overerven. Een verschil met abstracte klassen is dat een abstracte klasse wel gedefinieerde methoden kan bevatten maar een interface bevat alleen ongedefinieerde methoden. 
 
@@ -999,69 +945,59 @@ Om aan het OPC principe te voldoen moeten we als volgt te werk gaan:
 We maken een basis klasse voor rechthoeken, cirkels, driehoeken, andere vormen, en deze definieert een abstracte methode om de oppervlakte te berekenen.
 
 ```csharp
-
- public abstract class Vorm
-    {
-        public abstract double Oppervlakte();
-    }
-    
+public abstract class Vorm
+{
+    public abstract double Oppervlakte();
+}  
 ```
 
 De andere klassen leiden af van vorm:
 
 ```csharp 
+public class Rechthoek: Vorm
+{
+    public int Width { get; set; }
+    public int Height { get; set; }
 
- public class Rechthoek: Vorm
+    public override double Oppervlakte()
     {
-        public int Width { get; set; }
-        public int Height { get; set; }
-
-        public override double Oppervlakte()
-        {
-            return Width * Height;
-        }
+        return Width * Height;
     }
-
+}
 ```
 
 ```csharp
+public class Cirkel:Vorm
+{
 
- public class Cirkel:Vorm
+    public int Straal { get; set; }
+
+    public override double Oppervlakte()
     {
-
-        public int Straal { get; set; }
-
-        public override double Oppervlakte()
-        {
-            return Straal * Straal * Math.PI;
-        }
+        return Straal * Straal * Math.PI;
     }
-    
+}
 ```
 
 De berekening gebeurt nu als volgt:
 
 ```csharp
+public class OppBerekenaar
+{
 
- public class OppBerekenaar
+    public double Opp(Vorm[] shapes)
     {
-
-        public double Opp(Vorm[] shapes)
+        double opp = 0;
+        foreach (var shape in shapes)
         {
-            double opp = 0;
-            foreach (var shape in shapes)
-            {
-                opp += shape.Oppervlakte();
-            }
-
-            return opp;
+            opp += shape.Oppervlakte();
         }
 
+        return opp;
     }
-    
-    
-```
 
+}
+```
 Op deze manier is de OppBerekenaar klasse gesloten voor wijziging, maar toch open voor uitbreiding!
 
 
@@ -1071,10 +1007,10 @@ OPC zal je als ervaren programmeur sneller toepassen. Van bij de start van je on
 
 
 # Liskov Substitution Design Principle
-[bron](https://lassala.net/2010/11/04/a-good-example-of-liskov-substitution-principle/))
+TOPROCESS:
+* [bron](https://lassala.net/2010/11/04/a-good-example-of-liskov-substitution-principle/)
 
-!!!!!
-[bron](http://www.tomdalling.com/blog/software-design/solid-class-design-the-liskov-substitution-principle/)
+* !!!!! [bron](http://www.tomdalling.com/blog/software-design/solid-class-design-the-liskov-substitution-principle/)
 
 > Subtypes moeten vervangbaar zijn door hun super types (parent class).
 
@@ -1083,55 +1019,52 @@ OPC zal je als ervaren programmeur sneller toepassen. Van bij de start van je on
 Als voorbeeld werken we met een klasse vierkant die overerft van Rechthoek. De klasse Rechthoek heeft eigenschappen als "width" en "height", en vierkant erft deze over. Maar als voor de klasse vierkant de width OF height gekend is, ken je de waarde van de andere ook. En dit is tegen het principe van Liskov.
 
 ```csharp
+public class Rechthoek
+{
+    public virtual int Width { get; set; }
+    public virtual int Height { get; set; }
 
-  public class Rechthoek
+    public int BerekenOpp()
     {
-        public virtual int Width { get; set; }
-        public virtual int Height { get; set; }
-
-        public int BerekenOpp()
-        {
-            return Width * Height;
-        }
+        return Width * Height;
     }
-
+}
 ```
 
 De klasse Vierkant erft over van Rechthoek (maar is in programmeren een vierkant wel een rechthoek?)
 Een vierkant is een rechthoek met gelijke breedte en hoogte, en we kunnen de properties virtual maken in de klasse Rechthoek om dit te realiseren. Rare implementatie, niet? Maar kijk nu naar de client code..
 
 ```csharp
-
- public class Vierkant:Rechthoek
+public class Vierkant:Rechthoek
+{
+    public override int Width
     {
-        public override int Width
+        get
         {
-            get
-            {
-                return base.Width;
-            }
-
-            set
-            {
-                base.Width = value;
-                base.Height = value;
-            }
+            return base.Width;
         }
 
-        public override int Height
+        set
         {
-            get
-            {
-                return base.Height;
-            }
-
-            set
-            {
-                base.Height = value;
-                base.Width = value;
-            }
+            base.Width = value;
+            base.Height = value;
         }
     }
+
+    public override int Height
+    {
+        get
+        {
+            return base.Height;
+        }
+
+        set
+        {
+            base.Height = value;
+            base.Width = value;
+        }
+    }
+}
 
 ```
 
@@ -1139,16 +1072,14 @@ Client code:
 
 ```csharp
  static void Main(string[] args)
-        {
-            Rechthoek r = new Vierkant();
+{
+    Rechthoek r = new Vierkant();
 
-            r.Width = 5;
-            r.Height = 10;
-            
-            Console.WriteLine(r.BerekenOpp());
-            Console.ReadLine();
-          
-        }
+    r.Width = 5;
+    r.Height = 10;
+    
+    Console.WriteLine(r.BerekenOpp());
+}
 ```
 
 De gebruiker weet dat r een Rechthoek is dus is hij in de veronderstelling dat hij de width en height kan aanpassen zoals in de parent klasse. Dit in acht genomen zal de gebruiker verrast zijn om 100 te zien ipv 50. 
@@ -1162,80 +1093,81 @@ De gebruiker weet dat r een Rechthoek is dus is hij in de veronderstelling dat h
 
 
 ```csharp
- public abstract class Shape
-    {
-        public abstract int BerekenOpp();
-    }
+public abstract class Shape
+{
+    public abstract int BerekenOpp();
+}
 
-    public class Rechthoek : Shape
+public class Rechthoek : Shape
+{
+    public int Width { get; set; }
+    public int Height { get; set; }
+    public override int BerekenOpp()
     {
-        public int Width { get; set; }
-        public int Height { get; set; }
-        public override int BerekenOpp()
+        return Width * Height;
+    }
+}
+
+public class Vierkant : Shape
+{
+    public int Side { get; set; }
+    public override int BerekenOpp()
+    {
+        return Side * Side;
+    }
+}
+
+public class OppBerekenaar
+{
+    public List<Shape> shapes;
+    public int BerekenOppervlakte()
+    {
+        shapes = new List<Shape>();
+        shapes.Add(new Vierkant() { Side = 10 });
+        shapes.Add(new Rechthoek(){ Width = 5, Height= 20 });
+
+        int total = 0;
+        foreach(Shape s in shapes)
         {
-            return Width * Height;
+            total += s.BerekenOpp();
         }
+
+        return total;
     }
-
-    public class Vierkant : Shape
-    {
-        public int Side { get; set; }
-        public override int BerekenOpp()
-        {
-            return Side * Side;
-        }
-    }
-
-    public class OppBerekenaar
-    {
-        public List<Shape> shapes;
-        public int BerekenOppervlakte()
-        {
-            shapes = new List<Shape>();
-            shapes.Add(new Vierkant() { Side = 10 });
-            shapes.Add(new Rechthoek(){ Width = 5, Height= 20 });
-
-            int total = 0;
-            foreach(Shape s in shapes)
-            {
-                total += s.BerekenOpp();
-            }
-
-            return total;
-        }
-    }
+}
 ```
 
 Een ander voorbeeld:
 
 ```csharp
-
-public interface ICar {
+public interface ICar 
+{
      void drive();
      void playRadio();
      void addLuggage();
 }
-
 ```
 
 Wat gebeurt er als we een Formule 1 auto hebben:
 
 ```csharp
-
-public class FormulaOneCar: ICar {
-    public void drive() {
+public class FormulaOneCar: ICar 
+{
+    public void drive() 
+    {
         //Code to make it go super fast
     }
 
-    public void addLuggage() {
+    public void addLuggage() 
+    {
         throw new NotSupportedException("No room to carry luggage, sorry."); 
     }
 
-    public void playRadio() {
+    public void playRadio() 
+    {
         throw new NotSupportedException("Too heavy, none included."); 
     }
 }
-
 ```
 
 
@@ -1252,9 +1184,8 @@ Dit is de essentie van het open closed principe. Maar wanneer je subklassen gebr
 Bijvoorbeeld:
 
 ```csharp
-
-public void DoeIets(Bird b){
-
+public void DoeIets(Bird b)
+{
     if(b is Pinguin) {
         //Doe iets met de pinguin
     }
@@ -1262,11 +1193,7 @@ public void DoeIets(Bird b){
         //Doe iets anders
     }
 }
-
 ```
-
-
-
 
 # Interface Segregation Principle (ISP)
 
@@ -1277,114 +1204,109 @@ Clients mogen niet gedwongen worden om interfaces te implementeren die operaties
 In plaats van een fat interface is het beter om deze verder op te delen in meer specifieke interfaces.
 
 ```csharp
-
-  public interface ILog
-    {
-        void Log(string message);
-       
-        void OpenConnection();
-
-        void CloseConnection();
-
-    }
-
-
-    public class DBLogger : ILog
-    {
-        public void Log(string message)
-        {
-            //Code to log data to a database
-        }
-
-        public void OpenConnection()
-        {
-            //Opens database connection
-        }
-
-        public void CloseConnection()
-        {
-            //Closes the database connection
-        }
-
-    }
-
-    public class FileLogger : ILog
-    {
-        public void Log(string message)
-        {
-            //Code to log to a file           
-        }
-
-        public void CloseConnection()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void OpenConnection()
-        {
-            throw new NotImplementedException();
-        }
-
-    }
+public interface ILog
+{
+    void Log(string message);
     
-    ```
+    void OpenConnection();
+
+    void CloseConnection();
+}
+
+
+public class DBLogger : ILog
+{
+    public void Log(string message)
+    {
+        //Code to log data to a database
+    }
+
+    public void OpenConnection()
+    {
+        //Opens database connection
+    }
+
+    public void CloseConnection()
+    {
+        //Closes the database connection
+    }
+
+}
+
+public class FileLogger : ILog
+{
+    public void Log(string message)
+    {
+        //Code to log to a file           
+    }
+
+    public void CloseConnection()
+    {
+        throw new NotImplementedException();
+    }
+
+    public void OpenConnection()
+    {
+        throw new NotImplementedException();
+    }
+
+}  
+```
     
-    ## Hoe ISP oplossen:
+## Hoe ISP oplossen:
     
-    ```cs
-    
-      public interface ILog
-    {
-        void Log(string message);     
+```csharp    
+public interface ILog
+{
+    void Log(string message);     
 
+}
+
+public interface IDBLog :ILog
+{
+    void OpenConnection();
+
+    void CloseConnection();
+}
+
+public interface IFileLog :ILog
+{
+    void CheckFileSize();
+
+    void GenerateFileName();
+}
+
+
+public class DBLogger : IDBLog
+{
+    public void Log(string message)
+    {
+        //Code to log data to a database
     }
 
-    public interface IDBLog :ILog
+    public void OpenConnection()
     {
-        void OpenConnection();
-
-        void CloseConnection();
+        //Opens database connection
     }
 
-    public interface IFileLog :ILog
+    public void CloseConnection()
     {
-        void CheckFileSize();
-
-        void GenerateFileName();
+        //Closes the database connection
     }
 
+}
 
-    public class DBLogger : IDBLog
+public class FileLogger : IFileLog
+{
+    public void Log(string message)
     {
-        public void Log(string message)
-        {
-            //Code to log data to a database
-        }
-
-        public void OpenConnection()
-        {
-            //Opens database connection
-        }
-
-        public void CloseConnection()
-        {
-            //Closes the database connection
-        }
-
+        //Code to log data to a database
     }
+    public void CheckFileSize() { }
 
-    public class FileLogger : IFileLog
-    {
-        public void Log(string message)
-        {
-            //Code to log data to a database
-        }
-        public void CheckFileSize() { }
-
-        public void GenerateFileName() { }
-    }
-    
-    ```
+    public void GenerateFileName() { }
+} 
+```
 
 Er zijn verschillende redenen waarom interface moeten gesegregeerd zijn. Om functionaliteit naar de clients te verstoppen, zelf documenterend voor andere ontwikkelaars.
 
@@ -1398,10 +1320,11 @@ Er zijn verschillende redenen waarom interface moeten gesegregeerd zijn. Om func
 
 > Kom je code tegen waarbij methoden afgeleid van een basis klasse niet geïmplementeerd worden: vb. 
  
- ```cs
- public void addLuggage() {
-        throw new NotSupportedException("No room to carry luggage, sorry."); 
-    }
+ ```csharp
+public void addLuggage() 
+{
+    throw new NotSupportedException("No room to carry luggage, sorry."); 
+}
 ```
 
 
@@ -1435,8 +1358,7 @@ Dependency injection is een techniek om  een dependency (afhankelijkheid) te inj
 
 Een voorbeeld:
 
-```cs
-
+```csharp
 class EventLogWriter
 {
     public void Write(string message)
@@ -1460,7 +1382,6 @@ class Printer
         writer.Write(message);
     }
 }
-
 ```
 
 Op het eerste zicht is er niets mis met bovenstaande code. Maar eigenlijk schenden we DIP. De high level module 'Printer' is afhankelijk van de klasse EventLogWriter. Deze klasse noemen we een concrete klasse, en is dus geen abstracte klasse.
@@ -1471,52 +1392,52 @@ Als we een klasse schrijven voor het versturen van emails, moet de Printer klass
 
 
 Onderstaande code laat zien hoe je verandering op een ondynamische manier injecteert:
-```cs
 
- class EventLogWriter
+```csharp
+class EventLogWriter
+{
+    public void Write(string message)
     {
-        public void Write(string message)
-        {
-            //Write to event log here
-        }
+        //Write to event log here
     }
+}
 
-    class EmailLogWriter
+class EmailLogWriter
+{
+    public void Send(string message)
     {
-        public void Send(string message)
-        {
-            //Send email
-        }
+        //Send email
     }
+}
 
-    class Printer
+class Printer
+{
+    
+    EventLogWriter writer = null;
+    EmailLogWriter email = null;
+
+    
+    public void Notify(string message, string type)
     {
-        
-        EventLogWriter writer = null;
-        EmailLogWriter email = null;
-
-        
-        public void Notify(string message, string type)
+        if (type == "EventViewer")
         {
-            if (type == "EventViewer")
+            if (writer == null)
             {
-                if (writer == null)
-                {
-                    writer = new EventLogWriter();
-                }
-                writer.Write(message);
+                writer = new EventLogWriter();
             }
+            writer.Write(message);
+        }
 
-            if (type == "email")
+        if (type == "email")
+        {
+            if (email == null)
             {
-                if (email == null)
-                {
-                    email = new EmailLogWriter();
-                }
-                email.Send(message);
+                email = new EmailLogWriter();
             }
+            email.Send(message);
         }
     }
+}
     
 ```
 
@@ -1524,46 +1445,41 @@ Onderstaande code laat zien hoe je verandering op een ondynamische manier inject
 Dus onze printer klasse moet een instantie van al onze loggers bijhouden. Volgens het dependency inversion principe moeten we ons systeem ontkoppelen zodat de higher level modules, dus de Printer module afhankelijk is van een abstracte klasse of interface.
 Deze abstractie zal gemapt worden (polymorf gedrag) naar een concrete klasse die de juiste actie zal ondernemen.
 
-```cs
+```csharp
+interface INotification
+{
+    void Notify(string message);
+}
 
- interface INotification
+class EventLogWriter:INotification
+{
+    public void Notify(string message)
     {
-        void Notify(string message);
-    }
-    
-    class EventLogWriter:INotification
-    {
-        public void Notify(string message)
-        {
-        }
-
     }
 
-    class EmailLogWriter:INotification
-    {
-        public void Notify(string message)
-        {
-            
-        }
+}
 
-
-    }
-
-    class Printer
+class EmailLogWriter:INotification
+{
+    public void Notify(string message)
     {
         
-        INotification writer;
-        
-        public printer(INotification w){
-            writer = w;
-        }
-        public void Notify(string message)
-        {
-           
-            writer.Notify(message);
-        }
     }
+}
+
+class Printer
+{   
+    INotification writer;
     
+    public printer(INotification w){
+        writer = w;
+    }
+    public void Notify(string message)
+    {
+        
+        writer.Notify(message);
+    }
+} 
 ```
 
 Op deze manier maken we de Printer klasse (High level module) onafhankelijk van de concrete log klassen.
@@ -1588,40 +1504,30 @@ Constructor Injection
 
 We geven het object van de concrete klasse mee met de constructor van de afhankelijke klasse.
 
-```cs
-
+```csharp
 class Printer
+{
+    INotification writer;
+    public Printer(INotification logger)
     {
-        INotification writer;
-
-        public Printer(INotification logger)
-        {
-            writer = logger;
-        }
-
-        
-        public void Notify(string message)
-        {            
-            writer.Notify(message);
-        }
+        writer = logger;
     }
-    
-    
+
+    public void Notify(string message)
+    {            
+        writer.Notify(message);
+    }
+}   
 ```
 
-```cs
-    
-     static void Main(string[] args)
-        {
+```csharp  
+static void Main(string[] args)
+{
 
-            EventLogWriter log = new EventLogWriter();
-            Printer p = new Printer(log);
-            p.Notify("dit is een test");
-
-            Console.ReadLine();
-        }
-
-
+    EventLogWriter log = new EventLogWriter();
+    Printer p = new Printer(log);
+    p.Notify("dit is een test");
+}
 ```
 
 ### Method Injection
@@ -1629,18 +1535,13 @@ class Printer
 In constructor injection wordt de concrete klasse gedurende de volledige levenscyclus van de Printer gebruikt. Als je 
 verschillende concrete klassen moet aanroepen, moet je deze in de methode zelf injecteren.
 
-```cs
-
+```csharp
 static void Main(string[] args)
-        {
-
-            EventLogWriter log = new EventLogWriter();
-            Printer p = new Printer();
-            p.Notify(log,"dit is een test");
-
-            Console.ReadLine();
-        }
-
+{
+    EventLogWriter log = new EventLogWriter();
+    Printer p = new Printer();
+    p.Notify(log,"dit is een test");
+}
 ```
 
 ### Property Injection
@@ -1648,136 +1549,124 @@ static void Main(string[] args)
 
 We geven het object van de concrete klasse mee via een set property.
 
-```cs
+```csharp
+class Printer
+{
+    // Handle to EventLog writer to write to the logs
+    public INotification writer { get; set; }
 
-  class Printer
+    // This function will be called when the app pool has problem
+    public void Notify(INotification logger, string message)
     {
-        // Handle to EventLog writer to write to the logs
-        
-        public INotification writer { get; set; }
-
-       
-
-        // This function will be called when the app pool has problem
-        public void Notify(INotification logger, string message)
-        {
-            writer = logger;
-            writer.Notify(message);
-        }
+        writer = logger;
+        writer.Notify(message);
     }
-    
+}  
 ```
 
-```cs
-
+```csharp
  static void Main(string[] args)
-        {
+{
+    EventLogWriter log = new EventLogWriter();
+    Printer p = new Printer();
+    p.writer = log;
+    p.Notify("dit is een test");
 
-            EventLogWriter log = new EventLogWriter();
-            Printer p = new Printer();
-            p.writer = log;
-            p.Notify("dit is een test");
-
-            Console.ReadLine();
-        }
-        
+}     
 ```
 
 ### Een tweede voorbeeld
 
 Bepaal de dependencies:
 
-```cs
-
- public class Order
+```csharp
+public class Order
+{
+    public void Checkout(Cart cart, PaymentDetails paymentDetails, bool notifyCustomer)
     {
-        public void Checkout(Cart cart, PaymentDetails paymentDetails, bool notifyCustomer)
+        if (paymentDetails.PaymentMethod == PaymentMethod.CreditCard)
         {
-            if (paymentDetails.PaymentMethod == PaymentMethod.CreditCard)
-            {
-                ChargeCard(paymentDetails, cart);
-            }
-
-            ReserveInventory(cart);
-
-            if (notifyCustomer)
-            {
-                NotifyCustomer(cart);
-            }
+            ChargeCard(paymentDetails, cart);
         }
 
-        public void NotifyCustomer(Cart cart)
-        {
-            string customerEmail = cart.CustomerEmail;
-            if (!String.IsNullOrEmpty(customerEmail))
-            {
-                using (var message = new MailMessage("orders@somewhere.com", customerEmail))
-                using (var client = new SmtpClient("localhost"))
-                {
-                    message.Subject = "Your order placed on " + DateTime.Now;
-                    message.Body = "Your order details: \n " + cart;
+        ReserveInventory(cart);
 
-                    try
-                    {
-                        client.Send(message);
-                    }
-                    catch (Exception ex)
-                    {
-                        Logger.Error("Problem sending notification email", ex);
-                        throw;
-                    }
-                }
-            }
+        if (notifyCustomer)
+        {
+            NotifyCustomer(cart);
         }
+    }
 
-        public void ReserveInventory(Cart cart)
+    public void NotifyCustomer(Cart cart)
+    {
+        string customerEmail = cart.CustomerEmail;
+        if (!String.IsNullOrEmpty(customerEmail))
         {
-            foreach (OrderItem item in cart.Items)
+            using (var message = new MailMessage("orders@somewhere.com", customerEmail))
+            using (var client = new SmtpClient("localhost"))
             {
+                message.Subject = "Your order placed on " + DateTime.Now;
+                message.Body = "Your order details: \n " + cart;
+
                 try
                 {
-                    var inventorySystem = new InventorySystem();
-                    inventorySystem.Reserve(item.Sku, item.Quantity);
-                }
-                catch (InsufficientInventoryException ex)
-                {
-                    throw new OrderException("Insufficient inventory for item " + item.Sku, ex);
+                    client.Send(message);
                 }
                 catch (Exception ex)
                 {
-                    throw new OrderException("Problem reserving inventory", ex);
-                }
-            }
-        }
-
-        public void ChargeCard(PaymentDetails paymentDetails, Cart cart)
-        {
-            using (var paymentGateway = new PaymentGateway())
-            {
-                try
-                {
-                    paymentGateway.Credentials = "account credentials";
-                    paymentGateway.CardNumber = paymentDetails.CreditCardNumber;
-                    paymentGateway.ExpiresMonth = paymentDetails.ExpiresMonth;
-                    paymentGateway.ExpiresYear = paymentDetails.ExpiresYear;
-                    paymentGateway.NameOnCard = paymentDetails.CardholderName;
-                    paymentGateway.AmountToCharge = cart.TotalAmount;
-
-                    paymentGateway.Charge();
-                }
-                catch (AvsMismatchException ex)
-                {
-                    throw new OrderException("The card gateway rejected the card based on the address provided.", ex);
-                }
-                catch (Exception ex)
-                {
-                    throw new OrderException("There was a problem with your card.", ex);
+                    Logger.Error("Problem sending notification email", ex);
+                    throw;
                 }
             }
         }
     }
 
+    public void ReserveInventory(Cart cart)
+    {
+        foreach (OrderItem item in cart.Items)
+        {
+            try
+            {
+                var inventorySystem = new InventorySystem();
+                inventorySystem.Reserve(item.Sku, item.Quantity);
+            }
+            catch (InsufficientInventoryException ex)
+            {
+                throw new OrderException("Insufficient inventory for item " + item.Sku, ex);
+            }
+            catch (Exception ex)
+            {
+                throw new OrderException("Problem reserving inventory", ex);
+            }
+        }
+    }
 
+    public void ChargeCard(PaymentDetails paymentDetails, Cart cart)
+    {
+        using (var paymentGateway = new PaymentGateway())
+        {
+            try
+            {
+                paymentGateway.Credentials = "account credentials";
+                paymentGateway.CardNumber = paymentDetails.CreditCardNumber;
+                paymentGateway.ExpiresMonth = paymentDetails.ExpiresMonth;
+                paymentGateway.ExpiresYear = paymentDetails.ExpiresYear;
+                paymentGateway.NameOnCard = paymentDetails.CardholderName;
+                paymentGateway.AmountToCharge = cart.TotalAmount;
+
+                paymentGateway.Charge();
+            }
+            catch (AvsMismatchException ex)
+            {
+                throw new OrderException("The card gateway rejected the card based on the address provided.", ex);
+            }
+            catch (Exception ex)
+            {
+                throw new OrderException("There was a problem with your card.", ex);
+            }
+        }
+    }
+}
 ```
 
 De dependencies opgelijst:
@@ -1798,78 +1687,71 @@ Het toepassen van dependency injection zorgt typisch voor heel wat interfaces di
 De MailMessage en SmtpClient zorgt voor een eventuele  verandering. Stel je wil later de klant niet via email een notificatie sturen, maar via facebook messenger, dan zal je deze code moeten aanpassen. Door dit in interface te duwen, zal je veel flexibelere code schrijven:
 
 ```csharp 
-
  public interface INotifyCustomer
-    {
-        void NotifyCustomer(Cart cart);
-    }
-    
+{
+    void NotifyCustomer(Cart cart);
+}
 ```
 
-```cs
-
-   public class NotifyCustomerService : INotifyCustomer
+```csharp
+public class NotifyCustomerService : INotifyCustomer
+{
+    /**
+    * Method Notifies the customer via Email
+    * @param cart a cart object to mail all cart details
+    */
+    public void NotifyCustomer(Cart cart)
     {
-        /**
-       * Method Notifies the customer via Email
-       * @param cart a cart object to mail all cart details
-       */
-        public void NotifyCustomer(Cart cart)
+        string customerEmail = cart.CustomerEmail;
+        if (!String.IsNullOrEmpty(customerEmail))
         {
-            string customerEmail = cart.CustomerEmail;
-            if (!String.IsNullOrEmpty(customerEmail))
+            using (var message = new MailMessage("orders@somewhere.com", customerEmail))
+            using (var client = new SmtpClient("localhost"))
             {
-                using (var message = new MailMessage("orders@somewhere.com", customerEmail))
-                using (var client = new SmtpClient("localhost"))
-                {
-                    message.Subject = "Your order placed on " + DateTime.Now;
-                    message.Body = "Your order details: \n " + cart;
+                message.Subject = "Your order placed on " + DateTime.Now;
+                message.Body = "Your order details: \n " + cart;
 
-                    try
-                    {
-                        client.Send(message);
-                    }
-                    catch (Exception ex)
-                    {
-                        Logger.Error("Problem sending notification email", ex);
-                        throw;
-                    }
+                try
+                {
+                    client.Send(message);
+                }
+                catch (Exception ex)
+                {
+                    Logger.Error("Problem sending notification email", ex);
+                    throw;
                 }
             }
         }
     }
+}
 ```
 
 In de order klasse zie je de flexibiliteit terugkomen:
 
-```cs
-
+```csharp
  public class Order
+{
+    INotifyCustomer _notifier;
+    
+    public Order(INotifyCustomer notification)
     {
-        INotifyCustomer _notifier;
-       
-        public Order(INotifyCustomer notification)
+        _notifier = notification;
+        
+    }
+    public void Checkout(Cart cart, PaymentDetails paymentDetails, bool notifyCustomer)
+    {           
+
+        if (notifyCustomer)
         {
-            _notifier = notification;
-           
+            _notifier.NotifyCustomer(cart);
         }
-        public void Checkout(Cart cart, PaymentDetails paymentDetails, bool notifyCustomer)
-        {           
-
-            if (notifyCustomer)
-            {
-                _notifier.NotifyCustomer(cart);
-            }
-        }
-
+    }
 ```
 
 Op deze manier moet de Order klasse niet weten of we een email notificatie sturen, en push notification voor mobile phone, een facebook message, ...
 
 
-
-
-#Strategy patroon
+# Strategy patroon
 
 We gaan verder met het voorbeeld van Single Responsibility op method niveau.
 
@@ -1886,30 +1768,28 @@ Klassediagramma:
 Op deze manier heb je het switch statement (getCharge() functie) in de klasse Movie niet meer nodig! 
 
 ```csharp 
-
 switch (GetPriceCode()) 
-            { 
-                case Movie.REGULAR: 
-                    result += 2; 
-                    if (daysRented > 2) 
-                    { 
-                        result += (daysRented - 2) * 1.5; 
-                    } 
-                    break; 
- 
-                case Movie.NEW_RELEASE: 
-                    result += daysRented * 3; 
-                    break; 
- 
-                case Movie.CHILDRENS: 
-                    result += 1.5; 
-                    if (daysRented > 3) 
-                    { 
-                        result += (daysRented - 3) * 1.5; 
-                    } 
-                    break; 
-            } 
-            
+{ 
+    case Movie.REGULAR: 
+        result += 2; 
+        if (daysRented > 2) 
+        { 
+            result += (daysRented - 2) * 1.5; 
+        } 
+        break; 
+
+    case Movie.NEW_RELEASE: 
+        result += daysRented * 3; 
+        break; 
+
+    case Movie.CHILDRENS: 
+        result += 1.5; 
+        if (daysRented > 3) 
+        { 
+            result += (daysRented - 3) * 1.5; 
+        } 
+        break; 
+}       
 ```
 
 Maar elke subklasse zal een implementatie maken van getCharge(). Voorbeeldcode: 
@@ -1917,46 +1797,44 @@ Maar elke subklasse zal een implementatie maken van getCharge(). Voorbeeldcode:
 ```csharp
 
 public abstract class Movie 
-    { 
-        private string _title; 
- 
-        public Movie(string title)  
-        { 
-            _title = title; 
-        } 
- 
-        public string GetTitle() 
-        { 
-            return _title; 
-        } 
- 
-        public abstract double GetCharge(int daysRented); 
-… 
+{ 
+    private string _title; 
 
+    public Movie(string title)  
+    { 
+        _title = title; 
+    } 
+
+    public string GetTitle() 
+    { 
+        return _title; 
+    } 
+
+    public abstract double GetCharge(int daysRented); 
+}
 
 class NewReleaseMovie : Movie 
+{ 
+    public NewReleaseMovie(string title) : base(title) { } 
+        
+    public override double GetCharge(int daysRented) 
     { 
-        public NewReleaseMovie(string title) : base(title) { } 
-         
-        public override double GetCharge(int daysRented) 
-        { 
-            return  daysRented * 3; 
-        } 
+        return  daysRented * 3; 
     } 
+} 
 
 ```
 
 Aan deze implementatie zit wel een zeer groot nadeel. Het is niet mogelijk om een film van classificatie te wisselen. Dus stel dat je de film “Rundskop” maakt als een NewReleaseMovie, dan is het later niet mogelijk om van deze film een RegularMovie te maken.  
 
 ```csharp
-            Movie m2 = new NewReleaseMovie ("Rundskop");            
+Movie m2 = new NewReleaseMovie ("Rundskop");            
  ```
  
 Indien je nu van m2 een RegularMovie wil maken, zal je de variabele opnieuw moeten instantiëren, met als gevolg dat je alle originele data kwijt bent. 
  
 ```csharp
- 
-            m2 = new RegularMovie ("Rundskop"); 
+m2 = new RegularMovie ("Rundskop"); 
  ```
  
 Met andere woorden, onze objecten kunnen niet van klasse veranderen gedurende hun levenstijd. 
@@ -1971,89 +1849,84 @@ De strategy klassen
  
  
 ```csharp
-
 public abstract class Price 
-    { 
-        public abstract double getCharge(int daysRented); 
-         
-    } 
+{ 
+    public abstract double getCharge(int daysRented); 
+        
+} 
  
 class RegularPrice : Price 
+{ 
+    public override double getCharge(int daysRented) 
     { 
-        public override double getCharge(int daysRented) 
-        { 
- 
-            double result = 2; 
-            if (daysRented > 3) 
-                result += (daysRented - 2) * 1.5; 
- 
-            return result; 
-        } 
+
+        double result = 2; 
+        if (daysRented > 3) 
+            result += (daysRented - 2) * 1.5; 
+
+        return result; 
     } 
+} 
  
 public  class ChildrensPrice : Price 
+{ 
+
+    public override double getCharge(int daysRented) 
     { 
- 
-        public override double getCharge(int daysRented) 
-        { 
-            double result = 1.5; 
-            if (daysRented > 3) 
-                result += (daysRented - 3) * 1.5; 
-             
-            return result; 
-        } 
+        double result = 1.5; 
+        if (daysRented > 3) 
+            result += (daysRented - 3) * 1.5; 
+            
+        return result; 
     } 
+} 
  
  
-    public class NewReleasePrice:Price 
+public class NewReleasePrice:Price 
+{ 
+    public override double getCharge(int daysRented) 
     { 
-        public override double getCharge(int daysRented) 
-        { 
-            return daysRented * 3; 
-        } 
- 
-        public override int getFrequentRenterPoints(int daysRented) 
-        { 
-            return (daysRented > 1) ? 2 : 1; 
-        } 
+        return daysRented * 3; 
     } 
 
+    public override int getFrequentRenterPoints(int daysRented) 
+    { 
+        return (daysRented > 1) ? 2 : 1; 
+    } 
+} 
 ```
 
 We maken nu een abstracte klasse price met zijn subklassen. De getCharge() functie in de superklasse is abstract, zodat de afgeleide klassen verplicht zijn een eigen implementatie te geven aan deze functie. 
 In de Movie klasse zal je in plaats van de int _priceCode een member van het type Price moeten definiëren.  In runtime beslis je dan of deze member de constructor van NewReleasePrice, ChildrensPrice of RegularPrice oproept. 
 
 ```csharp
+private Price _priceCode; 
 
-        private Price _priceCode; 
- 
-        public Movie(string title, Price priceCode) 
-        { 
-            _title = title; 
-            _priceCode = priceCode; 
-        } 
- 
-        public Price GetPriceCode() 
-        { 
-            return _priceCode; 
-        } 
- 
-        public void SetPriceCode(Price arg) 
-        { 
-            //is dit juist? copyconstructor..? 
-            _priceCode = arg; 
-        } 
+public Movie(string title, Price priceCode) 
+{ 
+    _title = title; 
+    _priceCode = priceCode; 
+} 
 
+public Price GetPriceCode() 
+{ 
+    return _priceCode; 
+} 
+
+public void SetPriceCode(Price arg) 
+{ 
+    //is dit juist? copyconstructor..? 
+    _priceCode = arg; 
+} 
 ```
 
 De volgende stap is om de getCharge() functie in de klasse Movie over te dragen naar de juiste Price klasse. (de implementatie van getCharge() in de desbetreffende klassen kan je reeds zien op de vorige pagina). De getCharge() functie van de Movie klasse wordt dan: 
 
 ```csharp
-
 public double GetCharge(int daysRented) 
-        { 
-            return _priceCode.getCharge(daysRented);             
-        } 
+{ 
+    return _priceCode.getCharge(daysRented);             
+} 
 
 ```
 
@@ -2062,37 +1935,32 @@ Hierbij is ook de conditionele logica in de functie verdwenen (want deze is over
 We kunnen dit nu ook doen voor de getFrequentRenterPoints(int daysRented). We moeten deze functie in de superclasse ‘Price’ niet abstract maken maar geven er hier reeds een implementatie aan. We maken deze wel virtual zodat de afgeleide kunnen bepalen of ze er een eigen definitie aan geven. 
 
 ```csharp
-
 public abstract class Price 
+{ 
+    public abstract double getCharge(int daysRented); 
+    public virtual int getFrequentRenterPoints(int daysRented) 
     { 
-        public abstract double getCharge(int daysRented); 
- 
-        public virtual int getFrequentRenterPoints(int daysRented) 
-        { 
-            return 1; 
-        } 
-               
-    } 
+        return 1; 
+    }           
+} 
 
 ```
 
 Enkel de NewReleasePrice geeft een eigen implementatie aan de getFrequentRenterPoints(int daysRented) functie: 
 
 ```csharp
-
 public class NewReleasePrice:Price 
+{ 
+    public override double getCharge(int daysRented) 
     { 
-        public override double getCharge(int daysRented) 
-        { 
-            return daysRented * 3; 
-        } 
- 
-        public override int getFrequentRenterPoints(int daysRented) 
-        { 
-            return (daysRented > 1) ? 2 : 1; 
-        } 
+        return daysRented * 3; 
     } 
- 
+
+    public override int getFrequentRenterPoints(int daysRented) 
+    { 
+        return (daysRented > 1) ? 2 : 1; 
+    } 
+} 
 ```
 
 Dit strategy patroon invoegen gaf ons heel wat werk, maar de winst is dat ik prijzen gemakkelijk kan veranderen en nieuwe prijsklassen kan aanmaken zonder andere code te wijzigen. Want de rest van de implementatie weet niets van dit state pattern! Voor grote complexe projecten betekent dat heel wat winst. 
