@@ -1,14 +1,14 @@
 > Ook dit hoofdstuk bevat meer oefeningen dan je lief zijn. Zoek zelf de oefeningen uit die je aanspreken en focus je op het leren werken met methoden en deze te integreren in een grotere applicatie.
 
 # Deel 0 - Opwarmers
-Een extra grote hoop oefeningen om je methoden te drillen ([originele bron](https://codeforwin.org/2016/03/functions-programming-exercises-and-solutions-in-c.html)). De oefeningen zijn ongeveergerangschikt naar moeilijkheid, je moet deze allemaal met loops oplossen! Hoe ver geraak je?
+Een extra grote hoop oefeningen om je methoden te drillen ([originele bron](https://codeforwin.org/2016/03/functions-programming-exercises-and-solutions-in-c.html)). De oefeningen zijn ongeveergerangschikt naar moeilijkheid;
 
 Iedere oefening verwacht dat je steeds een methode schrijft en de werking ervan aantoont:
 
-* Methode ``Kwadraat`` die het kwadraat van een ingevoerd getal berekend.
-* Methode ``BerekenStraal`` die de straal van een cirkel kan berekenen waarvan je de diameter meegeeft
+* Methode ``Kwadraat`` die het kwadraat van een ingevoerd getal berekend. ( het getal geef je mee als paramater)
+* Methode ``BerekenStraal`` die de straal van een cirkel kan berekenen waarvan je de diameter meegeeft (de diameter geef je mee als parameter)
 * Idem voor omtrek en oppervlakte
-* Methode die het grootste van 2 getallen teruggeeft
+* Methode die het grootste van 2 getallen teruggeeft (beide getallen geef je mee als parameter)
 * Methode ``IsEven`` die bepaald of een getal even of oneven is (geeft een ``bool`` terug die ``true`` is indien even)
 * Methode ``IsArmstrong`` die bepaald of een getal een Armstrong getal is.
 * Methode ``ToonEvenNummers`` die alle oneven getallen van 1 tot n toont waarbij n als parameter wordt meegegeven.
