@@ -1,7 +1,6 @@
 # Oefeningen
 
-> Ook dit hoofdstuk bevat meer oefeningen dan je lief zijn. Zoek zelf de oefeningen uit die je aanspreken en focus je op het leren werken met methoden en deze te integreren in een grotere applicatie.
-
+> Sommige oefeningen zijn van de vorm "Maak een methode die...". Het is steeds de bedoeling dat je de werking van je methode ook test in je `Main` door deze aan te roepen.
 
 ## Oefening: H6-veel-kleintjes
 
@@ -12,11 +11,11 @@
 ### Functionele analyse
 Schrijf een hele reeks methodes die je samen test:
 
-1. Methode `Square` die het kwadraat van een ingevoerd getal berekend.
-2. Methode `Radius` die de straal van een cirkel kan berekenen waarvan je de diameter meegeeft
-3. Methodes `Circumference` en `Surface` (in de formule gebruik je `Math.PI`)
-4. Methode `Largest` die het grootste van 2 getallen teruggeeft
-5. Methode `IsEven` die bepaalt of een getal even of oneven is \(geeft een `bool` terug die `true` is indien even\)
+1. Methode `Square` die het kwadraat van een ingevoerd getal berekent.
+2. Methode `Radius` die de straal van een cirkel kan berekenen waarvan je de diameter meegeeft.
+3. Methodes `Circumference` en `Surface` \(in de formule gebruik je `Math.PI`\).
+4. Methode `Largest` die het grootste van 2 getallen teruggeeft.
+5. Methode `IsEven` die bepaalt of een getal even of oneven is \(geeft een `bool` terug die `true` is indien even\).
 6. Methode `ShowOdd` die alle oneven getallen van 1 tot n **toont** waarbij n als parameter wordt meegegeven.
 
 ### Technische analyse
@@ -56,34 +55,61 @@ Geef een getal en ik zoek de oneven getallen:
 
 
 
-## Deel 0 - Opwarmers
 
-Een extra grote hoop oefeningen om je methoden te drillen \([originele bron](https://codeforwin.org/2016/03/functions-programming-exercises-and-solutions-in-c.html)\). De oefeningen zijn ongeveergerangschikt naar moeilijkheid, je moet deze allemaal met loops oplossen! Hoe ver geraak je?
 
-Iedere oefening verwacht dat je steeds een methode schrijft en de werking ervan aantoont:
 
-## Deel 1 - De basics
+## Oefening: H6-voorstellen
 
-> Sommige oefeningen zijn van de vorm "Maak een methode die...". Het is steeds de bedoeling dat je de werking van je methode ook test in je main door deze aan te roepen.
+### Leerdoelen
 
-### Intro methode
+* methodes
 
-#### Basic
+### Functionele analyse
+Maak een methode die jezelf voorstelt op het scherm in de vorm van "Ik ben Tim Dams, ik ben 18 jaar oud en woon in de Lambrisseringsstraat 666".
 
-Maak een methode die jezelf voorstelt op het scherm in de vorm van "Ik ben Tim Dams, ik ben 18 jaar oud en woon in de Lambrisseringsstraat 666". Deze informatie mag hardcoded in je methode staan. Bedoeling is dat je de methode kan aanroepen als volgt:
+### Technische analyse
+ Je persoonlijke informatie mag hardcoded in je methode staan. Bedoeling is dat je de methode kan aanroepen als volgt:
 
 ```csharp
 MyIntro();
 ```
 
-> Deze methode toont enkel zaken op het scherm en heeft dus als returntype `void`.
+Deze methode voert een taak uit, maar geeft geen antwoord dat je verder zou kunnen gebruiken. Het return type is dan ook `void`.
 
-#### Basic 2
+#### UI
 
-Zorg er voor dat je nu je naam, leeftijd en adres via parameters kan meegeven en dus de methode als volgt kunt aanhouden:
+console applicatie
+
+#### voorbeeldinteractie\(s\)
+
+```text
+Ik ben Tim Dams, ik ben 18 jaar oud en woon in de Lambrisseringsstraat 666
+```
+
+## Oefening: H6-voorstellen-plus
+
+### Leerdoelen
+
+* methodes-met-parameters
+
+### Functionele analyse
+Maak een flexibelere versie van H6-voorstellen, die je persoonlijke gegevens als argumenten meekrijgt.
+
+### Technische analyse
+ Je persoonlijke informatie wordt meegegeven via drie parameters: één voor de naam, één voor de leeftijd, één voor de straat. Je moet de methode dus zo kunnen oproepen:
 
 ```csharp
-MyIntro("Jos",34, "Trammezantlei 21");
+MyIntro("Tim Dams", 18, "Lambrisseringsstraat 666");
+```
+
+#### UI
+
+console applicatie
+
+#### voorbeeldinteractie\(s\)
+
+```text
+Ik ben Tim Dams, ik ben 18 jaar oud en woon in de Lambrisseringsstraat 666
 ```
 
 ## Oefening: H6-grootste-methode
@@ -113,10 +139,6 @@ Geef 3 ints.
 Het grootste getal is 10.
 ```
 
-### Rekenmachine
-
-Maak minimaal methoden genaamd `TelOp`, `TrekAf`, `VermenigVuldig` en `Deel`. Je kan aan deze methoden steeds twee doubles meegeven en het resultaat dat terugkomt is uiteraard de bewerking van die twee parameters. Maak een eenvoudig programma'tje waarin je die methoden test. Kan je een eenvoudige rekenmachine maken? \(inclusief geheugen\) Voeg extra methoden naar keuze toe \(denk aan Macht, Sinus, Cosinus, Modulo, etc.\)
-
 ## Oefening: H6-paswoord-generator
 
 ### Leerdoelen
@@ -142,35 +164,41 @@ Hoe veel karakters moet je wachtwoord bevatten?
 dIh8ez10
 ```
 
-## Deel 2 Geavanceerde methode concepten
+## Oefening: H6-Film-Default
 
-### Film Default
+### Leerdoelen
 
-Maak een methode FilmRuntime\(\) die 3 parameters accepteert:
+* methodes met default argumenten
+
+### Functionele analyse
+
+Maak een methode `FilmRuntime` met 3 parameters:
 
 1. Een string die de naam van de film bevat
 2. Een integer die duur in minuten van de film bevat
-3. Een enum-type die het genre van de film bevat \(Drama, Actie, etc.\)
+3. Een enum-type `FilmGenre` die het genre van de film bevat. Deze enum heeft de mogelijke waarden `Drama`, `Action`, `Comedy` en `Uncategorized`.
 
-Indien de duur van de film niet wordt meegeven wordt een standaard lengte van 90 minuten ingesteld. Indien het genre niet wordt meegeven dan wordt deze default op Onbekend ingesteld.
-
-De methode geeft niets terug maar toont eenvoudigweg de film op het scherm, gevolgd door z’n duur en genre in volgende formaat.
+Deze methode toont dan een samenvatting van de film **op het scherm**, gevolgd door zijn duur en genre in volgend formaat:
 
 ```text
-The Matrix (120minuten, Actie)
+The Matrix (120 minuten, Action)
 ```
 
-Toon aan in je main dat de methode werkt met zowel 1, 2 als 3 parameters. Toon ook aan dat je met ‘named arguments’ de methode kan aanroepen.
+Indien de duur niet gespecifieerd wordt, wordt gezegd dat hij 90 minuten duurt. Indien het genre niet wordt meegegeven, wordt "Uncategorized" vermeld op het scherm.
 
-## Deel 3 -  Overal methoden!
+### Technische analyse
 
-### Oude oefeningen leesbaarder maken
+Schrijf je methode met drie parameters, maar geef de duur en het genre een default waarde.
+Toon aan in je main dat de methode werkt met zowel 1, 2 als 3 parameters.
+Toon ook aan dat je met "named arguments" de methode kan aanroepen.
 
-Kan je code uit vorige hoofdstukken herbruiken door deze in handige methoden te plaatsen zodat je code leesbaarder én bruikbaarder wordt?
+#### UI
 
-### Module 1 test herschrijven
+console applicatie
 
-Bekijk terug jouw \(of mijn\) oplossing van de vaardigheidsproef 18/19 of de [module 1 eindetest]() in deze cursus.
+#### voorbeeldinteractie\(s\)
 
-Kan je deze code leesbaarder maken door methoden \(en loops\) toe te voegen?
-
+```text
+The Matrix (120 minuten, Action)
+Crouching Tiger, Hidden Dragon (90 minuten, Unknown)
+```
