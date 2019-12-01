@@ -167,7 +167,7 @@ Hoe veel karakters moet je wachtwoord bevatten?
 dIh8ez10
 ```
 
-## Oefening: H6-Film-Default
+## Oefening: H6-film-default
 
 ### Leerdoelen
 
@@ -204,7 +204,7 @@ The Matrix (120 minuten, Action)
 Crouching Tiger, Hidden Dragon (90 minuten, Unknown)
 ```
 
-## Oefening: H6-Rekenmachine
+## Oefening: H6-rekenmachine
 
 ### Leerdoelen
 
