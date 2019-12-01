@@ -67,7 +67,7 @@ De som van de negatieve getallen is -3
 Het gemiddelde is 5
 ```
 
-(Dit programma kan blijven verder lopen zo lang je wil.)
+\(Dit programma kan blijven verder lopen zo lang je wil.\)
 
 ### Raad het getal
 
@@ -115,9 +115,7 @@ Zie hieronder een voorbeeldoutput: ![](../../.gitbook/assets/raadgetaloutput.png
 
 ### Functionele analyse
 
-Maak een applicatie waarbij de gebruiker steen-schaar-papier met de computer kan spelen.
-De gebruiker kiest telkens steen, schaar of papier en drukt op enter.
-Vervolgens kiest de computer willekeurig steen, schaar of papier.
+Maak een applicatie waarbij de gebruiker steen-schaar-papier met de computer kan spelen. De gebruiker kiest telkens steen, schaar of papier en drukt op enter. Vervolgens kiest de computer willekeurig steen, schaar of papier.
 
 Vervolgens krijgt de winnaar 1 punt:
 
@@ -126,7 +124,7 @@ Vervolgens krijgt de winnaar 1 punt:
 * Schaar wint van papier, verliest van steen
 * Indien beide hetzelfde hebben wint niemand een punt.
 
-De eerste (pc of gebruiker) die 10 punten haalt wint.
+De eerste \(pc of gebruiker\) die 10 punten haalt wint.
 
 ### Technische analyse
 
@@ -166,7 +164,7 @@ De computer wint deze ronde!
 Jij hebt 1 punt, de computer heeft 1 punt.
 ```
 
-(Helemaal op het einde)
+\(Helemaal op het einde\)
 
 ```text
 Jij hebt 10 punten, de computer heeft 8 punten.

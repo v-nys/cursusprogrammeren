@@ -21,7 +21,7 @@ Probeer niet alle oefeningen met hetzelfde type loop te doen, wissel tussen `whi
 11. Toon het alfabet van a tot z.
 12. Schrijf een programma dat de macht van een getal toont. De gebruiker voor eerst het getal in, gevolgd door de macht \(bv 2 en 4 zal als resultaat 16 geven \(2 tot de 4e\)\).
 13. Schrijf een programma een getal _n_ ontbindt in [factoren](https://nl.wikipedia.org/wiki/Factorisatie). Factoren zijn de getallen waardoor je _n_ kan delen zonder rest \(van  bijvoorbeeld het getal 100 zijn de factoren 1,2,4,5,10,20,25,50,100  \).
-16. Toon de reeks van [Fibonacci](https://en.wikipedia.org/wiki/Fibonacci_number) tot _n_ termen.
+14. Toon de reeks van [Fibonacci](https://en.wikipedia.org/wiki/Fibonacci_number) tot _n_ termen.
 
 ## Oefening: H5-priem-checker
 
@@ -34,7 +34,8 @@ Probeer niet alle oefeningen met hetzelfde type loop te doen, wissel tussen `whi
 Je krijgt een getal van de gebruiker. Je moet nagaan of dit een priemgetal is, d.w.z. of het precies 2 gehele delers heeft.
 
 ### Technische analyse
-Elk geheel getal vanaf 2 heeft minstens 2 gehele delers: 1 en zichzelf. Als dat de enige delers van het gegeven getal zijn, is het priem. Je kan dus nagaan of een getal een priemgetal is door alle getallen vanaf 1 tot het getal zelf te overlopen en na te gaan of deze delers zijn van het getal. (Eigenlijk volstaat het minder getallen te checken maar daar draait het hier niet om.)
+
+Elk geheel getal vanaf 2 heeft minstens 2 gehele delers: 1 en zichzelf. Als dat de enige delers van het gegeven getal zijn, is het priem. Je kan dus nagaan of een getal een priemgetal is door alle getallen vanaf 1 tot het getal zelf te overlopen en na te gaan of deze delers zijn van het getal. \(Eigenlijk volstaat het minder getallen te checken maar daar draait het hier niet om.\)
 
 #### UI
 
@@ -47,16 +48,19 @@ Geef een getal
 > 1
 Het getal is geen priemgetal!
 ```
+
 ```text
 Geef een getal
 > 2
 Het getal is een priemgetal!
 ```
+
 ```text
 Geef een getal
 > 6
 Het getal is geen priemgetal!
 ```
+
 ```text
 Geef een getal
 > 7
@@ -74,6 +78,7 @@ Het getal is een priemgetal!
 Je krijgt een getal van de gebruiker. Je moet alle priemgetallen kleiner of gelijk aan dit getal laten zien.
 
 ### Technische analyse
+
 Je kan het idee uit de vorige oefening herbruiken, maar nu zijn de getallen die je controleert niet afgeleverd door de gebruiker. Je moet ze zelf genereren in een `for`-lus. Als je in de vorige oefening een `for`-lus hebt gebruikt, zal je dus twee `for`-lussen moeten nesten.
 
 #### UI
@@ -92,3 +97,4 @@ Alle priemgetallen kleiner dan of gelijk aan 11 zijn:
 7
 11
 ```
+

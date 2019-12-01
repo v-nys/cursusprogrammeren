@@ -9,6 +9,7 @@
 * methodes
 
 ### Functionele analyse
+
 Schrijf een hele reeks methodes die je samen test:
 
 1. Methode `Square` die het kwadraat van een ingevoerd getal berekent.
@@ -19,6 +20,7 @@ Schrijf een hele reeks methodes die je samen test:
 6. Methode `ShowOdd` die alle oneven getallen van 1 tot n **toont** waarbij n als parameter wordt meegegeven.
 
 ### Technische analyse
+
 Schrijf een voorbeeldprogramma dat in de `Main`-methode elke methode kort demonstreert. Toon alle getallen tot op twee cijfers na de komma. Voor `ShowOddNumbers` kan je nog geen resultaat teruggeven, maar je kan het wel afprinten.
 
 #### UI
@@ -53,11 +55,6 @@ Geef een getal en ik zoek de oneven getallen:
 7
 ```
 
-
-
-
-
-
 ## Oefening: H6-voorstellen
 
 ### Leerdoelen
@@ -65,10 +62,12 @@ Geef een getal en ik zoek de oneven getallen:
 * methodes
 
 ### Functionele analyse
+
 Maak een methode die jezelf voorstelt op het scherm in de vorm van "Ik ben Tim Dams, ik ben 18 jaar oud en woon in de Lambrisseringsstraat 666".
 
 ### Technische analyse
- Je persoonlijke informatie mag hardcoded in je methode staan. Bedoeling is dat je de methode kan aanroepen als volgt:
+
+Je persoonlijke informatie mag hardcoded in je methode staan. Bedoeling is dat je de methode kan aanroepen als volgt:
 
 ```csharp
 MyIntro();
@@ -93,10 +92,12 @@ Ik ben Tim Dams, ik ben 18 jaar oud en woon in de Lambrisseringsstraat 666
 * methodes-met-parameters
 
 ### Functionele analyse
+
 Maak een flexibelere versie van H6-voorstellen, die je persoonlijke gegevens als argumenten meekrijgt.
 
 ### Technische analyse
- Je persoonlijke informatie wordt meegegeven via drie parameters: één voor de naam, één voor de leeftijd, één voor de straat. Je moet de methode dus zo kunnen oproepen:
+
+Je persoonlijke informatie wordt meegegeven via drie parameters: één voor de naam, één voor de leeftijd, één voor de straat. Je moet de methode dus zo kunnen oproepen:
 
 ```csharp
 MyIntro("Tim Dams", 18, "Lambrisseringsstraat 666");
@@ -119,11 +120,12 @@ Ik ben Tim Dams, ik ben 18 jaar oud en woon in de Lambrisseringsstraat 666
 * methodes
 
 ### Functionele analyse
+
 Schrijf een methode die drie `int`s aanvaardt en de grootste als resultaat teruggeeft.
 
 ### Technische analyse
-Aangezien het maar om 3 argumenten gaat, kan je dit oplossen met `if`s die het eerste en het tweede argument vergelijken, het eerste en het derde argument,...
-Test je methode uit in een voorbeeldprogrammaatje.
+
+Aangezien het maar om 3 argumenten gaat, kan je dit oplossen met `if`s die het eerste en het tweede argument vergelijken, het eerste en het derde argument,... Test je methode uit in een voorbeeldprogrammaatje.
 
 #### UI
 
@@ -150,7 +152,8 @@ Het grootste getal is 10.
 Maak een paswoord generator die paswoorden van bepaalde lengte genereert en bestaat uit willekeurige letters, hoofdletters en cijfers. Plaats deze code in een methode met 1 parameter, namelijk de lengte van het paswoord dat gemaakt moet worden. De methode geeft het gegenereerde paswoord terug als resultaat.
 
 ### Technische analyse
-Maak gebruik van `Random` en een `for`-lus. Een `Random` genereert normaal alleen getallen, maar via casting kan je die getallen omzetten in `char`s. Raadpleeg een Unicode tabel voor de juiste getallen *of* (iets sneller) cast eerst `'a'` en `'z'` naar getallen en gebruik die om te bepalen welke willekeurige resultaten je mag genereren. Demonstreer je methode met een kort programma.
+
+Maak gebruik van `Random` en een `for`-lus. Een `Random` genereert normaal alleen getallen, maar via casting kan je die getallen omzetten in `char`s. Raadpleeg een Unicode tabel voor de juiste getallen _of_ \(iets sneller\) cast eerst `'a'` en `'z'` naar getallen en gebruik die om te bepalen welke willekeurige resultaten je mag genereren. Demonstreer je methode met een kort programma.
 
 #### UI
 
@@ -188,9 +191,7 @@ Indien de duur niet gespecifieerd wordt, wordt gezegd dat hij 90 minuten duurt. 
 
 ### Technische analyse
 
-Schrijf je methode met drie parameters, maar geef de duur en het genre een default waarde.
-Toon aan in je main dat de methode werkt met zowel 1, 2 als 3 parameters.
-Toon ook aan dat je met "named arguments" de methode kan aanroepen.
+Schrijf je methode met drie parameters, maar geef de duur en het genre een default waarde. Toon aan in je main dat de methode werkt met zowel 1, 2 als 3 parameters. Toon ook aan dat je met "named arguments" de methode kan aanroepen.
 
 #### UI
 
@@ -202,3 +203,50 @@ console applicatie
 The Matrix (120 minuten, Action)
 Crouching Tiger, Hidden Dragon (90 minuten, Unknown)
 ```
+
+## Oefening: H6-Rekenmachine
+
+### Leerdoelen
+
+* werken met verschillende methodes 
+
+### Functionele analyse
+
+### Rekenmachine
+
+Maak de methoden `TelOp`, `TrekAf`, `VermenigVuldig` en `Deel`. 
+
+Aan deze methoden worden twee doubles meegeven als parameter. Het returntype is de bewerking met die twee parameters. 
+
+Maak een eenvoudig programma'tje waarin je deze methoden test a.h.v. een keuze die gemaakt moet worden. 
+
+```text
+Maak een keuze uit
+1. Optellen
+2. Aftrekken
+3. Vermenigvuldingen
+4. Delen
+Geef het overeenstemmende nummer als keuze in: 1
+
+Geef het eerste nummer in: 2
+Geef het tweede nummer in: 3
+
+Resultaat: (2 + 3) = 5
+```
+
+### Technische analyse
+
+Schrijf je vier methoden, telkens met twee parameters. 
+
+Roep één van deze vier methoden aan a.h.v. een switch constructie binnen uw main.
+
+#### UI
+
+console applicatie
+
+#### voorbeeldinteractie\(s\)
+
+```text
+TelOp(number1, number2)
+```
+
