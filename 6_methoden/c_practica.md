@@ -17,19 +17,21 @@ The Matrix (120minuten, Actie)
 
 Toon aan in je main dat de methode werkt met zowel 1, 2 als 3 parameters. Toon ook aan dat je met ‘named arguments’ de methode kan aanroepen.
 
+## Vorige deel
+Zorg ervoor dat de opwarmers uit Deel 0 oefeningen hiervoor steeds minstens 1 optionele parameter hebben. Roep deze methoden aan via named parameters.
 
-## 
-
-# Deel 3 -  Overal methoden!
-## Oude oefeningen leesbaarder maken
+# Deel 3 - Oude oefeningen leesbaarder maken
 Kan je code uit vorige hoofdstukken herbruiken door deze in handige methoden te plaatsen zodat je code leesbaarder én bruikbaarder wordt?
 
-## Deel 1 einde test herschrijven
+# Deel 2 - einde deel 1 test  herschrijven
 Bekijk terug jouw (of mijn) oplossing van de vaardigheidsproef of de [deel 1 eindetest](../EindeTests/Mod1/Opgave.md) in deze cursus. 
 
 Kan je deze code leesbaarder maken door methoden (en loops) toe te voegen?
 
-# Deel 4 - Muziek en methoden
+# Deel 4 - Verhaalgenerator
+Bekijk het all-one-project ["De verhaal generator"](../A_DEEL1_AllInOne/3_verhaalgenerator.md) : kan jij dit project afwerken zoals onderaan de opgave wordt voorgesteld?
+
+# Deel 5 - Muziek en methoden
 
 Muziek maken
 (Wikipedia) [http://nl.wikipedia.org/wiki/Toonhoogte] leert ons dat de grondtonen do-re-mi-fa-sol-la-si-do de frequenties : 264-297-330-352-396-440-495-528 hz behelsen (excuses indien dit *jargon* niet klopt. Ik ken even veel van muziek als van metsen).
