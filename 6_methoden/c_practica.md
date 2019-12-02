@@ -88,7 +88,7 @@ Extra: plaats ieder noot in een andere tekstkleur (mbv ``Console.ForeGroundColor
 Door een de frequentie van een toon te vermenigvuldigen of te delen met veelvouden van 2 krijg je de tonen op andere octaven.
 Pas de ‘noot-methoden’ aan zodat 2 parameters kunnen meegeven worden:
 1. De lengte in milliseconden dat de toon moet aangehouden worden
-2. De octaaf van de toon: 1 = basis octaaf die we al hadden, 2= 2e octaaf (dus frequentie x2) 3= 3e octaaf (frequentie x 4) etc.
+2. De octaaf van de toon: 1 = basis octaaf die we al hadden, 2= 2e octaaf (dus frequentie x2) 3= 3e octaaf (frequentie x 3) etc.
 
 Als je dus de 2e octaaf wil spelen, iedere toon om de 500ms moet je deze als volgt kunnen aanroepen:
 
