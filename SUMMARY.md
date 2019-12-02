@@ -180,7 +180,7 @@
   * [Console Matrix](A_DEEL1_AllInOne/1_ConsoleMatrix.md)
   * [Ascii filmpjes maken met loops](A_DEEL1_AllInOne/3_AsciiMovieWithLoops.md)
   * [Ascii filmpjes maken met methoden](A_DEEL1_AllInOne/2_AsciiMoviesWithMethods.md)
-  * [Fun with methods: een verhaalgenerator](A_Deel1_AllInOne/3_funwithmethodsverhaalgenerator.md)
+  * [Fun with methods: een verhaalgenerator](A_Deel1_AllInOne/3_verhaalgenerator.md)
   * [Tekst-gebaseerd Maze game](A_DEEL1_AllInOne/4_MazeGame.md)
   * [Conway game of life](A_DEEL1_AllInOne/5_conway.md)
 
