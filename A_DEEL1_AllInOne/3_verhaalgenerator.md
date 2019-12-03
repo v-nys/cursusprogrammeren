@@ -9,7 +9,8 @@ We maken een methode die steeds een naam generereert met een ingegeven lengte. E
 Een eerste versie kan zijn:
 
 ```csharp
-private string GenerateNameSimple(int namelength)
+static Random r=new Random();
+static string GenerateNameSimple(int namelength)
 {
     string name = "";
     for (int i = 0; i < namelength; i++)
@@ -21,7 +22,9 @@ private string GenerateNameSimple(int namelength)
 }
 ```
 
-Deze roepen we aan als volgt:
+De eerste lijn is een klein trukje om ervoor te zorgen dat de variabele ``r`` overal in het programma aangeroepen kan worden en we dus niet in iedere methode deze opnieuw moeten aanmaken.
+
+De bovenstaande methode roepen we aan als volgt:
 
 ```csharp
 string result = GenerateNameSimple(10);
@@ -39,7 +42,7 @@ Een methode om te weten of een meegeven karakter (``char``) een klinker (``a,e,u
 Dit doen we snel met een ``switch``:
 
 ```csharp
-bool IsKlinker(char teken)
+static bool IsKlinker(char teken)
 {
     switch (teken)
     {
@@ -61,7 +64,7 @@ bool IsKlinker(char teken)
 We kunnen nu een methode maken die enkel klinkers genereert:
 
 ```csharp
-char GenereerKlinker()
+static char GenereerKlinker()
 {
 
     int waarde = r.Next(0, 5);
@@ -86,7 +89,7 @@ Deze methode heeft dezelfde werking als ``GenereerKlinker`` maar zal een ``switc
 Een minder goede oplossing (die ook oneindig lang kan duren als we echt pech hebben) zou zijn:
 
 ```csharp
-char GenereerMedeklinker()
+static char GenereerMedeklinker()
 {
     char result = 'E';
     while (IsKlinker(result))
@@ -103,7 +106,7 @@ char GenereerMedeklinker()
 Onze nieuwe naamgenerator werkt nu als volgt:
 
 ```csharp
-string GenerateNameBetter(int namelength=6)
+static string GenerateNameBetter(int namelength=6)
 {
 
     string name = "";
@@ -140,7 +143,7 @@ We hebben nu nog een methode voor werkwoorden en een voor leidende voorwerpen no
 Deze is een methode die als een woordenboek een lijst van bestaande werkwoorden (infinitieven) heeft:
 
 ```csharp
-string GenereerWerkwoord()
+static string GenereerWerkwoord()
 {
     switch (r.Next(0, 10))
     {
@@ -165,7 +168,7 @@ string GenereerWerkwoord()
 Dit is een zelfde soort methode als de vorige
 
 ```csharp
-string GenereerVoorwerp()
+static string GenereerVoorwerp()
 {
     switch (r.Next(0, 10))
     {
@@ -189,7 +192,7 @@ string GenereerVoorwerp()
 We combineren nu deze 3 methoden om tot een zinnen generator te komen:
 
 ```csharp
-string GenereerKorteZin()
+static string GenereerKorteZin()
 {
     string onderwerp = GenerateNameBetter(6);
     string werkwoord = GenereerWerkwoord();
@@ -210,7 +213,7 @@ Het hek is nu van de dam. Alle puzzelstukjes liggen klaar.
 Een zin heeft vaak ook een bijzin die met een voegwoord (bv ``en``) achter de hoofdzin wordt geplakt. Deze methode doet dit en kan even veel bijzinnen achter mekaar plakken als dat er als parameter wordt meegegeven.
 
 ```csharp
-private string GenereerLangeZin(int bijzinlengte)
+static  string GenereerLangeZin(int bijzinlengte)
 {
     string hoofdzin = GenereerKorteZin();
     for (int i = 0; i < bijzinlengte; i++)
@@ -226,7 +229,7 @@ private string GenereerLangeZin(int bijzinlengte)
 Ook deze methode gebruikt onze gekende methodiek:
 
 ```csharp
- string GenereerVoegwoord()
+static  string GenereerVoegwoord()
 {
     switch (r.Next(0, 6))
     {
