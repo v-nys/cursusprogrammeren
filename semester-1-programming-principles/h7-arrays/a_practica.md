@@ -8,11 +8,11 @@ Een kort programma om op te warmen. Iedere opdracht hieronder is een apart progr
 
 Gebruik steeds een loop om dit op te lossen.
 
-* Maak een array gevuld met de getallen 0 tot 10
-* Maak een array gevuld met de getallen van 100 tot 1
-* Maak een array gevuld met de letters a tot z
-* Maak een array gevuld met willekeurige getallen tussen 1 en 100 \(array is 20 lang\)
-* Maak een array gevuld met afwisselen `true` en \`\`false\`\`\`\(lengte is 30\)
+1. Maak een array gevuld met de getallen 0 tot 10
+2. Maak een array gevuld met de getallen van 100 tot 1
+3. Maak een array gevuld met de letters a tot z
+4. Maak een array gevuld met willekeurige getallen tussen 1 en 100 \(array is 20 lang\)
+5. Maak een array gevuld met afwisselen `true` en \`\`false\`\`\`\(lengte is 30\)
 
 Per array: output de array naar het scherm, maar ieder element naast elkaar met komma gescheiden. Dus niet:
 
