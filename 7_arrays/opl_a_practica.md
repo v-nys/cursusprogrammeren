@@ -265,3 +265,103 @@ private static bool IsRealDNA(char[] dna)
     return true;
 }
 ```
+
+# Oplossingen deel 2
+
+## Parkeergarage
+
+```csharp
+public static void Main()
+{
+    Console.WriteLine("Geef aantal auto's in:");
+    int aantal = Convert.ToInt32(Console.ReadLine());
+
+    double[] duur = new double[aantal];
+
+    for (int i = 0; i < duur.Length; i++)
+    {
+        Console.WriteLine($"Geef parkeertijd auto {i + 1} in (uren)");
+        duur[i] = Convert.ToDouble(Console.ReadLine());
+
+    }
+
+    ToonResultaat(duur);
+}
+
+private static void ToonResultaat(double[] duur)
+{
+    double somDuur = 0;
+    double somKost = 0;
+    Console.WriteLine("Auto\tDuur\tKost");
+    for (int i = 0; i < duur.Length; i++)
+    {
+        double kost = berekenKosten(duur[i]);
+        somKost += kost;
+        somDuur += duur[i];
+        
+        Console.WriteLine($"{i+1}\t{duur[i]}\t{berekenKosten(duur[i])}");
+    }
+    Console.WriteLine($"Totaal\t{somDuur}\t{somKost}");
+}
+
+public static double berekenKosten(double duur)
+{
+
+    double kost = 2;
+    if (duur > 3)
+    {
+        double extra = Math.Ceiling(duur - 3);
+        kost += (extra * 0.5);
+
+    }
+    if (duur >= 24)
+    {
+        kost = 10;
+    }
+    return kost;
+}
+```
+
+## ArrayViewer
+
+```csharp
+private static void VisualiseerArray(int[] array)
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+        Console.Write($"{array[i]}\t");
+    }
+    Console.Write(Environment.NewLine);
+}
+```
+
+## Caesar Encryptie
+
+```csharp
+static char[] DeCrypt(char[] cipertext, int key)
+{
+    return Encrypt(cipertext, -key);
+}
+
+static char[] Encrypt(char[] plaintext, int key)
+{
+    char[] result = new char[plaintext.Length];
+    //werkt enkel voor kleine letters
+    for (int i = 0; i < plaintext.Length; i++)
+    {
+        if (plaintext[i] == ' ')
+            result[i] = ' ';
+        else
+        {
+            int newchar = (int)plaintext[i] + key;
+            if (newchar > 122) //nodig voor encrypt
+                newchar -= 26;
+            else if (newchar < 97) //nodig voor decrypt
+                newchar += 26;
+
+            result[i] = (char)newchar;
+        }
+    }
+    return result ;
+}
+```
