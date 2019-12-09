@@ -374,3 +374,114 @@ static int BerekenDeterminant(int[,] aMatrix)
     return aMatrix[0, 0] * aMatrix[1, 1] - aMatrix[0, 1] * aMatrix[1, 0];
 }
 ```
+
+## Robot simulator
+
+```csharp
+enum richtingen { Noord, Oost, Zuid, West };
+static void Main(string[] args)
+{
+    int x = 7;
+    int y = 3;
+    richtingen richting = richtingen.Noord;
+    bool[,] map = new bool[20, 20];
+
+    string tekst = "AALAALALAAARAARAA";
+
+    char[] opdrachten = tekst.ToCharArray();
+
+    for (int i = 0; i < opdrachten.Length; i++)
+    {
+        switch (opdrachten[i])
+        {
+            case 'R':
+                richting = RoteerRechts(richting);
+                break;
+            case 'L':
+                richting = RoteerLinks(richting);
+                break;
+            case 'A':
+                //missing: checken dat er niet uit randen wordt gegaan
+                switch (richting)
+                {
+                    case richtingen.Noord:
+                        y--;
+                        break;
+                    case richtingen.Oost:
+                        x++;
+                        break;
+                    case richtingen.Zuid:
+                        y++;
+                        break;
+                    case richtingen.West:
+                        x--;
+                        break;
+                    default:
+                        break;
+                }
+                map[x, y] = true;
+                break;
+        }
+        TekenKaart(map);
+        Console.ReadKey();
+    }
+}
+
+private static void TekenKaart(bool[,] map)
+{
+    Console.Clear();
+    for (int i = 0; i < map.GetUpperBound(0); i++)
+    {
+        for (int j = 0; j < map.GetUpperBound(1); j++)
+        {
+            if (map[j, i] == false)
+                Console.Write(".");
+            else
+                Console.Write("X");
+        }
+        Console.Write(Environment.NewLine);
+    }
+}
+
+private static richtingen RoteerLinks(richtingen richting)
+{
+    switch (richting)
+    {
+        case richtingen.Noord:
+            return richtingen.West;
+            break;
+        case richtingen.Oost:
+            return richtingen.Noord;
+            break;
+        case richtingen.Zuid:
+            return richtingen.Oost;
+            break;
+        case richtingen.West:
+            return richtingen.Zuid;
+            break;
+    }
+
+    return richtingen.Noord;
+}
+
+private static richtingen RoteerRechts(richtingen richting)
+{
+    switch (richting)
+    {
+        case richtingen.Noord:
+            return richtingen.Oost;
+            break;
+        case richtingen.Oost:
+            return richtingen.Zuid;
+            break;
+        case richtingen.Zuid:
+            return richtingen.West;
+            break;
+        case richtingen.West:
+            return richtingen.Noord;
+            break;
+    }
+
+    return richtingen.Noord;
+}
+```
