@@ -254,7 +254,7 @@ static void Main(string[] args)
     }
 }
 
-private static bool IsRealDNA(char[] dna)
+static bool IsRealDNA(char[] dna)
 {
     for (int i = 0; i < dna.Length; i++)
     {
@@ -271,7 +271,7 @@ private static bool IsRealDNA(char[] dna)
 ## Parkeergarage
 
 ```csharp
-public static void Main()
+static void Main()
 {
     Console.WriteLine("Geef aantal auto's in:");
     int aantal = Convert.ToInt32(Console.ReadLine());
@@ -288,7 +288,7 @@ public static void Main()
     ToonResultaat(duur);
 }
 
-private static void ToonResultaat(double[] duur)
+static void ToonResultaat(double[] duur)
 {
     double somDuur = 0;
     double somKost = 0;
@@ -304,7 +304,7 @@ private static void ToonResultaat(double[] duur)
     Console.WriteLine($"Totaal\t{somDuur}\t{somKost}");
 }
 
-public static double berekenKosten(double duur)
+static double berekenKosten(double duur)
 {
 
     double kost = 2;
@@ -325,7 +325,7 @@ public static double berekenKosten(double duur)
 ## ArrayViewer
 
 ```csharp
-private static void VisualiseerArray(int[] array)
+static void VisualiseerArray(int[] array)
 {
     for (int i = 0; i < array.Length; i++)
     {
@@ -363,5 +363,14 @@ static char[] Encrypt(char[] plaintext, int key)
         }
     }
     return result ;
+}
+```
+
+## Determinant
+
+```csharp
+static int BerekenDeterminant(int[,] aMatrix)
+{
+    return aMatrix[0, 0] * aMatrix[1, 1] - aMatrix[0, 1] * aMatrix[1, 0];
 }
 ```
