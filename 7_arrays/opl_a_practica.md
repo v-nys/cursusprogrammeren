@@ -41,7 +41,7 @@ for(int i = 0; i<getallen.Length;i++)
 
 //Maak een array gevuld met afwisselen true en false(lengte is 30)
 bool[] binary= new bool[30];
-Random r= new Random();
+//Random r= new Random();
 for(int i = 0; i<binary.Length;i++)
 {
     if(i%2==0) 
