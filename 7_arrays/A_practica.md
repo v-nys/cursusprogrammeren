@@ -100,7 +100,7 @@ Maak een programma dat aan de gebruiker vraagt om twee DNA strings in te voeren 
 
 Bereken de hamming distance tussen beide reeksen.
 
-De hamming distance van volgende twee DNA strings is 7 daar er 7 elementen in beide strings niet gelijk zijn (aangeduid met ``^``)
+De hamming distance van volgende twee DNA strings is 7 , omdat er 7 elementen in beide strings staan die niet gelijk zijn aan mekaar op dezelfde plek (aangeduid met ``^``)
 
 ```
 GAGCCTACTAACGGGAT
