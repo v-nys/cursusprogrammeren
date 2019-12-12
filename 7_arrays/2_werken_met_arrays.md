@@ -4,7 +4,7 @@ Net zoals we hebben gezien dat de Math-klasse een hele boel nuttige methoden in 
 
 >![](../assets/attention.jpg)
 >
-> Om deze methoden te kunnen gebruiken moet je bovenaan je file de volgende lijn toevoegen: ``using System.Linq``:
+> Om deze methoden te kunnen gebruiken moet je bovenaan je file de volgende lijn toevoegen: ``using System.Linq;``:
 
 ```csharp
 using System;
