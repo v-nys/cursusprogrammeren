@@ -12,6 +12,8 @@ Al deze methoden hier beschrijven zal ons te ver nemen. De volgende methoden zij
 
 Max\(\), Min\(\), Sum\(\) en Average\(\)
 
+Om deze methodes te gebruiken, moet je bovenaan wel `using System.Linq` hebben staan.
+
 Volgende code geeft bijvoorbeeld het grootste getal terug uit een array genaamd "leeftijden":
 
 ```csharp
@@ -58,7 +60,7 @@ Een array volledig leegmaken \(alle elementen op ‘null’ zetten\) doe je met 
 Array.Clear(myColors);
 ```
 
-### BinarySeach: Zoeken in arrays
+### BinarySearch: Zoeken in arrays
 
 De `BinarySearch`-methode maakt het mogelijk om te zoeken naar de index van een gegeven element in een index. _Deze methode werkt enkel indien de elementen in de array gesorteerd staan!_ Je geeft aan de methode 2 parameters mee, enerzijds de array in kwestie en anderzijds het element dat we zoeken. Als resultaat wordt de index van het gevonden element teruggegeven. Indien niets wordt gevonden zal het resultaat -1 zijn.
 

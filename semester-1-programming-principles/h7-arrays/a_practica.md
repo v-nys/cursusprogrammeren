@@ -135,7 +135,7 @@ Resultaat:
 
 Maak een console-applicatie voor een assistent voetbaltrainer \(of een sport naar keuze\)
 
-De voetbalcoach wil na de match iedere knappe en domme actie van een speler weten. Op die manier weet hij aan het einde van de match wie er de meeste goede en slechte acties doet. De spelers hebben rugnummers 1 tot en met 12. \(het gaat om een voetbal variant waar m'n geen elftal maar een twaalftal gebruikt :p\)
+De voetbalcoach wil na de match iedere knappe en domme actie van een speler weten. Op die manier weet hij aan het einde van de match wie er de meeste goede en slechte acties doet. De spelers hebben rugnummers 1 tot en met 12. \(het gaat om een voetbal variant waar men geen elftal maar een twaalftal gebruikt :p\)
 
 Wanneer de coach een rugnummer intypt kan hij vervolgens ingeven of hij \(a\) een knappe actie of \(b\) een domme actie wil ingeven. Vervolgens geeft hij een getal in . Gebruik een 2dimensionale array die per speler het aantal domme en goede acties bijhoudt \(de array is dus 12 bij 2 groot: 1 lijn per speler, bestaande uit 2 kolommen voor goede en domme actie. De index van de lijn is de rugnummer van speler -1 \).
 
