@@ -137,6 +137,7 @@
 
 ## Semester 2 appendix
 
+* [Orde in .NET](semester-2-appendix/orde-in-.net.md)
 * [Nice to know stuff](semester-2-appendix/nice-to-know-stuff/README.md)
   * [Operator overloading](semester-2-appendix/nice-to-know-stuff/8_operatoroverloading.md)
   * [Expression bodied members](semester-2-appendix/nice-to-know-stuff/6_exprbody.md)
