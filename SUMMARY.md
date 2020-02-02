@@ -93,10 +93,6 @@
   * [Foreach en var](semester-2-oop/h11-arrays-en-klassen/3_foreach.md)
   * [List](semester-2-oop/h11-arrays-en-klassen/4_list.md)
   * [Labo-oefeningen](semester-2-oop/h11-arrays-en-klassen/a_practicamem.md)
-* [Module 3 eindetest](semester-2-oop/module-3-eindetest/README.md)
-  * [Opgave](semester-2-oop/module-3-eindetest/opgave.md)
-  * [Opgave vaardigheidsproef mod 3 1819](semester-2-oop/module-3-eindetest/opgave_1819.md)
-  * [Bespreking vaardigheidsproef mod 3 1819](semester-2-oop/module-3-eindetest/oplossing_1819.md)
 * [H12: Overerving](semester-2-oop/h12-overerving/README.md)
   * [Overerving intro](semester-2-oop/h12-overerving/0_overerving_intro.md)
   * [Base keyword](semester-2-oop/h12-overerving/2_base.md)
@@ -120,9 +116,6 @@
   * [Interfaces in de praktijk](semester-2-oop/h16-interfaces/2_interfacesinpraktijk.md)
   * [Polymorfisme en interfaces](semester-2-oop/h16-interfaces/2_polymorfisme_interfaces.md)
   * [Labo-oefeningen](semester-2-oop/h16-interfaces/a_practica.md)
-* [Module 4 eindetest](semester-2-oop/module-4-eindetest/README.md)
-  * [Opgave](semester-2-oop/module-4-eindetest/opgave.md)
-  * [Opgave vaardigheidsproef  1819 2e kans](semester-2-oop/module-4-eindetest/opgave_1819_2ezit.md)
 
 ## Appendix
 
