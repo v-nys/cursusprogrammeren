@@ -1,12 +1,17 @@
 # Labo-oefeningen
 
-## Alledaags
+## Oefening: H8-RapportModule
 
-Zoek een foto naar keuze \(nieuws, privé, etc\) waarop meer dan één element opstaat \(dus geen pasfoto of foto van blauwe lucht zonder wolken\). Tracht de nodige klassen te verzinnen en verzin minstens 1 auto-property en 1 methode per klasse. Maak in een console-applicatie vervolgens objecten van deze klassen aan en test ze. Voeg de foto aan je solution-folder toe.
+### Leerdoelen
 
-Bijvoorbeeld: een foto van een betoging. Je zou minstens 3 klassen kunnen verzinnen \(gebouw, politie, betoger\). Van ieder van deze klassen maak je dan objecten aan zoals je ze op de foto ziet \(uiteraard gaan we geen 30 betoger-instanties maken, enkele zijn genoeg, als voorbeeld\).
+* werken met klassen en objecten
+* gebruik maken van properties om geldige waarden af te dwingen
 
-## RapportModule
+### Functionele analyse
+
+Dit programma geeft op basis van de input van een percentage de graad weer die je met dit gegeven zou behaald hebben.
+
+### Technische analyse
 
 Ontwerp een klasse Resultaat die je zal tonen wat je graad is gegeven een bepaald behaald percentage. Het enige dat je aan een Resultaat-object moet kunnen geven is het behaalde percentage. Enkel het totaal behaalde % wordt bijgehouden via een auto-property. Via een methode PrintGraad kan de behaalde graad worden weergegeven. Dit zijn de mogelijkheden:
 
@@ -18,7 +23,22 @@ Ontwerp een klasse Resultaat die je zal tonen wat je graad is gegeven een bepaal
 
 Test je klasse door enkele objecten in je main aan te maken en de verschillende properties waarden te geven en methoden aan te roepen.
 
-## Nummers
+#### UI
+
+Console applicatie
+
+## Oefening: H8-Nummers
+
+### Leerdoelen
+
+* werken met klassen en objecten
+* gebruik maken van properties om geldige waarden af te dwingen
+
+### Functionele analyse
+
+Dit programma geeft op basis van de input van twee getallen de som van beide getallen, het verschil, het product en de deling. In het laatste geval en indien er een deling door nul zou worden uitgevoerd, wordt dit woordelijk weergegeven.
+
+### Technische analyse
 
 Maak een eenvoudige klasse Nummers. Deze klasse bevat 2 getallen \(type int\) die via een autoproperty kunnen aangepast worden. Er zijn 4 methoden:
 
@@ -43,7 +63,11 @@ Volgende code zou namelijk onderstaande output moeten geven:
     Console.WriteLine("Quotient = " + paar1.Quotient());
 ```
 
-Output:
+#### UI
+
+console applicatie
+
+#### Voorbeeldinteractie\(s\)
 
 ```text
 Paar: 12, 34
@@ -53,7 +77,7 @@ Product = 408
 Quotient = 0,352941176470588
 ```
 
-## Oefening: H8-figuren
+## Oefening: H8-Figuren
 
 ### Leerdoelen
 
@@ -68,9 +92,9 @@ Dit programma maakt enkele rechthoeken en driehoeken met gegeven afmetingen \(in
 
 #### UI
 
-console applicatie
+Console applicatie
 
-#### voorbeeldinteractie\(s\)
+#### Voorbeeldinteractie\(s\)
 
 ```text
 Een rechthoek met een breedte van 2,2m en een hoogte van 1,5 m heeft een oppervlakte van 3,3m².
@@ -90,17 +114,18 @@ Er is een klasse `Rectangle` met **properties** `Width` en `Height` en een klass
 * Test uit dat je geen enkele afmeting kleiner kan maken dan 1, of het nu gaat om rechthoeken of driehoeken.
 * Test uit met de figuren beschreven in de voorbeeldinteractie.
 
-## PizzaTime
+## Oefening: H8-Studentklasse
 
-Maak een klasse Pizza. Deze klasse heeft een aantal private fields:
+### Leerdoelen
 
-* toppings \(string\): bevat beschrijving van wat er op ligt, bv. ananas, pepperoni, etc.
-* diameter \(integer\): doorsnede van de pizza in cm.
-* price \(double\): prijs van de pizza in euro.
+* werken met klassen en objecten
+* gebruik maken van properties om geldige waarden af te dwingen
 
-Zorg ervoor dat je met behulp van properties deze 3 velden kan uitlezen en aanpassen. Bouw controle in zodat de fields geen foute waarden kunnen gegeven worden \(denk maar aan negatieve prijs en diameter, pizza zonder topping, etc.\). Maak in je main een aantal pizza-instanties aan en toon de werking van de properties aan.
+### Functionele analyse
 
-## Studentklasse
+Dit programma vraagt om de naam en leeftijd van een student. Er moet ook worden meegeven in welke klasgroep de student is ingeschreven. Vervolgens worden de punten voor 3 vakken gevraagd, waarna het gemiddelde wordt teruggegeven. 
+
+### Technische analyse
 
 Maak een nieuwe klasse `Student`. Deze klasse heeft 6 properties:
 
@@ -129,7 +154,11 @@ Test je programma door enkele studenten aan te maken en in te stellen. Volgende 
     student1.GeefOverzicht();
 ```
 
-Output:
+#### UI
+
+Console applicatie
+
+#### Voorbeeldinteractie\(s\)
 
 ```text
 Joske Vermeulen, 21 jaar
@@ -142,6 +171,22 @@ Programming Principles:   15
 Web Technology:           13
 Gemiddelde:               13.3
 ```
+
+## Alledaags
+
+Zoek een foto naar keuze \(nieuws, privé, etc\) waarop meer dan één element opstaat \(dus geen pasfoto of foto van blauwe lucht zonder wolken\). Tracht de nodige klassen te verzinnen en verzin minstens 1 auto-property en 1 methode per klasse. Maak in een console-applicatie vervolgens objecten van deze klassen aan en test ze. Voeg de foto aan je solution-folder toe.
+
+Bijvoorbeeld: een foto van een betoging. Je zou minstens 3 klassen kunnen verzinnen \(gebouw, politie, betoger\). Van ieder van deze klassen maak je dan objecten aan zoals je ze op de foto ziet \(uiteraard gaan we geen 30 betoger-instanties maken, enkele zijn genoeg, als voorbeeld\).
+
+## PizzaTime
+
+Maak een klasse Pizza. Deze klasse heeft een aantal private fields:
+
+* toppings \(string\): bevat beschrijving van wat er op ligt, bv. ananas, pepperoni, etc.
+* diameter \(integer\): doorsnede van de pizza in cm.
+* price \(double\): prijs van de pizza in euro.
+
+Zorg ervoor dat je met behulp van properties deze 3 velden kan uitlezen en aanpassen. Bouw controle in zodat de fields geen foute waarden kunnen gegeven worden \(denk maar aan negatieve prijs en diameter, pizza zonder topping, etc.\). Maak in je main een aantal pizza-instanties aan en toon de werking van de properties aan.
 
 ## Sports
 
