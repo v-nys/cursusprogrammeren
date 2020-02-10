@@ -30,7 +30,7 @@ Wanneer de gebruiker een van deze opties kiest door het juiste getal in te typen
 Doorloop de instructies en uitleg op [ModernWays](https://www.modernways.be/myap/it/page/programming/dotnet%20core/excercise/Oefening%20OO%20code%20schrijven.html), maar let op volgende zaken:
 
 * We werken niet in een map voor het vak "Programmeren 3", maar in een map "OOP" \(zoals de namespace die we hanteren, maar dat is geen regel die C\# oplegt\). 
-* Je hoeft géén nieuw project te maken. 
+* Indien je reeds een project met de naam OOP hebt, hoef je géén nieuw project aan te maken.
 * Je gebruikt `ShapesBuilder.cs` in plaats van `Vormen.cs` en schrijft in het algemeen je code in het Engels.
 * Je gebruikt de `namespace OOP.Geometry` in plaats van `Wiskunde.Meetkunde`.
 * Als je van stap 6 naar stap 7 gaat, laat je de code voor de eigenschap `Color` staan. 
