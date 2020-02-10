@@ -83,11 +83,16 @@
   * [_Oefeningen deel 2](7_arrays/B_practica.md)
   
 * Module 2 eindetest
-  * [Opgave](EindeTests/Mod2/Opgave.md)
-  * [Opgave vaardigheidsproef mod 2 1819](EindeTests/Mod2/Opgave_1819.md)
-  * [Oplossing](EindeTests/Mod2/Oplossing_1819.md)
+  * [Opgave 1 ](EindeTests/Mod2/Opgave.md)
+  * [Opgave 2- vaardigheidsproef mod 2 1819](EindeTests/Mod2/Opgave_1819.md)
+  * [Oplossing vaardigheidsproef mod 2 1819](EindeTests/Mod2/Oplossing_1819.md)
   * [Bespreking vaardigheidsproef mod 2 1819](EindeTests/Mod2/Bespreking_1819.md)
-  * [Opgave vaardigheidsproef mod 2 1819 2e kans](EindeTests/Mod2/Opgave_1819_2ezit.md)
+  * [Opgave 3-  vaardigheidsproef mod 2 1819 2e kans](EindeTests/Mod2/Opgave_1819_2ezit.md)
+  * [Opgave 4- vaardigheidsproef mod 2 1920 ](EindeTests/Mod2/Opgave_1920.md)
+  Opgave_1920b.md)
+  * [Oplossing vaardigheidsproef mod 2 1920 ](EindeTests/Mod2/Oplossing_1920.md)
+  * [Opgave 5- vaardigheidsproef mod 2 1920 inhaal](EindeTests/Mod2/
+  * [Oplossing vaardigheidsproef mod 2 1920 inhaal](EindeTests/Mod2/Oplossing_1920b.md)
 
 ## Semester 2 : OOP
 

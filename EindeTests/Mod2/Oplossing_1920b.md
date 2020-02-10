@@ -1,25 +1,28 @@
+
+```csharp
 using System;
 
 namespace examenjanuarie
 {
     class Program
     {
+        enum Alarmtype { Geen, Test, Echt}
         static void Main(string[] args)
         {
             int teller = 0;
             bool klaar = false;
             char volgendjaar;
-            int[] jaarlog = new int[52];
-            double[] jaarlogbook = { 0.00, 0.00, 0.00, 0.00, 0.00, 0.00,0.00, 0.00, 0.00,0.00 };
+            Alarmtype[] jaarlog = new Alarmtype[52];
+            double[] jaarlogbook = { 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00 };
             int gebouwnummer, kans;
             bool testalarm;
             //while zal 10 keer maximum doorlopen
             while (!klaar)
             {
-                Console.WriteLine("log jaar" + (teller+1));
-                
-                
-                
+                Console.WriteLine("log jaar" + (teller + 1));
+
+
+
                 // weekloop
                 for (int i = 1; i < 53; i++)
                 {
@@ -33,32 +36,32 @@ namespace examenjanuarie
                         case 51:
                             //aanroepen test alarm
                             testalarm = true;
-                            Console.WriteLine("test alarm week "+i);
+                            Console.WriteLine("test alarm week " + i);
                             TestAlarm();
-                            jaarlog[i-1] = 1;
+                            jaarlog[i - 1] = Alarmtype.Test;
                             break;
                         default:
                             //aanroepen start alarm
                             testalarm = false;
                             gebouwnummer = gen.Next(0, 3);
                             kans = gen.Next(0, 4);
-                            
+
                             if (kans == 0)
                             {
-                                jaarlog[i-1] = 2;
+                                jaarlog[i - 1] = Alarmtype.Echt;
                                 StartAlarmGebouw(gebouwnummer, testalarm);
                             }
                             else
                             {
-                                jaarlog[i-1] = 0;
+                                jaarlog[i - 1] = Alarmtype.Geen;
                             }
 
                             break;
                     }
-                   
+
 
                 }
-                
+
                 ToonLogBook(jaarlog);
                 jaarlogbook[teller] = BerekenSommen(jaarlog);
                 //vragen voor een volgend jaar
@@ -70,7 +73,7 @@ namespace examenjanuarie
                 {
                     klaar = true;
                 }
-               
+
 
 
 
@@ -83,20 +86,20 @@ namespace examenjanuarie
                 {
                     Console.ForegroundColor = ConsoleColor.Green;
                 }
-                Console.WriteLine($"Jaar {i+1}: {jaarlogbook[i]}%");
+                Console.WriteLine($"Jaar {i + 1}: {jaarlogbook[i]}%");
                 Console.ResetColor();
             }
-            
 
 
-         
+
+
         }
-        static double BerekenSommen(int[] logbook)
+        static double BerekenSommen(Alarmtype[] logbook)
         {
             double teller = 0;
             for (int i = 0; i < logbook.Length; i++)
             {
-                if (logbook[i] == 2)
+                if (logbook[i] == Alarmtype.Echt)
                 {
                     teller++;
                 }
@@ -104,24 +107,24 @@ namespace examenjanuarie
 
 
 
-            double uitkomst = (teller / 52)*100;
-            uitkomst = Math.Round(uitkomst,2);
+            double uitkomst = (teller / 52) * 100;
+            uitkomst = Math.Round(uitkomst, 2);
             Console.WriteLine($"jaargemiddelde = {uitkomst}%");
             return uitkomst;
         }
 
 
-        static void ToonLogBook(int[] logbook)
+        static void ToonLogBook(Alarmtype[] logbook)
         {
             int teller = 0;
             for (int i = 0; i < logbook.Length; i++)
             {
                 teller++;
-                if (logbook[i] == 1)
+                if (logbook[i] == Alarmtype.Test)
                 {
                     Console.BackgroundColor = ConsoleColor.Green;
                 }
-                else if (logbook[i] == 2)
+                else if (logbook[i] == Alarmtype.Echt)
                 {
                     Console.BackgroundColor = ConsoleColor.Red;
                 }
@@ -140,9 +143,9 @@ namespace examenjanuarie
         }
         static void TestAlarm()
         {
-            int gebouwkans = gen.Next(0,11);
+            int gebouwkans = gen.Next(0, 11);
             int nummer;
-            if (gebouwkans<2)
+            if (gebouwkans < 2)
             {
                 nummer = 1;
             }
@@ -171,3 +174,4 @@ namespace examenjanuarie
         static Random gen = new Random();
     }
 }
+```
