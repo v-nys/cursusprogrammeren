@@ -31,7 +31,7 @@ Doorloop de instructies en uitleg op [ModernWays](https://www.modernways.be/myap
 
 * We werken niet in een map voor het vak "Programmeren 3", maar in een map "OOP" \(zoals de namespace die we hanteren, maar dat is geen regel die C\# oplegt\). 
 * Je hoeft géén nieuw project te maken. 
-* Je gebruikt `Shapes.cs` in plaats van `Vormen.cs` en schrijft in het algemeen je code in het Engels.
+* Je gebruikt `ShapesBuilder.cs` in plaats van `Vormen.cs` en schrijft in het algemeen je code in het Engels.
 * Je gebruikt de `namespace OOP.Geometry` in plaats van `Wiskunde.Meetkunde`.
 * Als je van stap 6 naar stap 7 gaat, laat je de code voor de eigenschap `Color` staan. 
 * Later zullen we deze code refactoren om nog meer gebruik te maken van objecten.
