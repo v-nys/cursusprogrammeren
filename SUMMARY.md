@@ -190,7 +190,7 @@
 * Nice to know stuff
   * [Operator overloading](B_appendix/8_operatoroverloading.md)
   * [Expression bodied members](B_appendix/6_exprbody.md)
-
+  * [Werken met git (in opbouw)](B_appendix/git.md)
 * Oplossingen oefeningen
   * [H8 - Klassen en objecten](8_klassen/opl_apractica.md)
   * [H9 - Geheugenmanagement bij klassen](9_meminoop/opl_poke2.md)
