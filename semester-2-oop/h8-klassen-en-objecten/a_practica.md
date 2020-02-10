@@ -1,4 +1,4 @@
-# Labo-oefeningen
+# Oefeningen
 
 ## Oefening: H8-RapportModule
 
