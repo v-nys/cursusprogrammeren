@@ -17,4 +17,10 @@
   * [Fouten in je code](0_intro/4_fouten.md)
   * [Kleuren in Console](0_intro/5_kleuren.md)
   * [_Oefeningen](0_intro/A_Practica.md)
+* H1: Variabelen en datatypes
+  * [De essentie van C#](1_csharpbasics/0_csharpessentials.md)
+  * [Datatypes](1_csharpbasics/1_datatypes.md)
+  * [Variabelen](1_csharpbasics/1b_variabelen.md)
+  * [Expressies en operators](1_csharpbasics/2_expressies.md)
+  * [_Oefeningen](1_csharpbasics/A_practica.md)
 
