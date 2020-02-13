@@ -72,3 +72,14 @@
   * [N-dimensionale arrays](7_arrays/4_ndimensionalArrays.md)
   * [_Oefeningen deel 1](7_arrays/A_practica.md)
   * [_Oefeningen deel 2](7_arrays/B_practica.md)
+* Module 2 eindetest
+  * [Opgave 1 ](EindeTests/Mod2/Opgave.md)
+  * [Opgave 2- vaardigheidsproef mod 2 1819](EindeTests/Mod2/Opgave_1819.md)
+  * [Oplossing vaardigheidsproef mod 2 1819](EindeTests/Mod2/Oplossing_1819.md)
+  * [Bespreking vaardigheidsproef mod 2 1819](EindeTests/Mod2/Bespreking_1819.md)
+  * [Opgave 3-  vaardigheidsproef mod 2 1819 2e kans](EindeTests/Mod2/Opgave_1819_2ezit.md)
+  * [Opgave 4- vaardigheidsproef mod 2 1920 ](EindeTests/Mod2/Opgave_1920.md)
+  Opgave_1920b.md)
+  * [Oplossing vaardigheidsproef mod 2 1920 ](EindeTests/Mod2/Oplossing_1920.md)
+  * [Opgave 5- vaardigheidsproef mod 2 1920 inhaal](EindeTests/Mod2/
+  * [Oplossing vaardigheidsproef mod 2 1920 inhaal](EindeTests/Mod2/Oplossing_1920b.md)
