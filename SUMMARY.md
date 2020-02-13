@@ -138,3 +138,74 @@
 * Module 4 eindetest
   * [Opgave](EindeTests/Mod4/Opgave.md)
   * [Opgave vaardigheidsproef  1819 2e kans](EindeTests/Mod4/Opgave_1819_2ezit.md)
+
+## Appendix
+
+* [Ea-ict coding guidelines](B_appendix/codingguidelines.md)
+* [Oefeningen kerkhof](B_appendix/graveyard.md)
+
+## Semester 1 appendix
+
+* [Nice to know stuff](B_appendix/prostuff.md)
+  * [Out en Ref parameters](B_appendix/2_outenref.md)
+  * [Jagged arrays](B_appendix/5_jaggedArrays.md) 
+* Oplossingen oefeningen
+  * [H0 - Werken met VS](0_intro/opl_apractica.md)
+  * [H1 - Variabelen en datatypes](1_csharpbasics/opl_apractica.md)
+  * [H2 - Tekst in code](2_tekst/a_oplpractica.md)
+  * [H3 - Werken met data](3_data/a_oplpractica.md)
+  * [H4 - Beslissingen](4_beslissingen/a_oplpractica.md)
+  * [Module 1 eindetest](EindeTests/Mod1/Oplossing.md)
+  * [H5 - Herhalingen](5_herhalingen/opl_a_practica.md)
+  * [H6 - Methoden](6_methoden/opl_b_practica.md)
+  * [H7 - Arrays](7_arrays/opl_a_practica.md)
+* All-In-Projecten
+  * [Overzicht](A_DEEL1_AllInOne/0_Deel1_IntroductieAllInOne.md)
+  * [Console Matrix](A_DEEL1_AllInOne/1_ConsoleMatrix.md)
+  * [Ascii filmpjes maken met loops](A_DEEL1_AllInOne/3_AsciiMovieWithLoops.md)
+  * [Ascii filmpjes maken met methoden](A_DEEL1_AllInOne/2_AsciiMoviesWithMethods.md)
+  * [Fun with methods: een verhaalgenerator](A_DEEL1_AllInOne/3_verhaalgenerator.md)
+  * [Tekst-gebaseerd Maze game](A_DEEL1_AllInOne/4_MazeGame.md)
+  * [Conway game of life](A_DEEL1_AllInOne/5_conway.md)
+
+## Semester 2 appendix
+
+* Nice to know stuff
+  * [Operator overloading](B_appendix/8_operatoroverloading.md)
+  * [Expression bodied members](B_appendix/6_exprbody.md)
+  * [Werken met git (in opbouw)](B_appendix/git.md)
+* Oplossingen oefeningen
+  * [H8 - Klassen en objecten](8_klassen/opl_apractica.md)
+  * [H9 - Geheugenmanagement bij klassen](9_meminoop/opl_poke2.md)
+  * [H10 - Advanced klassen en objecten](10_advancedklassen/opl_practica3.md)
+  * [H11 - arrays van klasse](11_arraysvanklassen/opl_practica3.md)
+  * [H12 - Overerving](12_overerving/opl_practica3.md)
+  * [H13 - Advanced Overerving](13_advancedovererving/opl_practica4.md)
+  * [H14 - Compositie](14_compositie/opl_practica.md)
+  * [H15 - Polymorfisme](15_polymorfisme/opl_practica.md)
+  * [H16 - Interfaces](16_interfaces/opl_practica.md)
+  * [Module 4 eindetest](EindeTests/Mod4/Oplossing.md)
+* All-In-Projecten
+  * [Overzicht](A_DEEL2_AllInOne/0_Deel2_IntroductieAllInOne.md)
+  * [OO Textbased Game](A_DEEL2_AllInOne/2_OOTextGame.md)
+  * [War Simulator](A_DEEL2_AllInOne/3_WarGame.md)
+  * [Map Maker](A_DEEL2_AllInOne/1_MapMapker.md)
+  * [Magic The Gathering API](A_DEEL2_AllInOne/mtgapi.md)
+
+## Pro (geen leerstof en/of in opbouw)
+
+* [Bitwise operators](3_data/bitwise.md)
+* Generics en collections
+  * [Generics methoden en types](17_gencols/0_generics_intro.MD)
+  * [Generic classes en constraints](17_gencols/2_genericclasses_en_constraints.md)
+  * [Collections](17_gencols/8_Collections.md)
+  * [Labo-oefeningen](17_gencols/A_Practica.md)
+* Exception handling
+  * [Werken met exceptions](20_exceptions/0_exceptionhandling.md)
+  * [Waar exceptions plaatsen](20_exceptions/waarplaatsen.md)
+  * [Zelf uitzonderingen maken](20_exceptions/1_eigenuitzondering.md)
+* Events
+  * [Events](19_events/events.md)
+  * [Chat server](19_events/chatserver.md)
+* Software engineering
+  * [SOLID](20_SE/solid1.md)
