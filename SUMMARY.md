@@ -81,5 +81,25 @@
   * [Opgave 4- vaardigheidsproef mod 2 1920 ](EindeTests/Mod2/Opgave_1920.md)
   Opgave_1920b.md)
   * [Oplossing vaardigheidsproef mod 2 1920 ](EindeTests/Mod2/Oplossing_1920.md)
-  * [Opgave 5- vaardigheidsproef mod 2 1920 inhaal](EindeTests/Mod2/
+  * [Opgave 5- vaardigheidsproef mod 2 1920 inhaal](EindeTests/Mod2/)
   * [Oplossing vaardigheidsproef mod 2 1920 inhaal](EindeTests/Mod2/Oplossing_1920b.md)
+
+## Semester 2 : OOP
+
+* H8: Klassen en objecten
+  * [OOP Intro](8_klassen/0_oop_intro.md)
+  * [Klassen en objecten in C#](8_klassen/0b_oopincs.md)
+  * [Methoden en access modifiers](8_klassen/0c_simpleobjects.md)
+  * [Properties](8_klassen/2_properties.md)
+  *  [DateTime: leren werken met objecten](8_klassen/datetime.md)
+  * [_Oefeningen](8_klassen/A_practica.md)
+* H9: Geheugenmanagement bij klassen
+  * [Objecten en methoden](9_meminoop/6b_objectenenmethoden.md)
+  * [Stack en Heap](9_meminoop/6_memorymanagement.md)
+  * [Null en NullReferenceException](9_meminoop/nullreference.md)
+  * [_Oefeningen](9_meminoop/A_poke1.md)
+* H10: Advanced klassen en objecten
+  * [Constructors](10_advancedklassen/1_constructors.md)
+  * [Static](10_advancedklassen/5_static.md)
+  * [Spelen met strings](10_advancedklassen/strings.md)
+  * [_Oefeningen](10_advancedklassen/A_practica3.md)
