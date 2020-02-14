@@ -13,7 +13,7 @@ Als je een object wil voorzien van een bepaalde eigenschap (met andere woorden, 
 class MyClass {
     public <datatype> MyAttribute {
         get;
-	set;
+        set;
     }
 }
 ```
@@ -26,7 +26,7 @@ Bijvoorbeeld:
 class Car {
     public double Speed {
         get;
-	set;
+        set;
     }
 }
 ```
@@ -56,6 +56,23 @@ public class Car {
     }
 }
 ```
+
+#### meerdere `Main` methodes
+Indien je meerdere klassen hebt met een methode `Main`, moet je aangeven welke normaal gebruikt wordt voor de uitvoering van je programma. Dat doe je door aan je `.csproj`-bestand het volgende toe te voegen: `<StartupObject>Namespace-van-de-opstartklasse.Naam-van-de-opstartklasse</StartupObject>`
+
+Bijvoorbeeld:
+
+```text
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <StartupObject>OOP.Program</StartupObject>
+  </PropertyGroup>
+</Project>
+```
+
+(Je file zou er al gelijkaardig moeten uitzien, maar je moet zelf het `StartupObject` toevoegen.)
 
 ## Oefening: H8-dag-van-de-week
 
@@ -122,6 +139,7 @@ We willen bepalen hoe veel schrikkeljaren er zijn tussen 1800 en 2020.
 ### Technische analyse
 * implementeer zelf een logica voor schrikkeljaren, maar laat dit over aan de klassen `DateTime`
 * maak gebruik van een statische methode van deze klasse
+* noem je klasse `LeapYearProgram` en voorzie ze van een `Main`
 
 ### Voorbeeldinteractie
 ```text
@@ -170,7 +188,7 @@ Ontwerp een klasse `ResultV1` die je zal tonen wat je graad is gegeven een bepaa
 * tussen 75 en 85: grote onderscheiding;
 * &gt; 85: grootste onderscheiding.
 
-Je hoeft voorlopig geen rekening te houden met ongeldige waarden. Test je klasse door enkele objecten van de klasse `ResultV1` in je Main aan te maken en de verschillende properties waarden te geven en methoden aan te roepen.
+Je hoeft voorlopig geen rekening te houden met ongeldige waarden. Test je klasse door `ResultV1` ook van een statische methode `Main` te voorzien, waarin je enkele objecten van deze klasse aanmaakt en de verschillende properties waarden te geeft en vervolgens `PrintHonors` oproept.
 
 ## Oefening: H8-RapportModule-V2
 
@@ -187,7 +205,7 @@ Dit programma geeft op basis van de input van een percentage de graad weer die j
 
 Ontwerp een klasse `ResultV2` die je zal vertellen wat je graad is gegeven een bepaald behaald percentage. Het enige dat je aan een `ResultV2`-object moet kunnen geven is het behaalde percentage. Enkel het totaal behaalde percentage wordt bijgehouden. Via een methode `ComputeHonors` kan de behaalde graad worden teruggegeven. Dit werkt op dezelfde manier als in versie 1 van deze oefening, maar de verschillende graden worden voorgesteld met een `Enum`, `Honors`. De methode `ComputeHonors` toont het resultaat niet, maar geeft een waarde van deze `Enum` terug. Het is aan de `Main` om deze waarde af te printen, zodat je kan zien of je code werkt.
 
-Test je klasse op dezelfde manier als versie 1.
+Test je klasse op dezelfde manier als versie 1. De teruggegeven waarden van `Honors` mag je in de `Main` meegeven aan `Console.WriteLine`.
 
 ## Oefening: H8-Getallencombinatie
 
@@ -202,12 +220,12 @@ Dit programma geeft op basis van de input van twee getallen de som van beide get
 
 ### Technische analyse
 
-Maak een eenvoudige klasse `NumberCombination`. Deze klasse bevat 2 getallen \(type `int`\). Er zijn 4 methoden:
+Maak een eenvoudige klasse `NumberCombination`. Deze klasse bevat 2 getallen \(type `int`\). Er zijn 4 methoden, die allemaal een `double` teruggeven:
 
 * `Sum`: geeft som van beide getallen weer
 * `Difference`: geeft verschil van beide getallen weer
 * `Product`: geeft product van beide getallen weer
-* `Quotient`: geeft deling van beide getallen weer. Print `"Error"` indien je zou moeten delen door 0.
+* `Quotient`: geeft deling van beide getallen weer. Print `"Error"` naar de console indien je zou moeten delen door 0 en voer dan de deling uit.
 
 Toon in je main aan dat je code werkt.
 
@@ -260,7 +278,7 @@ Een driehoek met een basis van 2m en een hoogte van 2 m heeft een oppervlakte va
 
 #### Programmaverloop
 
-Er is een klasse `Rectangle` met **properties** `Width` en `Height` en een klasse `Triangle` met `Base` en `Height`. Je programma maakt de figuren die hierboven beschreven worden aan via constructoren zonder parameters en stelt daarna hun afmetingen in. De oppervlakte wordt berekend door middel van een methode `ComputeSurface`, zonder parameters, met een `double` als resultaat.
+Er is een klasse `Rectangle` met **properties** `Width` en `Height` en een klasse `Triangle` met `Base` en `Height`. Je programma maakt de figuren die hierboven beschreven worden aan via constructoren zonder parameters en stelt daarna hun afmetingen in. De oppervlakte wordt berekend door middel van een methode `ComputeSurface`, zonder parameters, met een `double` als resultaat. Schrijf de voorbeelden uit in de `Main` van een extra klasse, `FigureProgram`.
 
 #### Testscenario's
 * Test uit met de figuren beschreven in de voorbeeldinteractie. Doe dit door de objecten aan te maken in de `Main`, hen zelf hun oppervlakte te laten berekenen en deze te printen in de `Main`.
