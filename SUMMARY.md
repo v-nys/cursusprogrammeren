@@ -91,7 +91,7 @@
   * [Klassen en objecten in C#](8_klassen/0b_oopincs.md)
   * [Methoden en access modifiers](8_klassen/0c_simpleobjects.md)
   * [Properties](8_klassen/2_properties.md)
-  *  [DateTime: leren werken met objecten](8_klassen/datetime.md)
+  * [DateTime: leren werken met objecten](8_klassen/datetime.md)
   * [_Oefeningen](8_klassen/A_practica.md)
 * H9: Geheugenmanagement bij klassen
   * [Objecten en methoden](9_meminoop/6b_objectenenmethoden.md)
