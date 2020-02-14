@@ -81,7 +81,7 @@
   * [Opgave 4- vaardigheidsproef mod 2 1920 ](EindeTests/Mod2/Opgave_1920.md)
   Opgave_1920b.md)
   * [Oplossing vaardigheidsproef mod 2 1920 ](EindeTests/Mod2/Oplossing_1920.md)
-  * [Opgave 5- vaardigheidsproef mod 2 1920 inhaal](EindeTests/Mod2/)
+  * [Opgave 5- vaardigheidsproef mod 2 1920 inhaal](EindeTests/Mod2/Opgave_1920b.md)
   * [Oplossing vaardigheidsproef mod 2 1920 inhaal](EindeTests/Mod2/Oplossing_1920b.md)
 
 ## Semester 2 : OOP
