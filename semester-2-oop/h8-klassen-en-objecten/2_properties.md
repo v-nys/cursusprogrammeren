@@ -24,7 +24,7 @@ class SithLord
 Een `SithLord` heeft steeds een verborgen Sith Name en ook een hoeveelheid energie die hij nodig heeft om te strijden. **Het is uit den boze dat we eenvoudige data fields \(`energy` en `name`\) `public` maken.** Zouden we dat wel doen dan kunnen externe objecten deze geheime informatie uitlezen!
 
 ```csharp
-SithLord palpatine= new SithLord();
+SithLord palpatine = new SithLord();
 Console.WriteLine(palpatine.sithName); //DIT ZAL DUS NIET WERKEN, daar sithName private is.
 ```
 
@@ -46,7 +46,7 @@ class SithLord
 
     public void SetSithName(string newname)
     {
-        sithName= newname;
+        sithName = newname;
     }
 
     public string GetSithName()
@@ -57,7 +57,7 @@ class SithLord
     public void SetEnergy(int value)
     {
         if(value > 0 && value < 9999)
-            energy=value;
+            energy = value;
     }
 
     public int GetEnergy()
@@ -70,8 +70,8 @@ class SithLord
 Je zou dan kunnen doen:
 
 ```csharp
-SithLord Vader= new SithLord();
-Vader.SetEnergy(20); 
+SithLord vader = new SithLord();
+vader.SetEnergy(20); 
 Console.WriteLine($"Vaders energy is {Vader.GetEnergy()}"); //get
 ```
 
@@ -93,7 +93,7 @@ class SithLord
         }
         set
         {
-            energy=value;
+            energy = value;
         }
     }
 }
@@ -102,8 +102,8 @@ class SithLord
 Dankzij deze code kunnen we nu elders dit doen:
 
 ```csharp
-SithLord Vader= new SithLord();
-Vader.Energy= 20; //set
+SithLord vader = new SithLord();
+vader.Energy = 20; //set
 Console.WriteLine($"Vaders energy is {Vader.Energy}"); //get
 ```
 
@@ -139,8 +139,8 @@ We kunnen in de `set`code extra controles inbouwen. Asl volgt:
         }
         set
         {
-            if(value>=0)
-                energy=value;
+            if(value >= 0)
+                energy = value;
         }
     }
 ```
@@ -160,8 +160,8 @@ We zijn niet verplicht om zowel de `get` en de `set` code van een property te sc
     {
         set
         {
-            if(value>=0)
-                energy=value;
+            if(value >= 0)
+                energy = value;
         }
     }
 ```
@@ -195,8 +195,8 @@ Soms gebeurt het dat we van buitenuit enkel de gebruiker de property read-only w
         }
         private set
         {
-            if(value>=0)
-                energy=value;
+            if(value >= 0)
+                energy = value;
         }
     }
 ```
@@ -215,7 +215,7 @@ class SithLord
 
     public void ResetLord()
     {
-        energy=-1;
+        energy = -1;
     }
 
     public int Energy
@@ -226,8 +226,8 @@ class SithLord
         }
         private set
         {
-            if(value>=0)
-                energy=value;
+            if(value >= 0)
+                energy = value;
         }
     }
 }
@@ -238,7 +238,7 @@ De nieuw toegevoegde methode `ResetLord` willen we gebruiken om de lord z'n ener
 ```csharp
 public void ResetLord()
 {
-    Energy=-1; // Energy i.p.v. energy
+    Energy = -1; // Energy i.p.v. energy
 }
 ```
 
@@ -305,7 +305,7 @@ class Persoon
     {
         get
         {
-            if(age>120) return false;
+            if(age > 120) return false;
             return true;
         }
     }
@@ -323,7 +323,7 @@ class Persoon
     {
         get
         {
-            return age*12;
+            return age * 12;
         }
     }
 }
