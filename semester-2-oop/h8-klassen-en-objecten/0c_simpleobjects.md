@@ -105,7 +105,7 @@ Ik ben een mens!
 Mijn geheim is dat ik leef!
 ```
 
-## Interne variabelen
+## Instantie variabelen
 
 We maken onze klasse wat groter, we willen dat een object een leeftijd heeft die we kunnen verhogen via een methode `VerjaardagVieren` \(we hebben de methode `VertelGeheim` even weggelaten\):
 
