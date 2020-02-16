@@ -24,8 +24,8 @@ class SithLord
 Een `SithLord` heeft steeds een verborgen Sith Name en ook een hoeveelheid energie die hij nodig heeft om te strijden. **Het is uit den boze dat we eenvoudige data fields \(`energy` en `name`\) `public` maken.** Zouden we dat wel doen dan kunnen externe objecten deze geheime informatie uitlezen!
 
 ```csharp
-SithLord Palpatine= new SithLord();
-Console.WriteLine(Palpatine.sithName); //DIT ZAL DUS NIET WERKEN, daar sithName private is.
+SithLord palpatine= new SithLord();
+Console.WriteLine(palpatine.sithName); //DIT ZAL DUS NIET WERKEN, daar sithName private is.
 ```
 
 We willen echter wel van buiten uit het energy-level van een sithLord kunnen instellen. Maar ook hier hetzelfde probleem: wat als we de energy-level op -1000 instellen? Terwijl energy nooit onder 0 mag gaan.
