@@ -1,6 +1,6 @@
 # Klassen objecten introductie
 
-
+## 
 
 ## RapportModule
 
@@ -17,7 +17,7 @@ Test je klasse door enkele objecten in je main aan te maken en de verschillende 
 
 ## Nummers
 
-Maak een eenvoudige klasse Nummers. Deze klasse bevat 2 getallen (type int) die via een autoproperty kunnen aangepast worden. Er zijn 4 methoden:
+Maak een klasse Nummers. Deze klasse bevat 2 getallen (type int) die via een autoproperty kunnen aangepast worden. Er zijn 4 methoden:
 
 * ``Som``: geeft som van beide getallen weer
 * ``Verschil``: geeft verschil van beide getallen weer
@@ -50,29 +50,12 @@ Product = 408
 Quotient = 0,352941176470588
 ```
 
-## Figuren
-
-Maak een eenvoudige klasse Rechthoek aan die een lengte en breedte als private datafields heeft. Deze kunnen enkel via full properties ingesteld worden en nooit onder 1 gaan.
-
-Maak ook een klasse Driehoek die een basis en hoogte als fields heeft.
-
-Beide klassen hebben een methode ``ToonOppervlakte`` die de oppervlakte van de figuur in kwestie op het scherm toont.
-
-Toon de werking van het project aan door een aantal instanties van Driehoek en Rechthoek te maken, met verschillende groottes. Roep van iedere figuur de ToonOppervlakte-methode aan.
-
-## PizzaTime
-Maak een klasse Pizza. Deze klasse heeft een aantal private fields:
-
-* toppings (string): bevat beschrijving van wat er op ligt, bv. ananas, pepperoni, etc.
-* diameter (integer): doorsnede van de pizza in cm.
-* price (double): prijs van de pizza in euro.
-
-Zorg ervoor dat je met behulp van properties deze 3 velden kan uitlezen en aanpassen. Bouw controle in zodat de fields geen foute waarden kunnen gegeven worden (denk maar aan negatieve prijs en diameter, pizza zonder topping, etc.). Maak in je main een aantal pizza-instanties aan en toon de werking van de properties aan.
-
 ## Studentklasse
 
 Maak een nieuwe klasse ``Student``.
-Deze klasse heeft 6 properties:
+
+
+Deze klasse heeft 6 autoproperties:
 
 * Naam (string)
 * Leeftijd (int)
@@ -113,11 +96,30 @@ Web Technology:           13
 Gemiddelde:               13.3
 ```
 
+## PizzaTime
+Maak een klasse Pizza. Deze klasse heeft een aantal private fields:
+
+* toppings (string): bevat beschrijving van wat er op ligt, bv. ananas, pepperoni, etc.
+* diameter (integer): doorsnede van de pizza in cm.
+* price (double): prijs van de pizza in euro.
+
+Zorg ervoor dat je met behulp van full properties deze 3 velden kan uitlezen en aanpassen. Bouw controle in zodat de fields geen foute waarden kunnen gegeven worden (denk maar aan negatieve prijs en diameter, pizza zonder topping, etc.). Maak in je main een aantal pizza-instanties aan en toon de werking van de properties aan.
+
+## Figuren
+
+Maak een eenvoudige klasse Rechthoek aan die een lengte en breedte als private datafields heeft. Deze kunnen enkel via full properties ingesteld worden en nooit onder 1 gaan.
+
+Maak ook een klasse Driehoek die een basis en hoogte als fields heeft.
+
+Beide klassen hebben een methode ``ToonOppervlakte`` die de oppervlakte van de figuur in kwestie op het scherm toont.
+
+Toon de werking van het project aan door een aantal instanties van Driehoek en Rechthoek te maken, met verschillende groottes. Roep van iedere figuur de ToonOppervlakte-methode aan.
+
 ## Sports
 
 ### Sportspeler
 
-Kies je favoriete sport of game (voor zij die enkel pc/console-sporten ). Maak een klasse aan die een speler uit deze sport kan voorstellen. Verzin een 4-tal private datavelden die deze spelers hebben, alsook 2 methoden die de speler moet kunnen uitvoeren. 
+Kies je favoriete sport of game. Maak een klasse aan die een speler uit deze sport kan voorstellen. Verzin een 4-tal private datavelden die deze spelers hebben, alsook 2 methoden die de speler moet kunnen uitvoeren. 
 
 Voorzie een methode ``StelIn`` die je toelaat om de private datafields in te stellen:
 
@@ -164,7 +166,7 @@ De SimuleerSpeler-methode zal beide methoden van je klasse telkens 3x aanroepen 
 
 Test je methode door 2 objecten aan te maken en telkens mee te geven als parameter.
 
-### Pro enums
+### enums
 
 Kan je in voorgaand voorbeeld het dataveld ``reeks`` vervangen door een dataveld reeks dat een enum als datatype heeft?
 
@@ -190,24 +192,9 @@ Voeg aan de Account-klasse een private field toe zijnde van het type accountStat
 Maak een bijhorende publieke Methode  waarmee je de account van state kunt veranderen. Deze methode (noem ze ChangeState) vereist één parameter van het type accountState natuurlijk.
 
 Indien een persoon geld van of naar een Geblokkeerde rekening wil sturen dan zal er een error op het scherm verschijnen.
-Maak een array aan van 10 klanten. Wanneer je met klassen werkt moet je bij de initialisatie van de array ook ieder element afzonderlijk initialiseren, als volgt:
 
-```csharp
-BankAccount[] lijst = new BankAccount[10];
-//Init
-for(int i=O; i<lijst.Length;i++)
-{ 
- lijst[i]= new BankAccount();
-}
-```
+Test je klasse.
 
-Schrijf nu een BankManager systeem. Voorzie  een console- menu waarbij de gebruiker volgende zaken kan doen:
+## [Pro] OO Textbased game
 
-1. Nieuwe klant aanmaken (max 10) 
-2. Status van bestaande klant tonen 
-3. Geld op  bepaalde account zetten 
-4. Geld van bepaalde account afhalen 
-5. Geld tussen 2 accounts overschrijven.
-6. Een totaaloverzicht van alle accounts tonen (Allerlei statistieken zoals de totale som op alle rekeningen samen, rijkste account, etc worden in een tabel getoond)
-
-Voorzie extra functionaliteit naar keuze.
+Bij de all-in-one projecten van dit semester vind je als eerst een tekstgebaseerde game ([hier](A_DEEL2_AllInOne/2_OOTextGame.md)). Volg deze uitleg, maak het spel en voeg je eigen zotte ideeën toe.
