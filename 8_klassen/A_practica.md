@@ -1,7 +1,5 @@
 # Klassen objecten introductie
 
-## 
-
 ## RapportModule
 
 Ontwerp een klasse Resultaat die je zal tonen wat je graad is gegeven een bepaald behaald percentage. Het enige dat je aan een Resultaat-object moet kunnen geven is het behaalde percentage. Enkel het totaal behaalde % wordt bijgehouden via een auto-property. Via een methode PrintGraad kan de behaalde graad worden weergegeven. Dit zijn de mogelijkheden:
@@ -14,7 +12,14 @@ Ontwerp een klasse Resultaat die je zal tonen wat je graad is gegeven een bepaal
 
 
 Test je klasse door enkele objecten in je main aan te maken en de verschillende properties waarden te geven en methoden aan te roepen.
+Deze code zou moeten werken:
 
+```csharp
+Resultaat mijnpunten= new Resultaat();
+mijnpunten.Percentage=65;
+mijnpunten.PrintGraad();
+
+```
 ## Nummers
 
 Maak een klasse Nummers. Deze klasse bevat 2 getallen (type int) die via een autoproperty kunnen aangepast worden. Er zijn 4 methoden:
@@ -197,4 +202,4 @@ Test je klasse.
 
 ## [Pro] OO Textbased game
 
-Bij de all-in-one projecten van dit semester vind je als eerst een tekstgebaseerde game ([hier](A_DEEL2_AllInOne/2_OOTextGame.md)). Volg deze uitleg, maak het spel en voeg je eigen zotte ideeën toe.
+Bij de all-in-one projecten van dit semester vind je als eerst een tekstgebaseerde game ([hier](../A_DEEL2_AllInOne/2_OOTextGame.md)). Volg deze uitleg, maak het spel en voeg je eigen zotte ideeën toe.
