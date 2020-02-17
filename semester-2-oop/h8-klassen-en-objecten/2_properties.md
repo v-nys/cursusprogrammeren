@@ -339,19 +339,19 @@ Zo kan je eenvoudige de klasse Person herschrijven met behulp van autoproperties
 public class Person
     {
 
-        private string _firstName;
-        private string _lastName;
-        private int _age;
+        private string firstName;
+        private string lastName;
+        private int age;
 
         public string FirstName
         {
             get
             {
-                return _firstName;
+                return firstName;
             }
             set
             {
-                _firstName = value;
+                firstName = value;
             }
         }
 
@@ -359,11 +359,11 @@ public class Person
         {
             get
             {
-                return _lastName;
+                return lastName;
             }
             set
             {
-                _lastName = value;
+                lastName = value;
             }
         }
 
@@ -371,11 +371,11 @@ public class Person
         {
             get
             {
-                return _age;
+                return age;
             }
             set
             {
-                _age = value;
+                age = value;
             }
         }
     }
