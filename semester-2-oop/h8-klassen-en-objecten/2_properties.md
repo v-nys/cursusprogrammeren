@@ -166,7 +166,7 @@ We zijn niet verplicht om zowel de `get` en de `set` code van een property te sc
     }
 ```
 
-We kunnen dus enkel `energy` een waarde geven, maar niet van buitenuit aanpassen
+We kunnen dus enkel `energy` een waarde geven, maar niet van buitenuit uitlezen.
 
 #### Read-only property
 
