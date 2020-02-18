@@ -14,7 +14,7 @@ Properties \(_eigenschappen_\) zijn de C\# manier om objecten hun interne staat 
 Stel dat we volgende klasse hebben:
 
 ```csharp
-class SithLord
+public class SithLord
 {
     private int energy;
     private string sithName;
@@ -28,18 +28,18 @@ SithLord palpatine = new SithLord();
 Console.WriteLine(palpatine.sithName); //DIT ZAL DUS NIET WERKEN, daar sithName private is.
 ```
 
-We willen echter wel van buiten uit het energy-level van een sithLord kunnen instellen. Maar ook hier hetzelfde probleem: wat als we de energy-level op -1000 instellen? Terwijl energy nooit onder 0 mag gaan.
+We willen echter wel van buiten uit het energy-level van een `SithLord` kunnen instellen. Maar ook hier hetzelfde probleem: wat als we de energy-level op `-1000` instellen? Terwijl `energy` nooit onder `0` mag gaan.
 
 **Properties lossen dit probleem op**
 
 #### Oldschool oplossing
 
-Vroeger loste m'n voorgaande probleem op door Get-methoden te schrijven:
+Vroeger loste men voorgaande probleem op door Get-methoden te schrijven:
 
 Je zal deze manier nog in veel andere talen tegenkomen. Wij prefereren properties zoals we nu zullen uitleggen.
 
 ```csharp
-class SithLord
+public class SithLord
 {
     private int energy;
     private string sithName;
@@ -72,7 +72,7 @@ Je zou dan kunnen doen:
 ```csharp
 SithLord vader = new SithLord();
 vader.SetEnergy(20); 
-Console.WriteLine($"Vaders energy is {Vader.GetEnergy()}"); //get
+Console.WriteLine($"Vaders energy is {vader.GetEnergy()}"); //get
 ```
 
 ## Full properties
@@ -107,16 +107,16 @@ vader.Energy = 20; //set
 Console.WriteLine($"Vaders energy is {Vader.Energy}"); //get
 ```
 
-Vergelijk dit met de vorige alinea waar we dit met Get en Set methoden moesten doen. Deze property syntax is veel eenvoudiger.
+Vergelijk dit met de vorige alinea waar we dit met Get en Set methoden moesten doen. Deze property syntax is veel eenvoudiger in het gebruik.
 
 We zullen de property nu stuk per stuk analyseren:
 
-* `public int Energy`: een property is altijd `public`. Vervolgens zeggen we wat voor type de property moet zijn en geven we het een naam. Indien je de property gaat gebruiken om een intern dataveld naar buiten beschikbaar te stellen, dan is het een goede gewoonte om dezelfde naam als dat veld te nemen maar nu met een hoofdletter. \(dus `Energy` i.p.v. `energy`\).
+* `public int Energy`: een property is normaal `public`. Vervolgens zeggen we wat voor type de property moet zijn en geven we het een naam. Indien je de property gaat gebruiken om een intern dataveld naar buiten beschikbaar te stellen, dan is het een goede gewoonte om dezelfde naam als dat veld te nemen maar nu met een hoofdletter. \(dus `Energy` i.p.v. `energy`\).
 * { }: Vervolgens volgen 2 accolades waarbinnen we de werking van de property beschrijven.
 * `get {}`: indien je wenst dat de property data **naar buiten** moet sturen, dan schrijven we de get-code. Binnen de accolades van de get schrijven we wat er naar buiten moet gestuurd worden. In dit geval `return energy` maar dit mag even goed bijvoorbeeld `return 4` of een hele reeks berekeningen zijn. Het element dat je returnt in de get code moet uiteraard van hetzelfde type zijn als waarmee je de property hebt gedefinieerd \(`int` in dit geval\).
-  * We kunnen nu van buitenaf toch de waarde van `energy` uitlezen via de property en het get-gedeelte: `Console.WriteLine(Palpatine.Energy);`
+  * We kunnen nu van buitenaf toch de waarde van `energy` uitlezen via de property en het get-gedeelte: `Console.WriteLine(palpatine.Energy);`
 * set{}: in het set-gedeelte schrijven we de code die we moeten hanteren indien men van buitenuit een waarde aan de property wenst te geven om zo een interne variabele aan te passen. De waarde die we van buitenuit krijgen \(als een parameter zeg maar\) zal **altijd** in een lokale variabele `value` worden bewaard. Deze zal van het type van de property zijn. Vervolgens kunnen we `value` toewijzen aan de interne variabele indien gewenst: `energy=value` 
-  * We kunnen vanaf nu van buitenaf waarden toewijzen aan de property en zo `energy`vtoch bereiken: `Palpatine.Energy=50`.
+  * We kunnen vanaf nu van buitenaf waarden toewijzen aan de property en zo `energy`vtoch bereiken: `palpatine.Energy=50`.
 
 #### Snel property schrijven
 
@@ -145,7 +145,7 @@ We kunnen in de `set`code extra controles inbouwen. Asl volgt:
     }
 ```
 
-Enkel indien de toegewezen waarde groter of gelijk is aan 0 zal deze ook effectief aan `energy` toegewezen worden. Volgende lijn zal dus geen effect hebben: `Palpatine.Energy=-1;`
+Enkel indien de toegewezen waarde groter of gelijk is aan 0 zal deze ook effectief aan `energy` toegewezen worden. Volgende lijn zal dus geen effect hebben: `palpatine.Energy=-1;`
 
 We kunnen de code binnen `set` \(en `get`\) zo complex als we willen maken.
 
@@ -201,7 +201,7 @@ Soms gebeurt het dat we van buitenuit enkel de gebruiker de property read-only w
     }
 ```
 
-Van buitenuit zal enkel code werken die de`get`-\`van deze property aanroept: `Console.WriteLine(Palpatine.Energy);`. Code die de `set` van buitenuit nodig heeft zal een fout geven zoals: `Palpatine.Energy=65`; ongeacht of deze geldig is of niet.
+Van buitenuit zal enkel code werken die de`get`-van deze property aanroept: `Console.WriteLine(palpatine.Energy);`. Code die de `set` van buitenuit nodig heeft zal een fout geven zoals: `palpatine.Energy=65`; ongeacht of deze geldig is of niet.
 
 **Nu goed opletten**: indien we in het object de property willen gebruiken dan moeten we deze dus ook effectief aanroepen, anders omzeilen we hem als we rechtstreeks `energy` instellen.
 
@@ -233,7 +233,7 @@ class SithLord
 }
 ```
 
-De nieuw toegevoegde methode `ResetLord` willen we gebruiken om de lord z'n energy terug te verlagen. Door echter `energy=-1` te schrijven geven we dus -1 rechtstreeks aan `energy`. Nochtans is dit een illegale waarden. We moeten dus in de methode ook expliciet via de property gaan en dus schrijven:
+De nieuw toegevoegde methode `ResetLord` willen we gebruiken om de lord z'n energy terug te verlagen. Door echter `energy=-1` te schrijven geven we dus -1 rechtstreeks aan `energy`. Nochtans is dit een illegale waarde. We moeten dus in de methode ook expliciet via de property gaan en dus schrijven:
 
 ```csharp
 public void ResetLord()
@@ -246,34 +246,34 @@ public void ResetLord()
 
 #### Read-only Get-omvormers
 
-Je bent uiteraard niet verplicht om voor iedere interne variabele een bijhorende property te schrijven. Omgekeerd ook: mogelijk wil je extra properties hebben voor data die je 'on-the-fy' kan genereren.
+Je bent uiteraard niet verplicht om voor iedere interne variabele een bijhorende property te schrijven. Omgekeerd ook: mogelijk wil je extra properties hebben voor data die je 'on-the-fly' kan genereren.
 
 Stel dat we volgende klasse hebben
 
 ```csharp
-class Persoon
+public class Person
 {
-    private string voornaam;
-    private string achternaam;
+    private string firstName;
+    private string lastName;
 }
 ```
 
 We willen echter ook soms de volledige naam op het scherm tonen \("Voornaam + Achternaam"\). Via een read-only property kan dit supereenvoudig:
 
 ```csharp
-class Persoon
+public class Person
 {
-    private string voornaam;
-    private string achternaam;
+    private string firstName;
+    private string lastName;
     public string FullName
     {
-        get{ return $"{voornaam} {achternaam}";}
+        get{ return $"{firstName} {lastName}";}
     }
     public string Email
     {
         get
         {
-            return $"{voornaam}.{achternaam}@ap.be";
+            return $"{firstName}.{lastName}@ap.be";
         }
     }
 }
@@ -282,9 +282,9 @@ class Persoon
 Of nog eentje:
 
 ```csharp
-class Aarde
+public class Earth
 {
-    public double ZwaarteKracht
+    public double GravityConstant
     {
         get
         {
@@ -297,11 +297,11 @@ class Aarde
 Nog een voorbeeldje:
 
 ```csharp
-class Persoon
+public class Person
 {
     private int age;
 
-    public bool IsWaarschijnlijkNogLevend
+    public bool IsProbablyAlive
     {
         get
         {
@@ -315,11 +315,11 @@ class Persoon
 Vaak gebruiken we dit soort read-only properties om data te transformeren. Stel bijvoorbeeld dat we volgende klasse hebben:
 
 ```csharp
-class Persoon
+public class Person
 {
     private int age; //in jaren
 
-    public int  LeeftijdInMaanden
+    public int AgeInMonths
     {
         get
         {
@@ -402,7 +402,6 @@ Je mag autoproperties beginwaarden geven door de waarde achter de property te ge
 
 ```csharp
 public int Age {get;set;} = 45;
-`
 ```
 
 ### Altijd auto-properties?
@@ -413,7 +412,7 @@ Merk op dat je dit enkel kan doen indien er geen extra logica in de property aan
 set
 {
     if( value > 0)
-        _age = value;
+        age = value;
 }
 ```
 
@@ -431,7 +430,7 @@ public string FirstName
 
     get
     {
-        return _firstName;
+        return firstName;
     }
 }
 ```
