@@ -231,18 +231,6 @@ Een driehoek met een basis van 3m en een hoogte van 1m heeft een oppervlakte van
 Een driehoek met een basis van 2m en een hoogte van 2m heeft een oppervlakte van 2m².
 ```
 
-## Oefening: H8-RapportModule-V3
-
-### Leerdoelen
-
-* werken met klassen en objecten
-* gebruik maken van properties om geldige waarden af te dwingen
-
-### Functionele analyse
-Deze is gelijkaardig aan de vorige versie van het programma, maar gebruikt iets geavanceerdere technieken.
-
-### Technische analyse
-Maak een nieuwe versie van H8-RapportModule-V2, waarbij je een full property gebruikt voor het percentage. Zorg ervoor dat dit steeds tussen 0 en 100 ligt. Vervang ook `ComputeHonors` door een read-only property, `Honors`.
 ## Oefening: H8-Studentklasse
 
 ### Leerdoelen
@@ -389,6 +377,19 @@ namespace OOP {
     }
 }
 ```
+
+## Oefening: H8-RapportModule-V3
+
+### Leerdoelen
+
+* werken met klassen en objecten
+* gebruik maken van properties om geldige waarden af te dwingen
+
+### Functionele analyse
+Deze is gelijkaardig aan de vorige versie van het programma, maar gebruikt iets geavanceerdere technieken.
+
+### Technische analyse
+Maak een nieuwe versie van H8-RapportModule-V2, waarbij je een full property gebruikt voor het percentage. Zorg ervoor dat dit steeds tussen 0 en 100 ligt. Vervang ook `ComputeHonors` door een read-only property, `Honors`.
 
 ## H8-honden
 ### Doelstelling
