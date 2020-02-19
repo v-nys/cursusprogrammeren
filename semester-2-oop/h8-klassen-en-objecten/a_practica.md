@@ -283,16 +283,16 @@ Web Technology:           13
 Gemiddelde:               13.3
 ```
 
-# Voorbeeld abstractie (h8-honden)
-## Doelstelling
+## Voorbeeld abstractie (H8-honden)
+### Doelstelling
 - Kennismaking met OOP
 - Kennismaking met refactoring
 - Toepassing van abstractie
 
-## Functionele analyse
+### Functionele analyse
 We krijgen een programma dat al objecten bevat, maar dit programma moet zelf nog veel rekening houden met hoe deze objecten in elkaar zitten. We **refactoren** het om zo een meer objectgericht en beter onderhoudbaar programma te bekomen.
 
-## Technische analyse
+### Technische analyse
 Je krijgt volgende twee files. De bestandsnamen volgen de afspraak:
 ```
 using System;
