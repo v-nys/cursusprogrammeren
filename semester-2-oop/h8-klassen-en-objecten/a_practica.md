@@ -159,7 +159,7 @@ Test je klasse op dezelfde manier als versie 1. De teruggegeven waarden van `Hon
 ### Leerdoelen
 
 * werken met klassen en objecten
-* gebruik maken van properties om geldige waarden af te dwingen
+* gebruik maken van properties
 
 ### Functionele analyse
 
@@ -172,21 +172,21 @@ Maak een eenvoudige klasse `NumberCombination`. Deze klasse bevat 2 getallen \(t
 * `Sum`: geeft som van beide getallen weer
 * `Difference`: geeft verschil van beide getallen weer
 * `Product`: geeft product van beide getallen weer
-* `Quotient`: geeft deling van beide getallen weer. Print `"Error"` naar de console indien je zou moeten delen door 0 en voer dan de deling uit.
+* `Quotient`: geeft deling van beide getallen weer. Print `"Error"` naar de console indien je zou moeten delen door 0 en voer dan de deling uit. Wat er dan gebeurt, is niet belangrijk.
 
-Toon in je main aan dat je code werkt.
+Gebruik **full properties** voor `Number1` en `Number2` en toon in je `Main` aan dat je code werkt.
 
 Volgende code zou namelijk onderstaande output moeten geven:
 
 ```csharp
-    NumberCombination pair1 = new NumberCombination();
-    pair1.Number1 = 12;
-    pair1.Number2 = 34;
-    Console.WriteLine("Paar:" + pair1.Number1 + ", " + pair1.Number2);
-    Console.WriteLine("Sum = " + pair1.Som());
-    Console.WriteLine("Verschil = " + pair1.Verschil());
-    Console.WriteLine("Product = " + pair1.Product());
-    Console.WriteLine("Quotient = " + pair1.Quotient());
+NumberCombination pair1 = new NumberCombination();
+pair1.Number1 = 12;
+pair1.Number2 = 34;
+Console.WriteLine("Paar:" + pair1.Number1 + ", " + pair1.Number2);
+Console.WriteLine("Sum = " + pair1.Sum());
+Console.WriteLine("Verschil = " + pair1.Difference());
+Console.WriteLine("Product = " + pair1.Product());
+Console.WriteLine("Quotient = " + pair1.Quotient());
 ```
 
 #### Voorbeeldinteractie\(s\)
@@ -211,25 +211,38 @@ Quotient = 0,352941176470588
 Dit programma maakt enkele rechthoeken en driehoeken met gegeven afmetingen \(in meter\) aan, berekent hun oppervlakte en toont deze info aan de gebruiker. De rechthoeken en driehoeken die worden aangemaakt, zijn al gecodeerd in het programma. De gebruiker hoeft dus niets anders te doen dan het programma te starten.
 
 ### Technische analyse
+Er is een klasse `Rectangle` met **properties** `Width` en `Height` en een klasse `Triangle` met `Base` en `Height`. Je programma maakt de figuren die hierboven beschreven worden aan met waarde `1.0` voor elke afmeting en stelt daarna hun afmetingen in via de setters voor deze properties. De oppervlakte wordt bepaald in een read-only property, `Surface` van het type `double`.
+
+Indien om het even welk van deze properties wordt ingesteld op `0` (of minder) wordt er een foutboodschap afgeprint en wordt de afmeting niet aangepast.
+
+De wiskundige formule voor de oppervlakte van een driehoek is basis * hoogte / 2.
+
+Schrijf de voorbeelden uit in de `Main` van een extra klasse, `FigureProgram`.
 
 #### Voorbeeldinteractie\(s\)
+(Er worden twee rechthoeken en twee driehoeken aangemaakt. De afmetingen van de eerste rechthoek worden eerst op `-1` en `0` ingesteld.
 
 ```text
-Een rechthoek met een breedte van 2,2m en een hoogte van 1,5 m heeft een oppervlakte van 3,3m².
-Een rechthoek met een breedte van 3m en een hoogte van 1 m heeft een oppervlakte van 3m².
-Een driehoek met een basis van 3m en een hoogte van 1 m heeft een oppervlakte van 1,5m².
-Een driehoek met een basis van 2m en een hoogte van 2 m heeft een oppervlakte van 2m².
+Het is verboden een breedte van -1 in te stellen!
+Het is verboden een breedte van 0 in te stellen!
+Een rechthoek met een breedte van 2,2m en een hoogte van 1,5m heeft een oppervlakte van 3,3m².
+Een rechthoek met een breedte van 3m en een hoogte van 1m heeft een oppervlakte van 3m².
+Een driehoek met een basis van 3m en een hoogte van 1m heeft een oppervlakte van 1,5m².
+Een driehoek met een basis van 2m en een hoogte van 2m heeft een oppervlakte van 2m².
 ```
 
-### Technische hulp
+## Oefening: H8-RapportModule-V3
 
-#### Programmaverloop
+### Leerdoelen
 
-Er is een klasse `Rectangle` met **properties** `Width` en `Height` en een klasse `Triangle` met `Base` en `Height`. Je programma maakt de figuren die hierboven beschreven worden aan via constructoren zonder parameters en stelt daarna hun afmetingen in. De oppervlakte wordt berekend door middel van een methode `ComputeSurface`, zonder parameters, met een `double` als resultaat. Schrijf de voorbeelden uit in de `Main` van een extra klasse, `FigureProgram`.
+* werken met klassen en objecten
+* gebruik maken van properties om geldige waarden af te dwingen
 
-#### Testscenario's
-* Test uit met de figuren beschreven in de voorbeeldinteractie. Doe dit door de objecten aan te maken in de `Main`, hen zelf hun oppervlakte te laten berekenen en deze te printen in de `Main`.
+### Functionele analyse
+Deze is gelijkaardig aan de vorige versie van het programma, maar gebruikt iets geavanceerdere technieken.
 
+### Technische analyse
+Maak een nieuwe versie van H8-RapportModule-V2, waarbij je een full property gebruikt voor het percentage. Zorg ervoor dat dit steeds tussen 0 en 100 ligt. Vervang ook `ComputeHonors` door een read-only property, `Honors`.
 ## Oefening: H8-Studentklasse
 
 ### Leerdoelen
@@ -239,34 +252,34 @@ Er is een klasse `Rectangle` met **properties** `Width` en `Height` en een klass
 
 ### Functionele analyse
 
-Dit programma vraagt om de naam en leeftijd van een student. Er moet ook worden meegeven in welke klasgroep de student is ingeschreven. Vervolgens worden de punten voor 3 vakken gevraagd, waarna het gemiddelde wordt teruggegeven. 
+Dit programma vraagt om de naam en leeftijd van een student. Er moet ook worden meegeven in welke klasgroep de student is ingeschreven. De groepen zijn `EA1`, `EA2` en `EB1`. Vervolgens worden de punten voor 3 vakken gevraagd, waarna het gemiddelde wordt teruggegeven. 
 
 ### Technische analyse
 
-Maak een nieuwe klasse `Student`. Deze klasse heeft 6 properties:
+Maak een nieuwe klasse `Student`. Deze klasse heeft 6 properties. Leeftijd en de punten stel je voor met **full properties**. Een student kan nooit jonger zijn dan 0 of ouder zijn dan 120. Je kan ook nooit een cijfer onder 0 of boven 20 behalen.
 
 * Name \(string\)
-* Age \(int\)
-* Class \(maak hiervoor een `enum`\)
-* MarkCommunication \(int\)
-* MarkProgrammingPrinciples \(int\)
-* MarkWebTech \(int\)
+* Age \(byte\)
+* ClassGroup \(maak hiervoor een `enum` `ClassGroups`\)
+* MarkCommunication \(byte\)
+* MarkProgrammingPrinciples \(byte\)
+* MarkWebTech \(byte\)
 
-Voeg aan de klasse een methode `ComputeOverallMark` toe. Wanneer deze methode wordt aangeroepen dan wordt het gemiddelde van de 3 punten teruggegeven als double zodat dit op het scherm kan getoond worden.
+Voeg aan de klasse een read-only property `OverallMark` toe. Deze berekent het gemiddelde van de 3 punten als `double`.
 
-Voeg aan de klasse ook de methode `ShowOverview` toe. Deze methode zal een volledig rapport van de student tonen \(inclusief het gemiddelde m.b.v. de `ComputeOverallMark`-methode\).
+Voeg aan de klasse ook de methode `ShowOverview()` toe. Deze methode zal een volledig rapport van de student tonen \(inclusief het gemiddelde m.b.v. de `OverallMark`-property\).
 
-Test je programma door enkele studenten aan te maken en in te stellen. Volgende main zou dan de bijhorende output moeten krijgen:
+Test je programma door enkele studenten aan te maken en in te stellen. Volgende statische methode `Main` zet je in de klasse `Student`.
 
 ```csharp
-    Student student1= new Student();
-    student1.Class = Classes.EA2;
-    student1.Age = 21;
-    student1.Name = "Joske Vermeulen";
-    student1.MarkCommunication = 12;
-    student1.MarkProgrammingPrinciples = 15;
-    student1.MarkWebTech = 13;
-    student1.ShowOverview();
+Student student1= new Student();
+student1.Class = ClassGroups.EA2;
+student1.Age = 21;
+student1.Name = "Joske Vermeulen";
+student1.MarkCommunication = 12;
+student1.MarkProgrammingPrinciples = 15;
+student1.MarkWebTech = 13;
+student1.ShowOverview();
 ```
 
 #### Voorbeeldinteractie\(s\)
@@ -283,7 +296,7 @@ Web Technology:           13
 Gemiddelde:               13.3
 ```
 
-## Voorbeeld abstractie (H8-honden)
+## H8-honden
 ### Doelstelling
 - Kennismaking met OOP
 - Kennismaking met refactoring
@@ -307,16 +320,16 @@ namespace OOP {
             BarkingDog dog2 = new BarkingDog();
             dog1.Name = "Swieber";
             dog2.Name = "Misty";
-	    dog1BreedNumber = rng.Next(0,3);
-	    dog2BreedNumber = rng.Next(0,3);
+            dog1BreedNumber = rng.Next(0,3);
+            dog2BreedNumber = rng.Next(0,3);
             if(dog1BreedNumber == 0) {
                 dog1.Breed = "German Shepherd";
             }
             else if(dog1BreedNumber == 1) {
                 dog1.Breed = "Wolfspitz";
             }
-	    else {
-	        dog1.Breed = "Chihuahua";
+            else {
+                dog1.Breed = "Chihuahua";
             }
             if(dog2BreedNumber == 0) {
                 dog2.Breed = "German Shepherd";
@@ -324,8 +337,8 @@ namespace OOP {
             else if(dog2BreedNumber == 1) {
                 dog2.Breed = "Wolfspitz";
             }
-	    else {
-	        dog2.Breed = "Chihuahua";
+            else {
+                dog2.Breed = "Chihuahua";
             }
             while(true) {
                 Console.WriteLine(dog1.Bark());
@@ -349,9 +362,9 @@ namespace OOP {
             else if(Breed == "Wolfspitz") {
                 return "AwawaWAF!";
             }
-	    else if(Breed == "Chihuahua") {
-		return "ARF ARF ARF!";
-	    }
+            else if(Breed == "Chihuahua") {
+                return "ARF ARF ARF!";
+            }
             // dit zou nooit mogen gebeuren
             // maar als de programmeur van Main iets fout doet, kan het wel
             else {
@@ -363,13 +376,14 @@ namespace OOP {
 ```
 
 Volg hierbij volgende stappen:
-- Maak de random generator statisch onderdeel van de klasse `BarkingDog`.
+- Maak de random generator een geëncapsuleerd statisch attribuut van de klasse `BarkingDog`.
+- Vervang de instantievariabele `Name` door een autoproperty en vervang de instantievariabele `Breed` door een read-only full property.
 - Voeg volgende code toe **binnen** de klasse `BarkingDog`:
 ```
-        public BarkingDog() {
-	      // bepaal hier met de randomgenerator het ras van de hond
-	      // deze code wordt uitgevoerd wanneer een nieuwe hond wordt aangemaakt
-        }
+public BarkingDog() {
+    // deze code wordt uitgevoerd wanneer een nieuwe hond wordt aangemaakt
+    // bepaal hier met de randomgenerator het ras van de hond
+}
 ```
 
 Test uiteindelijk via de `Main` van `Program` de `Main` van `BarkingProgram`.
@@ -409,13 +423,33 @@ namespace OOP {
 ```text
 namespace OOP {
     class Soldier {
-        public int Health;
-        public int Damage;
+        private int health;
+        public int Health {
+            get {
+                return health;
+            }
+            set {
+                if (value >= 0 && value <= 100) {
+                    health = value;
+                }
+            }
+        }
+        private int damage;
+        public int Damage {
+            get {
+                return damage;
+            }
+            set {
+                if (value >= 0 && value <= 100) {
+                    damage = value;
+                }
+            }
+        }
     }
 }
 ```
 
-Zorg ervoor dat alle soldaten automatisch dezelfde hoeveelheid schade doen. Gebruik hiervoor een sleutelwoordje dat aan bod gekomen is in de les rond `DateTime`.
+Zorg ervoor dat alle soldaten automatisch dezelfde hoeveelheid schade doen. Gebruik hiervoor een sleutelwoordje dat zorgt dat de hoeveelheid schade niet specifiek is voor één soldaat, maar dezelfde is voor alle soldaten. Gebruik het op de juiste plaats(en).
 
 ## H8-utility-methode
 
@@ -447,26 +481,3 @@ namespace OOP {
     }
 }
 ```
-
-## Oefening: H8-RapportModule-V3
-
-### Leerdoelen
-
-* werken met klassen en objecten
-* gebruik maken van properties om geldige waarden af te dwingen
-
-### Functionele analyse
-
-Dit programma geeft op basis van de input van een percentage de graad weer die je met dit gegeven zou behaald hebben.
-
-### Technische analyse
-
-Ontwerp een klasse Resultaat die je zal tonen wat je graad is gegeven een bepaald behaald percentage. Het enige dat je aan een Resultaat-object moet kunnen geven is het behaalde percentage. Enkel het totaal behaalde % wordt bijgehouden via een auto-property. Via een methode PrintGraad kan de behaalde graad worden weergegeven. Dit zijn de mogelijkheden:
-
-* &lt; 50: niet geslaagd;
-* tussen 50 en 68: voldoende;
-* tussen 68 en 75: onderscheiding;
-* tussen 75 en 85: grote onderscheiding;
-* &gt; 85: grootste onderscheiding.
-
-Test je klasse door enkele objecten in je main aan te maken en de verschillende properties waarden te geven en methoden aan te roepen.
