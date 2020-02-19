@@ -4,59 +4,6 @@
 ### Structuur oefeningen
 Vanaf hier veronderstellen we dat je in één groot project werkt dat één klasse `Program` heeft. De oefeningen worden los van elkaar omschreven, maar je zorgt ervoor dat ze getest kunnen worden via het keuzemenu in je klasse `Program`.
 
-### Opmerkingen *na* de les over `DateTime` en *voor* de les over properties en objectmethodes
-Als je een object wil voorzien van een bepaalde eigenschap (met andere woorden, data), doe je dit voorlopig als volgt:
-
-#### bijhouden van data
-```csharp
-...
-class MyClass {
-    public <datatype> MyAttribute {
-        get;
-        set;
-    }
-}
-```
-
-Hier is `<datatype>` het soort data dat je wil bijhouden in een object (`int`,`string`,...) en is `MyAttribute` de naam die je geeft aan deze data.
-
-Bijvoorbeeld:
-```csharp
-...
-class Car {
-    public double Speed {
-        get;
-        set;
-    }
-}
-```
-
-Dit wil zeggen dat een auto een snelheid heeft. Als `myCar` een object is van type `Car`, kan je `myCar.Speed` opvragen en aanpassen.
-
-#### bijhouden van gedrag
-Als je een object van gedrag wil voorzien, doe je dit voorlopig als volgt:
-
-```csharp
-...
-public class MyClass {
-    public <datatype> MyMethod(<datatype><argument 1>,...) {
-        // hier pas je data van dit object aan, print je dingen op het scherm, enz.
-    }
-}
-```
-
-Bijvoorbeeld:
-```csharp
-...
-public class Car {
-    public void IncreaseSpeed() {
-        // als we de property Speed van boven hebben
-	Speed = 1.1 * Speed;
-	Console.WriteLine("Snelheid van deze auto is verhoogd.");
-    }
-}
-```
-
 #### meerdere `Main` methodes
 Indien je meerdere klassen hebt met een methode `Main`, moet je aangeven welke normaal gebruikt wordt voor de uitvoering van je programma. Dat doe je door aan je `.csproj`-bestand het volgende toe te voegen: `<StartupObject>Namespace-van-de-opstartklasse.Naam-van-de-opstartklasse</StartupObject>`
 
