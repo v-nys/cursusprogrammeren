@@ -296,98 +296,6 @@ Web Technology:           13
 Gemiddelde:               13.3
 ```
 
-## H8-honden
-### Doelstelling
-- Kennismaking met OOP
-- Kennismaking met refactoring
-- Toepassing van abstractie
-
-### Functionele analyse
-We krijgen een programma dat al objecten bevat, maar dit programma moet zelf nog veel rekening houden met hoe deze objecten in elkaar zitten. We **refactoren** het om zo een meer objectgericht en beter onderhoudbaar programma te bekomen.
-
-### Technische analyse
-Je krijgt volgende twee files. De bestandsnamen volgen de afspraak:
-```
-using System;
-
-namespace OOP {
-    class BarkingProgram {
-
-        // nu maken we onze randomgenerator *buiten* Main
-        public static Random rng = new Random();
-        public static void Main() {
-            BarkingDog dog1 = new BarkingDog();
-            BarkingDog dog2 = new BarkingDog();
-            dog1.Name = "Swieber";
-            dog2.Name = "Misty";
-            dog1BreedNumber = rng.Next(0,3);
-            dog2BreedNumber = rng.Next(0,3);
-            if(dog1BreedNumber == 0) {
-                dog1.Breed = "German Shepherd";
-            }
-            else if(dog1BreedNumber == 1) {
-                dog1.Breed = "Wolfspitz";
-            }
-            else {
-                dog1.Breed = "Chihuahua";
-            }
-            if(dog2BreedNumber == 0) {
-                dog2.Breed = "German Shepherd";
-            }
-            else if(dog2BreedNumber == 1) {
-                dog2.Breed = "Wolfspitz";
-            }
-            else {
-                dog2.Breed = "Chihuahua";
-            }
-            while(true) {
-                Console.WriteLine(dog1.Bark());
-                Console.WriteLine(dog2.Bark());
-            }
-        }
-    }
-}
-```
-en
-```
-namespace OOP {
-    class BarkingDog {
-        public string Name;
-        public string Breed;
-
-        public string Bark() {
-            if(Breed == "German Shepherd") {
-                return "RUFF!";
-            }
-            else if(Breed == "Wolfspitz") {
-                return "AwawaWAF!";
-            }
-            else if(Breed == "Chihuahua") {
-                return "ARF ARF ARF!";
-            }
-            // dit zou nooit mogen gebeuren
-            // maar als de programmeur van Main iets fout doet, kan het wel
-            else {
-                return "Euhhh... Miauw?";
-            }
-        }
-    }
-}
-```
-
-Volg hierbij volgende stappen:
-- Maak de random generator een geëncapsuleerd statisch attribuut van de klasse `BarkingDog`.
-- Vervang de instantievariabele `Name` door een autoproperty en vervang de instantievariabele `Breed` door een read-only full property.
-- Voeg volgende code toe **binnen** de klasse `BarkingDog`:
-```
-public BarkingDog() {
-    // deze code wordt uitgevoerd wanneer een nieuwe hond wordt aangemaakt
-    // bepaal hier met de randomgenerator het ras van de hond
-}
-```
-
-Test uiteindelijk via de `Main` van `Program` de `Main` van `BarkingProgram`.
-
 ## H8-uniform-soldiers
 
 ### Functionele analyse
@@ -481,3 +389,97 @@ namespace OOP {
     }
 }
 ```
+
+## H8-honden
+### Doelstelling
+- Kennismaking met OOP
+- Kennismaking met refactoring
+- Toepassing van abstractie
+
+### Functionele analyse
+We krijgen een programma dat al objecten bevat, maar dit programma moet zelf nog veel rekening houden met hoe deze objecten in elkaar zitten. We **refactoren** het om zo een meer objectgericht en beter onderhoudbaar programma te bekomen.
+
+### Technische analyse
+Je krijgt volgende twee files. De bestandsnamen volgen de afspraak:
+```
+using System;
+
+namespace OOP {
+    class BarkingProgram {
+
+        // nu maken we onze randomgenerator *buiten* Main
+        public static Random rng = new Random();
+        public static void Main() {
+            BarkingDog dog1 = new BarkingDog();
+            BarkingDog dog2 = new BarkingDog();
+            dog1.Name = "Swieber";
+            dog2.Name = "Misty";
+            dog1BreedNumber = rng.Next(0,3);
+            dog2BreedNumber = rng.Next(0,3);
+            if(dog1BreedNumber == 0) {
+                dog1.Breed = "German Shepherd";
+            }
+            else if(dog1BreedNumber == 1) {
+                dog1.Breed = "Wolfspitz";
+            }
+            else {
+                dog1.Breed = "Chihuahua";
+            }
+            if(dog2BreedNumber == 0) {
+                dog2.Breed = "German Shepherd";
+            }
+            else if(dog2BreedNumber == 1) {
+                dog2.Breed = "Wolfspitz";
+            }
+            else {
+                dog2.Breed = "Chihuahua";
+            }
+            while(true) {
+                Console.WriteLine(dog1.Bark());
+                Console.WriteLine(dog2.Bark());
+            }
+        }
+    }
+}
+```
+en
+```
+namespace OOP {
+    class BarkingDog {
+        public string Name;
+        public string Breed;
+
+        public string Bark() {
+            if(Breed == "German Shepherd") {
+                return "RUFF!";
+            }
+            else if(Breed == "Wolfspitz") {
+                return "AwawaWAF!";
+            }
+            else if(Breed == "Chihuahua") {
+                return "ARF ARF ARF!";
+            }
+            // dit zou nooit mogen gebeuren
+            // maar als de programmeur van Main iets fout doet, kan het wel
+            else {
+                return "Euhhh... Miauw?";
+            }
+        }
+    }
+}
+```
+
+Volg hierbij volgende stappen:
+- Maak de random generator een geëncapsuleerd statisch attribuut van de klasse `BarkingDog`.
+- Vervang de instantievariabele `Name` door een autoproperty en vervang de instantievariabele `Breed` door een read-only full property.
+- Voeg volgende code toe **binnen** de klasse `BarkingDog`:
+```
+public BarkingDog() {
+    // deze code wordt uitgevoerd wanneer een nieuwe hond wordt aangemaakt
+    // bepaal hier met de randomgenerator het ras van de hond
+}
+```
+
+Test uiteindelijk via de `Main` van `Program` de `Main` van `BarkingProgram`.
+
+
