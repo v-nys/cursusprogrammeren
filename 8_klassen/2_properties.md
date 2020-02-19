@@ -124,6 +124,7 @@ De full property ``Energy`` heeft nog steeds het probleem dat we negatieve waard
 > Properties hebben echter de mogelijkheid om op te treden als wachters van en naar de interne staat van objecten.
 
 We kunnen in de ``set`` code extra controles inbouwen. Als volgt:
+
 ```csharp
    public int Energy
     {
@@ -233,7 +234,7 @@ public void ResetLord()
 > **Het is een goede gewoonte om zo vaak mogelijk via de properties je interne variabele aan te passen en niet rechtstreeks het dataveld zelf.**
 
 ### Read-only Get-omvormers
-Je bent uiteraard niet verplicht om voor iedere interne variabele een bijhorende property te schrijven. Omgekeerd ook: mogelijk wil je extra properties hebben voor data die je 'on-the-fy' kan genereren.
+Je bent uiteraard niet verplicht om voor iedere interne variabele een bijhorende property te schrijven. Omgekeerd ook: mogelijk wil je extra properties hebben voor data die je 'on-the-fly' kan genereren.
 
 Stel dat we volgende klasse hebben
 ```csharp

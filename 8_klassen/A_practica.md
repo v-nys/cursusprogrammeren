@@ -2,7 +2,7 @@
 
 ## RapportModule
 
-Ontwerp een klasse Resultaat die je zal tonen wat je graad is gegeven een bepaald behaald percentage. Het enige dat je aan een Resultaat-object moet kunnen geven is het behaalde percentage. Enkel het totaal behaalde % wordt bijgehouden via een auto-property. Via een methode PrintGraad kan de behaalde graad worden weergegeven. Dit zijn de mogelijkheden:
+Ontwerp een klasse Resultaat die je zal tonen wat je graad is gegeven een bepaald behaald percentage. Het enige dat je aan een Resultaat-object moet kunnen geven is het behaalde percentage. Enkel het totaal behaalde % wordt bijgehouden via een auto-property. Via een methode PrintGraad kan de behaalde graad weergegeven worden. Dit zijn de mogelijkheden:
 
 * < 50: niet geslaagd;
 * tussen 50 en 68: voldoende;
@@ -24,14 +24,14 @@ mijnpunten.PrintGraad();
 
 Maak een klasse Nummers. Deze klasse bevat 2 getallen (type int) die via een autoproperty kunnen aangepast worden. Er zijn 4 methoden:
 
-* ``Som``: geeft som van beide getallen terug
-* ``Verschil``: geeft verschil van beide getallen terug
-* ``Product``: geeft product van beide getallen terug
-* ``Quotient``: geeft deling van beide getallen terug. Toon "Error" indien je zou moeten delen door 0.
+* ``Som``: geeft de som van beide getallen terug
+* ``Verschil``: geeft het verschil van beide getallen terug
+* ``Product``: geeft het product van beide getallen terug
+* ``Quotient``: geeft de deling van beide getallen terug. Toon "Error" indien je zou moeten delen door 0.
 
 Toon in je main aan dat je code werkt.
 
-Volgende code zou namelijk onderstaande output moeten geven:
+Volgende code zou bijvoorbeeld onderstaande output moeten geven:
 
 ```csharp
     Nummers paar1 = new Nummers();
@@ -199,6 +199,14 @@ Maak een bijhorende publieke Methode  waarmee je de account van state kunt veran
 Indien een persoon geld van of naar een Geblokkeerde rekening wil sturen dan zal er een error op het scherm verschijnen.
 
 Test je klasse.
+
+1. Nieuwe klant aanmaken (max 10) 
+2. Status van bestaande klant tonen 
+3. Geld op een bepaald account zetten 
+4. Geld van een bepaald account afhalen
+5. Geld tussen 2 accounts overschrijven
+
+Voorzie extra functionaliteit naar keuze.
 
 ## [Pro] OO Textbased game
 
