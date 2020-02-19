@@ -24,10 +24,10 @@ mijnpunten.PrintGraad();
 
 Maak een klasse Nummers. Deze klasse bevat 2 getallen (type int) die via een autoproperty kunnen aangepast worden. Er zijn 4 methoden:
 
-* ``Som``: geeft som van beide getallen weer
-* ``Verschil``: geeft verschil van beide getallen weer
-* ``Product``: geeft product van beide getallen weer
-* ``Quotient``: geeft deling van beide getallen weer. Toon "Error" indien je zou moeten delen door 0.
+* ``Som``: geeft som van beide getallen terug
+* ``Verschil``: geeft verschil van beide getallen terug
+* ``Product``: geeft product van beide getallen terug
+* ``Quotient``: geeft deling van beide getallen terug. Toon "Error" indien je zou moeten delen door 0.
 
 Toon in je main aan dat je code werkt.
 
