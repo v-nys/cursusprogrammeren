@@ -7,6 +7,10 @@ Vanaf hier veronderstellen we dat je in één groot project werkt dat één klas
 #### meerdere `Main` methodes
 Indien je meerdere klassen hebt met een methode `Main`, moet je aangeven welke normaal gebruikt wordt voor de uitvoering van je programma. Dat doe je door aan je `.csproj`-bestand het volgende toe te voegen: `<StartupObject>Namespace-van-de-opstartklasse.Naam-van-de-opstartklasse</StartupObject>`
 
+{% hint style="danger" %}
+Dit staat hier niet zomaar! Als je dit niet doet, zullen je oefeningen niet uitgevoerd kunnen worden. Je `.csproj` file staat in dezelfde map als je `.cs`-bestanden en indien het niet opent in Visual Studio, kan je het openen in Kladblok.
+{% endhint %}
+
 Bijvoorbeeld:
 
 ```text
@@ -244,7 +248,7 @@ Dit programma vraagt om de naam en leeftijd van een student. Er moet ook worden 
 
 ### Technische analyse
 
-Maak een nieuwe klasse `Student`. Deze klasse heeft 6 properties. Leeftijd en de punten stel je voor met **full properties**. Een student kan nooit jonger zijn dan 0 of ouder zijn dan 120. Je kan ook nooit een cijfer onder 0 of boven 20 behalen.
+Maak een nieuwe klasse `Student`. Deze klasse heeft 6 properties. Leeftijd en de punten stel je voor met **full properties**. Een student kan nooit ouder zijn dan 120. Je kan ook nooit een cijfer boven 20 behalen. Over leeftijden en cijfers onder 0 hoef je je geen zorgen te maken, want de achterliggende variabelen zijn `byte`s en die zijn altijd minstens 0.
 
 * Name \(string\)
 * Age \(byte\)
@@ -287,7 +291,7 @@ Gemiddelde:               13.3
 ## H8-uniform-soldiers
 
 ### Functionele analyse
-Je krijgt code die deel zou kunnen uitmaken van een videogame. Met deze code wordt bijgehouden hoe veel schade elke soldaat aanricht. De schade is niet constant. Als je een upgrade aankoopt, doen al je soldaten dubbel zo veel schade als eerder. We hebben al werkende code, maar ze maakt het moeilijk te verzekeren dat elke soldaat even veel schade aanricht. Pas aan zodat dit ingebakken is in de code.
+Je krijgt code die deel zou kunnen uitmaken van een videogame. Met deze code wordt bijgehouden hoe veel schade elke soldaat aanricht. De schade is niet constant. Als je een upgrade aankoopt, doen **al je soldaten** dubbel zo veel schade als eerder. We hebben al werkende code, maar ze maakt het moeilijk te verzekeren dat elke soldaat even veel schade aanricht. Pas aan zodat dit ingebakken is in de code.
 
 ### Technische analyse
 Je krijgt volgende klassen (`SoldierGame` en `Soldier`):
@@ -307,10 +311,16 @@ namespace OOP {
             soldier3.Health = 98;
             soldier3.Damage = 20;
             // beeld je in dat de game wat verder loopt
+	    /* nadeel van deze werkwijze: we moeten veronderstellen dat 
+	       wat geldt voor soldaat1 ook geldt voor de rest */
+	    Console.WriteLine($"Schade per soldaat: {soldier1.Damage}");
             // nu volgt de upgrade
             soldier1.Damage *= 2;
             soldier2.Damage *= 2;
             soldier3.Damage *= 2;
+	    /* nadeel van deze werkwijze: we moeten veronderstellen dat 
+	       wat geldt voor soldaat1 ook geldt voor de rest */
+	    Console.WriteLine($"Schade per soldaat: {soldier1.Damage}");
         }
     }
 }
@@ -345,7 +355,7 @@ namespace OOP {
 }
 ```
 
-Zorg ervoor dat alle soldaten automatisch dezelfde hoeveelheid schade doen. Gebruik hiervoor een sleutelwoordje dat zorgt dat de hoeveelheid schade niet specifiek is voor één soldaat, maar dezelfde is voor alle soldaten. Gebruik het op de juiste plaats(en).
+Gebruik hiervoor een sleutelwoordje dat zorgt dat de hoeveelheid schade niet specifiek is voor één soldaat, maar dezelfde is voor alle soldaten. We hebben het ook gebruikt om te bepalen of een jaar een schrikkeljaar is, omdat die berekening niet specifiek is voor één datum. Pas ook de demonstratiemethode aan.
 
 ## H8-utility-methode
 
