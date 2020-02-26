@@ -47,29 +47,29 @@
   * [Scope van variabelen](4_beslissingen/3_scope.md)
   * [enum](4_beslissingen/enum.md)
   * [Switch](4_beslissingen/2_switch.md)
-  * [_Oefeningen](4_beslissingen/a_practica.md)
+  * [Oefeningen](4_beslissingen/a_practica.md)
 * H5: Loops
   * [Loops intro](5_herhalingen/0_loops_intro.md)
   * [While en Do While](5_herhalingen/1_while_dowhile.md)
   * [For](5_herhalingen/2_for.md)
   * [Nesting](5_herhalingen/3_nesting.md)
   * [Programma flow analyse](5_herhalingen/4_programflow.md)
-  * [_Oefeningen deel 1](5_herhalingen/A_practica.md)
-  * [_Oefeningen deel 2](5_herhalingen/c_practica.md)
-  * [_Oefeningen deel 3](5_herhalingen/b_practica.md)
+  * [Oefeningen deel 1](5_herhalingen/A_practica.md)
+  * [Oefeningen deel 2](5_herhalingen/c_practica.md)
+  * [Oefeningen deel 3](5_herhalingen/b_practica.md)
 * H6: Methoden
   * [Methoden intro](6_methoden/0_intromethods.md)
   * [Bibliotheken](6_methoden/1_bibliotheken.md)
   * [Geavanceerde methoden](6_methoden/3_advancedmethod.md)  
-  * [_Oefeningen deel 1](6_methoden/b_practica.md)
-  * [_Oefeningen deel 2](6_methoden/c_practica.md)
+  * [Oefeningen deel 1](6_methoden/b_practica.md)
+  * [Oefeningen deel 2](6_methoden/c_practica.md)
 * H7: Arrays
   * [Array principes](7_arrays/1_ArraysBasics.md)
   * [Werken met arrays](7_arrays/2_werken_met_arrays.md)
   * [Arrays en methoden](7_arrays/3_arrays_en_methoden.md)
   * [N-dimensionale arrays](7_arrays/4_ndimensionalArrays.md)
-  * [_Oefeningen deel 1](7_arrays/A_practica.md)
-  * [_Oefeningen deel 2](7_arrays/B_practica.md)
+  * [Oefeningen deel 1](7_arrays/A_practica.md)
+  * [Oefeningen deel 2](7_arrays/B_practica.md)
 
 ## Semester 2 : OOP
 
