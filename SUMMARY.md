@@ -79,7 +79,7 @@
   * [Methoden en access modifiers](8_klassen/0c_simpleobjects.md)
   * [Properties](8_klassen/2_properties.md)
   * [DateTime: leren werken met objecten](8_klassen/datetime.md)
-  * [_Oefeningen](8_klassen/A_practica.md)
+  * [Oefeningen](8_klassen/a_practica.md)
 * H9: Geheugenmanagement bij klassen
   * [Objecten en methoden](9_meminoop/6b_objectenenmethoden.md)
   * [Stack en Heap](9_meminoop/6_memorymanagement.md)
@@ -118,9 +118,6 @@
   * [Interfaces in de praktijk](16_interfaces/2_InterfacesInPraktijk.md)
   * [Polymorfisme en interfaces](18_IsAs/2_Polymorfisme_Interfaces.md)
   * [_Oefeningen](16_interfaces/A_practica.md)
-* Module 4 eindetest
-  * [Opgave](EindeTests/Mod4/Opgave.md)
-  * [Opgave vaardigheidsproef  1819 2e kans](EindeTests/Mod4/Opgave_1819_2ezit.md)
 
 ## Appendix
 
