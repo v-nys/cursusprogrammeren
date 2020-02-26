@@ -3,64 +3,64 @@ Volgende bugs, fouten, minder goede oplossingen komen uit oplossingen van vaardi
 (de code is hier en daar ingeperkt om de focus op de fout te leggen)
 
 ## Opgaven
-1.
-```csharp
-int keuze = Convert.ToInt16(Console.ReadLine());
-```
 
-2.
-```csharp
-switch (keuze) {
-case 1:
-    totaal += 5;
-    int pType = Convert.ToInt16(Console.ReadLine()); // 
+1. Wat is er mis? 
+   ```csharp
+   int keuze = Convert.ToInt16(Console.ReadLine());
+   ```
 
-    switch (pType)
-    {
-        case 1:
-            totaal += 10;
-            topping = 1;
-            break;
-        case 2:
-            totaal += 5.5;
-            topping = 2;
-            break;
-        case 3:
-            totaal += 0;
-            break;
-    }
-    break;
-case 2:
-// enzovoort
-```
-3.
-```csharp
- Console.WriteLine("Laten we starten met de bestelling. Druk op 1 voor de pizzabodem, daarna 2 voor de topping, vervolgens 3 voor de chefs extra en tot slot 4 voor het afleveradres.");
-keuze = Convert.ToInt32(Console.ReadLine());
-pizzabodem = Convert.ToString(Console.ReadLine());
-CheesyCrust = Convert.ToString(Console.ReadLine());
-MartianMeal = Convert.ToString(Console.ReadLine());
-PegasusLime = Convert.ToString(Console.ReadLine());
-EndraliPies = Convert.ToString(Console.ReadLine());
+2. 
+  ```csharp
+  switch (keuze) {
+    case 1:
+        totaal += 5;
+        int pType = Convert.ToInt16(Console.ReadLine()); // 
 
+        switch (pType)
+        {
+            case 1:
+                totaal += 10;
+                topping = 1;
+                break;
+            case 2:
+                totaal += 5.5;
+                topping = 2;
+                break;
+            case 3:
+                totaal += 0;
+                break;
+        }
+        break;
+    case 2:
+    / enzovoort
+  ```
 
-//Je moet een paar keer ENTER drukken alvorens je tot de vraag komt.
-//Pizzabodem
-if (keuze == 1)
-{
+3. Zie je de fout?
 
-```
+   ```csharp
+   Console.WriteLine("Laten we starten met de bestelling. Druk op 1 voor de pizzabodem, daarna 2 voor de topping, vervolgens 3 voor de chefs extra en tot slot 4 voor het afleveradres.");
+   keuze = Convert.ToInt32(Console.ReadLine());
+   pizzabodem = Convert.ToString(Console.ReadLine());
+   CheesyCrust = Convert.ToString(Console.ReadLine());
+   MartianMeal = Convert.ToString(Console.ReadLine());
+   PegasusLime = Convert.ToString(Console.ReadLine());
+   EndraliPies = Convert.ToString(Console.ReadLine());
 
- 4. 
- ```csharp            
- int toegestaanleeftijd = 1;     //  0 is nee en 1 is ja.
- int toegestaanafstand = 1;      //  0 is nee en 1 is ja.
- ```
+   //Je moet een paar keer ENTER drukken alvorens je tot de vraag komt.
+   //Pizzabodem
+   if (keuze == 1){
+   ```
 
- 5. 
- ```csharp
- if (ToppingsKeuzeBodem1 == 1)
-{
+4. Cringy...
+   ```csharp            
+   int toegestaanleeftijd = 1;     //  0 is nee en 1 is ja.
+   int toegestaanafstand = 1;      //  0 is nee en 1 is ja.
+   ```
+
+5. aiaiai...
+   ```csharp
+   if (ToppingsKeuzeBodem1 == 1)
+   {
     Console.WriteLine("Wat is de afstand van het afleveradres in lichtjaren?");
     int AfleverAdres = Convert.ToInt32(Console.ReadLine());
     if (AfleverAdres < 10)
@@ -73,82 +73,88 @@ if (keuze == 1)
         int PizzaTotaal = (int)Math.Sqrt(AfleverAdres / 15) + martian + topping;
         Console.WriteLine($"Het totaal is gelijk aan {PizzaTotaal} IC");
     }
-    else { Console.ForegroundColor = ConsoleColor.Red; Console.WriteLine("ERROR"); }
-}
-else if (ToppingsKeuzeBodem1 == 2)
-{
+    else 
+    { Console.ForegroundColor = ConsoleColor.Red; Console.WriteLine("ERROR"); 
+    }
+   }
+   else if (ToppingsKeuzeBodem1 == 2)
+   {
     Console.WriteLine("Wat is de afstand van het afleveradres in lichtjaren?");
     int AfleverAdres = Convert.ToInt32(Console.ReadLine());
     if (AfleverAdres < 10)
     {
+   ```
 
-```
-6. 
-```csharp
-PizzaTotaal = 25 + 5 + 10;
+6.  
+   ```csharp
+   PizzaTotaal = 25 + 5 + 10;
 
-//Verder:
-PizzaTotaal = 25 + 5 + 6;
+   //Verder:
+   PizzaTotaal = 25 + 5 + 6;
 
-//Verder:
-PizzaTotaal = 25 + 5;
-```
+   //Verder:
+   PizzaTotaal = 25 + 5;
+   ```
 
 7. 
-Volgende commentaar, of een variant, kwam bij vele studenten voor. Hoe had dit voorkomen kunnen worden?
-```csharp
-// Eindbedrag -> Had de pizzabodem en toppingprijzen niet apart opgeslagen
-// en kon het niet meer veranderen wegens tijdstekort.
-```
-8. 
-```csharp
-Console.WriteLine("Oei, hier ging iets mis.");
-Console.Clear();
-Console.WriteLine("ERROR");
-```
+   Volgende commentaar, of een variant, kwam bij vele studenten voor. Hoe had dit voorkomen kunnen worden?
+   ```csharp
+   // Eindbedrag -> Had de pizzabodem en toppingprijzen niet apart opgeslagen
+   // en kon het niet meer veranderen wegens tijdstekort.
+   ```
 
-9. 
-```csharp
-goto end;
-```
+8. 
+   ```csharp
+   Console.WriteLine("Oei, hier ging iets mis.");
+   Console.Clear();
+   Console.WriteLine("ERROR");
+   ```
+
+9. lesigh
+   ```csharp
+   goto end;
+   ```
 
 10. 
-```csharp
-double tussenkomst = adres / 5;
-int Tonnen = 0;
 
-if (tussenkomst <= 1)
-{
-    Tonnen = 1;
-}
-else if (tussenkomst <= 2)
-{
-    Tonnen = 2;
-}
-else if (tussenkomst <= 3)
-{
-    Tonnen = 3;
-}
-else if (tussenkomst <= 4)
-{
-    Tonnen = 4;
-}
-else if (tussenkomst <= 5)
-{
-    Tonnen = 5;
-}
-//enz.
-```
+   ```csharp
+   double tussenkomst = adres / 5;
+   int Tonnen = 0;
+
+   if (tussenkomst <= 1)
+   {
+       Tonnen = 1;
+   }
+   else if (tussenkomst <= 2)
+   {
+       Tonnen = 2;
+   }
+   else if (tussenkomst <= 3)
+   {
+       Tonnen = 3;
+   }
+   else if (tussenkomst <= 4)
+   {
+       Tonnen = 4;
+   }
+   else if (tussenkomst <= 5)
+   {
+       Tonnen = 5;
+   }
+   //enz.
+   ```
 
 11. Onderaan de code van een oplossing stond volgende commentaar:
-    ```csharp 
-    // TE WEINIG TIJD AKA MISSCHIEN TE TRAAG GEWERKT SORRY
-    ```
-    Mogelijk heeft de student te traag gewerkt, maar kijken we eens naar de code in z'n geheel dan zien we volgende beeld:
 
-    ![](../assets/2_beslissingen/bigcode.jpg)
+   ```csharp 
+   // TE WEINIG TIJD AKA MISSCHIEN TE TRAAG GEWERKT SORRY
+   ```
 
-    What went wrong?
+   Mogelijk heeft de student te traag gewerkt, maar kijken we eens naar de code in z'n geheel dan zien we volgende beeld:
+
+   ![](../../assets/2_beslissingen/bigcode.jpg)
+
+   What went wrong?
 
 
 ## Oplossingen

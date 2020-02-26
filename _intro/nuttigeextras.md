@@ -2,7 +2,7 @@
 
 # Boeken
 
-Er zijn oneindig veel boeken over C# geschreven, althans zo lijkt het. Hier een selectie van boeken met een korte bespreking waarom ik denk dat ze voor jou een meerwaarde kunnen zijn bij het leren programmeren in C#:
+Er zijn quasi oneindig veel boeken over C# geschreven, althans zo lijkt het. Hier een selectie van boeken met een korte bespreking waarom ik denk dat ze voor jou een meerwaarde kunnen zijn bij het leren programmeren in C#:
 
 ## Beginner boeken
 
@@ -47,10 +47,11 @@ Ideale manier om programmeren meer in de vingers te krijgen op een speelse manie
 * [RPG Game in C#](http://scottlilly.com/learn-c-by-building-a-simple-rpg-index/) (behandelt leerstof van volledig eerste jaar en meer)
 * [Advent of code](https://adventofcode.com) Pittige programmeeroefeningen die jaarlijks in december verschijnen.
 * [Free Programming Book](https://books.goalkicker.com/) Handig vorm gegeven gratis ebooks met tal van onderwerpen waaronder ook C# en het .NET Framework.
-* [Tutorials teachcer](https://www.tutorialsteacher.com/csharp/csharp-tutorials): De uitgebreidere, Engelstalige variant van deze cursus zeg maar.
+* [Tutorials teacher](https://www.tutorialsteacher.com/csharp/csharp-tutorials): De uitgebreidere, Engelstalige variant van deze cursus zeg maar.
 
 ## Tutorials
 
+* [Dotnet beginning](http://dot.net/videos)
 * [C# Getting started interactive quickstart tutorials](https://docs.microsoft.com/en-us/dotnet/csharp/quick-starts/): Aanrader.
 * [Online video c#  cursus](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners):  Zeer aan te raden indien je een bepaald concept uit de les niet begrijpt.
 * [C-sharp.be](http://www.c-sharp.be) : Nederlandstalige cursus met veel toffe oefeningen waarvan je sommige zelfs in deze cursus zal terugvinden.

@@ -6,8 +6,8 @@ Deze cursus wordt gebruikt als handboek binnen de [graduaatsopleiding programmer
 
 Concreet is dit het handboek voor de eerste 2 semesters omtrent 'leren programmeren met C\#':
 
-* Deel 1: Programmeren
-* Deel 2: Objectgericht programmeren
+* Deel 1: Programming Principles, eerste semester
+* Deel 2: Object Oriented Programming, tweede semester
 
 Deze cursus is gebaseerd op [de overeenkomstige cursus van de bacheloropleiding toegepaste informatica](https://github.com/v-nys/cursusprogrammeren/tree/510d00d79aebbd03a181c553277afa1c8c85916f/apwt.gitbook.io).
 
@@ -23,9 +23,9 @@ PS Besef dat goed kunnen programmeren enkel kan geleerd worden indien je ook eff
 ![Licenicon](.gitbook/assets/ccat.png)  
 ![Licenicon](.gitbook/assets/ccnc.png)
 
-Licensed under CC-BY-NC 4.0 as shown [here](https://github.com/v-nys/cursusprogrammeren/tree/510d00d79aebbd03a181c553277afa1c8c85916f/LICENSE.MD).
+Licensed under CC-BY-NC 4.0 as shown [here](LICENSE.MD).
 
-This is a human-readable summary of \(and not a substitute for\) the [license](https://github.com/v-nys/cursusprogrammeren/tree/510d00d79aebbd03a181c553277afa1c8c85916f/LICENSE.MD).
+This is a human-readable summary of \(and not a substitute for\) the [license](LICENSE.MD).
 
 ### You are free to
 
@@ -41,4 +41,3 @@ The licensor cannot revoke these freedoms as long as you follow the license term
 **NonCommercial** : You may not use the material for commercial purposes.
 
 **No additional restrictions** : You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
-
