@@ -15,13 +15,13 @@ Zolang er dus fouten in je code staan moet je deze eerst oplossen voor je verder
 * Fouten in code worden met een rode squigly onderlijnt.
 * Onderaan zie je in de statusbalk of je fouten hebt.
 
-![Zie je de fout?](../assets/0_intro/error.png)
+![Zie je de fout?](../assets/0_intro/error.PNG)
 
 ## Fouten vinden
 
 Uiteraard ga je vaak code hebben die meerdere schermen omvat. Je kan via de error-list snel naar al je fouten gaan. Open deze door op het error-icoontje onderaan te klikken:
 
-![De errorlist](../assets/0_intro/errorlist.png)
+![De errorlist](../assets/0_intro/errorlist.PNG)
 
 In deze list kan je nu op iedere error klikken om ogenblikkelijk naar de correcte lijn te gaan.
 
