@@ -85,40 +85,40 @@
   * [Objecten en methoden](9_meminoop/6b_objectenenmethoden.md)
   * [Stack en Heap](9_meminoop/6_memorymanagement.md)
   * [Null en NullReferenceException](9_meminoop/nullreference.md)
-  * [_Oefeningen](9_meminoop/A_poke1.md)
+  * [Oefeningen](9_meminoop/A_poke1.md)
 * H10: Advanced klassen en objecten
   * [Constructors](10_advancedklassen/1_constructors.md)
   * [Static](10_advancedklassen/5_static.md)
   * [Spelen met strings](10_advancedklassen/strings.md)
-  * [_Oefeningen](10_advancedklassen/A_practica3.md)
+  * [Oefeningen](10_advancedklassen/A_practica3.md)
 * H11: Arrays en klassen
   * [Arrays van objecten](11_arraysvanklassen/7_arraysvanobj.md)
   * [Foreach en var](11_arraysvanklassen/3_foreach.md)
   * [List](11_arraysvanklassen/4_list.md)
-  * [_Oefeningen](11_arraysvanklassen/A_practicaMem.md)
+  * [Oefeningen](11_arraysvanklassen/A_practicaMem.md)
 * H12: Overerving
   * [Overerving intro](12_overerving/0_overerving_intro.MD)
   * [Base keyword](12_overerving/2_base.md)
   * [Constructors bij overerving](12_overerving/3_constructors_inheritance.md)
   * [Virtual en override](12_overerving/1_virtual_override.md)
-  * [_Oefeningen](12_overerving/A_PracticaSimpel.md)
+  * [Oefeningen](12_overerving/A_PracticaSimpel.md)
 * H13: Advanced overerving
   * [System.Object](13_advancedovererving/4_System_Object.md)
   * [Abstract](13_advancedovererving/5_abstract.md)
-  * [_Oefeningen](13_advancedovererving/A_Practica.md)
+  * [Oefeningen](13_advancedovererving/A_Practica.md)
 * H14: Compositie
   * [Compositie](14_compositie/0_compositie_intro.MD)
-  * [_Oefeningen](14_compositie/A_PracticaComp.md)
+  * [Oefeningen](14_compositie/A_PracticaComp.md)
 * H15: Polymorfisme
   * [Polymorfisme](15_polymorfisme/11_polymo_intro.MD)
   * [Is en As keywords](18_IsAs/1_IsAs.md)
   * [Objecten vergekijken: alles komt samen](18_IsAs/6_equals.md)
-  * [_Oefeningen](15_polymorfisme/A_Practica.md)
+  * [Oefeningen](15_polymorfisme/A_Practica.md)
 * H16: Interfaces
   * [Interface intro](16_interfaces/1_Interface_intro.MD)
   * [Interfaces in de praktijk](16_interfaces/2_InterfacesInPraktijk.md)
   * [Polymorfisme en interfaces](18_IsAs/2_Polymorfisme_Interfaces.md)
-  * [_Oefeningen](16_interfaces/A_practica.md)
+  * [Oefeningen](16_interfaces/A_practica.md)
 
 ## Appendix
 
