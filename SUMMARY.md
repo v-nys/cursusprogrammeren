@@ -67,8 +67,8 @@
   * [Array principes](7_arrays/1_ArraysBasics.md)
   * [Werken met arrays](7_arrays/2_werken_met_arrays.md)
   * [Arrays en methoden](7_arrays/3_arrays_en_methoden.md)
-  * [N-dimensionale arrays](7_arrays/4_ndimensionalArrays.md)
-  * [Oefeningen deel 1](7_arrays/A_practica.md)
+  * [N-dimensionale arrays](7_arrays/4_ndimensionalarrays.md)
+  * [Oefeningen deel 1](7_arrays/a_practica.md)
   * [Oefeningen deel 2](7_arrays/B_practica.md)
 
 ## Semester 2 : OOP
