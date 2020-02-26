@@ -17,7 +17,7 @@
   * [Input verwerken met ReadLine](0_intro/3_console.md)
   * [Fouten in je code](0_intro/4_fouten.md)
   * [Kleuren in Console](0_intro/5_kleuren.md)
-  * [_Oefeningen](0_intro/A_Practica.md)
+  * [Oefeningen](0_intro/a_practica_grad.md)
 * H1: Variabelen en datatypes
   * [De essentie van C#](1_csharpbasics/0_csharpessentials.md)
   * [Datatypes](1_csharpbasics/1_datatypes.md)
