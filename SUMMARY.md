@@ -1,13 +1,13 @@
 # Summary
 
 * [Welkom](README.md)
-* [Inleiding](inleiding/README.md)
-  * [Benodigdheden](inleiding/benodigdheden.md)
-  * [Afspraken code](inleiding/afsprakencode.md)
-  * [Afspraken oefeningen](inleiding/afsprakenoefeningen.md)
-  * [Nuttige extras](inleiding/nuttigeextras.md)
-  * [Dankwoord](inleiding/dankwoord.md)
-  * [Mee helpen?](inleiding/helpen.md)
+* [Inleiding](_intro/README.md)
+  * [Benodigdheden](_intro/benodigdheden.md)
+  * [Afspraken code](_intro/afsprakencode.md)
+  * [Afspraken oefeningen](_intro/afsprakenoefeningen.md)
+  * [Nuttige extras](_intro/nuttigeextras.md)
+  * [Dankwoord](_intro/dankwoord.md)
+  * [Mee helpen?](_intro/helpen.md)
 
 ## Semester 1: Programming Principles
 * H0: Werken met Visual Studio
