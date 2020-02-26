@@ -12,7 +12,7 @@ Je kan eender welk [UNICODE-teken](https://en.wikipedia.org/wiki/Unicode) in een
 
 
 # String
-Een string is een reeks (eigenlijk [array](../7_arrays/1_ArraysBasics.md)) van 0, 1 of meerdere `char`-elementen, zoals je ook kan zien als je even met je muis boven een string keyword *hovert* in je code:
+Een string is een reeks van 0, 1 of meerdere `char`-elementen, zoals je ook kan zien als je even met je muis boven een string keyword *hovert* in je code:
 
 ![](../assets/1_csharpbasics/stringenchars.png)
 
