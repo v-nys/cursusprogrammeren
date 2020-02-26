@@ -64,43 +64,6 @@ Je BMI bedraagt 21.78.
 
 > Bekijk de volgende [kennisclip](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=6381a023-ae87-4662-91ed-a969006d3d9b) en geef je uitvoerbaar bestand van het programma aan een klasgenoot. Kijk of hij het kan uitvoeren.
 
-## H3-binaire-god
-
-### Leerdoelen
-
-* werken met binaire getallen
-* werken met conversiefuncties
-
-### Functionele analyse
-
-Vraag een getal aan de gebruiker \(als int\). Gebruik enkel bitwise operators om na elkaar:
-
-* de rest na deling door 2 weg te werken, d.w.z. oneven getallen verminderen met 1 en even getallen zo laten
-* het getal te verachtvoudigen
-
-Vraag vervolgens een string met de binaire voorstelling van een getal \(bv `"0011"`\) en zit dit eerst om naar een int. Pas hier dezelfde operaties op toe en toon het resultaat op het scherm in een binaire notatie.
-
-### Technische analyse
-
-Maak je geen zorgen om erg grote inputs of negatieve getallen. Denk eerst na over hoe dit op papier werkt voor een paar binaire getallen. Tip om een binaire string in te lezen: zoek [hier](https://docs.microsoft.com/en-us/dotnet/api/system.convert.toint32?view=netcore-3.0) naar een omzettingsmethode. Zoek naar de woorden "in a specified base". Die "base" is 2, omdat je 2 cijfers hebt: 0 en 1. Om hem uit te schrijven zoek je ook [hier](https://docs.microsoft.com/en-us/dotnet/api/system.convert.tostring?view=netcore-3.0) naar "in a specified base".
-
-#### UI
-
-console applicatie
-
-#### voorbeeldinteractie\(s\)
-
-```text
-Geef een getal.
-> 7
-Het getal is nu 6.
-Het getal is nu 48.
-Geef een binaire string.
-> 1011
-Het getal is nu 1010.
-Het getal is nu 1010000.
-```
-
 ## Oefening: H3-op-de-poef
 
 ### Leerdoelen
