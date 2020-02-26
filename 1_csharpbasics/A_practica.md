@@ -67,8 +67,13 @@ console applicatie
 4. Het resultaat wordt weergegeven.
 
 #### voorbeeldinteractie\(s\)
-
-![](../../.gitbook/assets/image%20%288%29.png)
+```text
+Wat is het eerste getal?
+> 1
+Wat is het tweede getal?
+> 4
+De som is 5.
+```
 
 ### Technische hulp
 
