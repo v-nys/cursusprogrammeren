@@ -61,8 +61,8 @@
   * [Methoden intro](6_methoden/0_intromethods.md)
   * [Bibliotheken](6_methoden/1_bibliotheken.md)
   * [Geavanceerde methoden](6_methoden/3_advancedmethod.md)  
-  * [Oefeningen deel 1](6_methoden/b_practica.md)
-  * [Oefeningen deel 2](6_methoden/c_practica.md)
+  * [Oefeningen](6_methoden/b_practica.md)
+  * [Uitbreidingsoefeningen](6_methoden/c_practica.md)
 * H7: Arrays
   * [Array principes](7_arrays/1_ArraysBasics.md)
   * [Werken met arrays](7_arrays/2_werken_met_arrays.md)
