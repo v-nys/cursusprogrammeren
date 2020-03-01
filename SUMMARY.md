@@ -95,13 +95,13 @@
   * [Arrays van objecten](11_arraysvanklassen/7_arraysvanobj.md)
   * [Foreach en var](11_arraysvanklassen/3_foreach.md)
   * [List](11_arraysvanklassen/4_list.md)
-  * [Oefeningen](11_arraysvanklassen/A_practicaMem.md)
+  * [Oefeningen](11_arraysvanklassen/a_practicamem.md)
 * H12: Overerving
-  * [Overerving intro](12_overerving/0_overerving_intro.MD)
+  * [Overerving intro](12_overerving/0_overerving_intro.md)
   * [Base keyword](12_overerving/2_base.md)
   * [Constructors bij overerving](12_overerving/3_constructors_inheritance.md)
   * [Virtual en override](12_overerving/1_virtual_override.md)
-  * [Oefeningen](12_overerving/A_PracticaSimpel.md)
+  * [Oefeningen](12_overerving/a_practicasimpel.md)
 * H13: Advanced overerving
   * [System.Object](13_advancedovererving/4_System_Object.md)
   * [Abstract](13_advancedovererving/5_abstract.md)
