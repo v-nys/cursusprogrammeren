@@ -90,7 +90,7 @@
   * [Constructors](10_advancedklassen/1_constructors.md)
   * [Static](10_advancedklassen/5_static.md)
   * [Spelen met strings](10_advancedklassen/strings.md)
-  * [Oefeningen](10_advancedklassen/A_practica3.md)
+  * [Oefeningen](10_advancedklassen/a_practica3.md)
 * H11: Arrays en klassen
   * [Arrays van objecten](11_arraysvanklassen/7_arraysvanobj.md)
   * [Foreach en var](11_arraysvanklassen/3_foreach.md)
