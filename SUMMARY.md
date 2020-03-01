@@ -86,7 +86,7 @@
   * [Stack en Heap](9_meminoop/6_memorymanagement.md)
   * [Null en NullReferenceException](9_meminoop/nullreference.md)
   * [Oefeningen](9_meminoop/A_poke1.md)
-* H10: Advanced klassen en objecten
+* H10: Geavanceerde klassen en objecten
   * [Constructors](10_advancedklassen/1_constructors.md)
   * [Static](10_advancedklassen/5_static.md)
   * [Spelen met strings](10_advancedklassen/strings.md)
@@ -102,7 +102,7 @@
   * [Constructors bij overerving](12_overerving/3_constructors_inheritance.md)
   * [Virtual en override](12_overerving/1_virtual_override.md)
   * [Oefeningen](12_overerving/a_practicasimpel.md)
-* H13: Advanced overerving
+* H13: Geavanceerde overerving
   * [System.Object](13_advancedovererving/4_System_Object.md)
   * [Abstract](13_advancedovererving/5_abstract.md)
   * [Oefeningen](13_advancedovererving/A_Practica.md)
