@@ -42,27 +42,6 @@ if(stud1 == null)
     Console.WriteLine("oei. object bestaat niet")
 ```
 
-### Verkorte null controle notatie
-
-Vaak moet je dit soort code schrijven:
-
-```csharp
-if(stud1 != null)
-{
-    Console.WriteLine(stud1.Name)
-}
-```
-
-Op die manier voorkom je `NullReferenceException`. Het is uiteraard omslachtig om steeds die check te doen. Je mag daarom ook schrijven:
-
-```csharp
-Console.WriteLine(stud1?.Name)
-```
-
-Het vraagteken direct na het object geeft aan: _"de code na dit vraagteken enkel uitvoeren indien het object voor het vraagteken niét null is"._
-
-Bovenstaande code zal dus gewoon een lege lijn op scherm plaatsen indien `stud1` effetief `null` is, anders komt de naam op het scherm.
-
 ## Return null
 
 Uiteraard mag je dus ook expliciet soms `null` teruggeven als resultaat van een methode. Stel dat je een methode hebt die in een array een bepaald object moet zoeken. Wat moet de methode teruggeven als deze niet gevonden wordt? Inderdaad, we geven dan `null` terug.
