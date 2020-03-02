@@ -1,6 +1,6 @@
 # Meetlat
 
-Maak een klasse "Meetlat". Via een write-only property LengteInMeter kan de gebruiker de lengte van een voorwerp instellen. Via een reeks read-only properties kan de gebruiker deze lengte in verschillende eenheden uitlezen namelijk:
+Maak een klasse "Meetlat". Via een write-only property BeginLengte kan de gebruiker de lengte van een voorwerp instellen. Via een reeks read-only properties kan de gebruiker deze lengte in verschillende eenheden uitlezen namelijk:
 
 * LengteInM
 * LengteInCm
@@ -12,8 +12,8 @@ Maak een klasse "Meetlat". Via een write-only property LengteInMeter kan de gebr
 Voorbeeld gebruik van klasse:
 
 ```csharp
-Meetlat mijnLat=new Meetlat();
-mijnLat.LengteInMeter= 2;
+Meetlat mijnLat = new Meetlat();
+mijnLat.BeginLengte = 2;
 Console.WriteLine($"{mijnLat.LengteInM} meter is {mijnLat.LengteInVoet} voet.");
 ```
 
