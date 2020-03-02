@@ -32,6 +32,10 @@ De full-stats (punt 9) zijn echter de stats die de effectieve ‘krachten’ van
 
 ![Pokémon](../assets/6_klassen/pokemon.png)
 
+
+![](../assets/infoclip.png)
+* [Meer uitleg bij bovenstaande tekening](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=245f5d03-dbe4-49d9-b9e9-ab720084b984)
+
 ## De Pokémonopdracht
 
 Maak een consoleapplicatie met daarin een klasse Pokémon die de werking zoals hierboven beschreven heeft:
@@ -73,6 +77,8 @@ De eigenschappen van de Pokémon die mee evolueren met het leven gaan we steeds 
 
 * Voeg voor iedere base-stat een full-stat toe (int). Dus Defense_Full, Speed_Full, etc. Ook deze properties zijn readonly. Deze stats worden berekend als volgt: ``( (stat_Base*Level) / 50 ) + 5``.
 Attack_Full bijvoorbeeld wordt dus berekend als: ``( (Attack_Base * Level) / 50) + 5``
+
+> Was voorgaande uitleg wat complex? Bekijk zeker bovenstaande kennisclip die alles nog eens samenvat.
 
 ### Maak enkele Pokémon
 
