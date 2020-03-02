@@ -73,9 +73,9 @@ Voeg 2 read-only properties toe (enkel get, géén set) genaamd "Average" en "To
 
 De eigenschappen van de Pokémon die mee evolueren met het leven gaan we steeds als read-only property implementeren:
 
-* Voeg een read-only HP_Full property (int) toe om de maximum health voor te stellen. Deze wordt berekend als volgt: ``( ( (HP_Base + 50) * Level) / 50) + 10 ``
+* Voeg een read-only property ``HP_Full``  toe om de maximum health voor te stellen. Deze wordt berekend als volgt: ``( ( (HP_Base + 50) * Level) / 50) + 10 `` wanneer de get wordt aangeroepen.
 
-* Voeg voor iedere base-stat een full-stat toe (int). Dus Defense_Full, Speed_Full, etc. Ook deze properties zijn readonly. Deze stats worden berekend als volgt: ``( (stat_Base*Level) / 50 ) + 5``.
+* Voeg voor iedere base-stat een ``XX_Full`` readonly property toe (int). Dus Defense_Full, Speed_Full, etc. Ook deze properties zijn readonly. Deze stats worden berekend als volgt: ``( (stat_Base*Level) / 50 ) + 5``.
 Attack_Full bijvoorbeeld wordt dus berekend als: ``( (Attack_Base * Level) / 50) + 5``
 
 > Was voorgaande uitleg wat complex? Bekijk zeker bovenstaande kennisclip die alles nog eens samenvat.
