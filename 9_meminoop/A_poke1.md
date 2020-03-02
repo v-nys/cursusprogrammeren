@@ -1,6 +1,6 @@
 # Meetlat
 
-Maak een object "Meetlat". Via een write-only property LengteInMeter kan de gebruiker de lengte van een voorwerp instellen. Via een reeks read-only properties kan de gebruiker deze lengte in verschillende eenheden uitlezen namelijk:
+Maak een klasse "Meetlat". Via een write-only property LengteInMeter kan de gebruiker de lengte van een voorwerp instellen. Via een reeks read-only properties kan de gebruiker deze lengte in verschillende eenheden uitlezen namelijk:
 
 * LengteInM
 * LengteInCm
