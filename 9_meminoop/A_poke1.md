@@ -55,6 +55,8 @@ De base-stats worden als ints bewaard. Maak voor al deze basis-eigenschappen ful
 
 Voorts wordt een Pokémon ook gedefinieerd door z’n naam (string), type (string, bv. "grass & poison") en nummer (int), maak hiervoor auto properties aan.
 
+> Met ``nummer`` bedoelingen we de Pokémon index die je in de Pokédex kunt opzoeken. Zo heeft Bulbasaur nummer 1 en Pikachu heeft 25. 
+
 ### Level
 
 Voeg een fullproperty Level toe (type int). Deze heeft een public get, maar een private setter.
