@@ -160,13 +160,26 @@ if(m3 != null)
 |  | Value types | Reference types |
 | :--- | :--- | :--- |
 | Inhoud van de variabele | De eigenlijke data | Een referentie naar de eigenlijke data |
-| Locatie | \(Data\) **Stack** | **Heap** \(globaal\)geheugen |
+| Locatie data | **Stack** | **Heap** \(globaal\)geheugen |
+| Verwijzing? | / | Op de stack |
 | Beginwaarde | `0`,`0.0`, `""`,`false`, etc. | `null` |
 | Effect van = operator | Kopieert de actuele waarde | Kopieert het adres naar de actuele waarde |
 
 ---
 
-![bg center:80% 70%](gc1.png)
+```csharp
+public static void Main() {
+    int num1 = 7;
+    int num2 = 9;
+    Person person1 = new Person();
+    Person.Age = 38;
+    Person.Name = "Tim";
+    Person person2 = new Person();
+    Person.Age = 33;
+    Person.Name = "Vincent";
+}}
+```
+![bg right:60% 100%](stack_heap.png)
 
 ---
 
@@ -268,9 +281,9 @@ Na methode 5
 Student stud= new Student();
 ```
 
-1. new roept de constructor van student aan. Er wordt geheugen vrijgemaakt in de heap en locatie wordt terug gegeven
-2. Een variabele stud zal in de stack gemaakt worden.
-3. De geheugenlocatie wordt in stud opgeslagen.
+1. `new` roept de constructor van student aan. Er wordt geheugen vrijgemaakt in de heap en locatie wordt terug gegeven
+2. Een variabele `stud` zal in de stack gemaakt worden.
+3. De geheugenlocatie wordt in `stud` opgeslagen.
 ---
 
 # Reference types met arrays
@@ -346,7 +359,7 @@ Console.WriteLine($"Na methode {getallen[0]}");
 # Garbage collector 
 - Zorgt ervoor dat we geen geheugen voor niets gereserveerd houden
 - Doorloopt geregeld het heap geheugen.
-- Verwijderd data waar geen references meer naar zijn.
+- Verwijdert data waar geen references meer naar zijn.
 
 **bijvoorbeeld:**
 ```c#
@@ -354,14 +367,14 @@ int[] array1= {1,2,3};
 int[] array2= {3,4,5};
 array2=array1;
 ```
-- Geen referentie meer naar {3,4,5}.
+- Geen referentie meer naar `{3,4,5}`.
     - GC zal deze data verwijderen.
 
 ---
 
 # Garbage collector
 
-**Wil je niet dat de garbage collector data verwijderd?**
+**Wil je niet dat de garbage collector data verwijdert?**
 Maak een referentie op de stack naar dat geheugen.
 ```
 int[] array1= {1,2,3};
@@ -369,6 +382,7 @@ int[] array2= {3,4,5};
 int[] bewaarArray= array2;
 array2=array;
 ```
+(Dit is meer om de werking toe te lichten. Je hoeft het niet toe te passen.)
 
 ---
 
@@ -379,9 +393,9 @@ Student stud1;
 stud1.Naam= "Test";
 ```
 
-- Stud1 bevat geen referentie object in geheugen. 
+- `stud1` bevat geen referentie naar een object in geheugen. 
 - Bevat eigenlijk de waarde **null**.
-- Als je de property Naam er op benaderd:
+- Als je de property Naam er op benadert:
     **- NullReferenceException!**
 - Visual Studio zal dit zelfs niet toestaan
 
