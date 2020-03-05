@@ -128,8 +128,8 @@ We zullen dus als output krijgen:
 Hetzelfde gedrag zien we bij objecten:
 ```csharp
 Student a= new Student("Abba");
-a=b;
 Student b= new Student("Queen");
+a=b;
 Console.WriteLine(a.Naam);
 ```
 We zullen in dit geval dus ``Queen`` op het scherm zien omdat zowel ``b`` als ``a`` naar het zelfde object in de heap verwijzen. Het originele "abba"-object zijn we kwijt en zal verdwijnen (zie Garbage collector verderop).
