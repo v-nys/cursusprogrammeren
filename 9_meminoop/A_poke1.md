@@ -7,7 +7,7 @@ Maak een klasse "Meetlat". Via een write-only property BeginLengte kan de gebrui
 * LengteInKm
 * LengteInVoet (1m= 3.2808ft)
 
-**Opgelet het ``readonly`` keyword heb je niét nodig om readonly properties te maken. Zoek op hoe je dit wel doet**
+**Opgelet het ``readonly`` keyword heb je niét nodig om readonly properties te maken. Zoek op hoe je dit wel doet.**
 
 Voorbeeld gebruik van klasse:
 
@@ -55,7 +55,8 @@ De base-stats worden als ints bewaard. Maak voor al deze basis-eigenschappen ful
 
 Voorts wordt een Pokémon ook gedefinieerd door z’n naam (string), type (string, bv. "grass & poison") en nummer (int), maak hiervoor auto properties aan.
 
-> Met ``nummer`` bedoelingen we de Pokémon index die je in de Pokédex kunt opzoeken. Zo heeft Bulbasaur nummer 1 en Pikachu heeft 25. 
+> Met ``nummer`` bedoelen we de Pokémon index die je in de Pokédex kunt opzoeken. Zo heeft Bulbasaur nummer 1 en Pikachu heeft 25. 
+
 
 ### Level
 
@@ -76,7 +77,6 @@ Voeg 2 read-only properties toe (enkel get, géén set) genaamd "Average" en "To
 De eigenschappen van de Pokémon die mee evolueren met het leven gaan we steeds als read-only property implementeren:
 
 * Voeg een read-only property ``HP_Full``  toe om de maximum health voor te stellen. Deze wordt berekend als volgt: ``( ( (HP_Base + 50) * Level) / 50) + 10 `` wanneer de get wordt aangeroepen.
-
 * Voeg voor iedere base-stat een ``XX_Full`` readonly property toe (int). Dus Defense_Full, Speed_Full, etc. Ook deze properties zijn readonly. Deze stats worden berekend als volgt: ``( (stat_Base*Level) / 50 ) + 5``.
 Attack_Full bijvoorbeeld wordt dus berekend als: ``( (Attack_Base * Level) / 50) + 5``
 
