@@ -1,6 +1,6 @@
-Op volgende pagina vind je alle kennisclips en andere opnames samen die doorheen de cursus verspreid staan bij de relevante hoofdstukken.
-
 # Kennisclips
+![](../assets/infoclip.png)
+Op volgende pagina vind je alle kennisclips en andere opnames samen die doorheen de cursus verspreid staan bij de relevante hoofdstukken.
 
 ## Semester 1
 
@@ -54,7 +54,7 @@ Op volgende pagina vind je alle kennisclips en andere opnames samen die doorheen
 * [Named en optionele parameters](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=e8df8cd1-e83a-4632-b69f-a9a700cd9bc9)
 * [Oplossingen methode oefeningen](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=7d5b4399-8c6c-4207-8e4d-a9af00b4ac58)
 
-### Hoofdstuk 7 - Methoden
+### Hoofdstuk 7 - Arrays
 
 * [Zie volgend filmpje op 31 minuten voor uitleg over arrays](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=17ce5c87-2b6a-46ea-b7b1-a87e00a7e4e5)
 
@@ -73,6 +73,15 @@ Op volgende pagina vind je alle kennisclips en andere opnames samen die doorheen
 * [Stack vs heap](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=bf7ea9bc-7469-446b-b226-ab5e008085a8)
 * [Referenties en null](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=49247267-d9db-411a-8de6-ab5e0084792a)
 * [Hoe de pokemon klasse werkt](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=245f5d03-dbe4-49d9-b9e9-ab720084b984)
+
+### hoofdstuk 10 - Advanced klasse concepten
+
+* [static keyword](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=04805e97-94e8-4593-b30c-ab750089ffa6)
+
+### hoofdstuk 11 - Arrays van klassen
+
+* [var keyword](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=8ba39f71-889e-4e48-9f3b-ab750087d034)
+* [De foreach loop](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=e268b0f3-5226-4279-a69c-ab7500892031)
 
 ### Appendix - Git
 

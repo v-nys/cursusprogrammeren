@@ -48,3 +48,8 @@ foreach (var kdrate in killdeathRates)
    Console.WriteLine($"Kill/Death rate is {kdrate}");
 }
 ```
+
+# Kennisclip
+![](../assets/infoclip.png)
+* [var keyword](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=8ba39f71-889e-4e48-9f3b-ab750087d034)
+* [De foreach loop](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=e268b0f3-5226-4279-a69c-ab7500892031)
