@@ -14,7 +14,8 @@ We willen een bootleg Pokémon spel maken. We starten met een klasse om Pokémon
 
 Schrijf een klasse `Pokemon` met volgende onderdelen:
 - een full property `MaxHP`
-  - deze stelt een getal voor dat altijd minstens 1 en maximum 1000 bedraagt
+  - deze stelt een getal voor dat altijd minstens 20 en maximum 1000 bedraagt
+  - als je een lagere of hogere waarde probeert in te stellen, wordt de dichtstbijzijnde waarde ingesteld
 - een full property `HP`
   - deze stelt een getal voor dat altijd groter dan of gelijk aan 0 is; verder kan de waarde ook nooit groter gemaakt worden dan `MaxHP`; elke poging om het getal kleiner dan 0 te maken, maakt het gelijk aan 0 en elke poging om boven `MaxHP` te gaan, maakt het gelijk aan `MaxHP`.
 - een autoproperty `PokeSpecies` om aan te geven over welk soort Pokémon het gaat; maak hiervoor een enum `PokeSpecies` met waarden `Bulbasaur`, `Charmander`, `Squirtle`, `Pikachu`
@@ -137,6 +138,7 @@ Schrijf dan een **statische** methode `FightOutcome` in de klasse `Pokemon`. Dez
 - Een van de twee Pokémon mag eerst aan de beurt; welke van de twee wordt willekeurig beslist met behulp van het `Random`-object.
 - Wanneer een Pokémon aan de beurt is, voert hij zijn `Attack()` methode uit.
 - Hierna verlaagt de HP van de andere Pokémon met een getal tussen 0 en 20.
+- Hierna is de andere van de twee Pokémon aan de beurt, maar alleen als hij nog bij bewustzijn is.
 - De match is voorbij wanneer één van de twee Pokémon 0 HP heeft bereikt. Dan wordt het resultaat teruggegeven:
   - `WIN` als de eerste Pokémon die je als parameter hebt meegegeven nog bij bewustzijn is.
   - `LOSS` als de tweede nog bij bewustzijn is.
