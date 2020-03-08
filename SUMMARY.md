@@ -101,7 +101,6 @@
 * H10: Advanced klassen en objecten
   * [Constructors](10_advancedklassen/1_constructors.md)
   * [Static](10_advancedklassen/5_static.md)
-  * [Spelen met strings](10_advancedklassen/strings.md)
   * [_Oefeningen](10_advancedklassen/A_practica3.md)
 * H11: Arrays en klassen
   * [Arrays van objecten](11_arraysvanklassen/7_arraysvanobj.md)
@@ -174,6 +173,7 @@
   * [Operator overloading](B_appendix/8_operatoroverloading.md)
   * [Expression bodied members](B_appendix/6_exprbody.md)
   * [Werken met git (in opbouw)](B_appendix/git.md)
+  * [Spelen met strings](10_advancedklassen/strings.md)
 * Oplossingen oefeningen
   * [H8 - Klassen en objecten](8_klassen/opl_apractica.md)
   * [H9 - Geheugenmanagement bij klassen](9_meminoop/opl_poke2.md)

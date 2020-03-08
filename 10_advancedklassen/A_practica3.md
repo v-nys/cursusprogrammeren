@@ -24,6 +24,29 @@ Maak een derde methode
 
 Deze methode gaat ook random bepalen welke speler de beste is. Vervolgens geef je deze speler terug als resultaat. In de main roep je vervolgens iedere methode van dit object aan.
 
+# Pokémons deel 2
+
+## Constructors
+
+Pas de kennis van constructors toe op je Pokémon-project uit het vorige hoofdstuk. Zorg ervoor dat je Pokémons op 3 manieren kunt aanmaken als volgt:
+
+* Via een default constructor: alle base stats worden daarbij op 10 standaard ingesteld via de constructor
+* Via een overloaded constructor die de gebruiker toelaat om de 6 base stats als parameters mee te geven (bv ``new Pokemon(45,42,50,65,34,67)``)
+* Via object initializer syntax waarbij je eender welke base stat etc. kunt instellen (bv ``new Pokemon(){HP_Base=40, Name="Pikachu"};``)
+
+## Static methoden
+
+* Verhuis de methoden (``GeneratorPokemon`` en ``Battle``) die je maakte in deel 3 van de Pokémon-opdracht in vorige hoofdstuk naar de klasse ``Pokemon`` zelf en test of deze nog steeds werkt. (Is dit een logischere plek?)
+* Voeg enkele static properties met private set toe om bij te houden:
+    * Hoe vaak een Pokémon z'n level werd verhoogd (dus telkens bij aanroep van ``VerhoogLevel``)
+    * Hoe veel Battles er al zijn geweest (verhoogt telkens ``Battle`` wordt uitgevoerd)
+    * Hoe vaak een battle resulteerde in gelijkstand (verhoogd bij gelijkstand in  ``Battle``)
+    * Hoe veel random Pokémons werden aangemaakt (verhoogt telkens ``GeneratorPokemon`` wordt aangeroepen)
+* Maak een static methode ``Info`` die deze properties als een soort samenvatting naar het scherm stuurt
+* Maak een static property ``NoLevelingAllowed`` aan van het type bool. Deze kan van buiten de klasse aangepast worden. Indien deze bool op ``true`` staat kunnen Pokémons hun level niet verhoogd worden. Wanneer in dit geval ``VerhoogLevel`` wordt aangeroepen zal er een foutboodschap op het scherm komen.
+
+Toon in je hoofdprogramma aan dat je kunt werken met deze static methoden en properties.
+
 # Digitale kluis
 
 Maak een klasse ``DigitaleKluis`` die we gaan gebruiken om een kluis voor te stellen.
@@ -39,30 +62,3 @@ De klasse heeft volgende elementen:
 * Een private variabele ``aantalpogingen`` om bij te houden hoe vaak de gebruiker geprobeerd heeft de code te vinden.
 
 Maak enkele Digitale Kluis objecten aan in je main en test of je bovenstaande klasse correct is geïmplementeerd.
-
-# Pokémons deel 2
-
-## Constructors
-
-Pas de kennis van constructors toe op je Pokémon-project uit het vorige hoofdstuk. Zorg ervoor dat je Pokémons op 3 manieren kunt aanmaken als volgt:
-
-* Via een default constructor: alle base stats worden daarbij op 10 standaard ingesteld via de constructor
-* Via een overloaded constructor die de gebruiker toelaat om de 6 base stats als parameters mee te geven (bv ``new Pokemon(45,42,50,65,34,67)``)
-* Via object initializer syntax waarbij je eender welke stat kunt instellen.
-
-## Static methoden
-
-* Verhuis de methoden (``GeneratorPokemon`` en ``Battle``) die je maakte in deel 3 van de Pokémon-opdracht in vorige hoofdstuk naar de klasse ``Pokemon`` zelf en test of deze nog steeds werkt. (Is dit een logischere plek?)
-* Voeg enkele static properties met private set toe om bij te houden:
-    * Hoe vaak een Pokémon z'n level werd verhoogd (dus telkens bij aanroep van ``VerhoogLevel``)
-    * Hoe veel Battles er al zijn geweest (verhoogt telkens ``Battle`` wordt uitgevoerd)
-    * Hoe vaak een battle resulteerde in gelijkstand (verhoogd bij gelijkstand in  ``Battle``)
-    * Hoe veel random Pokémons werden aangemaakt (verhoogt telkens ``GeneratorPokemon`` wordt aangeroepen)
-* Maak een static methode ``Info`` die deze properties als een soort samenvatting naar het scherm stuurt
-* Maak een static property ``NoLevelingAllowed`` aan van het type bool. Deze kan van buiten de klasse aangepast worden. Indien deze bool op ``true`` staat kunnen Pokémons hun level niet verhoogd worden. Wanneer in dit geval ``VerhoogLevel`` wordt aangeroepen zal er een foutboodschap op het scherm komen.
-
-Toon in je hoofdprogramma aan dat je kunt werken met deze static methoden en properties.
-
-# Werken met string en csv
-
-Opgelet! Er is geen aparte oefening waar wordt gewerkt rond string en het verwerken van csv-bestanden. Zorg dat je dit beheerst door bijvoorbeeld zelf een oefening uit te werken waarin je een csv-bestand verwerkt!
