@@ -68,7 +68,7 @@ Ook arrays mag je als parameters en returntype gebruiken in methoden. De werking
 
 ## CSV uitlezen naar klasse
 
-We herbekijken het voorbeeld van de csv-parser uit het [vorige hoofdstuk over strings splitsen en csv-bestanden](../h10-advanced-klassen-en-objecten/strings.md)
+We herbekijken het voorbeeld van de csv-parser uit het [vorige hoofdstuk over strings splitsen en csv-bestanden](https://github.com/v-nys/cursusprogrammeren/tree/ce87699fd44fead2f6daa6a8169054bda247ac27/h10-advanced-klassen-en-objecten/strings.md)
 
 We maken nu een klasse Speler:
 
