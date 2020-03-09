@@ -52,11 +52,11 @@ Volgende methoden kan je rechtstreeks op de string-objecten aanroepen \(i.e. nie
 * `ToLower()`: idem maar dan naar kleine letters
 * `Replace(string old, string news)`: zal in de string alle substring die gelijk zijn aan `old` vervangen door de meegegeven `news` string
 
-### Arrays vergelijken
+### Strings vergelijken
 
 De correcte manier om strings te vergelijken is met de `Compare(string s1, string s2)` methode. Deze zal een \`\`int terug geven:
 
-* -1 : de string `s1` komt voor de string`s2` indien je ze alfabetisch zou sorteren.
+* -1 : de string `s1` komt voor de string`s2` indien je ze lexicografisch zou sorteren (dit is ongeveer hetzelfde als alfabetisch, maar maakt bijvoorbeeld een onderscheid tussen kleine letters en hoofdletters).
 * 0: beide strings zijn identiek
 * 1: de string `s2` komt voor `s1`
 
@@ -138,10 +138,6 @@ for (int i = 1; i < splitted.Length; i++)
 
 In dit voorbeeld gaan we er vanuit dat de eerste lijn in het bestand een "header" bevat, die we dus moeten overslaan. Daarom starten we de loop vanaf lijn 1.
 
-### \(PRO\) WebClient
-
-We hebben maar een héél klein stukje van `WebClient` bekeken. Deze hoort niet bij de leerstof, maar is toch voor de geïnteresseerden en zeer nuttige klasse. Kijk bijvoorbeeld eens naar volgende [voorbeelden](https://www.dotnetperls.com/webclient).
-
 ### CSV wegschrijven
 
 Je kan tekst uit een bestand lezen, maar uiteraard kan je ook naar een bestand wegschrijven. De 2 eenvoudigste manieren zijn:
@@ -180,41 +176,3 @@ for (int i = 0; i < lines.Length; i++)
 
 System.IO.File.WriteAllLines("ages.csv", lines);
 ```
-
-## Uitgewerkt met Pokémon
-
-```csharp
-System.Net.WebClient wc = new System.Net.WebClient();
-string downloaded = wc.DownloadString("https://bit.ly/2tE4CB0"); //laatste is een nul
-string[] lines = downloaded.Split('\n');
-//string[] lines = File.ReadAllLines("pokemon.csv");
-List<Pokemon> pokedex = new List<Pokemon>(); //zien we verderop in de cursus
-
-for (int i = 1; i < lines.Length-1; i++)
-{
-    string singlePoke_Line = lines[i];
-
-    /*
-        * #,Name,Type 1,Type 2,Total,HP,Attack,Defense,Sp. Atk,Sp. Def,Speed,Generation,Legendary
-        * 1,Bulbasaur,Grass,Poison,318,45,49,49,65,65,45,1,False
-    */
-
-    string[] data = singlePoke_Line.Split(',');
-    Pokemon poketemp = new Pokemon()
-    {
-        Naam = data[1],
-        Nummer = Convert.ToInt32(data[0]),
-        HP_Base = Convert.ToInt32(data[5]),
-        Attack_Base = Convert.ToInt32(data[6])
-    };
-
-    pokedex.Add(poketemp);
-}
-
-
-for (int i = 0; i < pokedex.Count; i++)
-{
-    Console.WriteLine(pokedex[i].Naam);
-}
-```
-
