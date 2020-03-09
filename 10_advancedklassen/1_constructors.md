@@ -7,9 +7,7 @@
 Objecten die je aanmaakt komen niet zomaar tot leven. Nieuwe objecten maken we aan met behulp van de `new` operator zoals we al gezien hebben:
 
 ```csharp
-Student FrankVermeulen = new Student();
-
-private int leeftijd= 35;
+Student frankVermeulen = new Student();
 ```
 
 De `new` operator doet 2 dingen:
@@ -23,11 +21,10 @@ De constructor is een unieke methode die wordt aangeroepen bij het aanmaken van 
 
 ## Soorten constructors
 
-Als programmeur van eigen klassen zijn er 3 opties voor je:
+Als programmeur van eigen klassen zijn er 2 opties voor je:
 
-* Je gebruikt geen constructors: het leven gaat voort zoals het is. Je kunt objecten aanmaken zoals eerder getoond.
-* Je hebt enkel een **default** constructor nodig. Je kan nog steeds objecten met `new Student()` aanmaken, maar je gaat zelf beschrijven wat er moet gebeuren bij de default constructor
-* Je wenst gebruik te maken van een of meerdere **overloaded** constructoren, hierbij zal je dan extra argumenten kunnen meegeven bij de creatie van een object, bijvoorbeeld: `new Student(24, "Jos")`.
+* Je gebruikt de "default" constructor: het leven gaat voort zoals het is. Je kunt objecten aanmaken zoals eerder getoond.
+* Je schrijft een of meerdere eigen constructor(en). Dit geeft je de controle over wat gebeurt wanneer een object wordt aangemaakt. Je kan eigen code uitvoeren wanneer `new` gebruikt wordt en je kan de mogelijkheid voorzien waarden mee te geven bij het aanmaken van objecten, bijvoorbeeld `Student frankVermeulen = new Student("Frank","Vermeulen");`
 
 ### Constructors zijn soms gratis, soms niet
 
@@ -42,7 +39,7 @@ Van zodra je echter beslist om zelf een of meerdere constructors te schrijven za
 De default constructor is een constructor die geen extra parameters aanvaardt. Een constructor bestaat ALTIJD uit volgende vorm:
 
 * Dit semester is iedere constructor altijd `public` \([meer info](https://stackoverflow.com/questions/30995942/do-constructors-always-have-to-be-public)\)
-* Heeft geen returntype, ook niet `void`.
+* Heeft geen returntype, ook niet `void`. Het gebruik van `new`, gevolgd door deze constructor, levert wel een resultaat, maar we spreken niet over een returntype.
 * Heeft als naam de naam van de klasse zelf.
 
 Stel dat we een klasse `Student` hebben:
@@ -73,6 +70,10 @@ class Student
 Zoals verteld moet de constructor de naam van de klasse hebben, public zijn en geen returntype definiëren.
 
 Vervolgens voegen we de code toe die we nodig hebben:
+
+{% hint style="danger" %}
+Dit is slecht gebruik van `Random`, maar we hebben nog niet de nodige achtergrond om de juiste werkwijze te tonen. Dat komt binnenkort!
+{% endhint %}
 
 ```csharp
 class Student
@@ -106,7 +107,7 @@ class Student
 }
 ```
 
-### Overloaded constructor
+### Constructor met parameter(s)
 
 Soms wil je argumenten aan een object meegeven bij creatie. We willen bijvoorbeeld de leeftijd meegeven die het object moet hebben bij het aanmaken. Met andere woorden, stel dat we dit willen schrijven:
 
@@ -130,12 +131,12 @@ class Student
 }
 ```
 
-Dat was eenvoudig he. **Maar** denk eraan: je hebt een overloaded constructor geschreven en dus heeft C\# gezet "ok, je schrijft zelf constructor, trek je plan. Maar de default zal je ook zal moeten schrijven!" Je kan nu enkel je objecten met `new Student(25)` aanmaken. Schrijf je `new Student()` dan zal je een error krijgen. Wil je die constructor, de default constructor, nog hebben dan zal je die dus ook moeten schrijven, bijvoorbeeld:
+Dat was eenvoudig. **Maar** denk eraan: je hebt een eigen constructor geschreven en dus heeft C\# gezet "ok, je schrijft zelf constructor, trek je plan. Maar de default zal je ook zal moeten schrijven!" Je kan nu enkel je objecten met `new Student(25)` aanmaken. Schrijf je `new Student()` dan zal je een error krijgen. Wil je die constructor nog hebben, dan zal je die met de hand moeten schrijven, bijvoorbeeld:
 
 ```csharp
 class Student
 {
-    public Student(int startage) //overloaded
+    public Student(int startage) // met parameter
     {
         age= startage;
     }
@@ -150,9 +151,16 @@ class Student
 }
 ```
 
-#### Meerdere overloaded constructor
+### Wanneer heb ik constructoren nodig?
+Tot zeer recent maakten we onze objecten steeds aan met de default constructor. Pas daarna gaven we eventuele properties de juiste waarde. Dat houdt een risico in: er is een periode waarin onze objecten nog niet "af" zijn. In het slechtste geval vergeten we zelfs om de properties in te stellen en krijgen we objecten die misschien ongeldig zijn.
 
-Wil je meerdere overloaded constructors dan mag dat ook. Je wilt misschien een constructor die de leeftijd vraag alsook een bool om mee te geven of het om een werkstudent gaat:
+Constructoren helpen dit probleem te voorkomen. Als we één constructor hebben, bijvoorbeeld `Student(string name)`, **moeten** we die gebruiken. We kunnen dus niet vergeten bijvoorbeeld `frankVermeulen.Name = "Frank Vermeulen" te schrijven, want we worden gedwongen meteen `new Student("Frank Vermeulen")` te schrijven.
+
+Samengevat: **als er eigenschappen zijn die je meteen bij het aanmaken van een object wil instellen, maak er dan parameters van een constructor voor**.
+
+#### Overloaded constructoren
+
+Wil je meerdere overloaded constructors, dan mag dat ook. Je wilt misschien een constructor die de leeftijd vraag alsook een bool om mee te geven of het om een werkstudent gaat:
 
 ```csharp
 class Student
@@ -179,40 +187,34 @@ class Student
 }
 ```
 
-## Object initializer syntax
-
-Uit voorgaande merk je dat je moet opletten dat je niet tientallen overloaded constructor schrijft voor iedere combinatie van parameters die je mogelijk nodig hebt. Meestal beperken we het tot de default constructor en 1 of 2 heel veel gebruikte overloaded constructor.
-
-Dankzij object initializer syntax kan je namelijk ook parameters aan variabelen meegeven zonder dat je hiervoor een specifieke constructor voor moet schrijven.
-
-Object initializer syntax laat je toe om tijdens \(eigenlijk direct er na\) creatie van een object Propertier beginwaarden te geven.
-
-Stel dat we volgende klasse hebben:
+#### Constructor chaining
+Als je meerdere overloaded constructoren hebt, hoef je niet in elke constructor alle code voor objectinitialisatie te schrijven. Het sleutelwoordje `this` biedt de mogelijkheid **eerst** een andere constructor aan te roepen en eventueel andere operaties toe te voegen. Dit heet **constructor chaining**. In bovenstaand voorbeeld kan je ook dit schrijven:
 
 ```csharp
-class TemperatuurMeting
+class Student
 {
-    public double Temperatuur {get;set;}
-    public string GemetenDoor {get;set;}
-    public bool IsGeconfirmeerd {get;set;}
+    public Student(int startage) : this(startage, false);
+    {
+    // niet nodig hier code uit uitgebreidere constructor te herhalen
+    // hier kan nog extra code worden uitgevoerd na de oproep van de uitgebreide constructor
+    }
+
+    public Student(int startage, bool werkstart) //overloaded
+    {
+        age= startage;
+        isWerkStudent=werkstart;
+    }
+
+    public Student() //default
+    {
+        // helaas wordt onderstaande code pas **na** de chained constructor opgeroepen
+	// gebruik van this heeft hier dus niet veel zin
+        Random r= new Random();
+        age= r.Next(10,20);
+    }
+
+    private int age;
+    private bool isWerkStudent
 }
 ```
-
-We kunnen deze properties beginwaarden geven via volgende initializer syntax:
-
-```csharp
-TemperatuurMeting eenMeting = new TemperatuurMeting { Temperatuur= 3.4, IsGeconfirmeerd=true};
-```
-
-Enkele opmerkingen hierbij:
-
-* Je ziet het niet, maar sowieso wordt eerst nu de \(onzichtbare\) default constructor aangeroepen. Pas wanneer die klaar is zullen de properties de waarden krijgen die je meegeeft. Als je dus zelf een default constructor in `TemperatuurMeting` had geschreven dan had eerst die code uitgevoerd zijn geweest. Voorgaande voorbeeld zal intern eigenlijk als volgt plaatsvinden:
-
-```csharp
-TemperatuurMeting eenMeting = new TemperatuurMeting();
-eenMeting.Temperatuur = 3.4;
-eenMeting.IsGeconfirmeerd = true;
-```
-
-* Je hoeft niet alle \(publieke\) properties via deze syntax in te stellen, enkel de zaken die je wilt meegeven.
 

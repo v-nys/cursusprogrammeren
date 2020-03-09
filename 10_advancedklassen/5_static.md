@@ -4,11 +4,11 @@
 
 Je hebt het keyword `static` al een paar keer zien staan voor methoden het vorige semester. En dit semester werd er dan weer nadrukkelijk verteld géén `static` voor methoden te plaatsen. Wat is het nu?
 
-Bij klassen en objecten duidt `static` aan dat een methode of variabele "gedeeld" wordt over alle objecten van die klasse.
+Een `static` onderdeel van een klasse hoort **bij de klasse zelf** en **niet bij specifieke instanties** van die klasse. Je hoeft dus geen instanties aan te maken om gebruik te maken van dit onderdeel.
 
 `static` kan op 2 manieren gebruikt worden:
 
-1. Bij _variabelen_ om een gedeelde variabele aan te maken, over de objecten heen.
+1. Bij _variabelen_ om een gedeelde variabele aan te maken, over de objecten van die klasse heen.
 2. Bij _methoden_ om zogenaamde methoden-bibliotheken of hulpmethoden aan te maken.
 
 ### Variabelen en het static keyword
@@ -180,6 +180,9 @@ Merk op dat we de methoden `VerminderFiets` enkel via de klasse kunnen aanroepen
 Fiets.VerminderFiets();
 ```
 
+#### `private static`?
+Merk op dat, in bovenstaand voorbeeld, `aantalFietsen` `private` is en dat er geen publieke property aanwezig is, terwijl een constructor **wel** bij een instantie hoort. Herinner je ook dat `private` onderdelen van een klasse alleen toegankelijk zijn vanuit code binnenin die klasse. De code voor objecten van een bepaalde klasse staat ook binnenin die klasse, dus `private static` onderdelen van een klasse **zijn toegankelijk voor de objecten van die klasse**!
+
 ## Static vs non-static
 
 Van zodra je een methode hebt die `static` is dan zal deze methode enkel andere ```static`` methoden en variabelen kunnen aanspreken. Dat is logisch: een static methode heeft geen toegang tot de gewone niet-statische variabelen van een individueel object, want welk object zou hij dan moeten aanpassen?
@@ -218,158 +221,3 @@ public class Program
 Zoals je ziet is de `Main` methode als `static` gedefinieerd. Willen we dus vanuit deze methode andere methoden aanroepen dan moeten deze als `static` aangeduid zijn.
 
 Uiteraard kan je wel niet-static zaken gebruiken en daarom kan je dus gewone objecten etc. in je static methoden aanmaken.
-
-## Een use-case met static
-
-Beeld je in dat je \(weer\) een pong-variant moet maken waarbij meerdere balletjes over het scherm moeten botsen. Je wilt echter niet dat de balletjes zelf allemaal apart moeten weten wat de grenzen van het scherm zijn. Mogelijk wil bijvoorbeeld dat je code ook werkt als het speelveld kleiner is dan het eigenlijke Console-scherm.
-
-We gaan dit oplossen met een static property waarin we de grenzen voor alle balletjes bijhouden. Onze basis-klasse wordt dan al vast:
-
-```csharp
-class Mover
-{
-    static public int Width { get; set; }
-    static public int Height { get; set; }
-
-    public void Update()
-    {
-        //Soon
-    }
-
-    public void Draw()
-    {
-        //Soon
-    }
-}
-```
-
-Elders kunnen we nu dit doen:
-
-```csharp
-Mover.Height = Console.WindowHeight;
-Mover.Width = Console.WindowWidth;
-
-Mover m1 = new Mover();
-Mover m2= new Mover();
-```
-
-Maar dat hoeft dus niet, even goed maken we de grenzen voor alle balletjes kleiner:
-
-```csharp
-Mover.Height = 20;
-Mover.Width = 10;
-
-Mover m1 = new Mover();
-Mover m2= new Mover();
-```
-
-De interne werking van de balletjes hoeft dus geen rekening meer te houden met de grenzen van het scherm. De klasse `Mover` bereiden we nu uit naar de standaard "beweeg" en "teken jezelf" code:
-
-```csharp
-class Mover
-{
-    public Mover(int xi, int yi, int dxi, int dyi)
-    {
-        x = xi;
-        y = yi;
-        dx = dxi;
-        dy = dyi;
-    }
-
-    static public int Width { get; set; }
-    static public int Height { get; set; }
-
-    private int dx=1;
-    private int dy=0;
-    private int x=0;
-    private int y=0;
-
-    public void Update()
-    {
-        x += dx;
-        if(x>=Mover.Width|| x<0)  //hier gebruiken we de static Width
-        {
-            dx *= -1;
-            x += dx;
-        }
-
-        y += dy;
-        if (y >= Mover.Height || y<0)
-        {
-            dy *= -1;
-            y += dy;
-        }
-    }
-
-    public void Draw()
-    {
-        Console.SetCursorPosition(x, y);
-        Console.Write("O");
-    }
-}
-```
-
-En nu kunnen we vlot balletjes laten rondbewegen op het scherm:
-
-```csharp
-static void Main(string[] args)
-{
-    Console.CursorVisible = false; //handig dit hoor
-    Mover.Height = Console.WindowHeight;
-    Mover.Width = Console.WindowWidth;
-
-    Mover m1 = new Mover(1,1,1,1);
-    Mover m2 = new Mover(6,7,-2,1);
-
-    while (true)
-    {
-        m1.Update();
-        m1.Draw();
-
-        m2.Update();
-        m2.Draw();
-
-
-        System.Threading.Thread.Sleep(50);
-        Console.Clear();
-    }
-}
-```
-
-Stel dat we nu elke seconden het speelveld met 1 willen vergroten, dan hoeven we hiervoor enkel een extra variabele `int count=0` voor de loop te zetten en dan in de loop het volgende te doen:
-
-```csharp
- if(count%20==0) //iedere seconde (daar we telkens 50ms slapen (1seconde =1000 ms => 1000ms/50ms == 20))
-{
-    Mover.Width++;
-    Mover.Height++;
-}
-```
-
-### Maximum grootte
-
-Als je voorgaande code zou runnen zal je zien dat je redelijk snel een error krijgt. Dit komt omdat de hoogte en breedte van een Console maar tot bepaalde waardes kunnen verhogen.
-
-We kunnen dit opvangen door in de klasse `Mover` volgende twee autoproperties:
-
-```csharp
-    static public int Width { get; set; }
-    static public int Height { get; set; }
-```
-
-Te vervangen door fullproperties die controleren of er niet over de grenzen wordt gegaan mbv `Console.LargestWindowWidth` en `Console.LargestWindowHeight`. Voor ```Width``krijgen we dan:
-
-```csharp
-private static int width;
-
-public static int Width
-{
-    get { return width; }
-    set
-    {
-        if (value > 0 && value <  Console.LargestWindowWidth)
-            width = value;
-    }
-}
-```
-
