@@ -638,7 +638,8 @@ class Mens
 - Zodra je een methode static maakt kan deze alleen maar
     - **static variabelen** gebruiken
     - **static methoden** aanroepen
-- **Logisch**: Welk object zou hij dan aanpassen? Is er zelfs een geinstantieerd object van die klasse?
+- **instantiemethoden** en **variabelen of properties** van een instantie zijn er niet
+- kan wel aan **externe** objecten (aangemaakt via `new` of doorgegeven als argument)
 
 ---
 
