@@ -1983,3 +1983,7 @@ H5P iframe:
 WP beta site iframe
 
 <iframe src="http://beta.eaict.ap.be/wp-admin/admin-ajax.php?action=h5p_embed&id=1" width="958" height="625" frameborder="0" allowfullscreen="allowfullscreen"></iframe><script src="http://beta.eaict.ap.be/wp-content/plugins/h5p/h5p-php-library/js/h5p-resizer.js" charset="UTF-8"></script>
+
+insidegithub iframe
+
+<iframe src="https://github.com/timdams/csharpbook/raw/master/test.h5p?action=h5p_embed&id=1" width="958" height="625" frameborder="0" allowfullscreen="allowfullscreen"></iframe><script src="https://h5p.org/sites/all/modules/h5p/library/js/h5p-resizer.js" charset="UTF-8"></script>
