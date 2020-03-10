@@ -1,12 +1,41 @@
 ---
 marp: true
 ---
+<style>
+section {
+  padding: 100px;
+  padding-left: 120px;
+  padding-bottom: 200px;
+  background-image: url('background.png');
+  background-size: cover;
+}
+h1 {
+    color: rgb(153,35,36)
+}
+</style>
 
-# **OO Programmeren**
-Geheugenmanagement
+# OO Programmeren
+<style scoped>
+section {
+  padding-left: 400px;
+  color: white;
+}
+h1 {
+  font-size: 60px;
+  color: white;
+}
+a {
+  color: white ;
+}
+h3 {
+  font-size: 40px;
+  color: white
+}
+</style>
+![bg](background_cover.png)
+### Geheugenmanagement
 
-https://apwt.gitbook.io/cursus-pro-oo/
-
+https://apwt.gitbook.io/cursus-pro-oo
 
 ---
 

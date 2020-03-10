@@ -1,9 +1,38 @@
 ---
 marp: true
 ---
-![bg left:40% 80%](oop.png)
+<style>
+section {
+  padding: 100px;
+  padding-left: 140px;
+  padding-bottom: 200px;
+  background-image: url('background.png');
+  background-size: cover;
+}
+h1 {
+    color: rgb(153,35,36)
+}
+</style>
 
-# **OO Programmeren**
+# OO Programmeren
+<style scoped>
+section {
+  padding-left: 400px;
+  color: white;
+}
+h1 {
+  font-size: 60px;
+  color: white;
+}
+a {
+  color: white ;
+}
+h3 {
+  font-size: 40px;
+  color: white
+}
+</style>
+![bg](background_cover.png)
 
 DateTime: Leren werken met objecten
 

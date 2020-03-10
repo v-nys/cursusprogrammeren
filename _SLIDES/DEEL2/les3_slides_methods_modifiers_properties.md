@@ -1,14 +1,41 @@
 ---
 marp: true
 ---
-![bg left:40% 80%](oop.png)
+<style>
+section {
+  padding: 100px;
+  padding-left: 140px;
+  padding-bottom: 200px;
+  background-image: url('background.png');
+  background-size: cover;
+}
+h1 {
+    color: rgb(153,35,36)
+}
+</style>
 
-# **OO Programmeren**
+# OO Programmeren
+<style scoped>
+section {
+  padding-left: 400px;
+  color: white;
+}
+h1 {
+  font-size: 60px;
+  color: white;
+}
+a {
+  color: white ;
+}
+h3 {
+  font-size: 40px;
+  color: white
+}
+</style>
+![bg](background_cover.png)
+### Methoden, modifiers en properties
 
-Methoden, modifiers en properties
-
-https://apwt.gitbook.io/cursus-pro-oo/
-
+https://apwt.gitbook.io/cursus-pro-oo
 
 ---
 
@@ -116,21 +143,17 @@ Mijn geheim is dat ik leef!
 class Mens
 {
     private int leeftijd = 1;
-
     public void VerjaardagVieren()
     {
         Console.WriteLine("Hiphip hoera voor mezelf!");
         leeftijd++;
         Praat();
     }
-
     public void Praat()
     {
         Console.WriteLine("Ik ben een mens! ");
         Console.WriteLine($"Ik ben {leeftijd} jaar oud");
-
     }
-
 }
 ```
 ---
@@ -178,15 +201,12 @@ class SithLord
 {
     private int energy;
     private string sithName;
-
     public int Energy
     {
-        get
-        {
+        get {
             return energy;
         }
-        set
-        {
+        set {
             energy = value;
         }
     }
@@ -266,12 +286,10 @@ Console.WriteLine($"Vaders energy is {Vader.Energy}"); //get
 ```c#
    public int Energy
     {
-        get
-        {
+        get {
             return energy;
         }
-        private set
-        {
+        private set {
             if(value >= 0)
                 energy = value;
         }
@@ -280,27 +298,28 @@ Console.WriteLine($"Vaders energy is {Vader.Energy}"); //get
 **Let op:** Gebruik de properties anders worden de toegangscontroles niet gebruikt.
 
 ---
-
+<style scoped>
+    pre {
+            font-size:70%
+    }
+</style>
 # Slechte code!
+
 ```c#
 class SithLord
 {
     private int energy;
     private string sithName;
-
     public void ResetLord()
     {
         energy = -1;
     }
-
     public int Energy
     {
-        get
-        {
+        get {
             return energy;
         }
-        private set
-        {
+        private set {
             if(value >= 0)
                 energy = value;
         }
@@ -320,7 +339,11 @@ Het is een goede gewoonte om zo vaak mogelijk via de properties je interne varia
 
 ---
 # Read-only Get-omvormers
-
+<style scoped>
+    pre {
+            font-size:70%
+    }
+</style>
 - Niet verplicht om voor iedere instance variabele een property te schrijven.
 - Niet elke property komt overeen met een instance variabele.
 
@@ -342,6 +365,7 @@ class Persoon
     }
 }
 ```
+
 ---
 # Read-only Get-omvormers: nog een voorbeeld
 
@@ -404,7 +428,11 @@ class Persoon
 
 ---
 # zonder auto properties
-
+<style scoped>
+    pre {
+            font-size:70%
+    }
+</style>
 ```
 public class Person
 {
