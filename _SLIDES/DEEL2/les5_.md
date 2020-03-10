@@ -411,7 +411,7 @@ class Student
     ```
 - Dit werkt **niet** zoals gehoopt
     ```c#
-    public Student() : this(numberString.ToString(),"Trammezandlei")
+    public Student() : this(number.ToString(),"Trammezandlei")
     {
         // dit gebeurt pas **na** oproep andere constructor
         Random r = new Random();
