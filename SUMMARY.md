@@ -99,7 +99,9 @@
   * [Null en NullReferenceException](9_meminoop/nullreference.md)
   * [_Oefeningen](9_meminoop/A_poke1.md)
 * H10: Advanced klassen en objecten
-  * [Constructors](10_advancedklassen/1_constructors.md)
+  * [Default Constructors](10_advancedklassen/1_constructors.md)
+  * [Overloaded Constructors](10_advancedklassen/2_overloadedconstructor.md)
+  * [Object Initializer Syntax](10_advancedklassen/2_objectinitsyntax.md)
   * [Static](10_advancedklassen/5_static.md)
   * [_Oefeningen](10_advancedklassen/A_practica3.md)
 * H11: Arrays en klassen
