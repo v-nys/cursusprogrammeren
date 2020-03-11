@@ -1,45 +1,106 @@
-# Labo-oefeningen
+# Pokémons makkelijk aanmaken (h10-pokeconstructie)
+## Leerdoelen
+* gebruik van expliciete constructoren
 
-## Pokémons deel 2
+## Functionele analyse
+Zorg ervoor dat elke Pokémon bij constructie zijn eigenschappen krijgt.
 
-### Constructors
+## Technische analyse
+* Voorzie je klasse Pokémon (uit hoofdstuk 9) van een constructor zonder parameters. Dit om bestaande code intact te houden.
+* Voorzie je klasse Pokémon (uit hoofdstuk 9) van een constructor met vier parameters, één per property. Pas je methode `MakePokemon` van hoofdstuk 9 aan zodat gebruik wordt gemaakt van deze constructor in plaats van de constructor zonder argumenten.
 
-Pas de kennis van constructors toe op je Pokémon-project uit het vorige hoofdstuk. Zorg ervoor dat je Pokémons op 3 manieren kunt aanmaken als volgt:
+## Voorbeeldinteractie
+(Hier is geen verschil met hoe dit er in hoofdstuk 9 uitzag.)
 
-* Via een default constructor: alle base stats worden daarbij op 10 standaard ingesteld via de constructor
-* Via een overloaded constructor die de gebruiker toelaat om de 6 base stats als parameters mee te geven \(bv `new Pokemon(45,42,50,65,34,67)`\)
-* Via object initializer syntax waarbij je eender welke stat kunt instellen.
+# Pokémons makkelijk aanmaken (h10-chaining)
+## Leerdoelen
+* gebruik van expliciete constructoren
+* herbruik van bestaande constructor
 
-### Static methoden
+## Functionele analyse
+Wanneer we een willekeurige Pokémon aanmaken, start deze normaal met de helft van zijn maximale hit points. We willen onszelf het werk besparen van dit elke keer uit te typen, dus we voorzien een extra constructor.
+## Technische analyse
+Maak een nieuwe constructor met **drie** argumenten in plaats van vier. Het argument voor HP valt weg. Deze nieuwe constructor maakt eerst gebruik van de bestaande constructor met vier argumenten. Daarna past hij in zijn body de hoeveelheid HP aan naar de helft van het maximum. Bij het gebruik van de meer algemene constructor maakt het niet uit welke waarde je meegeeft voor de huidige hit points. Test je constructor uit met een (statische) demomethode `ConstructPokemonChained()`. Deze maakt met deze nieuwe constructor een nieuwe Pokémon (naar keuze) aan met een maximale hoeveelheid HP naar keuze en toont de uitkomst.
 
-* Verhuis de methoden \(`GeneratorPokemon` en `Battle`\) die je maakte in deel 3 van de Pokémon-opdracht in vorige hoofdstuk naar de klasse `Pokemon` zelf en test of deze nog steeds werkt. \(Is dit een logischere plek?\)
-* Voeg enkele static properties met private set toe om bij te houden:
-  * Hoe vaak een Pokémon z'n level werd verhoogd \(dus telkens bij aanroep van `VerhoogLevel`\)
-  * Hoe veel Battles er al zijn geweest \(verhoogt telkens `Battle` wordt uitgevoerd\)
-  * Hoe vaak een battle resulteerde in gelijkstand \(verhoogd bij gelijkstand in  `Battle`\)
-  * Hoe veel random Pokémons werden aangemaakt \(verhoogt telkens `GeneratorPokemon` wordt aangeroepen\)
-* Maak een static methode `Info` die deze properties als een soort samenvatting naar het scherm stuurt
-* Maak een static property `NoLevelingAllowed` aan van het type bool. Deze kan van buiten de klasse aangepast worden. Indien deze bool op `true` staat kunnen Pokémons hun level niet verhoogd worden. Wanneer in dit geval `VerhoogLevel` wordt aangeroepen zal er een foutboodschap op het scherm komen.
+## Voorbeeldinteractie
+```text
+De nieuwe Squirtle heeft maximum 40 HP en heeft momenteel 20 HP.
+```
 
-Toon in je hoofdprogramma aan dat je kunt werken met deze static methoden en properties.
+# Pokémons makkelijk aanmaken (h10-pokebattlecount)
+## Leerdoelen
+* verschil tussen klasse en object
 
-## Digitale kluis
+## Functionele analyse
+We willen bijhouden hoe vaak elk element al gebruikt is voor een aanval. Voeg code toe die bijhoudt hoe vaak een Pokémon van type `Grass` al heeft aangevallen, hoe vaak een Pokémon van type `Fire` al heeft aangevallen, etc. Voeg ook een statische methode, `DemonstrateCounter()` aan die vijf willekeurige Pokémon aanmaakt en elke Pokémon tussen de 5 en de 10 keer laat aanvallen.
 
-Maak een klasse `DigitaleKluis` die we gaan gebruiken om een kluis voor te stellen.
+## Technische analyse
+Bij een aanval van een Pokémon met een bepaald type, gaat er een teller omhoog. Er is één teller per `PokéType`.
 
-De klasse heeft volgende elementen:
+## Voorbeeldinteractie
+```text
+BULBASAUR!
+BULBASAUR!
+BULBASAUR!
+BULBASAUR!
+BULBASAUR!
+SQUIRTLE!
+SQUIRTLE!
+SQUIRTLE!
+SQUIRTLE!
+SQUIRTLE!
+PIKACHU!
+PIKACHU!
+PIKACHU!
+PIKACHU!
+PIKACHU!
+CHARMANDER!
+CHARMANDER!
+CHARMANDER!
+CHARMANDER!
+CHARMANDER!
+CHARMANDER!
+BULBASAUR!
+BULBASAUR!
+BULBASAUR!
+BULBASAUR!
+BULBASAUR!
+BULBASAUR!
+BULBASAUR!
+Aantal aanvallen van Pokémon met type `Grass`: 12
+Aantal aanvallen van Pokémon met type `Fire`: 6
+Aantal aanvallen van Pokémon met type `Electric`: 4
+Aantal aanvallen van Pokémon met type `Water`: 5
+```
 
-* Een private variabele die de toegangscode van de kluis bewaard als geheel getal \(naam: `code`\) 
-* Een overloaded constructor die als parameter een geheel getal toelaat. Dit getal zal worden toegewezen aan de private variabele code.
-* Een full property `CanShowCode` die kan ingesteld worden op true or false, om aan te geven of de code van buitenuit kan gezien worden.
-* Een read-only property `CodeLevel` van type int. Deze property zal het level van de code teruggeven. Het level is eenvoudigweg de code gedeeld door 1000 als geheel getal \(dus indien de code 500 is zal 0 worden teruggegeven, indien de code 2000 is wordt 2 teruggegeven, etc.\) 
-* Een fullproperty `Code` met private set. De get van deze property zal -666 teruggeven, tenzij CanShowcode op true staat, in dit geval zal de effectieve code worden terug gegeven. 
-* Een methode `TryCode` die een geheel getal als parameter aanvaardt. De methode geeft een true terug indien de code correct was, anders false. Deze methode kan gebruikt worden om extern een code te testen , indien deze overeenkomt met de bewaarde code dan zal gemeld worden dat de code geldig is en wordt ook getoond hoeveel keer de gebruiker geprobeerd heeft. Indien de gebruiker -666 meegaf dan meldt de methode dat de gebruiker een cheater is . Indien de gebruiker een foute code meegaf dan meldt de methode dat dit een foute code was en wordt het aantal pogingen met 1 verhoogd.  
-* Een private variabele `aantalpogingen` om bij te houden hoe vaak de gebruiker geprobeerd heeft de code te vinden.
+(Merk op: er zijn twee Bulbasaurs in het spel, maar alle aanvallen van graspokémon zijn samen geteld.)
 
-Maak enkele Digitale Kluis objecten aan in je main en test of je bovenstaande klasse correct is geïmplementeerd.
+# Gemeenschappelijke kenmerken (h10-tombola)
 
-## Werken met string en csv
+## Leerdoelen
+* goed gebruik van `Random`
+* `static`
+* `constructoren`
 
-Opgelet! Er is geen aparte oefening waar wordt gewerkt rond string en het verwerken van csv-bestanden. Zorg dat je dit beheerst door bijvoorbeeld zelf een oefening uit te werken waarin je een csv-bestand verwerkt!
+## Functionele analyse
+We schrijven een digitale tombola. Iedere keer een lotje wordt aangemaakt, wordt er een willekeurig getal aan toegekend.
 
+## Technische analyse
+Maak een klasse, `Ticket`. Deze is voorzien van één autoproperty: `Prize`. Dit is een `byte`. Bij aanmaak van een `Ticket` wordt deze property ingesteld op een waarde tussen 1 en 100. Schrijf je code zodat dezelfde `Random` gebruikt wordt voor alle tickets. Je kan dus geen `Random` aanmaken iedere keer je een `Ticket` aanmaakt! Maak ook een methode `Raffle` (d.w.z. "tombola") om te demonstreren dat dit werkt. Deze methode maakt een rij met 10 lotjes aan en print de waarde van elk lotje in de rij. Het is niet erg dat twee lotjes dezelfde waarde kunnen krijgen.
+
+## Voorbeeldinteractie
+```text
+Waarde van het lotje: 77
+Waarde van het lotje: 8
+Waarde van het lotje: 12
+Waarde van het lotje: 14
+Waarde van het lotje: 51
+Waarde van het lotje: 97
+Waarde van het lotje: 20
+Waarde van het lotje: 15
+Waarde van het lotje: 32
+Waarde van het lotje: 68
+```
+
+# CSV
+Schrijf een statische klasse `CSVDemo` met een statische methode `Run()`. Deze downloadt automatisch [dit bestand](http://samplecsvs.s3.amazonaws.com/SalesJan2009.csv) en print de info in de eerste drie kolommen op het scherm. Tussen elke kolom verschijnt een tab.
