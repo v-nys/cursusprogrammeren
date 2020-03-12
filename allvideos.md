@@ -75,18 +75,21 @@ Op volgende pagina vind je alle kennisclips en andere opnames samen die doorheen
 * [Stack Overflow Exception](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=640a52f0-9ea0-42fc-b1f6-ab7a0093eda6)
 * [Hoe de pokemon klasse werkt](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=245f5d03-dbe4-49d9-b9e9-ab720084b984)
 
-### hoofdstuk 10 - Advanced klasse concepten
+### Hoofdstuk 10 - Advanced klasse concepten
 
 * [Constructors intro en default constructor](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=8d9b4ad8-2732-47e7-8972-ab7a00935196)
 * [Overloaded constructors](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=24f83488-a058-4898-b34d-ab7a0097f165)
 * [Object initialize Syntax](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=8f1ceebc-9f02-4593-84da-ab7a0099bf99)
 * [static keyword](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=04805e97-94e8-4593-b30c-ab750089ffa6)
 
-### hoofdstuk 11 - Arrays van klassen
+### Hoofdstuk 11 - Arrays van klassen
 
 * [var keyword](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=8ba39f71-889e-4e48-9f3b-ab750087d034)
 * [De foreach loop](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=e268b0f3-5226-4279-a69c-ab7500892031)
 * [List<> klasse](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=ac1bfe58-b55b-4e7e-98f3-ab7a009085bc)
+
+### Hoofdstuk 12 - Overerving
+* [Overerving overzicht](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=c8b828c5-87c0-4339-a61c-ab7c00aef24d)
 
 ### Appendix - Git
 
