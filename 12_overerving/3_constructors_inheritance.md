@@ -94,3 +94,7 @@ class Medic:Soldier
 ```
 
 Uiteraard mag je ook de default constructor aanroepen vanuit de child-constructor, alle combinaties zijn mogelijk (zolang de constructor in kwestie maar bestaat in de parent-klasse).
+
+# Kennisclip
+![](../assets/infoclip.png)
+*[Constructors bij overerving](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=a83a530e-11ff-47eb-b4cf-ab7c00b75401)

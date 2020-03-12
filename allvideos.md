@@ -90,6 +90,8 @@ Op volgende pagina vind je alle kennisclips en andere opnames samen die doorheen
 
 ### Hoofdstuk 12 - Overerving
 * [Overerving overzicht](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=c8b828c5-87c0-4339-a61c-ab7c00aef24d)
+* [Constructors bij overerving](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=a83a530e-11ff-47eb-b4cf-ab7c00b75401)
+* [Virtual en override](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=d549422d-eb27-4dd5-8154-ab7c00ba0728)
 
 ### Appendix - Git
 
