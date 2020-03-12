@@ -2,10 +2,10 @@
 * [Welkom](README.md)
 * Inleiding
   * [Benodigdheden](_intro/benodigdheden.md)
-  * [Nuttige extras](_intro/nuttigeextras.md)
   * [Dankwoord](_intro/dankwoord.md)
   * [Mee helpen?](_intro/helpen.md)
-  * [Oplijsting videos](allvideos.md)
+* [Nuttige extras](_intro/nuttigeextras.md)
+* [Oplijsting videos](allvideos.md)
 
 ## Semester 1: Programming Principles
 
