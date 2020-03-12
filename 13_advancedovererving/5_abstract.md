@@ -62,3 +62,8 @@ class Paard: Dier
 
 ### Abstracte methoden enkel in abstracte klassen
 Van zodra een klasse een abstracte methode of property heeft dan ben je, logischerwijs, verplicht om de klasse ook abstract te maken. 
+
+# Kennisclip
+![](../assets/infoclip.png)
+
+* [Abstract klassen](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=a6f513b8-e299-4118-986d-ab7c00e47861)

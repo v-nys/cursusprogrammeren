@@ -93,6 +93,9 @@ Op volgende pagina vind je alle kennisclips en andere opnames samen die doorheen
 * [Constructors bij overerving](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=a83a530e-11ff-47eb-b4cf-ab7c00b75401)
 * [Virtual en override](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=d549422d-eb27-4dd5-8154-ab7c00ba0728)
 
+### Hoofdstuk 13 - Advanced overerving
+* [Abstracte klassen](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=a6f513b8-e299-4118-986d-ab7c00e47861)
+* 
 ### Appendix - Git
 
 * [Git hoorcollege/Workshop](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=e792a44a-98ee-43d4-a466-ab5d00900024)
