@@ -1,5 +1,7 @@
 # Kennisclips
+
 ![](../assets/infoclip.png)
+
 Op volgende pagina vind je alle kennisclips en andere opnames samen die doorheen de cursus verspreid staan bij de relevante hoofdstukken.
 
 ## Semester 1
@@ -95,7 +97,7 @@ Op volgende pagina vind je alle kennisclips en andere opnames samen die doorheen
 
 ### Hoofdstuk 13 - Advanced overerving
 * [Abstracte klassen](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=a6f513b8-e299-4118-986d-ab7c00e47861)
-* 
+* [System.Object en ToString](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=00cad992-7714-4051-a992-ab7d0093864b)
 ### Appendix - Git
 
 * [Git hoorcollege/Workshop](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=e792a44a-98ee-43d4-a466-ab5d00900024)
