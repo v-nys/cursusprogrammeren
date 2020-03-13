@@ -129,6 +129,7 @@
   * [_Oefeningen](14_compositie/A_PracticaComp.md)
 * H15: Polymorfisme
   * [Polymorfisme](15_polymorfisme/11_polymo_intro.MD)
+  * [Polymorfisme in de praktijk](15_polymorfisme/polypraktijd.md)
   * [Is en As keywords](18_IsAs/1_IsAs.md)
   * [Objecten vergekijken: alles komt samen](18_IsAs/6_equals.md)
   * [_Oefeningen](15_polymorfisme/A_Practica.md)

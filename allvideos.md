@@ -98,6 +98,10 @@ Op volgende pagina vind je alle kennisclips en andere opnames samen die doorheen
 ### Hoofdstuk 13 - Advanced overerving
 * [Abstracte klassen](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=a6f513b8-e299-4118-986d-ab7c00e47861)
 * [System.Object en ToString](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=00cad992-7714-4051-a992-ab7d0093864b)
+* [Equals - objecten vergelijken](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=c18b27c9-ad5a-444b-9695-ab7d00c2c3d9)
+
+### Hoofdstuk 15 - Polymorfisme
+* [Polymorfisme](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=6bc13cf3-83d0-449d-9d8f-ab7d00c5a021)
 
 ### Appendix - Git
 
