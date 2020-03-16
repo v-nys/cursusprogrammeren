@@ -111,7 +111,9 @@
   * [_Oefeningen](11_arraysvanklassen/A_practicaMem.md)
 * Module 3 eindetest
   * [Opgave 1](EindeTests/Mod3/Opgave.md)
-  * [Opgave 2 (in opbouw)](EindeTests/Mod3/Opgave2.md)
+  * [Opgave 2](EindeTests/Mod3/Opgave2.md)
+ *  [Oplossing Opgave 2 ](EindeTests/Mod3/Opgave2Opl.md)
+  * [Opgave 3 "Corona training"](EindeTests/Mod3/Opgave3_corona.md)
   * [Opgave vaardigheidsproef mod 3 1819](EindeTests/Mod3/Opgave_1819.md)
   * [Bespreking vaardigheidsproef mod 3 1819](EindeTests/Mod3/Oplossing_1819.md)
 * H12: Overerving
