@@ -122,6 +122,7 @@
   * [Virtual en override](12_overerving/1_virtual_override.md)
   * [Base keyword](12_overerving/2_base.md)
   * [_Oefeningen](12_overerving/A_PracticaSimpel.md)
+  * [_Corona Missie](12_overerving/coronamissieoverering.md)
 * H13: Advanced overerving
   * [System.Object](13_advancedovererving/4_System_Object.md)
   * [Abstract](13_advancedovererving/5_abstract.md)

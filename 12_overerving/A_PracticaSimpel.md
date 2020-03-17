@@ -43,7 +43,7 @@ Toon de werking aan van deze klasse.
 
 # Ballspel met overerving
 
-Volgende code toont hoe we nu een bestaande klasse  ``Ball`` kunnen overerven om een bestuurbare bal te maken:
+Volgende code toont hoe we een bestaande klasse  ``Ball`` kunnen overerven om een bestuurbare bal te maken:
 
 ## Basisklasse Ball
 
