@@ -12,7 +12,7 @@ Zorg ervoor dat elke Pokémon bij constructie zijn eigenschappen krijgt.
 ## Voorbeeldinteractie
 (Hier is geen verschil met hoe dit er in hoofdstuk 9 uitzag.)
 
-# Pokémons makkelijk aanmaken (h10-chaining)
+# Pokémons nog makkelijker aanmaken (h10-chaining)
 ## Leerdoelen
 * gebruik van expliciete constructoren
 * herbruik van bestaande constructor
@@ -27,7 +27,7 @@ Maak een nieuwe constructor met **drie** argumenten in plaats van vier. Het argu
 De nieuwe Squirtle heeft maximum 40 HP en heeft momenteel 20 HP.
 ```
 
-# Pokémons makkelijk aanmaken (h10-pokebattlecount)
+# Globale statistieken bijhouden (h10-pokebattlecount)
 ## Leerdoelen
 * verschil tussen klasse en object
 
