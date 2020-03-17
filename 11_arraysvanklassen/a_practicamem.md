@@ -1,24 +1,90 @@
-# Prijzen met foreach
+# Oefening 1: prijzen met `foreach` (h11-prijzen)
 
-Maak een array die tot 20 prijzen (double) kan bewaren. Vraag aan de gebruiker om 20 prijzen in te voeren en bewaar deze in de array. Doorloop vervolgens m.b.v. een foreach-lus de volledige array en toon enkel de elementen op het scherm wiens prijs hoger of gelijk is aan €5.00. Toon op het einde van het programma het gemiddelde van alle prijzen (dus inclusief de lagere prijzen).
+## Leerdoelen
 
-# Speelkaarten
+* `foreach`
+* combinatie controlestructuren
 
-Maak een klasse ``Speelkaart`` die je kan gebruiken om een klassieke kaart met getal en "kleur" voor te stellen. 
+## Functionele analyse
 
-* Een kaart heeft 2 eigenschappen, een getal van 1 tot en met 13 (boer=11, koningin= 12, heer= 13):
-* Een kleur, de zogenaamde suite. Deze stel je voor via een enumtype en kan als waarden Schoppen, Harten, Klaveren of Ruiten zijn.
+We willen enkele gegevens (prijzen) inlezen van de gebruiker en slechts sommige van deze prijzen tonen.
+
+## Technische analyse
+
+* Werk onderstaande opdracht uit in een statische methode `AskForPrices`.
+* Maak eerst een array die tot 20 prijzen (type `double`) kan bewaren.
+* Vraag aan de gebruiker om 20 prijzen in te voeren en bewaar elke prijs in de array.
+* Doorloop vervolgens **m.b.v. een `foreach`-lus** de volledige array.
+  * Toon enkel de elementen op het scherm wiens prijs hoger of gelijk is aan €5.00.
+* Toon op het einde van het programma het gemiddelde van alle prijzen (dus inclusief de lagere prijzen).
+* Toon alles afgerond tot twee cijfers na de komma.
+
+### Voorbeeldinteractie
+```text
+Gelieve 20 prijzen in te geven.
+> 1
+> 1
+> 1
+> 21
+> 1
+> 1
+> 1
+> 1
+> 1
+> 17
+> 1
+> 1
+> 1
+> 14
+> 1
+> 1
+> 1
+> 1
+> 1
+> 1
+21.00
+17.00
+14.00
+Het gemiddelde bedrag is 3.00.
+```
 
 
-Schrijf nu 2 loops die de 52 kaarten van een standaard pak in een ``List<SpeelKaart>`` lijst plaatst.
+# Oefening 2: speelkaarten (h11-speelkaarten)
 
-Maak nu een applicatie die telkens een willekeurige kaart uit de deck trekt en deze aan de gebruiker toont. De kaart wordt na het tonen dus uit de lijst verwijderd. Door met een willekeurig getal te werken hoef je dus je deck niet te schudden.
+## Leerdoelen
+
+* `foreach` genest
+* `List`
+
+## Functionele analyse
+
+We willen een kaartenspel programmeren. Om dat te doen, moeten we zeker een lijst kaarten kunnen aanmaken en ook kaarten te kunnen trekken.
+
+## Technische analyse
+
+* Maak een klasse ``PlayingCard``.
+  * Een kaart heeft 2 eigenschappen (properties)
+    * een getal van 1 tot en met 13 (boer=11, koningin= 12, heer= 13):
+    * een kleur, de zogenaamde "suite". Deze stel je voor via een enumtype `Suites` en kan als waarden `Clubs` (klaveren), `Hearts` (harten), `Spades` (schoppen) of `Diamonds` (ruiten) zijn.
+* Schrijf een statische methode `GenerateDeck` die een boek kaarten teruggeeft.
+  * Schrijf om dit te bereiken twee `foreach` loops die de 52 kaarten van een standaard pak in een ``List<PlayingCard>`` plaatsen.
+    * Doe dit door één lus in een andere te nesten.
+* Schrijf ook een statische methode `ShowShuffledDeck(List<PlayingCard> cards)` die telkens een willekeurige kaart uit de deck trekt en deze aan de gebruiker toont. De kaart wordt na het tonen dus uit de lijst verwijderd.
+  * Doe dit door in iedere stap een willekeurige, geldige index in de lijst met kaarten te berekenen en die kaart uit de lijst te halen.
+
+## Voorbeeldinteractie
+```
+9 Hearts
+4 Clubs
+... (er volgen nog 50 willekeurige combinaties)
+Alle kaarten zijn getoond.
+```
 
 # Student Organizer
 
 We gaan nu de Student-klasse uit een vorige hoofdstuk (zie onderaan de opgave) gebruiken om een ``List<Student>`` van studenten te vullen.
 
-Maak daarom een studenten-lijst aan die 5 studenten bevat :
+Maak daarom een studenten-lijst aan die 5 studenten bevat:
 
 Initialiseer alle properties van iedere student op een standaard-waarde via de default constructor.
  
@@ -38,6 +104,9 @@ Bouw extra functionaliteit naar keuze bij de StudentOrganizer, zoals:
 * Verwijderen van een student (waarbij alle gegevens worden gewist)
 * Controle in alle methode inbouwen zodat ‘lege studenten’ worden genegeerd. Wanneer bijvoorbeeld menu item 2 wordt uitgevoerd (alle studenten tonen) dan worden enkel de ingevulde studenten getoond.
 
+{% hint style="warning" %}
+Volgende oefeningen kunnen nog licht wijzigen.
+{% endhint %}
 
 ### StudentKlasse
 ```csharp
