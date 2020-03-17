@@ -98,10 +98,10 @@
   * [List](11_arraysvanklassen/4_list.md)
   * [Oefeningen](11_arraysvanklassen/a_practicamem.md)
 * H12: Overerving
-  * [Overerving intro](12_overerving/0_overerving_intro.md)
-  * [Base keyword](12_overerving/2_base.md)
+  * [Overerving intro](12_overerving/0_overerving_intro.MD)
   * [Constructors bij overerving](12_overerving/3_constructors_inheritance.md)
   * [Virtual en override](12_overerving/1_virtual_override.md)
+  * [Base keyword](12_overerving/2_base.md)
   * [Oefeningen](12_overerving/a_practicasimpel.md)
 * H13: Geavanceerde overerving
   * [System.Object](13_advancedovererving/4_System_Object.md)
