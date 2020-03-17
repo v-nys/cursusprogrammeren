@@ -25,6 +25,7 @@ Deze klasse heeft:
 * Enkel een default constructor die:
   * DoomCountdown op een getal tussen 10 en 20 instelt.
   * killcode op een getallen tussen 0 en 99 instelt
+  * Naam wordt willekeurig als volgt: deze bestaat uit 3 willekeurige letters na mekaar, gevolgd door een getal tussen 1 en 99 (bv ABC34).
 * Een methode ``TryVaccin`` die:
   * Eén parameter van het type ``Vaccin`` aanvaardt
   * Een bool teruggeeft. Deze zal true zijn indien het meegegeven Vaccin werkt:
