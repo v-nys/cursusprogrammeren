@@ -54,7 +54,7 @@ Volgende methoden/properties kan je rechtstreeks op de string-objecten aanroepen
 
 ### Strings vergelijken
 
-De correcte manier om strings te vergelijken is met de `Compare(string s1, string s2)` methode. Deze zal een \`\`int terug geven:
+De correcte manier om strings te vergelijken is met de `Compare(string s1, string s2)` methode. Deze zal een `int` terug geven:
 
 * -1 : de string `s1` komt voor de string`s2` indien je ze lexicografisch zou sorteren (dit is ongeveer hetzelfde als alfabetisch, maar maakt bijvoorbeeld een onderscheid tussen kleine letters en hoofdletters).
 * 0: beide strings zijn identiek
