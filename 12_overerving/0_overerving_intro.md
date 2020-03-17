@@ -1,6 +1,6 @@
-# Overerving intro
+# Overerving
 
-Overerving \(**inheritance**\) laat ons toe om klassen te specialiseren vanuit een reeds bestaande basisklasse. Wanneer we een klasse van een andere klasse overerven dan zeggen we dat deze nieuwe klasse een child-klasse of sub-klasse is van de bestaande parent-klasse of super-klasse.
+Overerving (**inheritance**) laat ons toe om klassen te specialiseren vanuit een reeds bestaande basisklasse. Wanneer we een klasse van een andere klasse overerven dan zeggen we dat deze nieuwe klasse een child-klasse of sub-klasse is van de bestaande parent-klasse of super-klasse.
 
 De child-klasse kan alles wat de parent-klasse kan, maar de nieuwe klasse kan nu ook extra specialisatie code krijgen.
 
@@ -8,14 +8,14 @@ De child-klasse kan alles wat de parent-klasse kan, maar de nieuwe klasse kan nu
 
 Wanneer twee klassen met behulp van een "x is een y"-relatie kunnen beschreven worden dan weet je dat overerving mogelijk.
 
-* Een paard **is een** dier \(paard = child-klasse, dier= parent-klasse\)
+* Een paard **is een** dier (paard = child-klasse, dier= parent-klasse)
 * Een tulp **is een** plant
 
-\(Opgelet: wanneer we "x heeft een y" zeggen gaat het **niet** over overerving, maar over compositie\)
+(Opgelet: wanneer we "x heeft een y" zeggen gaat het **niet** over overerving, maar over compositie)
 
 ## Inheritance in CS
 
-Overving duid je aan met behulp van het dubbele punt\(:\) bij de klassedefinitie:
+Overving duid je aan met behulp van het dubbele punt(:)  bij de klassedefinitie:
 
 Een voorbeeld:
 
@@ -47,11 +47,11 @@ aDier.KanHinnikken=false; //!!! zal niet werken!
 
 ## Multiple inheritance
 
-In C\# is het niet mogelijk om een klasse van meer dan een parent-klasse te laten overerven \(zogenaamde multiple inheritance\), wat wel mogelijk is in sommige andere object georiënteerde talen.
+In C# is het niet mogelijk om een klasse van meer dan een parent-klasse te laten overerven (zogenaamde multiple inheritance), wat wel mogelijk is in sommige andere object georiënteerde talen.
 
 ## Transitive
 
-Overerving in C\# is transitief, dit wil zeggen dat de child-klasse ALLES overerft van de parent-klasse: methoden, properties, etc.
+Overerving in C# is transitief, dit wil zeggen dat de child-klasse ALLES overerft van de parent-klasse: methoden, properties, etc.
 
 ## Protected
 
@@ -91,7 +91,7 @@ class Dier
 
 ## Sealed
 
-Soms wil je niet dat van een klasse nog nieuwe klasse kunnen overgeërfd worden. Je lost dit op door het keyword `sealed` voor de klasse te zetten:
+Soms wil je niet dat van een klasse nog nieuwe klasse kunnen overgeërfd worden. Je lost dit op door het keyword ``sealed`` voor de klasse te zetten:
 
 ```csharp
 sealed class DoNotInheritMe
@@ -109,5 +109,8 @@ class ChildClass:DoNotInheritMe
 }
 ```
 
-zal dit resulteren in een foutoodschap, namelijk `cannot derive from sealed type 'DoNotInheritMe'`.
+zal dit resulteren in een foutoodschap, namelijk ``cannot derive from sealed type 'DoNotInheritMe'``.
 
+# Kennisclip
+![](../assets/infoclip.png)
+* [Overerving overzicht](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=c8b828c5-87c0-4339-a61c-ab7c00aef24d)

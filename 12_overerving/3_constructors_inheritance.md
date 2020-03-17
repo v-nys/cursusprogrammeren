@@ -2,7 +2,7 @@
 
 Wanneer je een object instantiëert van een child-klasse dan gebeuren er meerdere zaken na elkaar, in volgende volgorde:
 
-* Eerst wordt de constructor aangeroepen van de basis-klasse: dus steeds eerst die van `System.Object`
+* Eerst wordt de constructor aangeroepen van de basis-klasse: dus steeds eerst die van ``System.Object``
 * Gevolgd door de constructors van alle parent-klassen
 * Finaal de constructor van de klasse zelf.
 
@@ -37,8 +37,7 @@ Er wordt dus verondersteld in dit geval dat er een default constructor in de bas
 
 ## Overloaded constructors
 
-Indien je klasse Soldier een overloaded constructor heeft, dan geeft deze niet automatisch een default constructor. Volgende code zou dus een probleem geven indien je een Medic wilt aanmaken via `new Medic()`:
-
+Indien je klasse Soldier een overloaded constructor heeft, dan geeft deze niet automatisch een default constructor. Volgende code zou dus een probleem geven indien je een Medic wilt aanmaken via ``new Medic()``:
 ```csharp
 class Soldier
 {
@@ -51,8 +50,7 @@ class Medic:Soldier
 }
 ```
 
-Wat je namelijk niet ziet bij child-klassen en hun constructors is dat er eigenlijk een impliciete call naar de basis-constructor wordt gedaan. Bij alle constructors staat eigenlijk `:base()` wat je ook zelf kunt schrijven:
-
+Wat je namelijk niet ziet bij child-klassen en hun constructors is dat er eigenlijk een impliciete call naar de basis-constructor wordt gedaan. Bij alle constructors staat eigenlijk ``:base()`` wat je ook zelf kunt schrijven:
 ```csharp
 class Medic:Soldier
 {
@@ -60,11 +58,9 @@ class Medic:Soldier
    {Console.WriteLine("Who needs healing?");}
 }
 ```
+``base()`` achter de constructor zegt dus eigenlijk 'roep de constructor van de parent-klasse aan. Je mag hier echter ook parameters meegeven en de compiler zal dan zoeken naar een constructor in de basis-klasse die deze volgorde van parameters kan accepteren.
 
-`base()` achter de constructor zegt dus eigenlijk 'roep de constructor van de parent-klasse aan. Je mag hier echter ook parameters meegeven en de compiler zal dan zoeken naar een constructor in de basis-klasse die deze volgorde van parameters kan accepteren.
-
-We zien hier dus hoe we ervoor moeten zorgen dat we terug Medics via `new Medic()` kunnen aanroepen zonder dat we de constructor\(s\) van Soldier moeten aanpassen:
-
+We zien hier dus hoe we ervoor moeten zorgen dat we terug Medics via ``new Medic()`` kunnen aanroepen zonder dat we de constructor(s) van Soldier moeten aanpassen:
 ```csharp
 class Soldier
 {
@@ -78,7 +74,8 @@ class Medic:Soldier
 }
 ```
 
-De medics zullen de canShoot dus steeds op true zetten. Uiteraard wil je misschien dit kunnen meegeven bij het aanmaken van een object zoals `new Medic(false)`, dit vereist dat je dus een overloaded constructor in Medic aanmaakt, die op zijn beurt de overloaded constructor van Soldier aanroept. Je schrijft dan een overloaded constructor in Medic bij:
+De medics zullen de canShoot dus steeds op true zetten.
+Uiteraard wil je misschien dit kunnen meegeven bij het aanmaken van een object zoals ``new Medic(false)``, dit vereist dat je dus een overloaded constructor in Medic aanmaakt, die op zijn beurt de overloaded constructor van Soldier aanroept. Je schrijft dan een overloaded constructor in Medic bij:
 
 ```csharp
 class Soldier
@@ -96,5 +93,8 @@ class Medic:Soldier
 }
 ```
 
-Uiteraard mag je ook de default constructor aanroepen vanuit de child-constructor, alle combinaties zijn mogelijk \(zolang de constructor in kwestie maar bestaat in de parent-klasse\).
+Uiteraard mag je ook de default constructor aanroepen vanuit de child-constructor, alle combinaties zijn mogelijk (zolang de constructor in kwestie maar bestaat in de parent-klasse).
 
+# Kennisclip
+![](../assets/infoclip.png)
+*[Constructors bij overerving](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=a83a530e-11ff-47eb-b4cf-ab7c00b75401)

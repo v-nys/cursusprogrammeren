@@ -10,6 +10,7 @@
   * [Mee helpen?](_intro/helpen.md)
 
 ## Semester 1: Programming Principles
+
 * H0: Werken met Visual Studio
   * [Introductie tot C#](0_intro/0_intrototcs.md)
   * [Werken met Visual Studio](0_intro/1_werkenmetvs.md) 
@@ -142,6 +143,7 @@
 ## Semester 2 appendix
 
 * Nice to know stuff
+  * [Klassen herbruiken](B_appendix/namespaces.md)
   * [Operator overloading](B_appendix/8_operatoroverloading.md)
   * [Expression bodied members](B_appendix/6_exprbody.md)
 * All-In-Projecten
@@ -166,4 +168,5 @@
 * Events
   * [Events](19_events/events.md)
   * [Chat server](19_events/chatserver.md)
-
+* Software engineering
+  * [SOLID](20_SE/solid1.md)

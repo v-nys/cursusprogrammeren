@@ -208,13 +208,15 @@ int[] array2= {3,4,5};
 int[] bewaarArray= array2;
 array2=array;
 ```
-
 De variabele `bewaarArray` houdt dus een referentie naar `{3,4,5}` bij en we kunnen dus later via deze variabele alsnog aan de originele data.
 
 ## Meer weten?
 
 Meer info, lees zeker volgende artikels:
-
 * [Reference en value types](https://www.c-sharpcorner.com/uploadfile/prvn_131971/types-in-C-Sharp/)
 * [Stack vs heap](https://www.c-sharpcorner.com/article/C-Sharp-heaping-vs-stacking-in-net-part-i/)
 
+
+# Kennisclip
+![](../assets/infoclip.png)
+* [Stack vs heap](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=bf7ea9bc-7469-446b-b226-ab5e008085a8)

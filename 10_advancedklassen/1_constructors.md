@@ -49,6 +49,7 @@ class Student
 {
     private int age;
 }
+
 ```
 
 We willen telkens een Student-object wordt aangemaakt dat deze een random leeftijd heeft. Via de default constructor kunnen we dat oplossen \(je kan namelijk niet schrijven `private int age = random.Next(10,20)` \)
@@ -65,6 +66,7 @@ class Student
 
     private int age;
 }
+
 ```
 
 Zoals verteld moet de constructor de naam van de klasse hebben, public zijn en geen returntype definiëren.
@@ -72,7 +74,7 @@ Zoals verteld moet de constructor de naam van de klasse hebben, public zijn en g
 Vervolgens voegen we de code toe die we nodig hebben:
 
 {% hint style="danger" %}
-Dit is slecht gebruik van `Random`, maar we hebben nog niet de nodige achtergrond om de juiste werkwijze te tonen. Dat komt binnenkort!
+Dit is in veel programmeertalen slecht gebruik van `Random`, maar we hebben nog niet de nodige achtergrond om de juiste werkwijze te tonen. Dat komt binnenkort!
 {% endhint %}
 
 ```csharp
@@ -86,13 +88,14 @@ class Student
 
     private int age;
 }
+
 ```
 
 Telkens we nu een object zouden aanmaken met `new Student()` zal deze een willekeurige leeftijd hebben.
 
 #### Opmerking bij voorgaande code
 
-* Als je twee of meerdere Studenten snel in je code na mekaar aanmaakt zullen deze dezelfde leeftijd hebben. Dit is omdat ieder object z'n eigen `Random` aanmaakt en zoals we weten zal een random generator dezelfde getallen genereren als deze vlak na mekaar \(in tijd\) zijn aangemaakt. Een oplossing zullen we hier later voor zien. Spoiler, `static` is de oplossing hiervoor:
+* Als je op een gelijkaardige manier in andere programmeertalen twee of meerdere Studenten snel na mekaar aanmaakt zullen deze dezelfde leeftijd hebben. Dit is omdat ieder object z'n eigen `Random` aanmaakt en zoals we weten zal een random generator dezelfde getallen genereren als deze vlak na mekaar \(in tijd\) zijn aangemaakt. Een oplossing zullen we hier later voor zien. Spoiler, `static` is de oplossing hiervoor:
 
 ```csharp
 class Student
@@ -105,6 +108,7 @@ class Student
 
     private int age;
 }
+
 ```
 
 ### Constructor met parameter(s)
@@ -129,6 +133,7 @@ class Student
 
     private int age;
 }
+
 ```
 
 Dat was eenvoudig. **Maar** denk eraan: je hebt een eigen constructor geschreven en dus heeft C\# gezet "ok, je schrijft zelf constructor, trek je plan. Maar de default zal je ook zal moeten schrijven!" Je kan nu enkel je objecten met `new Student(25)` aanmaken. Schrijf je `new Student()` dan zal je een error krijgen. Wil je die constructor nog hebben, dan zal je die met de hand moeten schrijven, bijvoorbeeld:
@@ -149,6 +154,7 @@ class Student
 
     private int age;
 }
+
 ```
 
 ### Wanneer heb ik constructoren nodig?
@@ -185,6 +191,7 @@ class Student
     private int age;
     private bool isWerkStudent
 }
+
 ```
 
 #### Constructor chaining

@@ -24,8 +24,8 @@ Console.WriteLine(stud1.Name);
 ```
 
 Dit zal resulteren in volgende foutboodschap:
-
-![NullReferenceException error in VS](../../.gitbook/assets/nullref.png)
+ 
+ ![NullReferenceException error in VS](../assets/6_klassen/nullref.png)
 
 > We moeten in dit voorbeeld expliciet `=null` plaatsen daar Visual Studio slim genoeg is om je te waarschuwen voor eenvoudige potentiele NullReference fouten en je code anders niet zal compileren.
 
@@ -61,3 +61,6 @@ static Student ZoekStudent(Student[] array, string naam)
 }
 ```
 
+# Kennisclip
+![](../assets/infoclip.png)
+* [Referenties en null](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=49247267-d9db-411a-8de6-ab5e0084792a)

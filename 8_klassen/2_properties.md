@@ -1,7 +1,5 @@
 # Properties
 
-## Properties
-
 In dit hoofdstuk bespreken we eerst waarom properties nodig zijn. Vervolgens bespreken we de 2 soorten properties die er bestaan:
 
 1. Full properties
@@ -128,7 +126,7 @@ De full property `Energy` heeft nog steeds het probleem dat we negatieve waarden
 
 > Properties hebben echter de mogelijkheid om op te treden als wachters van en naar de interne staat van objecten.
 
-We kunnen in de `set`code extra controles inbouwen. Asl volgt:
+We kunnen in de ``set`` code extra controles inbouwen. Als volgt:
 
 ```csharp
    public int Energy
@@ -144,8 +142,9 @@ We kunnen in de `set`code extra controles inbouwen. Asl volgt:
         }
     }
 ```
-
-Enkel indien de toegewezen waarde groter of gelijk is aan 0 zal deze ook effectief aan `energy` toegewezen worden. Volgende lijn zal dus geen effect hebben: `palpatine.Energy=-1;`
+Enkel indien de toegewezen waarde groter of gelijk is aan 0 zal deze ook effectief aan ``energy`` toegewezen worden.
+Volgende lijn zal dus geen effect hebben:
+`` Palpatine.Energy=-1;``
 
 We kunnen de code binnen `set` \(en `get`\) zo complex als we willen maken.
 
@@ -165,11 +164,9 @@ We zijn niet verplicht om zowel de `get` en de `set` code van een property te sc
         }
     }
 ```
+We kunnen dus enkel ``energy`` een waarde geven, maar niet van buitenuit uitlezen.
 
-We kunnen dus enkel `energy` een waarde geven, maar niet van buitenuit uitlezen.
-
-#### Read-only property
-
+### Read-only property
 ```csharp
    public int Energy
     {
@@ -179,8 +176,9 @@ We kunnen dus enkel `energy` een waarde geven, maar niet van buitenuit uitlezen.
         }
     }
 ```
+We kunnen dus enkel ``energy`` van buitenuit uitlezen, maar niet aanpassen.
 
-We kunnen dus enkel `energy` van buitenuit uitlezen, maar niet aanpassen.
+**Opgelet: het ``readonly`` keyword heeft andere doelen en wordt NIET gebruikt in C# om een readonly property te maken**
 
 #### Read-only property met private set
 
@@ -249,7 +247,6 @@ public void ResetLord()
 Je bent uiteraard niet verplicht om voor iedere interne variabele een bijhorende property te schrijven. Omgekeerd ook: mogelijk wil je extra properties hebben voor data die je 'on-the-fly' kan genereren.
 
 Stel dat we volgende klasse hebben
-
 ```csharp
 public class Person
 {
@@ -468,5 +465,11 @@ De regel is eenvoudig:
 * Betreft het een actie, iets dat het object moet doen \(tekst tonen, iets berekenen, etc\) dan plaats je het in een **methode**
 * Betreft het een eigenschap die een bepaalde waarde heeft, dan gebruik je een **property**
 
-[Hier een iets meer uitgebreid PRO antwoord](http://firebreaksice.com/csharp-property-vs-method-guidelines/)
+[Hier een iets meer uitgebreid PRO antwoord.](http://firebreaksice.com/csharp-property-vs-method-guidelines/)
+
+# Kennisclip
+![](../assets/infoclip.png)
+* [Properties](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=34e326ab-5ee3-4e36-8880-ab6100c13715)
+* [Full properties](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=a9c712ba-5788-4121-aff9-ab6100c3d1ed)
+* [Auto properties](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=9eb70ee5-402d-4c6d-b880-ab6100c5291d)
 

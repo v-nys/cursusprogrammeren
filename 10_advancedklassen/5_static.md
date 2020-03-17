@@ -198,6 +198,7 @@ class Mens
     {
         gewicht--;
     }
+}
 ```
 
 De error die verschijnt **An object reference is required for the non-static field, method, or property 'Program.Fiets.gewicht'** zal bij de lijn `gewicht--` staan.
