@@ -80,100 +80,138 @@ We willen een kaartenspel programmeren. Om dat te doen, moeten we zeker een lijs
 Alle kaarten zijn getoond.
 ```
 
-# Student Organizer
+# Oefening 3: organiseren van studenten (h11-organizer)
 
-We gaan nu de Student-klasse uit een vorige hoofdstuk (zie onderaan de opgave) gebruiken om een ``List<Student>`` van studenten te vullen.
+## Functionele analyse
 
-Maak daarom een studenten-lijst aan die 5 studenten bevat:
+We gaan nu de `Student`-klasse uit een hoofdstuk 8 gebruiken om een ``List<Student>`` van studenten te vullen. Daarna zullen we een menu tonen om gegevens over studenten in te voeren (student toevoegen, student aanpassen, gegevens over student tonen, student verwijderen).
 
-Initialiseer alle properties van iedere student op een standaard-waarde via de default constructor.
- 
-Het programma start op en geeft de gebruiker een menu waaruit kan gekozen worden:
+## Technische analyse
 
-1. Student gegevens invoeren (eerstvolgende student wordt ingevuld)
-Vervolgens moet de gebruiker kiezen welke student (nummer) moet ingevuld worden, van 1 tot 5. Vervolgens kan de gebruiker de gegevens 1 voor 1 invullen (oude gegevens worden zonder pardon overschreven).
+* Maak eerst een statische methode `ExecuteStudentMenu()` zonder return type. Deze zal, zolang de gebruiker niet aangeeft dat hij wil stoppen, een menu tonen waarin we gegevens kunnen bekijken of wijzigen.
+* Het menu toont steeds volgende opties:
+  1. gegevens van de studenten tonen
+  2. een nieuwe student toevoegen
+  3. gegevens van een bepaalde student aanpassen
+  4. een student uit het systeem verwijderen
+  5. stoppen
+* Je mag voorlopig veronderstellen dat de gebruiker geldige indexposities en gegevens invoert.
 
- 
-2. Student gegevens tonen (alle studenten)
-Wanneer de gebruiker voor 2 kiest dan wordt de GeefOverzicht-methode aangeroepen van iedere student zodat de 5 ‘rapportjes’ onder elkaar op het scherm 
+### mogelijkheid 1: gegevens van de studenten tonen
+Deze keuze toont, via de methode `ShowOverview()` en een `foreach`-lus, de gegevens van elke student in de lijst. Elk rapport wordt gevolgd door een lege regel. Het is niet erg als er op het einde één regel te veel is.
 
-Extra's:
-Bouw extra functionaliteit naar keuze bij de StudentOrganizer, zoals:
-* Vragen aan de gebruiker of de oude gegevens overschreven mogen worden, indien deze reeds ingevuld zijn.
-* Inbouwen van een eenvoudige zoekfunctie. Je kan bijvoorbeeld zoeken op naam (exacte invoer) of alle studenten tonen die in een bepaalde klas zitten of wiens punten onder/boven een bepaalde waarde zitten. Je kan dit als extra menuitem inbouwen, waarbij een nieuw menu verschijnt dat de gebruiker de verschillende zoekmogelijkheden voorstelt.
-* Verwijderen van een student (waarbij alle gegevens worden gewist)
-* Controle in alle methode inbouwen zodat ‘lege studenten’ worden genegeerd. Wanneer bijvoorbeeld menu item 2 wordt uitgevoerd (alle studenten tonen) dan worden enkel de ingevulde studenten getoond.
+#### Voorbeeldinteractie
+Nadat er al twee studenten zijn aangemaakt:
 
-{% hint style="warning" %}
-Volgende oefeningen kunnen nog licht wijzigen.
-{% endhint %}
+```text
+Wat wil je doen?
+> 1
+Joske Vermeulen, 21 jaar
+Klas: EA2
 
-### StudentKlasse
-```csharp
-enum Klassen { EA1, EA2, EA3, EA4}
+Cijferrapport:
+**********
+Communicatie:             12
+Programming Principles:   15
+Web Technology:           13
+Gemiddelde:               13.3
 
-class Student
-{
-    public string Naam { get; set; }
-    public int Leeftijd { get; set; }
-    public Klassen Klas { get; set; }
+Mieke Vermeulen, 22 jaar
+Klas: EB1
 
-    public int PuntenCommunicatie { get; set; }
-    public int PuntenProgrammingPrinciples { get; set; }
-    public int PuntenWebTech { get; set; }
+Cijferrapport:
+**********
+Communicatie:             10
+Programming Principles:   16
+Web Technology:           16
+Gemiddelde:               13.3
 
-    public double BerekenTotaalCijfer()
-    {
-        return (PuntenCommunicatie + PuntenProgrammingPrinciples + PuntenWebTech) / 3.0;
-    }
-
-    public void GeefOverzicht()
-    {
-        Console.WriteLine($"{Naam}, {Leeftijd} jaar");
-        Console.WriteLine($"Klas: {Klas}");
-        Console.WriteLine();
-        Console.WriteLine("Cijferrapport");
-        Console.WriteLine("*************");
-        Console.WriteLine($"Communicatie:\t\t{PuntenCommunicatie}");
-        Console.WriteLine($"Programming Principles:\t{PuntenProgrammingPrinciples}");
-        Console.WriteLine($"Web Technology:\t\t{PuntenWebTech}");
-        Console.WriteLine($"Gemiddelde:\t\t{BerekenTotaalCijfer():0.0}");
-    }
-}
+Wat wil je doen?
 ```
 
-# Bookmark Manager
+### mogelijkheid 2: een nieuwe student toevoegen
+Deze keuze voegt een nieuwe student toe.
 
-Maak een "bookmark manager". Deze tool zal in de console aan de gebruiker 5 favoriete sites vragen: naam en url. Vervolgens zal de tool alle sites in een lijst tonen met een nummer voor. De gebruiker kan dan de nummer intypen en de tool zal automatisch de site in de browser openen. 
+#### Voorbeeldinteractie
+Bij nul studenten:
 
-Je opdracht:
+```text
+Wat wil je doen?
+> 1
+Wat wil je doen?
+> 2
+Wat wil je doen?
+> 1
+Onbekend Onbekend, 18 jaar
+Klas: EA1
 
-1. Maak een array waarin je 5 bookmark objecten kan plaatsen. 
-2. Vul de applicatie aan zodat de gebruiker: een bestaand bookmark kan verwijderen en een bestaand bookmark kan aanpassen
+Cijferrapport:
+**********
+Communicatie:             10
+Programming Principles:   10
+Web Technology:           10
+Gemiddelde:               10.0
 
-Enkele zaken die je nodig hebt:
-
-**BookMark klasse:**
-```csharp
-class BookMark
-{
-
-    public string Naam { get; set; }
-    public string URL { get; set; }
-    public void OpenSite()
-    {
-        Process.Start("chrome.exe", URL);  //Voeg bovenaan using System.Diagnostics; toe
-    }
-}
+Wat wil je doen?
 ```
 
-Opmerking: je mag gerust een andere browser hier zetten (bv ``iexplore.exe``). Om te weten of hij dat proces kent, klikt op Start->Run/uitvoeren en voer daar bijvoorbeeld ``chrome.exe`` in. Als je op enter duwt en je browser opent, dan weet je dat hij dat proces zal vinden.
+### mogelijkheid 3: een student aanpassen
+Deze keuze staat toe de naam, leeftijd, klasgroep of een van de drie cijfers van de student aan te passen.
 
-Voorbeeld van hoe de bookmark klasse zal werken:
+#### Voorbeeldinteractie
+Vlak na het aanmaken van een eerste student:
 
-```csharp
-BookMark u = new BookMark();
-u.Naam = "Windows";
-u.URL = "www.google.be";
-u.OpenSite();
+```text
+Wat wil je doen?
+> 3
+Wat is de indexpositie van de student die je wil aanpassen?
+> 0
+Wat wil je aanpassen?
+1. Naam
+2. Leeftijd
+3. Klasgroep
+4. Cijfer communicatie
+5. Cijfer programmeren
+6. Cijfer webtechnologie
+> 4
+Wat is de nieuwe waarde?
+> 13
+Wat wil je doen?
+> 1
+Onbekend Onbekend, 18 jaar
+Klas: EA1
+
+Cijferrapport:
+**********
+Communicatie:             13
+Programming Principles:   10
+Web Technology:           10
+Gemiddelde:               11.0
+
+Wat wil je doen?
+```
+
+### mogelijkheid 4: een student verwijderen
+
+#### Voorbeeldinteractie
+Nadat er al twee studenten zijn aangemaakt:
+
+```text
+Wat wil je doen?
+> 4
+Wat is de indexpositie van de te verwijderen student?
+> 0
+Wat wil je doen?
+> 1
+Mieke Vermeulen, 22 jaar
+Klas: EB1
+
+Cijferrapport:
+**********
+Communicatie:             10
+Programming Principles:   16
+Web Technology:           16
+Gemiddelde:               13.3
+
+Wat wil je doen?
 ```
