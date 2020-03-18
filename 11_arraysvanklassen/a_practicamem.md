@@ -88,7 +88,7 @@ We gaan nu de `Student`-klasse uit een hoofdstuk 8 gebruiken om een ``List<Stude
 
 ## Technische analyse
 
-* Maak eerst een statische methode `ExecuteStudentMenu()` zonder return type. Deze zal, zolang de gebruiker niet aangeeft dat hij wil stoppen, een menu tonen waarin we gegevens kunnen bekijken of wijzigen.
+* Maak eerst (in de klasse `Student`) een statische methode `ExecuteStudentMenu()` zonder return type. Deze zal, zolang de gebruiker niet aangeeft dat hij wil stoppen, een menu tonen waarin we gegevens kunnen bekijken of wijzigen.
 * Het menu toont steeds volgende opties:
   1. gegevens van de studenten tonen
   2. een nieuwe student toevoegen
