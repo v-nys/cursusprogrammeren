@@ -84,7 +84,7 @@ Alle kaarten zijn getoond.
 
 ## Functionele analyse
 
-We gaan nu de `Student`-klasse uit een hoofdstuk 8 gebruiken om een ``List<Student>`` van studenten te vullen. Daarna zullen we een menu tonen om gegevens over studenten in te voeren (student toevoegen, student aanpassen, gegevens over student tonen, student verwijderen).
+We gaan nu de `Student`-klasse uit een hoofdstuk 8 gebruiken om een ``List<Student>`` van studenten aan te maken. Daarna zullen we een menu tonen om gegevens over studenten in te voeren (student toevoegen, student aanpassen, gegevens over student tonen, student verwijderen). Op de werkvloer worden deze mogelijkheden "CRUD"-operaties genoemd (create, read, update, delete).
 
 ## Technische analyse
 
