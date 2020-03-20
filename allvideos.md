@@ -90,6 +90,10 @@ Op volgende pagina vind je alle kennisclips en andere opnames samen die doorheen
 * [De foreach loop](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=e268b0f3-5226-4279-a69c-ab7500892031)
 * [List<> klasse](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=ac1bfe58-b55b-4e7e-98f3-ab7a009085bc)
 
+### Bespreking module 3 einde tests
+
+* [Bespreking "corona training"](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=ca8a4561-20f1-429b-9787-ab8400fca88c)
+
 ### Hoofdstuk 12 - Overerving
 * [Overerving overzicht](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=c8b828c5-87c0-4339-a61c-ab7c00aef24d)
 * [Constructors bij overerving](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=a83a530e-11ff-47eb-b4cf-ab7c00b75401)

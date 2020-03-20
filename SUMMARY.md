@@ -112,8 +112,9 @@
 * Module 3 eindetest
   * [Opgave 1](EindeTests/Mod3/Opgave.md)
   * [Opgave 2](EindeTests/Mod3/Opgave2.md)
- *  [Oplossing Opgave 2 ](EindeTests/Mod3/Opgave2Opl.md)
+  * [Oplossing Opgave 2 ](EindeTests/Mod3/Opgave2Opl.md)
   * [Opgave 3 "Corona training"](EindeTests/Mod3/Opgave3_corona.md)
+  * [Oplossing Opgave 3](EindeTests/Mod3/OplossingOpgave3.md)
   * [Opgave vaardigheidsproef mod 3 1819](EindeTests/Mod3/Opgave_1819.md)
   * [Bespreking vaardigheidsproef mod 3 1819](EindeTests/Mod3/Oplossing_1819.md)
 * H12: Overerving
