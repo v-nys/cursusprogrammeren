@@ -200,7 +200,7 @@ Als je meerdere overloaded constructoren hebt, hoef je niet in elke constructor 
 ```csharp
 class Student
 {
-    public Student(int startage) : this(startage, false);
+    public Student(int startage) : this(startage, false)
     {
     // niet nodig hier code uit uitgebreidere constructor te herhalen
     // hier kan nog extra code worden uitgevoerd na de oproep van de uitgebreide constructor
