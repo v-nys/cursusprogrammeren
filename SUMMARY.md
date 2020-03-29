@@ -128,6 +128,7 @@
   * [System.Object](13_advancedovererving/4_System_Object.md)
   * [Abstract](13_advancedovererving/5_abstract.md)
   * [_Oefeningen](13_advancedovererving/A_Practica.md)
+  * [_Corona Missie](13_advancedovererving/coronamissie.md)
 * H14: Compositie
   * [Compositie](14_compositie/0_compositie_intro.MD)
   * [_Oefeningen](14_compositie/A_PracticaComp.md)
