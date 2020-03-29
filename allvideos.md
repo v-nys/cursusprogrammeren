@@ -103,6 +103,7 @@ Op volgende pagina vind je alle kennisclips en andere opnames samen die doorheen
 * [Abstracte klassen](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=a6f513b8-e299-4118-986d-ab7c00e47861)
 * [System.Object en ToString](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=00cad992-7714-4051-a992-ab7d0093864b)
 * [Equals - objecten vergelijken](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=c18b27c9-ad5a-444b-9695-ab7d00c2c3d9)
+* [Uitgewerkt voorbeeld Abstract en System.Object mbv Zoo-dieren](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=e0c0f796-de77-4930-bcb6-ab8d00ce0c24) (compilatie uit hoorcollege 18-19)
 
 ### Hoofdstuk 15 - Polymorfisme
 * [Polymorfisme](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=6bc13cf3-83d0-449d-9d8f-ab7d00c5a021)
