@@ -50,6 +50,7 @@ Gebruik je eerdere code voor `PlayingCard` om een spelletje "hoger", "lager" toe
   - De gebruiker krijgt de vraag of de waarde van `currentCard` hoger, lager of gelijk aan de waarde van `previousCard` is.
   - `currentCard` vervang `previousCard`
 - Het spel stopt als de gebruiker een fout maakt of als het spel kaarten op is.
+- Noem de methode om het spel op te starten `HigherLower()`
 
 ## Voorbeeldinteractie
 
