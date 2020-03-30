@@ -97,6 +97,7 @@
   * [Foreach en var](11_arraysvanklassen/3_foreach.md)
   * [List](11_arraysvanklassen/4_list.md)
   * [Oefeningen](11_arraysvanklassen/a_practicamem.md)
+  * [Extra oefeningen](11_arraysvanklassen/b_practicamem.md)
 * H12: Overerving
   * [Overerving intro](12_overerving/0_overerving_intro.MD)
   * [Constructors bij overerving](12_overerving/3_constructors_inheritance.md)
