@@ -55,7 +55,7 @@ Gebruik je eerdere code voor `PlayingCard` om een spelletje "hoger", "lager" toe
 ## Voorbeeldinteractie
 
 ```text
-De kaarten zijn geschud!
+Klaar om te spelen.
 De vorige kaart had waarde 7.
 Hoger (0), lager (1) of gelijk (2)?
 > 0
