@@ -63,6 +63,25 @@ class Paard: Dier
 ### Abstracte methoden enkel in abstracte klassen
 Van zodra een klasse een abstracte methode of property heeft dan ben je, logischerwijs, verplicht om de klasse ook abstract te maken. 
 
+## Abstracte properties
+
+Properties kunnen virtual gemaakt, en dus ook ``abstract``. Volgende voorbeeld toont hoe dit werkt:
+
+```csharp
+    abstract class Dier
+    {
+        abstract public int MaxLeeftijd { get;}
+    }
+
+    class Olifant : Dier
+    {
+        public override int MaxLeeftijd {
+            get { return 100; }
+        }
+    }
+```
+
+
 # Kennisclip
 ![](../assets/infoclip.png)
 
