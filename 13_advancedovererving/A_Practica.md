@@ -51,7 +51,7 @@ Maak een child-klasse die van Book overerft genaamd ‘TextBook. Een textbook he
 
 Maak een child-klasse die van Book overerft genaamd ‘CoffeeTableBook’. Deze klasse heeft geen extra velden.
 
-Voorts kunnen boeken "opgeteld" worden om als omnibus uitgebracht te worden. De titel wordt dan "Omnibus van [X]". waarbij X de Authors bevat, gescheiden met een komma. De prijs van een Omnibus is steeds de som van beide boeken gedeeld door 2. **Schrijf een methode ``TelOp`` die twee ``Book`` objecten als parameter aanvaardt en als returntype een nieuw ``Book`` teruggeeft.**
+Voorts kunnen boeken "opgeteld" worden om als omnibus uitgebracht te worden. De titel wordt dan "Omnibus van [X]". waarbij X de Authors bevat, gescheiden met een komma. De prijs van een Omnibus is steeds de som van beide boeken gedeeld door 2. **Schrijf een ``static`` methode ``TelOp`` die twee ``Book`` objecten als parameter aanvaardt en als returntype een nieuw ``Book`` teruggeeft.** 
 
 In beide child-klassen, override de Price-setter zodat:
 a)	Bij Textbook de prijs enkel tussen 20 en 80 kan liggen
