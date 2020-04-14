@@ -8,6 +8,41 @@ Kan je volgende 2 UML-diagrammen implementeren in code? Uiteraard kan je dat: ma
 ![](../assets/6_klassen/multipplecompuml.png)
 [bron](http://www.jot.fm/issues/issue_2004_11/column5/)
 
+# Politiek
+Maak een programma om de politieke situatie van een land te simuleren.
+
+
+Maak volgende klassen:
+* Land
+* Minister
+* President
+
+## Minister
+Een Minister heeft geen speciale eigenschappen. Enkel een autoproperty om de Naam van de minister in bij te houden
+
+## President
+Een President is een minister maar met 1 extra property met private setter: hij heeft een teller die start op 4 alsook een methode `JaarVerder`die deze teller met 1 iedere aanroep verlaagt.
+
+## Land
+* Een land heeft 0 of 1 president (of koning, kies zelf)
+* Een land heeft 0 of 1 eerste minister
+* Een land heeft 0 tot 4 ministers (via een ``List<Minister>``)
+
+Al deze compositieobjecten zijn private.
+Een land heeft volgende publieke methoden:
+* ``MaakRegering``: deze methode aanvaardt volgende parameters:
+  1. 1 president object die aan de private president variabele wordt toegekend
+  2. Een ``List<Minister>`` object waarin  tussen de 1 tot 5 ministers in staan: de eerste minister in de lijst wordt toegewezen aan de private eerste minister variabele. De overige ministers in de lijst worden aan de private lijst van ministers toegewezen.
+
+    Deze methode zal enkel iets doen indien er geen president in het land is (``null``). Indien er reeds een regering is dan zal er een foutboodschap ,verschijnen.
+
+* ``JaarVerder``: deze methode aanroepen zal de ``JaarVerder`` aanroepen op de president indien deze er is (en dus niet ``null`` is). Deze methode controleert ook of de teller van de president na deze aanroep op 0 staat. Als dat het geval is dan worden alle ministers en president in het land op ``null`` gezet.
+
+
+Controleer je klasse Land door enkele ministers en een president te maken en deze in een object van het type Land via ``MaakRegering`` door te geven. Test dan wat er gebeurt indien je enkele malen ``JaarVerder`` op het land aanroept.
+    
+
+
 # Moederbord
 
 Maak een klasse ``Moederbord`` die een, je raadt het nooit, moederbord van een computer voorstelt. Kies een van de vele moederborden die je online vindt ([enkele voorbeelden](https://www.google.com/search?biw=1368&bih=802&tbm=isch&sa=1&ei=4oK9XNqCKt3UmwXbk5-4Cg&q=motherboard+parts&oq=motherboard+parts&gs_l=img.3..0l10.1974.2413..2560...0.0..0.68.290.5......1....1..gws-wiz-img.aurN6S4Da0I#imgrc=_)) en bekijk uit welke delen een moederbord bestaat ('heeft een').

@@ -132,6 +132,7 @@
 * H14: Compositie
   * [Compositie](14_compositie/0_compositie_intro.MD)
   * [_Oefeningen](14_compositie/A_PracticaComp.md)
+  * [_Corona Missie](14_compositie/coronamissieoverering.md)
 * H15: Polymorfisme
   * [Polymorfisme](15_polymorfisme/11_polymo_intro.MD)
   * [Polymorfisme in de praktijk](15_polymorfisme/polypraktijd.md)
