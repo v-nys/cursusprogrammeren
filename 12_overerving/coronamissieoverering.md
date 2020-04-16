@@ -22,7 +22,7 @@ Kan je nu sneller het vaccin vinden?
 
 
 ## Dictionary 
-We gaan de centra over de 7 continenten verspreiden. Maar we gaan hiervoor een nieuw concept gebruiken, een zogenaamde ``Dictionary`` dit is hetzelfde als een ``List`` maar in plaats van een index heeft ieder element een key van een type dat je zelf bepaald. [Lees even dit na.](https://apwt.gitbook.io/ziescherp/pro-geen-leerstof-en-of-in-opbouw/generics-en-collections/8_collections#dictionary-collectie)
+We gaan de centra over de 7 continenten verspreiden. Maar we gaan hiervoor een nieuw concept gebruiken, een zogenaamde ``Dictionary`` dit is hetzelfde als een ``List`` maar in plaats van een index heeft ieder element een key van een type dat je zelf bepaald. [Lees even dit na.](../11_arraysvanklassen/dict.md)
 
 Maak de Dictionary als volgt:
 

@@ -108,6 +108,7 @@
   * [Arrays van objecten](11_arraysvanklassen/7_arraysvanobj.md)
   * [Foreach en var](11_arraysvanklassen/3_foreach.md)
   * [List](11_arraysvanklassen/4_list.md)
+  * [Dictionary](11_arraysvanklassen/dict.md)
   * [_Oefeningen](11_arraysvanklassen/A_practicaMem.md)
 * Module 3 eindetest
   * [Opgave 1](EindeTests/Mod3/Opgave.md)
