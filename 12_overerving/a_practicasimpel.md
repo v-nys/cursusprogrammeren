@@ -1,26 +1,71 @@
 # Labo-oefeningen
 
-## Overerven a la carte
+## Een bestaande klasse uitbreiden via overerving
 
-Selecteer twee oefeningen met klassen die je in het verleden hebt gemaakt. Probeer zelf een "is een" relatie te ontdekken voor een van je bestaande klasse. Maak een nieuwe klasse die deze "is een" relatie via overerving aantoont. Voeg extra properties en methoden toe en test deze klasse.
+### Leerdoelen
+* overerving van bestaande klassen laten zien
+* toegang tot properties en methodes demonstreren
 
-Voorbeeld: De `Student` klasse zou je kunnen overerven naar een `WerkStudent` : "Een werkstudent **is een** student", maar heeft ook een methode "MoetgaanWerken" \(bijvoorbeeld\) en een property `IsSteenDood` \(`bool`\) die op true wordt gezet als deze student meer dan 10uur is moeten gaan werken.
+### Functionele analyse
+Maak een nieuwe klasse, `WorkingStudent`. Een werkstudent verschilt van een student omdat hij soms moet gaan werken en omdat hij een bepaald aantal werkuren per week moet presteren.
 
-## HiddenBookmark
+### Technische analyse
+Deze klasse erft over van de klasse `Student` die je voor het eerst hebt gebruikt in hoofdstuk 8.
 
-Voeg een `HiddenBookmark` klasse toe aan je bestaande Bookmark Manager applicatie van vorige hoofdstuk.
+Bovenop alle eigenschappen / methoden van `Student` heeft `WorkingStudent`:
 
-De `HiddenBookmark` is een `Bookmark` klasse die de browser in Incognito-modus zal opstarten bij het openen van de bookmark. Dit kan je bewerkstelligen door `-incognito` achter `chrome.exe` te plaatsen. Maak de `OpenSite` methode `virtual` in `BookMark` om vervolgens via `override` in `HiddenBookmark` dit op te lossen.
+- een methode `HasWorkToday()` die willekeurig `true` of `false` teruggeeft
+- een property `WorkHours` die een aantal gepresteerde uren bijhoudt. Deze staat waarden tussen 1 en 20 toe. Lagere of hogere waarden worden automatisch aangepast (naar 1 of 20 naargelang of de waarde lager of hoger is).
+  - de defaultwaarde van deze property is 10
 
-Test wat er gebeurt als je al je bookmarks vervangt door `HiddenBookmarks`.
+Voeg een statische methode `DemonstrateWorkingStudent()` toe aan je klasse voor deze les. Deze methode doet volgende zaken:
 
-Afhankelijk van de browser die je wilt aanroepen moet je de incognito parameter iets anders doorgeven: **Let op de spatie na "-private ", deze moet er staan anders plak je je url aan de parameter:**
+- ze maakt met de default constructor één gewone student aan (de properties mag je invullen zoals je zelf wil, maar vul ze wel in)
+- ze maakt met de default constructor één werkstudent aan (de properties mag je invullen zoals je zelf wil, maar vul ze wel in)
+- ze plaatst beide in een `ArrayList<Student>`
+- ze doorloopt met een `foreach`-lus de lijst en toont via `Console.WriteLine` de naam van elke student
+- je moet deze methode kunnen opstarten vanuit je keuzemenu voor dit onderwerp
 
-```csharp
-Process.Start("iexplore.exe", "-private " + url);
-Process.Start("chrome.exe", "-incognito " + url);
-Process.Start("firefox.exe", "-private-window " + url);
-Process.Start("iexplore.exe", "-private " + url);
+## Klassen met aangepaste constructor maken
+
+### Functionele analyse
+We schrijven een applicatie die een lijst van af te handelen taken bijhoudt. Er zijn twee soorten taken: éénmalige taken en terugkerende taken. Elke taak heeft een beschrijving, maar terugkerende taken hebben ook een bepaalde hoeveelheid tijd waarna ze herhaald moeten worden.
+
+### Technische analyse
+- Maak een klasse `Task` met een property `Description` en een constructor die een waarde voor deze beschrijving verwacht (een `string`).
+  - Wanneer deze constructor wordt opgeroepen, wordt volgende tekst getoond: "Taak <Description> is aangemaakt". Je vult hier zelf de beschrijving van de taak in.
+- Maak een subklasse `RecurringTask` van `Task`. Deze heeft een constructor die twee zaken verwacht: een beschrijving (nog steeds een `string`) en een aantal dagen (een `byte`).
+  - Wanneer deze constructor wordt opgeroepen, wordt de tekst voor een gewone taak getoond. Daaronder wordt getoond: "Deze taak moet om de <aantal dagen> herhaald worden."
+- Voeg een statische methode `DemonstrateTasks()` toe aan je klasse voor deze les. Deze methode maakt eerst een `ArrayList` van taken aan en herhaalt daarna volgende stappen tot de gebruiker aangeeft dat hij klaar is:
+  - ze toont drie opties: een taak aanmaken, een terugkerende taak aanmaken of stoppen
+  - indien de gebruiker vraagt een taak aan te maken, vraagt ze een beschrijving, maakt ze de taak en voegt ze deze toe aan de lijst
+  - indien de gebruiker vraagt een terugkerende taak aan te maken, vraagt ze een beschrijving en een aantal dagen, maakt ze de terugkerende taak en voegt ze deze toe aan de lijst
+  - indien de gebruiker wenst te stoppen, eindigt ze zonder resultaat
+  - je moet deze methode kunnen opstarten vanuit je keuzemenu voor dit onderwerp
+
+### Voorbeeldinteractie
+```text
+Wat wil je doen?
+1. een taak maken
+2. een terugkerende taak maken
+3. stoppen
+> 1
+Beschrijving van de taak?
+> TV ophangen
+Wat wil je doen?
+1. een taak maken
+2. een terugkerende taak maken
+3. stoppen
+> 2
+Beschrijving van de taak?
+> Vuilzakken buiten zetten
+Aantal dagen tussen herhaling?
+> 7
+Wat wil je doen?
+1. een taak maken
+2. een terugkerende taak maken
+3. stoppen
+> 3
 ```
 
 ## Oefening: H12-ziekenhuis
@@ -36,182 +81,50 @@ Process.Start("iexplore.exe", "-private " + url);
 Dit programma berekent de doktersrekening van een patiënt, op basis van een basisbedrag \(€50\) en een extra kost \(€20/uur\). In het geval van een verzekerde patiënt worden de kosten met 10% verlaagd.
 
 ### Technische analyse
+- Schrijf twee klassen: `Patient` en `InsuredPatient`
+- Beide hebben als properties een naam en een verblijfsduur
+- Beide hebben één constructor die de naam en verblijfsduur als parameter hebben
+- Beide hebben een methode `ShowCost` die een boodschap op het scherm print die zegt hoe veel die patiënt moet betalen
+  - Omdat de kost anders bepaald wordt voor een gewone patiënt dan voor een verzekerde patiënt, moet je deze methode **overschrijfbaar** maken in `Patient` en moet je ze **overschrijven** in `InsuredPatient`
+- Voeg een statische methode `DemonstratePatients()` toe aan je klasse voor deze les. Deze methode maakt patiënten aan en roept hun methode `ShowCost` op, zodat onderstaande voorbeeldinteractie te zien is
 
-#### UI
-
-console applicatie
-
-#### voorbeeldinteractie\(s\)
+#### voorbeeldinteractie
 
 ```text
 Vincent, een gewone patiënt die 12 uur in het ziekenhuis gelegen heeft, betaalt €290.
 Tim, een verzekerde patiënt die 12 uur in het ziekenhuis gelegen heeft, betaalt €261.
 ```
 
-### Technische hulp
-
-#### Programmaverloop
-
-Per patiënt worden een naam en een verblijfsduur in het ziekenhuis bijgehouden \(als velden van een klasse\). Per patiënt wordt de uitvoer getoond door middel van een methode `ShowInfo`. De berekening van de kost wordt uitgevoerd door een methode `ComputeCost`. In het geval van een verzekerde patiënt is dit een verfijnde versie van de methode voor niet-verzekerde patiënten.
-
 #### Testscenario's
 
-* Test uit met een verblijf van 1 uur.
-* Test uit met een verblijf van 0 uur.
-* Test uit met de patiënten beschreven in de voorbeeldinteractie.
+* Test ook uit met een verblijf van 1 uur.
+* Test ook uit met een verblijf van 0 uur.
+* Test ook uit met de patiënten beschreven in de voorbeeldinteractie.
 
-### Ondersteunend materiaal
+## Oefening: dynamic dispatch
 
-Hou het voorlopig op de cursus.
+### Leerdoelen
+* herbruik code ouderklasse
+* virtual, override, base
 
-## Ballspel met overerving
+### Functionele analyse
+Onze rapporten van studenten missen belangrijke informatie. We willen te zien krijgen wie het statuut van werkstudent heeft.
 
-Volgende code toont hoe we nu een bestaande klasse `Ball` kunnen overerven om een bestuurbare bal te maken:
+### Technische analyse
+Pas je klassen `Student` en `WorkingStudent` aan, zodat de bestaande methode `ShowOverview` een uitgebreider overzicht toont voor werkstudenten (voor gewone studenten blijft het ongewijzigd). Dit heeft dan de vorm:
 
-### Basisklasse Ball
+```text
+Joske Vermeulen, 21 jaar
+Klas: EA2
 
-We maken een klasse `Ball` die via `Update` en `Draw` zichzelf over het consolescherm beweegt. Enkele opmerkingen:
-
-* We maken sommige variabelen `protected` zodat later de overgeërfde klasse er aan kunnen
-* Een `static` methode `CheckHit` laat ons toe te ontdekken of twee `Ball`objecten mekaar raken
-
-```csharp
-class Ball
-{
-   public int X { get { return x; } }
-   public int Y { get { return y; } }
-   private int x = 0;
-   private int y = 0;
-   protected int vx = 0;
-   protected int vy = 0;
-   protected char drawChar = 'O';
-   protected ConsoleColor drawColor = ConsoleColor.Red;
-
-   public Ball(int xin, int yin, int vxin, int vyin)
-   {
-      x = xin;
-      y = yin;
-      vx = vxin;
-      vy = vyin;
-   }
-
-   public void Update()
-   {
-      x += vx;
-      y += vy;
-      if (x >= Console.WindowWidth || x < 0)
-      {
-            vx *= -1;
-            x += vx;
-      }
-      if (y >= Console.WindowHeight || y < 0)
-      {
-            vy *= -1;
-            y += vy;
-      }
-   }
-   public void Draw()
-   {
-      Console.SetCursorPosition(x, y);
-      Console.ForegroundColor = drawColor;
-      Console.Write(drawChar);
-      Console.ResetColor();
-
-   }
-
-   static public bool CheckHit(Ball ball1, Ball ball2)
-   {
-
-      if (ball1.X == ball2.X && ball1.Y == ball2.Y)
-            return true;
-
-      return false;
-   }
-}
+Cijferrapport:
+**********
+Communicatie:             12
+Programming Principles:   15
+Web Technology:           13
+Gemiddelde:               13.3
+Statuut: werkstudent
+Aantal werkuren per week: 10
 ```
 
-### Specialisatie klasse PlayerBall
-
-De overgeërfde klasse `PlayerBall` is een `Ball` maar zal z'n `vx` en `vy` updaten gebaseerd op input via de `ChangeVelocity` methode:
-
-```csharp
-class PlayerBall : Ball
-{
-   public PlayerBall(int xin, int yin, int vxin, int vyin) : base(xin, yin, vxin, vyin)
-   {
-      drawChar = 'X';
-      drawColor = ConsoleColor.Green;
-   }
-
-   public void ChangeVelocity(ConsoleKeyInfo richting)
-   {
-      switch (richting.Key)
-      {
-            case ConsoleKey.UpArrow:
-               vy--;
-               break;
-            case ConsoleKey.DownArrow:
-               vy++;
-               break;
-            case ConsoleKey.LeftArrow:
-               vx--;
-               break;
-            case ConsoleKey.RightArrow:
-               vx++;
-               break;
-            default:
-               break;
-      }
-   }
-}
-```
-
-### Eenvoudig spel
-
-We maken nu een rudimentair spel waarin de gebruiker een bal moet proberen te raken.
-
-```csharp
-static void Main(string[] args)
-{
-   Console.CursorVisible = false;
-   Console.WindowHeight = 20;
-   Console.WindowWidth = 30;
-   Ball b1 = new Ball(4, 4, 1, 0);
-   PlayerBall player = new PlayerBall(10, 10, 0, 0);
-   while (true)
-   {
-
-         Console.Clear();
-
-         //Ball
-         b1.Update();
-         b1.Draw();
-
-         //SpelerBall
-         if (Console.KeyAvailable)
-         {
-            var key = Console.ReadKey();
-            player.ChangeVelocity(key);
-         }
-
-         player.Update();
-         player.Draw();
-
-         //Check collisions
-         if (Ball.CheckHit(b1, player))
-         {
-            Console.Clear();
-            Console.WriteLine("Gewonnen!");
-            Console.ReadLine();
-         }
-         System.Threading.Thread.Sleep(100);
-   }
-}
-```
-
-Kan je dit uitbreiden met?
-
-* Meerdere ballen die over het scherm vliegen \(benodigdheden: array en collision check met alle ballen\)
-* Meerdere levels 
-* Score gebaseerd op tijd die gebruiker nodig had om bal te raken \(benodigdheden: teller die optelt na iedere `Sleep`\)
-
+De laatste twee regels komen **bovenop** de info die je eerder al toonde. Maak gebruik van `base` zodat je niet de volledige implementatie opnieuw hoeft te schrijven. Pas nu je methode `DemonstrateWorkingStudent` aan zodat niet de naam van elke student in de lijst wordt getoond, maar zodat zijn volledig rapport wordt getoond.
