@@ -145,5 +145,6 @@ myBook.AllPages.Insert(new Page(), 5);
 
 * [Compositie](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=799210db-6683-49f1-afba-ab9d00cf6792)
 * [Compositie in praktijk basics](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=26d08209-4de8-40b5-b5cc-ab9d00d33aa5)
-* [Compositie in praktijk: Demo met kaartspel](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=d9c2280d-7b1d-4a83-8851-ab9d00e13cca)
+* [Compositie in praktijk demo met kaartspel deel 1](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=d9c2280d-7b1d-4a83-8851-ab9d00e13cca)
+* [Compositie in praktijk demo met kaartspel dee2](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=a1009330-272d-4978-a078-aba2012ab2b8)
 * [Compositie in praktijk: Demo met helden](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=235d6b90-d246-4529-a911-ab9d00db6f56)
