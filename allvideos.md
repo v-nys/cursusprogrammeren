@@ -117,6 +117,10 @@ Op volgende pagina vind je alle kennisclips en andere opnames samen die doorheen
 * [Polymorfisme](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=6bc13cf3-83d0-449d-9d8f-ab7d00c5a021)
 * [Is en as keywords](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=aba3bca4-ed3a-4067-a611-ab7d00cc2178)
 
+### Hoofdstuk 16 - Interfaces
+* [Interfaces en polymorfisme in de praktijk: fuifsimulator](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=1827a908-a435-4d89-ae7a-aa4c00911c87)
+
+
 ### Appendix - Git
 
 * [Git hoorcollege/Workshop](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=e792a44a-98ee-43d4-a466-ab5d00900024)
