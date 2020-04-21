@@ -140,6 +140,7 @@
   * [Is en As keywords](18_IsAs/1_IsAs.md)
   * [Objecten vergekijken: alles komt samen](18_IsAs/6_equals.md)
   * [_Oefeningen](15_polymorfisme/A_Practica.md)
+  * [_Corona Missie](15_polymorfisme/coronamissie.md)
 * H16: Interfaces
   * [Interface intro](16_interfaces/1_Interface_intro.MD)
   * [Interfaces voorbeeld project](16_interfaces/presidentinterfaces.md)
