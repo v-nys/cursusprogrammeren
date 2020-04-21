@@ -118,6 +118,8 @@ Op volgende pagina vind je alle kennisclips en andere opnames samen die doorheen
 * [Is en as keywords](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=aba3bca4-ed3a-4067-a611-ab7d00cc2178)
 
 ### Hoofdstuk 16 - Interfaces
+
+* [Interfaces](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=6c32cd08-980c-4fe1-9be8-aba40101be31)
 * [Interfaces en polymorfisme in de praktijk: fuifsimulator](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=1827a908-a435-4d89-ae7a-aa4c00911c87)
 
 

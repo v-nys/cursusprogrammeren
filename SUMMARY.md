@@ -142,6 +142,7 @@
   * [_Oefeningen](15_polymorfisme/A_Practica.md)
 * H16: Interfaces
   * [Interface intro](16_interfaces/1_Interface_intro.MD)
+  * [Interfaces voorbeeld project](16_interfaces/presidentinterfaces.md)
   * [Interfaces in de praktijk](16_interfaces/2_InterfacesInPraktijk.md)
   * [Polymorfisme en interfaces](18_IsAs/2_Polymorfisme_Interfaces.md)
   * [_Oefeningen](16_interfaces/A_practica.md)
