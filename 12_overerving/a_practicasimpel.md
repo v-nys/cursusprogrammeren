@@ -14,7 +14,7 @@ Deze klasse erft over van de klasse `Student` die je voor het eerst hebt gebruik
 
 Bovenop alle eigenschappen / methoden van `Student` heeft `WorkingStudent`:
 
-- een methode `HasWorkToday()` die willekeurig `true` of `false` teruggeeft
+- een methode `HasWorkToday()` die willekeurig `true` of `false` teruggeeft. Er is geen methode `NextBool` in de klasse random, maar je kan een willekeurig getal tussen 0 en 1 genereren en de uitkomst vertalen in een boolean.
 - een property `WorkHours` die een aantal gepresteerde uren bijhoudt. Deze staat waarden tussen 1 en 20 toe. Lagere of hogere waarden worden automatisch aangepast (naar 1 of 20 naargelang of de waarde lager of hoger is).
   - de defaultwaarde van deze property is 10
 
@@ -22,7 +22,7 @@ Voeg een statische methode `DemonstrateWorkingStudent()` toe aan je klasse voor 
 
 - ze maakt met de default constructor één gewone student aan (de properties mag je invullen zoals je zelf wil, maar vul ze wel in)
 - ze maakt met de default constructor één werkstudent aan (de properties mag je invullen zoals je zelf wil, maar vul ze wel in)
-- ze plaatst beide in een `ArrayList<Student>`
+- ze plaatst beide in een `List<Student>`
 - ze doorloopt met een `foreach`-lus de lijst en toont via `Console.WriteLine` de naam van elke student
 - je moet deze methode kunnen opstarten vanuit je keuzemenu voor dit onderwerp
 
