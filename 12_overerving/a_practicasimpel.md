@@ -85,7 +85,7 @@ Dit programma berekent de doktersrekening van een patiënt, op basis van een bas
 
 ### Technische analyse
 - Schrijf twee klassen: `Patient` en `InsuredPatient`
-- Beide hebben als properties een naam en een verblijfsduur
+- Beide hebben als properties een naam (een `string`) en een verblijfsduur (een `uint`)
 - Beide hebben één constructor die de naam en verblijfsduur als parameter hebben
 - Beide hebben een methode `ShowCost` die een boodschap op het scherm print die zegt hoe veel die patiënt moet betalen
   - Omdat de kost anders bepaald wordt voor een gewone patiënt dan voor een verzekerde patiënt, moet je deze methode **overschrijfbaar** maken in `Patient` en moet je ze **overschrijven** in `InsuredPatient`
