@@ -88,15 +88,19 @@ Dit programma berekent de doktersrekening van een patiënt, op basis van een bas
 - Beide hebben als properties een naam (een `string`) en een verblijfsduur (een `uint`)
 - Beide hebben één constructor die de naam en verblijfsduur als parameter hebben
 - Beide hebben een methode `ShowCost` die een boodschap op het scherm print die zegt hoe veel die patiënt moet betalen
-  - Omdat de kost anders bepaald wordt voor een gewone patiënt dan voor een verzekerde patiënt, moet je deze methode **overschrijfbaar** maken in `Patient` en moet je ze **overschrijven** in `InsuredPatient`
+  - Omdat de kost anders bepaald wordt voor een gewone patiënt dan voor een verzekerde patiënt, moet je deze methode **overschrijfbaar** maken in `Patient` en moet je ze **overschrijven** in `InsuredPatient`. De kost wordt getoond met twee cijfers na de komma.
 - Voeg een statische methode `DemonstratePatients()` toe aan je klasse voor deze les. Deze methode maakt patiënten aan en roept hun methode `ShowCost` op, zodat onderstaande voorbeeldinteractie te zien is
 
 #### voorbeeldinteractie
 
 ```text
-Vincent, een gewone patiënt die 12 uur in het ziekenhuis gelegen heeft, betaalt €290.
-Tim, een verzekerde patiënt die 12 uur in het ziekenhuis gelegen heeft, betaalt €261.
+Vincent, een gewone patiënt die 12 uur in het ziekenhuis gelegen heeft, betaalt €290.00.
+Tim, een verzekerde patiënt die 12 uur in het ziekenhuis gelegen heeft, betaalt €261.00.
 ```
+
+{% hint style="info" %}
+Zie je geen €-symbool in je output? In het eerste semester hebben we gezien hoe je het gebruik van Unicode activeert.
+{% endhint %}
 
 #### Testscenario's
 
