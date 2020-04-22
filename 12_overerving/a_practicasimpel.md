@@ -15,7 +15,7 @@ Deze klasse erft over van de klasse `Student` die je voor het eerst hebt gebruik
 Bovenop alle eigenschappen / methoden van `Student` heeft `WorkingStudent`:
 
 - een methode `HasWorkToday()` die willekeurig `true` of `false` teruggeeft. Er is geen methode `NextBool` in de klasse random, maar je kan een willekeurig getal tussen 0 en 1 genereren en de uitkomst vertalen in een boolean.
-- een property `WorkHours` die een aantal gepresteerde uren bijhoudt. Deze staat waarden tussen 1 en 20 toe. Lagere of hogere waarden worden automatisch aangepast (naar 1 of 20 naargelang of de waarde lager of hoger is).
+- een property `WorkHours` die een aantal gepresteerde uren bijhoudt (als `byte`). Deze staat waarden tussen 1 en 20 toe. Lagere of hogere waarden worden automatisch aangepast (naar 1 of 20 naargelang of de waarde lager of hoger is).
   - de defaultwaarde van deze property is 10
 
 Voeg een statische methode `DemonstrateWorkingStudent()` toe aan je klasse voor deze les. Deze methode doet volgende zaken:
@@ -33,9 +33,9 @@ We schrijven een applicatie die een lijst van af te handelen taken bijhoudt. Er 
 
 ### Technische analyse
 - Maak een klasse `Task` met een property `Description` en een constructor die een waarde voor deze beschrijving verwacht (een `string`).
-  - Wanneer deze constructor wordt opgeroepen, wordt volgende tekst getoond: "Taak <Description> is aangemaakt". Je vult hier zelf de beschrijving van de taak in.
+  - Wanneer deze constructor wordt opgeroepen, wordt volgende tekst getoond: "Taak <Description> is aangemaakt." Je vult hier zelf de beschrijving van de taak in.
 - Maak een subklasse `RecurringTask` van `Task`. Deze heeft een constructor die twee zaken verwacht: een beschrijving (nog steeds een `string`) en een aantal dagen (een `byte`).
-  - Wanneer deze constructor wordt opgeroepen, wordt de tekst voor een gewone taak getoond. Daaronder wordt getoond: "Deze taak moet om de <aantal dagen> herhaald worden."
+  - Wanneer deze constructor wordt opgeroepen, wordt de tekst voor een gewone taak getoond. Daaronder wordt getoond: "Deze taak moet om de <aantal dagen> dagen herhaald worden."
 - Voeg een statische methode `DemonstrateTasks()` toe aan je klasse voor deze les. Deze methode maakt eerst een `ArrayList` van taken aan en herhaalt daarna volgende stappen tot de gebruiker aangeeft dat hij klaar is:
   - ze toont drie opties: een taak aanmaken, een terugkerende taak aanmaken of stoppen
   - indien de gebruiker vraagt een taak aan te maken, vraagt ze een beschrijving, maakt ze de taak en voegt ze deze toe aan de lijst
@@ -52,6 +52,7 @@ Wat wil je doen?
 > 1
 Beschrijving van de taak?
 > TV ophangen
+Taak TV ophangen is aangemaakt.
 Wat wil je doen?
 1. een taak maken
 2. een terugkerende taak maken
@@ -61,6 +62,8 @@ Beschrijving van de taak?
 > Vuilzakken buiten zetten
 Aantal dagen tussen herhaling?
 > 7
+Taak Vuilzakken buiten zetten is aangemaakt.
+Deze taak moet om de 7 dagen herhaald worden.
 Wat wil je doen?
 1. een taak maken
 2. een terugkerende taak maken
