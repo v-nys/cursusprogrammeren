@@ -30,14 +30,22 @@ Een President is een minister maar met 1 extra property met private setter: hij 
 
 Al deze compositieobjecten zijn private.
 Een land heeft volgende publieke methoden:
-* ``MaakRegering``: deze methode aanvaardt volgende parameters:
-  1. 1 president object die aan de private president variabele wordt toegekend
-  2. Een ``List<Minister>`` object waarin  tussen de 1 tot 5 ministers in staan: de eerste minister in de lijst wordt toegewezen aan de private eerste minister variabele. De overige ministers in de lijst worden aan de private lijst van ministers toegewezen.
 
-    Deze methode zal enkel iets doen indien er geen president in het land is (``null``). Indien er reeds een regering is dan zal er een foutboodschap ,verschijnen.
+### ``MaakRegering``
 
-* ``JaarVerder``: deze methode aanroepen zal de ``JaarVerder`` aanroepen op de president indien deze er is (en dus niet ``null`` is). Deze methode controleert ook of de teller van de president na deze aanroep op 0 staat. Als dat het geval is dan worden alle ministers en president in het land op ``null`` gezet.
+Deze methode aanvaardt volgende parameters:
+  
+1. 1 president object die aan de private president variabele wordt toegekend
+  
+2. Een ``List<Minister>`` object waarin  tussen de 1 tot 5 ministers in staan: de eerste minister in de lijst wordt toegewezen aan de private eerste minister variabele. De overige ministers in de lijst worden aan de private lijst van ministers toegewezen.
 
+Deze methode zal enkel iets doen indien er geen president in het land is (``null``). Indien er reeds een regering is dan zal er een foutboodschap ,verschijnen.
+
+### ``JaarVerder``
+
+Deze methode aanroepen zal de ``JaarVerder`` aanroepen op de president indien deze er is (en dus niet ``null`` is). Deze methode controleert ook of de teller van de president na deze aanroep op 0 staat. Als dat het geval is dan worden alle ministers en president in het land op ``null`` gezet.
+
+## Eindfase
 
 Controleer je klasse Land door enkele ministers en een president te maken en deze in een object van het type Land via ``MaakRegering`` door te geven. Test dan wat er gebeurt indien je enkele malen ``JaarVerder`` op het land aanroept.
     
