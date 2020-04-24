@@ -138,4 +138,4 @@ Volgende voorbeeld is iets praktischer: [Arena with a mage in C# .NET (inheritan
 # Kennisclip
 ![](../assets/infoclip.png)
 
-*[Polymorfisme in de praktijk](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=06305096-bee1-466a-9b70-aba700860b64)
+* [Polymorfisme in de praktijk](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=06305096-bee1-466a-9b70-aba700860b64)
