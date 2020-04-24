@@ -118,6 +118,7 @@ Op volgende pagina vind je alle kennisclips en andere opnames samen die doorheen
 * [Polymorfisme in de praktijk met presidenten](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=06305096-bee1-466a-9b70-aba700860b64)
 * [Polymorfisme in praktijk "demo met kaartspel deel 2"](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=a1009330-272d-4978-a078-aba2012ab2b8)
 * [Is en as keywords](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=aba3bca4-ed3a-4067-a611-ab7d00cc2178)
+* [Samenvatting objecten vergelijken met equals: polymorfisme in actie](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=b705422d-db2d-420a-bcda-aba700fd9336)
 
 ### Hoofdstuk 16 - Interfaces
 
