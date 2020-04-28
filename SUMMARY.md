@@ -147,6 +147,7 @@
   * [Interfaces in de praktijk](16_interfaces/2_InterfacesInPraktijk.md)
   * [Polymorfisme en interfaces](18_IsAs/2_Polymorfisme_Interfaces.md)
   * [_Oefeningen](16_interfaces/A_practica.md)
+  * [_Corona Missie](16_interfaces/coronamissie.md)
 * Module 4 eindetest
   * [Opgave](EindeTests/Mod4/Opgave.md)
   * [Opgave vaardigheidsproef  1819 2e kans](EindeTests/Mod4/Opgave_1819_2ezit.md)
