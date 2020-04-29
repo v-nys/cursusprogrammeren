@@ -92,3 +92,8 @@ class MilitaryAdvisor:IAdvisor
  }
 }
 ```
+
+# Kennisclip
+![](../assets/infoclip.png)
+
+* [Interfaces in de praktijk met presidenten, deel 2](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=1df92edd-ba85-42f4-bdd0-abac0149cc10)
