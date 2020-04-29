@@ -9,5 +9,6 @@
 
 
 1. Het bestand dat de agent ons heeft doorgestuurd [kan je hier vinden](../assets/9_interfaces/FOUNDINVAULT.zip). Er staan 2 zips in, plaats deze ieder in een aparte map.
-2. Onze ingenieurs hebben volgende informatie reeds ontdekt over het bestand. [Bekijk het hier](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=38abbe8b-316c-4da9-9e57-abab015d6115).
+2. Onze ingenieurs hebben volgende informatie reeds ontdekt over het bestand. [Bekijk volgende videoclip waarin dit wordt uitgelegd](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=38abbe8b-316c-4da9-9e57-abab015d6115)
+![Flow](../assets/9_interfaces/coronaflow.png)
 3. Kan jij hun onderzoek afwerken en ontdekken wat er in de kluis van de Habitat Permanens te vinden is?
