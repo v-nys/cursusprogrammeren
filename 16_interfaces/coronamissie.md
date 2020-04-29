@@ -9,7 +9,8 @@
 
 
 1. Het bestand dat de agent ons heeft doorgestuurd [kan je hier vinden](../assets/9_interfaces/FOUNDINVAULT.zip). Er staan 2 zips in, plaats deze ieder in een aparte map.
-2. Onze ingenieurs hebben volgende informatie reeds ontdekt over het bestand. [Bekijk volgende videoclip waarin dit wordt uitgelegd](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=38abbe8b-316c-4da9-9e57-abab015d6115)
+2. Onze ingenieurs hebben volgende informatie reeds ontdekt over het bestand. [Bekijk volgende videoclip waarin dit wordt uitgelegd](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=38abbe8b-316c-4da9-9e57-abab015d6115) (zie ook de afbeelding hieronder)
 3. Kan jij hun onderzoek afwerken en ontdekken wat er in de kluis van de Habitat Permanens te vinden is?
+4. Indien alles goed gaat kan je nu ook elkaars key-dlls in de folder plaatsen. TheVault.exe zal ALLE dll's testen dat het tegenkomt. 
 
 ![Flow van applicatie en tools](../assets/9_interfaces/coronaflow.png)
