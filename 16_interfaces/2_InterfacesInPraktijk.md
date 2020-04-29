@@ -1,5 +1,3 @@
-## Interfaces in praktijk
-
 De bestaande .NET klassen gebruiken vaak interfaces om bepaalde zaken uit te voeren. Zo heeft .NET tal van interfaces gedefinieerd waar je zelfgemaakte klassen mogelijk aan moeten voldoen indien ze bepaalde bestaande methoden wensen te gebruiken. Een typisch voorbeeld is het gebruik van de ``Array.Sort`` methode. We tonen dit in een voorbeeld zo meteen.
 
 Enkele veelgebruikte interfaces binnen .NET (louter ter info):
