@@ -66,10 +66,10 @@ public class MisterPresident
 }
 ```
 
-De eerder beschreven ``MilitaryAdvisor``,``ScienceAdvisor`` en ``EconomyAdvisor`` dienen ook niet meer van de abstracte klasse ``Àdvisor``(deze zou je kunnen verwijderen) over te erven en kunnen gewoon de interface implementeren:
+De eerder beschreven ``MilitaryAdvisor``,``ScienceAdvisor`` en ``EconomyAdvisor`` dienen ook niet meer van de abstracte klasse ``Advisor``(deze zou je kunnen verwijderen) over te erven en kunnen gewoon de interface implementeren:
 
 ```csharp
-class MilitaryMinistor:IAdvisor
+class MilitaryAdvisor:IAdvisor
 {
     public void Advise()
     {
