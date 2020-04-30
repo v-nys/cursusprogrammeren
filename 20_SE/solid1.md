@@ -1,8 +1,5 @@
 # test:
 
-{% hint style='info' %}
-Important info: this note needs to be highlighted
-{% endhint %}
 
 
 {% hint style='tip' %}
@@ -13,9 +10,6 @@ Important tip: this note needs to be highlighted
 Important danger: this note needs to be highlighted
 {% endhint %}
 
-{% hint style='working' %}
-Important working: this note needs to be highlighted
-{% endhint %}
 
 Bron: https://github.com/GitbookIO/plugin-codetabs
 
