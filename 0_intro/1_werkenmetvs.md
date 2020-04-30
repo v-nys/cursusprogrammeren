@@ -20,8 +20,7 @@ Het hart van Visual Studio bestaat uit de **compiler** die we hiervoor besproken
 In deze cursus zullen de voorbeelden steeds met de **Community** editie van VS gemaakt zijn. Je kan deze als AP-student gratis downloaden en installeren  via [visualstudio.microsoft.com/vs](https://visualstudio.microsoft.com/vs/).
 
 Het is belangrijk bij de installatie dat je minimaal 
-* de **.NET desktop development** workload selecteert als te installeren tools. ![VS Installeren](../assets/0_intro/vsinstall.png)
-* kies verderop ook **.NET Core cross-platform development** ![VS Installeren](../assets/1_csharpbasics/coreinst.png)
+* de **.NET desktop development** en **.NET Core cross-platform development**  workload selecteert als te installeren tools. ![VS Installeren](../assets/0_intro/vsinstall.png)
 * Bij individual components de "Class Designer" aanduiden
 ![VS Installeren](../assets/0_intro/vsinstallclassdesigner.png)
 * Uiteraard ben je vrij om meerdere zaken te installeren.
