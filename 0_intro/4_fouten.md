@@ -1,14 +1,22 @@
 # Fouten oplossen
 
-![](../assets/attention.jpg)
-
+{% hint style='danger' %}
 Je code kan niet gecompileerd en uitgevoerd worden zolang er fouten in je code staan (dit bespraken we reeds in [een eerder hoofdstuk](0_intrototcs.md)).
 
-Indien je op de groene start knop duwt en volgende waarschuwing krijgt **KLIK DAN NOOIT OP YES EN DUID NOOIT DE CHECKBOX AAN**:
-![Zie je de fout?](../assets/0_intro/errorwarning.PNG)
->De eerste die dit wél doet trakteert de hele klas als ik dit ontdek.
 
-> Lees de boodschap eens: wat denk je dat er gebeurt als je op 'yes' duwt? Inderdaad, VS zal de laatste goed gelukte code uitvoeren en dus niet de code die je nu hebt staan waarin nog fouten staan.
+Indien je op de groene start knop duwt en volgende waarschuwing krijgt **KLIK DAN NOOIT OP YES EN DUID NOOIT DE CHECKBOX AAN**:
+
+![Zie je de fout?](../assets/0_intro/errorwarning.PNG)
+{% endhint %}
+
+{% hint style='tip' %}
+De eerste die dit wél doet trakteert de hele klas als ik dit ontdek.
+
+
+Lees de boodschap eens: wat denk je dat er gebeurt als je op 'yes' duwt? Inderdaad, VS zal de laatste goed gelukte code uitvoeren en dus niet de code die je nu hebt staan waarin nog fouten staan.
+{% endhint %}
+
+
 
 ## Fouten vinden
 
