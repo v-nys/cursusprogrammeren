@@ -60,6 +60,12 @@ class Zorro: ISuperHeld
 ```
 Zolang de klasse Zorro niet exact de interface inhoud implementeert zal deze klasse niet gecompileerd kunnen worden.
 
+## Interface notatie
+
+Een "lolly" op een klein geeft aan dat deze een bepaalde interface heeft. In volgende tekening hebben we een klasse Meeuw en een interface IVliegt. We gebruiken de UML notatie voor een interface om aan te geven dat de Meeuw klasse de interface IVliegt heeft:
+
+![Interface uml notatie](../assets/9_interfaces/uml.png)
+
 ## Is keyword met interfaces
 We kunnen``is`gebruiken om te weten of een klasse een specifieke interface heeft.
 

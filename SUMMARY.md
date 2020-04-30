@@ -201,7 +201,7 @@
   * [H15 - Polymorfisme](15_polymorfisme/opl_practica.md)
   * [H16 - Interfaces](16_interfaces/opl_practica.md)
   * [Module 4 eindetest](EindeTests/Mod4/Oplossing.md)
-* [Oplossingen CoronaMissies]
+* Oplossingen CoronaMissies
   * [H13 Advanced Overerving](corona/opl_h13corona.md)
   * [H14 Compositie](corona/opl_h14corona.md)
 * All-In-Projecten
