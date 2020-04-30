@@ -105,6 +105,7 @@ Op volgende pagina vind je alle kennisclips en andere opnames samen die doorheen
 * [System.Object en ToString](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=00cad992-7714-4051-a992-ab7d0093864b)
 * [Equals - objecten vergelijken](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=c18b27c9-ad5a-444b-9695-ab7d00c2c3d9)
 * [Uitgewerkt voorbeeld Abstract en System.Object mbv Zoo-dieren](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=e0c0f796-de77-4930-bcb6-ab8d00ce0c24) (compilatie uit hoorcollege 18-19)
+* [Bespreking oplossing CoronaMissie](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=736abb9f-5971-4920-a031-abad00ca02bc)
 
 ### Hoofdstuk 14 - Compositie
 * [Compositie](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=799210db-6683-49f1-afba-ab9d00cf6792)
