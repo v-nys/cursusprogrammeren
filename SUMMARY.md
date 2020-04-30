@@ -143,11 +143,12 @@
   * [_Corona Missie](15_polymorfisme/coronamissie.md)
 * H16: Interfaces
   * [Interface intro](16_interfaces/1_Interface_intro.MD)
-  * [Interfaces voorbeeld project](16_interfaces/presidentinterfaces.md)
+  * [Interfaces voorbeeld met president](16_interfaces/presidentinterfaces.md)
   * [Interfaces in de praktijk](16_interfaces/2_InterfacesInPraktijk.md)
+  * [Final chapter: we brengen alles samen](18_IsAs/2_Polymorfisme_Interfaces.md)
   * [_Oefeningen](16_interfaces/A_practica.md)
   * [_Corona Missie](16_interfaces/coronamissie.md)
-  * [Final chapter: we brengen alles samen](18_IsAs/2_Polymorfisme_Interfaces.md)
+
 * Module 4 eindetest
   * [Opgave](EindeTests/Mod4/Opgave.md)
   * [Opgave vaardigheidsproef  1819 2e kans](EindeTests/Mod4/Opgave_1819_2ezit.md)
