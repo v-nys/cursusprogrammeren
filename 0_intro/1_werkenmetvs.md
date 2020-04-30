@@ -40,7 +40,10 @@ Na het opstarten van VS krijg je het startvenster te zien van waaruit je verschi
 
 We zullen nu een nieuw project aanmaken, kies hiervoor "Create a new project".
 
-> Het "New Project" venster dat nu verschijnt geeft je hopelijk al een glimp van de veelzijdigheid van VS. In het rechterdeel zie je bijvoorbeeld alle Project Types staan. M.a.w. dit zijn alle soorten programma’s die je kan maken in VS. Naargelang de geïnstalleerde opties en bibliotheken zal deze lijst groter of kleiner zijn.
+
+{% hint style='tip' %}
+Het "New Project" venster dat nu verschijnt geeft je hopelijk al een glimp van de veelzijdigheid van VS. In het rechterdeel zie je bijvoorbeeld alle Project Types staan. M.a.w. dit zijn alle soorten programma’s die je kan maken in VS. Naargelang de geïnstalleerde opties en bibliotheken zal deze lijst groter of kleiner zijn.
+{% endhint %}
 
 Dit semester kiezen we steeds als Project Type  **Console App (.NET Core)**. Kies dit type en klik 'Next'.
 
@@ -48,10 +51,13 @@ Dit semester kiezen we steeds als Project Type  **Console App (.NET Core)**. Kie
 
  Op het volgende scherm kan je een naam geven voor je project alsook de locatie op de harde schijf waar het project dient opgeslagen te worden. **Onthoudt waar je je project aanmaakt zodat je dit later terugvindt**.
 
+{% hint style='danger' %}
 **De solution name blijf je af (deze moet momenteel dezelfde naam zijn als je project)**
+{% endhint %}
 
- > Geef je projectnamen ogenblikkelijk duidelijke namen zodat je niet opgezadeld geraakt met projecten zoals Project201.
-
+{% hint style='tip' %}
+Geef je projectnamen ogenblikkelijk duidelijke namen zodat je niet opgezadeld geraakt met projecten zoals Project201.
+{% endhint %}
 Geef je project de naam "MyFirstProject" en kies een goede locatie (ik raad je aan dit steeds in Dropbox of Onedrive te doen)
 
 ![VS Project maken](../assets/0_intro/vsprojectname.PNG)
