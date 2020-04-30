@@ -65,4 +65,4 @@ Alle kleuren die beschikbaar zijn zijn beschreven in ``ConsoleColor`` deze zijn:
 * ``ConsoleColor.Yellow``
 
 
-![[Bron](https://www.c-sharpcorner.com/article/change-console-foreground-and-background-color-in-c-sharp/)](../assets/1_csharpbasics/kleurenconsole.jpg)
+![Bron afbeelding : https://www.c-sharpcorner.com/article/change-console-foreground-and-background-color-in-c-sharp/](../assets/1_csharpbasics/kleurenconsole.jpg)
