@@ -17,8 +17,24 @@ Important danger: this note needs to be highlighted
 Important working: this note needs to be highlighted
 {% endhint %}
 
+Bron: https://github.com/GitbookIO/plugin-codetabs
+
+{% codetabs name="Python", type="py" -%}
+msg = "Hello World"
+print msg
+{%- language name="JavaScript", type="js" -%}
+var msg = "Hello World";
+console.log(msg);
+{%- language name="HTML", type="html" -%}
+<b>Hello World</b>
+{%- endcodetabs %}
 
 
+https://github.com/GitbookIO/plugin-codetabs
+
+{% plantuml %}
+Bob->Alice : hello
+{% endplantuml %}
 
 > Dit hoofdstuk werd origineel geschreven door Tom Peeters. [Bron.](https://github.com/tomptrs/solid) maar moet nog langs editor Tim ;)
 
