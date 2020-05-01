@@ -2,7 +2,7 @@
 
 Met arrays komen we voor het eerst iets dichter tot een van de sterkstes van C#, namelijk het aspect **referenties**. [Bekijk daarom volgend filmpje op 31 minuten.](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=17ce5c87-2b6a-46ea-b7b1-a87e00a7e4e5)
 
-Dit zeer essentiële concept zal in het volgende deel erg aan bod komen. 
+Dit zeer essentiële concept zal in het volgende deel erg vaak aan bod komen.
 
 # Arrays kopiëren
 
