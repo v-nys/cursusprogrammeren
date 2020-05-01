@@ -1,13 +1,15 @@
 # Meetlat
 
-Maak een klasse "Meetlat". Via een write-only property BeginLengte kan de gebruiker de lengte van een voorwerp instellen (in meter). Via een reeks read-only properties (die transformeren) kan de gebruiker deze lengte in verschillende eenheden uitlezen namelijk:
+Maak een klasse ``Meetlat``. Via een write-only property BeginLengte kan de gebruiker de lengte van een voorwerp instellen (in meter). Via een reeks read-only properties (die transformeren) kan de gebruiker deze lengte in verschillende eenheden uitlezen namelijk:
 
-* LengteInM
-* LengteInCm
-* LengteInKm
-* LengteInVoet (1m= 3.2808ft)
+* ``LengteInM``
+* ``LengteInCm``
+* ``LengteInKm``
+* ``LengteInVoet`` (1m= 3.2808ft)
 
+{% hint style='warning' %}
 **Opgelet het ``readonly`` keyword heb je niét nodig om readonly properties te maken. Zoek op hoe je dit wel doet.**
+{% endhint %}
 
 Voorbeeld gebruik van klasse:
 
@@ -22,7 +24,9 @@ Console.WriteLine($"{mijnLat.LengteInM} meter is {mijnLat.LengteInVoet} voet.");
 We gaan een programma schrijven dat ons toelaat enkele basis-eigenschappen van specifieke Pokémon te berekenen terwijl ze levellen.
 Nadruk van deze oefening is het juist gebruiken van properties. Bekijk de cheat sheet bij twijfel.  
 
->Disclaimer: de informatie in deze tekst is een vereenvoudigde versie van de echte Pokémon-stats in de mate dat ik het allemaal een beetje kon begrijpen en juist interpreteren.
+{% hint style='tip' %}
+Disclaimer: de informatie in deze tekst is een vereenvoudigde versie van de echte Pokémon-stats in de mate dat ik het allemaal een beetje kon begrijpen en juist interpreteren.
+{% endhint %}
 
 ## Hoe Pokémon werken
 
@@ -43,15 +47,14 @@ Maak een consoleapplicatie met daarin een klasse Pokémon die de werking zoals h
 ### Base-stats
 De base-stats worden als ints bewaard. Maak voor al deze basis-eigenschappen full properties, namelijk:
 
-* HP_Base
-* Attack_Base
-* Defense_Base
-* SpecialAttack_Base
-* SpecialDefense_Base
-* Speed_Base
+* ``HP_Base``
+* ``Attack_Base``
+* ``Defense_Base``
+* ``SpecialAttack_Base``
+* ``SpecialDefense_Base``
+* ``Speed_Base``
 
 ### Extra stats
-
 
 Voorts wordt een Pokémon ook gedefinieerd door z’n naam (string), type (string, bv. "grass & poison") en nummer (int), maak hiervoor auto properties aan.
 

@@ -1,6 +1,8 @@
-## Polymorfisme in de praktijk: Presidenten
+# Polymorfisme in de praktijk: Presidenten
 
+{% hint style='tip' %}
 ![Gezocht: wie weet waar deze still vandaan komt? Ik heb geen flauw benul. We zien Robert Redford en Bush Senior, uit een film ofzo?](../assets/9_interfaces/president.jpg)
+{% endhint %}
 
 Beeld je in dat je een klasse President hebt met een methode "RunTheCountry" (voorbeeld van [StackOverflow](https://stackoverflow.com/questions/1031273/what-is-polymorphism-what-is-it-for-and-how-is-it-used) ). De President heeft toegang tot tal van adviseurs die hem kunnen helpen (inzake miltair, binnenlands beleid, economie). Zonder de voordelen van polymorfisme zou de klasse President er zo kunnen uitzien, **slechte manier**:
 
@@ -129,11 +131,13 @@ public class MisterPresident
 
 En wie zei dat het presidentsschap moeilijk was?!
 
-## Nog voorbeelden van polymorfisme nodig?
+{% hint style='tip' %}
+# Nog voorbeelden van polymorfisme nodig?
 
 Volgende tekst heeft een leuke insteek om polymorfisme uit te leggen... aan de hand van...wait for it... Zeemeerminnen! :) [Lezen maar!](http://www.techoschool.com/Technology/Dotnet/Csharp-for-Beginners_Csharp-Polymorphism)
 
 Volgende voorbeeld is iets praktischer: [Arena with a mage in C# .NET (inheritance and polymorphism)](https://www.ict.social/csharp/oop/arena-with-mage-in-csharp-net-inheritance-and-polymorphism)
+{% endhint %}
 
 # Kennisclip
 ![](../assets/infoclip.png)

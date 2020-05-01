@@ -33,5 +33,3 @@ for(int i = 0; i < ploegen.Length; i++)
 {% hint style='warning' %}
 **Opgelet: wanneer je met arrays van objecten ([zie later](../11_arraysvanklassen/7_arraysvanobj.md)) werkt dan zal bovenstaande mogelijk niet het gewenste resultaten geven daar we nu de individuele referenties van een object kopieren!**
 {% endhint %}
-
-

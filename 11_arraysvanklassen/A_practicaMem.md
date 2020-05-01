@@ -98,7 +98,9 @@ class BookMark
 }
 ```
 
+{% hint style='tip' %}
 Opmerking: je mag gerust een andere browser hier zetten (bv ``iexplore.exe``). Om te weten of hij dat proces kent, klikt op Start->Run/uitvoeren en voer daar bijvoorbeeld ``chrome.exe`` in. Als je op enter duwt en je browser opent, dan weet je dat hij dat proces zal vinden.
+{% endhint %}
 
 Voorbeeld van hoe de bookmark klasse zal werken:
 

@@ -2,7 +2,9 @@
 
 Een List<> collectie is de meest standaard collectie die je kan beschouwen als een veiligere variant op een een doodnormale array.
 
-> De Generieke ``List<>`` klasse bevindt zich in de ``System.Collections.Generic`` namespace. Je dient deze namespace dus als ``using`` bovenaan toe te voegen wil je deze klasse kunnen gebruiken.
+{% hint style='tip' %}
+De Generieke ``List<>`` klasse bevindt zich in de ``System.Collections.Generic`` namespace. Je dient deze namespace dus als ``using`` bovenaan toe te voegen wil je deze klasse kunnen gebruiken.
+{% endhint %}
 
 ## List aanmaken
 

@@ -27,7 +27,9 @@ Dit zal resulteren in volgende foutboodschap:
  
  ![NullReferenceException error in VS](../assets/6_klassen/nullref.png)
 
-> We moeten in dit voorbeeld expliciet ``=null`` plaatsen daar Visual Studio slim genoeg is om je te waarschuwen voor eenvoudige potentiele NullReference fouten en je code anders niet zal compileren.
+{% hint style='tip' %}
+We moeten in dit voorbeeld expliciet ``=null`` plaatsen daar Visual Studio slim genoeg is om je te waarschuwen voor eenvoudige potentiele NullReference fouten en je code anders niet zal compileren.
+{% endhint %}
 
 ## NullReferenceException voorkomen
 

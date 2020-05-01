@@ -10,6 +10,10 @@ Vervolledig het all-in-project  "[Map Maker](../A_DEEL2_AllInOne/1_MapMapker.md)
 
 # Game
 
+{% hint style='tip' %}
+Maak eerst de [corona missie van dit hoofdstuk](../16_interfaces/coronamissie.md). Die opdracht is veel kleiner dan deze stevige brok.
+{% endhint %}
+
 **Zie onderaan pagina voor minimale klasse-hiërarchie en interfaces.**
 
 Maak een spel dat als volgt werkt:

@@ -5,7 +5,11 @@
 * [Briefing](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=a8a5cead-6ac8-47d7-b5fe-abab015f92c9)
 
 # De opdracht
-> Opgelet, deze opdracht vereist .net Core 3.1. Indien je die (nog) niet geïnstalleerd heb moet je dat eerst doen. Ga naar [deze pagina](https://dotnet.microsoft.com/download/visual-studio-sdks?utm_source=getdotnetsdk&utm_medium=referral) en kies de **.NET Core 3.1 Visual 2019 SDK** (x86 of x64 is afhankelijk van je systeem). Na installatie moet je best herstarten (zeker indien Visual Studio open stond terwijl je installeerde)
+{% hint style='warning' %}
+Opgelet, deze opdracht vereist .net Core 3.1. 
+
+Indien je die (nog) niet geïnstalleerd heb moet je dat eerst doen. Ga naar [deze pagina](https://dotnet.microsoft.com/download/visual-studio-sdks?utm_source=getdotnetsdk&utm_medium=referral) en kies de **.NET Core 3.1 Visual 2019 SDK** (x86 of x64 is afhankelijk van je systeem). Na installatie moet je best herstarten (zeker indien Visual Studio open stond terwijl je installeerde)
+{% endhint %}
 
 
 1. Het bestand dat de agent ons heeft doorgestuurd [kan je hier vinden](../assets/9_interfaces/FOUNDINVAULT.zip). Er staan 2 zips in, plaats deze ieder in een aparte map.

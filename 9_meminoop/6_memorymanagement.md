@@ -30,11 +30,13 @@ Als je volgende tabel begrijpt dan beheers je geheugenmanagement in C#:
 ## Waarom twee geheugens?
 
 Waarom plaatsen we niet alles in de stack? De reden hiervoor is dat bij het compileren van je applicatie er reeds zal berekend worden hoeveel geheugen de stack zal nodig hebben. Wanneer je programma dus later wordt uitgevoerd weet het OS perfect hoeveel geheugen het minstens moet reserveren. 
+
 Er is echter een probleem: we kunnen niet alles perfect berekenen/voorspellen. Een variabele van het type ``int`` is perfect geweten hoe groot die zal zijn (32 bit). Maar wat met een string? Of met een array waarvan we pas tijdens de uitvoer de lengte aan de gebruiker misschien vragen?
 Het zou nutteloos (en zonde) zijn om reeds bij aanvang een bepaalde hoeveelheid voor een array te reserveren als we niet weten hoe groot die zal worden. Beeld je maar eens in dat we 2k byte reserveren om dan te ontdekken dat we maar 5byte ervan nodig hebben. RAM is goedkoop, maar toch...
+
 De heap laat ons dus toe om geheugen op een wat minder gestructureerde manier in te palmen. Tijdens de uitvoer van het programma zal de heap als het ware dienst doen als een grote zandbak waar eender welke plek kan ingepalmd worden om zaken te bewaren. De stack daarentegen is het kleine bankje naast de zandbak: handig, snel, en perfect geweten hoe groot.
 
-### Value types
+# Value types
 
 **Value** types worden in de stack bewaard. De effectieve waarde van de variabele wordt in de stack bewaard.
 Dit zijn alle gekende, 'eenvoudige' datatypes die we totnogtoe gezien hebben, inclusief enums en structs (zie later):
@@ -48,7 +50,7 @@ Dit zijn alle gekende, 'eenvoudige' datatypes die we totnogtoe gezien hebben, in
 * structs (zien we niet in deze cursus)
 * enums
 
-#### = operator bij value types
+## = operator bij value types
 
 Wanneer we een value-type willen kopieren dan kopieren de echte waarde:
 
@@ -80,15 +82,16 @@ In methode 6
 Na methode 5
 ```
 
-### Reference types
+# Reference types
+
 **Reference** types worden in de heap bewaard. De *effectieve waarde* wordt in de heap bewaard, en in de stack zal enkel een **referentie** of **pointer** naar de data in de heap bewaard worden. Een referentie (of pointer) is niet meer dan het geheugenadres naar waar verwezen wordt (bv. ``0xA3B3163``)  Concreet zijn dit alle zaken die vaak redelijk groot zullen zijn:
 * objecten, interfaces en delegates
 * arrays
 
-#### = operator bij reference types
+## = operator bij reference types
 Wanneer we de = operator gebruiken bij een reference type dan kopieren we de referentie naar de waarde, niet de waarde zelf.
 
-**Bij objecten**
+### Bij objecten
 
 We zien dit gedrag bij alle reference types, zoals objecten:
 ```csharp
@@ -102,7 +105,7 @@ Wat gebeurt er hier?
 3. De geheugenlocatie uit de eerste stap wordt vervolgens in ``stud`` opgeslagen in de stack.
 
 
-**Bij arrays**
+### Bij arrays
 
 Maar ook bij arrays:
 
@@ -119,22 +122,26 @@ andereNummers[0]=999;
 Console.WriteLine(andereNummers[0]);
 Console.WriteLine(nummers[0]);
 ```
+
 We zullen dus als output krijgen:
+
 ```
 999
 999
 ```
 
 Hetzelfde gedrag zien we bij objecten:
+
 ```csharp
 Student a= new Student("Abba");
 Student b= new Student("Queen");
 a=b;
 Console.WriteLine(a.Naam);
 ```
+
 We zullen in dit geval dus ``Queen`` op het scherm zien omdat zowel ``b`` als ``a`` naar het zelfde object in de heap verwijzen. Het originele "abba"-object zijn we kwijt en zal verdwijnen (zie Garbage collector verderop).
 
-#### Methoden en reference parameters
+## Methoden en reference parameters
 
 Ook bij methoden geven we de dus de referentie naar de waarde mee. In de methode kunnen we dus zaken aanpassen van de parameter en dan passen we eigenlijk de originele variabele aan:
 ```csharp
@@ -156,7 +163,9 @@ In methode 6
 Na methode 6
 ```
 
+{% hint style='warning' %}
 **Opgelet:** Wanneer we een methode hebben die een value type aanvaardt en we geven één element van de array mee dan geven we dus een kopie van de actuele waarde mee!
+{% endhint %}
 
 ```csharp
 void DoeIets(int a)
@@ -170,26 +179,31 @@ int[] getallen= {5,3,2};
 DoeIets(getallen[0]); //<= VALUE TYPE!
 Console.WriteLine($"Na methode {getallen[0]}");
 ```
+
 De output bewijst dit:
+
 ```
 In methode 6
 Na methode 5
 ```
 
-## De Garbage Collector (GC)
+# De Garbage Collector (GC)
 Een essentieel onderdeel van .NET is de zogenaamde GC, de Garbage Collector. Dit is een geautomatiseerd onderdeel van ieder C# programma dat ervoor zorgt dat we geen geheugen nodeloos gereserveerd houden.
 De GC zal geregeld het geheugen doorlopen en kijken of er in de heap data staat waar geen references naar verwijzen. Indien er geen references naar wijzen zal dit stuk data verwijderd worden.
 
 In dit voorbeeld zien we dit in actie:
-```
+
+```csharp
 int[] array1= {1,2,3};
 int[] array2= {3,4,5};
 array2=array1;
 ```
+
 Vanaf de laatste lijn zal er geen referentie meer naar ``{3,4,5}`` zijn in de heap, daar we deze hebben overschreven met een referentie naar ``{1,2,3}``. De GC zal dus deze data verwijderen.
 
 Wil je dat niet dan zal je dus minstens 1 variabele moeten hebben die naar de data verwijst. Volgend voorbeeld toont dit:
-```
+
+```csharp
 int[] array1= {1,2,3};
 int[] array2= {3,4,5};
 int[] bewaarArray= array2;

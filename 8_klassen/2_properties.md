@@ -29,51 +29,9 @@ Console.WriteLine(Palpatine.sithName); //DIT ZAL DUS NIET WERKEN, daar sithName 
 
 We willen echter wel van buiten uit het energy-level van een sithLord kunnen instellen. Maar ook hier hetzelfde probleem: wat als we de energy-level op -1000 instellen? Terwijl energy nooit onder 0 mag gaan.
 
-**Properties lossen dit probleem op**
+**Properties** lossen dit probleem op*
 
-### Oldschool oplossing
 
-Vroeger loste m'n voorgaande probleem op door Get-methoden te schrijven:
-
-Je zal deze manier nog in veel andere talen tegenkomen. Wij prefereren properties zoals we nu zullen uitleggen.
-
-```csharp
-class SithLord
-{
-    private int energy;
-    private string sithName;
-
-    public void SetSithName(string newname)
-    {
-        sithName= newname;
-    }
-
-    public string GetSithName()
-    {
-        return "YOU WISH!";
-    }
-
-    public void SetEnergy(int value)
-    {
-        if(value > 0 && value < 9999)
-            energy=value;
-    }
-
-    public int GetEnergy()
-    {
-        return energy;
-    }
-}
-```
-
-Je zou dan kunnen doen:
-
-```csharp
-SithLord Vader= new SithLord();
-Vader.SetEnergy(20); 
-Console.WriteLine($"Vaders energy is {Vader.GetEnergy()}"); //get
-
-```
 # Full properties
 
 Een **full property** ziet er als volgt uit:
@@ -116,12 +74,16 @@ We zullen de property nu stuk per stuk analyseren:
 * set{}: in het set-gedeelte schrijven we de code die we moeten hanteren indien men van buitenuit een waarde aan de property wenst te geven om zo een interne variabele aan te passen. De waarde die we van buitenuit krijgen (als een parameter zeg maar) zal **altijd** in een lokale variabele ``value`` worden bewaard. Deze zal van het type van de property zijn. Vervolgens kunnen we ``value`` toewijzen aan de interne variabele indien gewenst: ``energy=value`` 
     * We kunnen vanaf nu van buitenaf waarden toewijzen aan de property en zo ``energy`` toch bereiken: ``Palpatine.Energy=50``.
 
-### Snel property schrijven
+{% hint style='tip' %}
+**Snel properties schrijven**
+
 Visual Studio heeft een ingebouwde shortcut om snel een full property, inclusief een bijhorende private dataveld, te schrijven. **Typ ``propfull`` gevolgd door twee tabs!**
+{% endhint %}
 
 ## Full property met toegangscontrole
 De full property ``Energy`` heeft nog steeds het probleem dat we negatieve waarden kunnen toewijzen (via de ``set``) die dan vervolgens zal toegewezen worden aan ``energy``.
-> Properties hebben echter de mogelijkheid om op te treden als wachters van en naar de interne staat van objecten.
+
+**Properties hebben echter de mogelijkheid om op te treden als wachters van en naar de interne staat van objecten.**
 
 We kunnen in de ``set`` code extra controles inbouwen. Als volgt:
 
@@ -173,7 +135,9 @@ We kunnen dus enkel ``energy`` een waarde geven, maar niet van buitenuit uitleze
 ```
 We kunnen dus enkel ``energy`` van buitenuit uitlezen, maar niet aanpassen.
 
+{% hint style='warning' %}
 **Opgelet: het ``readonly`` keyword heeft andere doelen en wordt NIET gebruikt in C# om een readonly property te maken**
+{% endhint %}
 
 
 ### Read-only property met private set
@@ -226,7 +190,9 @@ class SithLord
 ```
 
 De nieuw toegevoegde methode ``ResetLord`` willen we gebruiken om de lord z'n energy terug te verlagen. Door echter ``energy=-1`` te schrijven geven we dus -1 rechtstreeks aan ``energy``. Nochtans is dit een illegale waarden.
+
 We moeten dus in de methode ook expliciet via de property gaan en dus schrijven:
+
 ```csharp
 public void ResetLord()
 {
@@ -234,7 +200,9 @@ public void ResetLord()
 }
 ```
 
+{% hint style='tip' %}
 > **Het is een goede gewoonte om zo vaak mogelijk via de properties je interne variabele aan te passen en niet rechtstreeks het dataveld zelf.**
+{% endhint %}
 
 ### Read-only properties die transformeren
 Je bent uiteraard niet verplicht om voor iedere interne variabele een bijhorende property te schrijven. Omgekeerd ook: mogelijk wil je extra properties hebben voor data die je 'on-the-fly' kan genereren.
@@ -424,7 +392,9 @@ public string FirstName { get; }
 ```
 De enige manier om FirstName een waarde te geven is via de constructor van de klasse. Alle andere manieren zal een error genereren. [Meer info.](https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-6#read-only-auto-properties)
 
+{% hint style='tip' %}
 **Opgelet: je hebt ook read-only properties die full property zijn. Lees zeker ook de tekst hierboven in ver band met de get-omvormers.**
+{% endhint %}
 
 ## Snel autoproperties typen in Visual Studio:
 Als je in Visual Studio in je code ``prop`` typt en vervolgens twee keer de tabtoets indrukt dan verschijnt al de nodige code voor een automatic property. Je hoeft dan enkel nog volgende zaken in orde te brengen:
