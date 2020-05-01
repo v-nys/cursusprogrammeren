@@ -1,4 +1,7 @@
-# Arrays
+{% hint style='tip' %}
+Grote delen van dit hoofdstuk zijn vertaald uit het handboek C# 4.0 Essentials.
+{% endhint %}
+
 
 Arrays zijn een veelgebruikt principe in vele programmeertalen. Het grote voordeel van arrays is dat je een enkele variabele kunt hebben die een grote groep waarden voorstelt van eenzelfde type. Hierdoor wordt je code leesbaarder en eenvoudiger in onderhoud. Arrays zijn een zeer krachtig hulpmiddel, maar er zitten wel enkele venijnige addertjes onder het gras.
 
@@ -21,10 +24,6 @@ int dag7= 23;
 ```
 
 Maar wat als je plots de neerslag van een heel jaar, 365 dagen, wenst te bewaren. Of een hele eeuw? Van zodra je een bepaalde soort data hebt die je veelvuldig wenst te bewaren dan zijn arrays de oplossing.
-
-## Bron
-
-Grote delen van dit hoofdstuk zijn vertaald uit het handboek C# 4.0 Essentials.
 
 # Array Basics
 
@@ -202,7 +201,7 @@ for (int i = 0; i < getallen.Length; i++)
 }
 ```
 
-## Volledig voorbeeldprogramma met arrays
+# Volledig voorbeeldprogramma met arrays
 Met al de voorgaande informatie is het nu mogelijk om heel eenvoudig complexere programma's te schrijven die veel data moeten kunnen verwerken. Meestal gebruikt men een for-element om een bepaalde operatie over de hele array toe te passen.
 
 Het volgende programma zal een array van integers aanmaken die alle gehele getallen van 0 tot 99 bevat. Vervolgens zal ieder getal met 3 vermenigvuldigd worden. Finaal tonen we tonen we enkel die getallen die een veelvoud van 4 zijn na de bewerking.
@@ -230,36 +229,3 @@ for (int i = 0; i < getallen.Length; i++)
         Console.WriteLine(getallen[i]);
 }
 ```
-
-# Geheugengebruik bij arrays
-
-[Zie volgend filmpje op 31 minuten.](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=17ce5c87-2b6a-46ea-b7b1-a87e00a7e4e5)
-
-# Arrays kopiëren
-
-Arrays worden 'by reference' gebruikt in C#. Het gevolg hiervan is dat volgende code niet zal doen wat je wenst (``ploegen``, ``nieuwePloegen`` zijn twee arrays van bijvoorbeeld een ``string[]``).
-```csharp
-nieuwePloegen = ploegen;
-```
-Deze code zal perfect werken. Wat er er echter is gebeurd is dat we de referentie naar ``ploegen`` ook in ``nieuwePloegen`` hebben geplaatst. Bijgevolg verwijzen beide variabelen naar dezelfde array, namelijk die waar ``ploegen`` al naar verwees. We hebben een soort alias gemaakt en kunnen nu op twee manieren de array benaderen.
-Als je dus  schrijft:
-```csharp
-nieuwePloegen[4] = "Beerschot";
-```
-Dan is dat hetzelfde als schrijven:
-```csharp
-ploegen[4] = "Beerschot";
-```
-
-En waar staan de ploegen in de nieuwePloegen array? *Die bestaat niet meer!*
-
-Wil je dus arrays kopieren dan kan dat niet op deze manier: **je moet manueel ieder element van de ene naar de andere array kopiëren** als volgt:
-```csharp
-for(int i = 0; i < ploegen.Length; i++)
-{
-    nieuwePloegen[i] = ploegen[i];
-}
-```
-
-**Opgelet: wanneer je met arrays van objecten ([zie later](../11_arraysvanklassen/7_arraysvanobj.md)) werkt dan zal bovenstaande mogelijk niet het gewenste resultaten geven daar we nu de individuele referenties van een object kopieren!**
-

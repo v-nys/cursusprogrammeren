@@ -63,9 +63,9 @@ switch (option)
   }
 ```
 
-## Opgelet:
-
+{% hint style='warning' %}
 De case waarden moeten constanten zijn en mogen dus geen variabelen zijn. Constanten zijn de welgekende *literals* (``1``, ``"1"``, ``1.0``, ``1.d``, ``'1'``, etc.)
+{% endhint %}
 
 # Falthrough
 

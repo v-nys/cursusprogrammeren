@@ -1,9 +1,8 @@
-# If statements
-
-In dit deel  zullen we bekijken hoe we ons programma dynamischer kunnen maken met behulp van het if-statement.
 
 ## If
-De ``if`` uitdrukking is 1 van de meest elementaire uitdrukking in een programmeertaal. De syntax is als volgt:
+De ``if`` uitdrukking is 1 van de meest elementaire uitdrukking in een programmeertaal en laat ons toe 'vertakingen' in onze programmaflow in te bouwen.
+
+De syntax is als volgt:
 
 ```csharp
 if (boolean expression) 

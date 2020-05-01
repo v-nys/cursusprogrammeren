@@ -1,6 +1,14 @@
-> Ook dit hoofdstuk bevat meer oefeningen dan je lief zijn. Zoek zelf de oefeningen uit die je aanspreken en focus je op het leren werken met methoden en deze te integreren in een grotere applicatie.
+{% hint style='tip' %}
+Ook dit hoofdstuk bevat meer oefeningen dan je lief zijn. Zoek zelf de oefeningen uit die je aanspreken en focus je op het leren werken met methoden en deze te integreren in een grotere applicatie.
 
-**Opgelet: wanneer je een oefening maakt die invoer van de gebruiker vereist, gelieve die invoer dan BUITEN de methode te vragen (dus meestal in de ``Main`` methode). Op die manier zorg je er voor dat je je methoden kunt herbruiken.**
+Tip van een lector: meestal als een cursus veel oefeningen van een bepaald onderwerp bevat is de kans bestaande dat dit onderwerp misschien wel eens belangrijk kan zijn ;)
+{% endhint %}
+
+{% hint style='warning' %}
+**Opgelet: wanneer je een oefening maakt die invoer van de gebruiker vereist, gelieve die invoer dan BUITEN de methode te vragen (dus meestal in de ``Main`` methode). **
+
+**Op die manier zorg je er voor dat je je methoden kunt herbruiken.**
+{% endhint %}
 
 # Deel 0 - Opwarmers
 Een extra grote hoop oefeningen om je methoden te drillen ([originele bron](https://codeforwin.org/2016/03/functions-programming-exercises-and-solutions-in-c.html)). De oefeningen zijn ongeveer gerangschikt naar moeilijkheid.
@@ -17,7 +25,10 @@ Iedere oefening verwacht dat je steeds een methode schrijft en de werking ervan 
 * Methode ``ToonArmstrongNummers`` die alle [Armstrong](../5_herhalingen/a_practica.md#armstrong-nummer) nummers tot n toont.
 
 # Deel 1 - De basics
-> Sommige oefeningen zijn van de vorm "Maak een methode die...". Het is steeds de bedoeling dat je de werking van je methode ook test in je main door deze aan te roepen.
+
+{% hint style='tip' %}
+Sommige oefeningen zijn van de vorm "Maak een methode die...". Het is steeds de bedoeling dat je de werking van je methode ook test in je main door deze aan te roepen.
+{% endhint %}
 
 ## Intro methode
 

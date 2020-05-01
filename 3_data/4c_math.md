@@ -72,7 +72,11 @@ totaal+=inp;
 //enz
 Console.WriteLine($"Gemiddelde temperatuur deze week was: {totaal/7}");
 ```
-> Wanneer we met loops leren werken zullen lopende sommen zéér nuttig worden. 
+
+{% hint style='tip' %}
+Wanneer we met loops leren werken zullen lopende sommen zéér nuttig worden. 
+{% endhint %}
+
 
 # Kennisclip
 ![](../assets/infoclip.png)

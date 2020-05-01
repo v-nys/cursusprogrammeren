@@ -2,11 +2,18 @@ Een extra grote hoop oefeningen om je loops te drillen ([originele bron](https:/
 
 Probeer niet alle oefeningen met hetzelfde type loop te doen, wissel tussen ``while``, ``do-while`` en ``for``.
 
+{% hint style='warning' %}
 **Indien er sprake is van *n* in de opgave dan is dit een getal dat je eerst aan de gebruiker moet vragen.**
+{% endhint %}
 
-> Opgelet: de oplossing van dit soort oefeningen vindt je overal. Weersta hier aan, en probeer ZELF de oplossing te vinden. Dat is de enige manier om dit te leren.
+{% hint style='warning' %}
+Opgelet: de oplossing van dit soort oefeningen vindt je overal. Weersta hier aan, en probeer ZELF de oplossing te vinden. Dat is de enige manier om dit te leren.
+{% endhint %}
 
-> Niet zeker van je oplossing? Test of je met minimale aanpassing de grenzen van je programma kunt aanpassen. Als je bijvoorbeeld de getallen van 1 tot 100 moet tonen dan zou je met 2 wijzigingen maximum dit moeten kunnen aanpassen naar de getallen van -1000 tot 21234.
+{% hint style='tip' %}
+Niet zeker van je oplossing? Test of je met minimale aanpassing de grenzen van je programma kunt aanpassen. Als je bijvoorbeeld de getallen van 1 tot 100 moet tonen dan zou je met 2 wijzigingen maximum dit moeten kunnen aanpassen naar de getallen van -1000 tot 21234.
+{% endhint %}
+
 
 # Deel 1
 

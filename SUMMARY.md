@@ -25,6 +25,7 @@
   * [_Oefeningen](1_csharpbasics/A_practica.md)
 * H2: Tekst in code
   * [Strings en chars](2_tekst/5_chars_strings.md)
+  * [Escape characters](2_tekst/escapechars.md)
   * [Strings samenvoegen](2_tekst/6_stringInterpolation.md)
   * [Unicode tonen](2_tekst/7_unicode.md)
   * [Environment bibliotheek](2_tekst/8_environment.md) 
@@ -61,13 +62,18 @@
   * [_Oefeningen deel 3](5_herhalingen/b_practica.md)
 * H6: Methoden
   * [Methoden intro](6_methoden/0_intromethods.md)
+  * [Methoden in de praktijk](6_methoden/methodepraktijk.md)
   * [Bibliotheken](6_methoden/1_bibliotheken.md)
-  * [Geavanceerde methoden](6_methoden/3_advancedmethod.md)  
+  * [Geavanceerde methodetechnieken](6_methoden/3_advancedmethod.md)  
   * [_Oefeningen deel 1](6_methoden/b_practica.md)
   * [_Oefeningen deel 2](6_methoden/c_practica.md)
 * H7: Arrays
   * [Array principes](7_arrays/1_ArraysBasics.md)
-  * [Werken met arrays](7_arrays/2_werken_met_arrays.md)
+  * [Arrays en geheugen](7_arrays/arraysgeheugen.md)
+  * [Nuttige array methoden](7_arrays/2_werken_met_arrays.md)
+  * [System.Array](7_arrays/systemarray.md)
+  * [Algoritmes met arrays](7_arrays/algoarrays.md)
+  * [Strings en arrays](7_arrays/stringarray.md)
   * [Arrays en methoden](7_arrays/3_arrays_en_methoden.md)
   * [N-dimensionale arrays](7_arrays/4_ndimensionalArrays.md)
   * [_Oefeningen deel 1](7_arrays/A_practica.md)

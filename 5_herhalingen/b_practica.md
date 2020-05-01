@@ -1,7 +1,10 @@
-> Begin pas aan deze oefeningen in week 2 van deze module. Doe eerst de practica deel 1!
+{% hint style='tip' %}
+Begin pas aan deze oefeningen wanneer je voldoende geoefend hebt door de vorige 2 delen oefeningen op te lossen.
+{% endhint %}
 
 ##  Grootste getal
 Vervolledig deze code zodat ook getoond wordt welke de grootste waarde is die werd ingevoerd.
+
 ```csharp
 int x= 0;
 int y= 0;
@@ -62,7 +65,9 @@ Console.WriteLine($"Gevonden! Het te zoeken getal was inderdaad {getal} je had e
 ```
 
 **Deel 2:** Pas het programma zo aan dat de tekst die verschijnt bij het inlezen van de volgende poging het resterende interval aangeeft. Gebruik hiervoor twee extra variabelen "ondergrens" en "bovengrens" die als beginwaarden respectievelijk 0 en 100 krijgen. Bij het inlezen van de volgende waarde voor poging zal deze toegekend worden aan ondergrens of bovengrens naargelang ze groter dan wel kleiner dan het te zoeken getal is. 
+
 Zie hieronder een voorbeeldoutput:
+
 ![](../assets/3_loops/raadgetaloutput.png)
 
 **Deel 3:**

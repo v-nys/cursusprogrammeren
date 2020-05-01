@@ -1,15 +1,24 @@
+{% hint style='tip' %}
+Vanaf nu zul je véél meer oefeningen voorgeschoteld krijgen dan je kan afwerken in 1 labo tijd (I dare you ;) ). Selecteer zelf de oefeningen die je wenst te doen en sla die over waarvan je overtuigd bent ze al te kunnen. 
+{% endhint %}
 
-> Vanaf nu zul je véél meer oefeningen voorgeschoteld krijgen dan je kan afwerken in 1 labo tijd (I dare you ;) ). Selecteer zelf de oefeningen die je wenst te doen en sla die over waarvan je overtuigd bent ze al te kunnen. 
-> De oefening zijn, in de mate van het mogelijke, gerangschikt op moeilijkheid.
+{% hint style='tip' %}
+De oefening zijn, in de mate van het mogelijke, gerangschikt op relatieve moeilijkheidsgraad
+{% endhint %}
 
 # De opwarmers
 Bekijk maak de oefeningen 8 tot en met 13 van hoofdstuk 4 in volgende [pdf](../assets/docs/oefenvragen2010.pdf) 
 
-> Ter info: Dit document staat ook in de lijst onderaan bij de [nuttige extra's](../_intro/nuttigeextras.md).
+{% hint style='tip' %}
+Dit document staat ook in de lijst onderaan bij de [nuttige extra's](../_intro/nuttigeextras.md).
+{% endhint %}
 
 # De oefeningen
-> Indien niet expliciet vermeld mag je kiezen met wat voor loop (for, while, do while) je het probleem zal oplossen.
 
+{% hint style='tip' %}
+Indien niet expliciet vermeld mag je kiezen met wat voor loop (``for``, ``while``, ``do while``) je het probleem zal oplossen.
+{% endhint %}
+>
 ## Tafels van vermenigvuldigen
 Gebruik de kracht van loops om pijlsnel alle tafels van 1 tot en met 10 van vermenigvuldigen op het scherm te tonen (dus van 1x1 tot 10x10 en alles daartussen).
 
@@ -36,9 +45,10 @@ Een getal is een *narcistisch getal* of *armstronggetal* als het de som is van z
 
 Schrijf een programma dat aan de gebruiker een getal vraagt en vervolgens toont of het ingevoerde getal een Armstrong-nummer is of niet.
 
-> Je zou deze oefening kunnen oplossen door het ingevoerde getal als string op te splitsen in individuele char's. Maar ik raad je aan om de "wiskunde" weg te volgen zodat je terdege leert met loops en wiskunde te werken.
+{% hint style='tip' %}
+Je zou deze oefening kunnen oplossen door het ingevoerde getal als string op te splitsen in individuele char's. Maar ik raad je aan om de "wiskunde" weg te volgen zodat je terdege leert met loops en wiskunde te werken.
 
-Tip 1: Stel dat je het getal 4560 hebt:
+**Tip 1**: Stel dat je het getal 4560 hebt:
 
 * Eerst deel je 4563 door 1000. Dit geeft **4**. 
 * We trekken 4x1000 van 4563 af. Dit geeft 563.
@@ -47,22 +57,23 @@ Tip 1: Stel dat je het getal 4560 hebt:
 * Deel 63 door 10. Dit geeft **6**.
 * We trekken 6 x 10 van 63 af. Dit geeft **3**
 
-Tip 2:
+**Tip 2**:
 Je kan aan een string vragen hoe groot deze is als volgt:
 
 ```csharp
 int lengte= myInputGetal.Length;  //veronderstellend dat myInputGetal van het type string is
 ```
 Je kan dan nu met ``Math.Pow(10,lengte-1)`` berekenen vanaf welke exponent van 10 we moeten beginnen werken.
-
+{% endhint %}
 
 ## Euler project
 Maak volgende opdracht van [projecteuler.net](http://projecteuler.net):
 >Indien we alle natuurlijke getallen van 0 tot en met 10 oplijsten die een meervoud van 3 of 5 zijn, dan krijgen we de getallen 3,5,6,9 en 10. De som van deze 4 getallen is 33.
 Maak nu een programma dat de som van alle veelvouden van 3 of 5 weergeeft van 0 tot 1000 (dit zou 234168 moeten geven).
 
+{% hint style='tip' %}
 **Tip: module is je grote held hier. Een getal is een veelvoud van x indien ``getal%x`` 0 als resultaat geeft.**
-
+{% endhint %}
 
 ## [PRO] For doordenker 
 Schrijf een programma dat de volgende output geeft, gegeven dat de gebruiker een maximum waarde invoert, dus als hij 4 ingeeft dan zal de driehoek maximum 4 breed worden. Gebruik enkel for-loops!

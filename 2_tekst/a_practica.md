@@ -1,12 +1,19 @@
+
 # Enkele opmerkingen vooraf
 
-1. Bekijk volgende kennisclip waarin wordt uitgelegd hoe je meerdere projecten in 1 solution in VS kunt plaatsen:
+{% hint style='tip' %}
+Bekijk volgende kennisclip waarin wordt uitgelegd hoe je meerdere projecten in 1 solution in VS kunt plaatsen:
 ![](../assets/infoclip.png)
 [Meerdere projecten in 1 solution](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=f2c322cd-7607-4624-b0cd-a969006f8b2a)
 
 **Probeer vanaf nu per hoofdstuk 1 solution aan te maken met daarin meerdere projecten (1 project per oefening)**
+{% endhint %}
 
-2. Sommige oefeningen zullen soms **[PRO]** in de titel hebben. Dit zijn pittigere oefeningen. Probeer ze zeker, maar laat je niet ontmoedigen als ze niet direct lukken. Het kan erg nuttig zijn om enkele weken later nog eens terug naar oudere hoofdstukken te gaan zien of er nog PRO-oefeningen zijn die je ondertussen wel mogelijks kan oplossen. **[PRO²]** oefeningen zijn nog iets pittiger (of bevatten zaken die niet bij de leerstof horen).
+{% hint style='tip' %}
+Sommige oefeningen zullen soms **[PRO]** in de titel hebben. Dit zijn pittigere oefeningen. Probeer ze zeker, maar laat je niet ontmoedigen als ze niet direct lukken. Het kan erg nuttig zijn om enkele weken later nog eens terug naar oudere hoofdstukken te gaan zien of er nog PRO-oefeningen zijn die je ondertussen wel mogelijks kan oplossen. **[PRO²]** oefeningen zijn nog iets pittiger (of bevatten zaken die niet bij de leerstof horen).
+{% endhint %}
+
+
 
 # ASCII Art
 
@@ -20,9 +27,14 @@ Kies 2 oefeningen uit het vorige hoofdstuk waarin je output op het scherm moest 
 
 Gebruik je kennis van het verschil tussen `Console.Write`  en `Console.WriteLine`, alsook de werking van kleuren in console-applicaties, om je ASCII-art naam van de eerdere oefening nu van kleur te voorzien. Zorg ervoor dat minstens 1 letter in een andere kleur is.
 
-> Volgende 2 oefeningen zijn al iets stevigers. Iedere oefening eindigt met een [PRO] gedeelte dat je best enkel doet als je een uitdaging wenst.
+
+
 
 # Systeem informatie
+
+{% hint style='tip' %}
+Volgende 2 oefeningen zijn al iets stevigers. Iedere oefening eindigt met een [PRO] gedeelte dat je best enkel doet als je een uitdaging wenst.
+{% endhint %}
 
 ## Deel 1
 
@@ -93,6 +105,7 @@ Hier enkele nuttige tekens:
 ```
 
 Gebruik $-string interpolatie om de informatie in de tabel te tonen zodat je volgende uitvoer kunt genereren:
+
 ![](../assets/1_csharpbasics/tabel.png)
 
 of:
@@ -124,7 +137,9 @@ Console.WriteLine(err);
 Console.WriteLine("Klaar");
 ```
 
-> Let er op dat dit voorbeeld niet perfect werkt met een shell-commando dat even duurt. Denk bijvoorbeeld aan ``ping``. De output komt namelijk pas op het scherm als het commando is afgelopen. Test zelf maar eens!
+{% hint style='tip' %}
+Let er op dat dit voorbeeld niet perfect werkt met een shell-commando dat even duurt. Denk bijvoorbeeld aan ``ping``. De output komt namelijk pas op het scherm als het commando is afgelopen. Test zelf maar eens!
+{% endhint %}
 
 Maak enkele kleine C# programma's die bepaalde shell-commando's zullen uitvoeren, eventueel na input van de gebruiker.
 Enkele nuttige shell-commando's in de netwerk-sfeer zijn bijvoorbeeld:

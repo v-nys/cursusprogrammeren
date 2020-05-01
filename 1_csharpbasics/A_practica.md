@@ -1,4 +1,6 @@
-> Het is aanbevolen dat je per hoofdstuk een nieuwe folder aanmaakt op je computer. Per oefening maak je dan best een nieuw project aan dat je in de folder zet. Geef ieder project een duidelijke naam (bv EuroNaarDollar) zodat je later vlot je oefeningen kan terugvinden. Denk er aan dat je je projecten best enkel met cijfers en letters benoemd (dus beter EuroNaarDollar dan Euro-Dollar).
+{% hint style='tip' %}
+Het is aanbevolen dat je per hoofdstuk een nieuwe folder aanmaakt op je computer. Per oefening maak je dan best een nieuw project aan dat je in de folder zet. Geef ieder project een duidelijke naam (bv EuroNaarDollar) zodat je later vlot je oefeningen kan terugvinden. Denk er aan dat je je projecten best enkel met cijfers en letters benoemd (dus beter EuroNaarDollar dan Euro-Dollar).
+{% endhint %}
 
 # Simple maths
 Schrijf een programma dat de uitkomst van volgende resultaten op het scherm toont:
@@ -16,7 +18,10 @@ Schrijf een programma dat de uitkomst van volgende resultaten op het scherm toon
 Test wat er gebeurt indien je het resultaat in een ``int`` bewaard en wat er gebeurt als je deze in een ``double`` bewaard.
 Toon beide uitkomsten (m.b.v. ``WriteLine``) telkens op het scherm.
 
-Opgelet: de % hier is de modulo-operator!
+{% hint style='warning' %}
+Opgelet: de % hier is de modulo-operator! Dit zal in heel de cursus ALTIJD zo zijn.
+{% endhint %}
+
 
 # Gemiddelde
 
@@ -55,13 +60,18 @@ Console.Clear();
 Console.WriteLine("Tweede beeld");
 ```
 
-> Merk op dat ``Console.Clear()`` niet werkt zoals verwacht op Mac. (ik zoek nog een oplossing)
+{% hint style='tip' %}
+Merk op dat ``Console.Clear()`` niet werkt zoals verwacht op Mac. (ik zoek nog een oplossing)
+{% endhint %}
 
 # Kill/Death-ratio
 
 Maak twee variabelen ``double kills`` en ``double deaths`` aan. Wijs er jouw typische scores aan toe die je haalt in een spel naar keuze. Bereken en toon vervolgens je kill/death-ratio.
 
-(**opgelet: begrijp je waarom we best een van beide variabelen in ``double`` zetten?** Lees de warning bij Expressies zeker nog eens na... OF test eens wat er gebeurt indien je met ``int`` zou werken).
+
+{% hint style='warning' %}
+**Begrijp je waarom we best een van beide variabelen in ``double`` zetten?** Lees de warning bij Expressies zeker nog eens na... OF test eens wat er gebeurt indien je met ``int`` zou werken.
+{% endhint %}
 
 # Gewicht in space
 

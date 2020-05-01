@@ -1,7 +1,13 @@
+{% hint style='warning' %}
 **Gebruik je kennis van debuggen om vanaf dit hoofstuk problemen op te lossen. Gebruik niet ``Console.WriteLine()`` om de waarde van een variabele te controleren at-runtime, maar gebruik daarentegen breakpoints!**
+{% endhint %}
 
 # Supercomputer
-> Vanaf dit punt zullen  de meeste oefeningen iets "vragen" aan de gebruiker. Hiermee wordt bedoeld dat je z'n input via ReadLine moet inlezen en indien nodig moet converteren naar het gewenste type.
+
+{% hint style='tip' %}
+Vanaf dit punt zullen  de meeste oefeningen iets "vragen" aan de gebruiker. Hiermee wordt bedoeld dat je z'n input via ReadLine moet inlezen en indien nodig moet converteren naar het gewenste type.
+{% endhint %}
+
 
 Vraag aan de gebruiker 3 kommagetallen. Bereken het gemiddelde van deze 3 getallen.
 
@@ -14,7 +20,9 @@ Maak een programma dat aan de gebruiker z'n lengte en gewicht vraagt en vervolge
 
  Reken na met je rekenmachine of je uitkomst wel degelijk klopt!
 
->Bekijk de volgende [kennisclip](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=6381a023-ae87-4662-91ed-a969006d3d9b) en geef je uitvoerbaar bestand van het programma aan een klasgenoot. Kijk of hij het kan uitvoeren.
+{% hint style='tip' %}
+Bekijk de volgende [kennisclip](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=6381a023-ae87-4662-91ed-a969006d3d9b) en geef je uitvoerbaar bestand van het programma aan een klasgenoot. Kijk of hij het kan uitvoeren.
+{% endhint %}
 
 # Op-de-poef
 Een vaste klant in je café besteld altijd "op-de-poef". Dat wil zeggen dat hij niet betaald en dat z'n rekeningen worden neergeschreven. Ooit zal de klant dan gevraagd worden de hele som te betalen.
@@ -73,7 +81,9 @@ Het totaal te betalen bedrag is 126 EURO.
  
  Het orakel zal enkel realistische getallen geven. M.a.w., getallen tussen de 5 en 125 jaar (onder de 5 zou grof zijn).
 
- > We gaan geregeld een oefening in een later hoofdstuk verder uitbreiden. Het orakeltje van Delphi is er zo eentje.
+{% hint style='tip' %}
+We gaan geregeld een oefening in een later hoofdstuk verder uitbreiden. Het orakeltje van Delphi is er zo eentje. **Bewaar je oefeningen dus goed!**
+{% endhint %}
 
  # Random invoer
  Pas 1 van bovenstaande programma's aan zodat je de invoer niet meer aan de gebruiker vraagt, maar deze genereert door een random generator. Zorg ervoor dat je realistische waarden genereert.
