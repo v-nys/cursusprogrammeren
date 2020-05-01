@@ -1,3 +1,159 @@
+# Meetlab
+
+
+```csharp
+class Meetlat
+{
+    public Meetlat(int lengtestart)
+    {
+
+    }lengteInM=lengtestart;
+
+    private double lengte;
+    public double BeginLengte
+    {
+        set { lengte=value; }
+    }
+
+    private double lengteInM;
+
+    public double LengteInCm
+    {
+        get{ return lengte*100;}
+    }
+
+    public double LengteInKm
+    {
+        get{ return lengte/1000;}
+    }
+
+    public double LengteInVoet
+    {
+        get{ return lengte*3.2808;}
+    }
+}
+```
+
+# Sport simulator
+
+```csharp
+class Waterpolospeler
+{
+    private string spelersNaam;
+
+    public string SpelersNaam
+    {
+        get { return spelersNaam; }
+        private set { spelersNaam = value; }
+    }
+
+    private int mutsNummer;
+
+    public int MutsNummer
+    {
+        get { return mutsNummer; }
+        private set
+        {
+            if (value > 0 && value < 14) //checken dat de waarde van de muts tussen de 0 en 14 is
+            {
+                mutsNummer = value; //als het zo is dan zal de waarde aan de muts worden gegeven
+            }
+        }
+    }
+
+    private bool isDoelman;
+
+    public bool IsDoelman
+    {
+        get { return isDoelman; }
+        private set { isDoelman = value; }
+    }
+    private bool isReserve;
+
+    public bool IsReserve
+    {
+        get { return isReserve; }
+        private set { isReserve = value; }
+    }
+
+    private string reeks;
+
+    public string Reeks
+    {
+        get { return reeks; }
+        private set { reeks = value; }
+    }
+    public void Stelin(string naamin, int nummerin, bool doelin, bool reservein, string reeksin)
+    {
+        SpelersNaam = naamin;
+        MutsNummer = nummerin;
+        IsDoelman = doelin;
+        IsReserve = reservein;
+        Reeks = reeksin;
+    }
+    public void Gooibal()
+    {
+        Console.WriteLine($"Ik ({this.SpelersNaam}) gooi de bal");
+    }
+
+    public void Watertrappen()
+    {
+        Console.WriteLine($"nummer {this.MutsNummer} is aan het watertrappelen");
+    }
+    public void Tooninfo()
+    {
+        Console.WriteLine($@"
+Naam: {SpelersNaam}
+Mutsnummer: {MutsNummer}
+Is doelman: {IsDoelman}
+Is reserve: {IsReserve}
+Reeks: {Reeks}
+
+");
+
+
+
+    }
+
+    public static void SimuleerSpeler(Waterpolospeler testspeler)
+    {
+        for (int i = 0; i < 3; i++)
+        {
+            testspeler.Watertrappen();
+        }
+        for (int i = 0; i < 3; i++)
+        {
+            testspeler.Gooibal();
+        }
+    }
+
+    public static void SimuleerWedstrijd(Waterpolospeler speler1, Waterpolospeler speler2)
+    {
+        Random rgen = new Random();
+        if (rgen.Next(0, 10) < 5)
+        {
+            Console.WriteLine($"de winnaar is: {speler1.SpelersNaam}");
+        }
+        else
+        {
+            Console.WriteLine($"de winnaar is: {speler2.SpelersNaam}");
+        }
+    }
+    public static Waterpolospeler BesteSpeler(Waterpolospeler speler1, Waterpolospeler speler2)
+    {
+        Random rgen = new Random();
+        if (rgen.Next(0, 10) < 5)
+        {
+            return speler1;
+        }
+        else
+        {
+            return speler2;
+        }
+    }
+}
+```
+
 # Pokemon met deel 2
 
 We laten de reeds bestaande properties en methoden niet meer zien in deze oplossing:
