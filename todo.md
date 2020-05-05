@@ -18,7 +18,6 @@
 Important info: this note needs to be highlighted
 {% endhint %}
 
-
 {% hint style='tip' %}
 Important tip: this note needs to be highlighted
 {% endhint %}
