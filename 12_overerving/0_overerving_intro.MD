@@ -11,7 +11,9 @@ Wanneer twee klassen met behulp van een "x is een y"-relatie kunnen beschreven w
 * Een paard **is een** dier (paard = child-klasse, dier= parent-klasse)
 * Een tulp **is een** plant
 
-(Opgelet: wanneer we "x heeft een y" zeggen gaat het **niet** over overerving, maar over compositie)
+{% hint style='warning' %}
+Opgelet: wanneer we "x heeft een y" zeggen gaat het **niet** over overerving, maar over [compositie](../14_compositie/0_compositie_intro.MD).
+{% endhint %}
 
 ## Inheritance in CS
 

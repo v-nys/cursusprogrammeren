@@ -70,3 +70,5 @@ Vaak weet je niet op voorhand wat voor elementen je in je lijst wilt plaatsen. V
 ![](../assets/infoclip.png)
 
 * [Polymorfisme](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=6bc13cf3-83d0-449d-9d8f-ab7d00c5a021)
+
+* [Polymorfisme in praktijk "demo met kaartspel dee2"](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=a1009330-272d-4978-a078-aba2012ab2b8)

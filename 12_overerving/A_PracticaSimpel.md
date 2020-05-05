@@ -1,8 +1,34 @@
-# Overerven a la carte
+# Het dierenrijk
 
-Selecteer twee oefeningen met klassen die je in het verleden hebt gemaakt. Probeer zelf een "is een" relatie te ontdekken voor een van je bestaande klasse. Maak een nieuwe klasse die deze "is een" relatie via overerving aantoont. Voeg extra properties en methoden toe en test deze klasse.
+![](../assets/7_overerving/animals.png)
 
-Voorbeeld: De ``Student`` klasse zou je kunnen overerven naar een ``WerkStudent`` : "Een werkstudent **is een** student", maar heeft ook een methode "MoetgaanWerken" (bijvoorbeeld) en een property ``IsSteenDood`` (``bool``) die op true wordt gezet als deze student meer dan 10uur is moeten gaan werken.
+Maak bovenstaande klassenhierarchie na. Animal is de parentklasse , mammal en reptile zijn childklassen van Animal en zo voort.
+
+Verzin voor iedere klasse een property die de parent klasse niet heeft. (bv Animal heeft "BeweegVoort", Reptile heeft "AantalSchubben", etc).
+
+Voorzie in de klasse Animal een virtual methode ``ToonInfo`` die alle properties van de klasse op het scherm zet. De overgeërfde klassen overriden deze methode door de extra properties ook te tonen (maar gebruik base.ToonInfo om zeker de parentklasse werking te bewaren).
+
+Maak nu van iedere klasse een object en roep de ToonInfo methode van ieder object aan.
+
+Plaats deze dieren nu in een ``List<Animal>`` en kijk wat er gebeurt als je deze met een foreach aanroept om alle ToonInfo-methoden van ieder dier te gebruiken.
+
+# Ziekenhuis
+
+## Deel 1 
+Maak een basisklasse ``Patient`` die een programma kan gebruiken om de doktersrekening te berekenen.
+Een patiënt heeft:
+
+* een naam
+* het aantal uur dat hij in het ziekenhuis heeft gelegen
+
+Een ``virtual`` methode ``BerekenKost`` zal de totaalkost berekenen. Deze bestaat uit 50euro+  20euro per uur dat de patiënt in het ziekenhuis lag.
+
+Maak een methode ``ToonInfo`` die steeds de naam van de patiënt toont gevolgd door het aantal uur en z'n kosten.
+
+## Deel 2
+Maak een specialisatieklasse ``VerzekerdePatient``. Deze klasse heeft alles dat een gewone ``Patient`` heeft, echter de berekening van de kosten zal steeds gevolgd worden door een 10% reductie.
+
+Toon de werking aan van deze klasse.
 
 # HiddenBookmark
 
@@ -23,27 +49,10 @@ Process.Start("iexplore.exe", "-private " + url);
 ```
 
 
-# Ziekenhuis
 
-## Deel 1 
-Maak een basisklasse ``Patient`` die een programma kan gebruiken om de doktersrekening te berekenen.
-Een patiënt heeft:
+# Ballspel met overerving (zie hoorcollege voor extra uitleg)
 
-* een naam
-* het aantal uur dat hij in het ziekenhuis heeft gelegen
-
-Een ``virtual`` methode ``BerekenKost`` zal de totaalkost berekenen. Deze bestaat uit 50euro+  20euro per uur dat de patiënt in het ziekenhuis lag.
-
-Maak een methode ``ToonInfo`` die steeds de naam van de patiënt toont gevolgd door het aantal uur en z'n kosten.
-
-## Deel 2
-Maak een specialisatieklasse ``VerzekerdePatient``. Deze klasse heeft alles dat een gewone ``Patient`` heeft, echter de berekening van de kosten zal steeds gevolgd worden door een 10% reductie.
-
-Toon de werking aan van deze klasse.
-
-# Ballspel met overerving
-
-Volgende code toont hoe we nu een bestaande klasse  ``Ball`` kunnen overerven om een bestuurbare bal te maken:
+Volgende code toont hoe we een bestaande klasse  ``Ball`` kunnen overerven om een bestuurbare bal te maken 
 
 ## Basisklasse Ball
 
@@ -188,6 +197,8 @@ static void Main(string[] args)
 
 Kan je dit uitbreiden met?
 
-* Meerdere ballen die over het scherm vliegen (benodigdheden: array en collision check met alle ballen)
+* Ballen met andere eigenschappen
+* Meerdere ballen die over het scherm vliegen (benodigdheden: array )
 * Meerdere levels 
 * Score gebaseerd op tijd die gebruiker nodig had om bal te raken (benodigdheden: teller die optelt na iedere ``Sleep``)
+* PRO: collision detection tussen de ballen

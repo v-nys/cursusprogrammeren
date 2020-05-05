@@ -23,8 +23,9 @@ Deze klasse heeft:
   * Indien doomcountdown 0 of lager wordt gezet zal er "Game over [Naam virus]" op het scherm verschijnen. Dit gebeurt in de setter van de property.
 * Een private ``int killcode``
 * Enkel een default constructor die:
-  * DoomCountdown op een getal tussen 10 en 20 instelt.
+  * ``DoomCountdown`` op een getal tussen 10 en 20 instelt.
   * killcode op een getallen tussen 0 en 99 instelt
+  * Naam wordt willekeurig als volgt: deze bestaat uit 3 willekeurige letters na mekaar, gevolgd door een getal tussen 1 en 99 (bv ABC34).
 * Een methode ``TryVaccin`` die:
   * Eén parameter van het type ``Vaccin`` aanvaardt
   * Een bool teruggeeft. Deze zal true zijn indien het meegegeven Vaccin werkt:
@@ -37,7 +38,9 @@ We gaan nu op zoek naar het juiste vaccin.
 
 *Maak een virus aan.*
 
-Maak een programma waarin je 5 vaccins aanmaakt en in een lijst plaatst. Indien de countdown van het virus op 0 komt te staan ben je gameover en heb je geen vaccin gevonden. Vervolgens ga je deze vaccins blijven testen op een aangemaakt virus en toon je aan de gebruiker welke Vaccin werkten. Van zodra je een werkend vaccin vindt stopt de test en moet je onthouden welk vaccin in de lijst werkt. 
+Maak een programma waarin je 5 vaccins aanmaakt en in een lijst plaatst.  Vervolgens ga je deze vaccins blijven testen op een aangemaakt virus en toon je aan de gebruiker welke vaccins werkten. Van zodra je een werkend vaccin vindt stopt de test en moet je onthouden welk vaccin in de lijst werkt.  
+
+Indien de countdown van het virus op 0 komt te staan ben je gameover en heb je geen vaccin gevonden. De gebruiker zal het programma dus opnieuw moeten opstarten en hopen dat er deze keer wel een vaccin kan worden gevonden.
 
 
 Indien je tijdig een vaccin gevonden hebt ga je naar fase 2.
@@ -50,7 +53,7 @@ Maak een klasse ``VaccinatieCentrum`` aan.
 
 Deze klasse heeft een ``static`` methode ``BewaarVaccin``. Aan deze methode kan je een int als parameter meegeven. Deze parameter wordt in een ``static`` autoproperty genaamd ``Oplossing`` bewaard en bevat de killcode voor het virus die je uit het Vaccin kunt halen via de Oplossing-property dat je aan de methode meegeeft. Standaard staat deze code op -1.
 
-Zorg ervoor dat een Vaccin een nieuwe constructor heeft die toelaat dat je ook een int kunt meegeven die zal gebruikt worden als de killcode die het vaccin moet maken (en dus reeds vanuit de Oplossing kan uitgelezen worden).
+Zorg ervoor dat de Vaccin klasse een extra constructor heeft die toelaat dat je ook een int kunt meegeven die zal gebruikt worden als de oplossing die het vaccin moet maken (en dus reeds vanuit de Oplossing kan uitgelezen worden). De constructor zal dus de property ``Oplossing`` reeds op de juiste waarde zetten. De aanroep van``TryKillCode`` zal dus ook reeds de juiste killcode geven (wat normaal reeds in orde was gebrakt toen je de methode maakte in de eerste plaats).
 
 Maak in de VaccinatieCentrum een methode ``GeefVaccin`` aan die geen parameters aanvaardt en een Vaccin als return type geeft. Deze methode zal null teruggeven in indien ``Killcode`` nog op -1 staat. Indien de killcode een andere waarde heeft dan zal deze methode een nieuw Vaccin teruggeven waarbij de killcode al juist werd gezet.
 
