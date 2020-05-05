@@ -109,18 +109,15 @@
   * [Abstract](13_advancedovererving/5_abstract.md)
   * [Oefeningen](13_advancedovererving/A_Practica.md)
 * H14: Compositie
-  * [Compositie](14_compositie/0_compositie_intro.MD)
-  * [Oefeningen](14_compositie/A_PracticaComp.md)
+  * [Compositie](semester-2-oop/14_compositie/0_compositie_intro.MD)
 * H15: Polymorfisme
-  * [Polymorfisme](15_polymorfisme/11_polymo_intro.MD)
+  * [Polymorfisme](semester-2-oop/15_polymorfisme/11_polymo_intro.MD)
   * [Is en As keywords](18_IsAs/1_IsAs.md)
   * [Objecten vergekijken: alles komt samen](18_IsAs/6_equals.md)
-  * [Oefeningen](15_polymorfisme/A_Practica.md)
 * H16: Interfaces
-  * [Interface intro](16_interfaces/1_Interface_intro.MD)
-  * [Interfaces in de praktijk](16_interfaces/2_InterfacesInPraktijk.md)
+  * [Interface intro](semester-2-oop/16_interfaces/1_interface_intro.MD)
+  * [Interfaces in de praktijk](semester-2-oop/16_interfaces/2_interfacesinpraktijk.md)
   * [Polymorfisme en interfaces](18_IsAs/2_Polymorfisme_Interfaces.md)
-  * [Oefeningen](16_interfaces/A_practica.md)
 
 ## Appendix
 
