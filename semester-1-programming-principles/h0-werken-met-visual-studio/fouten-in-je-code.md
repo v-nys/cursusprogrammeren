@@ -54,13 +54,3 @@ Plaats de puntkomma opnieuw op het einde van het statement op regel 9.
 
 Voer het programma opnieuw uit door op het groene pijltje bovenaan te klikken, vlak voor de naam van het project BeginnenMetCSharp.
 
-## Meest voorkomende fouten
-
-De meest voorkomende fouten in deze eerste weken zullen zijn:
-
-* **Puntkomma** vergeten.
-* **Schrijffouten** in je code RaedLine i.p.v. ReadLine.
-* Geen rekening gehouden met **hoofdletter gevoeligheid** Readline i.p.v. ReadLine \(zie volgende hoofdstuk\).
-* Per ongeluk **accolades verwijderd**.
-* Code geschreven op plekken waar dat niet mag.
-
