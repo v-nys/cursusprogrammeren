@@ -1,4 +1,4 @@
-# Werken met Visual Studio
+# Werken met Visual Studio \(mag weg\)
 
 ## Kennismaken met C\# en Visual Studio
 

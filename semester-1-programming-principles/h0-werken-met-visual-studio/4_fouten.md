@@ -1,4 +1,4 @@
-# Fouten in je code
+# Fouten in je code \(mag weg\)
 
 ![](../../.gitbook/assets/attention%20%285%29.jpg)
 

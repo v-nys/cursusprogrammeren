@@ -1,4 +1,4 @@
-# Input verwerken met ReadLine
+# Input/Output: ReadLine/WriteLine
 
 We nemen terug ons eerste programma erbij en gaan hier aan verder werken:
 
