@@ -12,7 +12,6 @@
 ## Semester 1: Programming Principles
 
 * [H1: Werken met Visual Studio](semester-1-programming-principles/h0-werken-met-visual-studio/README.md)
-  * [\*\*\*\* NIEUW Begin \*\*\*\*](semester-1-programming-principles/h0-werken-met-visual-studio/nieuw-begin.md)
   * [Introductie tot C\#](semester-1-programming-principles/h0-werken-met-visual-studio/1-introductie-tot-c.md)
   * [Visual Studio installeren](semester-1-programming-principles/h0-werken-met-visual-studio/2-visual-studio-installeren.md)
   * [Een C\# project maken in Visual Studio](semester-1-programming-principles/h0-werken-met-visual-studio/3-een-c-project-maken-in-visual-studio.md)
@@ -26,9 +25,6 @@
   * [Een project aanmaken en gebruiken](semester-1-programming-principles/h0-werken-met-visual-studio/een-project-aanmaken-en-gebruiken.md)
   * [Oefening](semester-1-programming-principles/h0-werken-met-visual-studio/oefening.md)
   * [Oefeningen](semester-1-programming-principles/h0-werken-met-visual-studio/a_practica_grad.md)
-  * [\*\*\*\* NIEUW Einde \*\*\*\*](semester-1-programming-principles/h0-werken-met-visual-studio/nieuw-einde.md)
-  * [Werken met Visual Studio \(mag weg\)](semester-1-programming-principles/h0-werken-met-visual-studio/1_werkenmetvs.md)
-  * [Fouten in je code \(mag weg\)](semester-1-programming-principles/h0-werken-met-visual-studio/4_fouten.md)
 * [H2: Variabelen en datatypes](semester-1-programming-principles/h1-variabelen-en-datatypes/README.md)
   * [De essentie van C\#](semester-1-programming-principles/h1-variabelen-en-datatypes/0_csharpessentials.md)
   * [Datatypes](semester-1-programming-principles/h1-variabelen-en-datatypes/1_datatypes.md)
