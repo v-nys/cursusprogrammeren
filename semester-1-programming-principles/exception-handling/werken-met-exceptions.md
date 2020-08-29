@@ -1,7 +1,5 @@
 # Werken met exceptions
 
-
-
 Veel fouten in code zijn het gevolg van:
 
 * Het aanroepen van data die er niet is \(bijvoorbeeld een bestand dat werd verplaatst of hernoemd\)

@@ -2,7 +2,7 @@
 
 ![](../../.gitbook/assets/attention%20%285%29.jpg)
 
-Je code kan niet gecompileerd en uitgevoerd worden zolang er fouten in je code staan \(dit bespraken we reeds in [een eerder hoofdstuk](0_intrototcs.md)\).
+Je code kan niet gecompileerd en uitgevoerd worden zolang er fouten in je code staan \(dit bespraken we reeds in [een eerder hoofdstuk](1-introductie-tot-c.md)\).
 
 Indien je op de groene start knop duwt en volgende waarschuwing krijgt **KLIK DAN NOOIT OP YES EN DUID NOOIT DE CHECKBOX AAN**:
 

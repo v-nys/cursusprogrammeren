@@ -12,9 +12,12 @@
 ## Semester 1: Programming Principles
 
 * [H1: Werken met Visual Studio](semester-1-programming-principles/h0-werken-met-visual-studio/README.md)
-  * [NEW Introductie tot C\#](semester-1-programming-principles/h0-werken-met-visual-studio/0_intrototcs.md)
-  * [NEW Visual Studio installeren](semester-1-programming-principles/h0-werken-met-visual-studio/new-visual-studio-installeren.md)
-  * [NEW Een C\# project maken in Visual Studio](semester-1-programming-principles/h0-werken-met-visual-studio/new-een-c-project-maken-in-visual-studio.md)
+  * [\*\*\*\* NIEUW Begin \*\*\*\*](semester-1-programming-principles/h0-werken-met-visual-studio/nieuw-begin.md)
+  * [Introductie tot C\#](semester-1-programming-principles/h0-werken-met-visual-studio/1-introductie-tot-c.md)
+  * [Visual Studio installeren](semester-1-programming-principles/h0-werken-met-visual-studio/2-visual-studio-installeren.md)
+  * [Een C\# project maken in Visual Studio](semester-1-programming-principles/h0-werken-met-visual-studio/3-een-c-project-maken-in-visual-studio.md)
+  * [Beginnen met C\# in Visual Studio](semester-1-programming-principles/h0-werken-met-visual-studio/4-beginnen-met-c-in-visual-studio.md)
+  * [\*\*\*\* NIEUW Einde \*\*\*\*](semester-1-programming-principles/h0-werken-met-visual-studio/nieuw-einde.md)
   * [Werken met Visual Studio](semester-1-programming-principles/h0-werken-met-visual-studio/1_werkenmetvs.md)
   * [Je eerste programma](semester-1-programming-principles/h0-werken-met-visual-studio/2_firstprogram.md)
   * [Input verwerken met ReadLine](semester-1-programming-principles/h0-werken-met-visual-studio/3_console.md)
