@@ -10,13 +10,13 @@ description: >-
 
 Gebruik [deze versie](https://visualstudio.microsoft.com/downloads/), namelijk 2019 en de community versie! Als je een oudere versie hebt, installeer toch de 2019.
 
-## Vooraleer je begint
-
-1. Voor deze opdrachten gebruiken we .NET Core 3.1. Als je in het lesmateriaal nog ergens een oudere versie tegenkomt moet je dat negeren en door .NET Core 3.1 vervangen.
-2. Sommige afbeeldingen hieronder dateren van de tijd van .NET Core 2.0 en Visual Studio 2017. We zijn nu al Visual Studio 2019.
-3. Je kan met .NET Core werken zonder gebruik te maken van Visual Studio. Zie daarvoor [Programmeren met de .NET Core Command Line Interface](https://graduaat.programmeren.app/myap/it/page/programming/microsoft.net/dotnet%20core/Programmeren%20met%20de%20.NET%20Core%20Command%20Line%20Interface.html). Je hoeft dan ook alleen maar de SDK te downloaden. Maar als je Visual Studio gebruikt om .NET Core applicaties te ontwikkelen moet je eerst nog de volgende onderdelen installeren met de **Visual Studio Installer**:
-
 ## Installatie
+
+Volg de instructies beschreven in dit filmpje.
+
+[https://youtu.be/S4lfmS0WbnY](https://youtu.be/S4lfmS0WbnY)
+
+## Update bestaande installatie
 
 #### Start Visual Studio Installer vanaf het Start menu
 
@@ -43,4 +43,10 @@ Gebruik [deze versie](https://visualstudio.microsoft.com/downloads/), namelijk 2
 ![Install .NET Core cross-platform development workload](../../.gitbook/assets/image%20%2810%29.png)
 
 #### Start Visual Studio opnieuw op.
+
+## Vooraleer je begint
+
+1. Voor deze opdrachten gebruiken we .NET Core 3.1. Als je in het lesmateriaal nog ergens een oudere versie tegenkomt moet je dat negeren en door .NET Core 3.1 vervangen.
+2. Sommige afbeeldingen hieronder dateren van de tijd van .NET Core 2.0 en Visual Studio 2017. We zijn nu al Visual Studio 2019.
+3. Je kan met .NET Core werken zonder gebruik te maken van Visual Studio. Zie daarvoor [Programmeren met de .NET Core Command Line Interface](https://graduaat.programmeren.app/myap/it/page/programming/microsoft.net/dotnet%20core/Programmeren%20met%20de%20.NET%20Core%20Command%20Line%20Interface.html). Je hoeft dan ook alleen maar de SDK te downloaden. Maar als je Visual Studio gebruikt om .NET Core applicaties te ontwikkelen moet je eerst nog de volgende onderdelen installeren met de **Visual Studio Installer**:
 
