@@ -173,45 +173,7 @@ Dat doen we door de naam van de klasse ervoor te plaatsen, gevolgd door een punt
 
 
 
-## Oefening: H0-eerste-programma
-
-### Leerdoelen
-
-* een eigen programma kunnen uitvoeren
-* input en output via `Console.ReadLine` en `Console.WriteLine`
-
-### Functionele analyse
-
-Binnen een zgn. dos-box wordt een titel weergegeven, nl. dit is mijn eerste c\# programma.
-
-Vervolgens wordt gevraagd je naam te noteren.
-
-Wanneer je je naam hebt genoteerd en op enter hebt gedrukt, verschijnt de tekst “hallo \[en je ingegeven naam\]”.
-
-### Technische analyse
-
-#### UI
-
-console applicatie
-
-#### voorbeeldinteractie\(s\)
-
-![](../../.gitbook/assets/image%20%283%29.png)
-
-### Technische hulp
-
-#### Programmaverloop
-
-Wat het lezen en schrijven van tekst betreft moet gebruik gemaakt worden `Console.WriteLine` en `Console.ReadLine`.
-
-#### Testscenario's
-
-* Probeer meer dan 200 tekens in te voeren
-* Probeer geen tekst in te voeren
-
-### Ondersteunend materiaal
-
-Hou het voorlopig op de cursus.
+## 
 
 ## Oefening: H0-eerste-programma-pro
 
