@@ -12,9 +12,11 @@ Gebruik [deze versie](https://visualstudio.microsoft.com/downloads/), namelijk 2
 
 ## Installatie
 
-Volg de instructies beschreven in dit filmpje.
+Volg de instructies beschreven in dit [filmpje](https://youtu.be/S4lfmS0WbnY).
 
-[https://youtu.be/S4lfmS0WbnY](https://youtu.be/S4lfmS0WbnY)
+{% hint style="success" %}
+[Visual Studio installeren](https://youtu.be/S4lfmS0WbnY)
+{% endhint %}
 
 ## Update bestaande installatie
 
