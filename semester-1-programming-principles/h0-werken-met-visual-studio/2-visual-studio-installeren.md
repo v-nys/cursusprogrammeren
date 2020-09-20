@@ -20,29 +20,23 @@ Volg de instructies beschreven in dit [filmpje](https://youtu.be/S4lfmS0WbnY).
 
 ## Update bestaande installatie
 
-#### Start Visual Studio Installer vanaf het Start menu
+#### Start Visual Studio Installer vanaf het Start menu.
 
-![Visual Studio Installer from Start menu](../../.gitbook/assets/image%20%2816%29.png)
+![](../../.gitbook/assets/image%20%2862%29.png)
 
-#### Het zou kunnen dat je eerste de Visual Studio Installer moet updaten:
+#### Het zou kunnen dat je eerste de Visual Studio Installer moet updaten.
 
-![Update Visual Studio Installer](../../.gitbook/assets/image%20%289%29.png)
+![](../../.gitbook/assets/image%20%289%29.png)
 
-#### Update eerst de Visual Studio zelf:
+#### Als het nodig is zal Visual studio duidelijk aangeven dat hij eerst een update moet worden uitgevoerd. Zo ja, voer deze eerst uit \(de knop modify zal dan update zijn\).
 
-![Update Visual Studio](../../.gitbook/assets/image%20%2812%29.png)
+![](../../.gitbook/assets/image%20%2861%29.png)
 
-#### Als Visual Studio reeds openstaat zal het installatie programma vragen om die te sluiten:
+#### **Klik op** **`Modify`** \(zie screenshot hierboven\) om nieuwe onderdelen te installeren.
 
-![Close Visual Studio before changing the installation](../../.gitbook/assets/image%20%2815%29.png)
+#### Selecteer de .NET Core cross-platform development workload.
 
-#### **Klik op** **`Modify`** om nieuwe onderdelen te installeren:
-
-![Modify Visual Studio Installation](../../.gitbook/assets/image%20%2819%29.png)
-
-#### Selecteer de .NET Core cross-platform development workload:
-
-![Install .NET Core cross-platform development workload](../../.gitbook/assets/image%20%2810%29.png)
+![](../../.gitbook/assets/image%20%2860%29.png)
 
 #### Start Visual Studio opnieuw op.
 
