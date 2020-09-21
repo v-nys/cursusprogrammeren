@@ -1,5 +1,7 @@
 # Debug & release
 
+[Kennisclip voor deze inhoud](https://youtu.be/qeEAFN7SD5E)
+
 ## Doelstellingen
 
 1. je kent het verschil tussen een debug versie van je programma en een release versie;

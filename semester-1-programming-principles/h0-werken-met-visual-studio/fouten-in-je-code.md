@@ -1,5 +1,7 @@
 # Fouten in je code
 
+[Kennisclip voor deze inhoud](https://youtu.be/seZ8MfWdRf4)
+
 ## Doelstellingen
 
 1. om wat hardnekkige fouten te zoeken kun je wel wat hulp gebruiken om de fouten te lokaliseren, zoals een debugger;
