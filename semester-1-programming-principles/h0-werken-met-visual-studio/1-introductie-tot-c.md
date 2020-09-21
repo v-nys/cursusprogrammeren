@@ -2,6 +2,8 @@
 
 ## Introductie tot programmeren met C-Sharp
 
+[Kennisclip voor deze inhoud](https://youtu.be/YWnKYFyCkUA)
+
 ### Het algoritme
 
 De essentie van een computerprogramma is het zogenaamde **algoritme** \(het "recept" zeg maar\). Dit is de reeks instructies die het programma moet uitvoeren telkens het wordt opgestart. Het algoritme van een programma moet je zelf verzinnen. De volgorde waarin de instructies worden uitgevoerd zijn uiteraard zeer belangrijk. Dit is exact hetzelfde als in het echte leven: een algoritme om je fiets op te pompen kan zijn:
