@@ -1,5 +1,7 @@
 # Een project aanmaken en gebruiken
 
+[Kennisclip voor deze inhoud](https://youtu.be/PfZeFpqO_gQ)
+
 {% hint style="success" %}
 De essentie van een computerprogramma is het algoritme:
 
