@@ -45,11 +45,3 @@ Hallo, wereld!
 
 We gebruiken de speciale syntax `<EOF>` om aan te geven dat er een end-of-file signaal wordt gestuurd.
 
-## organisatie van je bestanden
-
-Voor de eenvoud zorgen we dat elke oefening op zichzelf staat. Dit betekent dat sommige code herhaald wordt in je bestanden, maar het vermijdt dat iets dat je in week 1 geschreven hebt in week 5 plots niet meer werkt. Concreet doen we dat zo:
-
-* Je maakt ergens op je machine één map voor alle oefeningen van het vak Programmeren \(in semester 1\) of Objectgericht programmeren \(in semester 2\). Het maakt niet uit waar, maar je kiest één map en je blijft deze heel het semester gebruiken.
-* Voor elke oefening in het eerste semester maak je in die map een submap. De naam van deze submap is **letterlijk** de unieke titel van de oefening, inclusief gebruik van hoofdletters, leestekens,... Je voegt **geen** andere structuur toe, dus geen mapjes per labosessie,...
-* Wanneer een oefening verderbouwt op een eerdere oefening, kopieer en hernoem je de map van die eerdere oefening. Daarna werk je dan voort in die nieuwe map.
-
