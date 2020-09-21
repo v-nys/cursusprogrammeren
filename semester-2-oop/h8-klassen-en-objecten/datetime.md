@@ -214,7 +214,7 @@ if(isLeap==true)
     Console.WriteLine("This year is a leap year");
 ```
 
-## TimeSpan \(PRO\)
+## TimeSpan
 
 Je kan DateTime objecten ook bij mekaar optellen en aftrekken. Het resultaat van deze bewerking geeft echter NIET een DateTime object terug, maar een `TimeSpan` object. Dit is een object dat dus aangeeft hoe groot het verschil is tussen de 2 DateTime objecten:
 
