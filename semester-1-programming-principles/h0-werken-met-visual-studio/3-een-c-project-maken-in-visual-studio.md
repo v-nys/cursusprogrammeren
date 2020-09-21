@@ -78,26 +78,9 @@ Geef je projectnamen ogenblikkelijk duidelijke namen zodat je niet opgezadeld ge
 
 Visual Studio maakt nu het project met de naam BeginnenMetCSharp voor je aan in de map `BeginnenMetCSharp`. In het volgende onderdeel [Beginnen met C\# in Visual Studio](4-beginnen-met-c-in-visual-studio.md), beginnen we in C\# te programmeren.
 
-## Is dit alles?
-
 Nee hoor. Visual Studio is lekker groot. Was bovenstaande uitleg toch niet zo verhelderend als ik hoopte? Bekijk dan volgende korte, maar zeer duidelijke uitleg over Visual Studio en de verschillende onderdelen \(klik zeker op de chapters in het linkermenu om verder te lezen\): [hier](https://tutorials.visualstudio.com/vs-get-started/intro).
 
-## Liever VS Enterprise?
 
-Als AP-student heb je ook recht op een Visual Studio Enterprise licentie. Wil je deze gebruiken, download deze dan via [https://visualstudio.microsoft.com/vs/](https://visualstudio.microsoft.com/vs/) en zorg ervoor dat je een key aanvraagt via de tab 'Software' op [Azure for education](https://azureforeducation.microsoft.com/devtools). Je kan deze sleutel vervolgens via Help-&gt;Register in VS invoeren.
-
-## Kennisclip
-
-![](../../.gitbook/assets/infoclip%20%282%29.png)
-
-* [De VS omgeving](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=7f6e9867-6b45-4c98-9255-aacd00880111)
-* [De folderstructuur van projecten](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=f021b918-db11-43e4-93bf-a969006a6868)
-
-
-
-## Oefening
-
-Probeer bovenstaande zelfstandig uit.
 
 
 

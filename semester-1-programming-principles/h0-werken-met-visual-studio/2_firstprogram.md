@@ -66,12 +66,6 @@ We gaan nu iedere lijn code kort bespreken. Sommige lijnen code zullen lange tij
 * `Console.WriteLine("Hoi ik ben het");`: en ook deze lijn komt op het scherm.
 * Sluitende accolades: vervolgens moet voor iedere openende accolade eerder in de code nu ook een bijhorende sluitende volgen.
 
-## Say what now?!
-
-![](../../.gitbook/assets/care%20%283%29.jpg)
-
-Oh boy...Wat was dit allemaal?! We hebben al aardig wat vreemde code zien passeren en het is niet meer dan normaal dat je nu denkt "dit ga ik nooit kunnen". Wees echter niet bevreesd: je zal sneller dan je denkt bovenstaande code als 'kinderspel' gaan bekijken. Een tip nodig? Test en experimenteer met wat je al kunt!
-
 Laat deze info rustig inzinken en onthoudt alvast volgende belangrijke zaken:
 
 * Al je code komt binnen de `Main` accolades.
