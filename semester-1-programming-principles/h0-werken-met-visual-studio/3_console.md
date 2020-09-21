@@ -1,5 +1,7 @@
 # Input/Output: ReadLine/WriteLine
 
+[Kennisclip voor deze inhoud](https://youtu.be/mfO4oEshg2U)
+
 We nemen terug ons eerste programma erbij en gaan hier aan verder werken:
 
 ```csharp
