@@ -7,6 +7,8 @@ description: >-
 
 # Een C\# project maken in Visual Studio
 
+[Kennisclip voor deze inhoud](https://youtu.be/PiA0Xs2-sEU)
+
 ## Doelstelling
 
 Hierna weet je:
