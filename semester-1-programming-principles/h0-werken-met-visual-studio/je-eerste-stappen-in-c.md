@@ -7,6 +7,8 @@ description: >-
 
 # Je eerste stappen in C\#
 
+[Kennisclip voor deze inhoud](https://youtu.be/Qzd8K96mRj4)
+
 ## Doelstelling
 
 1. weet je hoe de basisstructuur van een C\# programma in elkaar steekt
