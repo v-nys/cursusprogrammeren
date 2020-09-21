@@ -6,6 +6,8 @@ description: >-
 
 # Beginnen met C\# in Visual Studio
 
+[Kennisclip voor deze inhoud](https://youtu.be/7fH3UPXSHIg)
+
 In dit onderdeel:
 
 1. analyseren we wat Visual Studio voor ons gemaakt heeft;

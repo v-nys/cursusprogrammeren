@@ -1,5 +1,9 @@
 # Je eerste programma
 
+{% hint style="warning" %}
+Hier is geen kennisclip voorzien. Die van de vorige pagina doorloopt dezelfde materie.
+{% endhint %}
+
 ## Console-applicaties
 
 Een console-applicatie is een programma dat zijn in- en uitvoer via een klassiek commando/shell-scherm toont. Een console-applicatie draait in dezelfde omgeving als wanneer we in Windows een command-prompt openen \(via Start-&gt; Uitvoeren-&gt; `cmd` \[enter\] \). We zullen in deze cursus enkel console-applicaties leren maken. Grafische frontends \(bv WPF\) komen in deze cursus niet aan bod.
