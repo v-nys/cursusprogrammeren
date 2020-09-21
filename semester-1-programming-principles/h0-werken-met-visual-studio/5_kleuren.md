@@ -1,5 +1,7 @@
 # Kleuren in Console
 
+[Kennisclip voor deze inhoud](https://youtu.be/VhM-zg7Rt_U)
+
 ## Kleuren in console
 
 Je kan in console-applicaties zelf bepalen in welke kleur nieuwe tekst op het scherm verschijnt. Je kan zowel de kleur van het lettertype instellen \(via `ForegroundColor`\) als de achtergrondkleur \(`BackgroundColor`\).
