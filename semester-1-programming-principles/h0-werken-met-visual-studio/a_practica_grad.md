@@ -150,18 +150,6 @@ Dat doen we door de naam van de klasse ervoor te plaatsen, gevolgd door een punt
 
 ![Visual Studio Roep ZegGoedendag op in Program](../../.gitbook/assets/image%20%2848%29.png)
 
-
-
-
-
-
-
-
-
-
-
-## 
-
 ## Oefening: H1-rommelzin
 
 ### Leerdoelen
