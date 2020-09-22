@@ -11,6 +11,7 @@ We hebben al gezien dat alleen de statements die in de `Main` methode staan word
 
 1. We halen dus het statement uit de `Main` methode en plaatsen die in een eigen methode. Een methode moet in een klasse staan. We plaatsen voorlopig de `SayHello` methode in dezelfde klasse als de `Main` methode, namelijk de `Program` klasse.
 2. We roepen de `SayHello` methode op in de `Main` methode.
+3. In de toekomst zullen we sterk verwante methoden bijhouden in één klasse, maar we zullen verschillende klassen maken voor groepjes oefeningen.
 
 ### Nog een methode maken
 
@@ -59,6 +60,8 @@ We gaan een methode toevoegen die goedendag wenst aan de persoon die zijn naam h
 
 ### Debuggen
 
+Voer je programma uit en probeer het met verschillende namen als invoer.
+
 ## Oefening: H1-MijnEersteProgramma
 
 ### **Leerdoelen**
@@ -73,10 +76,6 @@ Vervolgens wordt gevraagd je naam te noteren.
 Wanneer je je naam hebt genoteerd en op enter hebt gedrukt, verschijnt de tekst “hallo \[en je ingegeven naam\]”.
 
 ### **Technische analyse**
-
-#### UI
-
-console applicatie
 
 #### voorbeeldinteractie\(s\)
 
@@ -95,10 +94,6 @@ Wat het lezen en schrijven van tekst betreft moet gebruik gemaakt worden `Consol
 * Probeer meer dan 200 tekens in te voeren
 * Probeer geen tekst in te voeren
 
-#### Ondersteunend materiaal
-
-Hou het voorlopig op de cursus.
-
 ## Oefening: H1-MijnEerste**Klasse**
 
 ### **Leerdoelen**
@@ -110,10 +105,6 @@ Een klasse maken om de oefeningen en opdrachten van deze les in onder te brengen
 Eén van de voordelen van het gebruik van klassen bestaat erin dat je je code kan ordenen per thema. We gaan dit hier toepassen en een klasse maken voor alle oefeningen en opdrachten van één of meerdere hoofdstukken:
 
 ### Technische analyse
-
-#### UI
-
-console applicatie
 
 ### Technische hulp
 
@@ -151,10 +142,6 @@ De methode oproepen in de `Main` methode van `Program` klasse.
 
 ### Technische analyse
 
-#### UI
-
-console applicatie
-
 ### Technische hulp
 
 Open Program.cs in de editor. Vermits we de `ZegGoedendag` methode naar een andere klasse verplaatst hebben moeten we in de `Main` methode van de `Program` klasse opgeven in welke klasse zich de `ZegGoedendag` methode zich bevindt. 
@@ -175,50 +162,7 @@ Dat doen we door de naam van de klasse ervoor te plaatsen, gevolgd door een punt
 
 ## 
 
-## Oefening: H0-eerste-programma-pro
-
-### Leerdoelen
-
-* een eigen programma kunnen uitvoeren
-* input en output via `Console.ReadLine` en `Console.WriteLine`
-* herhaling van de leerdoelen uit H0-eerste-programma
-
-### Functionele analyse
-
-Binnen een zgn. dos-box wordt een titel weergegeven, nl. dit is mijn eerste c\# programma.
-
-Vervolgens wordt gevraagd je voornaam te noteren. Wanneer je je voornaam hebt genoteerd en op enter hebt gedrukt, wordt gevraagd je achternaam te noteren.
-
-Wanneer je je achternaam hebt genoteerd en op enter hebt gedrukt, verschijnt de tekst “dus je naam is: \[en je ingegeven achternaam en voornaam\]”. Op de regel daaronder verschijnt dan de tekst “of: \[en je ingegeven voornaam en achternaam\]”.
-
-Het is dus duidelijk dat we de naam zowel beginnend met de voor- als de achternaam kunnen tonen.
-
-### Technische analyse
-
-#### UI
-
-console applicatie
-
-#### voorbeeldinteractie\(s\)
-
-![](../../.gitbook/assets/image%20%284%29.png)
-
-### Technische hulp
-
-#### Programmaverloop
-
-Wat het lezen en schrijven van tekst betreft moet gebruik gemaakt worden `Console.WriteLinea` en `Console.ReadLine`.
-
-#### Testscenario's
-
-* Probeer meer dan 200 tekens in te voeren
-* Probeer geen tekst in te voeren
-
-### Ondersteunend materiaal
-
-Hou het voorlopig op de cursus.
-
-## Oefening: H0-rommelzin
+## Oefening: H1-rommelzin
 
 ### Leerdoelen
 
@@ -232,9 +176,9 @@ Dit programma verwerkt tekst die door de gebruiker wordt ingetypt. Het print nie
 
 ### Technische analyse
 
-#### UI
+#### Organisatie van de code
 
-console applicatie
+Schrijf dit programma als een methode met de naam `Rommelzin` binnen de klasse `EenProgrammaSchrijvenInCSharp`. Test uit door deze methode op te roepen binnen de `Main` methode.
 
 #### voorbeeldinteractie\(s\)
 
@@ -264,20 +208,16 @@ Per regel die getoond wordt op het scherm, maak je gebruik van `Console.WriteLin
 * Test uit met tekst met internationale karakters, bijvoorbeeld de ç.
 * Ga na wat er gebeurt als je een lege regel invoert, dus als je meteen op ENTER duwt wanneer gevraagd wordt om invoer.
 
-### Ondersteunend materiaal
-
-Hou het voorlopig op de cursus.
-
-## Oefening: H0-gekleurde-rommelzin
+## Oefening: H1-gekleurde-rommelzin
 
 ### Leerdoelen
 
 * de kleur van tekst in de console aanpassen
-* herhaling van de leerdoelen uit H0-rommelzin
+* herhaling van de leerdoelen uit H1-rommelzin
 
 ### Functionele analyse
 
-Dit programma werkt net als H0-rommelzin, maar elke regel die aan de gebruiker wordt getoond, krijgt een andere kleur. De namen van de kleuren die je gebruikt \(in deze volgorde\) zijn:
+Dit programma werkt net als H1-rommelzin, maar elke regel die aan de gebruiker wordt getoond, krijgt een andere kleur. De namen van de kleuren die je gebruikt \(in deze volgorde\) zijn:
 
 1. `DarkGreen`
 2. `DarkRed`
@@ -288,9 +228,9 @@ Dit programma werkt net als H0-rommelzin, maar elke regel die aan de gebruiker w
 
 ### Technische analyse
 
-#### UI
+#### Organisatie van de code
 
-console applicatie
+Schrijf deze oefening als een nieuwe methode met de naam `GekleurdeRommelzin` in de klasse `EenProgrammaSchrijvenInCSharp`. Test uit door deze methode op te roepen binnen de `Main` methode.
 
 #### voorbeeldinteractie\(s\)
 
@@ -305,8 +245,4 @@ Voor elke regel die in kleur getoond wordt, wissel je de voorgrondkleur. Op de j
 #### Testscenario's
 
 * Test opnieuw uit met een kleur, maaltijd, auto, film en boek naar keuze.
-
-### Ondersteunend materiaal
-
-Hou het voorlopig op de cursus.
 
