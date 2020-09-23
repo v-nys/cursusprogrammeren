@@ -43,6 +43,8 @@ Bespreking van deze code:
 
 * Vervolgens roepen we de `ReadLine` methode aan. Deze methode zal de invoer van de gebruiker uitlezen tot de gebruiker op enter drukt.
 * Het resultaat van de ingevoerde tekst wordt bewaard in de variabele `result` \(denk eraan dat de toekenning van rechts naar links gebeurt\).
+* Een stukje code van de vorm `naam = waarde` heet een **toekenning**. Dit is niet hetzelfde als een wiskundige gelijkheid. In een toekenning plaats je een waarde aan de rechterkant. Aan de linkerkant schrijf je een naam die je aan deze waarde geeft.
+* Als we een naam voor de eerste keer in het programma koppelen aan een waarde, spreken we soms over een **initialisatie**. Dit is ook een soort toekenning.
 
 Je programma zou nu moeten zijn:
 
