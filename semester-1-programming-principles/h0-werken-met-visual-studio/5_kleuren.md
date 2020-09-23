@@ -1,6 +1,8 @@
 # Kleuren in Console
 
+{% hint style="success" %}
 [Kennisclip voor deze inhoud](https://youtu.be/VhM-zg7Rt_U)
+{% endhint %}
 
 ## Kleuren in console
 

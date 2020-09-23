@@ -1,8 +1,10 @@
 # Een project aanmaken en gebruiken
 
-[Kennisclip voor deze inhoud](https://youtu.be/PfZeFpqO_gQ)
-
 {% hint style="success" %}
+[Kennisclip voor deze inhoud](https://youtu.be/PfZeFpqO_gQ)
+{% endhint %}
+
+{% hint style="info" %}
 De essentie van een computerprogramma is het algoritme:
 
 * denk aan een "recept" of aan een procedure;

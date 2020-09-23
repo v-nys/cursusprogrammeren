@@ -1,6 +1,8 @@
 # Input/Output: ReadLine/WriteLine
 
+{% hint style="success" %}
 [Kennisclip voor deze inhoud](https://youtu.be/mfO4oEshg2U)
+{% endhint %}
 
 We nemen terug ons eerste programma erbij en gaan hier aan verder werken:
 

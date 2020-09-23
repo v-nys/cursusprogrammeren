@@ -15,7 +15,7 @@ Gebruik [deze versie](https://visualstudio.microsoft.com/downloads/), namelijk 2
 Volg de instructies beschreven in volgend filmpje.
 
 {% hint style="success" %}
-[Visual Studio installeren](https://youtu.be/S4lfmS0WbnY)
+[Kennisclip Visual Studio installeren](https://youtu.be/S4lfmS0WbnY)
 {% endhint %}
 
 ## Update bestaande installatie

@@ -1,6 +1,8 @@
 # Fouten in je code
 
+{% hint style="success" %}
 [Kennisclip voor deze inhoud](https://youtu.be/seZ8MfWdRf4)
+{% endhint %}
 
 ## Doelstellingen
 

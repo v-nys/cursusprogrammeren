@@ -1,6 +1,8 @@
 # Debug & release
 
+{% hint style="success" %}
 [Kennisclip voor deze inhoud](https://youtu.be/qeEAFN7SD5E)
+{% endhint %}
 
 ## Doelstellingen
 

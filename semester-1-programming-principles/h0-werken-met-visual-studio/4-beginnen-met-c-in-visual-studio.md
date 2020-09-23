@@ -6,7 +6,9 @@ description: >-
 
 # Beginnen met C\# in Visual Studio
 
+{% hint style="success" %}
 [Kennisclip voor deze inhoud](https://youtu.be/7fH3UPXSHIg)
+{% endhint %}
 
 In dit onderdeel:
 

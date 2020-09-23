@@ -7,7 +7,9 @@ description: >-
 
 # Een C\# project maken in Visual Studio
 
+{% hint style="success" %}
 [Kennisclip voor deze inhoud](https://youtu.be/PiA0Xs2-sEU)
+{% endhint %}
 
 ## Doelstelling
 

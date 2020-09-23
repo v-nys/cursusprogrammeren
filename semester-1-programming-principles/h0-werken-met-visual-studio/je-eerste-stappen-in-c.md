@@ -7,7 +7,9 @@ description: >-
 
 # Je eerste stappen in C\#
 
+{% hint style="success" %}
 [Kennisclip voor deze inhoud](https://youtu.be/Qzd8K96mRj4)
+{% endhint %}
 
 ## Doelstelling
 

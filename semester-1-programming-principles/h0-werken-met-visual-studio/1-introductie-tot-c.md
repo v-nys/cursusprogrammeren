@@ -2,7 +2,9 @@
 
 ## Introductie tot programmeren met C-Sharp
 
+{% hint style="success" %}
 [Kennisclip voor deze inhoud](https://youtu.be/YWnKYFyCkUA)
+{% endhint %}
 
 ### Het algoritme
 
