@@ -24,7 +24,7 @@ result = Console.ReadLine();
 Alhoewel een computer digitaal werkt en enkel 0'n en 1'n bewaard zou dat voor ons niet erg handig werken. C\# heeft daarom een hoop datatypes gedefinieerd om te werken met getallen zoals wij ze kennen, gehele en kommagetallen. Intern zullen deze getallen nog steeds binair bewaard worden, maar dat is tijdens het programmeren zelden een probleem.
 
 {% hint style="info" %}
-Onthoudt echter dat onderaan je programma steeds hardware zal draaien die binair werkt.
+Onthoud echter dat onderaan je programma steeds hardware zal draaien die binair werkt.
 {% endhint %}
 
 De basistypen van C\# om getallen in op te slaan zijn:
