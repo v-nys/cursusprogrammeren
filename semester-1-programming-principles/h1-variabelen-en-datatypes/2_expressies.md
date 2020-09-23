@@ -1,5 +1,9 @@
 # Expressies en operators
 
+{% hint style="success" %}
+[Kennisclip voor deze inhoud](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=3a0370ef-b3da-4642-aeaa-a9660083e329)
+{% endhint %}
+
 ## Expressies en operators
 
 Zonder expressies is programmeren saai: je kan dan enkel variabelen aan elkaar toewijzen. Expressies zijn als het ware eenvoudige tot complexe sequenties van bewerkingen die op 1 resultaat uitkomen. De volgende code is bijvoorbeeld een expressie: `3+2`.
@@ -179,10 +183,4 @@ double helft = 10000.0 * (1.0/2);
 ```
 
 Nu krijgt het gedeelte tussen de haakjes een `double` als resultaat, namelijk `0.5` dat we dan kunnen vermenigvuldigen met het salaris om `5000.0` te krijgen.
-
-## Kennisclip
-
-![](../../.gitbook/assets/infoclip%20%282%29.png)
-
-* [Expressies](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=3a0370ef-b3da-4642-aeaa-a9660083e329)
 
