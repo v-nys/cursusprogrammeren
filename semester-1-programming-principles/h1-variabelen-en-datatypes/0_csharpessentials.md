@@ -1,5 +1,9 @@
 # De essentie van C\#
 
+{% hint style="success" %}
+[Kennisclip voor deze inhoud](https://learning.ap.be/mod/resource/view.php?id=402539)
+{% endhint %}
+
 ## Statements en de C\# syntax
 
 Om een werkend C\#-programma te maken moeten we de C\#-taal beheersen. Net zoals iedere taal, bestaat ook C\# uit enerzijds grammatica, in de vorm van de **C\# syntax** en anderzijds vocabulair in de vorm van de te gebruiken **keywords**.
