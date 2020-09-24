@@ -4,31 +4,49 @@
 
 ### Structuur oefeningen
 
-Vanaf hier veronderstellen we dat je in één groot project werkt dat één klasse `Program` heeft. De oefeningen worden los van elkaar omschreven, maar je zorgt ervoor dat ze getest kunnen worden via het keuzemenu in je klasse `Program`.
+Vanaf hier veronderstellen we dat je in één groot project werkt dat één klasse `Program` heeft. Deze klasse heeft een `Main` methode die een keuzemenu opstart. Oefeningen rond eenzelfde topic worden \(statische\) methodes van één klasse met een methode `ShowSubmenu`, die je een menu toont van alle oefeningen over dat topic en die je toestaat een oefening naar keuze te testen. Dit wordt uitgelegd in de eerste oefening.
 
-#### meerdere `Main` methodes
+## Oefening: H10-voorbereiding
 
-Indien je meerdere klassen hebt met een methode `Main`, moet je aangeven welke normaal gebruikt wordt voor de uitvoering van je programma. Dat doe je door aan je `.csproj`-bestand het volgende toe te voegen: `<StartupObject>Namespace-van-de-opstartklasse.Naam-van-de-opstartklasse</StartupObject>`
+### Leerdoelen
 
-{% hint style="danger" %}
-Dit staat hier niet zomaar! Als je dit niet doet, zullen je oefeningen niet uitgevoerd kunnen worden. Je `.csproj` file staat in dezelfde map als je `.cs`-bestanden en indien het niet opent in Visual Studio, kan je het openen in Kladblok.
+* een ordelijke menustructuur voor je code voorzien
+
+### Functionele analyse
+
+We willen dat we alle oefeningen die we in dit vak maken op een ordelijke manier kunnen opstarten. We doen dit door een keuzemenu met twee niveaus te voorzien: de gebruiker kan elke reeds geschreven oefening uitvoeren door eerst het algemene onderwerp aan te geven en vervolgens de specifieke oefening.
+
+### Technische analyse
+
+* Laat in je Main methode een lijst van alle topics zien waarover oefeningen gemaakt zijn. In het begin is dit enkel `DateTime`. De gebruiker kan een topic aanduiden door een nummer in te geven, want voor elk topic staat ook een nummer.
+* Gebruik een switch op de gebruikersinput om te bepalen van welk topic de `ShowSubmenu` methode moet worden opgeroepen. Deze methode heeft return type `void` en geen parameters.
+* Voorzie een eerste klasse, `DateTimeExercises`, met deze methode `ShowSubmenu`. Totdat je oefeningen hebt om te demonstreren, toont `ShowSubmenu` gewoonweg de tekst `"Er zijn nog geen oefeningen over dit topic"`.
+* Indien er wel oefeningen zijn \(deze oefening moet je dus updaten naarmate je vordert\), wordt elke reeds geprogrammeerde oefening genummerd en getoond en kan de gebruiker kiezen om deze uit te voeren.
+* Nadat een oefening getest is, kan je opnieuw een topic en een oefening kiezen. Het programma eindigt nooit.
+
+#### Voorbeeldinteractie
+
+{% hint style="warning" %}
+Dit is maar een voorbeeld! De getoonde topics en oefeningen gaan afhangen van wat je al gedaan hebt.
 {% endhint %}
 
-Bijvoorbeeld:
-
 ```text
-<Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp3.0</TargetFramework>
-    <StartupObject>OOP.Program</StartupObject>
-  </PropertyGroup>
-</Project>
+Welkom bij de demo Objectgeoriënteerd Programmeren!
+Topic van de uit te voeren oefening?
+1. DateTime
+2. Properties en access modifiers
+> 1
+Uit te voeren oefening?
+1. H10-dag-van-de-week
+2. H10-ticks-sinds-2000
+3. H10-schrikkelteller
+> 2
+Sinds 1 januari 2000 zijn er (...) ticks voorbijgegaan.
+Topic van de uit te voeren oefening?
+(...)
 ```
 
-\(Je file zou er al gelijkaardig moeten uitzien, maar je moet zelf het `StartupObject` toevoegen.\)
-
-## Oefening: H8-dag-van-de-week
+## Oefening: H10-dag-van-de-week
 
 ### Leerdoelen
 
@@ -46,9 +64,8 @@ We willen voor een willekeurige datum kunnen bepalen welke dag van de week het i
   * gebruik hiervoor formattering van een `DateTime`
   * laat ook de datum zelf zien in een formaat dat leesbaar is voor de gebruiker
   * als je computer niet volledig ingesteld is op Belgisch Nederlands, kan het resultaat er wat anders uitzien.
-* noem de klasse waarin je dit schrijft `DayOfWeekProgram`
-  * schrijf je code in de statische methode `Main`
-  * roep de statische `Main` van `DayOfWeekProgram` op in het keuzemenu van `Program`
+* maak deze methode toegankelijk via `ShowSubmenu` van de klasse `DateTimeExercises`
+* noem de methode waarin je dit schrijft `DayOfWeekProgram`
 
 ### Voorbeeldinteractie
 
@@ -62,7 +79,7 @@ Welk jaar?
 14 februari 2020 is een vrijdag.
 ```
 
-## Oefening: H8-ticks-sinds-2000
+## Oefening: H10-ticks-sinds-2000
 
 ### Leerdoelen
 
@@ -76,7 +93,8 @@ We willen weten hoe veel fracties van een seconde al verlopen zijn sinds het beg
 
 * .NET stelt deze fracties \(1 / 10000 milliseconden\) voor als "ticks"
 * We willen weten hoe veel ticks er voorbijgegaan zijn sinds het absolute begin van het jaar 2000
-* Noem de klasse waarin je dit schrijft `Ticks2000Program`
+* maak deze methode toegankelijk via `ShowSubmenu` van de klasse `DateTimeExercises`
+* Noem de methode waarin je dit schrijft `Ticks2000Program`
 
 ### Voorbeeldinteractie
 
@@ -84,7 +102,7 @@ We willen weten hoe veel fracties van een seconde al verlopen zijn sinds het beg
 Sinds 1 januari 2000 zijn er (hier wordt het aantal getoond) ticks voorbijgegaan.
 ```
 
-## Oefening: H8-schrikkelteller
+## Oefening: H10-schrikkelteller
 
 ### Leerdoelen
 
@@ -98,7 +116,8 @@ We willen bepalen hoe veel schrikkeljaren er zijn tussen 1800 en 2020.
 
 * implementeer zelf een logica voor schrikkeljaren, maar laat dit over aan de klassen `DateTime`
 * maak gebruik van een statische methode van deze klasse
-* noem je klasse `LeapYearProgram` en voorzie ze van een `Main`
+* maak deze methode toegankelijk via `ShowSubmenu` van de klasse `DateTimeExercises`
+* noem je methode `LeapYearProgram`
 
 ### Voorbeeldinteractie
 
@@ -106,7 +125,7 @@ We willen bepalen hoe veel schrikkeljaren er zijn tussen 1800 en 2020.
 Er zijn (hier wordt het aantal getoond) schrikkeljaren tussen 1800 en 2020.
 ```
 
-## Oefening: H8-simpele-timing
+## Oefening: H10-simpele-timing
 
 ### Leerdoelen
 
@@ -122,13 +141,31 @@ We zijn benieuwd hoe lang het duurt een array van 1 miljoen `int`s te maken en o
 
 * Bepaal het tijdstp voor en na aanmaken van de array.
 * Vul de array in met een `for`-lus.
-* Noem de klasse waarin je dit schrijft `ArrayTimerProgram`
+* maak deze methode toegankelijk via `ShowSubmenu` van de klasse `DateTimeExercises`
+* Noem de methode waarin je dit schrijft `ArrayTimerProgram`
 
 ### Voorbeeldinteractie
 
 ```text
 Het duurt (hier wordt het aantal getoond) milliseconden om een array van een miljoen elementen aan te maken en op te vullen met opeenvolgende waarden.
 ```
+
+## Oefening: H10-verjaardag-v2
+
+Leerdoelen
+
+* leren werken met objecten
+* gebruik maken van properties en methodes
+
+### Functionele analyse
+
+We zullen het programma uit om het aantal dagen tot een verjaardag te bepalen aanpassen zodat het aantal dagen tot de volgende verjaardag wordt getoond. Dit betekent dat er nooit 0 dagen tot een verjaardag zijn, maar in extreme gevallen duizenden dagen kunnen over gaan \(bijvoorbeeld: van 29 februari 1996 tot 29 februari 2004\).
+
+### Technische analyse
+
+Je moet één geval toevoegen, namelijk het geval waarin het oude programma 0 dagen tot de volgende verjaardag zou geven. Je kan dus eerst berekenen wat het oude programma zou berekenen en dan een if toevoegen om te bepalen of je de berekening moet aanpassen.
+
+Noem je methode `BirthdayProgram`. Maak deze methode toegankelijk via `ShowSubmenu` van de klasse `DateTimeExercises`
 
 ## Oefening: H8-RapportModule-V1
 
