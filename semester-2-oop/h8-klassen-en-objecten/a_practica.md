@@ -163,7 +163,7 @@ We zullen het programma uit om het aantal dagen tot een verjaardag te bepalen aa
 
 ### Technische analyse
 
-Je moet één geval toevoegen, namelijk het geval waarin het oude programma 0 dagen tot de volgende verjaardag zou geven. Je kan dus eerst berekenen wat het oude programma zou berekenen en dan een if toevoegen om te bepalen of je de berekening moet aanpassen.
+Je moet één geval toevoegen, namelijk het geval waarin het oude programma 0 dagen tot de volgende verjaardag zou geven.
 
 Noem je methode `BirthdayProgram`. Maak deze methode toegankelijk via `ShowSubmenu` van de klasse `DateTimeExercises`
 
