@@ -139,7 +139,7 @@ We zijn benieuwd hoe lang het duurt een array van 1 miljoen `int`s te maken en o
 
 ### Technische analyse
 
-* Bepaal het tijdstp voor en na aanmaken van de array.
+* Bepaal het tijdstip voor en na aanmaken van de array.
 * Vul de array in met een `for`-lus.
 * maak deze methode toegankelijk via `ShowSubmenu` van de klasse `DateTimeExercises`
 * Noem de methode waarin je dit schrijft `ArrayTimerProgram`
