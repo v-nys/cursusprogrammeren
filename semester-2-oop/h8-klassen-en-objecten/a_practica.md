@@ -106,11 +106,11 @@ Sinds 1 januari 2000 zijn er (hier wordt het aantal getoond) ticks voorbijgegaan
 
 ### Leerdoelen
 
-* gebruik van een statische property
+* gebruik van een statische methode
 
 ### Functionele analyse
 
-We willen bepalen hoe veel schrikkeljaren er zijn tussen 1800 en 2020.
+We willen bepalen hoe veel schrikkeljaren er zijn tussen 1799 en 2021.
 
 ### Technische analyse
 
@@ -122,7 +122,7 @@ We willen bepalen hoe veel schrikkeljaren er zijn tussen 1800 en 2020.
 ### Voorbeeldinteractie
 
 ```text
-Er zijn (hier wordt het aantal getoond) schrikkeljaren tussen 1800 en 2020.
+Er zijn (hier wordt het aantal getoond) schrikkeljaren tussen 1799 en 2021.
 ```
 
 ## Oefening: H10-simpele-timing
