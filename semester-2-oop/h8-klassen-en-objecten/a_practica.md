@@ -114,7 +114,7 @@ We willen bepalen hoe veel schrikkeljaren er zijn tussen 1799 en 2021.
 
 ### Technische analyse
 
-* implementeer zelf een logica voor schrikkeljaren, maar laat dit over aan de klassen `DateTime`
+* implementeer zelf geen logica voor schrikkeljaren, maar laat dit over aan de klassen `DateTime`
 * maak gebruik van een statische methode van deze klasse
 * maak deze methode toegankelijk via `ShowSubmenu` van de klasse `DateTimeExercises`
 * noem je methode `LeapYearProgram`
