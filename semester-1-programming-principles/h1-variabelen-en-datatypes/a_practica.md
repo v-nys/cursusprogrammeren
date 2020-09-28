@@ -45,7 +45,7 @@ Hou het voorlopig op de cursus.
 
 * gebruik van variabelen om input via `Console.ReadLine` op te slaan 
 * berekeningen met de opgeslagen data uitvoeren
-* het resultaat dat werd opgeslagen in een variabele via `onsole.WriteLine` te tonen
+* het resultaat dat werd opgeslagen in een variabele via `Console.WriteLine` te tonen
 
 ### Functionele analyse
 
