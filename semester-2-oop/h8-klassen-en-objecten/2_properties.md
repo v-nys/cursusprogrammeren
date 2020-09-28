@@ -10,8 +10,6 @@ In dit hoofdstuk bespreken we eerst waarom properties nuttig zijn. Vervolgens be
 
 #### In een wereld zonder properties
 
-Properties zorgen voor een gecontroleerde toegang tot de interne structuur van je objecten.
-
 Stel dat we volgende klasse hebben:
 
 ```csharp
@@ -29,7 +27,7 @@ Auto auto = new Auto();
 auto.benzine += 10; //DIT ZAL DUS NIET WERKEN, daar benzine private is.
 ```
 
-Misschien is de eerdere methode `TankVol` te beperkt en willen we wel een willekeurige hoeveelheid benzine kunnen toevoegen of verwijderen, zo lang we niet minder dan 0l of meer dan 50l in de tank doen.
+Misschien is de eerdere methode `TankVol()` te beperkt en willen we wel een willekeurige hoeveelheid benzine kunnen toevoegen of verwijderen, zo lang we niet minder dan 0l of meer dan 50l in de tank doen.
 
 Een eerste mogelijkheid is om hier methodes voor te schrijven:
 
@@ -49,7 +47,7 @@ public class Auto
 }
 ```
 
-Dit gaat. De methodes zijn public, dus we kunnen ze van overal oproepen. Maar de `SetBenzine`-methode verhindert ongeldige waarden. Het nadeel is dat de syntax om deze methodes te gebruiken omslachtig is. Met publieke attributen konden we dit doen:
+Dit gaat. De methodes zijn public, dus we kunnen ze overal oproepen. Bovendien verhindert de `SetBenzine`-methode ongeldige waarden. Het nadeel is dat de syntax om deze methodes te gebruiken zwaar is. Met publieke attributen konden we dit doen:
 
 ```csharp
 Auto auto = new Auto();
@@ -70,20 +68,20 @@ Het lijkt niet zo veel, maar code stapelt zich op doorheen de tijd. Properties l
 Een **full property** ziet er als volgt uit:
 
 ```csharp
-class SithLord
+class Auto
 {
-    private int energy;
-    private string sithName;
+    private int kilometers;
+    private float benzine;
 
-    public int Energy
+    public float Benzine
     {
         get
         {
-            return energy;
+            return benzine;
         }
         set
         {
-            energy = value;
+            benzine = value;
         }
     }
 }
@@ -92,25 +90,28 @@ class SithLord
 Dankzij deze code kunnen we nu elders dit doen:
 
 ```csharp
-SithLord vader = new SithLord();
-vader.Energy = 20; //set
-Console.WriteLine($"Vaders energy is {Vader.Energy}"); //get
+Auto auto = new Auto();
+auto.Benzine = 20; //set
+Console.WriteLine($"Het benzinepeil is {auto.Benzine}"); //get
 ```
 
 Vergelijk dit met de vorige alinea waar we dit met Get en Set methoden moesten doen. Deze property syntax is veel eenvoudiger in het gebruik.
 
 We zullen de property nu stuk per stuk analyseren:
 
-* `public int Energy`: een property is normaal `public`. Vervolgens zeggen we wat voor type de property moet zijn en geven we het een naam. Indien je de property gaat gebruiken om een intern dataveld naar buiten beschikbaar te stellen, dan is het een goede gewoonte om dezelfde naam als dat veld te nemen maar nu met een hoofdletter. \(dus `Energy` i.p.v. `energy`\).
+* `public float Benzine`: Merk op dat we `Benzine` met een hoofdletter schrijven. Vaak wordt gekozen voor dezelfde naam als de variabele die we afschermen (in dit geval `benzine` met een kleine "b"), maar dan in Pascal case. Dat is niet strikt noodzakelijk. Je zou ook `Naft` kunnen schrijven. `public` en `float` staan er om dezelfde reden als in de oplossing met methodes `GetBenzine()` en `SetBenzine()`: we willen deze property buiten de klasse kunnen gebruiken en als we hem opvragen, krijgen we een `float`.
 * { }: Vervolgens volgen 2 accolades waarbinnen we de werking van de property beschrijven.
-* `get {}`: indien je wenst dat de property data **naar buiten** moet sturen, dan schrijven we de get-code. Binnen de accolades van de get schrijven we wat er naar buiten moet gestuurd worden. In dit geval `return energy` maar dit mag even goed bijvoorbeeld `return 4` of een hele reeks berekeningen zijn. Het element dat je returnt in de get code moet uiteraard van hetzelfde type zijn als waarmee je de property hebt gedefinieerd \(`int` in dit geval\).
-  * We kunnen nu van buitenaf toch de waarde van `energy` uitlezen via de property en het get-gedeelte: `Console.WriteLine(palpatine.Energy);`
-* set{}: in het set-gedeelte schrijven we de code die we moeten hanteren indien men van buitenuit een waarde aan de property wenst te geven om zo een interne variabele aan te passen. De waarde die we van buitenuit krijgen \(als een parameter zeg maar\) zal **altijd** in een lokale variabele `value` worden bewaard. Deze zal van het type van de property zijn. Vervolgens kunnen we `value` toewijzen aan de interne variabele indien gewenst: `energy=value` 
-  * We kunnen vanaf nu van buitenaf waarden toewijzen aan de property en zo `energy`vtoch bereiken: `palpatine.Energy=50`.
+* `get {}`: indien je wenst dat de property data **naar buiten** moet sturen, dan schrijven we de `get`-code. Binnen de accolades van de `get` schrijven we wat er naar buiten moet gestuurd worden. In dit geval `return benzine` maar dit mag even goed bijvoorbeeld `return 4` of een hele reeks berekeningen zijn. Eigenlijk werkt dit net als de body van een methode en kan je hierin doen wat je in een methode kan doen.
+  * We kunnen nu van buitenaf toch de waarde van `benzine` onrechtstreeks uitlezen via de property en het `get`-gedeelte: `Console.WriteLine(auto.Benzine);`
+* `set {}`: in het `set`-gedeelte schrijven we de code die we moeten hanteren indien men van buitenuit een waarde aan de property wenst te geven om zo een instantievariabele aan te passen. De waarde die we van buitenuit krijgen \(eigenlijk is dit een parameter van een methode\) zal **altijd** in een lokale variabele `value` worden bewaard. Deze zal van het type van de property zijn. In dit geval dus `float`, want het type bij `Benzine` is `float`. Vervolgens kunnen we `value` toewijzen aan de interne variabele indien gewenst: `benzine=value` .
 
-**Snel property schrijven**
+{% hint style="danger" %}
+Let goed op dat je in je setter schrijft `benzine = value` en niet `Benzine = value`. Dat eerste past de verborgen variabele aan. Dat tweede roept de setter opnieuw op. En opnieuw. En opnieuw. Probeer gerust eens een breakpoint te plaatsen voor de toekenning en dan de debugger te starten als je niet ziet waarom dit een probleem is.
+{% endhint %}
 
+{% hint style="info" %}
 Visual Studio heeft een ingebouwde shortcut om snel een full property, inclusief een bijhorende private dataveld, te schrijven. **Typ `propfull` gevolgd door twee tabs!**
+{% endhint %}
 
 #### Full property met toegangscontrole
 
