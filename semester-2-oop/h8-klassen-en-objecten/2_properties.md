@@ -115,30 +115,30 @@ Visual Studio heeft een ingebouwde shortcut om snel een full property, inclusief
 
 #### Full property met toegangscontrole
 
-De full property `Energy` heeft nog steeds het probleem dat we negatieve waarden kunnen toewijzen \(via de `set`\) die dan vervolgens zal toegewezen worden aan `energy`.
-
-> Properties hebben echter de mogelijkheid om op te treden als wachters van en naar de interne staat van objecten.
+De full property `Benzine` heeft nog steeds het probleem dat we negatieve waarden kunnen toewijzen \(via de `set`\) die dan vervolgens zal toegewezen worden aan `benzine`.
 
 We kunnen in de `set` code extra controles inbouwen. Als volgt:
 
 ```csharp
-   public int Energy
+   public float Benzine
     {
         get
         {
-            return energy;
+            return benzine;
         }
         set
         {
-            if(value >= 0)
-                energy = value;
+            if(value >= 0 and value <= 50)
+                benzine = value;
         }
     }
 ```
 
-Enkel indien de toegewezen waarde groter of gelijk is aan 0 zal deze ook effectief aan `energy` toegewezen worden. Volgende lijn zal dus geen effect hebben: `Palpatine.Energy=-1;`
+Deze code zal het benzinepeil enkel aanpassen als het geldig is en anders stilletjes niets doen. Wat je vaak tegenkomt is `throw new ArgumentException($"{value} is geen geldige waarde voor het benzinepeil")`. Dit doet je programma crashen, maar legt ook uit waarom. We kunnen de code binnen `set` \(en `get`\) zo complex maken als we zelf willen.
 
-We kunnen de code binnen `set` \(en `get`\) zo complex als we willen maken.
+{% hint style="warning" %}
+Je kan dus extra controles toevoegen, maar deze hebben alleen zin als je de variabele **via de property** aanpast. Als je in een methode van de klasse auto `benzine` met kleine "b" aanpast en niet voorzichtig bent, kan je nog steeds een negatief peil instellen. Daarom wordt aangeraden **ook binnen de klasse** gebruik te maken van de property, dus zo veel mogelijk `Benzine` in plaats van `benzine` te gebruiken.
+{% endhint %}
 
 #### Property variaties
 
@@ -147,95 +147,50 @@ We zijn niet verplicht om zowel de `get` en de `set` code van een property te sc
 **Write-only property**
 
 ```csharp
-   public int Energy
+   public float Benzine
     {
         set
         {
             if(value >= 0)
-                energy = value;
+                benzine = value;
         }
     }
 ```
 
-We kunnen dus enkel `energy` een waarde geven, maar niet van buitenuit uitlezen.
+We kunnen dus enkel `benzine` een waarde geven, maar niet van buitenuit uitlezen.
 
 #### Read-only property
 
 ```csharp
-   public int Energy
+   public float Benzine
     {
         get
         {
-            return energy;
+            return benzine;
         }
     }
 ```
-
-We kunnen dus enkel `energy` van buitenuit uitlezen, maar niet aanpassen.
-
-**Opgelet: het `readonly` keyword heeft andere doelen en wordt NIET gebruikt in C\# om een readonly property te maken**
 
 **Read-only property met private set**
 
 Soms gebeurt het dat we van buitenuit enkel de gebruiker de property read-only willen maken. We willen echter intern \(in de klasse zelf\) nog steeds controleren dat er geen illegale waarden aan private datafields worden gegeven. Op dat moment definieren we een read-only property met een private setter:
 
 ```csharp
-   public int Energy
+   public float Benzine
     {
         get
         {
-            return energy;
+            return benzine;
         }
         private set
         {
             if(value >= 0)
-                energy = value;
+                benzine = value;
         }
     }
 ```
 
-Van buitenuit zal enkel code werken die de`get`-van deze property aanroept: `Console.WriteLine(palpatine.Energy);`. Code die de `set` van buitenuit nodig heeft zal een fout geven zoals: `palpatine.Energy=65`; ongeacht of deze geldig is of niet.
-
-**Nu goed opletten**: indien we in het object de property willen gebruiken dan moeten we deze dus ook effectief aanroepen, anders omzeilen we hem als we rechtstreeks `energy` instellen.
-
-Kijk zelf naar volgende **slechte** code:
-
-```csharp
-class SithLord
-{
-    private int energy;
-    private string sithName;
-
-    public void ResetLord()
-    {
-        energy = -1;
-    }
-
-    public int Energy
-    {
-        get
-        {
-            return energy;
-        }
-        private set
-        {
-            if(value >= 0)
-                energy = value;
-        }
-    }
-}
-```
-
-De nieuw toegevoegde methode `ResetLord` willen we gebruiken om de lord z'n energy terug te verlagen. Door echter `energy=-1` te schrijven geven we dus -1 rechtstreeks aan `energy`. Nochtans is dit een illegale waarde. We moeten dus in de methode ook expliciet via de property gaan en dus schrijven:
-
-```csharp
-public void ResetLord()
-{
-    Energy = -1; // Energy i.p.v. energy
-}
-```
-
-> **Het is een goede gewoonte om zo vaak mogelijk via de properties je interne variabele aan te passen en niet rechtstreeks het dataveld zelf.**
+Van buitenuit zal enkel code werken die de`get`-van deze property aanroept: `Console.WriteLine(auto.Benzine);`. Code die de `set` van buitenuit nodig heeft zal een fout geven zoals: `auto.Benzine=40`.
 
 **Read-only Get-omvormers**
 
