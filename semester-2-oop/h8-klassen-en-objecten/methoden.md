@@ -1,177 +1,75 @@
 # Methoden
 
-## Een eenvoudige klasse
+**Instantiemethoden**, ook **objectmethoden** genoemd, weerspiegelen staan toe om functionaliteit toe te voegen aan objecten van een bepaalde klasse. Soms wordt ook gezegd dat ze "gedrag" van de objecten voorzien. Ze verschillen van statische methoden omdat ze niet alleen gebruik kunnen maken van statische onderdelen van klassen, maar ook van het object waar ze zelf bij horen.
 
-We zullen nu enkele basisconcepten van klassen en objecten toelichten aan de hand van praktische voorbeelden.
+## Basisvoorbeelden
 
-### Object methoden
+We gaan verder met de klasse `Auto`. Er zijn verschillende soorten functionaliteit die je kan koppelen aan één auto:
 
-Stel dat we een klasse willen maken die ons toelaat om objecten te maken die verschillende mensen voorstellen. We willen aan iedere mens kunnen vragen waar deze woont en die zal dat dan op het scherm tonen.
+* voltanken
+* rijden
+* op onderhoud gaan
+* verkoopsprijs bepalen
 
-We maken een nieuwe klasse `Mens` en maken een methode `Praat` die iets op het scherm zet:
+{% hint style="info" %}
+Is het de auto die deze zaken doet, of is het een persoon? In werkelijkheid is het natuurlijk dat laatste. Maar de functionaliteit is wel veel sterker gelinkt aan auto's dan aan personen en misschien interesseert de persoon die de handeling uitvoert ons niet eens. Het hangt opnieuw af van welk programma we schrijven.
+{% endhint %}
+
+Je doet dit met objectmethoden. Deze lijken erg op `static` methoden, maar ze hebben toegang tot het woordje `this`. Daarmee stellen ze het object voor waarop ze worden toegepast.
+
+Een simpele implementatie van dit gedraag zie je hier:
 
 ```csharp
-class Mens
-{
-    public void Praat()
+class Auto {
+
+    // objectvariabelen van eerder zijn er nog
+
+    public void Voltanken()
     {
-        Console.WriteLine("Ik ben een mens!");
+        this.benzine = 50.0; // we veronderstellen even dat dat het maximum is
+    }
+
+    public void Rijden(int aantalKilometers)
+    {
+        this.kilometers += aantalKilometers
+        this.benzine -= 5.0 * (aantalKilometers/100);
+    }
+
+    public void Onderhouden()
+    {
+        this.laatsteOnderhoud = DateTime.Now;
+    }
+
+    public float VerkoopsprijsBepalen()
+    {
+        return Math.Max(10000 * (1 - this.kilometers / 200000.0),1000);
     }
 }
 ```
 
-We zien twee nieuwe aspecten:
+{% hint style="warning" %}
+Bovenstaande code is kort om didactische redenen. Er wordt niet gecontroleerd dat je benzinepeil altijd minstens 0l is, er wordt verondersteld dat de capaciteit van je tank 50l is,...
+{% endhint %}
 
-* Het keyword **`static`** komt bij een klasse niet aan te pas \(of toch minder zoals we [later zullen zien](../h10-geavanceerde-klassen-en-objecten/5_static.md)\)
-* Voor de methode plaatsen we `public` : dit leggen we zo meteen uit
+{% hint style="warning" %}
+Eigenlijk kan je het woordje `this` weglaten. Maar de code is duidelijker als je het wel schrijft, dus maak er een gewoonte van.
+{% endhint %}
 
-Je kan nu elders objecten aanmaken en ieder object z'n methode `Praat` aanroepen:
+## Gebruik
 
-```csharp
-Mens joske = new Mens();
-Mens alfons = new Mens();
-
-joske.Praat();
-alfons.Praat();
-```
-
-Er zal 2x `Ik ben een mens!` op het scherm verschijnen. Waarbij telkens ieder object \(`joske` en `alfons`\) zelf verantwoordelijk ervoor waren dat dit gebeurde.
-
-### Public en private access modifiers
-
-De **access modifier** geeft aan hoe zichtbaar een bepaald deel van de klasse is. Wanneer je niet wilt dat "van buitenuit" \(bv objecten van je klasse in de Main\) een bepaalde methode kan aangeroepen worden, dan dien je deze als `private` in te stellen. Wil je dit net wel dat moet je er expliciet `public` voor zetten.
-
-Test in de voorgaande klasse eens wat gebeurt wanneer je `public` verwijderd voor de methode. Inderdaad, je zal de methode `Praat` niet meer op de objecten kunnen aanroepen.
-
-De reden: **wanneer je voor een methode \(of klasse\) niet expliciet `public` zet, dan kan deze methode niet van uit alle andere klassen worden aangeroepen.**
-
-Test volgende klasse eens, kan je de methode `VertelGeheim` vanuit de Main op `joske` aanroepen?
+Om een objectmethode te gebruiken, hebben we een object nodig. We schrijven dan de naam van het object, gevolgd door een punt en een methodeoproep.
 
 ```csharp
-class Mens
-{
-    public void Praat()
-    {
-        Console.WriteLine("Ik ben een mens!");
-    }
-
-    void VertelGeheim()
-    {
-        Console.WriteLine("Mijn geheim is dat ik leef!");
-    }
+public void DemonstreerAttributen() {
+    Auto auto1 = new Auto();
+    Auto auto2 = new Auto();
+    auto1.Voltanken();
+    auto1.Rijden(5);
+    auto1.Rijden(10);
+    auto1.Rijden(20);
+    Console.WriteLine(auto1.kilometers);
+    Console.WriteLine(auto2.kilometers);
 }
 ```
 
-Als je duidelijk wil maken dat bepaalde code niet van buitenaf aangeroepen kan worden, schrijf dan `private` in plaats van `public`. Als je geen van beide schrijft, zit je code ergens tussenin `public` en `private` \(zie later\). Als beginnende programmeur maak je er best een gewoonte van duidelijk te kiezen voor `public` of `private`.
-
-#### Reden van private
-
-Waarom zou je bepaalde zaken `private` maken?
-
-Stel dat we in de klasse extra \(hulp\)methoden willen gebruiken die enkel intern nodig zijn, dan doen we dit. Volgende voorbeeld toont hoe we in de methode `Praat` de private methode `VertelGeheim` gebruiken:
-
-```csharp
-class Mens
-{
-    public void Praat()
-    {
-        Console.WriteLine("Ik ben een mens!");
-        VertelGeheim();
-    }
-
-    void VertelGeheim()
-    {
-        Console.WriteLine("Mijn geheim is dat ik leef!");
-    }
-}
-```
-
-Als we nu elders een object laten praten als volgt:
-
-```csharp
-Mens rachid = new Mens();
-rachid.Praat();
-```
-
-Dan zal de uitvoer worden:
-
-```text
-Ik ben een mens!
-Mijn geheim is dat ik leef!
-```
-
-## Instantievariabelen
-
-We maken onze klasse wat groter, we willen dat een object een leeftijd heeft die we kunnen verhogen via een methode `VerjaardagVieren` \(we hebben de methode `VertelGeheim` even weggelaten\):
-
-```csharp
-class Mens
-{
-    private int leeftijd = 1;
-
-    public void VerjaardagVieren()
-    {
-        Console.WriteLine("Hiphip hoera voor mezelf!");
-        leeftijd++;
-        Praat();
-    }
-
-    public void Praat()
-    {
-        Console.WriteLine("Ik ben een mens! ");
-        Console.WriteLine($"Ik ben {leeftijd} jaar oud");
-    }
-
-}
-```
-
-Hier zien we een pak details die onze aandacht vereisen:
-
-* Ook variabelen zoals `int leeftijd` mogen een access modifier krijgen in een klasse. Ook hier, als je niet expliciet `public` zet wordt deze als `private` beschouwd.
-* Ook al is `leeftijd` `private` alle methoden in de klasse kunnen hier aan. Het is enkel langs buiten dat bijvoorbeeld volgende code niet zal werken `rachid.leeftijd = 34;`.
-* We kunnen iedere variabele een beginwaarde geven.
-* **Ieder object zal z'n eigen leeftijd hebben.**
-
-Die laatste opmerking is een kernconcept van OOP: ieder object heeft z'n eigen interne staat die kan aangepast worden individueel van de andere objecten van hetzelfde type.
-
-We zullen dit testen in volgende voorbeeld waarin we 2 objecten maken en enkel 1 ervan laten verjaren. Kijk wat er gebeurt:
-
-```csharp
-Mens Elvis = new Mens();
-Mens Bono = new Mens();
-
-Elvis.VerjaardagVieren();
-Elvis.VerjaardagVieren();
-Evlis.VerjaardagVieren();
-Bono.VerjaardagVieren();
-```
-
-Als je deze code zou uitvoeren zal je zien dat de leeftijd van Elvis verhoogt en niet die van Bono wanneer we `VerjaardagVieren` aanroepen. Zoals het hoort!
-
-### Initiële waarde van een instantievariabele
-
-Bekijk opnieuw het voorbeeld:
-
-```csharp
-class Mens
-{
-    private int leeftijd = 1;
-
-    public void VerjaardagVieren()
-    {
-        Console.WriteLine("Hiphip hoera voor mezelf!");
-        leeftijd++;
-        Praat();
-    }
-
-    public void Praat()
-    {
-        Console.WriteLine("Ik ben een mens! ");
-        Console.WriteLine($"Ik ben {leeftijd} jaar oud");
-    }
-
-}
-```
-
-De eerste regel binnenin de klasse betekent dat een `Mens` wordt aangemaakt met een leeftijd van 1 jaar. WE noemen dit de initiële waarde van de instantievariabele `leeftijd`. Het is niet verplicht deze te voorzien. Als je niet aangeeft welke waarde een variabele krijgt \(hier of in, zoals we iets verder zullen zien, de constructor\), dan zal de instantievariabele een defaultwaarde krijgen die afhangt van zijn type.
-
+Het gedrag van een object kan afhangen van de waarde van de instantievariabelen. Zo zal de verkoopswaarde van `auto1` iets lager liggen dan die van `auto2`. Dat komt omdat `this.kilometers` deel uitmaakt van de berekening van de verkoopsprijs. Ook dit valt onder het principe van **encapsulatie**: er vindt een berekening plaats "onder de motorkap". We hoeven niet te weten hoe de prijs berekend wordt, elk object weet van zichzelf hoe het de prijs berekent.
