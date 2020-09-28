@@ -1,79 +1,69 @@
 # Properties
+Properties zijn een feature van C♯ om de leesbaarheid van code te verhogen. Ze zien er uit zoals attributen, maar werken zoals methoden.
 
 ## Properties
 
-In dit hoofdstuk bespreken we eerst waarom properties nodig zijn. Vervolgens bespreken we de 2 soorten properties die er bestaan:
+In dit hoofdstuk bespreken we eerst waarom properties nuttig zijn. Vervolgens bespreken we de 2 soorten properties die er bestaan:
 
 1. Full properties
 2. Auto properties
 
 #### In een wereld zonder properties
 
-Properties \(_eigenschappen_\) zijn de C\# manier om objecten hun interne staat in en uit te lezen. Ze zorgen voor een gecontroleerde toegang tot de interne structuur van je objecten.
+Properties zorgen voor een gecontroleerde toegang tot de interne structuur van je objecten.
 
 Stel dat we volgende klasse hebben:
 
 ```csharp
-public class SithLord
+public class Auto
 {
-    private int energy;
-    private string sithName;
+    private int kilometers;
+    private float benzine;
 }
 ```
 
-Een `SithLord` heeft steeds een verborgen Sith Name en ook een hoeveelheid energie die hij nodig heeft om te strijden. **Het is uit den boze dat we eenvoudige data fields \(`energy` en `name`\) `public` maken.** Zouden we dat wel doen dan kunnen externe objecten deze geheime informatie uitlezen!
+Stel nu dat we het benzinepeil van een auto als volgt proberen aanpassen:
 
 ```csharp
-SithLord palpatine = new SithLord();
-Console.WriteLine(palpatine.sithName); //DIT ZAL DUS NIET WERKEN, daar sithName private is.
+Auto auto = new Auto();
+auto.benzine += 10; //DIT ZAL DUS NIET WERKEN, daar benzine private is.
 ```
 
-We willen echter wel van buiten uit het energy-level van een `SithLord` kunnen instellen. Maar ook hier hetzelfde probleem: wat als we de energy-level op `-1000` instellen? Terwijl `energy` nooit onder `0` mag gaan.
+Misschien is de eerdere methode `TankVol` te beperkt en willen we wel een willekeurige hoeveelheid benzine kunnen toevoegen of verwijderen, zo lang we niet minder dan 0l of meer dan 50l in de tank doen.
 
-**Properties lossen dit probleem op**
-
-**Oldschool oplossing**
-
-Vroeger loste men voorgaande probleem op door Get-methoden te schrijven:
-
-Je zal deze manier nog in veel andere talen tegenkomen. Wij prefereren properties zoals we nu zullen uitleggen.
+Een eerste mogelijkheid is om hier methodes voor te schrijven:
 
 ```csharp
-public class SithLord
+public class Auto
 {
-    private int energy;
-    private string sithName;
-
-    public void SetSithName(string newname)
-    {
-        sithName = newname;
+    private int kilometers;
+    private float benzine;
+    public float getBenzine() {
+        return this.benzine;
     }
-
-    public string GetSithName()
-    {
-        return "YOU WISH!";
-    }
-
-    public void SetEnergy(int value)
-    {
-        if(value > 0 && value < 9999)
-            energy = value;
-    }
-
-    public int GetEnergy()
-    {
-        return energy;
+    public void SetBenzine(float level) {
+        if(level >= 0 && level <= 50) {
+	    this.benzine = level;
+        }
     }
 }
 ```
 
-Je zou dan kunnen doen:
+Dit gaat. De methodes zijn public, dus we kunnen ze van overal oproepen. Maar de `SetBenzine`-methode verhindert ongeldige waarden. Het nadeel is dat de syntax om deze methodes te gebruiken omslachtig is. Met publieke attributen konden we dit doen:
 
 ```csharp
-SithLord vader = new SithLord();
-vader.SetEnergy(20); 
-Console.WriteLine($"Vaders energy is {vader.GetEnergy()}"); //get
+Auto auto = new Auto();
+auto.benzine += 10;
 ```
+
+Met de zogenaamde **getter** en **setter** moeten we dit doen:
+
+```csharp
+Auto auto = new Auto();
+auto.SetBenzine(auto.GetBenzine() + 10);
+```
+
+Het lijkt niet zo veel, maar code stapelt zich op doorheen de tijd. Properties lossen dit probleem op. Ze zorgen ervoor dat we kunnen "doen alsof" we publieke velden hebben, maar dezelfde hoeveelheid controle kunnen uitoefenen als met getters en setters.
 
 ### Full properties
 
