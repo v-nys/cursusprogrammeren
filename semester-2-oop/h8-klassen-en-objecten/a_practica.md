@@ -269,7 +269,6 @@ Maak in dit nieuw project een nieuwe klasse `Student` in een file `Student.cs`. 
 
 * Name \(`string`\)
 * Age \(`byte`\)
-* ClassGroup \(maak hiervoor een `enum` `ClassGroups` in een aparte file, `ClassGroups.cs`\)
 * MarkCommunication \(`byte`\)
 * MarkProgrammingPrinciples \(`byte`\)
 * MarkWebTech \(`byte`\)
