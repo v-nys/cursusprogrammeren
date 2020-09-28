@@ -1,6 +1,7 @@
 # Oefeningen
+Al deze oefeningen maak je in een klasse `HoofdstukTwee`.
 
-## Oefening: H1-variabelen\_hoofdletters
+## Oefening: H2-variabelen\_hoofdletters
 
 ### Leerdoelen
 
@@ -11,10 +12,7 @@
 Een applicatie vraagt je tekst in te voeren die dan daarna zal worden getoond met allemaal hoofdletters.
 
 ### Technische analyse
-
-#### UI
-
-console applicatie
+Noem de methode voor deze oefening `VariabelenHoofdletters`.
 
 #### voorbeeldinteractie\(s\)
 
@@ -41,7 +39,7 @@ Uiteindelijk geef je dan deze variabele weer in de console.
 
 Hou het voorlopig op de cursus.
 
-## Oefening: H1-optellen
+## Oefening: H2-optellen
 
 ### Leerdoelen
 
@@ -54,12 +52,7 @@ Hou het voorlopig op de cursus.
 Een applicatie vraagt je twee getallen in te voeren. Na de invoer van het tweede getal worden beide getallen bij elkaar opgeteld. Het resultaat wordt uiteindelijk weergeven.
 
 ### Technische analyse
-
-#### UI
-
-console applicatie
-
-**Werking**
+Noem de methode voor deze oefening `Optellen`.
 
 1. De vraag wordt gesteld om een getal in te typen en daarna op enter/return te drukken.
 2. Er wordt gevraagd een tweede getal in te typen en dan op enter/return te drukken.
@@ -92,7 +85,7 @@ Lees de gebruikersinvoer van de console en slaag dit op in een variabele voor wa
 
 Hou het voorlopig op de cursus.
 
-## Oefening: H1-verbruik-wagen
+## Oefening: H2-verbruik-wagen
 
 ### Leerdoelen
 
@@ -113,12 +106,7 @@ Hiervoor worden volgende vragen gesteld:
 Op basis van deze parameters wordt het gemiddelde verbruik berekend en weergegeven.
 
 ### Technische analyse
-
-#### UI
-
-console applicatie
-
-**Werking**
+Noem de methode voor deze oefening `VerbruikWagen`.
 
 1. De vraag wordt gesteld om het aantal liter, aanwezig in de benzinetank, op te geven. 
 2. Daarna wordt gevraagd om ook het aantal liter op te geven na de rit. 
@@ -155,7 +143,7 @@ Uiteindelijk geef je dan het resultaat weer in de console.
 
 Hou het voorlopig op de cursus.
 
-## Oefening: H1-beetje-wiskunde
+## Oefening: H2-beetje-wiskunde
 
 ### Leerdoelen
 
@@ -173,10 +161,7 @@ Je schrijft een programma dat de rol vervult van een rekenmachine. Het voert vol
 * 2 + 15 / 6 \* 1 - 7 % 2
 
 ### Technische analyse
-
-#### UI
-
-console applicatie
+Noem de methode voor deze oefening `BeetjeWiskunde`.
 
 #### voorbeeldinteractie\(s\)
 
@@ -202,7 +187,7 @@ Eerst wordt een resultaat berekend, daarna wordt het geprint.
 
 [Hier](https://www.programiz.com/csharp-programming/operator-precedence-associativity) vind je een tabel terug die uitlegt welke operaties voorrang hebben.
 
-## Oefening: H1-gemiddelde
+## Oefening: H2-gemiddelde
 
 ### Leerdoelen
 
@@ -215,10 +200,7 @@ Eerst wordt een resultaat berekend, daarna wordt het geprint.
 Je schrijft een programma dat het gemiddelde van 18, 11 en 8 berekent, d.w.z. deze drie getallen optelt en de som deelt door drie.
 
 ### Technische analyse
-
-#### UI
-
-console applicatie
+Noem de methode voor deze oefening `Gemiddelde`.
 
 #### voorbeeldinteractie\(s\)
 
@@ -241,7 +223,7 @@ Eerst wordt het resultaat berekend, daarna wordt het geprint.
 
 Hou het voorlopig op de cursus.
 
-## Oefening: H1-maaltafels
+## Oefening: H2-maaltafels
 
 ### Leerdoelen
 
@@ -254,10 +236,7 @@ Hou het voorlopig op de cursus.
 Je schrijft een programma dat de tafel van vermenigvuldiging voor 411 geeft. Dit programma wacht steeds tot de gebruiker op ENTER duwt voor het het volgend resultaat toont. Verder maakt het steeds het scherm leeg voor het een nieuw resultaat toont. Zie "programmaverloop".
 
 ### Technische analyse
-
-#### UI
-
-console applicatie
+Noem de methode voor deze oefening `Maaltafels`. Je kent nog geen lusstructuren, dus probeer deze niet te gebruiken. Schrijf gewoon tien instructies.
 
 #### voorbeeldinteractie\(s\)
 
@@ -290,7 +269,7 @@ Voor elk resultaat wordt het scherm eerst leeggemaakt. Daarna pas wordt het resu
 
 Hou het voorlopig op de cursus.
 
-## Oefening: H1-ruimte
+## Oefening: H2-ruimte
 
 ### Leerdoelen
 
@@ -311,23 +290,20 @@ Je massa is overal dezelfde en wordt uitgedrukt in kilogram. Je gewicht daarente
 * Pluto: 0.06 
 
 ### Technische analyse
-
-#### UI
-
-console applicatie
+Noem de methode voor deze oefening `Ruimte`.
 
 #### voorbeeldinteractie\(s\)
 
 ```text
-Op Mercurius heb je een schijnbaar gewicht van 26.22kg.
-Op Venus heb je een schijnbaar gewicht van 62.79kg.
-Op Aarde heb je een schijnbaar gewicht van 69kg.
-Op Mars heb je een schijnbaar gewicht van 26.22kg.
-Op Jupiter heb je een schijnbaar gewicht van 161.46kg.
-Op Saturnus heb je een schijnbaar gewicht van 73.14kg.
-Op Uranus heb je een schijnbaar gewicht van 63.48kg.
-Op Neptunus heb je een schijnbaar gewicht van 82.11kg.
-Op Pluto heb je een schijnbaar gewicht van 4.14kg.
+Op Mercurius voel je je alsof je 26.22kg weegt.
+Op Venus voel je je alsof je 62.79kg weegt.
+Op Aarde voel je je alsof je 69kg weegt.
+Op Mars voel je je alsof je 26.22kg weegt.
+Op Jupiter voel je je alsof je 161.46kg weegt.
+Op Saturnus voel je je alsof je 73.14kg weegt.
+Op Uranus voel je je alsof je 63.48kg weegt.
+Op Neptunus voel je je alsof je 82.11kg weegt.
+Op Pluto voel je je alsof je 4.14kg weegt.
 ```
 
 ### Technische hulp
