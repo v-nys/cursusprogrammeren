@@ -226,10 +226,10 @@ Quotient = 0,352941176470588
 Dit programma maakt enkele rechthoeken en driehoeken met gegeven afmetingen \(in meter\) aan, berekent hun oppervlakte en toont deze info aan de gebruiker. De rechthoeken en driehoeken die worden aangemaakt, zijn al gecodeerd in het programma. De gebruiker hoeft dus niets anders te doen dan het programma te starten.
 
 ### Technische analyse
-Maak een eigen klasse 
-Er is een klasse `Rectangle` met **full properties** `Width` en `Height` en een klasse `Triangle` met `Base` en `Height`. Je programma maakt de figuren die hierboven beschreven worden aan met beginwaarde `1.0` voor elke afmeting en stelt daarna hun afmetingen in via de setters voor deze properties. De oppervlakte wordt bepaald in een read-only property (dus met alleen een getter en geen setter). Deze heet `Surface` en is van het type `double`.
 
-Indien om het even welk van deze properties wordt ingesteld op `0` of minder, signaleer je dit via de code `Console.WriteLine($"Het is verboden een (afmeting) van (waarde) in te stellen!")` (zie voorbeeldcode).
+Maak een eigen klasse Er is een klasse `Rectangle` met **full properties** `Width` en `Height` en een klasse `Triangle` met `Base` en `Height`. Je programma maakt de figuren die hierboven beschreven worden aan met beginwaarde `1.0` voor elke afmeting en stelt daarna hun afmetingen in via de setters voor deze properties. De oppervlakte wordt bepaald in een read-only property \(dus met alleen een getter en geen setter\). Deze heet `Surface` en is van het type `double`.
+
+Indien om het even welk van deze properties wordt ingesteld op `0` of minder, signaleer je dit via de code `Console.WriteLine($"Het is verboden een (afmeting) van (waarde) in te stellen!")` \(zie voorbeeldcode\).
 
 {% hint style="info" %}
 De wiskundige formule voor de oppervlakte van een driehoek is basis \* hoogte / 2.
@@ -263,6 +263,7 @@ Een driehoek met een basis van 2m en een hoogte van 2m heeft een oppervlakte van
 Dit programma vraagt om de naam en leeftijd van een student. Vervolgens worden de punten voor 3 vakken gevraagd, waarna het gemiddelde wordt teruggegeven.
 
 ### Technische analyse
+
 **Maak een nieuw C♯-project** met als naam `SchoolAdmin` voor deze oefening. Dit wordt een project waaraan we heel het semester zullen blijven bouwen, zodat we uiteindelijk een simpele, maar behoorlijk realistische schoolsoftware verkrijgen.
 
 Maak in dit nieuw project een nieuwe klasse `Student` in een file `Student.cs`. Deze klasse heeft 5 properties. Leeftijd en de punten stel je voor met **full properties**. Een student kan nooit ouder zijn dan 120. Signaleer ongeldige waarden met `ArgumentException`, zoals uitgelegd in de theorie. Je kan ook nooit een cijfer boven 20 behalen. Signaleer dit ook met een `ArgumentException`. Over leeftijden en cijfers onder 0 hoef je je geen zorgen te maken, want je gebruik `byte` voor het type van deze properties en een byte is altijd minstens 0.
@@ -277,7 +278,7 @@ Voeg aan de klasse een berekende property `OverallMark` toe. Deze berekent het g
 
 Voeg aan de klasse ook de methode `ShowOverview()` toe. Deze methode zal een volledig rapport van de student tonen \(inclusief het gemiddelde m.b.v. de `OverallMark`-property\).
 
-Test je programma door een statische methode (in de klasse `Student`), `DemonstrateStudents` te voorzien, die drie studenten aanmaakt via variabelen `student1`, `student2` en `student3`. Elke student krijgt een geldig cijfer (naar keuze) voor elk vak, een naam en een geldige leeftijd. Vervolgens wordt van elke student de `ShowOverview`-methode opgeroepen. In je `Main`-methode voorzie je een (niet-genest) keuzemenu dat vraagt wat je wil doen en op dit moment is de enige optie `DemonstrateStudents` uitvoeren.
+Test je programma door een statische methode \(in de klasse `Student`\), `DemonstrateStudents` te voorzien, die drie studenten aanmaakt via variabelen `student1`, `student2` en `student3`. Elke student krijgt een geldig cijfer \(naar keuze\) voor elk vak, een naam en een geldige leeftijd. Vervolgens wordt van elke student de `ShowOverview`-methode opgeroepen. In je `Main`-methode voorzie je een \(niet-genest\) keuzemenu dat vraagt wat je wil doen en op dit moment is de enige optie `DemonstrateStudents` uitvoeren.
 
 Voorbeeldcode om de eerste student aan te maken:
 
@@ -342,14 +343,10 @@ Schrijf zelf eerst wat testcode om te controleren dat je een `ArgumentException`
 We zullen studenten groeperen in cursussen. Bij elke cursus horen op dit moment exact drie studenten.
 
 ### Technische analyse
-Werk verder in het SchoolAdmin project.
-Maak in dit nieuw project een nieuwe klasse `Course` in een file `Course.cs`.
-Deze klasse heeft twee properties: `Students` en `Title`.
-`Students` is een array van `Student`-objecten. De initiële waarde voor deze property is een array met een capaciteit van 5 studenten. Deze property mag nooit gewijzigd worden, dus voorzie **geen** setter.
-`Title` is gewoonweg een `string`. `Title` mag alles zijn behalve `""`. Indien de titel van een cursus toch op `""` wordt gezet, zorg je voor een `ArgumentException`.
-`Course` heeft ook een methode `ShowOverview` die de titel van de cursus toont, gevolgd door de namen van alle studenten die de cursus volgen.
 
-Test je programma door een statische methode (in de klasse `Course`), `DemonstrateCourse` te voorzien, die drie cursussen ("Communicatie", "Programming Principles" en "Web Technology") aanmaakt via variabelen `course1`, `course2` en `course3`. Maak ook drie studenten aan (dezelfde als in `DemonstrateStudents`) en maak hen lid van elk van de drie cursussen. Toon tenslotte voor elke cursus het overzicht via `ShowOverview`. De methode `DemonstrateCourse` kan ook opgeroepen worden via het keuzemenu in `Main`.
+Werk verder in het SchoolAdmin project. Maak in dit nieuw project een nieuwe klasse `Course` in een file `Course.cs`. Deze klasse heeft twee properties: `Students` en `Title`. `Students` is een array van `Student`-objecten. De initiële waarde voor deze property is een array met een capaciteit van 5 studenten. Deze property mag nooit gewijzigd worden, dus voorzie **geen** setter. `Title` is gewoonweg een `string`. `Title` mag alles zijn behalve `""`. Indien de titel van een cursus toch op `""` wordt gezet, zorg je voor een `ArgumentException`. `Course` heeft ook een methode `ShowOverview` die de titel van de cursus toont, gevolgd door de namen van alle studenten die de cursus volgen.
+
+Test je programma door een statische methode \(in de klasse `Course`\), `DemonstrateCourse` te voorzien, die drie cursussen \("Communicatie", "Programming Principles" en "Web Technology"\) aanmaakt via variabelen `course1`, `course2` en `course3`. Maak ook drie studenten aan \(dezelfde als in `DemonstrateStudents`\) en maak hen lid van elk van de drie cursussen. Toon tenslotte voor elke cursus het overzicht via `ShowOverview`. De methode `DemonstrateCourse` kan ook opgeroepen worden via het keuzemenu in `Main`.
 
 #### Voorbeeldinteractie\(s\)
 
@@ -371,5 +368,4 @@ Joske Vermeulen
 Mieke Vermeulen
 Mieke Verstrepen
 ```
-
 

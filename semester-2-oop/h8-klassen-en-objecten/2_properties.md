@@ -1,4 +1,5 @@
 # Properties
+
 Properties zijn een feature van C♯ om de leesbaarheid van code te verhogen. Ze zien er uit zoals attributen, maar werken zoals methoden.
 
 ## Properties
@@ -41,7 +42,7 @@ public class Auto
     }
     public void SetBenzine(float level) {
         if(level >= 0 && level <= 50) {
-	    this.benzine = level;
+        this.benzine = level;
         }
     }
 }
@@ -99,7 +100,7 @@ Vergelijk dit met de vorige alinea waar we dit met Get en Set methoden moesten d
 
 We zullen de property nu stuk per stuk analyseren:
 
-* `public float Benzine`: Merk op dat we `Benzine` met een hoofdletter schrijven. Vaak wordt gekozen voor dezelfde naam als de variabele die we afschermen (in dit geval `benzine` met een kleine "b"), maar dan in Pascal case. Dat is niet strikt noodzakelijk. Je zou ook `Naft` kunnen schrijven. `public` en `float` staan er om dezelfde reden als in de oplossing met methodes `GetBenzine()` en `SetBenzine()`: we willen deze property buiten de klasse kunnen gebruiken en als we hem opvragen, krijgen we een `float`.
+* `public float Benzine`: Merk op dat we `Benzine` met een hoofdletter schrijven. Vaak wordt gekozen voor dezelfde naam als de variabele die we afschermen \(in dit geval `benzine` met een kleine "b"\), maar dan in Pascal case. Dat is niet strikt noodzakelijk. Je zou ook `Naft` kunnen schrijven. `public` en `float` staan er om dezelfde reden als in de oplossing met methodes `GetBenzine()` en `SetBenzine()`: we willen deze property buiten de klasse kunnen gebruiken en als we hem opvragen, krijgen we een `float`.
 * { }: Vervolgens volgen 2 accolades waarbinnen we de werking van de property beschrijven.
 * `get {}`: indien je wenst dat de property data **naar buiten** moet sturen, dan schrijven we de `get`-code. Binnen de accolades van de `get` schrijven we wat er naar buiten moet gestuurd worden. In dit geval `return benzine` maar dit mag even goed bijvoorbeeld `return 4` of een hele reeks berekeningen zijn. Eigenlijk werkt dit net als de body van een methode en kan je hierin doen wat je in een methode kan doen.
   * We kunnen nu van buitenaf toch de waarde van `benzine` onrechtstreeks uitlezen via de property en het `get`-gedeelte: `Console.WriteLine(auto.Benzine);`
@@ -233,3 +234,4 @@ public class Auto
 Dit maakt achter de schermen een privé-attribuut aan zoals `benzine` met kleine "b", maar met een een verborgen naam. We kunnen dus niet rechtstreeks aan dat attribuut.
 
 Wij zullen niet veel gebruik maken van autoproperties, omdat het verschil met publieke attributen pas in meer geavanceerde scenario's zichtbaar wordt. We geven ze hier mee zodat je ze kan herkennen als je ze tegenkomt.
+
