@@ -1,4 +1,5 @@
 # Oefeningen
+
 Al deze oefeningen maak je in een klasse `HoofdstukTwee`. In de oefeningen van hoofdstuk 1 heb je gezien hoe je een nieuwe klasse maakt.
 
 ## Oefening: H2-variabelen\_hoofdletters
@@ -12,6 +13,7 @@ Al deze oefeningen maak je in een klasse `HoofdstukTwee`. In de oefeningen van h
 Een applicatie vraagt je tekst in te voeren die dan daarna zal worden getoond met allemaal hoofdletters.
 
 ### Technische analyse
+
 Noem de methode voor deze oefening `VariabelenHoofdletters`.
 
 #### voorbeeldinteractie\(s\)
@@ -48,6 +50,7 @@ Uiteindelijk geef je dan deze variabele weer in de console.
 Een applicatie vraagt je twee getallen in te voeren. Na de invoer van het tweede getal worden beide getallen bij elkaar opgeteld. Het resultaat wordt uiteindelijk weergeven.
 
 ### Technische analyse
+
 Noem de methode voor deze oefening `Optellen`.
 
 1. De vraag wordt gesteld om een getal in te typen en daarna op enter/return te drukken.
@@ -100,6 +103,7 @@ Hiervoor worden volgende vragen gesteld:
 Op basis van deze parameters wordt het gemiddelde verbruik berekend en weergegeven.
 
 ### Technische analyse
+
 Noem de methode voor deze oefening `VerbruikWagen`.
 
 1. De vraag wordt gesteld om het aantal liter, aanwezig in de benzinetank, op te geven. 
@@ -151,6 +155,7 @@ Je schrijft een programma dat de rol vervult van een rekenmachine. Het voert vol
 * 2 + 15 / 6 \* 1 - 7 % 2
 
 ### Technische analyse
+
 Noem de methode voor deze oefening `BeetjeWiskunde`.
 
 #### voorbeeldinteractie\(s\)
@@ -190,6 +195,7 @@ Eerst wordt een resultaat berekend, daarna wordt het geprint.
 Je schrijft een programma dat het gemiddelde van 18, 11 en 8 berekent, d.w.z. deze drie getallen optelt en de som deelt door drie.
 
 ### Technische analyse
+
 Noem de methode voor deze oefening `Gemiddelde`.
 
 #### voorbeeldinteractie\(s\)
@@ -222,6 +228,7 @@ Eerst wordt het resultaat berekend, daarna wordt het geprint.
 Je schrijft een programma dat de tafel van vermenigvuldiging voor 411 geeft. Dit programma wacht steeds tot de gebruiker op ENTER duwt voor het het volgend resultaat toont. Verder maakt het steeds het scherm leeg voor het een nieuw resultaat toont. Zie "programmaverloop".
 
 ### Technische analyse
+
 Noem de methode voor deze oefening `Maaltafels`. Je kent nog geen lusstructuren, dus probeer deze niet te gebruiken. Schrijf gewoon tien instructies.
 
 #### voorbeeldinteractie\(s\)
@@ -272,6 +279,7 @@ Je massa is overal dezelfde en wordt uitgedrukt in kilogram. Je gewicht daarente
 * Pluto: 0.06 
 
 ### Technische analyse
+
 Noem de methode voor deze oefening `Ruimte`.
 
 #### voorbeeldinteractie\(s\)
@@ -298,3 +306,4 @@ Plaats je gewicht in een variabele. Kies zelf een geschikt type.
 
 * Test uit voor je eigen gewicht.
 * Test uit voor het gewicht van een persoon met een massa van 100kg.
+

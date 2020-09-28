@@ -1,4 +1,4 @@
-# Methoden en access modifiers
+# Methoden
 
 ## Een eenvoudige klasse
 

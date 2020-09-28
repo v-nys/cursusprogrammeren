@@ -36,7 +36,7 @@ De basistypen van C\# om getallen in op te slaan zijn:
 * Voor gehele getallen: `sbyte, byte, short, ushort, int, uint, long`
 * Voor kommagetallen: `double, float, decimal`
 
->
+&gt;
 
 {% hint style="warning" %}
 Ieder type hierboven heeft een bepaald bereik en hoeveelheid geheugen nodig. Je zal dus steeds moeten afwegen wat je wenst. Op een high-end pc met ettelijke gigabytes aan werkgeheugen \(RAM\) is geheugen zelden een probleem waar je rekening mee moet houden...Of toch: zoals met real-time shooters die miljoenen berekeningen \(3D\) per seconde moeten uitvoeren. Daar zal iedere byte tellen. Op andere apparaten \(smartphone, arduino, smart fridges, etc.\) is iedere byte geheugen nog kostbaarder. **Kortom: kies steeds bewust het datatype dat het beste 'past' voor je probleem qua bereik, precisie en geheugengebruik.**
