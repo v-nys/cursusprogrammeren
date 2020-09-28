@@ -105,6 +105,7 @@ Er zijn geen vaste afspraken over hoe je je variabelen moet noemen toch hanteren
 
 * **Duidelijke naam**: de identifier moet duidelijk maken waarvoor de identifier dient. Schrijf dus liever `gewicht` of `leeftijd` in plaats van `a` of `meuh`.
 * **Camel casing**: gebruik camel casing indien je meerdere woorden in je identifier wenst te gebruiken. Camel casing wil zeggen dat ieder nieuw woord terug met een hoofdletter begint. Een goed voorbeeld kan dus zijn `leeftijdTimDams` of `aantalLeerlingenKlas1EA`. Merk op dat we liefst het eerste woord met kleine letter starten. Uiteraard zijn er geen spaties toegelaten.
+* **Pascal casing**: Zoals camel casing, maar ook de eerste letter is een hoofdletter. Gebruik dit voor namespaces, klassen en voor methodes waarbij je `public` zet.
 
 ## Commentaar
 
