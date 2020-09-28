@@ -80,7 +80,7 @@ Als je bovenstaande probeert te compileren dan krijg je volgende error-boodschap
 
 ![](../../.gitbook/assets/errorliteraltoekenning%20%282%29.png)
 
-#### Literal bepaald het datatype
+#### Literal bepaalt het datatype
 
 De manier waarop je een literal schrijft in je code zal bepalen wat het datatype van de literal is:
 
@@ -97,22 +97,6 @@ De manier waarop je een literal schrijft in je code zal bepalen wat het datatype
 * Voor **`string`** \(zie verder\) wordt dit aangeduid met  aanhalingsteken voor en na de literal, vb: `"pikachu"`.
 
 De overige types `sbyte`, `short` en `ushort` hebben geen literal aanduiding. Er wordt vanuit gegaan wanneer je een literal probeert toe te wijzen aan een van deze types dat dit zonder problemen zal gaan \(ze worden impliciet geconverteerd\).
-
-**Hexadecimale en binaire notatie**
-
-Je kan ook hexadecimale notatie \(starten met `0x` of `0X`\) gebruiken wanneer je bijvoorbeeld met `int` of `byte` werkt:
-
-```csharp
-int myAge= 0x0024;
-byte myByteValue = 0x00C9;
-```
-
-Ook binaire notatie \(starten met `0b` of `0B`\) kan:
-
-```csharp
-int myAge= 0b00010110001101000010‬; //Vanaf C# 7.2 mag je ook schrijven: 0b0001_0110_0011_0100_0010
-byte myByteValue =  0b‭00100100‬9;
-```
 
 ### Nieuwe waarden overschrijven oude waarden
 
