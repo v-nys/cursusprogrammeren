@@ -194,235 +194,42 @@ Van buitenuit zal enkel code werken die de`get`-van deze property aanroept: `Con
 
 **Read-only Get-omvormers**
 
-Je bent uiteraard niet verplicht om voor iedere interne variabele een bijhorende property te schrijven. Omgekeerd ook: mogelijk wil je extra properties hebben voor data die je 'on-the-fly' kan genereren.
+Veel properties bieden toegang tot een achterliggende variabele van hetzelfde type, maar dat is niet verplicht. Je kan ook iets berekenen en dat teruggeven via een getter.
 
-Stel dat we volgende klasse hebben
-
-```csharp
-public class Person
-{
-    private string firstName;
-    private string lastName;
-}
-```
-
-We willen echter ook soms de volledige naam op het scherm tonen \("Voornaam + Achternaam"\). Via een read-only property kan dit supereenvoudig:
+Als we verder gaan met de klasse `Auto`:
 
 ```csharp
-public class Person
+public class Auto
 {
-    private string firstName;
-    private string lastName;
-    public string FullName
-    {
-        get{ return $"{firstName} {lastName}";}
-    }
-    public string Email
-    {
-        get
-        {
-            return $"{firstName}.{lastName}@ap.be";
-        }
+    private int kilometers;
+    private float benzine;
+    // stelt het aantal blokjes benzine voor op je display
+    // bij 50l heb je 5 blokjes
+    // bij tussen 40 en 50l heb je 4 blokjes
+    // ...
+    // bij minder dan 10l heb je 0 blokjes
+    public int Blokjes {
+        return Math.Floor(this.benzine / 10);
     }
 }
 ```
 
-Of nog eentje:
-
-```csharp
-public class Earth
-{
-    public double GravityConstant
-    {
-        get
-        {
-            return 9.81;
-        }
-    }
-}
-```
-
-Nog een voorbeeldje:
-
-```csharp
-public class Person
-{
-    private int age;
-
-    public bool IsProbablyAlive
-    {
-        get
-        {
-            if(age > 120) return false;
-            return true;
-        }
-    }
-}
-```
-
-Vaak gebruiken we dit soort read-only properties om data te transformeren. Stel bijvoorbeeld dat we volgende klasse hebben:
-
-```csharp
-public class Person
-{
-    private int age; //in jaren
-
-    public int AgeInMonths
-    {
-        get
-        {
-            return age * 12;
-        }
-    }
-}
-```
+Je hebt iets gelijkaardigs gezien bij `DateTime`. Daar kan je allerlei stukjes informatie uit opvragen, maar eigenlijk wordt er maar één ding bijgehouden: het aantal "ticks". Dat zijn fracties van seconden sinds een bepaalde startdatum. Als je het uur of het aantal minuten of de maand of de weekdag of nog iets anders opvraagt via een `DateTime`, wordt deze ter plekke berekend uit het aantal ticks. Zo moet maar één stukje informatie worden bijgehouden, wat leidt tot minder fouten.
 
 ### Auto properties
 
-Automatische eigenschappen \(autoproperties\) in C\# staan toe om eigenschappen \(properties\) die enkel een waarde uit een private variabele lezen en schrijven verkort voor te stellen.
+Automatische eigenschappen \(autoproperties\) in C\# staan toe om eigenschappen \(properties\) die enkel een waarde uit een private variabele lezen en schrijven verkort voor te stellen. Ze zorgen dat je al snel properties hebt, maar staan je niet toe complexe berekeningen te doen of waarden te controleren zoals full properties dat wel doen.
 
-Zo kan je eenvoudige de klasse Person herschrijven met behulp van autoproperties. De originele klasse:
-
-```csharp
-public class Person
-    {
-
-        private string firstName;
-        private string lastName;
-        private int age;
-
-        public string FirstName
-        {
-            get
-            {
-                return firstName;
-            }
-            set
-            {
-                firstName = value;
-            }
-        }
-
-        public string LastName
-        {
-            get
-            {
-                return lastName;
-            }
-            set
-            {
-                lastName = value;
-            }
-        }
-
-        public int Age
-        {
-            get
-            {
-                return age;
-            }
-            set
-            {
-                age = value;
-            }
-        }
-    }
-```
-
-De herschreven klasse met autoproperties \(autoprops\):
+Voor `Auto` kan je bijvoorbeeld schrijven:
 
 ```csharp
-public class Person
-    {
-
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-        public int Age { get; set; }
-
-    }
-```
-
-Beide klassen hebben exact dezelfde functionaliteit, echter de klasse aan de rechterzijde is aanzienlijk eenvoudig om te lezen en te typen.
-
-#### Beginwaarde van autoprops
-
-Je mag autoproperties beginwaarden geven door de waarde achter de property te geven, als volgt:
-
-```csharp
-public int Age {get;set;} = 45;
-```
-
-#### Altijd auto-properties?
-
-Merk op dat je dit enkel kan doen indien er geen extra logica in de property aanwezig is. Stel dat je bij de setter van age wil controleren op een negatieve waarde, dan zal je dit zoals voorheen moeten schrijven en kan dit niet met een automatic property:
-
-```csharp
-set
+public class Auto
 {
-    if( value > 0)
-        age = value;
+    public float Benzine
+    { get; set; }
 }
 ```
 
-**Voorgaande property kan dus NIET herschreven worden met een automatic property.**
+Dit maakt achter de schermen een privé-attribuut aan zoals `benzine` met kleine "b", maar met een een verborgen naam. We kunnen dus niet rechtstreeks aan dat attribuut.
 
-#### Alleen-lezen eigenschap
-
-Je kan automatic properties ook gebruiken om bijvoorbeeld een read-only property te definiëren . Als volgt:
-
-Originele klasse:
-
-```csharp
-public string FirstName
-{
-
-    get
-    {
-        return firstName;
-    }
-}
-```
-
-Met autoprops:
-
-```csharp
-public string FirstName { get; private set;}
-```
-
-En andere manier die ook kan is als volgt:
-
-```csharp
-public string FirstName { get; }
-```
-
-De enige manier om FirstName een waarde te geven is via de constructor van de klasse. Alle andere manieren zal een error genereren.[Meer info.](https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-6#read-only-auto-properties)
-
-#### Snel autoproperties typen in Visual Studio:
-
-Als je in Visual Studio in je code `prop` typt en vervolgens twee keer de tabtoets indrukt dan verschijnt al de nodige code voor een automatic property. Je hoeft dan enkel nog volgende zaken in orde te brengen:
-
-* Het type van de property
-* De naam van de property \(identifier\) 
-* De toegankelijkheid van get/set \(public, private, protected\)
-
-Via `propg` krijg je aan autoproperty met private setter.
-
-### Methode of property
-
-Een veel gestelde vraag bij beginnende OO-ontwikkelaars is: "Moet dit in een property of in een methode gestoken worden?"
-
-De regel is eenvoudig:
-
-* Betreft het een actie, iets dat het object moet doen \(tekst tonen, iets berekenen, etc\) dan plaats je het in een **methode**
-* Betreft het een eigenschap die een bepaalde waarde heeft, dan gebruik je een **property**
-
-[Hier een iets meer uitgebreid PRO antwoord.](http://firebreaksice.com/csharp-property-vs-method-guidelines/)
-
-## Kennisclip
-
-![](../../.gitbook/assets/infoclip%20%282%29.png)
-
-* [Properties](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=34e326ab-5ee3-4e36-8880-ab6100c13715)
-* [Full properties](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=a9c712ba-5788-4121-aff9-ab6100c3d1ed)
-* [Auto properties](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=9eb70ee5-402d-4c6d-b880-ab6100c5291d)
-
+Wij zullen niet veel gebruik maken van autoproperties, omdat het verschil met publieke attributen pas in meer geavanceerde scenario's zichtbaar wordt. We geven ze hier mee zodat je ze kan herkennen als je ze tegenkomt.
