@@ -41,7 +41,7 @@ public class Auto
 {
     private int kilometers;
     private float benzine;
-    public float getBenzine() {
+    public float GetBenzine() {
         return this.benzine;
     }
     public void SetBenzine(float level) {
@@ -56,7 +56,7 @@ Dit gaat. De methodes zijn public, dus we kunnen ze overal oproepen. Bovendien v
 
 ```csharp
 Auto auto = new Auto();
-auto.benzine += 10;
+auto.Benzine += 10;
 ```
 
 Met de zogenaamde **getter** en **setter** moeten we dit doen:
