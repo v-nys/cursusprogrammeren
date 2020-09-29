@@ -214,7 +214,9 @@ public class Auto
     // ...
     // bij minder dan 10l heb je 0 blokjes
     public int Blokjes {
-        return Math.Floor(this.benzine / 10);
+        get {
+            return Math.Floor(this.benzine / 10);
+        }
     }
 }
 ```
