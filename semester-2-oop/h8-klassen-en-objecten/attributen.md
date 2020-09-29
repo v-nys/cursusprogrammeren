@@ -14,13 +14,13 @@ Deze zaken kunnen we bijhouden in een object van klasse `Auto` als volgt:
 
 ```csharp
 class Auto {
-    public int kilometers;
-    public float benzine;
-    public DateTime laatsteOnderhoud;
+    public int Kilometers;
+    public float Benzine;
+    public DateTime LaatsteOnderhoud;
 }
 ```
 
-Al deze velden zijn voorlopig `public`. Dat hoeft niet absoluut, maar het vergemakkelijkt de presentatie. Verdere opties volgen snel.
+Al deze velden zijn voorlopig `public`. Dat hoeft niet absoluut, maar het vergemakkelijkt de presentatie. Verdere opties volgen snel. Het is ook een afspraak om publieke velden met een hoofdletter te schrijven.
 
 ## Uitproberen: auto's met eigen attributen
 
@@ -30,14 +30,14 @@ We kunnen nu vaststellen dat elke auto zijn eigen kilometerstand,... heeft met v
 public void DemonstreerAttributen() {
     Auto auto1 = new Auto();
     Auto auto2 = new Auto();
-    auto1.kilometers = 10000;
-    auto2.kilometers = 50000;
-    auto1.benzine = 10.0;
-    auto2.benzine = 30.0;
-    auto1.laatsteOnderhoud = DateTime.Now;
-    auto2.laatsteOnderhoud = DateTime.Now.AddMonths(-3);
-    Console.WriteLine(auto1.kilometers);
-    Console.WriteLine(auto2.kilometers);
+    auto1.Kilometers = 10000;
+    auto2.Kilometers = 50000;
+    auto1.Benzine = 10.0;
+    auto2.Benzine = 30.0;
+    auto1.LaatsteOnderhoud = DateTime.Now;
+    auto2.LaatsteOnderhoud = DateTime.Now.AddMonths(-3);
+    Console.WriteLine(auto1.Kilometers);
+    Console.WriteLine(auto2.Kilometers);
     // de kilometerstand is verschillend voor beide
     // idem voor de andere attributen
 }
@@ -49,9 +49,9 @@ Een veld krijgt normaal de defaultwaarde voor zijn type. Voor `int` is dat bijvo
 
 ```csharp
 class Auto {
-    public int kilometers = 5; // in de fabriek vinden bv. een aantal testen plaats
-    public float benzine = 10; // nieuwe auto's moeten kunnen rijden
-    public DateTime laatsteOnderhoud = DateTime(2020,1,1);
+    public int Kilometers = 5; // in de fabriek vinden bv. een aantal testen plaats
+    public float Benzine = 10; // nieuwe auto's moeten kunnen rijden
+    public DateTime LaatsteOnderhoud = DateTime.Now;
 }
 ```
 
@@ -73,7 +73,7 @@ Euro1, Euro2, Euro3, Euro4, Euro5, Euro6
 }
 
 class Auto {
-    public static MilieuNormen huidigeNorm;
+    public static MilieuNormen HuidigeNorm;
     // rest van de code voor Auto
 }
 ```
