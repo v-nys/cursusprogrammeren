@@ -1,5 +1,9 @@
 # Attributen
 
+{% hint style="success" %}
+[Kennisclip voor deze inhoud](https://youtu.be/5ZYlm8j8umo)
+{% endhint %}
+
 **Attributen**, ook **velden** of **instantievariabelen** genoemd, zijn stukjes data die je bijhoudt in objecten. Ze stellen informatie voor die deel uitmaakt van een \(object van een\) klasse. Ze werken zoals de variabelen die je al kent, maar hun scope is een klasse of een object van een klasse, afhankelijk van de vraag of ze `static` zijn of niet.
 
 {% hint style="info" %}
