@@ -80,7 +80,7 @@ De code die we gaan schrijven moet voldoen aan een hoop regels. Wanneer we in on
   * kleine of grote letter
   * liggend streepje
   * een cijfer \(`0` tot en met `9`\)
-* **Lengte**: Een legale identifier mag zo lang zijn als je wenst, maar je houd het best leesbaar.
+* **Lengte**: Een legale identifier mag zo lang zijn als je wenst, maar je houdt het best leesbaar.
 
 #### Enkele voorbeelden
 
