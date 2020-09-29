@@ -26,23 +26,23 @@ class Auto {
 
     public void Voltanken()
     {
-        this.benzine = 50.0; // we veronderstellen even dat dat het maximum is
+        this.Benzine = 50.0; // we veronderstellen even dat dat het maximum is
     }
 
     public void Rijden(int aantalKilometers)
     {
-        this.kilometers += aantalKilometers
-        this.benzine -= 5.0 * (aantalKilometers/100);
+        this.Kilometers += aantalKilometers
+        this.Benzine -= 5.0 * (aantalKilometers/100);
     }
 
     public void Onderhouden()
     {
-        this.laatsteOnderhoud = DateTime.Now;
+        this.LaatsteOnderhoud = DateTime.Now;
     }
 
     public float VerkoopsprijsBepalen()
     {
-        return Math.Max(10000 * (1 - this.kilometers / 200000.0),1000);
+        return Math.Max(10000 * (1 - this.Kilometers / 200000.0),1000);
     }
 }
 ```
@@ -67,10 +67,10 @@ public void DemonstreerAttributen() {
     auto1.Rijden(5);
     auto1.Rijden(10);
     auto1.Rijden(20);
-    Console.WriteLine(auto1.kilometers);
-    Console.WriteLine(auto2.kilometers);
+    Console.WriteLine(auto1.Kilometers);
+    Console.WriteLine(auto2.Kilometers);
 }
 ```
 
-Het gedrag van een object kan afhangen van de waarde van de instantievariabelen. Zo zal de verkoopswaarde van `auto1` iets lager liggen dan die van `auto2`. Dat komt omdat `this.kilometers` deel uitmaakt van de berekening van de verkoopsprijs. Ook dit valt onder het principe van **encapsulatie**: er vindt een berekening plaats "onder de motorkap". We hoeven niet te weten hoe de prijs berekend wordt, elk object weet van zichzelf hoe het de prijs berekent.
+Het gedrag van een object kan afhangen van de waarde van de instantievariabelen. Zo zal de verkoopswaarde van `auto1` iets lager liggen dan die van `auto2`. Dat komt omdat `this.Kilometers` deel uitmaakt van de berekening van de verkoopsprijs. Ook dit valt onder het principe van **encapsulatie**: er vindt een berekening plaats "onder de motorkap". We hoeven niet te weten hoe de prijs berekend wordt, elk object weet van zichzelf hoe het de prijs berekent.
 
