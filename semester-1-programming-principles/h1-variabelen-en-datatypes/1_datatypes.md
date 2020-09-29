@@ -79,7 +79,7 @@ Voor de kommagetallen zijn er maar 3 mogelijkeden. Ieder datatype heeft een 'voo
 
 | **Type** | **Geheugen** | **Bereik** | **Precisie** |  |
 | :--- | :--- | :--- | :--- | :--- |
-| `float` | **32 bits** | ±1.5 x 10-45 to ±3.4 x 1038 | 7 digits | [info](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/float) |
+| `float` | **32 bits** | ±1.5 x 10^-45 to ±3.4 x 1038 | 7 digits | [info](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/float) |
 | `double` | 64 bits | **±5.0 x 10-324 to ±1.7 x 10308** | 15 digits | [info](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/double) |
 | `decimal` | 128 bits | ±1.0 x 10-28 to ±7.9228 x 1028 | **28-29 digits** | [info](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/decimal) |
 
