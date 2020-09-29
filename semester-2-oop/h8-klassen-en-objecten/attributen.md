@@ -24,10 +24,10 @@ Al deze velden zijn voorlopig `public`. Dat hoeft niet absoluut, maar het vergem
 
 ## Uitproberen: auto's met eigen attributen
 
-We kunnen nu vaststellen dat elke auto zijn eigen kilometerstand,... heeft met volgende \(gedeeltelijke\) code:
+We kunnen nu vaststellen dat elke auto zijn eigen kilometerstand,... heeft met volgende \(gedeeltelijke\) code, die je in `Program` plaatst:
 
 ```csharp
-public void DemonstreerAttributen() {
+public static void DemonstreerAttributen() {
     Auto auto1 = new Auto();
     Auto auto2 = new Auto();
     auto1.Kilometers = 10000;
