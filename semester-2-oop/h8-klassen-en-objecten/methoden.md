@@ -26,13 +26,13 @@ class Auto {
 
     public void Voltanken()
     {
-        this.Benzine = 50.0; // we veronderstellen even dat dat het maximum is
+        this.Benzine = 50.0f; // we veronderstellen even dat dat het maximum is
     }
 
     public void Rijden(int aantalKilometers)
     {
-        this.Kilometers += aantalKilometers
-        this.Benzine -= 5.0 * (aantalKilometers/100);
+        this.Kilometers += aantalKilometers;
+        this.Benzine -= 5.0f * (aantalKilometers/100);
     }
 
     public void Onderhouden()
@@ -42,7 +42,7 @@ class Auto {
 
     public float VerkoopsprijsBepalen()
     {
-        return Math.Max(10000 * (1 - this.Kilometers / 200000.0),1000);
+        return Math.Max(10000 * (1 - this.Kilometers / 200000.0f),1000);
     }
 }
 ```
