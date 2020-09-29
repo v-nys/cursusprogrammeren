@@ -2,6 +2,10 @@
 
 **Instantiemethoden**, ook **objectmethoden** genoemd, weerspiegelen staan toe om functionaliteit toe te voegen aan objecten van een bepaalde klasse. Soms wordt ook gezegd dat ze "gedrag" van de objecten voorzien. Ze verschillen van statische methoden omdat ze niet alleen gebruik kunnen maken van statische onderdelen van klassen, maar ook van het object waar ze zelf bij horen.
 
+{% hint style="info" %}
+Methoden behoren tot een algemenere categorie onderdelen van objecten genaamd **members**.
+{% endhint %}
+
 ## Basisvoorbeelden
 
 We gaan verder met de klasse `Auto`. Er zijn verschillende soorten functionaliteit die je kan koppelen aan één auto:

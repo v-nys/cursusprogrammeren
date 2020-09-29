@@ -2,6 +2,10 @@
 
 **Attributen**, ook **velden** of **instantievariabelen** genoemd, zijn stukjes data die je bijhoudt in objecten. Ze stellen informatie voor die deel uitmaakt van een \(object van een\) klasse. Ze werken zoals de variabelen die je al kent, maar hun scope is een klasse of een object van een klasse, afhankelijk van de vraag of ze `static` zijn of niet.
 
+{% hint style="info" %}
+Attributen behoren tot een algemenere categorie onderdelen van objecten genaamd **members**.
+{% endhint %}
+
 ## Basisvoorbeelden
 
 Een typisch voorbeeld van een klasse is `Auto`. Er zijn verschillende stukjes data die deel kunnen uitmaken van één auto: de kilometerstand, het benzinepeil, de datum van het laatste onderhoud,...

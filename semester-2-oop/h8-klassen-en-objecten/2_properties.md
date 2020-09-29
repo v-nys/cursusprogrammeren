@@ -2,6 +2,10 @@
 
 Properties zijn een feature van C♯ om de leesbaarheid van code te verhogen. Ze zien er uit zoals attributen, maar werken zoals methoden.
 
+{% hint style="info" %}
+Methoden behoren tot een algemenere categorie onderdelen van objecten genaamd **members**.
+{% endhint %}
+
 ## Properties
 
 In dit hoofdstuk bespreken we eerst waarom properties nuttig zijn. Vervolgens bespreken we de 2 soorten properties die er bestaan:
