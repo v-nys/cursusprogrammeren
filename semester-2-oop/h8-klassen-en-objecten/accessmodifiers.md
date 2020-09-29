@@ -26,3 +26,7 @@ Een studente vroeg in een van de afgelopen jaren: "Kunnen we niet gewoon afsprek
 
 Wat dan met `private static`? De regel voor `private` is: **code binnen deze klasse kan hier gebruik van maken**. Let hierbij op: de code voor objecten \(bijvoorbeeld: een objectmethode\) **is** code binnen de klasse van die objecten. Anders gezegd: een methode van de klasse `Auto` kan het statisch attribuut `huidigeNorm` lezen en aanpassen.
 
+{% hint style="info" %}
+De richtlijnen rond naamgeving van Microsoft met betrekking tot attributen, methoden,... vind je [hier](https://docs.microsoft.com/en-us/dotnet/standard/design-guidelines/capitalization-conventions) terug.
+{% endhint %}
+
