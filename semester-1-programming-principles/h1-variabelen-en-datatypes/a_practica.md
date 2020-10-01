@@ -18,7 +18,11 @@ Noem de methode voor deze oefening `VariabelenHoofdletters`.
 
 #### voorbeeldinteractie\(s\)
 
-![](../../.gitbook/assets/image%20%282%29.png)
+```text
+Welke tekst moet ik omzetten?
+> Hello World
+HELLO WORLD
+```
 
 ### Technische hulp
 
