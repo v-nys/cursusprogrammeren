@@ -76,7 +76,7 @@ De som is 5.
 
 #### Programmaverloop
 
-Lees de gebruikersinvoer van de console en slaag dit op in een variabele voor wat het eerste getal betreft. Herhaal dit voor het tweede getal. Tel de twee getallen samen en bewaar deze in een derde variabele. Uiteindelijk geef je dan de inhoud van deze derde variabele weer in de console.
+Lees de gebruikersinvoer van de console en sla dit op in een variabele voor wat het eerste getal betreft. Herhaal dit voor het tweede getal. Tel de twee getallen samen en bewaar deze in een derde variabele. Uiteindelijk geef je dan de inhoud van deze derde variabele weer in de console.
 
 Let op: met `Console.ReadLine()` lees je **tekst** in, dus waarden die je kan toekennen aan variabelen van type `string`. Om een getal in te lezen, vervang je `Console.ReadLine()` door `Convert.ToInt32(Console.ReadLine())`. De werking hiervan zie je later.
 
