@@ -24,7 +24,7 @@ Noem de methode voor deze oefening `VariabelenHoofdletters`.
 
 #### Programmaverloop
 
-Lees de gebruikersinvoer van de console en slaag dit op in een variabele.
+Lees de gebruikersinvoer van de console en sla deze op in een variabele.
 
 Zet de inhoud van deze variabele om in hoofdletters. Je kan dit doen door `ToUpper()` toe te voegen aan een variabele van het type `string`. Bijvoorbeeld `myText.ToUpper()` in plaats van `myText`.
 
