@@ -189,7 +189,7 @@ Maak een eigen klasse `NumberCombination` in een eigen file, `NumberCombination.
 * `Product`: geeft product van beide getallen weer
 * `Quotient`: geeft deling van beide getallen weer. Print `"Error"` naar de console indien je zou moeten delen door 0 en voer dan de deling uit. Wat er dan gebeurt, is niet belangrijk.
 
-Gebruik `public` attributen `Number1` en `Number2`. Plaats onderstaande code in een publieke methode `DemonstrateOperations` met return type `void`:
+Gebruik `public` attributen `Number1` en `Number2`. Plaats onderstaande code in een publieke statische methode van `CustomObjectExercises` met naam `DemonstrateOperations` met return type `void`:
 
 ```csharp
 NumberCombination pair1 = new NumberCombination();
@@ -227,7 +227,7 @@ Dit programma maakt enkele rechthoeken en driehoeken met gegeven afmetingen \(in
 
 ### Technische analyse
 
-Maak een eigen klasse Er is een klasse `Rectangle` met **full properties** `Width` en `Height` en een klasse `Triangle` met `Base` en `Height`. Je programma maakt de figuren die hierboven beschreven worden aan met beginwaarde `1.0` voor elke afmeting en stelt daarna hun afmetingen in via de setters voor deze properties. De oppervlakte wordt bepaald in een read-only property \(dus met alleen een getter en geen setter\). Deze heet `Surface` en is van het type `double`.
+Er is een klasse `Rectangle` met **full properties** `Width` en `Height` en een klasse `Triangle` met `Base` en `Height`. Je programma maakt de figuren die hierboven beschreven worden aan met beginwaarde `1.0` voor elke afmeting en stelt daarna hun afmetingen in via de setters voor deze properties. De oppervlakte wordt bepaald in een read-only property \(dus met alleen een getter en geen setter\). Deze heet `Surface` en is van het type `double`.
 
 Indien om het even welk van deze properties wordt ingesteld op `0` of minder, signaleer je dit via de code `Console.WriteLine($"Het is verboden een (afmeting) van (waarde) in te stellen!")` \(zie voorbeeldcode\).
 
