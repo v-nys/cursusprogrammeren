@@ -76,7 +76,7 @@ De `System.IO` namespace bevat tal van nuttige methoden en klassen om met bestan
 using System.IO;
 ```
 
-Via `System.File.ReadAllLines()` kunnen we een tekstbestand uitlezen. De methode geeft een array van string terug. Per lijn die eindigt met een newline \(`\r\n`\) zal een nieuwe string aan de array toegevoegd worden.
+Via `System.File.ReadAllLines()` kunnen we een tekstbestand uitlezen. De methode geeft een array van string terug. Per lijn die eindigt met een newline \(onder Windows `\r\n`\) zal een nieuwe string aan de array toegevoegd worden.
 
 ```csharp
 string[] lines = File.ReadAllLines(@"C:\mypoem.txt");
@@ -102,14 +102,27 @@ Stoffels;José;1950
 Volgende code zal dit bestand uitlezen en de individuele data op het scherm tonen:
 
 ```csharp
-string[] lines = File.ReadAllLines(@"C:\soccerstars.csv");
-for (int i = 0; i < lines.Length; i++)
+string[] lijnen = File.ReadAllLines(@"C:\soccerstars.csv");
+for (int i = 0; i < lijnen.Length; i++)
 {
-    string[] splitted = lines[i].Split(';');
+    string[] kolomwaarden = lijnen[i].Split(';');
+    Console.WriteLine($"Voornaam speler {i}= {kolomwaarden[1]}" );
+    Console.WriteLine($"Achternaam speler {i}= {kolomwaarden[0]}");
+    Console.WriteLine($"Geboortejaar speler {i}= {kolomwaarden[2]}");
+}
+```
 
-    Console.WriteLine($"Voornaam speler {i}= {splitted[1]}" );
-    Console.WriteLine($"Achternaam speler {i}= {splitted[0]}");
-    Console.WriteLine($"Geboortejaar speler {i}= {splitted[2]}");
+### Objecten deserializeren met CSV
+
+CSV wordt vaak gebruikt om objecten tussen programma's te verplaatsen. Een object inlezen vanaf een CSV bestand heet deserializeren.
+
+```csharp
+string[] lijnen = File.ReadAllLines(@"C:\soccerstars.csv");
+Speler[] spelers = new Speler[lines.Length];
+for (int i = 0; i < lijnen.Length; i++)
+{
+    string[] kolomwaarden = lijnen[i].Split(';');
+    spelers[i] = new Speler(kolomwaarden[1],kolomwaarden[0],Convert.ToInt32(kolomwaarden[2]);
 }
 ```
 
