@@ -6,19 +6,6 @@ We gebruiken het einde van klassen en objecten om iets dieper in de `String` kla
 Strings zijn onveranderlijk. Dat wil zeggen dat alle bewerkingen met strings ons een nieuwe string als resultaat leveren. Ze passen nooit de oorspronkelijke string aan.
 {% endhint %}
 
-### Verbatim character
-
-Door een `@` \(verbatim character\) voor een string te plaatsen zeggen we concreet: "de hele string die nu volgt moet je beschouwen zoals hij er staat. Je mag alle escape karakters negeren."
-
-Dit wordt vaak gebruikt om een filepath iets leesbaarder te maken.
-
-* Zonder verbatim: `string path= "c:\\Temp\\myfile.txt";`
-* Met verbatim: `string path= @"c:\Temp\myfile.txt";`
-
-{% hint style="warning" %}
-Bovenstaande strings zijn identiek voor C\#! De @ geeft geen enkele extra functionaliteit, maar zorgt gewoon dat we dezelfde tekst \(meerbepaald: backslashes\) wat makkelijker kunnen intypen.
-{% endhint %}
-
 ### Splitsen en samenvoegen
 
 #### Split
@@ -69,6 +56,21 @@ De correcte manier om strings te vergelijken is met de `Compare(string s1, strin
 * 1: de string `s2` komt voor `s1`
 
 ## Tekst files uitlezen
+
+### Verbatim character
+
+Door een `@` \(verbatim character\) voor een string te plaatsen zeggen we concreet: "de hele string die nu volgt moet je beschouwen zoals hij er staat. Je mag alle escape karakters negeren."
+
+Dit wordt vaak gebruikt om een filepath iets leesbaarder te maken.
+
+* Zonder verbatim: `string path= "c:\\Temp\\myfile.txt";`
+* Met verbatim: `string path= @"c:\Temp\myfile.txt";`
+
+{% hint style="warning" %}
+Bovenstaande strings zijn identiek voor C\#! De @ geeft geen enkele extra functionaliteit, maar zorgt gewoon dat we dezelfde tekst \(meerbepaald: backslashes\) wat makkelijker kunnen intypen.
+{% endhint %}
+
+### Text files lezen algemeen
 
 De `System.IO` namespace bevat tal van nuttige methoden en klassen om met bestanden te werken. Om gebruik hiervan te maken plaats je bovenaan je file:
 
