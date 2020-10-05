@@ -128,40 +128,6 @@ for (int i = 0; i < lijnen.Length; i++)
 }
 ```
 
-### CSV downloaden
-
-Vaak zal je een online bestand willen verwerken. De `WebClient` klasse heeft tal van manieren om met online bronnen te werken. Deze klasse bevindt zich in de `System.Net` namespace en vereist dus dat je bovenaan je code volgende lijn toevoegt:
-
-```csharp
-using System.Net
-```
-
-Volgende code toont hoe we een bestand van een specifieke locatie kunnen downloaden:
-
-```csharp
-WebClient wc = new WebClient();
-string csv = wc.DownloadString("www.fakeaddress.com/mydata.csv");
-```
-
-Dit bestand is 1 platte tekst. Willen we deze vervolgens verwerken dan moeten we deze splitsen in lijnen:
-
-```csharp
-string[] lijnen = csv.Split('\n');
-```
-
-We hebben nu een `for` nodig die lijn per lijn zal splitsen:
-
-```csharp
-for (int i = 1; i < lijnen.Length; i++)
-{
-    string[] kolomwaarden = lijnen[i].Split(',');
-    Console.WriteLine("Data 1="+kolomwaarden[0]);
-    Console.WriteLine("Data 2=" + kolomwaarden[1]);
-}
-```
-
-In dit voorbeeld gaan we er vanuit dat de eerste lijn in het bestand een "header" bevat, die we dus moeten overslaan. Daarom starten we de loop vanaf lijn 1 en niet vanaf 0.
-
 ### CSV wegschrijven
 
 Je kan tekst uit een bestand lezen, maar uiteraard kan je ook naar een bestand wegschrijven. De 2 eenvoudigste manieren zijn:
