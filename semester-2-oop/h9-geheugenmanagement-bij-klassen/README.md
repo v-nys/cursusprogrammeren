@@ -1,2 +1,2 @@
-# H11: Geheugenmanagement bij klassen
+# H12: Geheugenmanagement bij klassen
 

@@ -121,114 +121,83 @@ class Auto
 
 #### Constructor met parameter\(s\)
 
-Soms wil je argumenten aan een object meegeven bij creatie. We willen bijvoorbeeld de leeftijd meegeven die het object moet hebben bij het aanmaken. Met andere woorden, stel dat we dit willen schrijven:
+Soms wil je argumenten aan een object meegeven bij creatie. We willen bijvoorbeeld de inhoud van de tank en de kilometerstand meegeven die het object moet hebben bij het aanmaken. Met andere woorden, stel dat we dit willen schrijven:
 
 ```csharp
-Student jos= new Student(19);
+Auto auto1= new Auto(25,20000);
 ```
 
-Als we dit met voorgaande klasse , die enkel een default constructor heeft, uitvoeren zal de code een fout geven. C\# vindt geen constructor die een int als parameter aanvaardt.
+Als we dit met voorgaande klasse , die enkel een parameterloze \(default\) constructor heeft, uitvoeren, zal de code een fout geven. C\# vindt geen constructor die twee ints als parameter heeft.
 
-[Net zoals bij overloading van methoden](https://github.com/v-nys/cursusprogrammeren/tree/e865f37d2ea41dc32c32aa2e02a9a763c7ea56f5/semester-1-programming-principles/h6-methoden/3_advancedmethod.md) kunnen we ook constructors overloaden. De code is verrassen gelijkaardig als bij method overloading:
+[Net zoals bij overloading van methoden](https://github.com/v-nys/cursusprogrammeren/tree/e865f37d2ea41dc32c32aa2e02a9a763c7ea56f5/semester-1-programming-principles/h6-methoden/3_advancedmethod.md) kunnen we ook constructors overloaden, d.w.z. alternatieven met dezelfde naam voorzien maar met een ander stel parameters. De code is gelijkaardig als bij method overloading:
 
 ```csharp
-class Student
+class Auto
 {
-    public Student(int startage)
+    int benzine;
+    int kilometers;
+    
+    public Auto(int benzine, int kilometers)
     {
-        age= startage
+        this.benzine = benzine;
+        this.kilometers = kilometers;
     }
-
-    private int age;
 }
 ```
 
-Dat was eenvoudig. **Maar** denk eraan: je hebt een eigen constructor geschreven en dus heeft C\# gezet "ok, je schrijft zelf constructor, trek je plan. Maar de default zal je ook zal moeten schrijven!" Je kan nu enkel je objecten met `new Student(25)` aanmaken. Schrijf je `new Student()` dan zal je een error krijgen. Wil je die constructor nog hebben, dan zal je die met de hand moeten schrijven, bijvoorbeeld:
+Dat was eenvoudig. **Maar** denk eraan: je hebt een eigen constructor geschreven en dus heeft C\# gezegd "ok, je schrijft zelf constructor, trek je plan. Maar de parameterloze versie zal je ook zelf moeten schrijven!" Je kan nu **enkel** je objecten met `new Auto(int benzine, int kilometers)` aanmaken. Schrijf je `new Auto()` dan zal je een error krijgen. Wil je die constructor nog hebben, dan zal je die met de hand moeten schrijven, bijvoorbeeld:
 
 ```csharp
-class Student
+class Auto
 {
-    public Student(int startage) // met parameter
+    int benzine;
+    int kilometers;
+    
+    public Auto(int benzine, int kilometers)
     {
-        age= startage;
+        this.benzine = benzine;
+        this.kilometers = kilometers;
     }
-
-    public Student() //default
-    {
-        Random r= new Random();
-        age= r.Next(10,20);
+    
+    public Auto() {
     }
-
-    private int age;
 }
 ```
+
+{% hint style="info" %}
+Er is geen grens op het aantal constructoren dat je kan schrijven, als ze maar verschillende parameters hebben.
+{% endhint %}
 
 #### Wanneer heb ik constructoren nodig?
 
-Tot zeer recent maakten we onze objecten steeds aan met de default constructor. Pas daarna gaven we eventuele properties de juiste waarde. Dat houdt een risico in: er is een periode waarin onze objecten nog niet "af" zijn. In het slechtste geval vergeten we zelfs om de properties in te stellen en krijgen we objecten die misschien ongeldig zijn.
+Tot recent maakten we onze objecten steeds aan met de default constructor. Pas daarna gaven we eventuele properties de juiste waarde. Dat houdt een risico in: er is een periode waarin onze objecten nog niet "af" zijn. In het slechtste geval vergeten we zelfs om de properties in te stellen en krijgen we objecten die misschien ongeldig zijn.
 
-Constructoren helpen dit probleem te voorkomen. Als we één constructor hebben, bijvoorbeeld `Student(string name)`, **moeten** we die gebruiken. We kunnen dus niet vergeten bijvoorbeeld `frankVermeulen.Name = "Frank Vermeulen"` te schrijven, want we worden gedwongen meteen `new Student("Frank Vermeulen")` te schrijven.
+Constructoren helpen dit probleem te voorkomen. Als we één constructor hebben, bijvoorbeeld `Auto(int benzine, int kilometers)`, **moeten** we die gebruiken. We kunnen dus niet vergeten bijvoorbeeld `auto1.Benzine = 25` te schrijven, want we worden gedwongen meteen `new Auto(25,20000)` te schrijven.
 
 Samengevat: **als er eigenschappen zijn die je meteen bij het aanmaken van een object wil instellen, maak er dan parameters van een constructor voor**.
 
-**Overloaded constructoren**
-
-Wil je meerdere overloaded constructors, dan mag dat ook. Je wilt misschien een constructor die de leeftijd vraag alsook een bool om mee te geven of het om een werkstudent gaat:
-
-```csharp
-class Student
-{
-    public Student(int startage) //overloaded
-    {
-        age= startage;
-    }
-
-    public Student(int startage, bool werkstart) //overloaded
-    {
-        age= startage;
-        isWerkStudent= werkstart;
-    }
-
-    public Student() //default
-    {
-        Random r= new Random();
-        age= r.Next(10,20);
-    }
-
-    private int age;
-    private bool isWerkStudent
-}
-```
-
 **Constructor chaining**
 
-Als je meerdere overloaded constructoren hebt, hoef je niet in elke constructor alle code voor objectinitialisatie te schrijven. Het sleutelwoordje `this` biedt de mogelijkheid **eerst** een andere constructor aan te roepen en eventueel andere operaties toe te voegen. Dit heet **constructor chaining**. In bovenstaand voorbeeld kan je ook dit schrijven:
+Als je meerdere overloaded constructoren hebt, hoef je niet in elke constructor alle code voor objectinitialisatie te schrijven. Het sleutelwoordje `this` biedt ook de mogelijkheid **eerst** een andere constructor aan te roepen en eventueel andere operaties toe te voegen. Dit heet **constructor chaining**. In bovenstaand voorbeeld kan je ook dit schrijven:
 
 ```csharp
-class Student
+class Auto
 {
-    public Student(int startage) : this(startage, false)
+    private int benzine;
+    private int kilometers;
+
+    public Auto(int benzine, int kilometers)
     {
-    // niet nodig hier code uit uitgebreidere constructor te herhalen
-    // hier kan nog extra code worden uitgevoerd na de oproep van de uitgebreide constructor
+        this.benzine = benzine;
+        this.kilometers = kilometers;
     }
 
-    public Student(int startage, bool werkstart) //overloaded
+    public Auto() : this(5,5)
     {
-        age= startage;
-        isWerkStudent=werkstart;
+        // hier gebeurt niets meer
+        // maar : this(5,5) zorgt dat een oproep van deze constructor
+        // eerst de andere oproept, met beide waarden 5
     }
-
-    public Student() //default
-    {
-        // helaas wordt onderstaande code pas **na** de chained constructor opgeroepen
-    // gebruik van this heeft hier dus niet veel zin
-        Random r= new Random();
-        age= r.Next(10,20);
-    }
-
-    private int age;
-    private bool isWerkStudent
 }
 ```
 
