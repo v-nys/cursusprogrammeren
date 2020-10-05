@@ -56,7 +56,7 @@ We schrijven nergens code voor de constructor. Dan nog kunnen we `new Auto()` sc
 
 ### Parameterloze constructor
 
-We willen telkens een Auto-object wordt aangemaakt dat dit een random aantal kilometers op de teller heeft. Via een parameterloze constructor kunnen we dat oplossen \(je kan namelijk geen objecten aanmaken in de code voor een initiële waarde\).
+We willen telkens een Auto-object wordt aangemaakt dat dit een random aantal kilometers op de teller heeft. Via een parameterloze constructor kunnen we dat oplossen \(je kan namelijk alleen expressies gebruiken als initiële waarde\).
 
 Eerst schrijven de parameterloze constructor, deze ziet er als volgt uit:
 
