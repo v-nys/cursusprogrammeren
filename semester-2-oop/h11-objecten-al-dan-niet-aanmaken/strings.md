@@ -130,6 +130,10 @@ for (int i = 0; i < lijnen.Length; i++)
 
 ### CSV wegschrijven
 
+{% hint style="info" %}
+Voor dit onderdeel is geen videomateriaal voorzien. Probeer het laatste stukje zelf te begrijpen aan de hand van de kennis die je eerder in dit hoofdstuk hebt opgedaan.
+{% endhint %}
+
 Je kan tekst uit een bestand lezen, maar uiteraard kan je ook naar een bestand wegschrijven. De 2 eenvoudigste manieren zijn:
 
 * `File.WriteAllText`: deze gebruik je als je 1 enkele string wilt wegschrijven
