@@ -20,7 +20,7 @@ Schrijf nu zelf een klasse, `StudyProgram`. Een studieprogramma heeft een aantal
 * een array van vijf `Course`s \(geïmplementeerd als full property `Courses`\)
 * een constructor met twee parameters die deze twee properties initialiseert
 * een read-only property, `TotalStudyPoints`, die het totaal aantal studiepunten berekent en teruggeeft als `int`
-* een methode `GetOverview` die een overzicht van het studieprogramma produceert, als string, in volgend formaat:
+* een methode `ShowOverview` die een overzicht van het studieprogramma op het scherm toont in volgend formaat:
 
 ```text
 Graduaat Programmeren
@@ -33,6 +33,16 @@ Projectwerk: 6 studiepunten
 
 Totaal: 24 studiepunten
 ```
+
+## Verbetering ShowOverview \(SchoolAdmin project\)
+
+Overmatig gebruik van Console.WriteLine om rapporten af te printen beperkt de flexibiliteit van onze code. Refactor eerst de methode ShowOverview van Student en Course zodat ze beide een methode GetOverview oproepen en deze gewoonweg afprinten. De methode GetOverview produceert een string met net dezelfde inhoud die anders op het scherm verschijnt.
+
+Refactor vervolgens de GetOverview methode, zodat de verschillende regels in elk overzicht aan elkaar geplakt worden via String.Join.
+
+Pas ten slotte de GetOverview van zowel Student als Course aan zodat de naam, respectievelijk de titel, in hoofdletters getoond worden.
+
+Gebruik dezelfde technieken om ShowOverview van StudyProgram te refactoren en te zorgen dat de titel van het studieprogramma in hoofdletters verschijnt.
 
 ## Gemeenschappelijke kenmerken \(h11-tombola\)
 
