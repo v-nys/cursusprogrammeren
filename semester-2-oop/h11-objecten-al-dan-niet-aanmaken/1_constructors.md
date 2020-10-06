@@ -2,6 +2,10 @@
 
 ## Constructors
 
+{% hint style="success" %}
+[Kennisclip **tot vlak voor constructors met parameters**](https://youtu.be/SeQGk9MH9e8)\*\*\*\*
+{% endhint %}
+
 ### Werking new operator
 
 Objecten die je aanmaakt komen niet zomaar tot leven. Nieuwe objecten maken we aan met behulp van de `new` operator zoals we al gezien hebben:
@@ -121,6 +125,10 @@ class Auto
 
 #### Constructor met parameter\(s\)
 
+{% hint style="success" %}
+[Kennisclip voor constructors met parameters](https://youtu.be/9mWODDPE-fk)
+{% endhint %}
+
 Soms wil je argumenten aan een object meegeven bij creatie. We willen bijvoorbeeld de inhoud van de tank en de kilometerstand meegeven die het object moet hebben bij het aanmaken. Met andere woorden, stel dat we dit willen schrijven:
 
 ```csharp
@@ -177,6 +185,10 @@ Constructoren helpen dit probleem te voorkomen. Als we één constructor hebben,
 Samengevat: **als er eigenschappen zijn die je meteen bij het aanmaken van een object wil instellen, maak er dan parameters van een constructor voor**.
 
 **Constructor chaining**
+
+{% hint style="success" %}
+[Kennisclip voor constructor chaining](https://youtu.be/XMqVmywX22w)
+{% endhint %}
 
 Als je meerdere overloaded constructoren hebt, hoef je niet in elke constructor alle code voor objectinitialisatie te schrijven. Het sleutelwoordje `this` biedt ook de mogelijkheid **eerst** een andere constructor aan te roepen en eventueel andere operaties toe te voegen. Dit heet **constructor chaining**. In bovenstaand voorbeeld kan je ook dit schrijven:
 

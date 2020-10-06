@@ -1,5 +1,9 @@
 # Spelen met strings
 
+{% hint style="success" %}
+[Kennisclip voor alles tot en met strings vergelijken](https://youtu.be/L2uNdNxdJ8s)
+{% endhint %}
+
 We gebruiken het einde van klassen en objecten om iets dieper in de `String` klasse te duiken en aan te tonen dat er tal van nuttige zaken bestaan om met strings te werken. We zullen ook zien dat je objecten kan aanmaken door een omschrijving ervan in tekst om te zetten naar een constructoroproep.
 
 {% hint style="danger" %}
