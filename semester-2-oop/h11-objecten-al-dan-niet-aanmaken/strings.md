@@ -34,7 +34,7 @@ Volgende voorbeeld zal de eerder array van het vorige voorbeeld opnieuw samenvoe
 string joined = String.Join(";", gesplitst);
 ```
 
-Voorgaande methoden zijn `static` en moet je dus via de klasse `String` doen en niet via de objecten zelf.
+Voorgaande methode is `static` en moet je dus via de klasse `String` doen en niet via de objecten zelf.
 
 ### Andere nuttige methoden
 
