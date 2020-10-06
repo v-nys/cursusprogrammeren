@@ -24,13 +24,11 @@ Schrijf nu zelf een klasse, `StudyProgram`. Een studieprogramma heeft een aantal
 
 ```text
 Graduaat Programmeren
-
 Programming principles: 9 studiepunten
 Web Technology: 3 studiepunten
 Databanken Intro: 3 studiepunten
 Communicatie: 3 studiepunten
 Projectwerk: 6 studiepunten
-
 Totaal: 24 studiepunten
 ```
 
