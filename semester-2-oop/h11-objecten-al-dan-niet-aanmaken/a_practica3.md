@@ -18,7 +18,7 @@ Schrijf nu zelf een klasse, `StudyProgram`. Een studieprogramma heeft een aantal
 
 * een naam die niet leeg mag zijn \(geïmplementeerd als full property `Name`\)
 * een array van vijf `Course`s \(geïmplementeerd als full property `Courses`\)
-* een constructor die deze twee properties initialiseert
+* een constructor met twee parameters die deze twee properties initialiseert
 * een read-only property, `TotalStudyPoints`, die het totaal aantal studiepunten berekent en teruggeeft als `int`
 * een methode `GetOverview` die een overzicht van het studieprogramma produceert, als string, in volgend formaat:
 
