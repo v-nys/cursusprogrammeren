@@ -36,13 +36,13 @@ Totaal: 24 studiepunten
 
 ## Verbetering ShowOverview \(SchoolAdmin project\)
 
-Overmatig gebruik van Console.WriteLine om rapporten af te printen beperkt de flexibiliteit van onze code. Refactor eerst de methode ShowOverview van Student en Course zodat ze beide een methode GetOverview oproepen en deze gewoonweg afprinten. De methode GetOverview produceert een string met net dezelfde inhoud die anders op het scherm verschijnt.
+Overmatig gebruik van Console.WriteLine om rapporten af te printen beperkt de flexibiliteit van onze code. Refactor eerst de methode `ShowOverview` van Student en Course zodat ze beide een methode `GetOverview` oproepen en deze gewoonweg afprinten. De methode `GetOverview` produceert een string met net dezelfde inhoud die anders op het scherm verschijnt.
 
-Refactor vervolgens de GetOverview methode, zodat de verschillende regels in elk overzicht aan elkaar geplakt worden via String.Join.
+Refactor vervolgens de `GetOverview` methode, zodat de verschillende regels in elk overzicht aan elkaar geplakt worden via `String.Join`.
 
-Pas ten slotte de GetOverview van zowel Student als Course aan zodat de naam, respectievelijk de titel, in hoofdletters getoond worden.
+Pas ten slotte de `GetOverview` van zowel `Student` als `Course` aan zodat de naam, respectievelijk de titel, in hoofdletters getoond worden.
 
-Gebruik dezelfde technieken om ShowOverview van StudyProgram te refactoren en te zorgen dat de titel van het studieprogramma in hoofdletters verschijnt.
+Gebruik dezelfde technieken om `ShowOverview` van `StudyProgram` te refactoren en te zorgen dat de titel van het studieprogramma in hoofdletters verschijnt.
 
 ## Gemeenschappelijke kenmerken \(h11-tombola\)
 
