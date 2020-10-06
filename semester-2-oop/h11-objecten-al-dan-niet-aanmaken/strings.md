@@ -63,7 +63,7 @@ De correcte manier om strings te vergelijken is met de `s1.CompareTo(string s2)`
 
 ### Verbatim character
 
-Door een `@` \(verbatim character\) voor een string te plaatsen zeggen we concreet: "de hele string die nu volgt moet je beschouwen zoals hij er staat. Je mag alle escape karakters negeren."
+Door een `@` \(verbatim character\) voor een string te plaatsen zeggen we concreet: "de hele string die nu volgt moet je beschouwen zoals hij er staat. Je mag alle escape karakters negeren en er mogen line breaks voorkomen in deze string."
 
 Dit wordt vaak gebruikt om een filepath iets leesbaarder te maken.
 
@@ -71,7 +71,7 @@ Dit wordt vaak gebruikt om een filepath iets leesbaarder te maken.
 * Met verbatim: `string path= @"c:\Temp\myfile.txt";`
 
 {% hint style="warning" %}
-Bovenstaande strings zijn identiek voor C\#! De @ geeft geen enkele extra functionaliteit, maar zorgt gewoon dat we dezelfde tekst \(meerbepaald: backslashes\) wat makkelijker kunnen intypen.
+Bovenstaande strings zijn identiek voor C\#! De @ geeft geen enkele extra functionaliteit, maar zorgt gewoon dat we dezelfde tekst \(meerbepaald: backslashes en line breaks\) wat makkelijker kunnen intypen.
 {% endhint %}
 
 ### Text files lezen algemeen
