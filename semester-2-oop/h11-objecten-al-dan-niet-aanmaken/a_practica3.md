@@ -1,12 +1,16 @@
 # Oefeningen
 
-## Uitbreiding Course \(SchoolAdmin project\)
+## Uitbreiding Course en Student \(SchoolAdmin project\)
 
 Breid je klasse `Course` uit met een \(full\) property Studiepunten. Deze ligt altijd tussen 1 en 30. Bij het gebruik andere waarden wordt er een ArgumentException gegooid.
 
 Schrijf vervolgens een constructor voor Course die beginwaarden voor alle properties neemt en deze instelt.
 
 Schrijf ook een constructor die geen aantal studiepunten neemt, maar dit wel instelt op 3, een vaak gebruikt aantal studiepunten. Doe dit door middel van constructor chaining.
+
+Schrijf ook een constructor voor je bestaande klasse Student, met een parameter per property.
+
+Refactor ten slotte al je bestaande code om Student objecten en Course objecten te initialiseren via de constructor en niet meer via de properties. "Refactoren" betekent: code systematisch herschrijven zodat ze net hetzelfde doet, maar beter gestructureerd is.
 
 ## StudyProgram \(SchoolAdmin project\)
 
