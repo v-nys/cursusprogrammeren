@@ -332,6 +332,10 @@ Schrijf zelf eerst wat testcode om te controleren dat je een `ArgumentException`
 
 ## Oefening: H10-Course
 
+{% hint style="success" %}
+[Demonstratie van deze oefening](https://youtu.be/pcWMUBuLyIY)
+{% endhint %}
+
 ### Leerdoelen
 
 * werken met klassen en objecten

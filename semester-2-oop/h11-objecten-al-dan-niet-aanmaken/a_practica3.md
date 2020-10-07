@@ -2,6 +2,10 @@
 
 ## Uitbreiding Course en Student \(SchoolAdmin project\)
 
+{% hint style="success" %}
+[Demonstratie voor deze oefening](https://youtu.be/6pK8GHcX41c)
+{% endhint %}
+
 Breid je klasse `Course` uit met een \(full\) property Studiepunten. Deze ligt altijd tussen 1 en 30 en wordt opgeslagen als `byte`. Bij het gebruik andere waarden wordt er een ArgumentException gegooid.
 
 Schrijf vervolgens een constructor voor Course die beginwaarden voor alle properties neemt en deze instelt.
@@ -33,6 +37,10 @@ Totaal: 24 studiepunten
 ```
 
 ## Verbetering ShowOverview \(SchoolAdmin project\)
+
+{% hint style="success" %}
+[Kennisclip voor verbetering ShowOverview](https://youtu.be/mEfGDJdJZ-c)
+{% endhint %}
 
 Overmatig gebruik van Console.WriteLine om rapporten af te printen beperkt de flexibiliteit van onze code. Refactor eerst de methode `ShowOverview` van Student en Course zodat ze beide een methode `GetOverview` oproepen en deze gewoonweg afprinten. De methode `GetOverview` produceert een string met net dezelfde inhoud die anders op het scherm verschijnt.
 
