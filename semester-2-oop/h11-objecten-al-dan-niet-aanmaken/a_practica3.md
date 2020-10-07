@@ -2,7 +2,7 @@
 
 ## Uitbreiding Course en Student \(SchoolAdmin project\)
 
-Breid je klasse `Course` uit met een \(full\) property Studiepunten. Deze ligt altijd tussen 1 en 30. Bij het gebruik andere waarden wordt er een ArgumentException gegooid.
+Breid je klasse `Course` uit met een \(full\) property Studiepunten. Deze ligt altijd tussen 1 en 30 en wordt opgeslagen als `byte`. Bij het gebruik andere waarden wordt er een ArgumentException gegooid.
 
 Schrijf vervolgens een constructor voor Course die beginwaarden voor alle properties neemt en deze instelt.
 
