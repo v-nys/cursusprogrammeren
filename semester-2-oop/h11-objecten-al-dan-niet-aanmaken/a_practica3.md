@@ -3,7 +3,7 @@
 ## Uitbreiding Course en Student \(SchoolAdmin project\)
 
 {% hint style="success" %}
-[Demonstratie voor deze oefening](https://youtu.be/6pK8GHcX41c)
+[Demonstratie voor deze oefening](https://youtu.be/4NdMsaBOv2o)
 {% endhint %}
 
 Breid je klasse `Course` uit met een \(full\) property Studiepunten. Deze ligt altijd tussen 1 en 30 en wordt opgeslagen als `byte`. Bij het gebruik andere waarden wordt er een ArgumentException gegooid.
