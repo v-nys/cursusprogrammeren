@@ -6,12 +6,12 @@ Een **enkel karakter** \(cijfer, letter, leesteken, etc.\) als 'tekst' opslaan k
 
 ```csharp
 char eenLetter = 'X';
-Console.WriteLine("eenLetter=" + eenLetter);
+Console.WriteLine(eenLetter);
 ```
 
 Het is belangrijk dat je de apostrof \(`'` \) niet vergeet voor en na het karakter dat je wenst op te slaan daar dit de literal voorstelling van `char`-literals is \(zie ook [hier](../h1-variabelen-en-datatypes/1_datatypes.md)\).
 
-Je kan eender welk [UNICODE-teken](https://en.wikipedia.org/wiki/Unicode) in een `char` bewaren, namelijk letters, cijfers en speciale tekens zoals `%`, `$`, `*`, `#`, etc. Merk dus op dat volgende lijn: `char eenGetal = '7';` weliswaar een getal als teken opslaat, maar dat intern de compiler deze variabele steeds als een character zal gebruiken. Als je dit cijfer zou willen gebruiken als effectief cijfer om wiskundige bewerkingen op uit te voeren, dan zal je dit eerst moeten converteren naar een getal \(zie [Convert en Casting](../h3-werken-met-data/4_converteren_casting.md)\).
+Je kan eender welk [UNICODE-teken](https://www.joelonsoftware.com/2003/10/08/the-absolute-minimum-every-software-developer-absolutely-positively-must-know-about-unicode-and-character-sets-no-excuses/) in een `char` bewaren, namelijk letters, cijfers en speciale tekens zoals `%`, `$`, `*`, `#`, etc. of zelfs emoji. Merk op dat een `char` altijd het symbool aanduidt en niet de achterliggende waarde. Met andere woorden, `char eenCijfer = '7';` bevat een cijfer, maar dit cijfer is alleen de "tekening" van het getal. Het is niet het _getal_ 7 en je kan er niet mee rekenen op de gewoonlijke manier.
 
 ## String
 
@@ -23,7 +23,7 @@ Een string is een reeks van 0, 1 of meerdere `char`-elementen, zoals je ook kan 
 
 Merk op dat we bij een string literal gebruik maken van aanhalingstekens \(`"`\) terwijl bij chars we een apostrof gebruiken \(`'`\). Dit is de manier om een string van een char te onderscheiden.
 
-Volgende code geeft dus drie keer het cijfer 1 onder elkaar op het scherm, maar de eerste keer behelst het een char \(enkelvoudig teken\), dan een een string \(reeks van tekens\) en dan een int \(effectief getal\):
+Volgende code geeft dus drie keer het cijfer 1 onder elkaar op het scherm, maar de eerste keer gaat het om de weergave van een `char` \(enkelvoudig teken\), dan van een `string` \(reeks van tekens\) en dan van een `int` \(effectief getal\):
 
 ```csharp
 char eenKarakter = '1'; 
