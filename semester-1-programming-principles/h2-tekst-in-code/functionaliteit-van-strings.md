@@ -8,10 +8,9 @@ De lengte van een string is het aantal symbolen in de weergegeven versie. Dat wi
 
 ```csharp
 Console.WriteLine("hallo".Length); // levert 5 want: 5 letters
-Console.WriteLine("hallo\nWereld".Length); // 12 = 5 letters + 1 escape + 6 letters
-Console.WriteLine($"hallo\nWereld".Length); // 12, zie boven, $ bestaat achter de schermen niet meer
-Console.WriteLine(@"hallo
-Wereld".Length); // 12, want line break wordt achter de schermen \n en dat is één symbool
+Console.WriteLine("hallo\\Wereld".Length); // 12 = 5 letters + 1 escape + 6 letters
+Console.WriteLine($"hallo\\Wereld".Length); // 12, zie boven, $ bestaat achter de schermen niet meer
+Console.WriteLine(@"hallo\\Wereld".Length); // 12, want backslash wordt achter de schermen \\ en dat stelt dan weer één symbool voor
 ```
 
 ## `Substring`

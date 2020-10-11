@@ -26,6 +26,10 @@ Er zijn veel escapesequenties, maar de nuttigste zijn deze:
 Een escapesequentie is niet alleen bruikbaar in een string, maar ook als char. Dus `'\n'` stelt één newline symbool voor. Het is dus niet zo dat er altijd maar één teken getypt wordt tussen de enkele aanhalingstekens.
 {% endhint %}
 
+{% hint style="warning" %}
+Op Windows wordt een line break eigenlijk voorgesteld als \r\n en niet als \n. Héél af en toe is het nuttig dit te weten.
+{% endhint %}
+
 ## Verbatim strings
 
 In tekst heb je niet zo vaak een backslash nodig. Bovendien kom je meestal ook toe met strings die op één regel te noteren zijn. Daarom zal een "gewone" C\#-string een backslash behandelen als het begin van een escape sequentie en line breaks binnenin tekst verbieden. Meestal is dat goed, maar soms is het lastig. Als je veel backslashes en/of line breaks nodig hebt, kan je misschien meer leesbare code verkrijgen door een **verbatim string** te gebruiken.
