@@ -47,8 +47,8 @@ Alles wat je met een verbatim string kan schrijven, kan je ook met een gewone st
 Je kan ook in een verbatim string stringinterpolatie toepassen. Dat doe je door `$@` voor de eerste aanhalingstekens te plaatsen. Dit kan van pas komen als je een eerder grote template hebt waarin je gegevens wil tonen. Onderstaande code toont bijvoorbeeld hoe je persoonsgegevens zou kunnen tonen op meerdere regels:
 
 ```csharp
-int naam = Console.ReadLine();
-int leeftijd = Convert.ToInt32(Console.ReadLine);
+string naam = Console.ReadLine();
+int leeftijd = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine($@"Naam: {naam}
 Leeftijd: {leeftijd:D3}");
 ```
