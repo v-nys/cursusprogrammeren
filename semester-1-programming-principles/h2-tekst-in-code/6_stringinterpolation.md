@@ -24,7 +24,7 @@ Volgende 2 manieren tonen hoe je steeds tot voorgaande string zal komen.
 
 ## Manier 1: String samenvoegen met de `+`-operator
 
-Als je de `+` tussen strings plaatst, krijgt deze operator een andere betekenis dan tussen getallen. De strings worden dan achter elkaar geplakt.
+Als je de `+` tussen strings plaatst, krijgt deze operator een andere betekenis dan tussen getallen. De strings worden dan achter elkaar geplakt. Als iets geen string is en op deze manier wordt gebruikt, wordt eerst een tekstvoorstelling bepaald, zoals hieronder bij `age` \(want dat is een `int`\).
 
 ```csharp
 string result= "Ik ben "+ name + " en ik ben "+ age+ " jaar oud.";
