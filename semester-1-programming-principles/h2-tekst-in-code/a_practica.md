@@ -34,6 +34,41 @@ Pas string interpolatie mbv `$` \(manier 2\) toe.
 
 Hou het voorlopig op de cursus.
 
+## Oefening: H3-bereken-btw
+
+### Leerdoelen
+
+* gebruik van string interpolation
+
+### Functionele analyse
+
+Een programma vraagt een bedrag en vervolgens btw percentage in te geven waarna het bedrag incl. btw-percentage wordt weergegeven.
+
+### Technische analyse
+
+Noem de methode voor deze oefening `BerekenBtw`.
+
+#### voorbeeldinteractie\(s\)
+
+![](../../.gitbook/assets/image%20%2863%29.png)
+
+### Technische hulp
+
+#### Programmaverloop
+
+Het bedrag dat wordt ingevoerd moet geconverteerd worden naar een int met `Convert.ToInt32`.
+
+Pas string interpolatie mbv `$` \(manier 2\) toe.
+
+#### Testscenario's
+
+* Typ tekst in
+* Geef een veel te groot bedrag in
+
+### Ondersteunend materiaal
+
+Hou het voorlopig op de cursus.
+
 ## Oefening: H2-systeem-informatie
 
 ### Leerdoelen
