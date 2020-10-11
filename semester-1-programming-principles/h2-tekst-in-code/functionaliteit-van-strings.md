@@ -40,7 +40,7 @@ Console.WriteLine("C# is cool".IndexOf("z")); // geeft -1 want komt niet voor
 Console.WriteLine("C# is cool".IndexOf("Cool")); // geeft -1 want "Cool" MET HOOFDLETTER komt niet voor
 ```
 
-## ToUpper / ToLower
+## `ToUpper` / `ToLower`
 
 Met deze twee methodes bereken je een versie van de string waarop je ze toepast, maar dan in hoofdletters of in kleine letters. Let op: je past de oorspronkelijke string niet aan!
 
