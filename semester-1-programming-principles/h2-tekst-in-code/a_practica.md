@@ -1,6 +1,8 @@
 # Oefeningen
 
-## Oefening: H2-string-interpolation
+Al deze oefeningen maak je in een klasse `HoofdstukDrie`.
+
+## Oefening: H3-string-interpolation
 
 ### Leerdoelen
 
@@ -8,17 +10,15 @@
 
 ### Functionele analyse
 
-Oefening H1-maaltafels en H1-ruimte dienen we te herschrijven volgens de principes van string interpolation.
+Oefening H2-maaltafels en H2-ruimte dienen we te herschrijven volgens de principes van string interpolation.
 
 ### Technische analyse
 
-#### UI
-
-console applicatie
+Noem de methode voor deze oefening `StringInterpolation`.
 
 #### voorbeeldinteractie\(s\)
 
-Zie oefening H1-maaltafels en H1-ruimte.
+Zie oefening H2-maaltafels en H2-ruimte.
 
 ### Technische hulp
 
@@ -28,7 +28,7 @@ Pas string interpolatie mbv `$` \(manier 2\) toe.
 
 #### Testscenario's
 
-* Zie oefening H1-maaltafels en H1-ruimte.
+* Zie oefening H2-maaltafels en H2-ruimte.
 
 ### Ondersteunend materiaal
 
