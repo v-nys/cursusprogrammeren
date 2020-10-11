@@ -11,7 +11,7 @@ Console.WriteLine(eenLetter);
 
 Het is belangrijk dat je de apostrof \(`'` \) niet vergeet voor en na het karakter dat je wenst op te slaan daar dit de literal voorstelling van `char`-literals is \(zie ook [hier](../h1-variabelen-en-datatypes/1_datatypes.md)\).
 
-Je kan eender welk [UNICODE-teken](https://www.joelonsoftware.com/2003/10/08/the-absolute-minimum-every-software-developer-absolutely-positively-must-know-about-unicode-and-character-sets-no-excuses/) in een `char` bewaren, namelijk letters, cijfers en speciale tekens zoals `%`, `$`, `*`, `#`, etc. of zelfs emoji. Merk op dat een `char` altijd het symbool aanduidt en niet de achterliggende waarde. Met andere woorden, `char eenCijfer = '7';` bevat een cijfer, maar dit cijfer is alleen de "tekening" van het getal. Het is niet het _getal_ 7 en je kan er niet mee rekenen op de gewoonlijke manier.
+Je kan alle karakters uit deze [UTF-16](http://www.fileformat.info/info/charset/UTF-16/list.htm) tabel bewaren in een `char`. Merk op dat een `char` altijd het symbool aanduidt en niet de achterliggende waarde. Met andere woorden, `char eenCijfer = '7';` bevat een cijfer, maar dit cijfer is alleen de "tekening" van het getal. Het is niet het _getal_ 7 en je kan er niet mee rekenen op de gewoonlijke manier.
 
 ## String
 
