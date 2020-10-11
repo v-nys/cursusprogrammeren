@@ -13,6 +13,10 @@ Het is belangrijk dat je de apostrof \(`'` \) niet vergeet voor en na het karakt
 
 Je kan alle karakters uit deze [UTF-16](http://www.fileformat.info/info/charset/UTF-16/list.htm) tabel bewaren in een `char`. Merk op dat een `char` altijd het symbool aanduidt en niet de achterliggende waarde. Met andere woorden, `char eenCijfer = '7';` bevat een cijfer, maar dit cijfer is alleen de "tekening" van het getal. Het is niet het _getal_ 7 en je kan er niet mee rekenen op de gewoonlijke manier.
 
+{% hint style="info" %}
+De tabel bevat geen emoji of andere speciale karakters die je soms toch op je scherm ziet. Kan je daar dan niet mee werken in C\#? Antwoord: het gaat wel, maar er komt een pak meer achtergrondinfo bij kijken. Dat laten we voor meer gevorderd materiaal.
+{% endhint %}
+
 ## String
 
 Een string is een reeks van 0, 1 of meerdere `char`-elementen, zoals je ook kan zien als je even met je muis boven een string keyword _hovert_ in je code:
