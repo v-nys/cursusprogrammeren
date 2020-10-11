@@ -67,14 +67,14 @@ tekst.Replace("C#","Racket");
 Console.WriteLine(tekst); // C# is cool -> uit tekst is iets anders berekend, tekst is niet aangepast
 ```
 
-## `TrimLeft` / `TrimRight`
+## `TrimStart` / `TrimEnd / Trim`
 
-Met deze twee methodes verwijder je witruimte \(spaties, tabs, newlines,...\) aan het begin of aan het einde van een string:
+Met deze methodes verwijder je witruimte \(spaties, tabs, newlines,...\) aan het begin of aan het einde van een string:
 
 
 
 ```csharp
-Console.WriteLine("     C# is cool".TrimLeft()); // C# is cool, eerste teken is C en geen spatie
+Console.WriteLine("     C# is cool".TrimStart()); // C# is cool, eerste teken is C en geen spatie
 Console.WriteLine(@"
 
 
@@ -83,7 +83,7 @@ BOE!
 
 
 
-".TrimLeft().TrimRight()); // BOE! (op één regel) (kan ook als gewoon Trim())
+".TrimStart().TrimEnd()); // BOE! (op één regel) (kan ook als gewoon Trim())
 ```
 
 {% hint style="info" %}
