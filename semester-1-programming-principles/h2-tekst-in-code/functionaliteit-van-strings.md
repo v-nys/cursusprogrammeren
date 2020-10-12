@@ -1,5 +1,9 @@
 # Functionaliteit van strings
 
+{% hint style="success" %}
+[Kennisclip voor deze inhoud](https://youtu.be/db7Pz4fv3M0)
+{% endhint %}
+
 Strings bevatten veel ingebouwde functionaliteit. Als je deze leert gebruiken, kan je al snel nuttige programmaatjes voor tekstverwerking schrijven.
 
 ## `Length`

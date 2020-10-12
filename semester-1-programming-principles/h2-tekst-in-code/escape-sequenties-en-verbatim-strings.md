@@ -1,5 +1,9 @@
 # Escape sequenties en verbatim strings
 
+{% hint style="success" %}
+[Kennisclip voor deze inhoud](https://youtu.be/LXUckCWukYU)
+{% endhint %}
+
 ## Escapesequenties
 
 Strings moeten normaal op één regel staan. Hoe toon je dan tekst die over meerdere regels gaat? Via een **escape sequentie**. Dit is tekst die iets anders voorstelt dan wat je schrijft.

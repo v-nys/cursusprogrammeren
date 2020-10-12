@@ -1,5 +1,9 @@
 # Strings samenvoegen
 
+{% hint style="success" %}
+[Kennisclip voor deze inhoud](https://youtu.be/UXOdj_j0c6I)
+{% endhint %}
+
 ## Strings samenvoegen
 
 Je kan strings en variabelen samenvoegen tot een nieuwe string op verschillende manieren. We bekijken volgende twee mogelijkheden:

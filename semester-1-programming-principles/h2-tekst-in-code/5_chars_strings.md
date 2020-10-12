@@ -1,5 +1,9 @@
 # Strings en chars
 
+{% hint style="success" %}
+[Kennisclip voor deze inhoud](https://youtu.be/rSsptVzzAhk)
+{% endhint %}
+
 ## Char
 
 Een **enkel karakter** \(cijfer, letter, leesteken, etc.\) als 'tekst' opslaan kan je doen door het `char`-type te gebruiken. Zo kan je bijvoorbeeld een enkel karakter als volgt tonen:
