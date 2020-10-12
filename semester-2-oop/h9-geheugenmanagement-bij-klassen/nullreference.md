@@ -2,7 +2,7 @@
 
 ## Defaultwaarden van value types
 
-Elk type heeft een eigen defaultwaarde. Onderstaande tabel geeft ze weer voor de soorten types die wij kennen:
+Elk type heeft een eigen defaultwaarde. Dit is de waarde van niet-geïnitialiseerde variabelen, inclusief niet-geïnitialiseerde array elementen. Onderstaande tabel geeft ze weer voor de soorten types die wij kennen:
 
 | type | waarde |
 | :--- | :--- |
