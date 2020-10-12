@@ -4,7 +4,7 @@ Strings bevatten veel ingebouwde functionaliteit. Als je deze leert gebruiken, k
 
 ## `Length`
 
-De lengte van een string is het aantal symbolen in de weergegeven versie. Dat wil zeggen: zonder de aanhalingstekens, zonder een eventuele `$` of `@` vooraan, in de veronderstelling dat een escapesequentie één karakter voorstelt. Je plaatst `.Length` achter de string om de lengte te weten te komen. Enkele voorbeelden: 
+De lengte van een string is het aantal symbolen in de weergegeven versie. Dat wil zeggen: zonder de aanhalingstekens, zonder een eventuele `$` of `@` vooraan, in de veronderstelling dat een escapesequentie één karakter voorstelt en dat accolades in geïnterpoleerde strings al zijn uitgewerkt. Je plaatst `.Length` achter de string om de lengte te weten te komen. Enkele voorbeelden: 
 
 ```csharp
 Console.WriteLine("hallo".Length); // levert 5 want: 5 letters
