@@ -1,4 +1,12 @@
-# Stack en Heap
+# Stack en Heap, value en reference
+
+{% hint style="success" %}
+[Kennisclip voor deze inhoud](https://youtu.be/N6f6S9aQukU)
+{% endhint %}
+
+{% hint style="danger" %}
+De kennisclip bevat dezelfde informatie als de tekst hieronder, maar op een andere manier uitgelegd. Aangeraden wordt om eerst de kennisclip te bekijken, dan de tekst door te nemen, dan verder door dit hoofdstuk te gaan. Als het dan nog niet duidelijk is, moet je herhalen vanaf de kennisclip. Als het na een tweede lezing van het hoofdstuk nog niet duidelijk is, bijt dan je tanden niet stuk, maar contacteer de lector.
+{% endhint %}
 
 ## Stack en Heap
 
@@ -8,29 +16,20 @@ Tot nog toe lagen we er niet van wakker wat er achter de schermen van een C\# pr
 
 #### Twee soorten geheugen
 
-Wanneer een C\# applicatie wordt uitgevoerd krijgt het twee soorten geheugen toegewezen dat het 'naar hartelust' kan gebruiken:
+Wanneer een C\# applicatie wordt uitgevoerd krijgt het twee soorten geheugen toegewezen dat het kan gebruiken:
 
 1. Het kleine, maar snelle **stack** geheugen
 2. Het grote, maar tragere **heap** geheugen
 
-Afhankelijk van het soort variabele wordt ofwel de stack, ofwel de heap gebruikt. **Het is uitermate belangrijk dat je weet in welk geheugen de variabele zal bewaard worden!**
-
-Er zijn namelijk twee types data en deze kunnen niet op dezelfde manier behandeld worden:
-
-1. Value types
-2. Reference types
-
-
-
-![](../../.gitbook/assets/gc1.png)
+Afhankelijk van het soort variabele wordt ofwel de stack, ofwel de heap gebruikt. **Het is uitermate belangrijk dat je weet hoe de variabele zal bewaard worden!**
 
 #### Waarom twee geheugens?
 
-Waarom plaatsen we niet alles in de stack? De reden hiervoor is dat bij het compileren van je applicatie er reeds zal berekend worden hoeveel geheugen de stack zal nodig hebben. Wanneer je programma dus later wordt uitgevoerd weet het OS perfect hoeveel geheugen het minstens moet reserveren. Er is echter een probleem: we kunnen niet alles perfect berekenen/voorspellen. Een variabele van het type `int` is perfect geweten hoe groot die zal zijn \(32 bit\).Maar wat met een string? Of met een array waarvan we pas tijdens de uitvoer de lengte aan de gebruiker misschien vragen? Het zou nutteloos \(en zonde\) zijn om reeds bij aanvang een bepaalde hoeveelheid voor een array te reserveren als we niet weten hoe groot die zal worden. Beeld je maar eens in dat we 2k byte reserveren om dan te ontdekken dat we maar 5byte ervan nodig hebben. RAM is goedkoop, maar toch... De heap laat ons dus toe om geheugen op een wat minder gestructureerde manier in te palmen. Tijdens de uitvoer van het programma zal de heap als het ware dienst doen als een grote zandbak waar eender welke plek kan ingepalmd worden om zaken te bewaren. De stack daarentegen is het kleine bankje naast de zandbak: handig, snel, en perfect geweten hoe groot.
+Waarom plaatsen we niet alles in de stack? De reden hiervoor is dat bij het compileren van je applicatie er reeds zal vastgelegd worden hoeveel geheugen de stack zal nodig hebben. Wanneer je programma dus later wordt uitgevoerd, wordt die hoeveelheid geheugen gereserveerd. Er is echter een probleem: we kunnen niet alles perfect berekenen/voorspellen. Van een variabele van het type `int` is perfect geweten hoe groot die zal zijn \(32 bit\).Maar wat met een string? Of met een array waarvan we pas tijdens de uitvoer de lengte aan de gebruiker misschien vragen? We zouden op voorhand niet weten hoe veel geheugen we daar voor moeten reserveren.
 
 **Value types**
 
-**Value** types worden in de stack bewaard. De effectieve waarde van de variabele wordt in de stack bewaard. Dit zijn alle gekende, 'eenvoudige' datatypes die we totnogtoe gezien hebben, inclusief enums en structs \(zie later\):
+**Lokale variabelen \(inclusief parameters\) van value types** worden in de stack bewaard. De effectieve waarde van de variabele wordt in de stack bewaard. Dit zijn gekende, "eenvoudige" datatypes die we totnogtoe gezien hebben, inclusief enums:
 
 * `sbyte`, `byte`
 * `short`, `ushort`
@@ -39,8 +38,12 @@ Waarom plaatsen we niet alles in de stack? De reden hiervoor is dat bij het comp
 * `char`
 * `float`, `double`, `decimal`
 * `bool`
-* structs \(zien we niet in deze cursus\)
-* enums
+* `enum` types
+* `struct`s \(`DateTime` is hier een voorbeeld van\)
+
+{% hint style="warning" %}
+Wacht even, was `DateTime` geen klasse? Eigenlijk niet. `struct`s lijken erg op klassen in C\#, maar het zijn value types. Ook de concrete verschijningsvormen van structs noemen we objecten.
+{% endhint %}
 
 **= operator bij value types**
 
@@ -77,19 +80,20 @@ Na methode 5
 
 **Reference types**
 
-**Reference** types worden in de heap bewaard. De effectieve waarde wordt in de heap bewaard, en in de stack zal enkel een **referentie** of **pointer** naar de data in de heap bewaard worden. Een referentie \(of pointer\) is niet meer dan het geheugenadres naar waar verwezen wordt \(bv `0xA3B3163`\) Concreet zijn dit alle zaken die vaak redelijk groot zullen zijn:
+**Data van reference types** wordt op de heap bewaard. De effectieve waarde wordt in de heap bewaard, en voor lokale variabelen wordt in de stack enkel een **referentie** of **pointer** naar de data. Een referentie \(of pointer\) is niet meer dan het geheugenadres naar waar verwezen wordt \(bv `0xA3B3163`\) Concreet zijn dit allemaal zaken die vaak redelijk groot zullen zijn of waarvan we de grootte niet op voorhand kunnen begrenzen \(vb.: een string kan weinig karakters of veel karakters bevatten\):
 
-* objecten, interfaces en delegates
+* objecten van klassen \(strings vallen hier ook onder\)
 * arrays
+* delegate types \(zien we later\)
 
 **= operator bij reference types**
 
 Wanneer we de = operator gebruiken bij een reference type dan kopieren we de referentie naar de waarde, niet de waarde zelf.
 
-**Bij objecten** We zien dit gedrag bij alle reference types, zoals objecten:
+Veronderstel dat onderstaande code deel uitmaakt van een methode, dus dat `stud` een lokale variabele is:
 
 ```csharp
-Student stud= new Student();
+Student stud = new Student();
 ```
 
 Wat gebeurt er hier?

@@ -2,7 +2,7 @@
 
 ## Objecten als argumenten
 
-Klassen zijn "gewoon" nieuwe types. Alle regels die we dus al kenden in verband met het doorgeven van variabelen als parameters in een methoden blijven gelden. Het enige verschil is dat we objecten **by reference** meegeven aan een methode. Aanpassingen aan het object in de methode zal dus betekenen dat je het originele object aanpast dat aan de methode werd meegegeven. Hier moet je dus zeker rekening mee houden.
+Klassen zijn "gewoon" nieuwe types. Alle regels die we dus al kenden in verband met het doorgeven van variabelen als parameters in een methoden blijven gelden. Het enige verschil is dat we objecten van klassen **by reference** meegeven aan een methode. Aanpassingen aan het object in de methode zullen dus betekenen dat je het originele object aanpast dat aan de methode werd meegegeven. Hier moet je dus zeker rekening mee houden.
 
 Een voorbeeld. Stel dat we volgende klasse hebben waarin we metingen willen opslaan, alsook wie de meting heeft gedaan:
 
@@ -25,9 +25,8 @@ static void Main(string[] args)
     Meting m2 = new Meting();
     m2.Temperatuur = 34; 
     m2.OpgemetenDoor = "Dennis Rodman";
-
-    ToonMetingInKleur(m1, ConsoleColor.Red);
-    ToonMetingInKleur(m2, ConsoleColor.Gray);
+    ToonMetingEnVerhoog(m1, ConsoleColor.Red);
+    ToonMetingEnVerhoog(m2, ConsoleColor.Gray);
 }
 
 static void ToonMetingInKleur (Meting inmeting, ConsoleColor kleur)
@@ -36,17 +35,10 @@ static void ToonMetingInKleur (Meting inmeting, ConsoleColor kleur)
     Console.WriteLine($"Temperatuur {inmeting.Temperatuur}°C werd opgemeten door {inmeting.OpgemetenDoor}");
     Console.ResetColor();
 }
-```
 
-### Objecten in methoden aanpassen
-
-Je kan dus ook methoden schrijven die meegegeven objecten aanpassen daar we deze **by reference** doorsturen. Een voorbeeld:
-
-```csharp
 static void ToonMetingEnVerhoog(Meting inmeting)
 {
     ToonMetingInKleur(inmeting, ConsoleColor.Green);
-
     inmeting.Temperatuur++;
 }
 ```
@@ -55,10 +47,9 @@ Als we deze methode als volgt aanroepen:
 
 ```csharp
 Meting m1 = new Meting();
-m1.Temperatuur = 26; m1.OpgemetenDoor = "Elon Musk";
-
+m1.Temperatuur = 26;
+m1.OpgemetenDoor = "Elon Musk";
 ToonMetingEnVerhoog(m1);
-
 Console.WriteLine(m1.Temperatuur);
 ```
 
@@ -94,7 +85,7 @@ Het type van de property `Temperatuur` is `int` en mag je dus als parameter aan 
 
 ## Objecten als resultaat
 
-Weer hetzelfde verhaal: ook klassen mogen het resultaat van een methoden zijn.
+Weer hetzelfde verhaal: ook instanties van klassen mogen het resultaat van een methode zijn.
 
 ```csharp
 static Meting GenereerRandomMeting()
@@ -103,7 +94,6 @@ static Meting GenereerRandomMeting()
     Random r = new Random();
     result.Temperatuur = r.Next(-100, 200);
     result.OpgemetenDoor = "Onbekend";
-
     return result;
 }
 ```
@@ -113,20 +103,4 @@ Deze methode kan je dan als volgt gebruiken:
 ```csharp
 Meting m3 = GenereerRandomMeting();
 ```
-
-Merk op dat het dus kan zijn dat een methode `null` teruggeeft. Het kan dus zeker geen kwaad om steeds in je code te controleren of je effectief iets hebt terug gekregen:
-
-```csharp
-Meting m3 = GenereerRandomMeting();
-if(m3 != null)
-{
-    ToonMetingInKleur(m3, ConsoleColor.Red);
-}
-```
-
-## Kennisclip
-
-![](../../.gitbook/assets/infoclip%20%282%29.png)
-
-* [Objecten als parameter of returnwaarde](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=8dbbc3f8-56ed-4657-82a7-ab7400e422bc) \(opname uit hoorcollege 4/3/20\)
 

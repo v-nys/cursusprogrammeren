@@ -1,4 +1,17 @@
-# Null en NullReferenceException
+# Defaultwaarden en NullReferenceException
+
+## Defaultwaarden van value types
+
+Elk type heeft een eigen defaultwaarde. Onderstaande tabel geeft ze weer voor de soorten types die wij kennen:
+
+| type | waarde |
+| :--- | :--- |
+| elk getaltype \(`int`, `float`,...\) | 0 |
+| `char` | 0 \(= symbool met nummer 0\) |
+| `bool` | `false` |
+| `enum` types | de eerste waarde van dat type |
+| `DateTime` | een tijdstip met 0 ticks |
+| alle reference types | `null` |
 
 ## Null en NullReferenceException
 
@@ -11,17 +24,20 @@ stud1.Naam= "Test";
 
 Dit zal een fout geven. `stud1` bevat namelijk nog geen referentie. Maar wat dan wel?
 
-Deze variabele bevat de waarde **`null`** . Net zoals bij value types die een default waarde hebben \(bv 0 bij een `int` \) als je er geen geeft, zo bevat reference types altijd `null`.
+Deze variabele bevat de waarde **`null`** . Dit is de defaultwaarde voor reference types. Met andere woorden, als je een reference type declareert en niet initialiseert, zal de waarde `null` zijn.
+
+{% hint style="info" %}
+Visual Studio voorkomt sommige voorkomens van niet-geïnitialiseerde variabelen. Maar niet allemaal. Bovendien is het Visual Studio dat dit voorkomt, niet C\#. Dus je moet er echt wel op letten.
+{% endhint %}
 
 ### NullReferenceException
 
-Een veel voorkomende foutboodschap tijdens de uitvoer van je applicatie is de zogenaamde `NullReferenceException` . Deze zal optreden wanneer je code een object probeert te benaderen wiens waarde `null` is.
+Een veel voorkomende foutboodschap tijdens de uitvoer van je applicatie is de zogenaamde `NullReferenceException` . Deze zal optreden wanneer je code een member \(attribuut, methode of property\) van `null` probeert op te vragen.
 
 Laten we dit eens simuleren:
 
 ```csharp
 Student stud1 = null;
-
 Console.WriteLine(stud1.Name);
 ```
 
@@ -35,14 +51,16 @@ Dit zal resulteren in volgende foutboodschap:
 
 Objecten die niet bestaan zullen altijd `null`. Uiteraard kan je niet altijd al je code uitvlooien waar je misschien `=new SomeObject();` bent vergeten.
 
-Voorts kan het ook soms by design zijn dat een object voorlopig `null` is.
-
-Gelukkig kan je controleren of een object `null` is als volgt:
+Voorts kan het ook soms by design zijn dat een object `null` is. Gelukkig kan je controleren of een object `null` is als volgt:
 
 ```csharp
-if(stud1 == null)
+if(stud1 is null)
     Console.WriteLine("oei. object bestaat niet")
 ```
+
+{% hint style="warning" %}
+Waarom `is null` en niet `== null`? Die vraag leidt ons te ver. Meestal zal `== null` ook werken, maar `==` kan aangepast worden om anders te werken dan gewoonlijk. `is` is dus betrouwbaarder.
+{% endhint %}
 
 ### Return null
 
@@ -62,10 +80,4 @@ static Student ZoekStudent(Student[] array, string naam)
     return null;
 }
 ```
-
-## Kennisclip
-
-![](../../.gitbook/assets/infoclip%20%282%29.png)
-
-* [Referenties en null](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=49247267-d9db-411a-8de6-ab5e0084792a)
 
