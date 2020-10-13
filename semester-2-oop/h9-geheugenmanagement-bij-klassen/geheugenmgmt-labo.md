@@ -47,7 +47,7 @@ Het filmpje mist nog een instructie. Na de toekenning aan `usableIndex` in de lu
 {% endhint %}
 
 {% hint style="success" %}
-[Demonstratie](https://youtu.be/M2VGxVpZDsY)
+[Demonstratie](https://youtu.be/M2VGxVpZDsY) \(zet de `break` die hierboven vermeld wordt wel in je code!\)
 {% endhint %}
 
 ### Property `Grades` toevoegen aan `StudyProgram`
