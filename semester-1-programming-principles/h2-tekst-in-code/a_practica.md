@@ -148,3 +148,30 @@ Je cijfers zijn:
 18    27    44
 ```
 
+## Oefening: H3-superlotto
+
+{% hint style="warning" %}
+Dit is een moeilijke oefening, zeker met de middelen die we nu hebben. Maar ze kan opgelost worden. Doe je best!
+{% endhint %}
+
+Dit is een variatie op de vorige oefening. Schrijf nu een methode `SuperLotto`. Het enige verschil is dat de gebruiker getallen ook met één cijfer mag noteren.
+
+```text
+Wat zijn je cijfers (tussen 01 en 45)?
+> 5,8,13,18,27,44
+Je cijfers zijn:
+05    08    13
+18    27    44
+```
+
+### Technische hulp
+
+* er zullen zes komma's in de invoer staan
+* bepaal eerst de positie van de eerste komma en hou bij in een variabele
+* hou de tekst tot vlak voor die eerste komma bij in een eerste variabele `eersteTekst`
+* bepaal dan de positie van de tweede komma
+  * doe dit door de de eerste komma te zoeken in de substring die begint net na de "echte" eerste komma
+* bepaal het tweede cijfer door de tekst tussen de twee komma's in te lezen en bij te houden in een variabele `tweedeTekst`
+* werk op deze manier verder, tot je `zesdeTekst` hebt
+* pas ten slotte formattering toe in een geïnterpoleerde string om de output te tonen zodat er **wel** nullen voor de cijfers 1-9 verschijnen
+
