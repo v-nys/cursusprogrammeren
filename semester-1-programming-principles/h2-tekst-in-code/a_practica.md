@@ -175,3 +175,7 @@ Je cijfers zijn:
 * werk op deze manier verder, tot je `zesdeTekst` hebt
 * pas ten slotte formattering toe in een geïnterpoleerde string om de output te tonen zodat er **wel** nullen voor de cijfers 1-9 verschijnen
 
+{% hint style="success" %}
+Klaar? Vergeet niet je oefeningen in Git te zetten.
+{% endhint %}
+
