@@ -28,7 +28,7 @@ Er zijn 3 manieren om zogenaamde loops te maken in C\#:
 
 Voorts zullen we ook een speciale loop variant zien in het volgende semester wanneer we arrays en objecten leren kennen:
 
-* [**`foreach`**](../../semester-2-oop/h11-arrays-en-klassen/3_foreach.md)
+* [**`foreach`**](../../semester-2-oop/h11-datastructuren/3_foreach.md)
 
 {% hint style="warning" %}
 ## NEVER EVAH USE GOTO
