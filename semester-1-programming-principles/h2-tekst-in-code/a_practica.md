@@ -167,7 +167,7 @@ Je cijfers zijn:
 ### Technische hulp
 
 * er zullen zes komma's in de invoer staan
-* bepaal eerst de positie van de eerste komma en hou bij in een variabele
+* bepaal eerst de positie van de eerste komma en hou bij in een variabele. Gebruik `IndexOf`.
 * hou de tekst tot vlak voor die eerste komma bij in een eerste variabele `eersteTekst`
 * bepaal dan de positie van de tweede komma
   * doe dit door de de eerste komma te zoeken in de substring die begint net na de "echte" eerste komma
