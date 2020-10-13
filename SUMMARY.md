@@ -99,7 +99,7 @@
   * [Stack en Heap, value en reference](semester-2-oop/h9-geheugenmanagement-bij-klassen/6_memorymanagement.md)
   * [Objecten en methoden](semester-2-oop/h9-geheugenmanagement-bij-klassen/6b_objectenenmethoden.md)
   * [Defaultwaarden en NullReferenceException](semester-2-oop/h9-geheugenmanagement-bij-klassen/nullreference.md)
-  * [Oefeningen](semester-2-oop/h9-geheugenmanagement-bij-klassen/a_poke1.md)
+  * [Oefeningen](semester-2-oop/h9-geheugenmanagement-bij-klassen/geheugenmgmt-oefeningen.md)
 * [H13: Arrays en klassen](semester-2-oop/h11-arrays-en-klassen/README.md)
   * [Arrays van objecten](semester-2-oop/h11-arrays-en-klassen/7_arraysvanobj.md)
   * [Foreach en var](semester-2-oop/h11-arrays-en-klassen/3_foreach.md)
