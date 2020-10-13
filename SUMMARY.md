@@ -37,7 +37,6 @@
   * [Escape sequenties en verbatim strings](semester-1-programming-principles/h2-tekst-in-code/escape-sequenties-en-verbatim-strings.md)
   * [Functionaliteit van strings](semester-1-programming-principles/h2-tekst-in-code/functionaliteit-van-strings.md)
   * [Oefeningen](semester-1-programming-principles/h2-tekst-in-code/a_practica.md)
-  * [Uitbreidingsoefeningen](semester-1-programming-principles/h2-tekst-in-code/b_practica.md)
 * [H4: Werken met data](semester-1-programming-principles/h3-werken-met-data/README.md)
   * [Casting, conversie en parsing](semester-1-programming-principles/h3-werken-met-data/4_converteren_casting.md)
   * [Input verwerken en omzetten](semester-1-programming-principles/h3-werken-met-data/4b_inputconverten.md)

@@ -65,206 +65,86 @@ Pas string interpolatie mbv `$` \(manier 2\) toe.
 * Typ tekst in
 * Geef een veel te groot bedrag in
 
-### Ondersteunend materiaal
-
-Hou het voorlopig op de cursus.
-
-## Oefening: H2-systeem-informatie
+## Oefening: H3-leetspeak
 
 ### Leerdoelen
 
-* gebruik van string interpolation
-* gebruik van `Environment` class
+* functionaliteit van strings leren kennen
 
 ### Functionele analyse
 
-Maak een applicatie die de belangrijkste computer-informatie \(geheugen, etc\) aan de gebruiker toont.
+We willen tekst omvormen naar een ander formaat. Laat de gebruiker een lijn tekst ingeven en haal er alle tussenliggende spaties uit en vervang de a's door @
 
 ### Technische analyse
 
-#### UI
-
-console applicatie
-
-#### voorbeeldinteractie\(s\)
-
-```text
-Uw computer heeft een 64-bit besturingssysteem: True
-De naam van uw pc is: LAPTOP
-Uw pc heeft 4 processorkernen.
-ikke is uw gebruikersnaam.
-Je gebruikt 11 megabytes aan geheugen
-```
-
-### Technische hulp
+Gebruik Console.ReadLine om tekst in te lezen en hou bij in een variabele. Bereken uit deze variabele een waarde voor een variabele, die je ten slotte weergeeft via WriteLine. Noem je methode `LeetSpeak`.
 
 #### Programmaverloop
 
-Pas string interpolatie mbv `$` \(manier 2\) toe.  
-De computerinformatie kan je verkrijgen mbv de Environment-klasse. Hier enkele voorbeelden \(kijk zelf of er nog nuttige properties over je computer in staan en voorzie deze ook binnen jouw code\):
-
-```csharp
-bool is64bit = Environment.Is64BitOperatingSystem;
-string pcName = Environment.MachineName;
-int procCount = Environment.ProcessorCount;
-string userName = Environment.UserName;
-long memory = Environment.WorkingSet; //zal ongeveer 11 MB teruggeven.
+```text
+Geef je tekst in
+> Oefening baart kunst!
+Oefeningb@@rtkunst!
 ```
-
-> **WorkingSet** geeft terug hoeveel geheugen het programma van windows toegewezen krijgt. Als je dus op 'run' klikt om je code te runnen dan zal dit programma geheugen krijgen en via WorkingSet kan het programma dus zelf zien hoeveel het krijgt. \(wat een vreemde lange zin\).
-
-Zoals je ziet wordt het geheugen in bytes teruggegeven. Zorg ervoor dat het geheugen steeds in mega of gigabytes op het scherm wordt getoond.
-
-**Formatteer de informatie met behulp van de $-notatie zodat deze deftig getoond worden en de gebruiker snel de belangrijke informatie over z'n systeem te zien krijgt.**
 
 #### Testscenario's
 
-* wat gebeurt er wanneer je het datatype string zou wijzigen in int?
+* test met een zin zonder a's
+* test met een zin met vijf a's of meer
+* test met een lege string
 
-### Ondersteunend materiaal
-
-Hou het voorlopig op de cursus.
-
-## Oefening: H2-weerstandberekenaar-deel1
+## Oefening: H3-instructies
 
 ### Leerdoelen
 
-* gebruik van math class
+* leren werken met stringinterpolatie
+* leren werken met verbatim strings
 
 ### Functionele analyse
 
-Stel dat je in het labo een weerstand vastneemt en je kent de kleurcodes van de streepjes wel, maar niet hoe je die kunt omzetten naar de effectieve weerstandswaarde. In dit programma kunnen we de gebruiker helpen.
+We willen met behulp van een programma instructies genereren voor de gebruiker. Meerbepaald wordt automatisch aangegeven in welke map de gebruiker bepaalde bestanden op een Windows systeem moet bijhouden.
 
-![](../../.gitbook/assets/colors.jpg)
-
-\(Bron afbeelding: [https://www.esdsite.nl](https://www.esdsite.nl)\)
+{% hint style="warning" %}
+Voor deze oefening is het verplicht gebruik te maken van een \(geïnterpoleerde\) verbatim string.
+{% endhint %}
 
 ### Technische analyse
 
-#### UI
-
-console applicatie
-
-#### voorbeeldinteractie\(s\)
-
-```text
-Geef de waarde (uitgedrukt in een getal van 0 tot 9) van de eerste ring: 2
-Geef de waarde (uitgedrukt in een getal van 0 tot 9) van de tweede ring: 2
-Geef de waarde (uitgedrukt in een getal van -2 tot 7) van de derde ring (exponent): 2
-Resultaat is 2200 Ohm, ofwel 22x100.
-```
-
-### Technische hulp
+Op basis van de voornaam van de cursist en de naam van de cursus wordt de map gegeven die de cursist moet aanmaken \(eerste 3 letters voornaam, in hoofdletters met submap de naam van de cursus. Noem je methode `Instructies`.
 
 #### Programmaverloop
 
-Maak een programma dat de weerstandwaarde berekent gebaseerd op:
+```text
+Wat is je naam?
+> Vincent
+Wat is de naam van de cursus?
+> Programmeren
+Maak een map als volgt: \VIN\Programmeren
+```
 
-* Ring 1: die de tientallen voorstelt
-* Ring 2: die de eenheden voorstel
-* Ring 3: die de exponent \(10 tot de macht\) voorstelt. \(tip:`Math.Pow(10,ring3`\)\)
-
-Gebruik drie variabelen van het type `int`. \(we veronderstellen dus dat de gebruiker de kleurcode heeft omgezet naar een getal en dat toewijst aan de variabele\)
-
-Test dat je "formule/berekening" klopt om gebaseerd op 2 \(of 3\) ringen de weerstandswaarde te berekenen.
-
-#### Testscenario's
-
-* wat gebeurt er wanneer je een hoger getal dan 9 zou invoeren?
-
-### Ondersteunend materiaal
-
-Hou het voorlopig op de cursus.
-
-## Oefening: H2-weerstandberekenaar-deel2
+## Oefening: H3-lotto
 
 ### Leerdoelen
 
-* gebruik van UNICODE
+* functionaliteit van strings
+* stringinterpolatie
+* escape sequenties
 
 ### Functionele analyse
 
-Zie deel 1.
+De gebruiker voert zijn lottocijfers in. We willen deze op een overzichtelijke manier weergeven.
 
-### Technische hulp
+### Technische analyse
 
-#### Programmaverloop
+Laat de lottocijfers allemaal achter elkaar ingeven, gescheiden door komma's, zonder spaties. De gebruiker wordt verondersteld cijfers onder de 10 in te geven voorafgegaan door een nul. Gebruik de juiste methode om de cijfers uit te string te "knippen" en gebruik **tabs \(geen spaties!\)** om de uitvoer te scheiden. Noem je methode Lotto.
 
-Zie deel 1 en plaats het geheel in een mooie UNICODE-tabel.
-
-Hier enkele nuttige tekens:
+#### Voorbeeldinteractie
 
 ```text
-╔═══════════════╦═══════════════╗
-║ 
-╟───────────────╫───────────────╢
-║ 
-╚═══════════════╩═══════════════╝
+Wat zijn je cijfers (tussen 01 en 45)?
+> 05,08,13,18,27,44
+Je cijfers zijn:
+05    08    13
+18    27    44
 ```
-
-Gebruik $-string interpolatie om de informatie in de tabel te tonen zodat je volgende uitvoer kunt genereren: ![](../../.gitbook/assets/tabel.png)
-
-of:
-
-![](../../.gitbook/assets/tabel2.png)
-
-#### Testscenario's
-
-* wat gebeurt er wanneer je een waarde van circle 1, 2 of 3 uit meer dan twee cijfers bestaat?
-
-### Ondersteunend materiaal
-
-Hou het voorlopig op de cursus.
-
-## Oefening: H2-shell-starter
-
-### Leerdoelen
-
-* gebruik van `Process.Start()`
-* verwerken van uitvoer
-
-### Functionele analyse
-
-Je kan de output van een `Process.Start()` programma naar je console scherm sturen. Dit vereist wat meer code. Volgende voorbeeld zal de output van het commando `ipconfig /all` op het scherm tonen:
-
-```csharp
-System.Diagnostics.Process process = new System.Diagnostics.Process();
-process.StartInfo.FileName = "ipconfig";
-process.StartInfo.Arguments = "/all"; 
-process.StartInfo.UseShellExecute = false;
-process.StartInfo.RedirectStandardOutput = true;
-process.StartInfo.RedirectStandardError = true;
-process.Start(); //start process
-
-// Read the output (or the error)
-string output = process.StandardOutput.ReadToEnd();
-Console.WriteLine(output);
-string err = process.StandardError.ReadToEnd();
-Console.WriteLine(err);
-//Continue
-Console.WriteLine("Klaar");
-```
-
-Onder macOS heb je een ander commando nodig. Gebruik daar `"ifconfig"` voor het \(uitvoerbaar\) bestand en geef een lege string mee voor de argumenten.
-
-### Technische hulp
-
-#### Programmaverloop
-
-Maak enkele kleine C\# programma's die bepaalde shell-commando's zullen uitvoeren en die de uitvoer in hoofdletters weergeven in plaats van in de gewone vorm. Enkele nuttige shell-commando's in de netwerk-sfeer zijn bijvoorbeeld:
-
-```text
-hostname
-arp -a
-getmac (enkel onder Windows)
-nslookup google.com
-```
-
-#### Testscenario's
-
-* Probeer van bovenstaande programma's al die, die compatibel zijn met je besturingssysteem.
-
-### Ondersteunend materiaal
-
-Hou het voorlopig op de cursus.
 
