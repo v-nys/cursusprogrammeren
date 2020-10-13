@@ -42,6 +42,10 @@ Voeg een constructor toe aan `StudyProgram` die een lege array met ruimte voor 5
 
 Volg onderstaande demonstratie en pas toe op de modeloplossing:
 
+{% hint style="danger" %}
+Het filmpje mist nog een instructie. Na de toekenning aan `usableIndex` in de lus moet je een `break` toevoegen. Anders wordt de nieuwe cursus op de laatste vrije plaats ingevoegd en niet op de eerste.
+{% endhint %}
+
 {% hint style="success" %}
 [Demonstratie](https://youtu.be/M2VGxVpZDsY)
 {% endhint %}
