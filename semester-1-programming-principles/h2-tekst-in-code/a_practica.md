@@ -168,7 +168,7 @@ Je cijfers zijn:
 
 * er zullen vijf komma's in de invoer staan
 * bepaal eerst de positie van de eerste komma en hou bij in een variabele. Gebruik `IndexOf`.
-* zet de tekst tot vlak voor die eerste komma om naar een getal en hou bij in een eerste variabele `eersteCijfer`
+* zet de tekst tot vlak voor die eerste komma om naar een getal en hou bij in een tweede variabele `eersteCijfer`
 * bepaal dan de positie van de tweede komma
   * doe dit door de de eerste komma te zoeken in de substring die begint net na de "echte" eerste komma
 * bepaal het tweede cijfer door de tekst tussen de twee komma's in te lezen, om te zetten en bij te houden in een variabele `tweedeCijfer`
