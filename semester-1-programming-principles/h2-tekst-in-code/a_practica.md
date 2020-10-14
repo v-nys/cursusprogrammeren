@@ -166,14 +166,14 @@ Je cijfers zijn:
 
 ### Technische hulp
 
-* er zullen zes komma's in de invoer staan
+* er zullen vijf komma's in de invoer staan
 * bepaal eerst de positie van de eerste komma en hou bij in een variabele. Gebruik `IndexOf`.
-* hou de tekst tot vlak voor die eerste komma bij in een eerste variabele `eersteTekst`
+* zet de tekst tot vlak voor die eerste komma om naar een getal en hou bij in een eerste variabele `eersteCijfer`
 * bepaal dan de positie van de tweede komma
   * doe dit door de de eerste komma te zoeken in de substring die begint net na de "echte" eerste komma
-* bepaal het tweede cijfer door de tekst tussen de twee komma's in te lezen en bij te houden in een variabele `tweedeTekst`
-* werk op deze manier verder, tot je `zesdeTekst` hebt
-* pas ten slotte formattering toe in een geïnterpoleerde string om de output te tonen zodat er **wel** nullen voor de cijfers 1-9 verschijnen
+* bepaal het tweede cijfer door de tekst tussen de twee komma's in te lezen, om te zetten en bij te houden in een variabele `tweedeCijfer`
+* werk op deze manier verder, tot je `zesdeCijfer` hebt
+* pas ten slotte formattering toe in een geïnterpoleerde string om de output te tonen zodat er **wel** nullen voor de cijfers 1-9 verschijnen. Zoek in de cursus naar iets om getallen met een vast aantal cijfers te tonen.
 
 {% hint style="success" %}
 Klaar? Vergeet niet je oefeningen in Git te zetten.
