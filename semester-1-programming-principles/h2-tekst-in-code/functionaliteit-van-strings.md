@@ -75,8 +75,6 @@ Console.WriteLine(tekst); // C# is cool -> uit tekst is iets anders berekend, te
 
 Met deze methodes verwijder je witruimte \(spaties, tabs, newlines,...\) aan het begin of aan het einde van een string:
 
-
-
 ```csharp
 Console.WriteLine("     C# is cool".TrimStart()); // C# is cool, eerste teken is C en geen spatie
 Console.WriteLine(@"

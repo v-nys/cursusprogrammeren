@@ -59,7 +59,7 @@ Console.WriteLine("Je naam ajb?");
 string naam = Console.ReadLine();
 Console.WriteLine("Je leeftijd ajb?");
 int leeftijd = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine($@"Naam: {naam}
+Console.WriteLine($@"Naam: {naam} 
 Leeftijd: {leeftijd:D3}");
 ```
 

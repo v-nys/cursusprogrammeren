@@ -66,11 +66,11 @@ Net zoals in de wiskunde kan je in C\# met behulp van de haakjes verplichten het
 Je kan nu complexe berekeningen doen door literals, operators en variabelen samen te voegen. Bijvoorbeeld om te weten hoeveel je op Mars zou wegen:
 
 ```csharp
-double gewichtOpAarde= 80.3;        //kg
-double zwaartekrachtAarde= 9.81;    //m/s² 
-double zwaartekrachtMars= 3.711;    //m/s²
+double gewichtOpAarde = 80.3;        //kg
+double zwaartekrachtAarde = 9.81;    //m/s² 
+double zwaartekrachtMars = 3.711;    //m/s²
 
-double  gewichtOpMars= (gewichtOpAarde/zwaartekrachtAarde) * zwaartekrachtMars; //kg
+double  gewichtOpMars = (gewichtOpAarde/zwaartekrachtAarde) * zwaartekrachtMars; //kg
 Console.WriteLine("Je weegt op Mars" + gewichtOpMars + " kg");
 ```
 
@@ -88,8 +88,8 @@ De modulo-operator zal je geregeld gebruiken om bijvoorbeeld te weten of een get
 Bijvoorbeeld om te testen of getal even is gebruiken we `%2`:
 
 ```csharp
-int getal= 1234234;
-int rest= getal%2;
+int getal = 1234234;
+int rest = getal%2;
 Console.WriteLine($"Indien het getal als rest 0 geeft weten we dat het even is. De rest is: {rest}");
 ```
 
@@ -115,13 +115,13 @@ Je zal deze verkorte notatie vaak tegenkomen. Ze zijn identiek aan elkaar en zul
 De types die je in je berekeningen gebruikt bepalen ook het type van het resultaat. Als je bijvoorbeeld twee `int` variabelen of literals optelt zal het resultaat terug een `int` geven.
 
 ```csharp
-int result= 3+4;
+int result = 3+4;
 ```
 
 Je kan echter geen kommagetallen aan `int` toewijzen. Als je dus twee `double` variabelen deelt is het resultaat terug een `double` en zal deze lijn een fout geven daar je probeert een `double` aan een `int` toe te wijzen:
 
 ```csharp
-int otherResult= 3.1/45.2;
+int otherResult = 3.1/45.2;
 ```
 
 **Let hier op!**
@@ -131,9 +131,9 @@ But wait... it gets worse!
 Wat als je een `int` door een `int` deelt? Het resultaat is terug een `int`. Je bent gewoon alle informatie na de komma kwijt. Kijk maar:
 
 ```csharp
-int getal1= 9;
-int getal2= 2;
-int result= getal1/getal2;
+int getal1 = 9;
+int getal2 = 2;
+int result = getal1/getal2;
 Console.WriteLine(result);
 ```
 
@@ -142,21 +142,21 @@ Er zal `4` op het scherm verschijnen! \(niet `4.5` daar dat geen `int` is\).
 Wat als je datatypes mengt? Als je een berekening doet met een `int` en een `double` dan zal C\# het 'grootste' datatype kiezen. In dit geval een double. Volgende code zal dus werken:
 
 ```csharp
-double result= 3/5.6;
+double result = 3/5.6;
 ```
 
 Volgende niet:
 
 ```csharp
-int result= 3/5.6;
+int result = 3/5.6;
 ```
 
 Wil je dus het probleem oplossen om 9 te delen door 2 dan zal je minstens 1 van de 2 literals of variabelen door een double moeten omzetten. Het voorbeeld van hierboven herschrijven we dan naar:
 
 ```csharp
-int getal1= 9;
-double getal2= 2.0;
-double result= getal1/getal2;
+int getal1 = 9;
+double getal2 = 2.0;
+double result = getal1/getal2;
 Console.WriteLine(result);
 ```
 
@@ -169,7 +169,7 @@ Het kan subtiel en ambetant worden in grotere berekeningen.
 Stel dat ik afspreek dat je van mij de helft van m'n salaris krijgt. Ik verdien \(fictief\) 10000 euro per maand. Ik gebruik volgende formule:
 
 ```csharp
-double helft= 10000.0 * (1/2);
+double helft = 10000.0 * (1/2);
 ```
 
 Hoeveel krijg je van me? **0.0 euro, MUHAHAHAHA!!!**
