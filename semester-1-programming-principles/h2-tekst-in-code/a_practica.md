@@ -138,7 +138,7 @@ De gebruiker voert zijn lottocijfers in. We willen deze op een overzichtelijke m
 
 ### Technische analyse
 
-Laat de lottocijfers allemaal achter elkaar ingeven, gescheiden door komma's, zonder spaties. De gebruiker wordt verondersteld cijfers onder de 10 in te geven voorafgegaan door een nul. Gebruik de juiste methode om de cijfers uit te string te "knippen" en gebruik **tabs \(geen spaties!\)** om de uitvoer te scheiden. Noem je methode Lotto.
+Laat de lottocijfers allemaal achter elkaar ingeven, gescheiden door komma's, zonder spaties. De gebruiker wordt verondersteld cijfers onder de 10 in te geven voorafgegaan door een nul. Gebruik de juiste methode om de cijfers uit te string te "knippen" en gebruik **tabs \(geen spaties!\)** om de uitvoer te scheiden. Noem je methode `Lotto`.
 
 #### Voorbeeldinteractie
 
@@ -172,7 +172,7 @@ Je cijfers zijn:
 * bepaal eerst de positie van de eerste komma en hou bij in een variabele. Gebruik `IndexOf`.
 * zet de tekst tot vlak voor die eerste komma om naar een getal en hou bij in een tweede variabele `eersteCijfer`
 * bepaal dan de positie van de tweede komma
-  * doe dit door de de eerste komma te zoeken in de substring die begint net na de "echte" eerste komma
+  * doe dit door de eerste komma te zoeken in de substring die begint net na de "echte" eerste komma
 * bepaal het tweede cijfer door de tekst tussen de twee komma's in te lezen, om te zetten en bij te houden in een variabele `tweedeCijfer`
 * werk op deze manier verder, tot je `zesdeCijfer` hebt
 * pas ten slotte formattering toe in een geïnterpoleerde string om de output te tonen zodat er **wel** nullen voor de cijfers 1-9 verschijnen. Zoek in de cursus naar iets om getallen met een vast aantal cijfers te tonen.
