@@ -178,6 +178,6 @@ Je cijfers zijn:
 * pas ten slotte formattering toe in een geïnterpoleerde string om de output te tonen zodat er **wel** nullen voor de cijfers 1-9 verschijnen. Zoek in de cursus naar iets om getallen met een vast aantal cijfers te tonen.
 
 {% hint style="success" %}
-Klaar? Vergeet niet je oefeningen in Git te zetten.
+Klaar? Vergeet niet je oefeningen in Bitbucket \(m.b.v. git-commando's\) te zetten.
 {% endhint %}
 
