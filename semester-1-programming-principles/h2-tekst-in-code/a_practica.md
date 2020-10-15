@@ -58,6 +58,8 @@ Noem de methode voor deze oefening `BerekenBtw`.
 
 Het bedrag dat wordt ingevoerd moet geconverteerd worden naar een int met `Convert.ToInt32`.
 
+Rond tevens af tot 2 cijfers na de komma.
+
 Pas string interpolatie mbv `$` \(manier 2\) toe.
 
 #### Testscenario's
