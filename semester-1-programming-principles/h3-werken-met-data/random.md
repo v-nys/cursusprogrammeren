@@ -16,10 +16,10 @@ De eerste stap dien je dus maar 1 keer te doen. Vanaf dan kan je telkens aan de 
 Volgende code toont bijvoorbeeld 3 random getallen op het scherm:
 
 ```csharp
-Random mygen= new Random();
-int getal1= mygen.Next();
-int getal2= mygen.Next();
-int getal3= mygen.Next();
+Random mygen = new Random();
+int getal1 = mygen.Next();
+int getal2 = mygen.Next();
+int getal3 = mygen.Next();
 Console.WriteLine(getal1);
 Console.WriteLine(getal2);
 Console.WriteLine(getal3);
@@ -34,9 +34,9 @@ Enkele voorbeelden:
 ```csharp
 Random somegenerator = new Random();
 
-int a= somegenerator.Next(0,10);  //getal tussen 0 tot en met 9
-int b= somegenerator.Next(5,101);  //getal tussen 5 tot en met 100
-int c= somegenerator.Next(0,b);  //getal tussen 0 tot en met het getal dat de lijn ervoor werd gegenereerd.
+int a = somegenerator.Next(0,10);  //getal tussen 0 tot en met 9
+int b = somegenerator.Next(5,101);  //getal tussen 5 tot en met 100
+int c = somegenerator.Next(0,b);  //getal tussen 0 tot en met het getal dat de lijn ervoor werd gegenereerd.
 ```
 
 ## Genereer kommagetallen met NextDouble
@@ -46,7 +46,7 @@ Met de `NextDouble` methode kan je kommagetallen genereren tussen `0.0` en `1.0`
 Wil je een groter kommagetal dan zal je dit gegenereerde getal moeten vermenigvuldigen naar de range die je nodig hebt. Stel dat je een getal tussen 0.0 en 10.0 nodig hebt, dan schrijf je:
 
 ```csharp
-Random myran= new Random();
+Random myran = new Random();
 double randomgetal= myran.NextDouble() * 10.0;
 ```
 

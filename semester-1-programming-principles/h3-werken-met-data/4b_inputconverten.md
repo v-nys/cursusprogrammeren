@@ -11,7 +11,7 @@ En applicatie die geen input van de gebruiker vergt kan even goed een screensave
 **De uitdaging met `ReadLine` is dat deze ALTIJD een string teruggeeft:**
 
 ```csharp
-string userInput= Console.ReadLine();
+string userInput = Console.ReadLine();
 ```
 
 Willen we dat de gebruiker een getal invoert, bijvoorbeeld z'n leeftijd, dan zullen dit nog steeds als `string` moeten opvangen **en vervolgens CONVERTEREN**.
@@ -28,8 +28,8 @@ Om strings naar een ander type te converteren gebruiken we best de Convert.-bibl
 
 ```csharp
 Console.WriteLine("Geef je gewicht");
-string inputGewicht= Console.ReadLine();
-double gewicht= Convert.ToDouble(inputGewicht);
+string inputGewicht = Console.ReadLine();
+double gewicht = Convert.ToDouble(inputGewicht);
 ```
 
 ## Foutloze input

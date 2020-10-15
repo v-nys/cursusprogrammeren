@@ -11,13 +11,13 @@ De Math bibliotheek bevat aardig wat handige methoden. Deze bibliotheek bevat me
 Stel dat je de derde macht van een variabel `getal` wenst te berekenen. ZONDER de Math-bibliotheek zou dat er zou uitzien:
 
 ```csharp
-double result= getal*getal*getal;  //SLECHTE MANIER
+double result = getal*getal*getal;  //SLECHTE MANIER
 ```
 
 MET de bibliotheek kunnen we schrijven:
 
 ```csharp
-double result= Math.Pow(getal, 3);
+double result = Math.Pow(getal, 3);
 ```
 
 #### De Math bibliotheek ontdekken
@@ -33,9 +33,9 @@ Een doosje voor een naam wil zeggen dat het om een **Methode** gaat \(zoals `Con
 De meeste methoden zijn zeer makkelijk in gebruik en werken op dezelfde manier. Meestal moet je 1 of meerdere "argumenten" tussen de haken meegeven en het resultaat moet je altijd in een nieuwe variabele opvangen. Enkele voorbeelden:
 
 ```csharp
-double sineHoekA= Math.Sin(345); //IN RADIALEN!
-double DerdeMachtVan20= Math.Pow(20, 3);
-double complex= 3+ DerdeMachtVan20 * Math.Round(sineHoekA);
+double sineHoekA = Math.Sin(345); //IN RADIALEN!
+double DerdeMachtVan20 = Math.Pow(20, 3);
+double complex = 3+ DerdeMachtVan20 * Math.Round(sineHoekA);
 ```
 
 Twijfel je over de werking van een methode, gebruik dan de help als volgt:
@@ -56,8 +56,8 @@ public const double PI;
 Je kan deze als volgt gebruiken in berekeningen:
 
 ```csharp
-double straal= 5.5;
-double omtrek= Math.PI * 2 * straal;
+double straal = 5.5;
+double omtrek = Math.PI * 2 * straal;
 ```
 
 ### Lopende som
@@ -65,13 +65,13 @@ double omtrek= Math.PI * 2 * straal;
 Een vaak voorkomende oefening is deze waarbij je een bepaalde variabele continue moet bijpassen. Stel bijvoorbeeld dat je aan de gebruiker de temperatuur van iedere dag vraagt om zo vervolgens het gemiddelde te berekenen. Dit kan je doen door middel van een lopende som: je gaat telkens het ingevoerde getal toevoegen aan wat je reeds hebt bewaard. Meestal dus met behulp van de += operator.
 
 ```csharp
-double totaal= 0.0;
+double totaal = 0.0;
 Console.WriteLine("Geef temperatuur dag 1");
-double inp= Convert.ToDouble(Console.ReadLine());
-totaal+=inp;
+double inp = Convert.ToDouble(Console.ReadLine());
+totaal += inp;
 Console.WriteLine("Geef temperatuur dag 2");
-inp= Convert.ToDouble(Console.ReadLine());
-totaal+=inp;
+inp = Convert.ToDouble(Console.ReadLine());
+totaal += inp;
 
 //enz
 Console.WriteLine($"Gemiddelde temperatuur deze week was: {totaal/7}");
