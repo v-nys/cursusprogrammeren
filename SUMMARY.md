@@ -41,7 +41,7 @@
   * [Debuggen](semester-1-programming-principles/h3-werken-met-data/5_debuggen.md)
   * [Casting en conversie](semester-1-programming-principles/h3-werken-met-data/4_converteren.md)
   * [Input verwerken en omzetten](semester-1-programming-principles/h3-werken-met-data/4b_inputconverten.md)
-  * [Math-library en berekeningen](semester-1-programming-principles/h3-werken-met-data/4c_math.md)
+  * [Math-klasse en berekeningen](semester-1-programming-principles/h3-werken-met-data/4c_math.md)
   * [Random](semester-1-programming-principles/h3-werken-met-data/random.md)
   * [Oefeningen](semester-1-programming-principles/h3-werken-met-data/a_practica.md)
 * [H5: Beslissingen](semester-1-programming-principles/h4-beslissingen/README.md)

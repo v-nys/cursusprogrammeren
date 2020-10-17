@@ -1,4 +1,4 @@
-# Math-library en berekeningen
+# Math-klasse en berekeningen
 
 ## Berekeningen
 
@@ -6,7 +6,7 @@ Een groot deel van je leven als ontwikkelaar zal bestaan uit het bewerken van va
 
 ### De Math klasse
 
-De Math klasse bevat aardig wat handige methoden. Deze bibliotheek bevat methoden voor een groot aantal typische wiskundige methoden \(sinus, cosinus, vierkantswortel, macht, afronden, etc.\) en kan je dus helpen om leesbaardere expressies te schrijven.
+De Math klasse bevat aardig wat handige methoden. Deze klasse bevat methoden voor een groot aantal typische wiskundige methoden \(sinus, cosinus, vierkantswortel, macht, afronden, etc.\) en kan je dus helpen om leesbaardere expressies te schrijven.
 
 Stel dat je de derde macht van een variabel `getal` wenst te berekenen. Zonder de Math-klasse zou dat er zo uitzien:
 
