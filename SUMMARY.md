@@ -39,6 +39,7 @@
   * [Oefeningen](semester-1-programming-principles/h2-tekst-in-code/a_practica.md)
 * [H4: Werken met data](semester-1-programming-principles/h3-werken-met-data/README.md)
   * [Debuggen](semester-1-programming-principles/h3-werken-met-data/5_debuggen.md)
+  * [Namespace](semester-1-programming-principles/h3-werken-met-data/namespace.md)
   * [Casting en conversie](semester-1-programming-principles/h3-werken-met-data/4_converteren.md)
   * [Input verwerken en omzetten](semester-1-programming-principles/h3-werken-met-data/4b_inputconverten.md)
   * [Math-klasse en berekeningen](semester-1-programming-principles/h3-werken-met-data/4c_math.md)
