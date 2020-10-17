@@ -2,13 +2,9 @@
 
 ## Debuggen
 
-**Debugging is een ESSENTIËLE SKILL**. Zorg dat je vlot breakpoints kunt plaatsen om zo tijdens de uitvoer te pauzeren om de inhoud van je variabelen te bekijken \(via het zogenaamde watch-venster\). Gebruik vervolgens de "step"-buttons om door je code te 'stappen', lijn per lijn.
+**Debugging is een essentiële skill**. Bekijk onderstaande clip en zorg dat je de werking van elk gedemonstreerd onderdeel begrijpt. Gebruik voortaan altijd de debugger als je programma wel uitvoert, maar verkeerde resultaten produceert vooraleer je de lector aanspreekt.
 
-Neem volgende korte demonstratie van debugging door: [Debugging in Visual Studio](https://tutorials.visualstudio.com/vs-get-started/debugging).
-
-## Kennisclip
-
-![](../../.gitbook/assets/infoclip%20%282%29.png)
-
-* [Debuggen in VS ](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=a78b3bf5-ef96-4c2a-8248-a976006fabd1)
+{% hint style="success" %}
+TODO: Kennisclip
+{% endhint %}
 

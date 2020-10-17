@@ -153,7 +153,7 @@ switch(dagKeuze)
 
 Intern worden de enum-variabelen als ints bewaard. In het geval van de `Weekdagen` zal maandag de waarde 0 krijgen, dinsdag 1, etc.
 
-Volgende conversies met behulp van [casting](../h3-werken-met-data/4_converteren_casting.md) zijn dan ook perfect toegelaten:
+Volgende conversies met behulp van [casting](../h3-werken-met-data/4_converteren.md) zijn dan ook perfect toegelaten:
 
 ```csharp
 int keuze = 3;
