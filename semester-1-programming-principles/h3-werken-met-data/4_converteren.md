@@ -25,11 +25,7 @@ In het Engels betekent _to cast_ "in een vorm gieten"
 
 Casting heb je nodig om een waarde van een bepaald type om te zetten naar een waarde van een ander type. Stel dat je een complexe berekening hebt waar je werkt met verschillende types \(bijvoorbeeld int, double en float\). Door te casten kan je het soort bewerkingen sturen. Je gaat namelijk bepaalde types even als andere types gebruiken.
 
-{% hint style="success" %}
-TODO: kennisclip over wat hier in het geheugen plaatsvindt
-{% endhint %}
-
-Het is belangrijk in te zien dat het casten van een variabele naar een ander type enkel een gevolg heeft tijdens het uitwerken van de expressie waarbinnen je werkt. De variabele in het geheugen zal voor eeuwig en altijd het type zijn waarin het origineel gedeclareerd werd.
+Het is belangrijk in te zien dat het casten van een variabele naar een ander type enkel een gevolg heeft tijdens het uitwerken van de expressie waarbinnen je werkt. Het casten op zich verandert niets aan de variabele of waarde zelf.
 
 Casting duid je aan door voor de variabele of literal het datatype tussen haakjes te plaatsen naar wat het omgezet moet worden:
 
