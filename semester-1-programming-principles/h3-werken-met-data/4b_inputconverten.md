@@ -2,6 +2,10 @@
 
 ## Input van de gebruiker verwerken
 
+{% hint style="success" %}
+[Kennisclip voor deze inhoud](https://youtu.be/DGhdggwcdDk)
+{% endhint %}
+
 {% hint style="info" %}
 Dit hoofdstuk is niet lang, maar het is wel een zeer belangrijk aspect van console-applicaties!
 {% endhint %}

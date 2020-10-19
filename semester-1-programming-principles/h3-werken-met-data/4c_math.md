@@ -62,6 +62,10 @@ double omtrek = Math.PI * 2 * straal;
 
 ### Lopende som
 
+{% hint style="success" %}
+[Kennisclip lopende som](https://youtu.be/jWgi_JBAoTo)
+{% endhint %}
+
 Een vaak voorkomende oefening is deze waarbij je een bepaalde variabele continue moet aanpassen. Stel bijvoorbeeld dat je aan de gebruiker de temperatuur van iedere dag vraagt om zo vervolgens het gemiddelde te berekenen. Dit kan je doen door middel van een lopende som: je gaat telkens het ingevoerde getal toevoegen aan wat je reeds hebt bewaard. Meestal dus met behulp van de `+=` operator.
 
 ```csharp

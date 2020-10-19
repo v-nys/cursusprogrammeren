@@ -1,5 +1,9 @@
 # Random
 
+{% hint style="success" %}
+[Kennisclip voor deze inhoud](https://youtu.be/LtRw1bYoNsY)
+{% endhint %}
+
 ## Random getallen genereren
 
 Random getallen genereren in je code kan nuttig zijn om verschillende scenario's te simuleren, om software te beveiligen of om de gebruiker een interactievere ervaring te geven. 
