@@ -104,8 +104,6 @@
   * [Foreach en var](semester-2-oop/h11-datastructuren/3_foreach.md)
   * [List](semester-2-oop/h11-datastructuren/4_list.md)
   * [Dictionary](semester-2-oop/h11-datastructuren/dictionary.md)
-  * [Oefeningen](semester-2-oop/h11-datastructuren/a_practicamem.md)
-  * [Extra oefeningen](semester-2-oop/h11-datastructuren/b_practicamem.md)
 * [H14: Overerving](semester-2-oop/h12-overerving/README.md)
   * [Overerving intro](semester-2-oop/h12-overerving/0_overerving_intro.md)
   * [Constructors bij overerving](semester-2-oop/h12-overerving/3_constructors_inheritance.md)

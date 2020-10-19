@@ -1,8 +1,14 @@
 # List
 
-## List
+{% hint style="danger" %}
+In onderstaande kennisclip wordt er een andere syntax gebruikt om objecten aan te maken dan wat wij gewoon zijn \(namelijk constructors met parameters\). Dat maakt geen verschil voor de werking van de datastructuur. Je zou net zo goed een constructor kunnen definiëren die hetzelfde doet.
+{% endhint %}
 
-Een List&lt;&gt; collectie is de meest standaard collectie die je kan beschouwen als een veiligere variant op een een doodnormale array.
+{% hint style="success" %}
+[Kennisclip voor deze inhoud](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=ac1bfe58-b55b-4e7e-98f3-ab7a009085bc)
+{% endhint %}
+
+Een `List<>` collectie is de meest standaard collectie die je kan beschouwen als een flexibelere variant op een een doodnormale array.
 
 {% hint style="info" %}
 De Generieke `List<>` klasse bevindt zich in de `System.Collections.Generic` namespace. Je dient deze namespace dus als `using` bovenaan toe te voegen wil je deze klasse kunnen gebruiken.
@@ -17,7 +23,7 @@ De klasse `List<>` is een zogenaamde generieke klasse. Tussen de `< >`tekens pla
 * `List<Pokemon> pokeDex = new List<Pokemon>();`
 * `List<string[]> listOfStringarrays = new List<string[]>();`
 
-Zoals je ziet hoeven we bij het aanmaken van een `List` geen begingrootte mee te geven, wat we wel bij arrays moeten doen. Dit is een van de voordelen van `List`: ze groeien mee.
+Zoals je ziet hoeven we bij het aanmaken van een `List` geen begingrootte mee te geven, wat we wel bij arrays moeten doen. Dit is een van de voordelen van `List`: ze groeien mee. Als we toch een begingrootte meegeven \(zoals in de kennisclip even getoond wordt\) is dat enkel om de performantie van de code wat te verhogen in bepaalde scenario's. Wij gaan dit nooit doen.
 
 ### Elementen toevoegen
 
@@ -83,10 +89,4 @@ foreach(int prime in integerList)
    Console.WriteLine(prime);
 }
 ```
-
-## Kennisclip
-
-![](../../.gitbook/assets/infoclip%20%282%29.png)
-
-* [List&lt;&gt; klasse](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=ac1bfe58-b55b-4e7e-98f3-ab7a009085bc)
 

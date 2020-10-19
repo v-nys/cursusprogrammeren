@@ -2,17 +2,17 @@
 
 ## Foreach loops
 
-Wanneer je geen indexering nodig hebt, maar toch snel over alle elementen in een array wenst te gaan, dan is het **foreach** statement een zeer nuttig is. Een foreach loop zal ieder element in de array een voor een in een tijdelijke variabele plaatsen \(de **iteration variable**\). Volgende code toont de werking waarbij we een array van doubles hebben en alle elementen er in op het scherm willen tonen:
+Wanneer je geen indexering nodig hebt, maar toch snel over alle elementen in een array wenst te gaan, dan is het **foreach** statement een zeer nuttig is. Een foreach loop zal ieder element in de array een voor een in een tijdelijke variabele plaatsen \(de **iteration variable**\). Volgende code toont de werking waarbij we een array van `string`s hebben en alle elementen er in op het scherm willen tonen:
 
 ```csharp
-double[] killdeathRates= {1.2, 0.89, 3.15, 0.1};
-foreach (double kdrate in killdeathRates)
+string[] boodschappen= {"ontbijtgranen", "koekjes", "fruit"};
+foreach (string boodschap in boodschappen)
 {
-   Console.WriteLine($"Kill/Death rate is {kdrate}");
+   Console.WriteLine($"Niet vergeten: {boodschap}");
 }
 ```
 
-De eerste keer dat we in de loop gaan zal het element `killdeathRates[0]` aan `kdrate` toegewezen worden voor gebruik in de loop-body, vervolgens wordt `killdeathRates[1]` toegewezen, enz.
+De eerste keer dat we in de loop gaan zal het element `boodschappen[0]` aan `boodschap` toegewezen worden voor gebruik in de loop-body, vervolgens wordt `boodschappen[1]` toegewezen, enz.
 
 Het voordeel is dat je dus geen teller/index nodig hebt en dat foreach zelf de lengte van de array zal bepalen.
 
@@ -34,28 +34,26 @@ var tekst= "Hi there handsome"; //var zal string zijn
 ```
 
 {% hint style="warning" %}
-**Opgelet**: het `var` keyword is gewoon een _lazy programmer syntax toevoeging_ om te voorkomen dat je als programmer niet constant het type moet schrijven
+**Opgelet**: het `var` keyword is in deze cursus nooit **nodig**. Het vergemakkelijkt het schrijfwerk, want het wordt door de compiler vertaald in een specifiek type. Er zijn scenario's waarin het wel nodig is, maar die zijn meer geavanceerd \("anonieme types"\).
 {% endhint %}
 
-Bij javascript heeft var een totaal andere functie: het zegt eigenlijk "het type dat je in deze variabele kan steken is...variabel", m.a.w. het kan de ene keer een string zijn, dan een int. Bij C\# gaat dit niet: eens je een variabele aanmaakt dan zal dat type onveranderbaar zijn.
+Het betekent **niet** hetzelfde als de `var` van JavaScript. In JavaScript hoef je namelijk geen type vast te leggen voor variabelen en kan je dit doen:
 
-> JavaScript is a dynamically typed language, while c\# is \(usually\) a statically typed language \([stackoverflow.com](https://stackoverflow.com/questions/8457813/difference-between-the-implementation-of-var-in-javascript-and-c-sharp)\)
+```csharp
+var something = "hello";
+something = 3;
+```
+
+In C\# levert dit een compilatiefout. Met de eerste regel zeg je dat de compiler uit de rechterzijde mag afleiden dat `var` hier vervangen kan worden door `string`. Je kan geen waarde `3` in een variabele van type `string` plaatsen, dus dit levert een compilatiefout.
 
 ## var en foreach
 
 Wanneer je de Visual Studio [code snippet](https://msdn.microsoft.com/en-us/library/z41h7fat.aspx) voor foreach gebruikt `foreach [tab][tab]` dan zal deze code ook een var gebruiken voor de iteration variabele. De compiler kan aan de te gebruiken array zien wat het type van een individueel element in de array moet zijn. De foreach van zonet kan dus herschreven worden naar:
 
 ```csharp
-foreach (var kdrate in killdeathRates)
+foreach (var boodschap in boodschappen)
 {
-   Console.WriteLine($"Kill/Death rate is {kdrate}");
+   Console.WriteLine($"Niet vergeten: {boodschap}");
 }
 ```
-
-## Kennisclip
-
-![](../../.gitbook/assets/infoclip%20%282%29.png)
-
-* [var keyword](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=8ba39f71-889e-4e48-9f3b-ab750087d034)
-* [De foreach loop](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=e268b0f3-5226-4279-a69c-ab7500892031)
 
