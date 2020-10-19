@@ -1,5 +1,9 @@
 # Casting en conversie
 
+{% hint style="success" %}
+[Kennisclip basis](https://youtu.be/EspjsQkxD3s) \(meer kennisclips lager op de pagina\)
+{% endhint %}
+
 Wanneer je de waarde van een variabele wil toekennen aan een variabele van een ander type mag dit niet zomaar. Volgende code zal bijvoorbeeld een error geven, omdat aan de linkerkant staat dat je een geheel getal wil bijhouden \(door middel van `int`\) en aan de rechterkant een kommagetal staat:
 
 ```csharp
@@ -43,6 +47,10 @@ Console.WriteLine(kommaNietWelkom);
 ```
 
 ### Narrowing
+
+{% hint style="success" %}
+[Kennisclip narrowing en widening](https://youtu.be/2HA96kQI6X0)
+{% endhint %}
 
 Casting doe je dus wanneer je een variabele wilt toekennen aan een andere variabele van een ander type dat daar eigenlijk niet inpast. We moeten dan aan **narrowing** doen, letterlijk het versmallen van de data.
 
@@ -90,6 +98,10 @@ Deze code zal zonder problemen gaan. `var2` zal de waarde `20.0` bevatten. De in
 
 ### Het effect van types op operaties
 
+{% hint style="success" %}
+[Kennisclip effect van types](https://youtu.be/4y86SnSxjzs)
+{% endhint %}
+
 Stel dat temperatuurGisteren en temperatuurVandaag van het type int zijn, maar dat we nu de gemiddelde temperatuur willen weten. De formule voor gemiddelde temperatuur over 2 dagen is:
 
 ```csharp
@@ -101,10 +113,6 @@ Test dit eens met de waarden `20` en `25` in plaats van de twee variabelen voor 
 Het probleem is dat het gemiddelde van 2 getallen niet noodzakelijk een geheel getal is. **Omdat de expressie enkel integers bevat \(temperatuurGisteren, temperatuurVandaag en 2\) zal ook het resultaat een integer zijn.** In dit geval wordt alles na de komma gewoon _weggegooid_, vandaar de uitkomst.
 
 Hoe krijgen we de correctere uitslag te zien? Door kommagetallen te gebruiken in elke berekening die een onderdeel vormt. Dit kan als volgt:
-
-{% hint style="success" %}
-TODO: kennisclip over uitwerken van deze operaties
-{% endhint %}
 
 ```csharp
 int temperatuurGemiddeld = (1.0 * temperatuurGisteren + temperatuurVandaag)/2;
@@ -123,6 +131,10 @@ Dit kon ook met een expliciete cast, bijvoorbeeld door te schrijven `(double)tem
 {% endhint %}
 
 ## Conversie
+
+{% hint style="success" %}
+[Kennisclip Convert klasse](https://youtu.be/5Yj2k2fPI68)
+{% endhint %}
 
 Casting is een in de taal ingebakken manier van data omzetten, die vooral zeer nuttig is daar deze ook werkt in andere C\#-related programmeertalen zoals C, C++ en Java. Om te weten hoe deze omzettingen gebeuren, kan je kijken in de handleiding van de taal C\# zelf.
 
