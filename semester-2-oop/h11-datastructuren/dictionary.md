@@ -14,7 +14,7 @@ Enkele voorbeeldjes die het idee achter Dictionary kunnen verduidelijken:
 * een echt woordenboek is als een Dictionary met woorden als keys en omschrijvingen als values
 * een array is als een Dictionary met getallen als keys en waarden van het type van de array als values
 
-Bij de declaratie van de `Dictionary` dien je op te geven wat het datatype van de key zal zijn , alsook het type van de waarde \(value\).
+Bij de declaratie van de `Dictionary<K,V>` dien je op te geven wat het datatype van de key zal zijn , alsook het type van de waarde \(value\). Met andere woorden, `K` en `V` komen niet letterlijk voor, maar je vervangt ze door types die je al kent.
 
 Voor bovenstaande voorbeelden:
 

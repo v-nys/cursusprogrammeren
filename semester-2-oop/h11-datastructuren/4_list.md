@@ -16,7 +16,7 @@ De Generieke `List<>` klasse bevindt zich in de `System.Collections.Generic` nam
 
 ### List aanmaken
 
-De klasse `List<>` is een zogenaamde generieke klasse. Tussen de `< >`tekens plaatsen we het type dat de lijst zal moeten gaan bevatten. Bijvoorbeeld:
+De klasse `List<T>` is een zogenaamde generieke klasse. Tussen de `< >`tekens plaatsen we het type dat de lijst zal moeten gaan bevatten. Vaak wordt dit genoteerd als `T` voor "type". Bijvoorbeeld:
 
 * `List<int> alleGetallen= new List<int>();`
 * `List<bool> binaryList = new List<bool>();`
@@ -46,7 +46,7 @@ Console.WriteLine(myStringList[3]);
 myStringList[2] = "andere zin";`
 ```
 
-Ook de klassieke werking met `for` blijft gelden. De enige aanpassing is dat `List<>` niet met `Length` werkt maar met **`Count`**.
+Ook de klassieke werking met `for` blijft gelden. De enige aanpassing is dat `List<T>` niet met `Length` werkt maar met **`Count`**.
 
 ```csharp
 for(int i = 0 ; i < myStringList.Count; i++)
