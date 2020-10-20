@@ -6,7 +6,7 @@ Als je alles eerder mee hebt kunnen volgen, werk dan vanaf je recentste commit. 
 
 ### `StudyProgram.GetOverview` en `Course.GetOverview` met `foreach` en `var`
 
-Pas je ShowOverview methodes aan zodat er geen gebruik wordt gemaakt van een klassieke `for`, maar wel van een foreach. Gebruik `var` voor je iteratieveriabele.
+Pas je ShowOverview methodes aan zodat er geen gebruik wordt gemaakt van een klassieke `for`, maar wel van een foreach. Gebruik `var` voor je iteratieveriabele. Om het gebruik van een index te vermijden, zal je de array van `string` ook moeten vervangen door een `List<string>`.
 
 ### Alle studenten in het systeem bijhouden
 
@@ -14,11 +14,11 @@ Voorzie de klasse Student van een statische property `Students`. Deze is van het
 
 ### Lijst van studenten
 
-Vervang de property `Students` van StudyProgram \(met type `Student[]`\) door een property met type `List<Student>`.
+Vervang alle properties van `StudyProgram`, `Course` en `Student` van een array type naar een `List` type.
 
 ### Lijst van studenten, zonder dubbels
 
-Verbeter je nieuwe property `Students` zodat er geen dubbels meer in de lijst met alle studenten in een studieprogramma voorkomen. Maak hierbij gebruik van de methode `Contains` van de klasse `List<T>`.
+Verbeter je vernieuwde property `Students` van `StudyProgram` zodat er geen dubbels meer in de lijst met alle studenten in een studieprogramma voorkomen. Maak hierbij gebruik van de methode `Contains` van de klasse `List<T>`.
 
 ### Flexibelere punten
 
