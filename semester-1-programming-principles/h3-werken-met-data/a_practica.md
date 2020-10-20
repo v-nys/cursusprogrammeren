@@ -1,42 +1,18 @@
 # Oefeningen
 
-**Gebruik je kennis van debuggen om vanaf dit hoofstuk problemen op te lossen. Gebruik niet `Console.WriteLine()` om de waarde van een variabele te controleren at-runtime, maar gebruik daarentegen breakpoints!**
+\*\*\*\*
 
-## Oefening: H3-geometric-fun
+**Sla de oefeningen van dit hoofdstuk op in een klasse `HoofdstukVier`, behalve de oefeningen rond apdotcom.**
 
-### Leerdoelen
+{% hint style="danger" %}
+Krijg je tijdens deze oefeningen onverwachte of vreemde resultaten? Gebruik de debugger!
+{% endhint %}
 
-* gebruik van de `Math` namespace
-
-### Functionele analyse
-
-Je moet verschillende vaakgebruikte meetkundige berekeningen uitvoeren. Vraag aan de gebruiker een hoek in graden. Zet deze om naar radialen. Gebruik vervolgens de verschillende geometrische functies in de `Math` namespace om de sinus, cosinus en tangens van de hoek aan de gebruiker te tonen. Je moet eerst omzetten naar radialen omdat deze functies dat formaat verwachten. Toon alle resultaten tot twee cijfers na de komma.
-
-### Technische analyse
-
-Omzetting van graden naar radialen werkt als volgt, als `rad` een aantal radialen is en `deg` een aantal graden: rad=deg \* \(Π/180\). De verschillende wiskundige functies die je nodig hebt, vind je [hier](https://docs.microsoft.com/en-us/dotnet/api/system.math.sin?view=netcore-3.0) \(zie "Methods" in de linkerbalk\). Het getal Π vind je \(bij benadering\) onder `Math.PI`. Zie het hoofdstuk rond werken met tekst om twee cijfers na de komma te tonen.
-
-#### UI
-
-console applicatie
-
-#### voorbeeldinteractie\(s\)
-
-```text
-Geef een hoek, uitgedrukt in graden.
-> 45
-45 graden is 0.79 radialen.
-De sinus is 0.71.
-De cosinus is 0.71.
-De tangens is 1.00.
-```
-
-## H3-BMI-berekenaar
+## H4-BMI-berekenaar
 
 ### Leerdoelen
 
-* gebruik van de `Math` namespace
-* je programma's delen met anderen
+* gebruik van de `Math` klasse
 * kommagetallen parsen
 * stringinterpolatie en formattering
 
@@ -46,11 +22,9 @@ Maak een programma dat aan de gebruiker z'n lengte en gewicht vraagt en vervolge
 
 ### Technische analyse
 
-De formule voor de BMI is BMI = kg / m², waarbij kg het de massa van een persoon voorstelt en m zijn lengte in meter \(dus typisch als kommagetal tussen 1 en 2\). Je vindt een functie om getallen af te ronden in de `Math` namespace. Je kan hieraan als eerste waarde aan getal meegeven dat je wil afronden en als tweede een aantal cijfers na de komma.
+De formule voor de BMI is BMI = kg / m², waarbij kg het de massa van een persoon \(in kilogram\) voorstelt en m zijn lengte in meter \(dus typisch als kommagetal tussen 1 en 2\). Gebruik stringinterpolatie om alle uitvoer met twee cijfers na de komma te tonen.
 
-#### UI
-
-console applicatie
+Noem je methode voor deze oefening `BMIBerekenaar`.
 
 #### voorbeeldinteractie\(s\)
 
@@ -62,87 +36,68 @@ Hoe groot ben je in m?
 Je BMI bedraagt 21.78.
 ```
 
-> Bekijk de volgende [kennisclip](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=6381a023-ae87-4662-91ed-a969006d3d9b) en geef je uitvoerbaar bestand van het programma aan een klasgenoot. Kijk of hij het kan uitvoeren.
-
-## Oefening: H3-op-de-poef
+## H4-Pythagoras
 
 ### Leerdoelen
 
-* tussenresultaten bijhouden
-* werken met de `Math` namespace
+* gebruik van de `Math` klasse
+* kommagetallen parsen
+* stringinterpolatie en formattering
 
 ### Functionele analyse
 
-Een vaste klant in je café bestelt altijd "op de poef". Dat wil zeggen dat hij niet betaalt en dat z'n rekeningen worden neergeschreven. Ooit zal de klant dan gevraagd worden de hele som te betalen. Schrijf een programma dat 5 keer na elkaar aan de barman vraagt om een bedrag in te voeren. Het ingevoerde bedrag wordt opgeteld bij wat er reeds op de rekening staat. Na 5 keer wordt de totale som getoond alsook hoeveel weken het duurt indien de klant wekelijks 10 euro afbetaalt.
+Schrijf een programma dat de stelling van Pythagoras toepast. Anders gezegd: bereken de lengte van de schuine zijde als je de lengte kent van de twee rechthoekige zijden.
+
+![Stelling van Pythagoras](../../.gitbook/assets/getimage.png)
 
 ### Technische analyse
 
-Gebruik een variabele om de totale som van de rekeningen bij te houden. De bedragen zullen "vrij klein" zijn, dus nooit meer dan €100. Het zijn ook gehele getallen. Je hoeft geen interest aan te rekenen.
+Je moet de gebruiker eerst om `a` en om `b` vragen. Maak dan gebruik van `Math` om de som van de kwadraten te bepalen en vervolgens om de vierkantswortel van die som te achterhalen.
 
-#### UI
+{% hint style="info" %}
+De vierkantswortel, in het Engels, is de "square root". Een voorbeeld: de vierkantswortel van 49 is 7, want 7² = 7 \* 7 = 49.
+{% endhint %}
 
-console applicatie
+Noem je methode voor deze oefening `Pythagoras`.
 
 #### voorbeeldinteractie\(s\)
 
 ```text
-Voer bedrag in?
-> 12
-De poef staat op 12 euro
-Voer bedrag in?
-> 14
-De poef staat op 26 euro
-Voer bedrag in?
+Geef de lengte van de eerste rechthoekszijde: 
+> 4
+Geef de lengte van de tweede rechthoekszijde:
 > 3
-De poef staat op 29 euro
-Voer bedrag in?
-> 8
-De poef staat op 37 euro
-Voer bedrag in?
-> 2
-De poef staat op 39 euro
-*************************
-Het totaal van  de poef is 39 euro.
-Dit zal 4 afbetalingen vragen.
+De lengte van de schuine zijde is 5.83
 ```
 
-## Oefening: H3-feestkassa
+## H4-Cirkels
 
 ### Leerdoelen
 
-* tussenresultaten bijhouden
+* gebruik van de `Math` klasse
+* kommagetallen parsen
+* stringinterpolatie en formattering
 
 ### Functionele analyse
 
-De plaatselijke voetbalclub organiseert een mosselfestijn. Naast mosselen met frietjes \(20 EUR\) bieden ze voor de kinderen de mogelijkheid om een koninginnehapje \(10 EUR\) te kiezen. Verder is er een ijsje als nagerecht voorzien \(3 EUR\). Om het gemakkelijk te maken kosten alle dranken 2 EUR.
-
-Ontwerp een applicatie zodat de vrijwilliger aan de kassa alleen maar de juiste aantallen moet ingeven ,lijn per lijn. \(frietjes, koninginenhapje, ijsje, drank\) om de totaal te betalen prijs te berekenen.
-
-Het resultaat wordt als volgt weergegeven: `Het totaal te betalen bedrag is x EURO`.
+Schrijf een programma dat de omtrek en oppervlakte van een cirkel met een gegeven straal bepaalt.
 
 ### Technische analyse
 
-Je gebruikt best een variabele om de voorlopig som bij te houden. Zo moet je minder code herhalen.
+Je moet de gebruiker eerst om de straal van de cirkel vragen. De omtrek van een cirkel wordt gegeven door de formule omtrek = 2 \* π \* straal. De oppervlakte wordt gegeven door de formule straal² \* π.
 
-#### UI
-
-console applicatie
+Noem je methode voor deze oefening `Cirkels`.
 
 #### voorbeeldinteractie\(s\)
 
 ```text
-Mosselen met frietjes?
-> 3
-Koninginnenhapjes?
+Geef de straal:
 > 5
-Ijsjes?
-> 2
-Dranken?
-> 5
-Het totaal te betalen bedrag is 126 EURO
+De omtrek van een cirkel met straal 5 is 31,42.
+De oppervlakte is 78,54.
 ```
 
-## H3-orakeltje
+## H4-orakeltje
 
 ### Leerdoelen
 
@@ -152,50 +107,134 @@ Het totaal te betalen bedrag is 126 EURO
 
 Maak een orakel/waarzegger, namelijk de kleine broer of zus van het [Orakel van Delphi](https://nl.wikipedia.org/wiki/Orakel_van_Delphi). Het programma zal aan de gebruiker vertellen hoe lang deze nog zal leven. Bijvoorbeeld: "Je zal nog 15 jaar leven.".
 
-Het orakel zal enkel realistische getallen geven. Maw, getallen tussen de 5 en 125 jaar \(onder de 5 zou grof zijn\).
-
-> We gaan geregeld een oefening in een later hoofdstuk verder uitbreiden. Het orakeltje van Delphi is er zo eentje.
+Het orakel zal enkel voorzichtige voorspellingen doen. Met andere woorden, de gebruiker zal minstens 20 jaar oud worden en hooguit 125 jaar oud.
 
 ### Technische analyse
 
 Je moet hier een willekeurig getal bepalen en dat dan in een mooie vorm presenteren aan de gebruiker. Gebruik hiervoor de klasse `Random`.
 
-#### UI
-
-console applicatie
+Noem je methode voor deze oefening `Orakeltje`.
 
 #### voorbeeldinteractie\(s\)
 
 ```text
-Je zal nog 7 jaar leven.
+Hoe oud ben je nu?
+> 24
+Je zal nog 7 jaar leven. Je zal dus 31 worden.
 ```
 
 ```text
-Je zal nog 64 jaar leven.
+Hoe oud ben je nu?
+> 50
+Je zal nog 64 jaar leven. Je zal dus 114 worden.
 ```
 
-## Oefening: H3-random-invoer
+## Oefening: apdotcom \(deel 1\)
 
-Pas oefening H3-op-de-poef aan zodat de gebruiker vervangen wordt door een randomgenerator en de gebruiker op de hoogte brengt van de gegenereerde getallen \(tussen 1 en 50 inclusief\). Dit levert een output als volgt:
+### Leerdoelen
+
+* tussenresultaten bijhouden
+* invoer verwerken
+* resultaten formatteren
+* getaltypes
+
+### Functionele analyse
+
+We zullen een uitgebreider programma maken, dat we apdotcom noemen. Het is een systeem om bestellingen te plaatsen. In de loop van de cursus zullen we er nog vaak op terugkomen, zodat we naar een nuttiger en realistischer systeem bewegen.
+
+In deze eerste versie moet je de prijzen van een paar producten ingeven en de aantallen die je van deze prijzen wil aankopen. Op het einde kan je ook een kortingsbon toepassen.
+
+### Technische analyse
+
+Maak een aparte klasse `APDotCom`. Maak daarin een methode `Bestel`. Deze methode vraagt om de prijs van een boek, een CD, een servies en een springkasteel. Daarna vraagt ze om de prijs per stuk. Ten slotte om de waarde van een kortingsbon, uitgedrukt als een geheel percentage. Dan wordt een overzicht gegeven van de kosten en krijg je de totaalprijs.
+
+Zorg ervoor dat je code maar één keer de totaalprijs voor korting berekent en deze in een variabele bijhoudt. Dan kan je makkelijk de totaalprijs na korting bepalen.
+
+Toon alle geldbedragen met twee cijfers na de komma, zelfs als de laatste cijfers `00` zijn.
+
+Als je ergens 10% korting op krijgt, betekent dat dat je de prijs met 0.9 mag vermenigvuldigen want 1 - \(10/100\) = 0.9.
+
+#### voorbeeldinteractie\(s\)
 
 ```text
-Voer bedrag in?
-Automatisch gegenereerd: 12
-De poef staat op 12 euro
-Voer bedrag in?
-Automatisch gegenereerd: 14
-De poef staat op 26 euro
-Voer bedrag in?
-Automatisch gegenereerd: 3
-De poef staat op 29 euro
-Voer bedrag in?
-Automatisch gegenereerd: 8
-De poef staat op 37 euro
-Voer bedrag in?
-Automatisch gegenereerd: 2
-De poef staat op 39 euro
-*************************
-Het totaal van  de poef is 39 euro.
-Dit zal 4 afbetalingen vragen.
+Prijs van een boek?
+> 12.00
+Prijs van een CD?
+> 9.95
+Prijs van een servies?
+> 75
+Prijs van een springkasteel?
+> 150
+Aantal boeken?
+> 4
+Aantal CD's?
+> 2
+Aantal serviezen?
+> 1
+Aantal springkastelen?
+> 1
+Percentage korting?
+> 40
+Uw kasticket
+------------
+boek x 4: 48.00
+CD x 2 : 19.90
+servies x 1: 75.00
+springkasteel x 1: 150.00
+KORTING: 40%
+TOTAAL VOOR KORTING: 292.90
+TOTAAL: 175.74
 ```
+
+## Oefening: apdotcom \(deel 2\)
+
+### Leerdoelen
+
+* verwerken Random
+
+### Functionele analyse
+
+De markt wordt gestuurd door vraag en aanbod. Alle items hebben dan wel een vaste prijs, maar schijnbaar willekeurige factoren bepalen de prijs die in de winkel gevraagd wordt.
+
+### Technische analyse
+
+Maak in de klasse `APDotCom` een methode `BestelMetVraagEnAanbod`. Deze methode werkt zoals eerder, maar verhoogt of verlaagt de basisprijs van elk item met willekeurig met maximum 50%.
+
+#### voorbeeldinteractie\(s\)
+
+```text
+Basisprijs van een boek?
+> 12.00
+Basisprijs van een CD?
+> 9.95
+Basisprijs van een servies?
+> 75
+Basisprijs van een springkasteel?
+> 150
+Aantal boeken?
+> 4
+Aantal CD's?
+> 2
+Aantal serviezen?
+> 1
+Aantal springkastelen?
+> 1
+Percentage korting?
+> 40
+Uw kasticket
+------------
+vraag en aanbod boeken: 20%
+vraag en aanbod CD's: -18%
+vraag en aanbod serviezen: 10%
+vraag en aanbod springkastelen: 48%
+boek x 4: 57.60
+CD x 2 : 16.32
+servies x 1: 82.50
+springkasteel x 1: 222
+KORTING: 40%
+TOTAAL VOOR KORTING: 378.42
+TOTAAL: 227.05
+```
+
+## 
 
