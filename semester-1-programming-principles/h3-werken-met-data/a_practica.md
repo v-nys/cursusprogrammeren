@@ -67,7 +67,7 @@ Geef de lengte van de eerste rechthoekszijde:
 > 4
 Geef de lengte van de tweede rechthoekszijde:
 > 3
-De lengte van de schuine zijde is 5.83
+De lengte van de schuine zijde is 5
 ```
 
 ## H4-Cirkels
