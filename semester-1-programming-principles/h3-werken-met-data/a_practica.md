@@ -30,10 +30,10 @@ Noem je methode voor deze oefening `BMIBerekenaar`.
 
 ```text
 Hoe veel weeg je in kg?
-> 69.0
+> 69,0
 Hoe groot ben je in m?
-> 1.78
-Je BMI bedraagt 21.78.
+> 1,78
+Je BMI bedraagt 21,78.
 ```
 
 ## H4-Pythagoras
