@@ -105,9 +105,9 @@ De oppervlakte is 78,54.
 
 ### Functionele analyse
 
-Maak een orakel/waarzegger, namelijk de kleine broer of zus van het [Orakel van Delphi](https://nl.wikipedia.org/wiki/Orakel_van_Delphi). Het programma zal aan de gebruiker vertellen hoe lang deze nog zal leven. Bijvoorbeeld: "Je zal nog 15 jaar leven.".
+Maak een orakel/waarzegger, namelijk de kleine broer of zus van het [Orakel van Delphi](https://nl.wikipedia.org/wiki/Orakel_van_Delphi). Het programma zal aan de gebruiker vertellen hoe lang deze nog zal leven. Bijvoorbeeld: "Je zal nog 34 jaar leven.".
 
-Het orakel zal enkel voorzichtige voorspellingen doen. Met andere woorden, de gebruiker zal minstens 20 jaar oud worden en hooguit 125 jaar oud.
+Het orakel zal enkel voorzichtige voorspellingen doen. Met andere woorden, de gebruiker zal minstens 20 jaar ouder worden en hooguit 125 jaar ouder.
 
 ### Technische analyse
 
@@ -120,7 +120,7 @@ Noem je methode voor deze oefening `Orakeltje`.
 ```text
 Hoe oud ben je nu?
 > 24
-Je zal nog 7 jaar leven. Je zal dus 31 worden.
+Je zal nog 20 jaar leven. Je zal dus 44 worden.
 ```
 
 ```text
