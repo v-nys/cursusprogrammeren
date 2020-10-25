@@ -2,7 +2,7 @@
 
 ## Scope van variabelen
 
-De locatie waar je een variabele aanmaakt bepaald de **scope**, oftewel de zichtbaarheid, van de variabele. Eenvoudig gezegd zullen steeds de omliggende accolades de scope van de variabele bevatten. Indien je de variabele dus buiten die accolades nodig hebt dan heb je een probleem: de variabele is enkel bereikbaar binnen de accolades vanaf het punt in de code waarin het werd aangemaakt.
+De locatie waar je een variabele aanmaakt bepaalt de **scope**, oftewel de gegarandeerde levensduur, van de naam van de variabele. Ruwweg: als je binnen hetzelfde stel accolades werkt waarin een variabele is gedeclareerd, dan is die naam **in scope** en kan je hem gebruiken. Indien je de variabele dus buiten die accolades nodig hebt, dan heb je een probleem: de variabele is enkel bereikbaar binnen de accolades vanaf het punt in de code waarin het werd aangemaakt.
 
 Zeker wanneer je begint met `if`, loops, methoden, etc. zal de scope belangrijk zijn: deze code-constructies gebruiken steeds accolades om codeblocks aan te tonen. Een variabele die je dus binnen een if-blok aanmaakt zal enkel binnen dit blok bestaan, niet erbuiten.
 
@@ -27,12 +27,6 @@ if( something == true)
 
 Console.WriteLine(getal);
 ```
-
-{% hint style="info" %}
-De scope van variabelen is soms wat verwarrend maar wel een onderdeel dat je deze hele cursus zal zien terugkomen.
-
-Hopelijk kan volgende kennisclip je helpen: [Kennisclip "Scope van variabelen](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=20538981-ceaf-4129-a54a-a91100c81b2f).
-{% endhint %}
 
 ## Variabelen met zelfde naam
 
@@ -66,10 +60,4 @@ Dit is wel geldig, daar de scope van de eerste variabele afgesloten wordt door d
     int getal = 5;
 }
 ```
-
-## Kennisclip
-
-![](../../.gitbook/assets/infoclip%20%282%29.png)
-
-* [Scope ](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=20538981-ceaf-4129-a54a-a91100c81b2f)
 
