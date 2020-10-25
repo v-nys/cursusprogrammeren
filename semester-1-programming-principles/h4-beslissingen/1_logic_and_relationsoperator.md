@@ -2,7 +2,7 @@
 
 ## Relationele operators
 
-Om beslissingen te kunnen nemen in C\# hebben we een nieuw soort operators nodig. Operators waarmee we kunnen testen of iets waar of niet waar is. Dit doen we met de zogenaamde **relationele operators**. En guess what, je kent die al van uit het lager! Enkel de "gelijk aan" ziet er iets anders uit dan we gewoon zijn:
+Om beslissingen te kunnen nemen in C\# moeten we kunnen nagaan of een bepaalde uitspraak waar of niet waar is. Anders gezegd: we moeten stukjes code kunnen schrijven waarvan we achteraf kunnen zeggen of ze "waar" of "niet waar" zijn. Zo'n stukjes code noemen we **booleaanse expressies**. De meest typische booleaanse expressies schrijf je met de **relationele operatoren**. Deze stellen vergelijkingen tussen stukjes data voor. Gelukkig ken je deze al uit het lager onderwijs en moet je alleen de notatie hieronder leren:
 
 | C\#-syntax | Betekenis |
 | :--- | :--- |
@@ -13,9 +13,18 @@ Om beslissingen te kunnen nemen in C\# hebben we een nieuw soort operators nodig
 | `<=` | kleiner dan of gelijk aan |
 | `>=` | groter dan of gelijk aan |
 
-## Logische operator
+{% hint style="warning" %}
+"Gelijk aan" noteren we met twee symbolen, omdat één symbool gebruikt wordt voor een toekenning.  
+	
+{% endhint %}
 
-De logische EN, OF en NIET-operatoren die je kent van de booleaanse algebra kan je ook gebruiken in C\#:
+Deze operatoren leveren je altijd één van twee mogelijkheden als uitkomst: `true` of `false`. Je kan dit ook uittesten: `Console.WriteLine(4 < 7);` of `Console.WriteLine(4 < 2);` toont je het verwachte resultaat.
+
+Er bestaan nog simpelere booleaanse expressies dan die met de relationele operatoren: `true` en `false` zelf zijn hun eigen resultaat en zijn dus technisch gesproken ook booleaanse expressies. Je mag dus bv. ook `true` schrijven in plaats van `4 > 2`.
+
+## Logische operatoren
+
+De logische EN, OF en NIET-operatoren die je misschien kent uit de lessen technologie of elektronica kan je ook gebruiken in C\#:
 
 | C\#-syntax | Betekenis |
 | :--- | :--- |
@@ -23,21 +32,24 @@ De logische EN, OF en NIET-operatoren die je kent van de booleaanse algebra kan 
 | `||` | of-operator |
 | `!` | niet-operator |
 
-Je kan de niet-operator voor een expressie zetten om het resultaat hiervan om te draaien. Bijvoorbeeld:
+Je kan de `&&`-operator tussen twee booleaanse expressies zetten om een nieuwe, grote expressie te schrijven die afhangt van de kleinere expressies aan beide kanten. Idem voor de `||`-operator. Je kan de niet-operator voor een booleaanse expressie zetten om het resultaat hiervan om te draaien. Bijvoorbeeld:
 
 ```csharp
 !(0==2)  //zal true geven
+	
 ```
 
-### Booleaanse expressies
+Hieronder krijg je nog eens het overzicht van de werking van de AND en OR operatoren:
 
-Een booleaanse expressie is een stuk C\# code dat een `bool` als resultaat zal geven.
+| AND | niet waar | waar |
+| :--- | :--- | :--- |
+| niet waar | niet waar | niet waar |
+| waar | niet waar | waar |
 
-De logische operators van hierboven zijn operators die een `bool` teruggeven. Ze zijn zogenaamde test-operators: ze testen of iets waar is of niet. "Is b kleiner dan c?" schrijf je dan als de booleaanse expressie: `b<c`
-
-Test maar eens wat er op je scherm komt als je in code schrijft: `Console.WriteLine(45<=55);`.
-
-Zoals verwacht zal er `true` op het scherm verschijnen.
+| OR | niet waar | waar |
+| :--- | :--- | :--- |
+| niet waar | niet waar | waar |
+| waar | waar | waar |
 
 ## Test jezelf
 
@@ -51,14 +63,4 @@ Wat zal de uitkomst zijn van volgende expressies? \(protip: het zal steeds `true
 * `!(4<=3)`
 * `true || false`
 * `!true && false`
-
-{% hint style="info" %}
-Voorgaande oefeningen komen uit een vorige kennistoets examen. Het is voornaam dat je dit soort expressies vlot kunt oplossen!
-{% endhint %}
-
-## Kennisclip
-
-![](../../.gitbook/assets/infoclip%20%282%29.png)
-
-* [Logische operators en expressies ](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=4602c8f9-1540-427e-8fd8-a91100bc3abb)
 
