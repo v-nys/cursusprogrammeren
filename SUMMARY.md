@@ -50,8 +50,6 @@
   * [Booleanse logica en operators](semester-1-programming-principles/h4-beslissingen/1_logic_and_relationsoperator.md)
   * [If](semester-1-programming-principles/h4-beslissingen/0_if.md)
   * [Scope van variabelen](semester-1-programming-principles/h4-beslissingen/3_scope.md)
-  * [enum](semester-1-programming-principles/h4-beslissingen/enum.md)
-  * [Switch](semester-1-programming-principles/h4-beslissingen/2_switch.md)
   * [Oefeningen](semester-1-programming-principles/h4-beslissingen/a_practica.md)
 * [H6: Exception handling](semester-1-programming-principles/exception-handling/README.md)
   * [Werken met exceptions](semester-1-programming-principles/exception-handling/werken-met-exceptions.md)
@@ -150,6 +148,8 @@
 
 ## Pro \(geen leerstof en/of in opbouw\)
 
+* [enum](pro-geen-leerstof-en-of-in-opbouw/enum.md)
+* [Switch](pro-geen-leerstof-en-of-in-opbouw/2_switch.md)
 * [Bitwise operators](pro-geen-leerstof-en-of-in-opbouw/bitwise.md)
 * [Generics en collections](pro-geen-leerstof-en-of-in-opbouw/generics-en-collections/README.md)
   * [Generics methoden en types](pro-geen-leerstof-en-of-in-opbouw/generics-en-collections/generics-methoden-en-types.md)

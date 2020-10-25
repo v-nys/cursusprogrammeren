@@ -153,7 +153,7 @@ switch(dagKeuze)
 
 Intern worden de enum-variabelen als ints bewaard. In het geval van de `Weekdagen` zal maandag de waarde 0 krijgen, dinsdag 1, etc.
 
-Volgende conversies met behulp van [casting](../h3-werken-met-data/4_converteren.md) zijn dan ook perfect toegelaten:
+Volgende conversies met behulp van [casting](../semester-1-programming-principles/h3-werken-met-data/4_converteren.md) zijn dan ook perfect toegelaten:
 
 ```csharp
 int keuze = 3;
@@ -192,7 +192,7 @@ In dit geval zullen Maandag tot Vrijdag intern als 1 tot en met 5 bewaard worden
 
 ## Why should I care?
 
-![](../../.gitbook/assets/care%20%283%29.jpg)
+![](../.gitbook/assets/care%20%283%29.jpg)
 
 Je kan perfect leven zonder `enum`. Vele programmeurs voor je hebben dit bewezen. Echter, van zodra ze `enum`ontdekten \(en begrepen\) zijn nog maar weinig programmeurs ervan af gestapt.
 
@@ -224,7 +224,7 @@ switch(playerGameState)
 
 ## Kennisclip
 
-![](../../.gitbook/assets/infoclip%20%282%29.png)
+![](../.gitbook/assets/infoclip%20%282%29.png)
 
 * [Enums gebruiken](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=9273e56b-1bfa-4393-a14a-aaed00bd4eaf)
 
