@@ -16,7 +16,7 @@ if( something == true)
 Console.WriteLine(getal); // zal niet werken daar de scope van getal al gedaan was
 ```
 
-Wil je dus getal ook nog buiten de `if` gebruiken zal je je code moeten herschrijven zodat `getal` VOOR de `if` wordt aangemaakt:
+Wil je dus getal ook nog buiten de `if` gebruiken zal je je code moeten herschrijven zodat `getal` **voor** de `if` wordt aangemaakt:
 
 ```csharp
 int getal = 0 ;  //Start scope getal
