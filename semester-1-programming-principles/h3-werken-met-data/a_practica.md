@@ -29,7 +29,7 @@ Noem je methode voor deze oefening `BMIBerekenaar`.
 #### voorbeeldinteractie\(s\)
 
 ```text
-Hoe veel weeg je in kg?
+Hoeveel weeg je in kg?
 > 69,0
 Hoe groot ben je in m?
 > 1,78
