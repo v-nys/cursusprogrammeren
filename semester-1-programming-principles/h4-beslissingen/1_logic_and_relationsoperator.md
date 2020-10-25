@@ -14,8 +14,7 @@ Om beslissingen te kunnen nemen in C\# moeten we kunnen nagaan of een bepaalde u
 | `>=` | groter dan of gelijk aan |
 
 {% hint style="warning" %}
-"Gelijk aan" noteren we met twee symbolen, omdat één symbool gebruikt wordt voor een toekenning.  
-	
+"Gelijk aan" noteren we met twee symbolen, omdat één symbool gebruikt wordt voor een toekenning.
 {% endhint %}
 
 Deze operatoren leveren je altijd één van twee mogelijkheden als uitkomst: `true` of `false`. Je kan dit ook uittesten: `Console.WriteLine(4 < 7);` of `Console.WriteLine(4 < 2);` toont je het verwachte resultaat.
