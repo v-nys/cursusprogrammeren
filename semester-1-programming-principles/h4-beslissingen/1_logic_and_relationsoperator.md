@@ -1,5 +1,9 @@
 # Booleanse logica en operators
 
+{% hint style="success" %}
+[Kennisclip voor deze pagina](https://youtu.be/xmyvYqZYRTQ)
+{% endhint %}
+
 ## Relationele operators
 
 Om beslissingen te kunnen nemen in C\# moeten we kunnen nagaan of een bepaalde uitspraak waar of niet waar is. Anders gezegd: we moeten stukjes code kunnen schrijven waarvan we achteraf kunnen zeggen of ze "waar" of "niet waar" zijn. Zo'n stukjes code noemen we **booleaanse expressies**. De meest typische booleaanse expressies schrijf je met de **relationele operatoren**. Deze stellen vergelijkingen tussen stukjes data voor. Gelukkig ken je deze al uit het lager onderwijs en moet je alleen de notatie hieronder leren:

@@ -2,6 +2,10 @@
 
 In dit deel zullen we bekijken hoe we ons programma dynamischer kunnen maken met behulp van het if-statement.
 
+{% hint style="success" %}
+[Kennisclip voor deze pagina](https://youtu.be/w0kPFKXHR1I)
+{% endhint %}
+
 ## If
 
 De `if` is een van de elementairste constructies in een programmeertaal. De syntax is als volgt:

@@ -1,5 +1,9 @@
 # Scope van variabelen
 
+{% hint style="success" %}
+[Kennisclip voor deze inhoud](https://youtu.be/-2Rgaha0eqM)
+{% endhint %}
+
 ## Scope van variabelen
 
 De locatie waar je een variabele aanmaakt bepaalt de **scope**, oftewel de gegarandeerde levensduur, van de naam van de variabele. Ruwweg: als je binnen hetzelfde stel accolades werkt waarin een variabele is gedeclareerd, dan is die naam **in scope** en kan je hem gebruiken. Indien je de variabele dus buiten die accolades nodig hebt, dan heb je een probleem: de variabele is enkel bereikbaar binnen de accolades vanaf het punt in de code waarin het werd aangemaakt.

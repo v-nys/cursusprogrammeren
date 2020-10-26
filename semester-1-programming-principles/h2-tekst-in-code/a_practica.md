@@ -126,6 +126,10 @@ Maak een map als volgt: \VIN\Programmeren
 
 ## Oefening: H3-lotto
 
+{% hint style="success" %}
+[Kennisclip modeloplossing voor lotto en superlotto](https://youtu.be/9w37rObVAKU)
+{% endhint %}
+
 ### Leerdoelen
 
 * functionaliteit van strings
