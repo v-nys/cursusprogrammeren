@@ -36,11 +36,11 @@ class Dier
 }
 ```
 
-Objecten van het type Dier kunnen enkel de Eet-methode aanroepen. Objecten van het type Paard kunnen de Eet-methode aanroepen én ze hebben ook een property KanHinnikken:
+Objecten van het type Dier kunnen enkel de Eet-methode aanroepen. Objecten van het type Paard kunnen de Eet-methode aanroepen én ze hebben ook een methode Hinnik\(\):
 
 ```csharp
-Dier aDier= new Dier();
-Paard bPaard= new Paard();
+Dier aDier = new Dier();
+Paard bPaard = new Paard();
 aDier.Eet();
 bPaard.Eet();
 bPaard.Hinnik();

@@ -5,7 +5,7 @@
 Wanneer je een object instantieert van een child-klasse dan gebeuren er meerdere zaken na elkaar, in volgende volgorde:
 
 * Eerst wordt een constructor aangeroepen van een voorouderklasse opgeroepen.
-* Gevolgd door een constructor van de parent klassen.
+* Gevolgd door een constructor van de parent klasse.
 * Finaal de constructor van de klasse zelf.
 
 Volgende voorbeeld toont dit in actie:
