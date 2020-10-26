@@ -61,7 +61,7 @@ class Paard: Dier
 {
   public override string WetenschappelijkeNaam()
   { 
-      return "equus ferus";
+      return "equus";
   }
 }
 ```
