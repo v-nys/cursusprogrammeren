@@ -2,10 +2,10 @@
 
 ## Constructors bij overerving
 
-Wanneer je een object instantiëert van een child-klasse dan gebeuren er meerdere zaken na elkaar, in volgende volgorde:
+Wanneer je een object instantieert van een child-klasse dan gebeuren er meerdere zaken na elkaar, in volgende volgorde:
 
-* Eerst wordt de constructor aangeroepen van de basis-klasse: dus steeds eerst die van `System.Object`
-* Gevolgd door de constructors van alle parent-klassen
+* Eerst wordt een constructor aangeroepen van een voorouderklasse opgeroepen.
+* Gevolgd door een constructor van de parent klassen.
 * Finaal de constructor van de klasse zelf.
 
 Volgende voorbeeld toont dit in actie:
@@ -22,7 +22,7 @@ class Medic:Soldier
 }
 ```
 
-Indien je vervolgens een object aanmaakt van het type Medic:
+Indien je vervolgens een object aanmaakt van het type `Medic`:
 
 ```csharp
 Medic RexGregor= new Medic();
@@ -35,11 +35,11 @@ Soldier reporting in
 Who needs healing?
 ```
 
-Er wordt dus verondersteld in dit geval dat er een default constructor in de basis-klasse aanwezig is.
+Er wordt dus verondersteld in dit geval dat er een parameterloze constructor in de basisklasse aanwezig is.
 
-### Overloaded constructors
+### Constructoren met parameters
 
-Indien je klasse Soldier een overloaded constructor heeft, dan geeft deze niet automatisch een default constructor. Volgende code zou dus een probleem geven indien je een Medic wilt aanmaken via `new Medic()`:
+Indien je klasse Soldier geen parameterloze constructor heeft, dan moeten we uitdrukkelijk zeggen van waar de gebruikte parameters komen. Volgende code zou dus een probleem geven indien je een Medic wilt aanmaken via `new Medic()`:
 
 ```csharp
 class Soldier
@@ -47,7 +47,7 @@ class Soldier
    public Soldier(bool canShoot) {//...Do stuff  }
 }
 
-class Medic:Soldier
+class Medic : Soldier
 {
    public Medic(){Console.WriteLine("Who needs healing?");}
 }
@@ -56,14 +56,16 @@ class Medic:Soldier
 Wat je namelijk niet ziet bij child-klassen en hun constructors is dat er eigenlijk een impliciete call naar de basis-constructor wordt gedaan. Bij alle constructors staat eigenlijk `:base()` wat je ook zelf kunt schrijven:
 
 ```csharp
-class Medic:Soldier
+class Medic : Soldier
 {
-   public Medic(): base()
-   {Console.WriteLine("Who needs healing?");}
+    public Medic() : base()
+    {
+        Console.WriteLine("Who needs healing?");
+    }
 }
 ```
 
-`base()` achter de constructor zegt dus eigenlijk 'roep de constructor van de parent-klasse aan. Je mag hier echter ook parameters meegeven en de compiler zal dan zoeken naar een constructor in de basis-klasse die deze volgorde van parameters kan accepteren.
+`base()` achter de constructor zegt dus eigenlijk "roep de constructor van de parent-klasse aan. Je mag hier echter ook parameters meegeven en de compiler zal dan zoeken naar een constructor in de basis-klasse die deze volgorde van parameters kan accepteren."
 
 We zien hier dus hoe we ervoor moeten zorgen dat we terug Medics via `new Medic()` kunnen aanroepen zonder dat we de constructor\(s\) van Soldier moeten aanpassen:
 
@@ -75,8 +77,9 @@ class Soldier
 
 class Medic:Soldier
 {
-   public Medic():base(true)
-    {Console.WriteLine("Who needs healing?");}
+    public Medic() : base(true) {
+        Console.WriteLine("Who needs healing?");
+    }
 }
 ```
 
@@ -90,17 +93,13 @@ class Soldier
 
 class Medic:Soldier
 {
-   public Medic(bool canSh): base(canSh)
-   {} 
+   public Medic(bool canShoot) : base(canShoot) {} 
 
-   public Medic():base(true)  //Default
-    {Console.WriteLine("Who needs healing?");}
+   public Medic() : base(true) {
+       Console.WriteLine("Who needs healing?");
+   }
 }
 ```
 
-Uiteraard mag je ook de default constructor aanroepen vanuit de child-constructor, alle combinaties zijn mogelijk \(zolang de constructor in kwestie maar bestaat in de parent-klasse\).
-
-## Kennisclip
-
-![](../../.gitbook/assets/infoclip%20%282%29.png) \*[Constructors bij overerving](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=a83a530e-11ff-47eb-b4cf-ab7c00b75401)
+Uiteraard mag je ook de parameterloze constructor aanroepen vanuit de child-constructor, alle combinaties zijn mogelijk \(zolang de constructor in kwestie maar bestaat in de parent-klasse\).
 

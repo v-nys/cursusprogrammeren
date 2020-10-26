@@ -64,9 +64,7 @@ De raket verdwijnt in de ruimte.
 
 ## Properties overriden
 
-Ook properties kan je virtual instellen en override'n.
-
-**Opgelet**: Visual Studio gebruikt Expression Body Member syntax \(herkenbaar aan de `=>`\) om properties te overriden. Deze syntax kennen we niet \(lees er gerust meer over [hier](../../semester-2-appendix/nice-to-know-stuff/6_exprbody.md)\). **Je schrijft dus best manueel de override van properties**
+Ook properties kan je virtual instellen en overriden.
 
 Stel dat je volgende klasse hebt:
 
@@ -77,7 +75,7 @@ Stel dat je volgende klasse hebt:
     }
 ```
 
-We maken nu een meer luxueuze auto die een lichtje heeft dat aangaat wanneer de benzine-tank vol genoeg is, dit kan via override.
+We maken nu een meer luxueuze auto die een lichtje heeft dat aangaat wanneer de benzine-tank vol genoeg is en anders uitgaat, dan kan dit via override.
 
 ```csharp
 class LuxeAuto : Auto
@@ -93,15 +91,12 @@ class LuxeAuto : Auto
             {
                HeeftVolleTank = true;
             }
+            else {
+               HeeftVolleTank = false;
+            }
             base.Fuel = value;
       }
    }
 }
 ```
-
-## Kennisclip
-
-![](../../.gitbook/assets/infoclip%20%282%29.png)
-
-* [Virtual en override](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=d549422d-eb27-4dd5-8154-ab7c00ba0728)
 
