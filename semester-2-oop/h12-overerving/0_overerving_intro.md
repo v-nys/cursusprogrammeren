@@ -4,7 +4,7 @@
 
 Overerving \(**inheritance**\) laat ons toe om klassen te specialiseren vanuit een reeds bestaande basisklasse. Wanneer we een klasse van een andere klasse overerven dan zeggen we dat deze nieuwe klasse een child-klasse of sub-klasse is van de bestaande parent-klasse of super-klasse.
 
-De child-klasse kan alles wat de parent-klasse kan, maar de nieuwe klasse kan nu ook extra specialisatie code krijgen.
+De child-klasse kan alles wat de parent klasse kan, maar de nieuwe klasse kan nu ook extra specialisatie code krijgen. Deze kan extra methodes voorzien of kan de werking van bestaande methodes aanpassen.
 
 ### Is-een relatie
 
@@ -14,19 +14,22 @@ Wanneer twee klassen met behulp van een "x is een y"-relatie kunnen beschreven w
 * Een tulp **is een** plant
 
 {% hint style="warning" %}
-Opgelet: wanneer we "x heeft een y" zeggen gaat het **niet** over overerving, maar over [compositie](https://github.com/v-nys/cursusprogrammeren/tree/e865f37d2ea41dc32c32aa2e02a9a763c7ea56f5/14_compositie/0_compositie_intro.MD).
+Opgelet: wanneer we "x heeft een y" zeggen gaat het **niet** over overerving, maar over compositie.
 {% endhint %}
 
-### Inheritance in CS
+### Inheritance in C\#
 
-Overving duid je aan met behulp van het dubbele punt\(:\) bij de klassedefinitie:
+Overving duid je aan met behulp van het dubbele punt bij de klassedefinitie:
 
 Een voorbeeld:
 
 ```csharp
-class Paard: Dier
+class Paard : Dier
 {
-   public bool KanHinnikken{get;set;}
+   public bool KanHinnikken{
+     get;
+     set;
+   }
 }
 
 class Dier
@@ -49,7 +52,7 @@ bPaard.KanHinnikken=false;
 aDier.KanHinnikken=false; //!!! zal niet werken!
 ```
 
-### Multiple inheritance
+### \(Geen\) multiple inheritance
 
 In C\# is het niet mogelijk om een klasse van meer dan een parent-klasse te laten overerven \(zogenaamde multiple inheritance\), wat wel mogelijk is in sommige andere object georiënteerde talen.
 
