@@ -39,14 +39,14 @@ En dan zal dit wel werken: `Wolf wolfje = new Wolf();`
 
 ### Abstracte methoden
 
-Het is logisch dat we mogelijk ook bepaalde zaken in de abstracte klasse als abstract kunnen aanduiden. Beeld je in dat je een Methode "MaakGeluid" hebt in je klasse Dier. Wat voor een geluid maakt 'een dier'? We kunnen dus ook geen implementatie \(code\) geven in de abstracte parent klasse.
+Het is logisch dat we mogelijk ook bepaalde zaken in de abstracte klasse als abstract kunnen aanduiden. Beeld je in dat je een Methode "WetenschappelijkeNaam" hebt in je klasse Dier. Wetenschappelijke namen zijn eigen aan specifieke dieren. We kunnen dus ook geen implementatie \(code\) geven in de abstracte parent klasse.
 
 Via abstracte methoden geven we dit aan: we hoeven enkel de methode signature te geven, met ervoor `abstract`:
 
 ```csharp
 abstract class  Dier
 {
-   public abstract string MaakGeluid();
+   public abstract string WetenschappelijkeNaam();
 }
 ```
 
@@ -59,9 +59,9 @@ De Paard-klasse wordt dan:
 ```csharp
 class Paard: Dier
 {
-  public override string MaakGeluid()
+  public override string WetenschappelijkeNaam()
   { 
-      return "Hinnikhinnik";
+      return "equus ferus caballus";
   }
 }
 ```
