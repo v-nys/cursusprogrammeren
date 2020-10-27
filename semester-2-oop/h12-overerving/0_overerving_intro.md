@@ -1,5 +1,9 @@
 # Overerving intro
 
+{% hint style="success" %}
+[Kennisclip voor deze inhoud](https://youtu.be/jEipgofmIHQ)
+{% endhint %}
+
 ## Overerving
 
 Overerving \(**inheritance**\) laat ons toe om klassen te specialiseren vanuit een reeds bestaande basisklasse. Wanneer we een klasse van een andere klasse overerven dan zeggen we dat deze nieuwe klasse een child-klasse of sub-klasse is van de bestaande parent-klasse of super-klasse.

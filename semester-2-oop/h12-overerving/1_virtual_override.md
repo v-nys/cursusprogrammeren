@@ -1,5 +1,9 @@
 # Virtual en override
 
+{% hint style="success" %}
+[Kennisclip voor deze inhoud](https://youtu.be/n41OZaWEaus)
+{% endhint %}
+
 ## Virtual en Override
 
 Soms willen we aangeven dat de implementatie \(code\) van een property of methode in een parent-klasse door child-klassen mag aangepast worden. Dit geven we aan met het **virtual** keyword:

@@ -1,5 +1,9 @@
 # Abstract
 
+{% hint style="success" %}
+[Kennisclip voor deze inhoud](https://youtu.be/zQB4lDh-4Io)
+{% endhint %}
+
 ## Abstract
 
 ### Abstracte klassen

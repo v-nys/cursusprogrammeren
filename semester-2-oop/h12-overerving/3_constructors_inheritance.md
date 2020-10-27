@@ -1,5 +1,9 @@
 # Constructors bij overerving
 
+{% hint style="success" %}
+[Kennisclip voor deze inhoud](https://youtu.be/ZRIEiekI0tM)
+{% endhint %}
+
 ## Constructors bij overerving
 
 Wanneer je een object instantieert van een child-klasse dan gebeuren er meerdere zaken na elkaar, in volgende volgorde:
