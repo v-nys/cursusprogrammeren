@@ -108,7 +108,6 @@
   * [Constructors bij overerving](semester-2-oop/h12-overerving/3_constructors_inheritance.md)
   * [Virtual en override](semester-2-oop/h12-overerving/1_virtual_override.md)
   * [Abstract](semester-2-oop/h12-overerving/5_abstract.md)
-  * [Oefeningen](semester-2-oop/h12-overerving/a_practicasimpel.md)
 * [H15: Geavanceerde overerving](semester-2-oop/h13-geavanceerde-overerving/README.md)
   * [Base keyword](semester-2-oop/h13-geavanceerde-overerving/2_base.md)
   * [System.Object](semester-2-oop/h13-geavanceerde-overerving/4_system_object.md)

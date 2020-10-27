@@ -26,14 +26,6 @@ Het is op termijn niet houdbaar om elke student een veld voor het cijfer per vak
 
 Een betere optie bestaat erin de cijfers van een student bij te houden als een `Dictionary<Course,byte>`. Geef `Student` een `private` attribuut `Grades` van dit type. Voorzie ook een methode `SetGrade(Course course, byte grade)` om het cijfer voor een bepaald vak in te stellen. Op deze manier kan je voorkomen dat een cijfer hoger dan 20 wordt ingesteld.
 
-### Puntenlijsten
-
-Studenten krijgen normaal niet één cijfer, maar meerdere cijfers per vak, omdat er tijdens het semester meerdere toetsen zijn. Het aantal cijfers is niet voor elk vak hetzelfde. Los dit op door `Grades` om te vormen naar een `Dictionary<Course,List<byte>>`. Ook hier moet je, wanneer een cijfer wordt ingesteld voor een vak, controleren dat alle cijfers in de lijst maximaal 20 zijn.
-
-### OPTIONELE uitdaging: sanity check overbodig maken via `SortedSet<T>`
-
-Zelf controleren op dubbels uitvoeren zoals hierboven omschreven is een vervelend karwei. Er bestaat een datastructuur die, net als `List<>`, elementen in volgorde bijhoudt, maar vanzelf dubbele elementen elimineert. Dit is `SortedSet<>`.  Je vindt de officiële documentatie [hier](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.sortedset-1?view=netcore-3.1). Niet alles zal op dit moment verstaanbaar zijn, maar kan je in de property `Students` van `StudyProgram` je `List<Student>` vervangen zodat je `Contains` kan negeren?
-
 
 
 
