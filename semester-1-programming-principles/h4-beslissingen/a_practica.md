@@ -276,3 +276,107 @@ Geef de lengte van de tweede rechthoekszijde:
 De lengte van de schuine zijde is 5
 ```
 
+## APDotCom
+
+### Leerdoelen
+
+* Een bestaande applicatie uitbreiden
+* Conditionele logica integreren
+
+### Functionele analyse
+
+Het programma werkt op dezelfde manier als [H4 apdotcom \(deel 2\)](https://apwt.gitbook.io/cursus-pro-oo/semester-1-programming-principles/h3-werken-met-data/a_practica#oefening-apdotcom-deel-2), met volgende aanpassingen:
+
+* De gebruiker kan nu op voorhand kiezen of de willekeurige prijsstijgingen van 'Vraag en aanbod' worden toegepast of niet.
+* Een prijsstijging wordt weergegeven in rode tekst, een prijsdaling in groene tekst
+* Als er een korting van meer dan 30% wordt ingevoerd, toont het programma de boodschap _Waarschuwing: het ingevoerde percentage is hoog!_
+* kd
+
+### Technische analyse
+
+In de klasse `APDotCom` maak je een kopie van de methode `BestelMetVraagEnAanbod`, die je `BestelConditioneel` noemt.
+
+Om _enkel_ de prijsstijgingen en -dalingen te kunnen kleuren, ga je gebruik moeten maken van `ConsoleColor.Red`, `ConsoleColor.Green` en `Console.ResetColor()`.
+
+### Voorbeeldinteractie
+
+```text
+Basisprijs van een boek?
+> 12.00
+Basisprijs van een CD?
+> 9.95
+Basisprijs van een servies?
+> 75
+Basisprijs van een springkasteel?
+> 150
+Aantal boeken?
+> 4
+Aantal CD's?
+> 2
+Aantal serviezen?
+> 1
+Aantal springkastelen?
+> 1
+Percentage korting?
+> 40
+Waarschuwing: het ingevoerde percentage is hoog!
+
+Worden prijsstijgingen en -dalingen toegepast? (J/N)
+> J
+
+Uw kasticket
+------------
+vraag en aanbod boeken: 20%
+vraag en aanbod CD's: -18%
+vraag en aanbod serviezen: 10%
+vraag en aanbod springkastelen: 48%
+boek x 4: 57.60
+CD x 2 : 16.32
+servies x 1: 82.50
+springkasteel x 1: 222
+KORTING: 40%
+TOTAAL VOOR KORTING: 378.42
+TOTAAL: 227.05
+```
+
+{% hint style="info" %}
+De getallen _20%, 10% en 48%_ zouden hierboven in het rood moeten verschijnen en _-18%_ in het groen \(lijnen 26-29\), maar Gitbook staat dit niet meteen toe.
+{% endhint %}
+
+Of zonder 'vraag en aanbod':
+
+```text
+Basisprijs van een boek?
+> 12.00
+Basisprijs van een CD?
+> 9.95
+Basisprijs van een servies?
+> 75
+Basisprijs van een springkasteel?
+> 150
+Aantal boeken?
+> 4
+Aantal CD's?
+> 2
+Aantal serviezen?
+> 1
+Aantal springkastelen?
+> 1
+Percentage korting?
+> 40
+Waarschuwing: het ingevoerde percentage is hoog!
+
+Worden prijsstijgingen en -dalingen toegepast? (J/N)
+> N
+
+Uw kasticket
+------------
+boek x 4: 48.00
+CD x 2 : 19.90
+servies x 1: 75.00
+springkasteel x 1: 150.00
+KORTING: 40%
+TOTAAL VOOR KORTING: 292.90
+TOTAAL: 175.74
+```
+
