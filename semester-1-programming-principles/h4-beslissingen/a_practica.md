@@ -246,7 +246,7 @@ Console applicatie
 
 ```text
 Kies uit volgende klassen door een cijfer te tikken:
-    1 - EenProgrammaSchrijvenInCSharp
+    1 - HoofdstukEen
     2 – HoofdstukTwee
     3 – HoofdstukDrie
     4 – HoofdstukVier
@@ -290,7 +290,6 @@ Het programma werkt op dezelfde manier als [H4 apdotcom \(deel 2\)](https://apwt
 * De gebruiker kan nu op voorhand kiezen of de willekeurige prijsstijgingen van 'Vraag en aanbod' worden toegepast of niet.
 * Een prijsstijging wordt weergegeven in rode tekst, een prijsdaling in groene tekst
 * Als er een korting van meer dan 30% wordt ingevoerd, toont het programma de boodschap _Waarschuwing: het ingevoerde percentage is hoog!_
-* kd
 
 ### Technische analyse
 
