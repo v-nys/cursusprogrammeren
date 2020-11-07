@@ -148,7 +148,7 @@
 ## Pro \(geen leerstof en/of in opbouw\)
 
 * [enum](pro-geen-leerstof-en-of-in-opbouw/enum.md)
-* [Switch](pro-geen-leerstof-en-of-in-opbouw/2_switch.md)
+* [switch](pro-geen-leerstof-en-of-in-opbouw/2_switch.md)
 * [Bitwise operators](pro-geen-leerstof-en-of-in-opbouw/bitwise.md)
 * [Generics en collections](pro-geen-leerstof-en-of-in-opbouw/generics-en-collections/README.md)
   * [Generics methoden en types](pro-geen-leerstof-en-of-in-opbouw/generics-en-collections/generics-methoden-en-types.md)

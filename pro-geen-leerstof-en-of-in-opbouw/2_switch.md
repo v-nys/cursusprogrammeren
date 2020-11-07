@@ -1,6 +1,6 @@
-# Switch
+# switch
 
-## Switch
+## `switch`
 
 Een `switch` statement is een program-flow element om een veelvoorkomende constructie van `if`/`if else`...`else` elementen eenvoudiger te tonen. Vaak komt het voor dat we bijvoorbeeld aan de gebruiker vragen om een keuze te maken \(bijvoorbeeld een getal van 1 tot 10, waarbij ieder getal een ander menu-item uitvoert van het programma\), zoals:
 
@@ -36,9 +36,9 @@ switch (value)
   }
 ```
 
-`value` is de waarde of variabele \(beide mogen\) die wordt gebruikt als test in de switch. Iedere case begint met het `case` keyword gevolgd door de waarde die value moet hebben om in deze case te _springen_. Na het dubbelpunt volgt vervolgens de code die moet uitgevoerd worden in deze `case`. De `case` zelf mag eender welke code bevatten \(methoden, nieuwe program flow elementen, etc.\), maar moet zeker afgesloten worden met het `break` keyword.
+`value` is de waarde die wordt gebruikt als test in de switch \(en dat mag ook een variabele zijn\). Iedere case begint met het `case` keyword gevolgd door de waarde die value moet hebben om in deze case te _springen_. Na het dubbelpunt volgt vervolgens de code die moet uitgevoerd worden in deze `case`. De `case` zelf mag eender welke code bevatten \(methoden, nieuwe program flow elementen, etc.\), maar moet zeker afgesloten worden met het `break` keyword.
 
-Tijdens de uitvoer zal het programma `value` vergelijken met iedere case constant van boven naar onder. Wanneer een gelijkheid wordt gevonden dan wordt die case uitgevoerd. Indien geen case wordt gevonden die gelijk is aan value dan zal de code binnen de `default`-case uitgevoerd worden \(de `else` achteraan indien alle vorige `if else`-tests negatief waren\).
+Tijdens de uitvoer zal het programma `value` vergelijken met iedere case constant van boven naar onder. Wanneer een gelijkheid wordt gevonden dan wordt die case uitgevoerd. Indien geen case wordt gevonden die gelijk is aan `value` dan zal de code binnen de `default`-case uitgevoerd worden \(de `else` achteraan indien alle vorige `if else`-tests negatief waren\).
 
 Het menu van zonet kunnen we nu herschrijven naar een `switch`:
 
@@ -67,7 +67,7 @@ switch (option)
 
 De case waarden moeten literals zijn. Dit zijn waarden die je letterlijk uitschrijft, d.w.z. die je niet voorstelt als variabele \(`1`, `"1"`, `1.0`, `1.d`, `'1'`, etc.\)
 
-## Falthrough
+## Fallthrough
 
 Soms wil je dat dezelfde code uitgevoerd wordt bij 2 of meer cases. Je kan ook zogenaamde fallthrough cases beschrijven wat er als volgt uit ziet:
 
@@ -87,5 +87,37 @@ switch (option)
   }
 ```
 
-In dit geval zullen zowel de waarden `2` en `3` resulteren in de zin "Laden of opslaan gekozen" op het scherm.
+Na `case 2` staat er niets. In dit geval zullen zowel de waarden `2` en `3` resulteren in de zin "Laden of opslaan gekozen" op het scherm.
+
+## `switch` met `enum`
+
+`switch` werkt heel goed samen met `enum` types. Als je deze twee samen gebruikt, kan Visual Studio hulp bieden bij het invullen van de mogelijkheden.
+
+```csharp
+Weekdagen keuze;
+Console.WriteLine("Welke dag is het vandaag?");
+Console.WriteLine($"{(int) Weekdagen.Maandag}. {Weekdagen.Maandag}");
+Console.WriteLine($"{(int) Weekdagen.Dinsdag}. {Weekdagen.Dinsdag}");
+// enzovoort
+keuze = (Weekdagen) Convert.ToInt32(Console.ReadLine());
+switch (keuze)
+{
+    case Maandag:
+        Console.WriteLine("Je moet het vuilnis buitenzetten.");
+        break;
+    case Dinsdag:
+        Console.WriteLine("Gitaarles!");
+        break;
+    case Woensdag:
+        Console.WriteLine("Algemene muzikale vorming.");
+        break;
+    case Donderdag:
+    case Vrijdag:
+        Console.WriteLine("Een volle werkdag.");
+        break;
+    default:
+        Console.WriteLine("Weekend.");
+        break;
+}
+```
 
