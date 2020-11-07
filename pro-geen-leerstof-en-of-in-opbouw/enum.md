@@ -2,17 +2,16 @@
 
 ## Enum datatypes
 
-{% hint style="info" %}
-Delen van dit hoofdstuk komen uit Visual C\# 2012 - De basis \(Sander Gerz\)
-{% endhint %}
+De datatypes die je al kent, kunnen veel of weinig waarden voorstellen. Met een string kan je bijvoorbeeld om het even welke tekst voorstellen, dus oneindig veel mogelijkheden. Met een byte kan je een getal tussen 0 en 255 voorstellen. Met de andere getaltypes kan je een getal in een ander bereik voorstellen. Soms matchen de waarden die je kan voorstellen niet met de mogelijkheden in het probleemdomein. Als je de mogelijkheden in het probleemdomein op voorhand kan vastleggen, is het vaak handig gebruik te maken van een **enumeratie** \(**enum**\). Een enumeratie is **een opsomming van alle mogelijke waarden** voor een variabele van een bepaald type.
 
-{% hint style="warning" %}
-Dit is nog zo'n onderschat hoofdstuk. Enums zijn wat raar in het begin, maar van zodra je er mee weg bent zal je niet meer zonder kunnen!
-{% endhint %}
+## Een voorbeeld: weekdagen
 
-## De bestaansreden voor enums
+Stel dat je een programma moet schrijven dat afhankelijk van de dag van de week iets anders moet doen. Zonder enums zou je dit kunnen schrijven op 2 zeer foutgevoelige manieren:
 
-Stel dat je een programma moet schrijven dat afhankelijk van de dag van de week iets anders moet doen. In een wereld zonder enums \(enumeraties\) zou je dit kunnen schrijven op 2 zeer foutgevoelige manieren: 1. Met een `int` die een getal van 1 tot en met 7 kan bevatten 2. Met een `string` die de naam van de dag bevat
+1. Met een `int` die een getal van 1 tot en met 7 kan bevatten
+2. Met een `string` die de naam van de dag bevat
+
+Beide hebben tekortkomingen, omdat ze niet goed genoeg overeenstemmen met de mogelijkheden in de werkelijkheid.
 
 ### Slechte oplossing 1: Met ints
 
@@ -34,8 +33,8 @@ if //enz..
 
 Deze oplossing heeft 2 grote nadelen:
 
-* Wat als we per ongeluk `dagKeuze` een niet geldige waarde geven, zoals 9, 2000, -4, etc. ? 
-* De code is niet erg leesbaar. `dagKeuze==2`? Was dat nu dinsdag of woensdag \(want misschien was maandag 0 i.p.v. 1\).
+* Wat als we per ongeluk `dagKeuze` een niet geldige waarde geven, zoals 9, 2000, -4, etc. ? We kunnen daar wel conditionele code voor voorzien, maar de compiler zal ons niet waarschuwen als we dat vergeten!
+* De code is niet erg leesbaar. `dagKeuze==2`? Was dat nu maandag, dinsdag of woensdag \(want misschien beginnen we te tellen vanaf zondag, of misschien beginnen we te tellen vanaf 0\). Je kan wel afspraken maken binnen je team, maar het is altijd mogelijk een afspraak te vergeten.
 
 ### Slechte oplossing 2: Met strings
 
@@ -57,59 +56,34 @@ if //enz..
 
 De code wordt nu wel leesbaarder dan met 1, maar toch is ook hier 1 groot nadeel:
 
-* De code is veel foutgevoeliger voor typfouten. Wanneer je `"Maandag"` i.p.v. `"maandag"` bewaard dan zal de if al niet werken. Iedere schrijffout of variant zal falen. 
+* De code is veel foutgevoeliger voor typfouten. Wanneer je `"Maandag"` i.p.v. `"maandag"` bewaart dan zal de `if` al niet werken. Iedere schrijffout of variant zal falen. 
 
-## Enumeraties: het beste van beide wereld.
+## Enumeraties: het beste van beide werelden
 
-Enumeraties \(**enum**\) zijn een C\# syntax die bovenstaand probleem oplost en het beste van beide samenvoegt: **leesbaardere code** en visual studio kan je helpen met **minder foutgevoelige foute schrijven**.
+Het keyword `enum` geeft aan dat we een nieuw datatype maken dat maar enkele mogelijke waarden kan hebben. Nadat we dit nieuwe type hebben gedefinieerd kunnen we variabelen van dit nieuwe type aanmaken.
 
-Het keyword `enum` geeft aan dat we een nieuw type maken dat maar enkele mogelijke waarden kan hebben. Nadat we dit nieuwe type hebben gedefiniëerd kunnen we variabele van dit nieuwe type aanmaken. De variabele die we dan later maken zal van dit type zijn en enkel de opgegeven waarden mogen bevatten. Ook zal IntelliSense van Visual Studio je de mogelijke waarden helpen invullen.
+In C\# zitten al veel `enum`-types ingebouwd. Denk maar aan `ConsoleColor`: wanneer je de kleur van het lettertype van de console wilt veranderen gebruiken we een enum-type. Er werd reeds gedefinieerd wat de toegelaten waarden zijn, bijvoorbeeld: `Console.ForegroundColor = ConsoleColor.Red;`
 
-In C\# zitten al veel Enum-types ingebouwd. Denk maar aan `ConsoleColor`: wanneer je de kleur van het lettertype van de console wilt veranderen gebruiken we een enum-type. Er werd reeds gedefinieerd wat de toegelaten waarden zijn, bijvoorbeeld: `Console.ForegroundColor = ConsoleColor.Red;`
+Achter de schermen worden waarden van een enum type nog steeds voorgesteld als getallen. Maar je gebruikt deze getallen niet rechtstreeks en dat verkleint de risico's.
 
 ### Zelf enum maken
 
-Zelf een `enum` type maken gebeurt in 2 stappen: 1. Het type en de mogelijke waarden definiëren 2. Variabele\(n\) van het nieuwe type aanmaken en gebruiken in je code
+Zelf een `enum` type gebruiken gebeurt in 2 stappen:
+
+1. Het type en de mogelijke waarden definiëren
+2. Variabele\(n\) van het nieuwe type aanmaken en gebruiken in je code
 
 #### Stap 1: het type definiëren
 
-We maken eerst een enum type aan. In je console-applicaties moet dit binnen `class Program` gebeuren, maar niét binnen de \(`main`\) methoden:
+We maken eerst een enum type aan. **Wij zullen dit doen in een aparte file met dezelfde naam als het nieuwe datatype.** Bijvoorbeeld:
 
 ```csharp
-enum Weekdagen {Maandag, Dinsdag, Woensdag, Donderdag, Vrijdag, Zaterdag, Zondag}
-```
-
-Vanaf nu kan je variabelen van het type `Weekdagen` aanmaken.
-
-Merk op dat er **geen puntkomma** achteraan komt.
-
-**Locatie enum definitie**
-
-Let er op dat je je `enum` op de juiste locatie in je code schrijft:
-
-```csharp
-public class Program
-{
+namespace Programmeren {
     enum Weekdagen {Maandag, Dinsdag, Woensdag, Donderdag, Vrijdag, Zaterdag, Zondag}
-
-    public static void Main(string[] args)
-    {
-
-    }
 }
 ```
 
-**Dit is fout:**
-
-```csharp
-public class Program
-{
-    public static void Main(string[] args)
-    {
-        enum Weekdagen {Maandag, Dinsdag, Woensdag, Donderdag, Vrijdag, Zaterdag, Zondag}   
-    }
-}
-```
+Vanaf nu kan je variabelen van het type `Weekdagen` aanmaken. Merk op dat er **geen puntkomma** voorkomt. **De syntax is ongeveer dezelfde als die voor de definitie van een klasse.**
 
 #### Stap 2: variabelen van het type aanmaken en gebruiken.
 
@@ -120,111 +94,95 @@ Weekdagen dagKeuze;
 Weekdagen andereKeuze;
 ```
 
-En vervolgens kunnen we waarden aan deze variabelen toewijzen als volgt
+En vervolgens kunnen we waarden aan deze variabelen toewijzen als volgt:
 
 ```csharp
 dagKeuze = Weekdagen.Donderdag;
 ```
 
-Kortom: we hebben variabelen zoals we gewoon zijn, het enige verschil is dat we nu beperkt zijn in de waarden die we kunnen toewijzen. Deze kunnen enkel de waarden zijn die in het type gedefiniëerd werden. De code is nu ook een pak leesbaarder geworden.
+Kortom: we hebben variabelen zoals we gewoon zijn, het enige verschil is dat we nu beperkt zijn in de waarden die we kunnen toewijzen. Deze kunnen enkel de waarden zijn die in het type gedefinieerd werden. De code is nu ook een pak leesbaarder geworden.
 
-### Enums en beslissingen werken graag samen
+### Waarden van een enum type inlezen
 
-Ook de beslissingsstructuren worden leesbaarder:
+Eens je met enums aan het werken bent in je programma, kan je gerust zijn dat deze een geldige waarde bevatten. Er is alleen het probleem dat je soms een van de mogelijkheden moet krijgen van de gebruiker. Een waarde van een enum type rechtstreeks intypen gaat niet. Net zoals wanneer je een getal inleest, is er een omzetting nodig. Het verschil is dat we hier een dubbele omzetting doen: van tekst naar getal en dan van getal naar enum waarde.
+
+Je kan dit als volgt doen:
 
 ```csharp
-if(dagKeuze == Weekdagen.Woensdag)
+Weekdagen keuze;
+Console.WriteLine("Welke dag is het vandaag?");
+Console.WriteLine($"{(int) Weekdagen.Maandag}. {Weekdagen.Maandag}");
+Console.WriteLine($"{(int) Weekdagen.Dinsdag}. {Weekdagen.Dinsdag}");
+// enzovoort
+keuze = (Weekdagen) Convert.ToInt32(Console.ReadLine());
 ```
 
-of een switch:
+Dit werkt en je hoeft de achterliggende getallen voor de waarden niet te kennen. Er zijn meer geavanceerde mogelijkheden, maar dit volstaat op dit punt.
+
+## Nog enkele voorbeelden van enumeratietypes
+
+De eerste kennismaking met enumeraties is wat bevreemdend: je kan plots je eigen datatypes aanmaken! Wanneer mag dat dan? Telkens je een variabele \(of meerdere\) nodig hebt waarvan je perfect op voorhand weet welke handvol mogelijke waarde ze mogen hebben.
+
+#### Voorbeeld uit een video game
+
+Er zijn slechts een handvol schermen waarop we ons kunnen bevinden en soms moet de code controleren op welk scherm we ons bevinden. Dan kan je dit doen:
 
 ```csharp
-switch(dagKeuze)
-{
-    case Weekdagen.Maandag:
-        Console.WriteLine("It's monday!");
-        break;
-    case Weekdagen.Dinsdag:
-     //etc.
+enum GameStates {Intro, Startmenu, Ingame, Gameover, Optionsscreen}
+```
+
+Nu kan je met een variabele van type `GameStates` bijhouden op welk scherm de gebruiker zich bevindt. Er zijn maar 5 mogelijkheden. Iets anders kan je aan die variabele niet toekennen.
+
+#### Voorbeeld: rangen
+
+In het Belgische leger bestaan er 23 militaire rangen. Om deze voor te stellen, kan je dit doen:
+
+```csharp
+enum Rangen {
+Soldaat,
+EersteSoldaat,
+Korporaal,
+KorporaalChef,
+EersteKorporaalChef,
+Sergeant,
+EersteSergeant,
+EersteSergeantChef,
+EersteSergeantMajoor,
+Adjudant,
+AdjudantChef,
+AdjudantMajoor,
+Onderluitenant,
+Luitenant,
+Kapitein,
+KapiteinCommandant,
+Majoor,
+LuitenantKolonel,
+Kolonel,
+BrigadeGeneraal,
+GeneraalMajoor,
+LuitenantGeneraal,
+Generaal
 }
 ```
 
-### Conversie
+Dit zijn de enige mogelijkheden. Je kan een variabele van type `Rangen` dus nooit de waarde `Maarschalk` geven, want die rang bestaat niet.
 
-Intern worden de enum-variabelen als ints bewaard. In het geval van de `Weekdagen` zal maandag de waarde 0 krijgen, dinsdag 1, etc.
+#### Voorbeeld: planeten in ons zonnestelsel
 
-Volgende conversies met behulp van [casting](../semester-1-programming-principles/h3-werken-met-data/4_converteren.md) zijn dan ook perfect toegelaten:
-
-```csharp
-int keuze = 3;
-
-Weekdagen dagKeuze = (Weekdagen)keuze;
-
-//dagKeuze zal de waarde Weekdagen.Donderdag hebben
-```
-
-Wil je dus bijvoorbeeld 1 dag bijtellen dan kan je schrijven:
+Schrijf je code die te maken heeft met ons zonnestelsel? Dan kan je dit gebruiken:
 
 ```csharp
-Weekdagen dagKeuze= Weekdagen.Dinsdag;
-int extradag= (int)dagKeuze + 1;
-Weekdagen nieuweDag= (Weekdagen)extradag;
-//extraDag heeft de waarde Weekdagen.Woensdag
+enum Rangen {
+Mercurius,
+Venus,
+Aarde,
+Mars,
+Jupiter,
+Saturnus,
+Uranus,
+Neptunus
+}
 ```
 
-### Andere interne waarde
-
-Standaard worden de waarden dus genummerd intern beginnende bij 0, enz. Je kan dit ook manueel veranderen door bij het maken van de `enum` expliciet aan te geven wat de interne waarde moet zijn, als volgt:
-
-```csharp
-enum WeekDagen {Maandag=1, Dinsdag, Woensdag, Donderdag, Vrijdag, Zaterdag, Zondag}
-```
-
-De dagen zullen nu vanaf 1 genummerd worden, dus `WeekDagen.Woensdag` zal de waarde 3 hebben.
-
-We kunnen ook nog meer informatie meegeven, bijvoorbeeld:
-
-```csharp
-enum WeekDagen {Maandag=1, Dinsdag, Woensdag, Donderdag, Vrijdag, Zaterdag=50, Zondag=60}
-```
-
-In dit geval zullen Maandag tot Vrijdag intern als 1 tot en met 5 bewaard worden, Zaterdag als 50, en Zondag als 60.
-
-## Why should I care?
-
-![](../.gitbook/assets/care%20%283%29.jpg)
-
-Je kan perfect leven zonder `enum`. Vele programmeurs voor je hebben dit bewezen. Echter, van zodra ze `enum`ontdekten \(en begrepen\) zijn nog maar weinig programmeurs ervan af gestapt.
-
-De eerste kennismaking met enumeraties is wat bevreemdend: je kan plots je eigen datatypes aanmaken?! Van zodra je ze in de vingers hebt zal je ontdekken dat je veel leesbaardere code kunt schrijven én dat Visual Studio je kan helpen met het opsporen van bugs.
-
-Wanneer gebruik je `enum`? Telkens je een variabele \(of meerdere\) nodig hebt waarvan je perfect op voorhand weet welke handvol mogelijke waarde ze mogen hebben. Ze worden bijvoorbeeld vaak gebruikt in **finite state machines**. Bij game development willen we bijhouden in welke staat het programma zich bevindt: `intro`, `startmenu`, `ingame`, `gameover`, `optionsscreen`, etc. Dit is een typisch `enum` verhaal. We definiëren hiervoor het volgende type:
-
-```csharp
-enum gamestate {intro, startmenu, ingame, gameover, optionsscreen}
-```
-
-En vervolgens kunnen we dan met een eenvoudige switch in ons hoofdprogramma snel de relevante code uitvoeren:
-
-```csharp
-//Bij opstart:
-gamestate playerGameState= gamestate.intro;
-
-//later:
-switch(playerGameState)
-{
-    case gamestate.intro:
-        //show fancy movie
-        break;
-    case gamestate.startmenu:
-        //show start menu
-        break;
-    //etc...
-```
-
-## Kennisclip
-
-![](../.gitbook/assets/infoclip%20%282%29.png)
-
-* [Enums gebruiken](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=9273e56b-1bfa-4393-a14a-aaed00bd4eaf)
+**Een enum is hier alleen geschikt als je je beperkt tot een vast stel planeten.** Je zou iets anders moeten gebruiken als je een onbegrensd aantal planeten wil toelaten, bijvoorbeeld als je het volledige heelal wil voorstellen.
 
