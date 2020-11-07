@@ -67,10 +67,6 @@ switch (option)
 
 De case waarden moeten literals zijn. Dit zijn waarden die je letterlijk uitschrijft, d.w.z. die je niet voorstelt als variabele \(`1`, `"1"`, `1.0`, `1.d`, `'1'`, etc.\)
 
-{% hint style="warning" %}
-Wil je een variabele introduceren in een van de cases? Dan moet je een accolade openen na de dubbele punt en sluiten na de `break`.
-{% endhint %}
-
 ## Fallthrough
 
 Soms wil je dat dezelfde code uitgevoerd wordt bij 2 of meer cases. Je kan ook zogenaamde fallthrough cases beschrijven wat er als volgt uit ziet:
