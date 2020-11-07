@@ -122,7 +122,7 @@ Wat is de weerstand?
 > 30
 Wat is de stroomsterkte?
 > 5
-De stroomsterkte bedraagt 150.
+De spanning bedraagt 150.
 ```
 
 ```text
@@ -130,9 +130,9 @@ Wat wil je berekenen? spanning, weerstand of stroomsterkte?
 > weerstand
 Wat is de spanning?
 > 220
-Wat is de weerstand?
+Wat is de stroomsterkte?
 > 10
-De stroomsterkte bedraagt 22.
+De weerstand bedraagt 22.
 ```
 
 ```text
