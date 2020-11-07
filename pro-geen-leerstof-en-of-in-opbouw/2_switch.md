@@ -67,6 +67,10 @@ switch (option)
 
 De case waarden moeten literals zijn. Dit zijn waarden die je letterlijk uitschrijft, d.w.z. die je niet voorstelt als variabele \(`1`, `"1"`, `1.0`, `1.d`, `'1'`, etc.\)
 
+{% hint style="warning" %}
+Wil je een variabele introduceren in een van de cases? Dan moet je een accolade openen na de dubbele punt en sluiten na de `break`.
+{% endhint %}
+
 ## Fallthrough
 
 Soms wil je dat dezelfde code uitgevoerd wordt bij 2 of meer cases. Je kan ook zogenaamde fallthrough cases beschrijven wat er als volgt uit ziet:
@@ -91,7 +95,7 @@ Na `case 2` staat er niets. In dit geval zullen zowel de waarden `2` en `3` resu
 
 ## `switch` met `enum`
 
-`switch` werkt heel goed samen met `enum` types. Als je deze twee samen gebruikt, kan Visual Studio hulp bieden bij het invullen van de mogelijkheden.
+`switch` werkt goed samen met `enum` types. Als je deze twee samen gebruikt, kan Visual Studio hulp bieden bij het invullen van de mogelijkheden.
 
 ```csharp
 Weekdagen keuze;
@@ -102,17 +106,17 @@ Console.WriteLine($"{(int) Weekdagen.Dinsdag}. {Weekdagen.Dinsdag}");
 keuze = (Weekdagen) Convert.ToInt32(Console.ReadLine());
 switch (keuze)
 {
-    case Maandag:
+    case Weekdagen.Maandag:
         Console.WriteLine("Je moet het vuilnis buitenzetten.");
         break;
-    case Dinsdag:
+    case Weekdagen.Dinsdag:
         Console.WriteLine("Gitaarles!");
         break;
-    case Woensdag:
+    case Weekdagen.Woensdag:
         Console.WriteLine("Algemene muzikale vorming.");
         break;
-    case Donderdag:
-    case Vrijdag:
+    case Weekdagen.Donderdag:
+    case Weekdagen.Vrijdag:
         Console.WriteLine("Een volle werkdag.");
         break;
     default:
