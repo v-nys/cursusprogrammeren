@@ -1,4 +1,4 @@
-# enum
+# Enum
 
 ## Enum datatypes
 
