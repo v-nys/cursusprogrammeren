@@ -53,11 +53,7 @@
   * [Enum](semester-1-programming-principles/h4-beslissingen/enum.md)
   * [Switch](semester-1-programming-principles/h4-beslissingen/2_switch.md)
   * [Oefeningen](semester-1-programming-principles/h4-beslissingen/a_practica.md)
-* [H6: Exception handling](semester-1-programming-principles/exception-handling/README.md)
-  * [Werken met exceptions](semester-1-programming-principles/exception-handling/werken-met-exceptions.md)
-  * [Waar exceptions plaatsen](semester-1-programming-principles/exception-handling/waar-exceptions-plaatsen.md)
-  * [Zelf uitzonderingen maken](semester-1-programming-principles/exception-handling/zelf-uitzonderingen-maken.md)
-* [H7: Loops](semester-1-programming-principles/h5-loops/README.md)
+* [H6: Loops](semester-1-programming-principles/h5-loops/README.md)
   * [Loops intro](semester-1-programming-principles/h5-loops/0_loops_intro.md)
   * [While en Do While](semester-1-programming-principles/h5-loops/1_while_dowhile.md)
   * [For](semester-1-programming-principles/h5-loops/2_for.md)
@@ -66,13 +62,13 @@
   * [Oefeningen deel 1](semester-1-programming-principles/h5-loops/a_practica.md)
   * [Oefeningen deel 2](semester-1-programming-principles/h5-loops/c_practica.md)
   * [Oefeningen deel 3](semester-1-programming-principles/h5-loops/b_practica.md)
-* [H8: Methoden](semester-1-programming-principles/h6-methoden/README.md)
+* [H7: Methoden](semester-1-programming-principles/h6-methoden/README.md)
   * [Methoden intro](semester-1-programming-principles/h6-methoden/0_intromethods.md)
   * [Bibliotheken](semester-1-programming-principles/h6-methoden/1_bibliotheken.md)
   * [Geavanceerde methoden](semester-1-programming-principles/h6-methoden/3_advancedmethod.md)
   * [Oefeningen](semester-1-programming-principles/h6-methoden/b_practica.md)
   * [Uitbreidingsoefeningen](semester-1-programming-principles/h6-methoden/c_practica.md)
-* [H9: Arrays](semester-1-programming-principles/h7-arrays/README.md)
+* [H8: Arrays](semester-1-programming-principles/h7-arrays/README.md)
   * [Array principes](semester-1-programming-principles/h7-arrays/1_arraysbasics.md)
   * [Werken met arrays](semester-1-programming-principles/h7-arrays/2_werken_met_arrays.md)
   * [Arrays en methoden](semester-1-programming-principles/h7-arrays/3_arrays_en_methoden.md)
@@ -110,10 +106,18 @@
   * [Constructors bij overerving](semester-2-oop/h12-overerving/3_constructors_inheritance.md)
   * [Virtual en override](semester-2-oop/h12-overerving/1_virtual_override.md)
   * [Abstract](semester-2-oop/h12-overerving/5_abstract.md)
-* [H15: Geavanceerde overerving](semester-2-oop/h13-geavanceerde-overerving/README.md)
+* [H15: Exception handling](semester-2-oop/exception-handling/README.md)
+  * [Werken met exceptions](semester-2-oop/exception-handling/werken-met-exceptions.md)
+  * [Zelf uitzonderingen maken](semester-2-oop/exception-handling/zelf-uitzonderingen-maken.md)
+  * [Wanneer exceptions en handling gebruiken](semester-2-oop/exception-handling/waar-exceptions-plaatsen.md)
+* [H16: Geavanceerde overerving](semester-2-oop/h13-geavanceerde-overerving/README.md)
   * [Base keyword](semester-2-oop/h13-geavanceerde-overerving/2_base.md)
   * [System.Object](semester-2-oop/h13-geavanceerde-overerving/4_system_object.md)
   * [Oefeningen](semester-2-oop/h13-geavanceerde-overerving/a_practica.md)
+
+---
+
+* [Recursie](recursie.md)
 
 ## Appendix
 
