@@ -10,22 +10,24 @@ Als de code die het probleem kan vaststellen het probleem ook kan oplossen, heb 
 ```csharp
 public static void WensGelukkigeVerjaardag() {
     bool gewenst = false;
+    byte leeftijd;
     while(!gewenst) {
         try {
-            byte leeftijd = Convert.ToByte(Console.ReadLine());
-            if (leeftijd < 1) {
-                Console.WriteLine("Een nulde verjaardag? Dat heet een geboorte.");
-            }
-            else if (leeftijd > 125) {
-                Console.WriteLine("Sorry, dat geloof ik niet.");
-            }
-            else {
-                Console.WriteLine($"Gelukkige {leeftijd}e verjaardag!");
-                gewenst = true;
-            }
+            leeftijd = Convert.ToByte(Console.ReadLine());
         }
         catch (FormatException e) {
             Console.WriteLine("Dat was geen (geheel) getal tussen 0 en 255.");
+            continue;
+        }
+        if (leeftijd < 1) {
+            Console.WriteLine("Een nulde verjaardag? Dat heet een geboorte.");
+        }
+        else if (leeftijd > 125) {
+            Console.WriteLine("Sorry, dat geloof ik niet.");
+        }
+        else {
+            Console.WriteLine($"Gelukkige {leeftijd}e verjaardag!");
+            gewenst = true;
         }
     }
 }
