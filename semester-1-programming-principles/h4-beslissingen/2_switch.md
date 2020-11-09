@@ -1,5 +1,9 @@
 # Switch
 
+{% hint style="success" %}
+[Kennisclip](https://youtu.be/FFsVqOTGIHw)
+{% endhint %}
+
 ## `switch`
 
 Een `switch` statement is een program-flow element om een veelvoorkomende constructie van `if`/`if else`...`else` elementen eenvoudiger te tonen. Vaak komt het voor dat we bijvoorbeeld aan de gebruiker vragen om een keuze te maken \(bijvoorbeeld een getal van 1 tot 10, waarbij ieder getal een ander menu-item uitvoert van het programma\), zoals:

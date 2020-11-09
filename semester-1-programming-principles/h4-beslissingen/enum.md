@@ -1,5 +1,9 @@
 # Enum
 
+{% hint style="success" %}
+[Kennisclip](https://youtu.be/k4aeNzfH31E)
+{% endhint %}
+
 ## Enum datatypes
 
 De datatypes die je al kent, kunnen veel of weinig waarden voorstellen. Met een string kan je bijvoorbeeld om het even welke tekst voorstellen, dus oneindig veel mogelijkheden. Met een byte kan je een getal tussen 0 en 255 voorstellen. Met de andere getaltypes kan je een getal in een ander bereik voorstellen. Soms matchen de waarden die je kan voorstellen niet met de mogelijkheden in het probleemdomein. Als je de mogelijkheden in het probleemdomein op voorhand kan vastleggen, is het vaak handig gebruik te maken van een **enumeratie** \(**enum**\). Een enumeratie is **een opsomming van alle mogelijke waarden** voor een variabele van een bepaald type.
