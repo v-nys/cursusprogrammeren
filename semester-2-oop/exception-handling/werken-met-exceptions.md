@@ -1,5 +1,9 @@
 # Werken met exceptions
 
+{% hint style="success" %}
+[Kennisclip inleiding](https://youtu.be/v_A8EOOeGj4)
+{% endhint %}
+
 Een methode is, in essentie, een stappenplan. Een stappenplan kan niet altijd rekening houden met elke mogelijke situatie. Soms treden er uitzonderlijke situaties op waarin het plan niet meer gevolgd kan worden. Het programmeerconcept dat overeenstemt met zo'n "uitzonderlijke situatie" is de _exception_ \(Engels voor "uitzondering"\).
 
 Een uitzonderlijke situatie kan niet altijd verholpen worden door het stappenplan uit te breiden. Code die een deling implementeert kan bijvoorbeeld gewoonweg niet verder als je ze gebruikt om door het getal 0 te delen. Een methode als `File.ReadAllLines` kan zelf niet weten wat ze moet doen als de file die je wil lezen niet bestaat: moet er gebruik gemaakt worden van default data, moet de gebruiker gevraagd worden om de file eerst in te vullen,...? Er is geen eenduidig antwoord. Het hangt af van de **context** waarin de methode gebruikt wordt. Dat wil zeggen: de code die, rechtstreeks of onrechtstreeks, de code heeft opgeroepen waarin de uitzonderlijke situatie is opgetreden.
@@ -25,6 +29,10 @@ Misschien is optie 1 beter voor jouw programma, misschien is optie 2 beter voor 
 
 ## Code zonder exception handling
 
+{% hint style="success" %}
+[Kennisclip onafgehandelde exceptions](https://youtu.be/AHjPBv-Mqhg)
+{% endhint %}
+
 Je zal zelf waarschijnlijk al exceptions zijn tegengekomen in je console programma's. Wanneer je je programma gewoon uitvoert en er plots een hele hoop tekst verschijnt \(met ondere andere het woord _Exception_ in\), gevolgd door het prompt afsluiten ervan, dan heb je een exception gegenereerd die je niet hebt afgehandeld.
 
 ![Niet-afgehandelde exception](../../.gitbook/assets/image%20%2824%29.png)
@@ -36,6 +44,10 @@ Indien je aan het debuggen bent en je krijgt een exception dan zal deze anders g
 ![In VS is de foutboodschap iets leesbaarder](../../.gitbook/assets/image%20%2825%29.png)
 
 ## Try en Catch
+
+{% hint style="success" %}
+[Kennisclip try en catch](https://youtu.be/giXT_Ru061Y)
+{% endhint %}
 
 Het mechanisme om exceptions af te handelen in C\# bestaat uit 2 delen:
 
@@ -73,6 +85,10 @@ Vervang de directeur door methode C \(bijvoorbeeld `Main`\), de departementsmana
 
 ## try catch voorbeeld
 
+{% hint style="success" %}
+[Voorbeeld try catch](https://youtu.be/KwCYAbqyyZs)
+{% endhint %}
+
 In volgend stukje code kunnen uitzonderingen optreden:
 
 ```csharp
@@ -99,6 +115,10 @@ catch (Exception e)
 Indien er nu een uitzondering optreedt dan zal de tekst “Verkeerde invoer” getoond worden. Vervolgens gaat het programma verder met de code die mogelijk na het catch-blok staat. Merk ook op dat we het `try`-blok zo klein mogelijk gemaakt hebben door het enkel rond de conversiestap te zetten. Het is een goede gewoonte de context waarin een exception kan optreden zo nauwkeurig mogelijk af te bakenen. Maak je `try`-blokken zo klein als nodig is het gewenste gedrag uit je programma te krijgen, maar niet kleiner.
 
 ## Meerdere `catch`-blokken
+
+{% hint style="success" %}
+[Kennisclip soorten exceptions](https://youtu.be/L-O8kFSK_UI)
+{% endhint %}
 
 `Exception` is een klasse van het .NET framework. Er zijn van deze ouderklasse meerdere exception-klassen afgeleid die een specifieke probleemsituatie beschrijven. Enkele veelvoorkomende zijn:
 
@@ -147,6 +167,10 @@ De MSDN bibliotheek is de manier om te weten te komen welke exceptions een metho
 
 ## De stack \(trace\)
 
+{% hint style="success" %}
+[Kennisclip stack \(trace\)](https://youtu.be/E2RdKJ1BFXg)
+{% endhint %}
+
 Herinner je uit [het hoofdstuk rond geheugenbeheer](../h9-geheugenmanagement-bij-klassen/6_memorymanagement.md) dat elke methode-oproep data op de stack plaatst, het "snelle programmageheugen". Dus als methode A methode B oproept en methode B roept methode C op, krijg je een stack die er als volgt uitziet:
 
 |  |
@@ -158,6 +182,10 @@ Herinner je uit [het hoofdstuk rond geheugenbeheer](../h9-geheugenmanagement-bij
 Hier is een belangrijke link met exceptions: de methodes die op een gegeven moment op stack worden opgevolgd, vormen de context waarin een exception kan optreden. Als er een exception optreedt in C is het aan B om die af te handelen. Lukt dat niet, dan is het aan A. Wanneer er een exception optreedt, krijg je een gedeeltelijke weergave van de stack te zien. Deze weergave heet de **stack trace**. Ze is een erg nuttig hulpmiddel als je probeert op te sporen waar een exception precies vandaan komt.
 
 ## Werken met de exception parameter
+
+{% hint style="success" %}
+[Kennisclip exception parameter](https://youtu.be/pzxW98J53KA)
+{% endhint %}
 
 De Exceptions die worden ‘gegooid’ door het programma zijn objecten van de Exception-klasse. Deze klasse bevat standaard een aantal interessante properties en methoden, die je kan oproepen in je code.
 

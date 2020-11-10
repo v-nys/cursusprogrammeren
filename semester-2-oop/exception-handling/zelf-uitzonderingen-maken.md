@@ -1,5 +1,9 @@
 # Zelf uitzonderingen maken
 
+{% hint style="success" %}
+[Kennisclip voor deze inhoud](https://youtu.be/EdiLIhxrgWM)
+{% endhint %}
+
 ## Zelf exceptions opwerpen
 
 Je kan ook in je eigen code uitzonderingen genereren, zodat deze elders opgevangen worden. Je kan hierbij zelf exceptions maken of gewoon gebruik maken van een bestaande `Exception`-klasse.

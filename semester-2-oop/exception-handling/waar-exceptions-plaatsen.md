@@ -1,5 +1,9 @@
 # Wanneer exceptions en handling gebruiken
 
+{% hint style="success" %}
+[Kennisclip voor deze inhoud](https://youtu.be/wim_3RRnx7U)
+{% endhint %}
+
 In het begin kan het onduidelijk zijn wanneer je problemen best afhandelt met klassieke conditionele code \(met andere woorden, `if` en verwanten\) en wanneer met exceptions. Je vertrekt best van uit twee vragen:
 
 1. Welke code kan het probleem tijdig vaststellen?
