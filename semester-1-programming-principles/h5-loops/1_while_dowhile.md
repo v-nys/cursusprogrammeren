@@ -11,11 +11,15 @@ while (booleaanse expressie)
 }
 ```
 
-Waarbij, net als bij een `if` statement, de conditie uitgedrukt wordt als een booleaanse expressie met 1 of meerdere relationele operatoren.
+Waarbij, net als bij een `if` statement, de conditie uitgedrukt wordt als een booleaanse expressie.
 
 Zolang de conditie `true` is zal de code binnen de accolades uitgevoerd worden. Indien dus de conditie reeds vanaf het begin `false` is dan zal de code binnen de `while`-loop niet worden uitgevoerd.
 
 Telkens wanneer het programma aan het einde van het `while` codeblock komt springt het terug naar de conditie bovenaan en zal de test wederom uitvoeren. Is deze weer `true` dan wordt de code weer uitgevoerd. Van zodra de test `false` is zal de code voorbij het codeblock springen en na het `while` codeblok doorgaan.
+
+{% hint style="info" %}
+De `while` is dus bijna identiek aan de `if` zonder `else`.  Het **enige** verschil: nadat het block is uitgevoerd, wordt de voorwaarde opnieuw getest en wordt het block eventueel opnieuw uitgevoerd.
+{% endhint %}
 
 Het diagramma is duidelijk:
 
@@ -56,19 +60,21 @@ do{
 ```
 
 {% hint style="warning" %}
-Merk op dat achteraan de conditie een puntkomma na het ronde haakje staat. **Dit is een véél voorkomende fout. Bij een while is dit niet!** Daar de test van een do-while achteraan de code van de loop gebeurt is het logisch dat een do-while dus minstens 1 keer wordt uitgevoerd. Het volgende eenvoudige aftelprogramma toont de werking van de do-while loop.
+Merk op dat achteraan de conditie een puntkomma na het ronde haakje staat. **Dit is een véél voorkomende fout. Bij een while is dit niet zo!** Daar de test van een do-while achteraan de code van de loop gebeurt is het logisch dat een do-while dus minstens 1 keer wordt uitgevoerd. Het volgende eenvoudige aftelprogramma toont de werking van de do-while loop.
 {% endhint %}
 
 ```csharp
-int i = 10;
-do
-{
-    i--;
-    Console.WriteLine(i);
-} while (i > 0);
+string antwoord;
+do {
+    antwoord = Console.ReadLine();
+} while (antwoord != "ja" && antwoord != "nee");
 ```
 
-Begrijp je wat dit programma zal doen?
+Begrijp je waarom een gewone `while` hier niet geschikt is?
+
+{% hint style="warning" %}
+Dit is niet om te zeggen dat je dit niet kan schrijven met een gewone `while`. Maar deze werkwijze levert de eenvoudigste code.
+{% endhint %}
 
 ### Complexe condities
 
