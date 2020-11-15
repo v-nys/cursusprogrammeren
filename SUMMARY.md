@@ -58,6 +58,7 @@
   * [Loops intro](semester-1-programming-principles/h5-loops/0_loops_intro.md)
   * [While en Do While](semester-1-programming-principles/h5-loops/1_while_dowhile.md)
   * [For](semester-1-programming-principles/h5-loops/2_for.md)
+  * [Break en continue](semester-1-programming-principles/h5-loops/break-en-continue.md)
   * [Nesting](semester-1-programming-principles/h5-loops/3_nesting.md)
   * [Oefeningen deel 1](semester-1-programming-principles/h5-loops/a_practica.md)
   * [Oefeningen deel 2](semester-1-programming-principles/h5-loops/c_practica.md)
