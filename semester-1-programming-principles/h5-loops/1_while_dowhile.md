@@ -43,13 +43,11 @@ Daar de test gebeurt aan het begin van de loop wil dit zeggen dat het getal 100 
 
 ### Do while
 
-In tegenstelling tot een while loop, zal een do-while loop sowieso **minstens 1 keer uitgevoerd worden**. Ongeacht de opgegeven conditie zal de do-while loop zijn code 1 keer uitvoeren. We herhalen deze zin uitdrukkelijk 2x zodat het verschil tussen beide type loops duidelijk blijft.
+In tegenstelling tot een while loop, zal een do-while loop sowieso **minstens 1 keer uitgevoerd worden**. Ongeacht de opgegeven conditie zal de do-while loop zijn code 1 keer uitvoeren. We herhalen deze zin uitdrukkelijk twee keer zodat het verschil tussen beide type loops duidelijk blijft.
 
-Vergelijk volgende diagramma van de `do while`:
+Vergelijk volgende diagramma van de `do while` met dat van de `while` hierboven:
 
 ![](../../.gitbook/assets/dowhile%20%282%29.png)
-
-met die hierboven van de `while`.
 
 De syntax van een do-while is eveneens verraderlijk eenvoudig:
 
@@ -110,8 +108,8 @@ Volgende twee voorbeelden tonen dit:
   int teller = 0; 
   while(teller<10)
   {
-  Console.WriteLine(teller);
-  teller--;    //oops, dit had teller++ moeten zijn
+      Console.WriteLine(teller);
+      teller+1; // dit had teller++ moeten zijn
   }
   ```
 
