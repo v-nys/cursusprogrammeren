@@ -91,7 +91,7 @@ while(teller > 5 && naam != "tim")
 
 ### Oneindige loops
 
-Indien de loop-conditie nooit `false` wordt dan heb je een oneindige loop gemaakt. Soms is dit gewenst gedrag \(bijvoorbeeld bij de gameloop\) soms is dit een bug en zal je dit moeten debuggen.
+Indien de loop-conditie nooit `false` wordt, dan heb je een oneindige loop gemaakt. Soms is dit gewenst gedrag \(bijvoorbeeld in een programma dat constant je scherm moet updaten, zoals in een game\), soms is dit een bug.
 
 Volgende twee voorbeelden tonen dit:
 
@@ -173,7 +173,7 @@ do
 Merk op dat we de variabele `string input` VOOR de `do while` moeten aanmaken. Zouden we die IN de loop pas aanmaken dan zou de variabele niet als test kunnen gebruikt worden aan het einde van de loop.
 
 {% hint style="info" %}
-Je ziet dat het stuk `} while(input...);` achteraan buiten de accolades van de loop ligt en dus een andere scope heeft.
+Je ziet dat het stuk `while(input...);` achteraan buiten de accolades van de loop ligt en dus een andere scope heeft dan wat binnen de accolades ligt.
 {% endhint %}
 
 ## Kennisclip
