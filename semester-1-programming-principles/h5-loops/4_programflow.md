@@ -18,25 +18,33 @@ Een flowchart bestaat uit een aantal elementen:
 
 We tonen nu kort de verschillende program flow elementen en hoe ze in een flowchart voorkomen.
 
-### If-element
+### Elementen uit eerdere hoofdstukken
+
+#### If-element
 
 ![](../../.gitbook/assets/if%20%282%29.png)
 
-### If-else element
+#### If-else element
 
 ![](../../.gitbook/assets/ifelse%20%282%29.png)
 
-### While-element
+### Elementen die dit hoofdstuk aan bod komen
+
+{% hint style="info" %}
+Onderstaande elementen zal je pas herkennen nadat je dit hoofdstuk al eens volledig hebt gelezen. Als dit de eerste keer is dat je deze leerstof bekijkt, spring dan meteen naar het voorbeeld van een flowchart onderaan deze pagina. De diagrammen meteen onder deze info-box worden in de loop van het hoofdstuk uitgelegd.
+{% endhint %}
+
+#### While-element
 
 ![](../../.gitbook/assets/while%20%283%29.png)
 
-### Do while-element
+#### Do while-element
 
 ![](../../.gitbook/assets/dowhile%20%282%29.png)
 
 Merk op dat bij if en if-else de flow niet naar een eerder punt in de code gaat. Dit is dus de manier om een while/do while te herkennen: er wordt naar een eerder punt in de code gegaan, een punt waar we reeds geweest waren
 
-### For-element
+#### For-element
 
 ![](../../.gitbook/assets/for%20%283%29.png)
 
@@ -46,11 +54,5 @@ Door de eerder beschreven elementen nu samen te voegen kunnen we een programma a
 
 ![](../../.gitbook/assets/fullflow%20%282%29.png)
 
-Zoals verteld kunnen we een flowchart in beide richtingen gebruiken. We hebben de flowchart hiervoor gemaakt, gebaseerd op onze oplossing van het vorige labo. Maar stel dat je deze flowchart krijgt, dan kan je dus ook deze chart rechtstreeks omzetten in C\#.
-
-{% hint style="info" %}
-## Code 2 flow
-
-Via de [website en app "Code2flow"](https://code2flow.com/app) kan je heel eenvoudig een flowchart genereren van pseudocode.
-{% endhint %}
+We kunnen een flowchart in beide richtingen gebruiken: om bestaande code te verduidelijken of om een proces te vertalen naar de juiste programmaconstructies.
 

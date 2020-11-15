@@ -126,7 +126,7 @@ int teller= 1;
 while(teller <= 10)
 {
    int som= 0;
-   som= som+teller;
+   som = som+teller;
    teller++;
 }
 Console.WriteLine(som); //deze lijn zal fout genereren
@@ -140,7 +140,7 @@ int som=0;
 while(teller <= 10)
 {
 
-   som= som+teller;
+   som = som+teller;
    teller++
 }
 Console.WriteLine(som);
@@ -163,7 +163,7 @@ do
 {
   Console.WriteLine("Geef uw keuze in: a, b of c");
   input= Console.ReadLine();
-}while(input != "a"  || input != "b" || input != "c");
+} while (input != "a"  || input != "b" || input != "c");
 ```
 
 **Zolang \(while\) de gebruiker niet `"a"` OF `"b"` OF `"c"` invoert zal de loop zichzelf blijven herhalen.**
@@ -173,11 +173,4 @@ Merk op dat we de variabele `string input` VOOR de `do while` moeten aanmaken. Z
 {% hint style="info" %}
 Je ziet dat het stuk `while(input...);` achteraan buiten de accolades van de loop ligt en dus een andere scope heeft dan wat binnen de accolades ligt.
 {% endhint %}
-
-## Kennisclip
-
-![](../../.gitbook/assets/infoclip%20%282%29.png)
-
-* [De while loop en soorten loops](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=3d1f021e-0152-4dcd-9e73-a99800b53707)
-* [Do-while loops](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=82314092-f4bf-408b-bb3f-a99800b6f1c8)
 
