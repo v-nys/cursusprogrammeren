@@ -109,7 +109,6 @@ Volgende twee voorbeelden tonen dit:
   while(teller<10)
   {
       Console.WriteLine(teller);
-      teller = teller + 1 - 1;
   }
   ```
 
