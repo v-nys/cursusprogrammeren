@@ -2,6 +2,10 @@
 
 ## For
 
+{% hint style="success" %}
+[Kennisclip](https://youtu.be/ZlpqH51X-tM)
+{% endhint %}
+
 Een veelvoorkomende manier van while-loops gebruiken is waarbij je een bepaalde teller bijhoudt die je telkens met een bepaalde waarde verhoogt. Wanneer de teller een bepaalde waarde bereikt moet de loop afgesloten worden.
 
 Bijvoorbeeld volgende code om alle even getallen van 0 tot 10 te tonen:

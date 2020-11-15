@@ -1,5 +1,9 @@
 # Loops intro
 
+{% hint style="success" %}
+[Kennisclip](https://youtu.be/kD1QJfVSXwM)
+{% endhint %}
+
 Herhalingen \(**loops**\) creëer je wanneer bepaalde code een aantal keer moet herhaald worden. Hoe vaak de herhaling moet duren is afhankelijk van de conditie die je hebt bepaald. Deze conditie is een booleaanse expressie, net zoals de conditie van `if`. 
 
 In het vorige hoofdstuk leerden we hoe we met behulp van beslissingen onze code konden _branchen_, aftakken zodat andere code werd uitgevoerd afhankelijk van de staat van bepaalde variabelen of invoer van de gebruiker. Wat we nog niet konden was **terug naar boven** vertakken. Soms willen we dat een heel stuk code 2 of meerdere keren moet uitgevoerd worden zo lang als of totdat aan een bepaalde conditie wordt voldaan. "Voer volgende code uit tot dat de gebruiker een bepaalde waarde invoert." Dit zal bijna net hetzelfde werken als bij `if`, maar nadat je code is uitgevoerd, wordt de conditie \(opnieuw\) gecontroleerd om na te gaan of de code \(opnieuw\) moet worden uitgevoerd.

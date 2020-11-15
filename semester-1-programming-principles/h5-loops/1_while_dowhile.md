@@ -1,5 +1,9 @@
 # While en Do While
 
+{% hint style="success" %}
+[Kennisclip standaard while](https://youtu.be/PjUbLsvAFtk)
+{% endhint %}
+
 ### While
 
 De syntax van een while loop is eenvoudig:
@@ -43,6 +47,10 @@ Daar de test gebeurt aan het begin van de loop wil dit zeggen dat het getal 100 
 
 ### Do while
 
+{% hint style="success" %}
+[Kennisclip do while](https://youtu.be/X_wMRX_fFiA)
+{% endhint %}
+
 In tegenstelling tot een while loop, zal een do-while loop sowieso **minstens 1 keer uitgevoerd worden**. Ongeacht de opgegeven conditie zal de do-while loop zijn code 1 keer uitvoeren. We herhalen deze zin uitdrukkelijk twee keer zodat het verschil tussen beide type loops duidelijk blijft.
 
 Vergelijk volgende diagramma van de `do while` met dat van de `while` hierboven:
@@ -75,6 +83,10 @@ Dit is niet om te zeggen dat je dit niet kan schrijven met een gewone `while`. M
 {% endhint %}
 
 ### Complexe condities
+
+{% hint style="success" %}
+[Kennisclip booleaanse voorwaarden](https://youtu.be/0e56QIzX_nQ)
+{% endhint %}
 
 Uiteraard mag de conditie waaraan een loop moet voldoen complexer zijn door middel van de relationele operatoren.
 
@@ -117,6 +129,10 @@ Probeer er altijd zeker van te zijn dat de variabele\(n\) die je gebruikt in je 
 {% endhint %}
 
 ### Scope van variabelen in loops
+
+{% hint style="success" %}
+[Kennisclip scope](https://youtu.be/qRyfmvO6XPE)
+{% endhint %}
 
 Let er op dat de [scope](../h4-beslissingen/3_scope.md) van variabelen bij loops zeer belangrijk is. Indien je een variabelen binnen de loop definieert dan zal deze steeds terug "gereset" worden wanneer de volgende cyclus van de loop start. Volgende code toont bijvoorbeeld **foutief** hoe je de som van de eerste 10 getallen \(1+2+3+...+10\) zou maken:
 

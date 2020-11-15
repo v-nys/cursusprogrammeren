@@ -1,5 +1,9 @@
 # Programma flow analyse
 
+{% hint style="success" %}
+[Kennisclip](https://youtu.be/004pN5a0dBc)
+{% endhint %}
+
 ## Programma flow analyse
 
 Door een flowchart op te stellen is het vaak veel eenvoudiger om een programma ofwel te analyseren \(van code naar idee\) ofwel om een programma te schrijven \(van idee naar code\).
