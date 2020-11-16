@@ -8,6 +8,10 @@
 
 {% file src="../../.gitbook/assets/flowchartwinkel.pdf" caption="flowchart \"naar de winkel gaan\" uit het filmpje" %}
 
+{% hint style="warning" %}
+In het filmpje worden pijlen met pijlen verbonden, in de PDF's verbinden pijlen enkel met figuren. De betekenis is dezelfde, maar pijlen met pijlen verbinden is lastiger in het tekenprogramma. De flowchart "studeren" in de PDF is iets efficiënter dan die in het filmpje maar ze beschrijven hetzelfde proces.
+{% endhint %}
+
 ## Programma flow analyse
 
 Door een flowchart op te stellen is het vaak veel eenvoudiger om een programma ofwel te analyseren \(van code naar idee\) ofwel om een programma te schrijven \(van idee naar code\).
