@@ -2,29 +2,31 @@
 
 ## System.Object
 
-**Alle** klassen C\# zijn afstammelingen van de `System.Object` klasse. Indien je een klasse schrijft zonder een expliciete parent dan zal deze steeds System.Object als rechtstreekse parent hebben. Ook afgeleide klassen stammen dus af van System.Object. Concreet wil dit zeggen dat alle klassen System.Object-klassen zijn en dus ook de bijhorende functionaliteit ervan hebben.
+**Alle** types in C\# zijn afstammelingen van de `System.Object` klasse. Indien je een klasse schrijft zonder een expliciete parent dan zal deze steeds `System.Object` als rechtstreekse parent hebben. Ook afgeleide klassen stammen dus af van `System.Object`. Concreet wil dit zeggen dat alle klassen `System.Object`-klassen zijn en dus ook de bijhorende functionaliteit ervan hebben.
 
-> Because every class descends from `Object`, every object "is an" `Object`.
+{% hint style="warning" %}
+Merk op dat we hier niet alleen onze eigen klassen bedoelen, maar alle types, dus zelfs `int`, `bool`, `string`,... **Alle** types stammen \(al dan niet rechtstreeks\) af van `System.Object`.
+{% endhint %}
 
-Indien je de System namespace in je project gebruikt door bovenaan `using System;` te schrijven dan moet je dus niet altijd `System.Object` schrijven maar mag je ook **`Object`** schrijven.
+Indien je de System namespace in je project gebruikt door bovenaan `using System;` te schrijven dan hoef je dus niet altijd `System.Object` te schrijven maar mag je ook **`Object`** schrijven.
 
 ## Hoe ziet System.Object er uit?
 
-Wanneer je een lege klasse maakt dan zal je zien dat instanties van deze klasse reeds 4 methoden ingebouwd hebben, dit zijn uiteraard de methoden die in de `System.Object` klasse staan gedefinieerd:
+Wanneer je een lege klasse maakt dan zal je zien dat instanties van deze klasse reeds een aantal methoden ingebouwd hebben. Dit komt omdat deze methoden gedefinieerd zijn in de `System.Object` klasse en meteen overgeërfd worden door je nieuwe klasse:
 
 | Methode | Beschrijving |
 | :--- | :--- |
-| `Equals()` | Gebruikt om te ontdekken of twee instanties gelijk zijn. |
-| `GetHashCode()` | Geeft een unieke code \(hash\) terug van het object; nuttig om o.a. te sorteren. |
-| `GetType()` | Geeft het type \(of klasse\) van het object terug. |
-| `ToString()` | Geeft een string terug die het object voorstel. |
+| `Equals(Object o)` | Gebruikt om te ontdekken of twee instanties "gelijk" zijn. Wat dit betekent kan bepaald worden door de auteur van de klasse. |
+| `GetHashCode()` | Geeft een unieke code \(hash\) terug van het object; nuttig om o.a. snel te sorteren. |
+| `GetType()` | Geeft het type \(of klasse\) van het object terug. Dit is een object van het type `Type`! |
+| `ToString()` | Geeft een string terug die het object voorstelt. |
 
 ### GetType\(\)
 
 Stel dat je een klasse Student hebt gemaakt in je project. Je kan dan op een object van deze klasse de GetType\(\) -methode aanroepen om te weten wat het type van dit object is:
 
 ```csharp
-Student stud1= new Student();
+Student stud1 = new Student();
 Console.WriteLine(stud1.GetType());
 ```
 
@@ -33,9 +35,13 @@ Dit zal als uitvoer de namespace gevolgd door het type op het scherm geven. Als 
 Wil je enkel het type zonder namespace dan is het nuttig te beseffen dat GetType\(\) een object teruggeeft van het type `Type` met meerdere eigenschappen, waaronder `Name`. Volgende code zal dus enkel `Student` op het scherm tonen:
 
 ```csharp
-Student stud1= new Student();
+Student stud1 = new Student();
 Console.WriteLine(stud1.GetType().Name);
 ```
+
+{% hint style="warning" %}
+Deze methode is vooral nuttig in code voor frameworks en dergelijke. Dat wil zeggen: code waaraan je jouw eigen code kan toevoegen. In een meer typische eigen applicatie zou je hier niet te veel gebruik van hoeven te maken, anders schort er waarschijnlijk iets aan je ontwerp.
+{% endhint %}
 
 ### ToString\(\)
 
@@ -63,37 +69,37 @@ Merk twee zaken op:
 1. GetType wordt aangeroepen en die output krijg je terug.
 2. De methode is **virtual** gedefinieerd.
 
-   **Alle 4 methoden in System.Object zijn `virtual` , en je kan deze dus `override`'n!**
+   **Alle 4 hierboven vermelde methoden in `System.Object` zijn `virtual` , en je kan deze overschrijven!**
 
-   **ToString\(\) overriden**
+**ToString\(\) overriden**
 
-   Het zou natuurlijk fijner zijn dat de ToString\(\) van onze student nuttigere info teruggeeft, zoals bv de interne Naam \(string autoprop\) en Leeftijd \(int autoprop\). We kunnen dat eenvoudig krijgen door gewoon ToString to overriden:
+Het zou natuurlijk fijner zijn dat de ToString\(\) van onze student nuttigere info teruggeeft, zoals bv de interne Naam \(string autoprop\) en Leeftijd \(int autoprop\). We kunnen dat eenvoudig krijgen door gewoon ToString to overriden:
 
-   ```csharp
-   class Student
-   {
-   public int Leeftijd {get;set;}
-   public string Naam {get;set;}
+```csharp
+class Student
+{
+public int Leeftijd {get;set;}
+public string Naam {get;set;}
 
-   public override string ToString()
-   {
-      return $"Student genaamd {Naam} (Leeftijd:{Leeftijd})";
-   }
-   }
-   ```
+public override string ToString()
+{
+   return $"Student genaamd {Naam} (Leeftijd:{Leeftijd})";
+}
+}
+```
 
-   Wanneer je nu `Console.WriteLine(stud1);` \(gelet dat hij een Naam en Leeftijd heeft\) zou schrijven dan wordt je output: `Student Tim Dams (Leeftijd:35)`.
+Wanneer je nu `Console.WriteLine(stud1);` \(gelet dat hij een Naam en Leeftijd heeft\) zou schrijven dan wordt je output: `Student Tim Dams (Leeftijd:35)`.
 
 ### Equals\(\)
 
-Ook deze methode kan je dus overriden om twee objecten met elkaar te testen. Op het [einde van deze cursus](https://github.com/v-nys/cursusprogrammeren/tree/e865f37d2ea41dc32c32aa2e02a9a763c7ea56f5/18_IsAs/6_equals.md) zal dieper in `Equals` ingaan worden om objecten te vergelijken, maar we tonen hier reeds een voorbeeld:
+Ook deze methode kan je dus overriden om twee objecten met elkaar te vergelijken. Hierbij moet je een applicatiespecifiek antwoord kunnen geven op de vraag "wanneer zijn twee objecten aan elkaar gelijk?"
 
 ```csharp
 if(stud1.Equals(stud2))
    //...
 ```
 
-De `Equals` methode heeft dus als signatuur: `public virtual bool Equals(Object o)` Twee objecten zijn gelijk voor .NET als aan volgende afspraken wordt voldaan:
+De `Equals` methode heeft dus als signatuur: `public virtual bool Equals(Object o)` .NET maakt volgende afspraken voor een geldige implementatie van `Equals`, maar het is aan jou om te zorgen dat je code deze afspraken volgt:
 
 * Het moet `false` teruggeven indien het argument o `null` is
 * Het moet `true` teruggeven indien je het object met zichzelf vergelijkt \(bv `stud1.Equals(stud1)`\)
@@ -119,7 +125,7 @@ public override bool Equals(Object o)
          gelijk=false;
      else
      {
-         Student temp= (Student)o; //Zie opmerking na code!
+         Student temp = (Student)o; //Zie opmerking na code!
          if(Leeftijd== temp.Leeftijd && Naam== temp.Naam)
             gelijk=true;
          else gelijk=false;
@@ -128,28 +134,13 @@ public override bool Equals(Object o)
 }
 ```
 
-De lijn `Student temp = (Student)o;` zal het `object o` casten naar een `Student`. Doe je dit niet dan kan je niet aan de interne Student-variabelen van het `object o`.
-
-{% hint style="info" %}
-[Dit concept heet polymorfisme en wordt later uitgelegd](https://github.com/v-nys/cursusprogrammeren/tree/e865f37d2ea41dc32c32aa2e02a9a763c7ea56f5/15_polymorfisme/11_polymo_intro.MD).
-{% endhint %}
+De lijn `Student temp = (Student) o;` zal het `object o` casten naar een `Student`. Doe je dit niet dan kan je niet aan de interne `Student`-variabelen van het `object o`. Het feit dat een object met het statische type \(d.w.z.: zo staat het bij de parameter\) `Object` tijdens de uitvoering ook een object met runtime type `Student` \(d.w.z.: dat is het soort data dat op de heap staat\) kan zijn is een voorbeeld van polymorfisme.
 
 ### GetHashcode
 
 Indien je Equals override dan moet je eigenlijk ook GetHashCode overriden, daar er wordt verondersteld dat twee gelijke objecten ook dezelfde unieke hashcode teruggeven. Wil je dit dus implementeren dan zal je dus een \(bestaand\) algoritme moeten schrijven dat een uniek nummer genereert voor ieder niet-gelijke object.
 
-Bekijk volgende [StackOverflow post](https://stackoverflow.com/questions/9827911/how-to-implement-override-of-gethashcode-with-logic-of-overriden-equals) indien je dit wenst toe te passen.
+Een efficiënte hashfunctie voor een type `K` zorgt er bijvoorbeeld voor dat opzoekingen van keys in een `Dictionary<K,V>` erg snel verlopen. Een minder efficiënte hashfunctie zal opzoekingen in datzelfde `Dictionary` trager laten verlopen. Een foute hashfunctie kan er voor zorgen dat je `Dictionary` niet meer werkt zoals verwacht.
 
-{% hint style="info" %}
-## Ik ben nog niet helemaal mee?
-
-Niet getreurd, je bent niet de enige. Overerving,System.object, Equals,...het is allemaal een hoop nieuwe kennis om te verwerken. Aan het [einde van deze cursus](https://github.com/v-nys/cursusprogrammeren/tree/e865f37d2ea41dc32c32aa2e02a9a763c7ea56f5/18_IsAs/6_equals.md) gaan we dieper in bovenstaande materie in om een volledige `Equals` methode op te bouwen en we bij iedere stap uitgebreide uitleg geven.
-{% endhint %}
-
-## Kennisclip
-
-![](../../.gitbook/assets/infoclip%20%282%29.png)
-
-* [System.Object en ToString](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=00cad992-7714-4051-a992-ab7d0093864b)
-* [Equals - objecten vergelijken](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=c18b27c9-ad5a-444b-9695-ab7d00c2c3d9)
+Wij behandelen het schrijven van een eigen hashfunctie hier niet. Dat komt omdat de defaultimplementatie misschien niet altijd efficiënt zal zijn, maar wel technisch juist zal zijn. Als je zelf een hashfunctie schrijft, moet je de wiskunde daar achter goed begrijpen en riskeer je er een te schrijven die technisch niet juist is.
 
