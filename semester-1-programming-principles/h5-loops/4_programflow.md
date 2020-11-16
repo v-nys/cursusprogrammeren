@@ -4,6 +4,10 @@
 [Kennisclip](https://youtu.be/004pN5a0dBc)
 {% endhint %}
 
+{% file src="../../.gitbook/assets/flowchartstuderen.pdf" caption="flowchart \"studeren\" uit het filmpje" %}
+
+{% file src="../../.gitbook/assets/flowchartwinkel.pdf" caption="flowchart \"naar de winkel gaan\" uit het filmpje" %}
+
 ## Programma flow analyse
 
 Door een flowchart op te stellen is het vaak veel eenvoudiger om een programma ofwel te analyseren \(van code naar idee\) ofwel om een programma te schrijven \(van idee naar code\).
