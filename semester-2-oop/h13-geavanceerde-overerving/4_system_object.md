@@ -30,7 +30,7 @@ Student stud1 = new Student();
 Console.WriteLine(stud1.GetType());
 ```
 
-Dit zal als uitvoer de namespace gevolgd door het type op het scherm geven. Als je project bijvoorbeeld "StudentManager" heet \(en je namespace dus ook\) dan zal er op het scherm verschijnen: `StudentManager.Student`.
+Dit zal als uitvoer de namespace gevolgd door het type op het scherm geven. Als je klasse dus in de namespace `StudentManager` staat, zal er verschijnen: `StudentManager.Student`.
 
 Wil je enkel het type zonder namespace dan is het nuttig te beseffen dat GetType\(\) een object teruggeeft van het type `Type` met meerdere eigenschappen, waaronder `Name`. Volgende code zal dus enkel `Student` op het scherm tonen:
 
@@ -51,7 +51,7 @@ Deze is de nuttigste waar je al direct leuke dingen mee kan doen. Wanneer je sch
 Console.WriteLine(stud1);
 ```
 
-Wordt je code eigenlijk herschreven naar:
+wordt je code eigenlijk herschreven naar:
 
 ```csharp
 Console.WriteLine(stud1.ToString());
@@ -73,7 +73,7 @@ Merk twee zaken op:
 
 **ToString\(\) overriden**
 
-Het zou natuurlijk fijner zijn dat de ToString\(\) van onze student nuttigere info teruggeeft, zoals bv de interne Naam \(string autoprop\) en Leeftijd \(int autoprop\). We kunnen dat eenvoudig krijgen door gewoon ToString to overriden:
+Het zou natuurlijk fijner zijn dat de ToString\(\) van onze student nuttigere info teruggeeft, zoals bv de interne Naam \(string autoprop\) en Leeftijd \(int autoprop\). We kunnen dat eenvoudig krijgen door gewoon `ToString` to overriden:
 
 ```csharp
 class Student
@@ -101,7 +101,7 @@ if(stud1.Equals(stud2))
 
 De `Equals` methode heeft dus als signatuur: `public virtual bool Equals(Object o)` .NET maakt volgende afspraken voor een geldige implementatie van `Equals`, maar het is aan jou om te zorgen dat je code deze afspraken volgt:
 
-* Het moet `false` teruggeven indien het argument o `null` is
+* Het moet `false` teruggeven indien het argument `o` `null` is
 * Het moet `true` teruggeven indien je het object met zichzelf vergelijkt \(bv `stud1.Equals(stud1)`\)
 * Het mag enkel `true` teruggeven als volgende statements beide waar zijn:
 
@@ -111,6 +111,10 @@ De `Equals` methode heeft dus als signatuur: `public virtual bool Equals(Object 
   ```
 
 * Indien `stud1.Equals(stud2)` true teruggeeft en `stud1.Equals(stud3)` ook true is, dan moet `stud2.Equals(stud3)` ook true zijn.
+
+{% hint style="warning" %}
+Volgt je eigen code deze afspraken niet, dan krijg je geen compilatiefouten, maar dan kan je wel onverwacht gedrag krijgen van code die gebruik maakt van `Equals` zoals bijvoorbeeld de `IndexOf`-methode van `List<T>`.
+{% endhint %}
 
 #### Equals overriden
 
@@ -136,9 +140,9 @@ public override bool Equals(Object o)
 
 De lijn `Student temp = (Student) o;` zal het `object o` casten naar een `Student`. Doe je dit niet dan kan je niet aan de interne `Student`-variabelen van het `object o`. Het feit dat een object met het statische type \(d.w.z.: zo staat het bij de parameter\) `Object` tijdens de uitvoering ook een object met runtime type `Student` \(d.w.z.: dat is het soort data dat op de heap staat\) kan zijn is een voorbeeld van polymorfisme.
 
-### GetHashcode
+### GetHashcode\(\)
 
-Indien je Equals override dan moet je eigenlijk ook GetHashCode overriden, daar er wordt verondersteld dat twee gelijke objecten ook dezelfde unieke hashcode teruggeven. Wil je dit dus implementeren dan zal je dus een \(bestaand\) algoritme moeten schrijven dat een uniek nummer genereert voor ieder niet-gelijke object.
+`GetHashCode()` zorgt ervoor dat je een "vingerafdruk" van een object krijgt. Als twee objecten gelijk zijn onder `Equals`, wordt verondersteld dat ze dezelfde vingerafdruk hebben. Omgekeerd geldt niet, maar het is voor de efficiëntie wel beter als verschillende objecten ook verschillende vingerafdrukken leveren. Het is opnieuw aan de programmeur om dit te garanderen.
 
 Een efficiënte hashfunctie voor een type `K` zorgt er bijvoorbeeld voor dat opzoekingen van keys in een `Dictionary<K,V>` erg snel verlopen. Een minder efficiënte hashfunctie zal opzoekingen in datzelfde `Dictionary` trager laten verlopen. Een foute hashfunctie kan er voor zorgen dat je `Dictionary` niet meer werkt zoals verwacht.
 

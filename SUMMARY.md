@@ -115,7 +115,6 @@
   * [protected access modifier](semester-2-oop/h13-geavanceerde-overerving/protected-access-modifier.md)
   * [Base keyword](semester-2-oop/h13-geavanceerde-overerving/2_base.md)
   * [System.Object](semester-2-oop/h13-geavanceerde-overerving/4_system_object.md)
-  * [Oefeningen](semester-2-oop/h13-geavanceerde-overerving/a_practica.md)
 
 ---
 
