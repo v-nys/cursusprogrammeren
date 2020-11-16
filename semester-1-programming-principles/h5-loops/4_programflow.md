@@ -13,7 +13,7 @@ Een flowchart \(letterlijk: _stroomkaart_\) of stroomdiagram is een schematische
 Een flowchart bestaat uit een aantal elementen:
 
 * **Pijl**: een pijl geeft aan naar welk volgende blok wordt gegaan. Indien boven de pijl een bepaalde waarde staat wil dit zeggen dat deze pijl enkel wordt gevolgd als de uitkomst van het vorige blok de getoonde waarde geeft.
-* **Start en einde**: aangegeven met een cirkel met daarin de woorden "Start" of "Einde"
+* **Start en einde**: aangegeven met een afgeronde rechthoek met daarin de woorden "Start" of "Einde"
 * **Verwerk-stap**: een statement zoals "Voeg 1 toe aan X" wordt in een rechthoek geplaatst. Alle code die geen invoer nodig heeft zet je in een rechthoek.
 * **Input/output**: Een parallellogram gebruik je om in-of uitvoer van de gebruiker of scherm te tonen. Bv "Verkrijg X van gebruiker" of "Toon volgende zin op het scherm".
 * **Condities en beslissingen**: Een ruit wordt gebruikt wanneer een beslissing moet genomen worden. De condities van if en while-loops zet je dus in een ruit. De pijlen die eruit volgen geven aan welke pijl moet gevolgd worden gegeven een bepaalde waarde van de conditie.
