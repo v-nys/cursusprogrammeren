@@ -61,6 +61,10 @@ De correcte manier om strings te vergelijken is met de `s1.CompareTo(string s2)`
 
 ## Tekst files uitlezen
 
+{% hint style="success" %}
+[Kennisclip verbatim](https://youtu.be/UeEG2hfhYtM)
+{% endhint %}
+
 ### Verbatim character
 
 Door een `@` \(verbatim character\) voor een string te plaatsen zeggen we concreet: "de hele string die nu volgt moet je beschouwen zoals hij er staat. Je mag alle escape karakters negeren en er mogen line breaks voorkomen in deze string."
@@ -75,6 +79,10 @@ Bovenstaande strings zijn identiek voor C\#! De @ geeft geen enkele extra functi
 {% endhint %}
 
 ### Text files lezen algemeen
+
+{% hint style="success" %}
+[Text files lezen](https://youtu.be/315ztFID6NE)
+{% endhint %}
 
 De `System.IO` namespace bevat tal van nuttige methoden en klassen om met bestanden te werken. Om gebruik hiervan te maken plaats je bovenaan je file:
 
@@ -94,6 +102,10 @@ for (int i = 0; i < lines.Length; i++)
 ```
 
 ### CSV uitlezen
+
+{% hint style="success" %}
+[Kennisclip deserializatie](https://youtu.be/1h0ai7SyvCY)
+{% endhint %}
 
 Dankzij `ReadAllLines` en `Split` hebben we nu alle bouwstenen om eenvoudig een csv-bestand te verwerken.
 
