@@ -24,6 +24,8 @@ DNA heeft steeds een RNA-complement \(DNA is het gevolg van RNA transscriptie\).
 * C wordt G
 * T wordt A
 * A wordt U
+* ENTER dan stopt de gebruiker met letters ingeven en wordt her resultaat getoond.
+* ANDERE LETTERS worden genegeerd.
 
 Als de gebruiker dus `ACGTGGTCTTAA` heeft ingevoerd moet het resultaat: `UGCACCAGAAUU` zijn.
 
