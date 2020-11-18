@@ -119,3 +119,102 @@ Jij hebt 8 punten, de computer heeft 10 punten.
 De computer is gewonnen!
 ```
 
+## APDotCom
+
+### Leerdoelen
+
+* Een bestaande applicatie uitbreiden
+* Loop toevoegen om meerdere bestellingen aan te maken
+
+### Functionele analyse
+
+Het programma werkt op dezelfde manier als [H5 apdotcom](https://apwt.gitbook.io/cursus-pro-oo/semester-1-programming-principles/h4-beslissingen/a_practica#apdotcom), met volgende aanpassingen:
+
+* De gebruiker krijgt na het verkrijgen van een kasticket de vraag om nog een bestelling aan te maken
+* Exact dezelfde logica wordt doorlopen als voorheen wanneer de gebruiker J ingeeft
+* De bevraging stopt wanneer de gebruiker N ingeeft
+
+### Technische analyse
+
+TIP: de code van de bestelling moet minstens 1x uitgevoerd worden, vermijd dubbele code
+
+### Voorbeeldinteractie
+
+```text
+Basisprijs van een boek?
+> 12.00
+Basisprijs van een CD?
+> 9.95
+Basisprijs van een servies?
+> 75
+Basisprijs van een springkasteel?
+> 150
+Aantal boeken?
+> 4
+Aantal CD's?
+> 2
+Aantal serviezen?
+> 1
+Aantal springkastelen?
+> 1
+Percentage korting?
+> 40
+Waarschuwing: het ingevoerde percentage is hoog!
+
+Worden prijsstijgingen en -dalingen toegepast? (J/N)
+> J
+
+Uw kasticket
+------------
+vraag en aanbod boeken: 20%
+vraag en aanbod CD's: -18%
+vraag en aanbod serviezen: 10%
+vraag en aanbod springkastelen: 48%
+boek x 4: 57.60
+CD x 2 : 16.32
+servies x 1: 82.50
+springkasteel x 1: 222
+KORTING: 40%
+TOTAAL VOOR KORTING: 378.42
+TOTAAL: 227.05
+
+Wil je nog een bestelling plaatsen? (J/N)
+> J
+
+Basisprijs van een boek?
+> 12.00
+Basisprijs van een CD?
+> 9.95
+Basisprijs van een servies?
+> 75
+Basisprijs van een springkasteel?
+> 150
+Aantal boeken?
+> 4
+Aantal CD's?
+> 2
+Aantal serviezen?
+> 1
+Aantal springkastelen?
+> 1
+Percentage korting?
+> 40
+Waarschuwing: het ingevoerde percentage is hoog!
+
+Worden prijsstijgingen en -dalingen toegepast? (J/N)
+> N
+
+Uw kasticket
+------------
+boek x 4: 48.00
+CD x 2 : 19.90
+servies x 1: 75.00
+springkasteel x 1: 150.00
+KORTING: 40%
+TOTAAL VOOR KORTING: 292.90
+TOTAAL: 175.74
+
+Wil je nog een bestelling plaatsen? (J/N)
+> N
+```
+
