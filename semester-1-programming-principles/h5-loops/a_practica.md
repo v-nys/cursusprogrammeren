@@ -18,7 +18,8 @@ Herwerk de oefening[ H2-maaltafels ](../h1-variabelen-en-datatypes/a_practica.md
 
 ### Leerdoelen
 
-* Input stap voor stap verwerken.
+* Input stap voor stap verwerken
+* Flowchart gebruiken
 
 ### Functionele analyse
 
@@ -53,7 +54,9 @@ Je resultaat is: CGAUC
 
 #### Programmaverloop
 
-Gebruik een flowchart om het verloop van dit programma in kaart te brengen. Er is geen limiet op het aantal nucleotiden dat de gebruiker kan invoeren.
+Je krijgt een flowchart om het verloop beter in kaart te brengen:
+
+{% file src="../../.gitbook/assets/flowchartrna.pdf" caption="flowchart RNA" %}
 
 #### Testscenario's
 

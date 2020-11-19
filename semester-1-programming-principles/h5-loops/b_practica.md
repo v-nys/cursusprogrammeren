@@ -73,6 +73,9 @@ De eerste \(pc of gebruiker\) die 10 punten haalt wint.
 * Teken een flowchart!
 * Gebruik [de instructies over hoe je een enum waarde kan inlezen](../h4-beslissingen/enum.md#waarden-van-een-enum-type-inlezen)
 * Noem je methode `SchaarSteenPapier`.
+* Je krijgt een flowchart om te helpen.
+
+{% file src="../../.gitbook/assets/flowchartbladsteenschaar.pdf" caption="flowchart schaar steen papier" %}
 
 #### UI
 

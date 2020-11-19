@@ -30,6 +30,7 @@ Noem de methodes `OpwarmerPlusEen`, `OpwarmerPlusTwee`,...
 ### Leerdoelen
 
 * lussen gebruiken om een resultaat op te bouwen
+* flowchart gebruiken
 
 ### Functionele analyse
 
@@ -38,6 +39,10 @@ Je krijgt een getal van de gebruiker. Je moet nagaan of dit een priemgetal is, d
 ### Technische analyse
 
 Elk geheel getal vanaf 2 heeft minstens 2 gehele delers: 1 en zichzelf. Als dat de enige delers van het gegeven getal zijn, is het priem. Je kan dus nagaan of een getal een priemgetal is door alle getallen vanaf 1 tot het getal zelf te overlopen en na te gaan of deze delers zijn van het getal. \(Eigenlijk volstaat het minder getallen te checken maar daar draait het hier niet om.\) Noem je methode `PriemChecker`.
+
+Je krijgt een flowchart om te helpen.
+
+{% file src="../../.gitbook/assets/flowchartpriem.pdf" caption="flowchart priemchecker" %}
 
 #### UI
 
