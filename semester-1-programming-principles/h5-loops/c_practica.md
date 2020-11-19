@@ -8,6 +8,8 @@ Probeer niet alle oefeningen met hetzelfde type loop te doen, wissel tussen `whi
 
 > Opgelet: de oplossing van dit soort oefeningen vind je overal. Weersta hier aan, en probeer ZELF de oplossing te vinden. Dat is de enige manier om dit te leren.
 
+Noem de methodes `OpwarmerPlusEen`, `OpwarmerPlusTwee`,...
+
 1. Toon alle natuurlijke getallen van 1 tot _n_.
 2. Toon alle natuurlijke getallen van _n_ tot 1.
 3. Toon alle even getallen tussen 1 en 100.
@@ -23,7 +25,7 @@ Probeer niet alle oefeningen met hetzelfde type loop te doen, wissel tussen `whi
 13. Schrijf een programma een getal _n_ ontbindt in [factoren](https://nl.wikipedia.org/wiki/Factorisatie). Factoren zijn de getallen waardoor je _n_ kan delen zonder rest \(van  bijvoorbeeld het getal 100 zijn de factoren 1,2,4,5,10,20,25,50,100  \).
 14. Toon de reeks van [Fibonacci](https://en.wikipedia.org/wiki/Fibonacci_number) tot _n_ termen.
 
-## Oefening: H5-priem-checker
+## Oefening: H6-priem-checker
 
 ### Leerdoelen
 
@@ -35,7 +37,7 @@ Je krijgt een getal van de gebruiker. Je moet nagaan of dit een priemgetal is, d
 
 ### Technische analyse
 
-Elk geheel getal vanaf 2 heeft minstens 2 gehele delers: 1 en zichzelf. Als dat de enige delers van het gegeven getal zijn, is het priem. Je kan dus nagaan of een getal een priemgetal is door alle getallen vanaf 1 tot het getal zelf te overlopen en na te gaan of deze delers zijn van het getal. \(Eigenlijk volstaat het minder getallen te checken maar daar draait het hier niet om.\)
+Elk geheel getal vanaf 2 heeft minstens 2 gehele delers: 1 en zichzelf. Als dat de enige delers van het gegeven getal zijn, is het priem. Je kan dus nagaan of een getal een priemgetal is door alle getallen vanaf 1 tot het getal zelf te overlopen en na te gaan of deze delers zijn van het getal. \(Eigenlijk volstaat het minder getallen te checken maar daar draait het hier niet om.\) Noem je methode `PriemChecker`.
 
 #### UI
 
@@ -67,7 +69,7 @@ Geef een getal
 Het getal is een priemgetal!
 ```
 
-## Oefening: H5-priem-generator
+## Oefening: H6-priem-generator
 
 ### Leerdoelen
 

@@ -1,6 +1,6 @@
 # Oefeningen deel 3
 
-## Oefening: H5-boekhouder
+## Oefening: H6-boekhouder
 
 ### Leerdoelen
 
@@ -48,7 +48,7 @@ Het gemiddelde is 5
 
 \(Dit programma kan blijven verder lopen zo lang je wil.\)
 
-## Oefening: H5-schaar-steen-papier
+## Oefening: H6-schaar-steen-papier
 
 ### Leerdoelen
 
@@ -71,7 +71,8 @@ De eerste \(pc of gebruiker\) die 10 punten haalt wint.
 
 * Maak een [enum](../h4-beslissingen/enum.md) met elementen `Schaar`, `Steen` en `Papier`
 * Teken een flowchart!
-* Gebruik de instructies 
+* Gebruik [de instructies over hoe je een enum waarde kan inlezen](../h4-beslissingen/enum.md#waarden-van-een-enum-type-inlezen)
+* Noem je methode `SchaarSteenPapier`.
 
 #### UI
 
@@ -137,7 +138,7 @@ Het programma werkt op dezelfde manier als [H5 apdotcom](https://apwt.gitbook.io
 
 ### Technische analyse
 
-TIP: de code van de bestelling moet minstens 1x uitgevoerd worden, vermijd dubbele code
+TIP: de code van de bestelling moet minstens 1x uitgevoerd worden, vermijd dubbele code. Noem je methode `BestelMeerdere`.
 
 ### Voorbeeldinteractie
 
