@@ -69,8 +69,9 @@ De eerste \(pc of gebruiker\) die 10 punten haalt wint.
 
 ### Technische analyse
 
-* Genereer een willekeurig getal tussen 1 en 3 om de computer te laten kiezen.
+* Maak een [enum](../h4-beslissingen/enum.md) met elementen `Schaar`, `Steen` en `Papier`
 * Teken een flowchart!
+* Gebruik de instructies 
 
 #### UI
 
@@ -80,25 +81,25 @@ console applicatie
 
 ```text
 Maak een keuze:
-1 voor schaar
-2 voor steen
-3 voor papier
+1. Schaar
+2. Steen
+3. Papier
 > 2
 De computer kiest steen!
 Niemand wint deze ronde!
 Jij hebt 0 punten, de computer heeft 0 punten.
 Maak een keuze:
-1 voor schaar
-2 voor steen
-3 voor papier
+1. Schaar
+2. Steen
+3. Papier
 > 1
 De computer kiest papier!
 Jij wint deze ronde!
 Jij hebt 1 punt, de computer heeft 0 punten.
 Maak een keuze:
-1 voor schaar
-2 voor steen
-3 voor papier
+1. Schaar
+2. Steen
+3. Papier
 > 1
 De computer kiest steen!
 De computer wint deze ronde!
