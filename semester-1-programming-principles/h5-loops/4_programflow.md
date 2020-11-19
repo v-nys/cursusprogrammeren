@@ -58,7 +58,7 @@ Merk op dat bij if en if-else de flow niet naar een eerder punt in de code gaat.
 
 #### For-element
 
-![](../../.gitbook/assets/for%20%283%29.png)
+![](../../.gitbook/assets/for%20%284%29.png)
 
 ## Voorbeeld flowchart
 
