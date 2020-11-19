@@ -38,7 +38,7 @@ Je krijgt een getal van de gebruiker. Je moet nagaan of dit een priemgetal is, d
 
 ### Technische analyse
 
-Elk geheel getal vanaf 2 heeft minstens 2 gehele delers: 1 en zichzelf. Als dat de enige delers van het gegeven getal zijn, is het priem. Je kan dus nagaan of een getal een priemgetal is door alle getallen vanaf 1 tot het getal zelf te overlopen en na te gaan of deze delers zijn van het getal. \(Eigenlijk volstaat het minder getallen te checken maar daar draait het hier niet om.\) Noem je methode `PriemChecker`.
+Elk geheel getal vanaf 2 heeft minstens 2 gehele delers: 1 en zichzelf. Als dat de enige delers van het gegeven getal zijn, is het priem. Je kan dus nagaan of een getal een priemgetal is door alle getallen vanaf 2 tot het getal zelf te overlopen en na te gaan of deze delers zijn van het getal. \(Eigenlijk volstaat het minder getallen te checken maar daar draait het hier niet om.\) Noem je methode `PriemChecker`. **Je mag veronderstellen dat de gebruiker minstens 2 intypt.**
 
 Je krijgt een flowchart om te helpen.
 
