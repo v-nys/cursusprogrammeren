@@ -6,7 +6,7 @@ Probeer niet alle oefeningen met hetzelfde type loop te doen, wissel tussen `whi
 
 **Indien er sprake is van** _**n**_ **in de opgave dan is dit een getal dat je eerst aan de gebruiker moet vragen.**
 
-> Opgelet: de oplossing van dit soort oefeningen vindt je overal. Weersta hier aan, en probeer ZELF de oplossing te vinden. Dat is de enige manier om dit te leren.
+> Opgelet: de oplossing van dit soort oefeningen vind je overal. Weersta hier aan, en probeer ZELF de oplossing te vinden. Dat is de enige manier om dit te leren.
 
 1. Toon alle natuurlijke getallen van 1 tot _n_.
 2. Toon alle natuurlijke getallen van _n_ tot 1.

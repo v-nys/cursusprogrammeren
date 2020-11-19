@@ -4,11 +4,11 @@
 
 > Indien niet expliciet vermeld mag je kiezen met wat voor loop \(for, while, do while\) je het probleem zal oplossen.
 
-### Opwarmers
+## Opwarmers
 
 {% file src="../../.gitbook/assets/oefeningen-loops.docx" caption="Opwarmers loops" %}
 
-### Tafels van vermenigvuldigen
+## Tafels van vermenigvuldigen
 
 Herwerk de oefening[ H2-maaltafels ](../h1-variabelen-en-datatypes/a_practica.md#oefening-h-2-maaltafels)zodat je maar één keer de code voor vermenigvuldiging moet schrijven. Gebruik een `for`-lus. Sla op in de klasse `HoofdstukZes` met de methodenaam `Maaltafels`.
 
@@ -61,7 +61,7 @@ Gebruik een flowchart om het verloop van dit programma in kaart te brengen. Er i
 * Schrijf een stuk tekst met elke nucleotide in
 * Schrijf een heel lang stuk tekst
 
-### PRO: For doordenker
+## PRO: For doordenker
 
 Schrijf een programma dat de volgende output geeft , gegeven dat de gebruiker een maximum waarde invoert , dus als hij 4 ingeeft dan zal de driehoek maximum 4 breed worden. Gebruik enkel forloops!
 
@@ -75,7 +75,7 @@ Schrijf een programma dat de volgende output geeft , gegeven dat de gebruiker ee
 *
 ```
 
-### PRO: For doordenker extra
+## PRO: For doordenker extra
 
 Schrijf een programma dat de volgende output geeft \(zie ook WhileDoordenker van vorige labo\), gegeven dat de gebruiker een maximum waarde invoert die opgeeft uit hoeveel lijnen de boom bestaat. Maak enkel gebruik van for-loops.
 
