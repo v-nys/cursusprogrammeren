@@ -8,11 +8,21 @@
 
 {% file src="../../.gitbook/assets/oefeningen-loops.docx" caption="Opwarmers loops" %}
 
+{% hint style="success" %}
+[Kennisclip eerste opwarmers 1 en 3](https://youtu.be/wludpSDwCK8)
+{% endhint %}
+
+{% hint style="success" %}
+[Kennisclip opwarmers opwarmers 5](https://youtu.be/edxhVzol7jA)
+{% endhint %}
+
 ## Tafels van vermenigvuldigen
 
 Herwerk de oefening[ H2-maaltafels ](../h1-variabelen-en-datatypes/a_practica.md#oefening-h-2-maaltafels)zodat je maar één keer de code voor vermenigvuldiging moet schrijven. Gebruik een `for`-lus. Sla op in de klasse `HoofdstukZes` met de methodenaam `Maaltafels`.
 
-
+{% hint style="success" %}
+[Kennisclip flowchart maaltafels](https://youtu.be/YmOnUvSQShY)
+{% endhint %}
 
 ## Oefening: H6-RNA
 
