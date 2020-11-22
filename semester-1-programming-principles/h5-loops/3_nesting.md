@@ -86,6 +86,12 @@ for(int minuut=0; minuut < 60; minuut++) {
 }
 ```
 
+Bovenstaande code is makkelijk uitbreidbaar naar uren en hondersten van seconden door nog meer lussen toe te voegen, maar we beperken ons tot één niveau van nesting.
+
+{% hint style="info" %}
+**Een nuttige vuistregel:** als je een proces hebt waarbij twee of meer variabelen sytematisch wijzigen, maar de ene wijzigt sneller dan de andere, dan is een geneste loop waarschijnlijk een goede keuze.
+{% endhint %}
+
 ## `break` of `continue` in nested loop
 
 Let er op dat `break` je enkel uit de huidge loop zal halen. Indien je dit dus gebruik in de inner loop dan zal de outer loop nog steeds voortgaan. Nog een reden om zéér voorzichtig om te gaan in het gebruik van `break`. Idem voor `continue`.
