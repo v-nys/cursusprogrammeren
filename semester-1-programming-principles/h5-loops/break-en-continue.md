@@ -1,5 +1,9 @@
 # Break en continue
 
+{% hint style="success" %}
+[Kennisclip](https://youtu.be/VVG_Iri0v48)
+{% endhint %}
+
 Niet elke flowchart of elk stappenplan van een herhalend proces kan mooi in een van de behandelde lusstructuren gegoten worden. Dat is niet noodzakelijk een slechte zaak. Het kost wat flexibiliteit, maar leidt tot meer overzichtelijke code.
 
 Toch zijn er twee constructies die de zuivere lusstructuur doorbreken die we hier zullen behandelen, omdat je ze in echte code regelmatig aantreft: de `break` instructie en de `continue` instructie.
