@@ -59,10 +59,10 @@ enum Groenten {
 }
 
 public static void GenereerSoepen() {
-    for(int hoofdGroente = (int) Groenten.Tomaat, hoofdGroente <= (int) Groenten.Pompoen; hoofdGroente++) {
-        for(int bijGroente = (int) Groenten.Tomaat, bijGroente <= (int) Groenten.Pompoen; bijGroente++) {
+    for(int hoofdGroente = (int) Groenten.Tomaat; hoofdGroente <= (int) Groenten.Pompoen; hoofdGroente++) {
+        for(int bijGroente = (int) Groenten.Tomaat; bijGroente <= (int) Groenten.Pompoen; bijGroente++) {
             if(hoofdGroente != bijGroente) {
-                Console.WriteLine($"{hoofGroente} en {bijGroente}");
+                Console.WriteLine($"{hoofdGroente} en {bijGroente}");
             }
         }
     }
