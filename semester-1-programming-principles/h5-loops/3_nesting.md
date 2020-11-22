@@ -10,6 +10,10 @@ We spreken steeds over de **outer loop** als de omhullende of "grootste" loop. W
 Wij beperken ons tot één niveau van nesting, maar je raadt misschien al dat je ook een lus in een lus in een lus kan schrijven.
 {% endhint %}
 
+{% hint style="success" %}
+[Kennisclip](https://youtu.be/QPCowROx0rE)
+{% endhint %}
+
 ### Voorbeeld: echte maaltafels
 
 In [de oefening rond maaltafels](a_practica.md#tafels-van-vermenigvuldigen) hebben we de maaltafels van een specifiek getal, de "basis", laten zien. We hebben hiervoor volgende flowchart gevolgd:
