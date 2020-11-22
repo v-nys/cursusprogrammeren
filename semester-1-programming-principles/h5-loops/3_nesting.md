@@ -25,7 +25,7 @@ Dit is niet hoe je de maaltafels op school hebt geleerd. Je hebt eerder iets gel
 
 Als we deze maaltafels willen reproduceren, moeten we niet alleen de vermenigvuldiger \(het tweede getal\) aanpassen, maar moeten we onze code herhalen **voor elke basis van 1 tot 10**. Code herhalen voor verschillende waarden is nu net waarvoor we loops hebben gebruikt. In flowchartvorm kan je dit zo noteren \(het afgebakende deel stemt overeen met onze simpelere versie van de maaltafels\):
 
-![](../../.gitbook/assets/maaltafels_genest.svg)
+![](../../.gitbook/assets/maaltafels_genest%20%282%29.svg)
 
 We kunnen dit omzetten naar een lus als eerder. Als we het afgebakende deel zien als één blok code, merken we dat "declareer en initialiseer basis" de setup is van een lus, "basis &lt; 11" de voorwaarde om uit te voeren, "verhoog basis" de stap die na een uitvoering wordt genomen. Dat levert volgende code op als je kiest voor een for-lus:
 
@@ -47,7 +47,7 @@ Bij een geneste lus varieert de binnenste lus sneller dan de buitenste lus. Dit 
 
 Soep maak je typisch met een hoofdgroente en een bijgroente. We zullen een soepgenerator schrijven door alle combinaties van een hoofdgroente en een bijgroente te tonen:
 
-![](../../.gitbook/assets/soep%20%281%29.svg)
+![](../../.gitbook/assets/soep.svg)
 
 ```csharp
 enum Groenten {
@@ -73,7 +73,7 @@ public static void GenereerSoepen() {
 
 Een voorbeeld van een geneste lus dat je zeker kent is een klok. Hierin doorloop je alle uren van de dag, maar binnenin elk uur doorloop je alle minuten. Als flowchart wordt dat:
 
-![](../../.gitbook/assets/chrono.svg)
+![](../../.gitbook/assets/chrono%20%281%29.svg)
 
 In code wordt dit:
 
