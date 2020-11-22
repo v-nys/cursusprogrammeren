@@ -1,58 +1,92 @@
 # Nesting
 
-## Nested loops
+## Geneste loops
 
-Wanneer we 1 of meerdere loops in een andere loop plaatsen dan spreken we over **geneste loops**. Geneste loops komen vaak voor, maar zijn wel een ras apart wanneer je deze zaken wilt debuggen en correct schrijven.
+Het is toegelaten een lus binnenin een andere lus te schrijven. Technisch brengt dit geen enkel nieuw concept met zich mee, maar het kan wel een uitdaging zijn om dit proces te begrijpen.
 
-![Deze afbeelding komt uit het zeer aan te raden handboek &quot;Microsoft Visual C\# .NET&quot; van Joyce Farrell.](../../.gitbook/assets/nesting%20%282%29.png)
-
-We spreken steeds over de **outer loop** als de omhullende of "grootste" loop. Waarbij de binnenste loops de **inner loop\(s\)** zijn.
-
-Volgende code toont bijvoorbeeld 2 loops die genest werden:
-
-```csharp
-int tellerA= 0;
-int tellerB= 0;
-
-while(tellerA < 3 )  //outer loop
-{
-    tellerA++;
-    tellerB = 0;
-    while(tellerB < 5)
-    {
-        tellerB++;
-        Console.WriteLine($"Teller:{tellerA}, Teller2:{tellerB}")
-    }
-}
-```
-
-De uitvoer hiervan zal als volgt zijn:
-
-![](../../.gitbook/assets/nestedoutput%20%282%29.png)
+We spreken steeds over de **outer loop** als de omhullende of "grootste" loop. Waarbij de binnenste loop de **inner loop** is.
 
 {% hint style="info" %}
-**Begrijp je hoe we aan deze uitvoer komen? \(tip: analyseer de inner en outer loop apart\)**
+Wij beperken ons tot één niveau van nesting, maar je raadt misschien al dat je ook een lus in een lus in een lus kan schrijven.
 {% endhint %}
 
-## Geneste loops tellen
+### Voorbeeld: echte maaltafels
 
-Om te tellen hoe vaak de 'inner' code zal uitgevoerd worden dien je te weten hoe vaak iedere loop afzonderlijk wordt uitgevoerd. Vervolgens vermenenigvuldig je al deze getallen met elkaar.
+In [de oefening rond maaltafels](a_practica.md#tafels-van-vermenigvuldigen) hebben we de maaltafels van een specifiek getal, de "basis", laten zien. We hebben hiervoor volgende flowchart gevolgd:
 
-Een voorbeeld: Hoe vaak zal het woord `Hallo` op het scherm verschijnen bij volgende code?
+![Maaltafels voor &#xE9;&#xE9;n specifieke basis.](../../.gitbook/assets/maaltafels.svg)
+
+Dit is niet hoe je de maaltafels op school hebt geleerd. Je hebt eerder iets geleerd in de aard van:
+
+* 1 x 1 is 1
+* 1 x 2 is 2
+* ... \(nog 8 regels die beginnen met "1 x", dan nog 89 regels die je wel kent\)
+* 10 x 10 is 100
+
+Als we deze maaltafels willen reproduceren, moeten we niet alleen de vermenigvuldiger \(het tweede getal\) aanpassen, maar moeten we onze code herhalen **voor elke basis van 1 tot 10**. Code herhalen voor verschillende waarden is nu net waarvoor we loops hebben gebruikt. In flowchartvorm kan je dit zo noteren \(het afgebakende deel stemt overeen met onze simpelere versie van de maaltafels\):
+
+![](../../.gitbook/assets/maaltafels_genest.svg)
+
+We kunnen dit omzetten naar een lus als eerder. Als we het afgebakende deel zien als één blok code, merken we dat "declareer en initialiseer basis" de setup is van een lus, "basis &lt; 11" de voorwaarde om uit te voeren, "verhoog basis" de stap die na een uitvoering wordt genomen. Dat levert volgende code op als je kiest voor een for-lus:
 
 ```csharp
-for (int i = 0; i < 10; i++)
-{
-    for (int j = 0; j < 5; j++)
-    {
-        Console.WriteLine("Hallo");
+for(int basis = 1; basis < 11; basis++) {
+    for(int vermenigvuldiger = 1; vermenigvuldiger < 11; vermenigvuldiger++) {
+        Console.WriteLine($"{basis} x {vermenigvuldiger} is {basis * vermenigvuldiger}");
     }
 }
 ```
 
-De outer loop zal 10 maal uitgevoerd worden \(i zal de waarden 0 tot en met 9 krijgen\). De inner loop zal 5 maal \(j zal de waarden 0 tot en met 4 krijgen\) uitgevoerd worden. In totaal zal dus **50 maal `Hallo`** op het scherm verschijnen \(5x10\).
+{% hint style="info" %}
+De flowchart sluit meer aan bij een `do`-`while`, maar als je op voorhand vastlegt hoe vaak een lus moet uitvoeren, levert een `for` vaak cleanere code op.
+{% endhint %}
 
-## Break in nested loop
+### Voorbeeld: soep maken
 
-Let er op dat `break` je enkel uit de huidge loop zal halen. Indien je dit dus gebruik in de inner loop dan zal de outer loop nog steeds voortgaan. Nog een reden om zéér voorzichtig om te gaan in het gebruik van `break`.
+Bij een geneste lus varieert de binnenste lus sneller dan de buitenste lus. Dit zorgt ervoor dat alle combinaties van mogelijke waarden worden gemaakt.
+
+Soep maak je typisch met een hoofdgroente en een bijgroente. We zullen een soepgenerator schrijven door alle combinaties van een hoofdgroente en een bijgroente te tonen:
+
+![](../../.gitbook/assets/soep%20%281%29.svg)
+
+```csharp
+enum Groenten {
+  Tomaat,
+  Paprika,
+  Wortel,
+  Selder,
+  Pompoen
+}
+
+public static void GenereerSoepen() {
+    for(int hoofdGroente = (int) Groenten.Tomaat, hoofdGroente <= (int) Groenten.Pompoen; hoofdGroente++) {
+        for(int bijGroente = (int) Groenten.Tomaat, bijGroente <= (int) Groenten.Pompoen; bijGroente++) {
+            if(hoofdGroente != bijGroente) {
+                Console.WriteLine($"{hoofGroente} en {bijGroente}");
+            }
+        }
+    }
+}
+```
+
+### Voorbeeld: chronometer
+
+Een voorbeeld van een geneste lus dat je zeker kent is een klok. Hierin doorloop je alle uren van de dag, maar binnenin elk uur doorloop je alle minuten. Als flowchart wordt dat:
+
+![](../../.gitbook/assets/chrono.svg)
+
+In code wordt dit:
+
+```csharp
+for(int minuut=0; minuut < 60; minuut++) {
+  for(int seconde=0; seconde < 60; seconde++) {
+    Console.WriteLine($"{minuut:D2}:{seconde:D2}");
+    System.Threading.Thread.Sleep(1000);
+  }
+}
+```
+
+## `break` of `continue` in nested loop
+
+Let er op dat `break` je enkel uit de huidge loop zal halen. Indien je dit dus gebruik in de inner loop dan zal de outer loop nog steeds voortgaan. Nog een reden om zéér voorzichtig om te gaan in het gebruik van `break`. Idem voor `continue`.
 
