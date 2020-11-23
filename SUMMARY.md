@@ -63,6 +63,7 @@
   * [Oefeningen deel 1](semester-1-programming-principles/h5-loops/a_practica.md)
   * [Oefeningen deel 2](semester-1-programming-principles/h5-loops/c_practica.md)
   * [Oefeningen deel 3](semester-1-programming-principles/h5-loops/b_practica.md)
+  * [Oefeningen break, continue, nesting](semester-1-programming-principles/h5-loops/oefeningen-break-continue-nesting.md)
 * [H7: Methoden](semester-1-programming-principles/h6-methoden/README.md)
   * [Methoden intro](semester-1-programming-principles/h6-methoden/0_intromethods.md)
   * [Bibliotheken](semester-1-programming-principles/h6-methoden/1_bibliotheken.md)

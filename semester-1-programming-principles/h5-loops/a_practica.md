@@ -74,30 +74,3 @@ Je krijgt een flowchart om het verloop beter in kaart te brengen:
 * Schrijf een stuk tekst met elke nucleotide in
 * Schrijf een heel lang stuk tekst
 
-## PRO: For doordenker
-
-Schrijf een programma dat de volgende output geeft , gegeven dat de gebruiker een maximum waarde invoert , dus als hij 4 ingeeft dan zal de driehoek maximum 4 breed worden. Gebruik enkel forloops!
-
-```text
-*
-**
-***
-****
-***
-**
-*
-```
-
-## PRO: For doordenker extra
-
-Schrijf een programma dat de volgende output geeft \(zie ook WhileDoordenker van vorige labo\), gegeven dat de gebruiker een maximum waarde invoert die opgeeft uit hoeveel lijnen de boom bestaat. Maak enkel gebruik van for-loops.
-
-```text
-     *
-    ***
-   *****
-  *******
- *********
-***********
-```
-
