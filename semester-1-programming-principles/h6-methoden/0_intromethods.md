@@ -14,9 +14,9 @@ Het uitvoeren van de stappen, dus het volgen van de flowchart, noemen we het **o
 
 Je hebt intussen al vaak \(ingebouwde\) methodes opgeroepen, waaronder:
 
-* de Main methode van de klasse `Program` \(voor deze hoef je de call zelf niet te schrijven, ze start automatisch op\)
-* de WriteLine methode van de klasse `Console`
-* de Next methode van een random generator
+* de `Main` methode van de klasse `Program` \(voor deze hoef je de call zelf niet te schrijven, ze start automatisch op\)
+* de `WriteLine` methode van de klasse `Console`
+* de `Next` methode van een random generator
 
 ### Basissyntax
 
@@ -31,7 +31,7 @@ public static void MethodeNaam()
 }
 ```
 
-Dit stukje code definieert dus hoe het stappenplan er uitziet. Het zorgt er niet voor dat het ook ooit wordt uitgevoerd. Daar is een call voor nodig.
+Dit stukje code definieert dus hoe het stappenplan er uitziet. Het zorgt er niet voor dat het ook ooit wordt uitgevoerd. Daar is een call voor nodig. `public` zorgt dat deze methode opgeroepen kan worden van uit andere klassen, `static` is nodig omdat we klassen alleen als organisatieprincipe voor onze code gebruiken, `void` behandelen we iets verder op. Deze zaken, samen met de naam en de haakjes, noemen we ook de **signatuur** van de methode.
 
 #### Oproep
 
