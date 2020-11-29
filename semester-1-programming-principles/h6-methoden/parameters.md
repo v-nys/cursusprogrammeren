@@ -32,7 +32,7 @@ Dit is hetzelfde stappenplan, op het gebruikte fruit na. Eigenlijk kan je in sta
 
 Op het moment dat we een taart willen bakken, moeten we pas voor een bepaald stuk fruit kiezen. In de tekst hierboven is "het stuk fruit" dus een soort variabele: we schrijven een naam maar we bedoelen daarmee een waarde die in de uitvoering wordt vastgelegd.
 
-In code zijn dit soort variabelen **parameters** van een methode. In de definitie van de methode werken we met hun naam \(zoals "het stuk fruit"\). Wanneer we de methode oproepen, voorzien we hun waarde \(zoals een appel of een peer of een ananas\). In die situatie gebruiken we de term **argument** in plaats van parameter.
+In code zijn dit soort variabelen **parameters** van een methode. In de definitie van de methode werken we met hun naam \(zoals "het stuk fruit"\). Wanneer we de methode oproepen, voorzien we hun waarde \(zoals een appel of een peer of een ananas\). In de call spreken we ook over **argumenten** in plaats van parameters.
 
 Eerst een voorbeeld in code, daarna lichten we de werking toe. Volgende methode berekent en toont een bepaalde macht van een bepaald getal. De werkwijze is altijd dezelfde, maar de gebruiker beslist zelf welke macht hij wil berekenen en van welk getal:
 
@@ -81,7 +81,7 @@ Console.WriteLine(b);
 Dit programma zal je eerst `3` tonen en dan, op de volgende regel, `4`. Dit komt omdat de `=` op regel 2 niet betekent "`a` is hetzelfde als `b`", maar wel "kopieer het ding met naam `a` en geef de kopie de naam `b`". Dit is hoe toekenning werkt met alle types die we tot hiertoe gezien hebben.
 
 {% hint style="warning" %}
-Dit is niet hoe toekenning altijd werkt. Wanneer we arrays en objecten zien, zullen de zaken anders liggen.
+Dit is niet hoe toekenning altijd werkt. Wanneer we arrays en eigen objecten zien, zullen de zaken anders liggen.
 {% endhint %}
 
 Met argumenten van een methode-oproep is het hetzelfde. Nog een voorbeeld:
