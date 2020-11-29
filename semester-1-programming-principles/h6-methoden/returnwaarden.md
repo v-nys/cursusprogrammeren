@@ -6,7 +6,7 @@ We gebruiken opnieuw een proces uit het echte leven om de interactie te omschrij
 
 ## Voorbeeld uit het echte leven
 
-Denk aan een bakker uit een Middeleeuws dorpje. Het stappenplan dat deze bakker volgt is er een om brood te maken. Om brood te maken heb je bloem nodig. Bloem maken is niet echt een onderdeel van het takenpakket van de bakker. Hij laat de molenaar dit voor hem doen. Hij vraagt niet gewoon aan de molenaar om bloem te **maken**, maar ook om deze aan hem te **bezorgen** zodat hij er zelf mee verder kan werken. De bakker heeft er niets aan als de molenaar bloem maakt en er verder niets mee doet.
+Denk aan een ouderwetse bakker. Het stappenplan dat deze bakker volgt is er een om brood te maken. Om brood te maken heb je bloem nodig. Bloem maken is niet echt een onderdeel van het takenpakket van de bakker. Hij laat de molenaar dit voor hem doen. Hij vraagt niet gewoon aan de molenaar om bloem te **maken**, maar ook om deze aan hem te **bezorgen** zodat hij er zelf mee verder kan werken. De bakker heeft er niets aan als de molenaar bloem maakt en er verder niets mee doet.
 
 We vertalen nu deze interactie naar code en verklaren daarna de vertaling:
 
