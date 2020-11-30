@@ -119,6 +119,10 @@
   * [protected access modifier](semester-2-oop/h13-geavanceerde-overerving/protected-access-modifier.md)
   * [Base keyword](semester-2-oop/h13-geavanceerde-overerving/2_base.md)
   * [System.Object](semester-2-oop/h13-geavanceerde-overerving/4_system_object.md)
+* [H17: polymorfisme en interfaces](semester-2-oop/h17-polymorfisme-en-interfaces/README.md)
+  * [Polymorfisme](semester-2-oop/h17-polymorfisme-en-interfaces/polymorfisme.md)
+  * [Polymorfisme in de praktijk](semester-2-oop/h17-polymorfisme-en-interfaces/polymorfisme-in-de-praktijk.md)
+  * [Interfaces](semester-2-oop/h17-polymorfisme-en-interfaces/interfaces.md)
 
 ---
 
