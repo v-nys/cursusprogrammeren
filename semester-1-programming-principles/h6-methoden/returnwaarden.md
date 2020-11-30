@@ -1,5 +1,13 @@
 # Return waarden
 
+{% hint style="success" %}
+[Kennisclip return](https://youtu.be/w2y9vKcs83o)
+{% endhint %}
+
+{% hint style="success" %}
+[Kennisclip return en parameters samen](https://youtu.be/i_RX5Scb06c)
+{% endhint %}
+
 Een stappenplan, en dus een methode, voer je uit met het oog op een bepaald resultaat. Soms moet dat resultaat terugbezorgd worden aan een opdrachtgever. Soms niet. Methodes staan toe beide variaties op een stappenplan te schrijven.
 
 We gebruiken opnieuw een proces uit het echte leven om de interactie te omschrijven voor we de sprong maken naar code.
@@ -28,7 +36,7 @@ public static string Molenaar() {
 }
 ```
 
-Hier vallen twee zaken op: in de **signatuur** \(d.w.z. alles van het begin van de regel tot en met het gesloten ronde haakje\) van de methode Molenaar staat niet `void`, maar `string`. Dit komt omdat deze methode een resultaat **teruggeeft** aan de opdrachtgever en dat resultaat van het type `string` is. Daarnaast heb je het sleutelwoord `return`, gevolgd door de tekst `"bloem"`. Het woordje `return` betekent: "bezorg dit aan de code die deze methode heeft opgeroepen". Anders gezegd: dit is hoe de molenaar de geproduceerde bloem overhandigt aan zijn opdrachtgever, de bakker. Waar je de call `Molenaar()` schrijft komt tijdens de uitvoering het geproduceerde resultaat dankzij die `return`.
+Hier vallen twee zaken op: in de signatuur \(d.w.z. alles van het begin van de regel tot en met het gesloten ronde haakje\) van de methode Molenaar staat niet `void`, maar `string`. Dit komt omdat deze methode een resultaat **teruggeeft** aan de opdrachtgever en dat resultaat van het type `string` is. Daarnaast heb je het sleutelwoord `return`, gevolgd door de tekst `"bloem"`. Het woordje `return` betekent: "bezorg dit aan de code die deze methode heeft opgeroepen". Anders gezegd: dit is hoe de molenaar de geproduceerde bloem overhandigt aan zijn opdrachtgever, de bakker. Waar je de call `Molenaar()` schrijft komt tijdens de uitvoering het geproduceerde resultaat dankzij die `return`.
 
 ### Het `return` type
 

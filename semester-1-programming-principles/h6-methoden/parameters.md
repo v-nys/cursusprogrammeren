@@ -1,5 +1,9 @@
 # Parameters
 
+{% hint style="success" %}
+[Kennisclip](https://youtu.be/3T7acLgWgA4)
+{% endhint %}
+
 ## Wat zijn parameters?
 
 Een methode is een stappenplan voor een bepaalde taak. Met de syntax die we tot hiertoe gezien hebben, wordt deze taak altijd op exact dezelfde manier uitgevoerd. Dat beperkt de mogelijkheden enorm.

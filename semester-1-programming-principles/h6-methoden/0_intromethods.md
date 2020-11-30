@@ -1,5 +1,9 @@
 # Methoden intro
 
+{% hint style="success" %}
+[Kennisclip](https://youtu.be/eXcX25OfYOY)
+{% endhint %}
+
 ## Methoden
 
 Veel code die we hebben geschreven wordt meerdere keren, al dan niet op verschillende plaatsen, gebruikt. Dit verhoogt natuurlijk de foutgevoeligheid. Door het gebruik van methodes kunnen we de foutgevoeligheid van de code verlagen omdat de code maar op 1 plek staat én maar 1 keer dient geschreven te worden. Ook de leesbaarheid en dus onderhoudbaarheid van de code wordt verhoogd wanneer we methoden gebruiken om verschillende deeltaken van elkaar te scheiden.
