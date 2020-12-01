@@ -24,6 +24,12 @@ Volgende code toont hoe we een interface implementeren voor data die we naar een
 interface ICSVSerializable
 {
     string ToCsv();
+    
+    string Separator
+    {
+        get;
+        set;
+    }
 }
 ```
 
@@ -33,7 +39,7 @@ Enkele opmerkingen:
 * Het is een vrij algemene afspraak om interfaces met een `I` te laten starten in hun naamgeving
 * Methoden en properties gaan niet vooraf van `public`: interfaces zijn van nature net publiek, dus alle methoden en properties van de interface zijn dat bijgevolg ook.
 * Er wordt geen code/implementatie gegeven: iedere methode eindigt ogenblikkelijk met een puntkomma.
-* De `<T>` is dezelfde als bij List: je kan er een specifiek type invullen.
+* Interfaces kunnen geen `static` members bevatten in C\#.
 
 Als we deze interface nu koppelen aan een klasse, moeten we deze methodes implementeren.
 
@@ -53,18 +59,28 @@ Een interface is een beschrijving hoe een component een andere component kan geb
 Volgende code toont hoe we kunnen aangeven dat een klasse `Student` serialisatie van en naar CSV voorziet:
 
 ```csharp
-class Student : ICSVSerializable
+class Student : ICSVSerializable<Student>
 {
     private string naam;
     private string leeftijd;
+    private string separator;
+    public Separator {
+        get {
+            return this.separator
+        }
+        set {
+            this.separator = value;
+        }
+    }
     
     public Student(string naam, byte leeftijd) {
         this.naam = naam;
         this.leeftijd = leeftijd;
+        this.Separator = ";";
     }
     
-    public override string ToCsv() {
-        return $"Student;{this.naam};{this.leeftijd}"
+    public string ToCsv() {
+        return $"Student{Separator}{this.naam}{Separator}{this.leeftijd}"
     }
 }
 ```
@@ -85,6 +101,15 @@ class Student : ICSVSerializable, IXMLSerializable
 {
     private string naam;
     private string leeftijd;
+    private string separator;
+    public Separator {
+        get {
+            return this.separator
+        }
+        set {
+            this.separator = value;
+        }
+    }
     
     public Student(string naam, byte leeftijd) {
         this.naam = naam;
