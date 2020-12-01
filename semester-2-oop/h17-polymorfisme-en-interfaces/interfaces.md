@@ -59,7 +59,7 @@ Een interface is een beschrijving hoe een component een andere component kan geb
 Volgende code toont hoe we kunnen aangeven dat een klasse `Student` serialisatie van en naar CSV voorziet:
 
 ```csharp
-class Student : ICSVSerializable<Student>
+class Student : ICSVSerializable
 {
     private string naam;
     private string leeftijd;
