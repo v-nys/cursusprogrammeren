@@ -1,5 +1,9 @@
 # Interfaces
 
+{% hint style="success" %}
+[Kennisclip](https://www.youtube.com/watch?v=W0U06nzXh58)
+{% endhint %}
+
 ## Betekenissen
 
 Het woord "interface" heeft meerdere betekenissen:

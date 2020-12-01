@@ -123,6 +123,7 @@
   * [Polymorfisme](semester-2-oop/h17-polymorfisme-en-interfaces/polymorfisme.md)
   * [Polymorfisme in de praktijk](semester-2-oop/h17-polymorfisme-en-interfaces/polymorfisme-in-de-praktijk.md)
   * [Interfaces](semester-2-oop/h17-polymorfisme-en-interfaces/interfaces.md)
+  * [Labo](semester-2-oop/h17-polymorfisme-en-interfaces/labo.md)
 
 ---
 
