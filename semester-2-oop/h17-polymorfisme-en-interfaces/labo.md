@@ -2,7 +2,11 @@
 
 ## Implementatie `ICSVSerializable`
 
-We vertrekken vanaf deze modeloplossing van het SchoolAdmin project. Hieronder vind je een overzicht van deze oplossing als UML-klassendiagram, een visuele notatie om aan te geven welke klassen met elkaar in verbinding staan en hoe:
+We vertrekken vanaf onderstaande modeloplossing van het SchoolAdmin project:
+
+{% file src="../../.gitbook/assets/schooladmin \(1\).zip" caption="SchoolAdmin na labo exceptions" %}
+
+Hieronder vind je een overzicht van deze oplossing als UML-klassendiagram, een visuele notatie om aan te geven welke klassen met elkaar in verbinding staan en hoe:
 
 ![UML-diagram SchoolAdmin voor implementatie interface](../../.gitbook/assets/schooladminvoorserializable.png)
 
