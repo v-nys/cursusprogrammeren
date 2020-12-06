@@ -70,10 +70,10 @@ In het volgende voorbeeld maken we een nieuwe methode aan en geven aan dat de la
 ```csharp
 static double ComputePrice(int numberOfItems, double itemPrice, double discountPercentage = 0, bool doubleDiscount = false) {
     if (not doubleDiscount) {
-        return (numberOfItems * itemPrice) * (1.0 - discountPercentage / 100) - storeCredit;
+        return (numberOfItems * itemPrice) * (1.0 - discountPercentage / 100);
     }
     else {
-    return (numberOfItems * itemPrice) * (1.0 - 2 * discountPercentage / 100) - storeCredit;
+        return (numberOfItems * itemPrice) * (1.0 - 2 * discountPercentage / 100);
     }
 }
 ```
