@@ -15,7 +15,9 @@ Stel dat we een methode hebben met volgende signatuur:
 ```csharp
  static void PrintOrderDetails(string sellerName, int orderNum, string productName)
  {
-     //do stuff
+     Console.WriteLine($"Verkoper: {sellerName}");
+     Console.WriteLine($"Ordernummer: {orderNum}");
+     Console.WriteLine($"Product: {productName}");
  }
 ```
 
@@ -39,7 +41,7 @@ of ook:
 
 ### Volgorde van named parameters belangrijk
 
-Je mag ook een combinatie doen van named en gewone parameters, maar **dan is de volgorde belangrijk**: je moet je dan houden aan de volgorde van de methode-volgorde. Je verbeterd hiermee de leesbaarheid van je code dus \(maar krijgt niet het voordeel van een eigen volgorde te hanteren\). Enkele voorbeelden:
+Je mag ook een combinatie doen van named en gewone parameters, maar **dan is de volgorde belangrijk**: je moet je dan houden aan de volgorde van de methode-volgorde. Je verbetert hiermee de leesbaarheid van je code dus \(maar krijgt niet het voordeel van een eigen volgorde te hanteren\). Enkele voorbeelden:
 
 ```csharp
 PrintOrderDetails("Gift Shop", 31, productName: "Red Mug");
@@ -63,31 +65,38 @@ Je geef aan dat een parameter optioneel is door deze een default waarde te geven
 
 **Optionele parameters worden steeds achteraan de parameterlijst van de methode geplaatst** .
 
-In het volgende voorbeeld maken we een nieuwe methode aan en geven aan dat de laatste twee parameters \(`optionalstr` en `age`\) optioneel zijn:
+In het volgende voorbeeld maken we een nieuwe methode aan en geven aan dat de laatste parameters optioneel zijn. `discountPercentage` past een "gewone" korting toe op de aankoop van het aantal items. `doubleDiscount` is een speciale extra korting die het percentage verdubbelt. We veronderstellen dat items meestal verkocht worden zonder korting:
 
 ```csharp
-static void ExampleMethod(int required, string optionalstr = "default string", int age = 10)
+static double ComputePrice(int numberOfItems, double itemPrice, double discountPercentage = 0, bool doubleDiscount = false) {
+    if (not doubleDiscount) {
+        return (numberOfItems * itemPrice) * (1.0 - discountPercentage / 100) - storeCredit;
+    }
+    else {
+    return (numberOfItems * itemPrice) * (1.0 - 2 * discountPercentage / 100) - storeCredit;
+    }
+}
 ```
 
 Volgende manieren zijn nu geldige manieren om de methode aan te roepen:
 
 ```csharp
-ExampleMethod(15, "tim", 25); //klassieke aanroep
-ExampleMethod(20, "dams"); //age zal 10 zijn
-ExampleMethod(35); //optionalstr zal "default string" en age zal 10 zijn
+Console.WriteLine(ComputePrice(4,10.0)); // klassieke aanroep
+Console.WriteLine(ComputePrice(4,10.0,5.0)); // 5% korting op de totaalprijs
+Console.WriteLine(ComputePrice(4,10.0,5.0,true)); // 10% korting op de totaalprijs omdat de korting verdubbeld wordt
 ```
 
-Je mag enkel de optionele parameters van achter naar voor weglaten. Volgende aanroepen zijn dus **niet geldig**:
+Je mag enkel de optionele parameters van achter naar voor weglaten. Volgende aanroep is dus **niet geldig**:
 
 ```csharp
-ExampleMethode(3, 4); //daar de tweede param een string moet zijn
-ExampleMethode(3, ,4);
+Console.WriteLine(ComputePrice(4,10.0,true)); // derde argument moet een double zijn!
 ```
 
-Met optionele parameters kunnen we dit indien gewenst omzeilen. Volgende aanroep is wel geldig:
+Door de argumenten te benoemen, kunnen we dit indien gewenst omzeilen. Volgende aanroep is wel geldig:
 
 ```csharp
-ExampleMethod(3, age: 4);
+// dit heeft weinig zin want we verdubbelen 0% korting, maar voor C# werkt dit wel
+Console.WriteLine(ComputePrice(4,10.0,doubleDiscount: true));
 ```
 
 ## Method overloading
@@ -194,13 +203,13 @@ static void Main(string[] args)
 
 static void Toonverhouding(int a, double b)
 {
-    Console.WriteLine("{0}/{1}", a, b);
+    Console.WriteLine($"{a}/{b}");
 }
 
 
 static void Toonverhouding(double a, int b)
 {
-    Console.WriteLine("{0}/{1}", a, b);
+    Console.WriteLine($"{a}/{b}");
 }
 ```
 

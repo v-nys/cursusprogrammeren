@@ -50,3 +50,24 @@ De `Math.Pow` methode vereist dus bijvoorbeeld 2 parameters van het type double.
 
 ![](../../.gitbook/assets/methoden8%20%282%29.png)
 
+## Je eigen methodes documenteren
+
+Als je de juiste documentatie voorziet, kan je bovenstaande ondersteuning ook krijgen voor je eigen methodes. Je doet dit met **XML-comments** als volgt:
+
+```csharp
+    /// <summary>
+    /// Adds two doubles and returns the result.
+    /// </summary>
+    /// <returns>
+    /// The sum of two doubles.
+    /// </returns>
+    /// <param name="a">A double precision number.</param>
+    /// <param name="b">A double precision number.</param>
+    public static double Add(double a, double b)
+    {
+        return a + b;
+    }
+```
+
+In de `summary` tag zet je een omschrijving van wat de methode doet. In de `returns` tag leg je uit wat voor resultaat je precies terugkrijgt. De `param` tags leggen uit welke informatie verwacht wordt. Merk op dat je drie slashes schrijft voor dit speciaal soort commentaar in plaats van de gewoonlijke twee.
+
