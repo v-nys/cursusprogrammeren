@@ -39,17 +39,31 @@ Een object van deze klasse bevat info over een bepaald bestand, respectievelijk 
 Als we een bestand met een bepaalde naam zoeken, kunnen we dus volgende code gebruiken:
 
 ```csharp
+using System.IO;
+
 class FileSearcher {
-    public static void SearchFile(DirectoryInfo dir, string fileName) {
-        foreach(FileInfo fi in dir.EnumerateFiles()) {
-            if (fi.Name == fileName) {
-                Console.WriteLine($"File is aanwezig in {fi.DirectoryName}");
+        public static void SearchFile(DirectoryInfo dir, string fileName)
+        {
+            foreach (FileInfo fi in dir.EnumerateFiles())
+            {
+                if (fi.Name == fileName)
+                {
+                    Console.WriteLine($"File is aanwezig in {fi.DirectoryName}");
+                }
+            }
+            foreach (DirectoryInfo di in dir.EnumerateDirectories())
+            {
+                try
+                {
+                    SearchFile(di, fileName);
+                }
+                catch(System.UnauthorizedAccessException e)
+                {
+                    // goed, dan slaan we deze map over
+                }
+                
             }
         }
-        foreach(DirectoryInfo di in dir.EnumerateDirectories()) {
-            SearchFile(di,fileName);
-        }
-    }
     public static void Main() {
         Console.WriteLine("Hoe heet het bestand dat je zoekt?");
         string fileName = Console.ReadLine();
