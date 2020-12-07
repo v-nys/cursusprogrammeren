@@ -124,10 +124,10 @@
   * [Polymorfisme in de praktijk](semester-2-oop/h17-polymorfisme-en-interfaces/polymorfisme-in-de-praktijk.md)
   * [Interfaces](semester-2-oop/h17-polymorfisme-en-interfaces/interfaces.md)
   * [Labo](semester-2-oop/h17-polymorfisme-en-interfaces/labo.md)
-
----
-
-* [Recursie](recursie.md)
+* [H18: Recursie](semester-2-oop/recursie/README.md)
+  * [Wat is recursie?](semester-2-oop/recursie/wat-is-recursie.md)
+  * [Uitgewerkte voorbeelden](semester-2-oop/recursie/uitgewerkte-voorbeelden.md)
+  * [Labo](semester-2-oop/recursie/labo.md)
 
 ## Appendix
 
