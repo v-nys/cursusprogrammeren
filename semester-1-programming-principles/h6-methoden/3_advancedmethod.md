@@ -4,6 +4,10 @@
 Volgende sectie is grotendeels gebaseerd op het volgende [artikel](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/named-and-optional-arguments).
 {% endhint %}
 
+{% hint style="success" %}
+[Kennisclip](https://youtu.be/TGtO--YpKrU)
+{% endhint %}
+
 ## Named parameters
 
 Wanneer je een methode aanroept is de volgorde van je argumenten belangrijk: deze moeten meegeven worden in de volgorde zoals de methode parameters ze verwachten.

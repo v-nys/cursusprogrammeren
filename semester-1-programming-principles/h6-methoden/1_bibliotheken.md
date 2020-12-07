@@ -1,5 +1,9 @@
 # Documentatie
 
+{% hint style="success" %}
+[Kennisclip](https://youtu.be/18YGO18-AAI)
+{% endhint %}
+
 Je herkent een methode aan de ronde haakjes na de methodenaam. Je hebt dus reeds een aantal methoden gebruikt zonder dat je het wist, denk maar aan `WriteLine(), ReadLine() en Parse()`.
 
 Dit zijn dus alle 3 methoden: stukken code die een specifieke taak uitvoeren.
