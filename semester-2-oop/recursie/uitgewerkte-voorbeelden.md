@@ -101,7 +101,7 @@ De gebruikte klassen krijg je hier:
 
 ```csharp
 interface IXML {
-    List<IXML> children {
+    List<IXML> Children {
         get;
     }
     string Render();
@@ -125,7 +125,7 @@ class XMLTree : IXML {
         foreach(IXML child in this.Children) {
             childRenders += child.Render();
         }
-        return $"<{this.tag}>{childRenders}</{this.tag}>"
+        return $"<{this.tag}>{childRenders}</{this.tag}>";
     }
 }
 
