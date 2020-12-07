@@ -101,9 +101,6 @@ De gebruikte klassen krijg je hier:
 
 ```csharp
 interface IXML {
-    List<IXML> Children {
-        get;
-    }
     string Render();
 }
 
@@ -131,11 +128,6 @@ class XMLTree : IXML {
 
 class XMLLeaf : IXML {
     private string text;
-    public List<IXML> Children {
-        get {
-            return new List<IXML>();
-        }
-    }
     public XMLLeaf(string text) {
         this.text = text;
     }
