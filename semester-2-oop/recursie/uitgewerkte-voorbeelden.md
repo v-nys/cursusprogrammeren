@@ -69,6 +69,7 @@ class FileSearcher {
         string fileName = Console.ReadLine();
         Console.WriteLine("Vanaf waar wil je zoeken?");
         DirectoryInfo topLevel = new DirectoryInfo(Console.ReadLine());
+        FileSearcher.SearchFile(topLevel, fileName);
     }
 }
 ```
