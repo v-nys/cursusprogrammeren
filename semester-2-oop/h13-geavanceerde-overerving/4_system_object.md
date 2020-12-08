@@ -146,5 +146,5 @@ De lijn `Student temp = (Student) o;` zal het `object o` casten naar een `Studen
 
 Een efficiënte hashfunctie voor een type `K` zorgt er bijvoorbeeld voor dat opzoekingen van keys in een `Dictionary<K,V>` erg snel verlopen. Een minder efficiënte hashfunctie zal opzoekingen in datzelfde `Dictionary` trager laten verlopen. Een foute hashfunctie kan er voor zorgen dat je `Dictionary` niet meer werkt zoals verwacht.
 
-Wij behandelen het schrijven van een eigen hashfunctie hier niet. Dat komt omdat de defaultimplementatie misschien niet altijd efficiënt zal zijn, maar wel technisch juist zal zijn zo lang je de afspraken met betrekking tot `Equals` respecteert. Als je zelf een hashfunctie schrijft, moet je de wiskunde daar achter goed begrijpen en riskeer je er een te schrijven die technisch niet juist is.
+Wij behandelen het schrijven van een eigen hashfunctie hier niet. Wanneer we gebruik maken van hashes \(mogelijk impliciet\), dan zullen we hashfuncties aanbieden die je zo mag gebruiken.
 
