@@ -2,8 +2,6 @@
 
 > Sommige oefeningen zijn van de vorm "Maak een methode die...". Het is steeds de bedoeling dat je de werking van je methode ook test door deze toe te voegen aan je keuzemenu en uit te proberen.
 
-## 
-
 {% hint style="warning" %}
 Vanaf hier documenteren we al onze methoden! Je voorziet:
 
