@@ -176,3 +176,37 @@ Resultaat: (2 + 3) = 5
 Vergeet niet je methoden te documenteren!
 {% endhint %}
 
+## Oefening: H7-begroeten
+
+### Leerdoelen
+
+* overloading
+
+### Functionele analyse
+
+Schrijf drie manieren om gebruikers te begroeten. Naargelang hoe je de oproep schrijft, wordt de juiste methode uitgevoerd. Schrijf ook een methode om te demonstreren.
+
+### Technische analyse
+
+Noem je methode om te begroeten `Hallo`. Je kan deze oproepen zonder argumenten en dan wordt je naam gevraagd via de console. Je kan ze ook oproepen met één of twee argumenten. Je maakt ook een methode `DemonstreerHallo` en vraagt hierin om drie namen die je als argument kan gebruiken. De methode `Hallo` geeft ook aan hoe ze is opgeroepen.
+
+#### Voorbeeldinteractie
+
+```text
+DemonstreerHallo heeft drie namen nodig!
+> Misty
+> Ash
+> Brock
+Hallo is opgeroepen zonder argument. Wat is je naam?
+> Oak
+Hallo, Oak!
+Hallo is opgeroepen met één argument.
+Hallo, Misty!
+Hallo is opgeroepen met twee argumenten.
+Hallo, Ash en Brock!
+```
+
+{% hint style="warning" %}
+Documenteer al je methodes!
+{% endhint %}
+
