@@ -1,6 +1,18 @@
 # Wat is recursie?
 
+{% hint style="success" %}
+[Kennisclip 1](https://youtu.be/nuCd4TZhLTE)
+{% endhint %}
+
+{% hint style="warning" %}
+Op het einde van dit filmpje zeg ik dat je sommige voorbeelden niet zonder recursie kan afhandelen. Ik bedoel dit in de praktische zin, niet in de technische zin. Technisch kan je elke recursieve oplossing herschrijven zonder recursie, maar de niet-recursieve oplossing kan dan soms **veel** moeilijker te begrijpen zijn.
+{% endhint %}
+
 ### Recursieve methodes
+
+{% hint style="success" %}
+[Kennisclip 2](https://youtu.be/rSBDs1KUTHo)
+{% endhint %}
 
 Een recursieve methode is een methode die zichzelf oproept. Dat klinkt eerst erg vreemd, maar het is een idee dat je zeker al vaker gezien hebt. Je kan bijvoorbeeld gehele machtsverheffing als volgt op een recursieve manier definiëren:
 
@@ -51,6 +63,10 @@ Schrijf steeds de calls uit voor een paar kleine voorbeelden van recursieve func
 
 #### Werkwijze
 
+{% hint style="success" %}
+[Kennisclip 3](https://youtu.be/-IKMA8eF8qA)
+{% endhint %}
+
 Een recursieve methode schrijf je altijd door één of meerdere **basisgevallen** te voorzien waarin het probleem "makkelijk" op niet-recursieve wijze wordt opgelost \(bv. de 0'e macht, het verwerken van een lege lijst,...\). Verder voorzie je een of meerdere **recursieve gevallen**. In deze gevallen wordt het probleem herleid tot een kleiner probleem plus een aantal extra bewerkingen die je kan uitvoeren nadat dit kleiner probleem is opgelost. Bij de machtsverheffing lossen we bijvoorbeeld eerst het probleem van de N-1ste macht op. Dit is een kleiner probleem dan de Nde macht. Daarna verwerken we de oplossing van dat kleinere probleem tot een oplossing voor het volledige probleem.
 
 {% hint style="info" %}
@@ -58,6 +74,10 @@ In bovenstaande voorbeelden is recursie vooral een alternatief voor een lus. Voo
 {% endhint %}
 
 ## Recursieve data
+
+{% hint style="success" %}
+[Kennisclip 4](https://youtu.be/rSBDs1KUTHo)
+{% endhint %}
 
 Recursieve data is data die hetzelfde soort data bevat. In IT wordt voortdurend gebruik gemaakt van boomstructuren:
 

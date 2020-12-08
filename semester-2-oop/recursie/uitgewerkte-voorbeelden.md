@@ -2,6 +2,10 @@
 
 ## Voorbeeld: stack overflows bij fout gebruik properties
 
+{% hint style="success" %}
+[Kennisclip](https://youtu.be/X_DeD2mWSJY)
+{% endhint %}
+
 Wij volgen de afspraak dat we full properties schrijven met een publieke getter met een hoofdletter en met een achterliggend privaat attribuut met een kleine letter. Deze getter geeft normaal het achterliggend attribuut terug. Beginners schrijven vaak code zoals de volgende:
 
 ```csharp
@@ -31,6 +35,10 @@ Een belangrijke les: als je stack overflow krijgt, is dit bijna altijd omdat je 
 Deze code is niet meer recursief als je het juist doet: `return naam`.
 
 ## Voorbeeld: een bestand met een bepaalde naam opzoeken
+
+{% hint style="success" %}
+[Kennisclip](https://youtu.be/E-Loo3iGgEU)
+{% endhint %}
 
 Bestanden opzoeken kan je doen met ingebouwde programma's voor de shell. Maar we kunnen dit ook zelf implementeren. Hiervoor moeten we werken met de [`FileInfo`](https://docs.microsoft.com/en-us/dotnet/api/system.io.fileinfo?view=net-5.0) klasse en met de klasse [`DirectoryInfo`](https://docs.microsoft.com/en-us/dotnet/api/system.io.directoryinfo?view=net-5.0). Dit zijn allebei kindklassen van de algemenere `FileSystemInfo` klasse.
 
@@ -76,6 +84,10 @@ class FileSearcher {
 
 ## Voorbeeld: XML nodes met een `Render()` methode
 
+{% hint style="success" %}
+[Kennisclip](https://youtu.be/hMVZy4WD3HM)
+{% endhint %}
+
 XML-documenten verwerken is iets dat je voortdurend moet doen in het bedrijfsleven. Omwille van de recursieve structuur van XML gaat dit vaak het best met recursieve methodes. Hieronder zie je hoe je een voorstelling van een XML-document terug kan vertalen naar tekst via de methode `Render`.
 
 Veronderstel eerst dat je volgende code hebt:
@@ -97,7 +109,11 @@ new XMLTree("weight", new List<IXML>(){new XMLLeaf("2kg")})});
 
 Dit hoef je niet noodzakelijk met de hand te doen. Dit wordt normaal gedaan door een XML-parser.
 
-De gebruikte klassen krijg je hier:
+De gebruikte klassen krijg je hieronder.
+
+{% hint style="info" %}
+We gebruiken een IXML interface omdat een XML-element een reeks andere XML-elementen \(tags of tekst\) bevat. Je kan geen `List<string of XMLTree>` aanmaken, dus we gebruiken een "wrapper"-klasse voor string in de vorm van `XMLLeaf`. Als `XMLLeaf` een interface IXML implementeert, kunnen we een `List<IXML>` gebruiken. Dit is een klasse die zelf niets anders doet dan bepaalde data te verpakken in een bruikbare interface.
+{% endhint %}
 
 ```csharp
 interface IXML {
