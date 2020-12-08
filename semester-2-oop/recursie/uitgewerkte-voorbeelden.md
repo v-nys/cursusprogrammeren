@@ -1,6 +1,6 @@
 # Uitgewerkte voorbeelden
 
-## Voorbeeld: stackoverflow exceptions bij fout gebruik properties
+## Voorbeeld: stack overflows bij fout gebruik properties
 
 Wij volgen de afspraak dat we full properties schrijven met een publieke getter met een hoofdletter en met een achterliggend privaat attribuut met een kleine letter. Deze getter geeft normaal het achterliggend attribuut terug. Beginners schrijven vaak code zoals de volgende:
 
@@ -25,7 +25,7 @@ class VoorbeeldKlasse {
 Deze code is recursief, maar ze mist een basisgeval. We vragen `Naam` \(met hoofdletter\) op en als gevolg daarvan vragen we opnieuw `Naam` \(met hoofdletter\) op. Elke recursieve call gebruikt wat ruimte op de stack, totdat deze volledig vol is.
 
 {% hint style="warning" %}
-Een belangrijke les: als je stack overflow exception krijgt, is dit bijna altijd omdat je recursieve code hebt geschreven zonder basisgeval of waarvan het basisgeval niet correct wordt gedetecteerd.
+Een belangrijke les: als je stack overflow krijgt, is dit bijna altijd omdat je recursieve code hebt geschreven zonder basisgeval of waarvan het basisgeval niet correct wordt gedetecteerd.
 {% endhint %}
 
 Deze code is niet meer recursief als je het juist doet: `return naam`.
