@@ -45,11 +45,7 @@ Om arrays te sorteren roep je de `Sort()`-methode op als volgt, als parameter ge
 Volgende voorbeeld toont hier het gebruik van:
 
 ```csharp
-string[] items = new string[3];
-items[0] = "brood";
-items[1] = "koffie";
-items[2] = "fruit";
-// Sorteer
+string[] items = {"brood","koffie","fruit"};
 Array.Sort(items);
 
 // Toon resultaat van sorteren
@@ -94,10 +90,7 @@ Array.BinarySearch(items, "koffie");
 Volgend voorbeeld toont het gebruik van deze methode:
 
 ```csharp
-string[] items = new string[3];
-items[0] = "brood";
-items[1] = "koffie";
-items[2] = "fruit";
+string[] items = {"brood","koffie","fruit"};
 
 Array.Sort(items);
 Console.WriteLine("Wil je weten of iets al op je lijstje staat? Geef de naam van het item.");
@@ -118,12 +111,7 @@ Het zoeken in arrays kan met behulp van `while` of `for`-loops tamelijk snel. Vo
 ```csharp
 int teZoekenGetal = 12;
 
-int[] getallen = new int[5];
-getallen[0] = 5;
-getallen[1] = 10;
-getallen[2] = 12;
-getallen[3] = 25;
-getallen[4] = 16;
+int[] getallen = {5,10,12,25,16};
 int index = -1;
 
 for (int i = 0; i < getallen.Length && index == -1; i++)
@@ -146,14 +134,8 @@ Je kan hier geen gebruik maken van `BinarySearch` omdat dat alleen gaat als je a
 {% endhint %}
 
 ```csharp
-string[] producten = new string[3];
-producten[0] = "appel";
-producten[1] = "peer";
-producten[2] = "citroen";
-double[] prijzen = new double[3];
-prijzen[0] = 0.65;
-prijzen[1] = 0.35;
-prijzen[2] = 0.70;
+string[] producten = { "appel","peer","citroen" };
+double[] prijzen = { 0.65, 0.35, 0.70 };
 ```
 
 We vragen nu aan de gebruiker van welk product de prijs getoond moet worden:
