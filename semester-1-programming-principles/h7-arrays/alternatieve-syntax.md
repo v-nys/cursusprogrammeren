@@ -13,14 +13,14 @@ type[] arraynaam; // type vervang je door het type in kwestie
 Dit is hetzelfde als eerder. Je kan bijvoorbeeld volgende concrete code hebben:
 
 ```csharp
-string[] myColors;
+string[] items;
 ```
 
 Nu kan je deze array meteen initialiseren op een andere manier dan eerder. Eerder schreven we `= new type[grootte]`, bijvoorbeeld `myColors = new string[5]`, om vervolgens onze array in te vullen. Een snellere werkwijze is om de grootte niet in te vullen en de gebruikte waarden tussen accolades te zetten, bijvoorbeeld:
 
 ```csharp
-string[] myColors;
-myColors = new string[] {"red", "green", "yellow", "orange", "blue"};
+string[] items;
+items = new string[] {"brood", "koffie", "fruit", "thee", "yoghurt"};
 ```
 
 Er staan vijf elementen tussen de accolades, dus de compiler kan achterhalen dat je een nieuwe array van vijf elementen wil maken, zonder dat je dat uitdrukkelijk zegt.
@@ -30,7 +30,7 @@ Er staan vijf elementen tussen de accolades, dus de compiler kan achterhalen dat
 Indien je direct waarden wilt toekennen \(initialiseren\) tijdens het aanmaken van de array zelf dan mag dit ook als volgt:
 
 ```csharp
-string[] myColors = {"red", "green", "yellow", "orange", "blue"};
+string[] items = {"brood", "koffie", "fruit", "thee", "yoghurt"};
 ```
 
 Hier zal je array dus een vaste lengte van 5 elementen hebben. Merk op dat deze manier dus enkel werkt indien je reeds weet welke waarden in de array moeten. De andere opties bieden in dat opzicht meer flexibiliteit ten koste van meer schrijfwerk.

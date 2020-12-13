@@ -138,6 +138,10 @@ for(int i = 0; i <= 9; i++) {
 }
 ```
 
+{% hint style="warning" %}
+Als je een element probeert uit te lezen dat nog geen waarde gekregen heeft, krijg je een defaultwaarde. Wat voor waarde dat is, hangt af van de array. Binnenkort kunnen we deze defaultwaarden verklaren. Voorlopig veronderstellen we dat je **géén** gebruik maakt van defaultwaarden en je arrays altijd invult.
+{% endhint %}
+
 ### De lengte van de array te weten komen
 
 Soms kan het nodig zijn dat je in een later stadium van je programma de lengte van je array nodig hebt. De `Length` eigenschap geeft je deze lengte. Volgend voorbeeld toen dit:
