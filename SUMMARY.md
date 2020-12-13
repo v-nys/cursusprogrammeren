@@ -76,6 +76,7 @@
   * [Array principes](semester-1-programming-principles/h7-arrays/1_arraysbasics.md)
   * [Alternatieve syntax](semester-1-programming-principles/h7-arrays/alternatieve-syntax.md)
   * [Werken met arrays](semester-1-programming-principles/h7-arrays/2_werken_met_arrays.md)
+  * [Value types en reference types](semester-1-programming-principles/h7-arrays/value-types-en-reference-types.md)
   * [Arrays en methoden](semester-1-programming-principles/h7-arrays/3_arrays_en_methoden.md)
   * [N-dimensionale arrays](semester-1-programming-principles/h7-arrays/4_ndimensionalarrays.md)
   * [Oefeningen deel 1](semester-1-programming-principles/h7-arrays/a_practica.md)
