@@ -1,5 +1,9 @@
 # Arrays en methoden
 
+{% hint style="danger" %}
+TODO: aanvullen met info over niet-opgevulde arrays en null references
+{% endhint %}
+
 ## Methoden met arrays als parameter maken
 
 Zoals alle types kan je ook arrays van eender welk type als parameter gebruiken bij het schrijven van een methode.

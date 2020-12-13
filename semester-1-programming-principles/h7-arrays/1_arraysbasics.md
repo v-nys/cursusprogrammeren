@@ -4,294 +4,185 @@
 
 Arrays zijn een veelgebruikt principe in vele programmeertalen. Het grote voordeel van arrays is dat je een enkele variabele kunt hebben die een grote groep waarden voorstelt van eenzelfde type. Hierdoor wordt je code leesbaarder en eenvoudiger in onderhoud. Arrays zijn een zeer krachtig hulpmiddel, maar er zitten wel enkele venijnige addertjes onder het gras.
 
-Een array is niet meer dan een verzameling waarden van hetzelfde type \(bijvoorbeeld een verzameling ints, doubles of chars\). Deze waarden kunnen benaderd worden via 1 enkele variabele, de array zelf. Door middel van een _index_ kan ieder afzonderlijk element uit de array aangepast of uitgelezen worden.
+Een array is niet meer dan een verzameling waarden van hetzelfde type \(bijvoorbeeld een verzameling ints, doubles of chars\). Deze waarden kunnen voorgesteld worden met één variabele. Door middel van een _index_ kan ieder afzonderlijk element uit de array aangepast of uitgelezen worden.
 
-Een nadeel van arrays is dat, eens we de lengte van een array hebben ingesteld, deze lengte niet meer kan veranderen. Later zullen we leren werken met lists en andere collections die dit nadeel niet meer hebben \(zie [hier](https://github.com/v-nys/cursusprogrammeren/tree/e865f37d2ea41dc32c32aa2e02a9a763c7ea56f5/17_gencols/8_Collections.md)\).
+{% hint style="warning" %}
+Een nadeel van arrays is dat, eens we de lengte van een array hebben ingesteld, deze lengte niet meer kan veranderen. Later zullen we leren werken met datastructuren die deze beperking niet hebben.
+{% endhint %}
 
-### Nut van arrays
+### Voorbeelden van arrays
 
-Stel dat je de dagelijkse neerslag wenst te bewaren. Dit kan je zonder arrays eenvoudig:
+Het basisidee achter arrays is dat je meerdere waarden van eenzelfde type als groep wil voorstellen.
+
+Een boodschappenlijstje is een eenvoudig en nuttig voorbeeld. Je zou ruimte kunnen voorzien voor 3 items, voorgesteld als `string`, als volgt:
 
 ```csharp
-int dag1= 34;
-int dag2= 45;
-int dag3= 0;
-int dag4= 34;
-int dag5= 12;
-int dag6= 0;
-int dag7= 23;
+string item1;
+string item2;
+string item3;
+Console.WriteLine("Wat is het 1e item dat je nodig hebt?");
+item1 = Console.ReadLine();
+Console.WriteLine("Wat is het 2e item dat je nodig hebt?");
+item2 = Console.ReadLine();
+Console.WriteLine("Wat is het 3e item dat je nodig hebt?");
+item3 = Console.ReadLine();
+// hier nog wat code om deze items te tonen
+// of om te markeren dat ze in de kar geplaatst zijn
 ```
 
-Maar wat als je plots de neerslag van een heel jaar, 365 dagen, wenst te bewaren. Of een hele eeuw? Van zodra je een bepaalde soort data hebt die je veelvuldig wenst te bewaren dan zijn arrays de oplossing.
+Een groot nadeel van deze aanpak: als je vier items wil ondersteunen, heb je meer code nodig. Als je vijf items wil ondersteunen, heb je nog meer code nodig. Deze code kan de basis niet vormen van een degelijk boodschappenlijstje.
 
-### Bron
+Andere mogelijke voorbeelden die je beter zou kunnen afhandelen met arrays dan met individuele variabelen zijn:
 
-Grote delen van dit hoofdstuk zijn vertaald uit het handboek C\# 4.0 Essentials.
+* metingen van de dagelijkse neerslag
+* waarde van aandelen doorheen de tijd
+* ...
 
-## Array Basics
+## Basisgebruik arrays
 
 ### Arrays declareren
 
-Een array creëren \(declareren\) kan op verschillende manieren. Hoewel manier 1 de meest gebruikelijke is, zal deze voor de beginnende programmeur nog wat abstract lijken vanwege het gebruik van het `new` keyword. Manier 2 is de eenvoudigste en snelste manier, maar deze is wel minder flexibel.
+Net als andere waarden geef je een array een naam door hem toe te kennen aan een variabele. Daarom moet je variabelen kunnen declareren van een array-type, d.w.z. de compiler informeren dat er een array bestaat met een bepaalde naam en een bepaald type. Dit is bijna hetzelfde als het declareren van een variabele van een van de types die je al kent, maar je geeft aan dat het om een reeks gaat door middel van rechte haken.
 
-#### Manier 1
-
-De eenvoudigste variant is deze waarbij je een array variabele aanmaakt, maar deze nog niet initialiseert \(i.e. je maakt enkel een identifier in aan\). De syntax is als volgt:
+We bouwen voort op de voorbeelden van hierboven:
 
 ```csharp
-type[] arraynaam;
+string[] items; // een reeks boodschappen voorgesteld als tekst
+double[] metingen; // metingen van de neerslag als kommagetallen
+decimal[] aandelen; // kommagetallen met hoge precisie
 ```
 
-Type kan dus eender welk type zijn dat je reeds kent. De \[ \] \(_square brackets_\) duiden aan dat het om een array gaat.
+De rechte haken betekenen dus "een reeks van" en een declaratie van een reeks kan een heleboel declaraties van individuele variabelen vervangen. Met deze voorstelling heb je bijvoorbeeld `item1` en `item2` en `item3` niet meer nodig.
 
-Voorbeelden van array declaraties kunnen dus bijvoorbeeld zijn:
+### Arrays initialiseren
+
+Eveneens zoals bij de types die je al kent, moet je je variabelen na declaratie een waarde geven. Een waarde van een array-type stelt eigenlijk een hoeveelheid ruimte in het geheugen voor. Ruimte voor een bepaald aantal strings, voor een bepaald aantal getallen, maakt niet uit. Wat wel anders is dan bij de types die je al kent, is de syntax. Je moet deze ruimte reserveren met het keyword `new` en je moet zeggen hoe veel ruimte je nodig hebt. Bijvoorbeeld, met de declaraties van hierboven:
 
 ```csharp
-    int[] verkoopCijfers;
-    double[] gewichtHuisdieren;
-    bool[] examenAntwoorden;
+items = new string[10]; // ruimte om 10 items op het lijstje bij te houden
+metingen = new double[365]; // ruimte om een jaar aan metingen te voorzien
+aandelen = new double[365*10]; // ruimte om de koers over (ongeveer) 10 jaar bij te houden
 ```
 
-Stel dat je dus een array van strings wenst waarin je verschillende kleuren zal plaatsen dan schrijf je:
+{% hint style="info" %}
+Net als bij andere variabelen kan je de declaratie en de initialisatie op één regel zetten.
+{% endhint %}
+
+### Arrays opvullen
+
+Nadat de nodige ruimte voorzien is, kan je deze gebruiken. Dit doe je door te zeggen dat een bepaalde waarde op een bepaalde positie in de reeks terechtkomt. Deze positie noemen we de **index** van het element. Opnieuw met bovenstaande declaraties en initialisaties:
+
+{% hint style="danger" %}
+Het eerste element krijgt index 0, niet 1. Het laatste krijgt een index gelijk aan de lengte van de array verminderd met 1.
+{% endhint %}
 
 ```csharp
-string[] myColors;
+items[0] = "brood"; // het eerste element heeft index 0
+items[1] = "thee";
+items[2] = "fruit";
+// nog wat boodschappen
+items[9] = "krant";
+// items[10] kan je niet gebruiken want de laatste index is 10-1
 ```
 
-Vervolgens kunnen we later waarden toekennen aan de array, hiervoor gebruiken we het `new` sleutelwoord.
+Dit hoeven geen vaste waarden te zijn! Je kan ook dit doen:
 
 ```csharp
-string[] myColors;
-myColors = new string[] {"red", "green", "yellow", "orange", "blue"};
+Console.WriteLine(); // geef 10 items die je nodig hebt
+items[0] = Console.ReadLine(); // het eerste element heeft index 0
+items[1] = Console.ReadLine();
+items[2] = Console.ReadLine();
+// nog wat boodschappen
+items[9] = Console.ReadLine();
+// items[10] kan je niet gebruiken want de laatste index is 10-1
 ```
 
-Je array zal vanaf dit punt een lengte van 5 hebben en kan niet meer groeien.
-
-#### Manier 2
-
-Indien je direct waarden wilt toekennen \(initialiseren\) tijdens het aanmaken van de array zelf dan mag dit ook als volgt:
+Dit levert je meteen een mogelijke besparing op ten opzichte van het gebruik van variabelen. Met 10 individuele variabelen, dus **zonder array**, zou je bovenstaande code ook zo kunnen schrijven:
 
 ```csharp
-string[] myColors = {"red", "green", "yellow", "orange", "blue"};
+Console.WriteLine(); // geef 10 items die je nodig hebt
+item1 = Console.ReadLine(); // het eerste element heeft index 0
+item2 = Console.ReadLine();
+item3 = Console.ReadLine();
+// nog wat boodschappen
+item10 = Console.ReadLine();
 ```
 
-Ook hier zal dus vanaf dit punt je array een vaste lengte van 5 elementen hebben. Merk op dat deze manier dus enkel werkt indien je reeds weet welke waarden in de array moeten. In manier 1 kunnen we perfect een array aanmaken en pas veel later in programma ook effectief waarden toekennen \(bijvoorbeeld door ze stuk per stuk door een gebruiker te laten invoeren\).
-
-#### Manier 3
-
-Nog een andere manier om arrays aan te maken is de volgende, waarbij je aangeeft hoe groot de array moet zijn, zonder reeds effectief waarden toe te kennen:
+Maar **met een array** heb je ook deze optie:
 
 ```csharp
-string[] myColors;
-myColors = new string[5];
-```
-
-#### Samengevat
-
-De 3 manieren om arrays te declareren zijn dus:
-
-```csharp
-//Manier 1
-string[] myColors;
-myColors = new string[] {"red", "green", "yellow", "orange", "blue"};
-//Manier 2
-string[] myColors = {"red", "green", "yellow", "orange", "blue"};
-//Manier 3
-string[] myColors;
-myColors = new string[5];
-```
-
-### Elementen van een array aanpassen en uitlezen
-
-Van zodra er waarden in een array staan of moeten bijgeplaatst worden dan kan je deze benaderen met de zogenaamde _array accessor_ notatie Deze notatie is heel eenvoudigweg de volgende:
-
-```csharp
-myColors[i];
-```
-
-We plaatsen de naam van de array, gevolgd door brackets waarbinnen een getal _i_ aangeeft het hoeveelste element we wensen te benaderen \(lezen en/of schrijven\).
-
-**De index van een C\#-array start steeds bij 0. Indien je dus een array aanmaakt met lengte 10 dan heb je de indices 0 tot en met 9.**
-
-![](../../.gitbook/assets/arrays1%20%282%29.png)
-
-#### Veelgemaakte fouten: Lengte en indexering van arrays
-
-Het gebeurt vaak dat beginnende programmeurs verward geraken omtrent het aanmaken van een array aan de hand van de lengte en het indexeren.
-
-De regels zijn duidelijk:
-
-* Bij het maken van een array is de lengte van een array gelijk aan het aantal elementen dat er in aanwezig is. Dus een array met 5 elementen heeft als lengte 5.
-* Bij het schrijven en lezen van individuele elementen uit de array \(zie hierna\) gebruiken we een indexering die start bij 0. Bijgevolg is de index **4** van het laatste elemente in een array met **lengte 5**.
-
-### Schrijven
-
-Ook schrijven van waarden naar de array gebruikt dezelfde notatie. Enkel moet je dus deze keer de array accessor-notatie links van de toekenningsoperator plaatsen. Stel dat we bijvoorbeeld de waarde van het eerste element uit de myColors array willen veranderen van red naar indigo, dan gebruiken we volgende notatie:
-
-```csharp
-myColors[0] = "indigo";
-```
-
-Als we dus bij aanvang nog niet weten welke waarden de individuele elementen moeten hebben in een array, dan kunnen we deze eerst definiëren, en vervolgens individueel toekennen:
-
-```csharp
-string[] myColors;
-myColors = new string[5];
-// ...
-myColors[0] = "red";
-myColors[1] = "green";
-myColors[2] = "yellow";
-myColors[3] = "orange";
-myColors[4] = "blue";
-```
-
-### Uitlezen
-
-Stel dat we een array aanmaken \(eerste lijn\) dan kunnen we dus bijvoorbeeld het getal `90` op het scherm tonen als volgt:
-
-```csharp
-int[] scores = {100, 90, 55, 0, 34};
-int kopie = scores[1];
-Console.WriteLine(kopie);
-```
-
-of nog korter:
-
-```csharp
-int[] scores = {100, 90, 55, 0, 34};
-Console.WriteLine(scores[1]);
-```
-
-Stel dat we een array van getallen hebben, dan kunnen we dus bijvoorbeeld 2 waarden uit die array optellen en opslaan in een andere variabele als volgt:
-
-```csharp
-int[] numbers = {5, 10, 30, 45};
-int som = numbers[0] + numbers[1];
-```
-
-De variabele som zal dan vervolgens de waarde 15 bevatten \(5+10\).
-
-Stel dat we alle elementen uit de array `numbers` met 5 willen verhogen, we kunnen dan schrijven:
-
-```csharp
-int[] numbers = {5, 10, 30, 45};
-numbers[0] += 5;
-numbers[1] += 5;
-numbers[2] += 5;
-numbers[3] += 5;
-```
-
-Nog beter is het natuurlijk deze code \(die 4 keer quasi dezelfde statement bevat\) te vereenvoudigen tot:
-
-```csharp
-int[] numbers = {5, 10, 30, 45};
-int teller = 0;
-while (teller < 4)
-{
-    numbers[teller] += 5;
-    teller++
+Console.WriteLine(); // geef 10 items die je nodig hebt
+for(int i = 0; i <= 9; i++) {
+    items[i] = Console.ReadLine();
 }
 ```
 
-Of het equivalent met een for-loop:
+En het kost je niet meer code als je beslist lijstjes van 1000 items te ondersteunen. We zullen nog vaak gebruik maken van arrays en lussen om herhaalde code te vermijden!
+
+### Arrays uitlezen
+
+Je gebruikt de notatie met rechte haken ook om een array uit te lezen:
 
 ```csharp
-int[] numbers = {5, 10, 30, 45};
-for(int teller = 0; teller < 4; teller++)
-{
-    numbers[teller] += 5;
+Console.WriteLine($"Het 1e item op je lijstje is {items[0]}");
+Console.WriteLine($"Het 2e item op je lijstje is {items[1]}");
+// herhaald
+Console.WriteLine($"Het 10e item op je lijstje is {items[9]}");
+```
+
+Ook hier bespaar je vervelend werk met een lus:
+
+```csharp
+for(int i = 0; i <= 9; i++) {
+    Console.WriteLine($"Het {i+1}e item op je lijstje is {items[i]}");
 }
 ```
 
 ### De lengte van de array te weten komen
 
-Soms kan het nodig zijn dat je in een later stadium van je programma de lengte van je array nodig hebt. De `Length` eigenschap van iedere array geeft dit weer. Volgend voorbeeld toen dit:
+Soms kan het nodig zijn dat je in een later stadium van je programma de lengte van je array nodig hebt. De `Length` eigenschap geeft je deze lengte. Volgend voorbeeld toen dit:
 
 ```csharp
-string[] myColors = {"red", "green", "yellow", "orange", "blue"};
-Console.WriteLine("Length of array = {0}", myColors.Length);
-```
-
-De variabele myColors.Length is een special element, van het type int, die iedere array met zich meedraagt \(zie volgende semester\). Je kan dus deze lengte ook toekennen aan een variabele:
-
-```csharp
-int arrayLength = myColors.Length;
-```
-
-De Length-property wordt vaak gebruikt in for/while loops waarmee je de hele array wenst te doorlopen. Door de Length-property te gebruiken als grenscontrole verzekeren we er ons van dat we nooit buiten de grenzen van de array zullen lezen of schrijven:
-
-```csharp
-//Alle elementen van een array tonen
-for (int i = 0; i < getallen.Length; i++)
-{
-    Console.WriteLine(getallen[i]);
+string[] items = new string[10];
+Console.WriteLine("Geef de 10 items die je wil kopen:");
+for(int i = 0; i < items.Length; i++) {
+    items[i] = Console.ReadLine();
 }
 ```
 
-### Volledig voorbeeldprogramma met arrays
+Het voordeel hiervan is je maar één keer moet vastleggen hoe groot de array is en daarna in het algemeen over de grootte kan spreken. Zo kan je bij het aanpassen van je code niet vergeten **overal** de juiste aanpassing te doen.
 
-Met al de voorgaande informatie is het nu mogelijk om heel eenvoudig complexere programma's te schrijven die veel data moeten kunnen verwerken. Meestal gebruikt men een for-element om een bepaalde operatie over de hele array toe te passen.
+## Volledige demonstratie boodschappenlijstje
 
-Het volgende programma zal een array van integers aanmaken die alle gehele getallen van 0 tot 99 bevat. Vervolgens zal ieder getal met 3 vermenigvuldigd worden. Finaal tonen we tonen we enkel die getallen die een veelvoud van 4 zijn na de bewerking.
-
-```csharp
-//Array aanmaken
-int[] getallen = new int[100];
-
-//Array vullen
-for (int i = 0; i < getallen.Length; i++)
-{
-    getallen[i] = i;
-}
-
-//Alle elementen met 3 vermenigvuldigen
-for (int i = 0; i < getallen.Length; i++)
-{
-    getallen[i] = getallen[i] * 3;
-}
-
-//Enkel veelvouden van 4 op het scherm tonen
-for (int i = 0; i < getallen.Length; i++)
-{
-    if(getallen[i] % 4 == 0)
-        Console.WriteLine(getallen[i]);
-}
-```
-
-## Geheugengebruik bij arrays
-
-[Zie volgend filmpje op 31 minuten.](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=17ce5c87-2b6a-46ea-b7b1-a87e00a7e4e5)
-
-## Arrays kopiëren
-
-Arrays worden 'by reference' gebruikt in C\#. Het gevolg hiervan is dat volgende code niet zal doen wat je wenst \(`ploegen`, `nieuwePloegen` zijn twee arrays van bijvoorbeeld een `string[]`\).
+We geven hier een voorbeeld van een boodschappenlijstje dat je niet zou kunnen maken zonder een gegevensstructuur voor reeksen data. Het is niet perfect maar het staat je wel toe een aantal items naar keuze bij te houden, wat je eerder niet kon:
 
 ```csharp
-nieuwePloegen = ploegen;
-```
-
-Deze code zal perfect werken. Wat er er echter is gebeurd is dat we de referentie naar `ploegen` ook in `nieuwePloegen` hebben geplaatst. Bijgevolg verwijzen beide variabelen naar dezelfde array, namelijk die waar `ploegen` al naar verwees. We hebben een soort alias gemaakt en kunnen nu op twee manieren de array benaderen. Als je dus schrijft:
-
-```csharp
-nieuwePloegen[4] = "Beerschot";
-```
-
-Dan is dat hetzelfde als schrijven:
-
-```csharp
-ploegen[4] = "Beerschot";
-```
-
-En waar staan de ploegen in de nieuwePloegen array? _Die bestaat niet meer!_
-
-Wil je dus arrays kopieren dan kan dat niet op deze manier: **je moet manueel ieder element van de ene naar de andere array kopiëren** als volgt:
-
-```csharp
-for(int i = 0; i < ploegen.Length; i++)
-{
-    nieuwePloegen[i] = ploegen[i];
+public static void Main() {
+    // we moeten dit vragen
+    // de grootte van een array wordt vastgelegd bij het aanmaken
+    Console.WriteLine("Hoe veel dingen heb je nodig van de winkel?");
+    int aantal = Convert.ToInt32(Console.ReadLine());
+    string[] items = new string[aantal];
+    Console.WriteLine("Geef een voor een je items");
+    for(int i = 0; i < aantal; i++) {
+        items[i] = Console.ReadLine();
+    }
+    int aantalNogNodig = items.Length;
+    while(aantalNogNodig > 0) {
+        Console.WriteLine("Je hebt volgende zaken nodig.");
+        for(int i = 0; i < items.Length; i++) {
+            if (items[i] != "") {
+                Console.WriteLine($"{i}. {items[i]}");
+            }
+        }
+        Console.WriteLine("Geef de index van het item dat je nu in je kar legt.");
+        int gevonden = Convert.ToInt32(Console.ReadLine());
+        if (items[gevonden] != "") {
+            items[gevonden] = "";
+            aantalNogNodig--;
+        }        
+    }
+    Console.WriteLine("Je hebt alles! Ga naar de kassa.");
 }
 ```
-
-**Opgelet: wanneer je met arrays van objecten \(zie** [**later**]()**\) werkt dan zal bovenstaande mogelijk niet het gewenste resultaten geven daar we nu de individuele referenties van een object kopieren!**
 
