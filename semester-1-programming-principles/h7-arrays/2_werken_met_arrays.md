@@ -171,6 +171,6 @@ else
 ```
 
 {% hint style="info" %}
-Moet je dit altijd zo doen? Nee, je kan `Array.IndexOf(producten,product)` gebruiken in plaats van de lus.
+Moet je dit altijd zo doen? Nee, je kan `Array.IndexOf(producten,product)` gebruiken in plaats van de lus. Maar we leggen het uit omdat je dit soort zaken wel moet kunnen schrijven.
 {% endhint %}
 
