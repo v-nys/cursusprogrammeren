@@ -61,7 +61,7 @@ Eveneens zoals bij de types die je al kent, moet je je variabelen na declaratie 
 ```csharp
 items = new string[10]; // ruimte om 10 items op het lijstje bij te houden
 metingen = new double[365]; // ruimte om een jaar aan metingen te voorzien
-aandelen = new double[365*10]; // ruimte om de koers over (ongeveer) 10 jaar bij te houden
+aandelen = new decimal[365*10]; // ruimte om de koers over (ongeveer) 10 jaar bij te houden
 ```
 
 {% hint style="info" %}
