@@ -68,14 +68,6 @@ Array.Reverse(items);
 
 Ook hier zie je pas iets als je de elementen toont.
 
-### Clear: Arrays leegmaken
-
-Een array volledig leegmaken \(alle elementen op een defaultwaarde zetten\) doe je met de `Array.Clear`-methode, als volgt:
-
-```csharp
-Array.Clear(items);
-```
-
 ### BinarySeach: Zoeken in arrays
 
 De `BinarySearch`-methode maakt het mogelijk om te zoeken naar de index van een gegeven element in een index. _Deze methode werkt enkel indien de elementen in de array gesorteerd staan!_ De methode heeft twee parameters, enerzijds de array in kwestie en anderzijds het element dat we zoeken. Als resultaat wordt de index van het gevonden element teruggegeven. Indien niets wordt gevonden zal het resultaat -1 zijn.
