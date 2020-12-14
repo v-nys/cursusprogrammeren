@@ -33,7 +33,7 @@ console applicatie
 
 #### voorbeeldinteractie\(s\)
 
-```csharp
+```text
 Maak een array gevuld met de getallen 0 tot 10
 0 1 2 3 4 5 6 7 8 9 10
 
@@ -76,23 +76,23 @@ console applicatie
 
 #### voorbeeldinteractie\(s\)
 
-```csharp
+```text
 Voer 10 gehele getallen in
-2
-44
-1
-22
-3
-4
-87
-5
-1
-12
+>2
+>44
+>1
+>22
+>3
+>4
+>87
+>5
+>1
+>12
 ******
 Som is 181, Gemiddelde is 18,1, Grootste getal is 87
 ******
 Geef minimum getal in?
-34
+>34
 De getallen groter dan 34 zijn: 44,87
 ```
 
@@ -124,7 +124,7 @@ console applicatie
 
 #### voorbeeldinteractie\(s\)
 
-```csharp
+```text
 We gaan de boodschappenlijst samenstellen. 
 Hoeveel items wil je opschrijven?
 >3
@@ -182,7 +182,7 @@ console applicatie
 
 #### voorbeeldinteractie\(s\)
 
-```csharp
+```text
 Wat is het budget voor je kerstinkopen?
 >100
 Hoeveel cadeautjes wil je kopen?
