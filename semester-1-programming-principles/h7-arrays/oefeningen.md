@@ -12,7 +12,7 @@ Onderstaande oefeningen worden ondergebracht ik de klasse `HoostdtukAcht`.
 
 ### Functionele analyse
 
-Schrijf in de klasse `HoofdstukAcht` de methode `H8-Opwarmers`.
+Schrijf in de klasse `HoofdstukAcht` de methode `Opwarmers`.
 
 Onderaan staan enkele opdrachten, voeg ze allemaal toe in de aangemaakte methode.  
 Gebruik steeds een loop om de opdrachten uit te lossen.  
@@ -58,7 +58,7 @@ True False True False True False True False True False True False True False Tru
 
 ### Functionele analyse
 
-Schrijf in de klasse `HoofdstukAcht` de methode `H8-ArrayOefener1`.
+Schrijf in de klasse `HoofdstukAcht` de methode `ArrayOefener1`.
 
 Maak een programma dat aan de gebruiker vraagt om 10 waarden in te voeren. Vervolgens toont het programma de som, het gemiddelde en het grootste getal van deze 10.
 
