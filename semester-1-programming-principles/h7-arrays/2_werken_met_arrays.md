@@ -18,7 +18,6 @@ class Program
         for(int i = 0; i < getallen.Length; i++) {
             getallen[i] = ranGen.Next(1,1001);
         }
-        // array wordt opgevuld op een of andere manier
         Console.WriteLine($"De som is: {getallen.Sum()}");
         Console.WriteLine($"Het gemiddelde is: {getallen.Average()}");
     }
