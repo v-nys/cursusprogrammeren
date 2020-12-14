@@ -1,5 +1,9 @@
 # Werken met arrays
 
+{% hint style="success" %}
+[Kennisclip 1 \(tweede kennisclip lager op de pagina\)](https://youtu.be/ke81v8ePJhA)
+{% endhint %}
+
 ## Nuttige array methoden
 
 Net zoals we hebben gezien dat de Math-klasse een heleboel nuttige methoden in zich heeft, zo heeft ook iedere array een aantal methoden waar handig gebruik van gemaakt kan worden.
@@ -101,6 +105,10 @@ else {
 ```
 
 ## Manueel zoeken in arrays
+
+{% hint style="success" %}
+[Kennisclip 2](https://youtu.be/BA-jhGdXIkM)
+{% endhint %}
 
 Het zoeken in arrays kan met behulp van `while` of `for`-loops tamelijk snel. Volgend programmaatje gaat zoeken of het getal 12 aanwezig is in de array. Indien ja, dan wordt de index bewaard van de positie in de array waar het getal staat:
 

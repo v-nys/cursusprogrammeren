@@ -1,5 +1,9 @@
 # Alternatieve syntax
 
+{% hint style="success" %}
+[Kennisclip](https://youtu.be/LuwNkiPvBUQ)
+{% endhint %}
+
 De reeds besproken manier om arrays te maken is veelzijdig en toont alle aspecten, maar vraagt vrij veel schrijfwerk. Er zijn nog manieren om arrays aan te maken, maar deze veronderstellen dat je de array in één keer juist kan opvullen.
 
 #### Manier 1: met `new`

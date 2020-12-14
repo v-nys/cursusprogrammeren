@@ -1,5 +1,9 @@
 # Array principes
 
+{% hint style="success" %}
+[Kennisclip 1 \(nog een kennisclip onderaan de pagina bij de demonstratie\)](https://youtu.be/u4ffd11Df2Q)
+{% endhint %}
+
 ## Arrays
 
 Arrays zijn een veelgebruikt principe in vele programmeertalen. Het grote voordeel van arrays is dat je een enkele variabele kunt hebben die een grote groep waarden voorstelt van eenzelfde type. Hierdoor wordt je code leesbaarder en eenvoudiger in onderhoud. Arrays zijn een zeer krachtig hulpmiddel, maar er zitten wel enkele venijnige addertjes onder het gras.
@@ -157,6 +161,10 @@ for(int i = 0; i < items.Length; i++) {
 Het voordeel hiervan is je maar één keer moet vastleggen hoe groot de array is en daarna in het algemeen over de grootte kan spreken. Zo kan je bij het aanpassen van je code niet vergeten **overal** de juiste aanpassing te doen.
 
 ## Volledige demonstratie boodschappenlijstje
+
+{% hint style="success" %}
+[Kennisclip 2](https://youtu.be/ubExN7_Xz6A)
+{% endhint %}
 
 We geven hier een voorbeeld van een boodschappenlijstje dat je niet zou kunnen maken zonder een gegevensstructuur voor reeksen data. Het is niet perfect maar het staat je wel toe een aantal items naar keuze bij te houden, wat je eerder niet kon:
 
