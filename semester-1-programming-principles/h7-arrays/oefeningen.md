@@ -96,5 +96,109 @@ Geef minimum getal in?
 De getallen groter dan 34 zijn: 44,87
 ```
 
+## Oefening: H8-Boodschappenlijst
 
+### Leerdoelen
+
+* arrays
+
+### Functionele analyse
+
+Schrijf in de klasse `HoofdstukAcht` de methode `H8-Boodschappenlijst`.
+
+Maak een programma dat de gebruiker een boodschappenlijstje laat samenstellen.   
+- Het programma vraagt eerst hoeveel items de boodschappenlijst moet bevatten en laat dan de lijst vullen.  
+- Vervolgens wordt een gesorteerde lijst van de items getoond.  
+- Daarna, in de winkel, kan de gebruiker aangeven welke items er gekocht worden. De gebruiker kan dit blijven doen zolang er 'ja' geantwoord wordt op de vraag 'Nog winkelen?'. Als de gebruiker een item intypt dat niet op de lijst staat, wordt er een bericht getoond.   
+- Na het winkelen toont het programma welke items van de lijst niet gekocht zijn.
+
+### Technische analyse
+
+De items van het boodschappenlijstje moet je bijhouden in een array.
+
+Om de array te sorteren en om een item in de array te zoeken, maak je gebruik van een methode van een array.
+
+#### UI
+
+console applicatie
+
+#### voorbeeldinteractie\(s\)
+
+```csharp
+We gaan de boodschappenlijst samenstellen. 
+Hoeveel items wil je opschrijven?
+>3
+Wat is item 1 op je lijst?
+>kaas
+Wat is item 2 op je lijst?
+>boter
+Wat is item 3 op je lijst?
+>melk
+Dit is je gesorteerde lijst:
+1: boter
+2: kaas
+3: melk
+Op naar de winkel!
+Welk item heb je gekocht?
+>mellek
+Dit item bevindt zich niet op de lijst!
+Nog winkelen? (Ja of Nee)
+>Ja
+Welk item heb je gekocht?
+>melk
+Nog winkelen? (Ja of Nee)
+>ja
+Welk item heb je gekocht?
+>kaas
+Nog winkelen? (Ja of Nee)
+>Nee
+Naar huis met de boodschappen!
+Volgende items van je lijst ben je vergeten te kopen:
+boter
+```
+
+## Oefening: H8-Kerstinkopen
+
+### Leerdoelen
+
+* arrays
+
+### Functionele analyse
+
+Schrijf in de klasse `HoofdstukAcht` de methode `H8-Kerstinkopen`.
+
+Maak een programma dat kan gebruikt worden om kerstinkopen te doen, rekening houdend met een budget.   
+Na de inkopen, wordt het totaal gespendeerd bedrag getoond en het hoogste, laagste en gemiddelde bedrag.
+
+### Technische analyse
+
+De prijzen \(type double\)  van de cadeautjes moet je bijhouden in een array.
+
+Gebruik methodes van een array.
+
+#### UI
+
+console applicatie
+
+#### voorbeeldinteractie\(s\)
+
+```csharp
+Wat is het budget voor je kerstinkopen?
+>100
+Hoeveel cadeautjes wil je kopen?
+>3
+Prijs van cadeau 1?
+>75,50
+Prijs van cadeau 2?
+>26,99
+Je bent al 2,5 euro over het budget!
+Prijs van cadeau 3?
+>12
+Je bent al 14,5 euro over het budget!
+Info over je aankopen:
+Totaal bedrag: 114,5 euro.
+Duurste cadeau: 75,5 euro.
+Goedkoopste cadeau: 12,0 euro.
+Gemiddelde prijs: 38,2 euro.
+```
 
