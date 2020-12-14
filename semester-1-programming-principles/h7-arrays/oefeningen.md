@@ -1,13 +1,32 @@
 # Oefeningen
 
-## Oefening: H7-Opwarmers
+{% hint style="warning" %}
+Onderstaande oefeningen worden ondergebracht ik de klasse `HoostdtukAcht`.
+{% endhint %}
 
-Schrijf in de klasse `HoofdstukAcht` de methode `H7-Opwarmers`.
+## Oefening: H8-Opwarmers
+
+### Leerdoelen
+
+* arrays
+
+### Functionele analyse
+
+Schrijf in de klasse `HoofdstukAcht` de methode `H8-Opwarmers`.
 
 Onderaan staan enkele opdrachten, voeg ze allemaal toe in de aangemaakte methode.  
 Gebruik steeds een loop om de opdrachten uit te lossen.  
 Druk voor elke opdracht eerst af wat de opdracht gaat doen. \(Console.WriteLine\)  
-Voer vervolgens de opdracht uit.  
+Voer vervolgens de opdracht uit.
+
+### Technische analyse
+
+* Maak een array gevuld met de getallen 0 tot 10
+* Maak een array gevuld met de getallen van 100 tot 1
+* Maak een array gevuld met de letters a tot z
+* Maak een array gevuld met willekeurige getallen tussen 1 en 100 \(de array is 20 lang\)
+* Maak een array gevuld met afwisselend `true` en `false` \(de array is 30 lang\)
+
 Druk achteraf de array af met volgend stukje code. 
 
 ```csharp
@@ -17,12 +36,6 @@ for (int i = 0; i < NAAM_VAN_DE_ARRAY.Length; i++)
 }
 Console.WriteLine("\n");
 ```
-
-* Maak een array gevuld met de getallen 0 tot 10
-* Maak een array gevuld met de getallen van 100 tot 1
-* Maak een array gevuld met de letters a tot z
-* Maak een array gevuld met willekeurige getallen tussen 1 en 100 \(de array is 20 lang\)
-* Maak een array gevuld met afwisselend `true` en `false` \(de array is 30 lang\)
 
 #### UI
 
@@ -45,6 +58,52 @@ Maak een array gevuld met willekeurige getallen tussen 1 en 100 (de array is 20 
 
 Maak een array gevuld met afwisselend true en false (de array is 30 lang)
 True False True False True False True False True False True False True False True False True False True False True False True False True False True False True False
+```
+
+## Oefening: H8-ArrayOefener1
+
+### Leerdoelen
+
+* arrays
+
+### Functionele analyse
+
+Schrijf in de klasse `HoofdstukAcht` de methode `H8-ArrayOefener1`.
+
+Maak een programma dat aan de gebruiker vraagt om 10 waarden in te voeren. Vervolgens toont het programma de som, het gemiddelde en het grootste getal van deze 10.
+
+Vervolgens vraagt het programma de gebruiker om een getal in te voeren. Het programma toont dan alle getallen die groter of gelijk zijn aan dit ingevoerde getal zijn die in de array aanwezig zijn. Indien geen getallen groter zijn dan verschijnt een bericht `Niets is groter` op het scherm.
+
+### Technische analyse
+
+De 10 ingevoerde getallen zijn van het type int en worden bewaard in een array.
+
+De som en het grootste getal worden m.b.v. een loop berekend. Het gemiddelde wordt buiten deze loop berekend en daarvoor is de som nodig.
+
+#### UI
+
+console applicatie
+
+#### voorbeeldinteractie\(s\)
+
+```csharp
+Voer 10 gehele getallen in
+2
+44
+1
+22
+3
+4
+87
+5
+1
+12
+******
+Som is 181, Gemiddelde is 18,1, Grootste getal is 87
+******
+Geef minimum getal in?
+34
+De getallen groter dan 34 zijn: 44,87
 ```
 
 
