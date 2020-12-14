@@ -27,16 +27,6 @@ Voer vervolgens de opdracht uit.
 * Maak een array gevuld met willekeurige getallen tussen 1 en 100 \(de array is 20 lang\)
 * Maak een array gevuld met afwisselend `true` en `false` \(de array is 30 lang\)
 
-Druk achteraf de array af met volgend stukje code. 
-
-```csharp
-for (int i = 0; i < NAAM_VAN_DE_ARRAY.Length; i++)
-{
-   Console.Write(NAAM_VAN_DE_ARRAY[i] + " ");
-}
-Console.WriteLine("\n");
-```
-
 #### UI
 
 console applicatie
