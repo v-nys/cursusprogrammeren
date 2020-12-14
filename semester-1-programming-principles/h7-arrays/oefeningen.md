@@ -258,5 +258,44 @@ Resultaat:
 -1
 ```
 
+## Oefening: H8-Koerier
 
+### Leerdoelen
+
+* arrays
+
+### Functionele analyse
+
+Schrijf in de klasse `HoofdstukAcht` de methode `H8-Koerier`.
+
+Maak een array die 10 postcodes bevat \(zelf te kiezen\) van gemeenten waar een koerierbedrijf aan levert. Maak een tweede array die de prijs per kg bevat van iedere respectievelijke gemeente. 
+
+Vraag aan de gebruiker een postcode en het gewicht van het pakket. Vervolgens wordt de prijs opgezocht voor die gemeente en wordt deze berekend gegeven het ingegeven gewicht.
+
+Indien het bedrijf niet levert aan de ingetypte postcode dan wordt een foutmelding weergegeven.
+
+### Technische analyse
+
+Je voorziet twee arrays, één voor de postcodes, de andere voor het gewicht. De indexpositie van de gemeente bepaalt de prijs per kg in de andere array op dezelfde index positie.
+
+Bv.
+
+```csharp
+int[] postcodes = { 1000, 2020, 2013, 4500, 2340, 1200, 9999, 6666, 2362, 2340 };
+int[] kg = { 12, 214, 3, 15, 56, 900, 13, 5, 111, 43 };
+```
+
+#### UI
+
+console applicatie
+
+#### voorbeeldinteractie\(s\)
+
+```csharp
+Geef gewicht pakket
+15
+Naar welke postcode wenst u dit pakket te versturen?
+4500
+Dit zal 225 euro kosten.
+```
 
