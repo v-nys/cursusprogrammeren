@@ -33,7 +33,7 @@ console applicatie
 
 #### voorbeeldinteractie\(s\)
 
-```text
+```csharp
 Maak een array gevuld met de getallen 0 tot 10
 0 1 2 3 4 5 6 7 8 9 10
 
@@ -76,7 +76,7 @@ console applicatie
 
 #### voorbeeldinteractie\(s\)
 
-```text
+```csharp
 Voer 10 gehele getallen in
 >2
 >44
@@ -125,7 +125,7 @@ console applicatie
 
 #### voorbeeldinteractie\(s\)
 
-```text
+```csharp
 We gaan de boodschappenlijst samenstellen. 
 Hoeveel items wil je opschrijven?
 >3
@@ -183,7 +183,7 @@ console applicatie
 
 #### voorbeeldinteractie\(s\)
 
-```text
+```csharp
 Wat is het budget voor je kerstinkopen?
 >100
 Hoeveel cadeautjes wil je kopen?
@@ -231,7 +231,7 @@ console applicatie
 
 #### voorbeeldinteractie\(s\)
 
-```text
+```csharp
 63
 84
 56
@@ -244,7 +244,6 @@ console applicatie
 7
 Welk getal moet verwijderd worden?
 90
-
 
 Resultaat:
 63
