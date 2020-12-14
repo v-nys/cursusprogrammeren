@@ -106,11 +106,12 @@ De getallen groter dan 34 zijn: 44,87
 
 Schrijf in de klasse `HoofdstukAcht` de methode `H8-Boodschappenlijst`.
 
-Maak een programma dat de gebruiker een boodschappenlijstje laat samenstellen.   
-- Het programma vraagt eerst hoeveel items de boodschappenlijst moet bevatten en laat dan de lijst vullen.  
-- Vervolgens wordt een gesorteerde lijst van de items getoond.  
-- Daarna, in de winkel, kan de gebruiker aangeven welke items er gekocht worden. De gebruiker kan dit blijven doen zolang er 'ja' geantwoord wordt op de vraag 'Nog winkelen?'. Als de gebruiker een item intypt dat niet op de lijst staat, wordt er een bericht getoond.   
-- Na het winkelen toont het programma welke items van de lijst niet gekocht zijn.
+Maak een programma dat de gebruiker een boodschappenlijstje laat samenstellen. 
+
+* Het programma vraagt eerst hoeveel items de boodschappenlijst moet bevatten en laat dan de lijst vullen.
+* Vervolgens wordt een gesorteerde lijst van de items getoond.
+* Daarna, in de winkel, kan de gebruiker aangeven welke items er gekocht worden. De gebruiker kan dit blijven doen zolang er 'ja' geantwoord wordt op de vraag 'Nog winkelen?'. Als de gebruiker een item intypt dat niet op de lijst staat, wordt er een bericht getoond. 
+* Na het winkelen toont het programma welke items van de lijst niet gekocht zijn.
 
 ### Technische analyse
 
@@ -201,4 +202,62 @@ Duurste cadeau: 75,5 euro.
 Goedkoopste cadeau: 12,0 euro.
 Gemiddelde prijs: 38,2 euro.
 ```
+
+## Oefening: H8-ArrayZoeker
+
+### Leerdoelen
+
+* arrays
+
+### Functionele analyse
+
+Schrijf in de klasse `HoofdstukAcht` de methode `H8-ArrayZoeker`.
+
+Maak een programma dat eerst aan de gebruiker om 10 willekeurige cijfers toont tussen 1 en 100 die die in een array worden bewaard.
+
+Vervolgens vraagt het programma welke waarde verwijderd moet worden. Wanneer de gebruiker hierop antwoordt met een nieuwe waarde dan zal deze nieuw ingevoerde waarde in de array gezocht worden. Indien deze gevonden wordt dan wordt deze waarde uit de array verwijderd en worden alle waarden die erachter komen met een plaatsje naar links opgeschoven, zodat achteraan de array terug een lege plek komt.
+
+Hierna worden alle waarden van de array getoond.
+
+### Technische analyse
+
+Indien achteraan de array een lege plek komt krijgt deze laatste de waarde -1.
+
+Indien de te zoeken waarde meer dan 1 keer voorkomt, wordt enkel de eerst gevonden waarde verwijderd.
+
+#### UI
+
+console applicatie
+
+#### voorbeeldinteractie\(s\)
+
+```text
+63
+84
+56
+11
+80
+57
+90
+2
+64
+7
+Welk getal moet verwijderd worden?
+90
+
+
+Resultaat:
+63
+84
+56
+11
+80
+57
+2
+64
+7
+-1
+```
+
+
 
