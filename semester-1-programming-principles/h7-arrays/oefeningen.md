@@ -1,7 +1,7 @@
 # Oefeningen
 
 {% hint style="warning" %}
-Onderstaande oefeningen worden ondergebracht ik de klasse `HoostdtukAcht`.
+Onderstaande oefeningen worden ondergebracht in de klasse `HoostdtukAcht`.
 {% endhint %}
 
 ## Oefening: H8-Opwarmers
@@ -33,7 +33,7 @@ console applicatie
 
 #### voorbeeldinteractie\(s\)
 
-```csharp
+```text
 Maak een array gevuld met de getallen 0 tot 10
 0 1 2 3 4 5 6 7 8 9 10
 
@@ -66,9 +66,9 @@ Vervolgens vraagt het programma de gebruiker om een getal in te voeren. Het prog
 
 ### Technische analyse
 
-De 10 ingevoerde getallen zijn van het type int en worden bewaard in een array.
+De 10 ingevoerde getallen zijn van het type `int` en worden bewaard in een array.
 
-De som en het grootste getal worden m.b.v. een loop berekend. Het gemiddelde wordt buiten deze loop berekend en daarvoor is de som nodig.
+De som en het grootste getal worden m.b.v. een loop berekend. Je doet dit dus niet met ingebouwde methodes. Het gemiddelde wordt buiten deze loop berekend en daarvoor is de som nodig.
 
 #### UI
 
@@ -76,7 +76,7 @@ console applicatie
 
 #### voorbeeldinteractie\(s\)
 
-```csharp
+```text
 Voer 10 gehele getallen in
 >2
 >44
@@ -97,6 +97,10 @@ De getallen groter dan 34 zijn: 44,87
 ```
 
 ## Oefening: H8-Boodschappenlijst
+
+{% hint style="info" %}
+Deze boodschappenlijst werkt een beetje anders dan die uit de theorieles.
+{% endhint %}
 
 ### Leerdoelen
 
@@ -125,7 +129,7 @@ console applicatie
 
 #### voorbeeldinteractie\(s\)
 
-```csharp
+```text
 We gaan de boodschappenlijst samenstellen. 
 Hoeveel items wil je opschrijven?
 >3
@@ -183,7 +187,7 @@ console applicatie
 
 #### voorbeeldinteractie\(s\)
 
-```csharp
+```text
 Wat is het budget voor je kerstinkopen?
 >100
 Hoeveel cadeautjes wil je kopen?
@@ -215,7 +219,7 @@ Schrijf in de klasse `HoofdstukAcht` de methode `H8-ArrayZoeker`.
 
 Maak een programma dat eerst aan de gebruiker om 10 willekeurige cijfers toont tussen 1 en 100 die die in een array worden bewaard.
 
-Vervolgens vraagt het programma welke waarde verwijderd moet worden. Wanneer de gebruiker hierop antwoordt met een nieuwe waarde dan zal deze nieuw ingevoerde waarde in de array gezocht worden. Indien deze gevonden wordt dan wordt deze waarde uit de array verwijderd en worden alle waarden die erachter komen met een plaatsje naar links opgeschoven, zodat achteraan de array terug een lege plek komt.
+Vervolgens vraagt het programma welke waarde verwijderd moet worden. Wanneer de gebruiker hierop antwoordt met een nieuwe waarde dan zal deze nieuw ingevoerde waarde in de array gezocht worden. Indien deze gevonden wordt dan wordt deze waarde uit de array verwijderd en worden alle waarden die erachter komen met een plaatsje naar links opgeschoven, zodat we de laatste plaats in de array een vaste waarde moeten geven.
 
 Hierna worden alle waarden van de array getoond.
 
@@ -291,7 +295,7 @@ console applicatie
 
 #### voorbeeldinteractie\(s\)
 
-```csharp
+```text
 Geef gewicht pakket
 15
 Naar welke postcode wenst u dit pakket te versturen?
