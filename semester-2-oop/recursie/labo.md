@@ -57,7 +57,11 @@ Topic van de uit te voeren oefening?
 
 We zullen recursie gebruiken om na te gaan wie zich moet laten testen voor Covid19. Maak een klasse `Person` met twee properties: een naam en een `HashSet<Person> Contacts` .  Twee personen zijn gelijk onder `Equals` als ze dezelfde naam hebben. De hash code van een persoon is de hash code van zijn/haar naam. Voeg aan je submenu een optie toe `H18-contacttracing`. Dit start een `void` methode `Person.SetupTracing()`.
 
-`Person.SetupTracing()` vraagt eerst om namen van personen, totdat je een lege naam invoert. Daarna vraagt deze methode per persoon de contacten in te geven, gescheiden door komma's. Ten slotte vraagt de methode van welke persoon we de contacten moeten nagaan. Hier geef je één naam als antwoord en het aantal niveaus dat we teruggaan \(dus of we alleen rechtstreekse contacten opsporen of contacten van contacten of nog verder\).
+`Person.SetupTracing()` vraagt eerst om namen van personen, totdat je een lege naam invoert. Deze personen worden aangemaakt \(met een lege lijst contacten\) en bijgehouden in een lijst. Daarna vraagt deze methode per persoon de contacten in te geven, gescheiden door komma's. Deze informatie wordt gebruikt om de juiste `Person`-objecten aan iedereens `Contacts` toe te voegen. Let op: voeg niet gewoon een nieuwe persoon met een bestaande naam toe, want een nieuwe persoon heeft een eigen set contacten. Voeg alleen personen die in je lijst personen staan toe aan contacten. Ten slotte vraagt de methode van welke persoon we de contacten moeten nagaan. Hier geef je één naam als antwoord en het aantal niveaus dat we teruggaan \(dus of we alleen rechtstreekse contacten opsporen of contacten van contacten of nog verder\).
+
+{% hint style="info" %}
+Je mag overal geldige invoer veronderstellen.
+{% endhint %}
 
 Met deze informatie starten we een void objectmethode `Person.Trace(HashSet<Person> contacts, int level)` op. Deze methode voegt de contacten van de persoon in kwestie toe aan de set `contacts` and tracet dan hun contacten, tot het niveau `level` bereikt is. Dit kan je doen met een recursieve oproep van `Trace` die `level` met één verlaagt. Je kan voorkomen dat een persoon in zijn eigen contactenlijst staat door achteraf `HashSet<Person>.Remove(Person p)` te gebruiken.
 
