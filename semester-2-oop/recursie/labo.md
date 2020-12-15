@@ -18,6 +18,10 @@ De code om van te starten krijg je hier:
 
 {% file src="../../.gitbook/assets/schooladmin \(2\).zip" caption="SchoolAdmin project" %}
 
+{% hint style="success" %}
+[Het filmpje](https://youtu.be/PWvfcZjUGOw)
+{% endhint %}
+
 ## Studieprogramma's met volgtijdelijkheden
 
 Niet alleen cursussen hebben soms volgtijdelijkheden, het kan ook zijn dat je een studieprogramma moet hebben afgewerkt voor je aan een ander studieprogramma mag beginnen. Doe zelf de overeenkomstige aanpassing aan StudyProgram en implementeer `CollectAllPrerequisites(StudyProgram studyProgram, HashSet<StudyProgram>)`.
