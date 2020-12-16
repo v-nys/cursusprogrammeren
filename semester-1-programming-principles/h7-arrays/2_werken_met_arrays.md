@@ -1,7 +1,11 @@
 # Werken met arrays
 
 {% hint style="success" %}
-[Kennisclip 1 \(tweede kennisclip lager op de pagina\)](https://youtu.be/ke81v8ePJhA)
+[Kennisclip,](https://youtu.be/ke81v8ePJhA) maar lees onderstaande opmerking
+{% endhint %}
+
+{% hint style="danger" %}
+In een eerdere versie van de pagina zei ik, en in de kennisclip zeg ik, dat binarysearch -1 teruggeeft als het gezochte element niet voorkomt. Dit is niet altijd waar. Het resultaat is wel altijd een negatief getal als het gezochte element niet voorkomt.
 {% endhint %}
 
 ## Nuttige array methoden
@@ -78,7 +82,7 @@ Ook hier zie je pas iets als je de elementen toont.
 
 ### BinarySeach: Zoeken in arrays
 
-De `BinarySearch`-methode maakt het mogelijk om te zoeken naar de index van een gegeven element in een index. _Deze methode werkt enkel indien de elementen in de array gesorteerd staan!_ De methode heeft twee parameters, enerzijds de array in kwestie en anderzijds het element dat we zoeken. Als resultaat wordt de index van het gevonden element teruggegeven. Indien niets wordt gevonden zal het resultaat -1 zijn.
+De `BinarySearch`-methode maakt het mogelijk om te zoeken naar de index van een gegeven element in een index. _Deze methode werkt enkel indien de elementen in de array gesorteerd staan!_ De methode heeft twee parameters, enerzijds de array in kwestie en anderzijds het element dat we zoeken. Als resultaat wordt de index van het gevonden element teruggegeven. Indien niets wordt gevonden zal het resultaat een negatief getal zijn \(dus -1 of kleiner\).
 
 Volgende code zal bijvoorbeeld de index teruggeven van het item `"koffie"` indien dit in de array `items` staat:
 
