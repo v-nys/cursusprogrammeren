@@ -217,7 +217,7 @@ Gemiddelde prijs: 38,2 euro.
 
 Schrijf in de klasse `HoofdstukAcht` de methode `H8-ArrayZoeker`.
 
-Maak een programma dat eerst aan de gebruiker om 10 willekeurige cijfers toont tussen 1 en 100 die die in een array worden bewaard.
+Maak een programma dat eerst aan de gebruiker 10 willekeurige cijfers toont tussen 1 en 100 die in een array worden bewaard.
 
 Vervolgens vraagt het programma welke waarde verwijderd moet worden. Wanneer de gebruiker hierop antwoordt met een nieuwe waarde dan zal deze nieuw ingevoerde waarde in de array gezocht worden. Indien deze gevonden wordt dan wordt deze waarde uit de array verwijderd en worden alle waarden die erachter komen met een plaatsje naar links opgeschoven, zodat we de laatste plaats in de array een vaste waarde moeten geven.
 
