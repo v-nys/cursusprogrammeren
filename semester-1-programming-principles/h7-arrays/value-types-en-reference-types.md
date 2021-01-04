@@ -1,5 +1,9 @@
 # Value types en reference types
 
+{% hint style="success" %}
+[Kennisclip](https://youtu.be/lbL1i2E_4DM)
+{% endhint %}
+
 ## Herinnering: gedrag van argumenten van methoden
 
 Herinner je wat volgende code doet. Als je niet meer met absolute zekerheid kan voorspellen wat er gebeurt, herlees dan [deze pagina](../h6-methoden/parameters.md#de-verbinding-van-definitie-en-oproep). Volg alles ook nog eens met de debugger indien nodig.
