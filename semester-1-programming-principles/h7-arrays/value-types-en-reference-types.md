@@ -93,7 +93,6 @@ De defaultwaarde van een variabele hangt af van het type. Onderstaande tabel gee
 | Elk reference type \(`string`, array,...\) | `null` |
 | Elk getaltype | 0 |
 | `bool` | `false` |
-| `enum` type | De waarde die je krijgt door 0 te casten als deze enum. |
 
 {% hint style="info" %}
 We hebben de tabel wat ingekort. Als je hier later naar terug kijkt, gebruik dan [het volledige overzicht van Microsoft](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/default-values).
