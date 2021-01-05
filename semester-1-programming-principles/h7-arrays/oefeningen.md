@@ -303,3 +303,14 @@ Naar welke postcode wenst u dit pakket te versturen?
 Dit zal 225 euro kosten.
 ```
 
+## Oefening: H8-value-reference-begrijpen
+
+Deze oefening werkt wat anders dan de andere oefeningen. Je krijgt voorbeeldcode en een screenshot.
+
+{% file src="../../.gitbook/assets/valuereferencelabo.zip" caption="voorbeeldcode value en reference" %}
+
+![verschillende breakpoints in de voorbeeldcode](../../.gitbook/assets/screenshot-from-2021-01-05-10-56-24.png)
+
+1. Voorspel eerst, zonder de Main methode uit te voeren, wat er precies op je scherm zal verschijnen. Voer hiervoor de code "in je hoofd" uit.
+2. Teken de stack en heap op elk van de aangegeven breakpoints. Je kan dit doen op papier of in een simpel tekenprogramma zoals MS Paint. Je hoeft niet alle lokale variabelen in scope van Main te tekenen. Je moet enkel de variabelen van Main tekenen die meespelen in de uitvoering van de methode waarin het breakpoint staat.
+
