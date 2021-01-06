@@ -314,3 +314,86 @@ Deze oefening werkt wat anders dan de andere oefeningen. Je krijgt voorbeeldcode
 1. Voorspel eerst, zonder de Main methode uit te voeren, wat er precies op je scherm zal verschijnen. Voer hiervoor de code "in je hoofd" uit.
 2. Teken de stack en heap op elk van de aangegeven breakpoints. Je kan dit doen op papier of in een simpel tekenprogramma zoals MS Paint. Je hoeft niet alle lokale variabelen in scope van Main te tekenen. Je moet enkel de variabelen van Main tekenen die meespelen in de uitvoering van de methode waarin het breakpoint staat. Het is **niet** nodig dat je cellen op de stack groter of kleiner maakt naargelang hun gegevenstype, zoals dat in de theorie wel gebeurde.
 
+## Oefening: H8-Hamming-distance
+
+De hamming distance is het aantal tekens dat twee reeksen verschillen indien we ieder element vergelijken op dezelfde plaats in de andere reeks.
+
+Maak een programma dat aan de gebruiker vraagt om twee DNA strings in te voeren \(een reeks bestaande uit de letters G, A, C & T\). Beide reeksen moeten even lang zijn.
+
+Bereken de hamming distance tussen beide reeksen.
+
+De hamming distance van volgende twee DNA strings is 7, omdat er 7 elementen in beide strings staan die niet gelijk zijn aan mekaar op dezelfde plek \(aangeduid met `^`\).
+
+```text
+GAGCCTACTAACGGGAT
+CATCGTAATGACGGCCT
+^ ^ ^  ^ ^    ^^
+```
+
+## Oefening: H8-Galgje
+
+### Leerdoelen
+
+* arrays
+
+### Functionele analyse
+
+Schrijf in de klasse `HoofdstukAcht` de methode `Galgje`.
+
+Maak een programma dat galgje kan spelen. Er wordt door het programma een woord gekozen dat door de gebruiker geraad moet worden. Elke keer als de gebruiker een letter ingeeft dan wordt deze getoond op de plaats waar deze in het woord voorkomt. 
+
+Geeft de gebruiker een woord in dan wordt er gekeken of dit het te zoeken woord is, klopt dit dan is de gebruiker gewonnen. Anders blijft hij letters of woorden gokken tot hij het heeft gevonden. Achteraf krijgt de gebruiker ook het aantal pogingen te zien.
+
+### Technische analyse
+
+Zorg ervoor dat je een array hebt met 5 woorden, waaruit 1 woord random wordt gekozen.    
+Dit is het woord dat de gebruiker moet zoeken. De niet gevonden letters van het te zoeken woord worden aan de gebruiker getoond met “\*”-jes. 
+
+De gebruiker geeft een letter of een heel woord in.  
+
+{% hint style="info" %}
+de input is een letter wanneer de input een lengte van 1 heeft, het is een woord wannneer dit meer is. 
+{% endhint %}
+
+{% hint style="info" %}
+een woord \(string\) kan je omzetten naar een array van tekens \(char\[\]\) door `.ToCharArray()` uit te voeren. 
+{% endhint %}
+
+Wanneer het een letter is wordt er gekeken of deze letter zich in het te zoeken woord bevindt.    
+Zo ja, dan wordt deze letter zichtbaar op de plaats\(en\) waar het zich in het woord bevindt.   
+Zo nee, dan mag de gebruiker opnieuw raden. 
+
+Geeft de gebruiker een woord in dan wordt er gekeken of het woord het gezochte woord is.   
+Zo ja, dan is de gebruiker gewonnen.   
+Zo nee, dan mag de gebruiker opnieuw raden. 
+
+Er wordt ook bijgehouden hoeveel pogingen de gebruiker er over gedaan heeft tot hij het woord gevonden heeft. 
+
+#### UI
+
+console applicatie
+
+#### voorbeeldinteractie\(s\)
+
+```text
+****** 
+Geef letter in, of typ het volledige woord indien je het denkt te weten: 
+>a 
+
+*a**** 
+Geef letter in, of typ het volledige woord indien je het denkt te weten: 
+>x 
+
+*a**** 
+Geef letter in, of typ het volledige woord indien je het denkt te weten: 
+>hahaha 
+Niet correct! Probeer een letter te geven. 
+
+*a**** 
+Geef letter in, of typ het volledige woord indien je het denkt te weten: 
+>galgje 
+Correct! U heeft het juiste woord gevonden. 
+
+Benodigde poginen: 4 
+```
+
