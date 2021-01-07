@@ -324,10 +324,16 @@ Bereken de hamming distance tussen beide reeksen.
 
 De hamming distance van volgende twee DNA strings is 7, omdat er 7 elementen in beide strings staan die niet gelijk zijn aan mekaar op dezelfde plek \(aangeduid met `^`\).
 
+Tip: je doet dit best met behulp van de string-methode `ToCharArray`.
+
+Schrijf deze oefening in de klasse Hoofdstuk8 als de methode `Hamming`.
+
 ```text
+Gelieve twee strings in te typen:
 GAGCCTACTAACGGGAT
 CATCGTAATGACGGCCT
 ^ ^ ^  ^ ^    ^^
+De Hamming distance is 7.
 ```
 
 ## Oefening: H8-Galgje
@@ -340,9 +346,9 @@ CATCGTAATGACGGCCT
 
 Schrijf in de klasse `HoofdstukAcht` de methode `Galgje`.
 
-Maak een programma dat galgje kan spelen. Er wordt door het programma een woord gekozen dat door de gebruiker geraad moet worden. Elke keer als de gebruiker een letter ingeeft dan wordt deze getoond op de plaats waar deze in het woord voorkomt. 
+Maak een programma dat galgje kan spelen. Er wordt door het programma een woord gekozen dat door de gebruiker geraden moet worden. Elke keer als de gebruiker een letter ingeeft, dan wordt deze getoond op de plaats waar deze in het woord voorkomt.
 
-Geeft de gebruiker een woord in dan wordt er gekeken of dit het te zoeken woord is, klopt dit dan is de gebruiker gewonnen. Anders blijft hij letters of woorden gokken tot hij het heeft gevonden. Achteraf krijgt de gebruiker ook het aantal pogingen te zien.
+Geeft de gebruiker een woord in, dan wordt er gekeken of dit het te zoeken woord is. Klopt dit, dan is de gebruiker gewonnen. Anders blijft hij letters of woorden gokken tot hij het heeft gevonden. Achteraf krijgt de gebruiker ook het aantal pogingen te zien.
 
 ### Technische analyse
 
