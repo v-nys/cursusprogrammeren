@@ -73,7 +73,7 @@ Console.WriteLine(someTime);
 
 ## DateTime properties
 
-**Properties** zijn een zeer uniek aspect van C\# zoals we in vorig hoofdstuk zagen. We zullen deze nog tot in den treuren leren maken. Via properties kan je de interne staat van objecten uitlezen én aanpassen, dit op een gecontroleerde manier.
+**Properties** zijn een zeer uniek aspect van C\# zoals we in vorig hoofdstuk zagen. We zullen deze nog tot in den treure leren maken. Via properties kan je de interne staat van objecten uitlezen én aanpassen, dit op een gecontroleerde manier.
 
 Het fijne aan properties is dat :
 
@@ -138,7 +138,7 @@ DateTime now = DateTime.Now;
 Console.WriteLine($"The current day is {now.DayOfWeek}");
 ```
 
-## Datum en tijd formateren
+## Datum en tijd formatteren
 
 Je hebt een invloed op hoe DateTime objecten naar string worden opgezet. Je kan dit door door extra _formatter syntax_ mee te geven.
 
@@ -168,7 +168,7 @@ Wil je nog meer controle over de output dan kan je ook zelf je formaat specifier
 
 ### Localized time
 
-De manier waarop `DateTime` objecten worden getoond \(via ToString\) is afhankelijk van de landinstellingen van je systeem. Soms wil je echter op een andere manier dit tonen. Je doet dit door mee te geven volgens welke **culture** de tijd en datum getoond moet worden.
+De manier waarop `DateTime` objecten worden getoond \(via ToString\) is afhankelijk van de landinstellingen van je systeem. Soms wil je dit echter op een andere manier tonen. Je doet dit door mee te geven volgens welke **culture** de tijd en datum getoond moet worden.
 
 Dit vereist dat je eerst een `CultureInfo` aanmaakt en dat je dan meegeeft:
 

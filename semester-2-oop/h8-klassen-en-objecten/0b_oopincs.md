@@ -31,8 +31,8 @@ De optionele access modifier komen we later op terug.
 Je kan "eender waar" een klasse aanmaken, maar het is een goede gewoonte om per klasse een apart bestand te gebruiken:
 
 * In de solution explorer, rechterklik op je project
-* Kies Add
-* Kies Class..
+* Kies _Add_
+* Kies _Class..._
 * Geef een goede naam voor je klasse
 
 {% hint style="warning" %}
