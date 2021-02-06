@@ -1,4 +1,4 @@
-# Klassen en objecten in C\#
+# Klassen en objecten aanmaken
 
 In C\# kunnen we geen objecten aanmaken voor we een klasse hebben gedefinieerd die de algemene eigenschappen \(properties\) en werking \(methoden\) beschrijft.
 
