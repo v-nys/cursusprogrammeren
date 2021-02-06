@@ -2,6 +2,8 @@
 
 ## Organisatievormen van data
 
+Voorlopig hebben we enkel met 1-dimensionale array gewerkt. Je kan er echter ook meerdimensionale maken. In plaats van "reeksen" van data kan je deze zien als roosters of als figuren.
+
 Als we een array tekenen, doen we dat vaak als een lijn met vakjes op. En als we door een volledige array lopen, doen we dat door de index steeds te verhogen. Om deze reden zeggen we dat arrays een "lineaire" gegevensstructuur zijn, dus "lijnvormig". Een andere manier om dit uit te drukken is "ééndimensionaal".
 
 Een array met de getallen 4, 9, 2, 7, 3, 6, 1, 12 en 9 zouden we ons kunnen inbeelden als volgt:

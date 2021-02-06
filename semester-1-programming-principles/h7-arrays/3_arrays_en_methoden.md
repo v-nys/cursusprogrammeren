@@ -26,12 +26,12 @@ static void EenVoorbeeldMethode(int[] inArray)
 
 ### Array grootte in de methode
 
-Een array als parameter meegeven kan dus, maar een ander aspect waar rekening mee gehouden moet worden is dat je niet kan ingeven in de parameterlijst hoe groot de array is! Je zal dus in je methode steeds de grootte van de array moeten uitlezen met de Length-eigenschap.
+Een array als argument meegeven kan dus, maar een ander aspect waar rekening mee gehouden moet worden is dat je niet kan ingeven in de parameterlijst hoe groot de array is! Je zal dus in je methode steeds de grootte van de array moeten uitlezen met de Length-eigenschap.
 
 Volgende methode is dus **FOUT**!
 
 ```csharp
-static void EenVoorbeeldMethode(ref int[6] inArray)
+static void EenVoorbeeldMethode(int[6] inArray)
 {
 
 }
