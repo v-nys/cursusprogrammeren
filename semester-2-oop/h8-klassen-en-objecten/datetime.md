@@ -2,9 +2,15 @@
 
 ## DateTime
 
-De .NET klasse `DateTime` is de ideale manier om te leren werken met objecten. Het is een nuttige en toegankelijk klasse.
+Het .NET gegevenstype `DateTime` is de ideale manier om te leren werken met objecten. Het is een nuttig en toegankelijk gegevenstype. Je kan er je iets bij voorstellen, maar het is ook een beetje abstract.
 
-Grote delen van deze tekst komen van [zetoode.com](http://zetcode.com/articles/csharpdatetime/).
+{% hint style="warning" %}
+Waarom spreken we hier over "gegevenstype" en niet over "klasse"? Omdat klassen in .NET reference types zijn. `DateTime` is echter een value type, dus technisch gezien is het een "struct" en geen "klasse". Wij zullen zelf geen structs schrijven, maar het verschil met klassen is uiterst klein in C\#. Instanties van zowel klassen als structs zijn objecten.
+{% endhint %}
+
+{% hint style="warning" %}
+Zegt het verschil tussen value types en reference types je niets meer? Kijk dan terug naar [deze pagina](../../semester-1-programming-principles/h7-arrays/value-types-en-reference-types.md).
+{% endhint %}
 
 ## DateTime objecten aanmaken
 
@@ -18,9 +24,11 @@ Er zijn 2 manieren om `DateTime` objecten aan te maken:
 Volgend voorbeeld toont hoe we een object kunnen maken dat de huidige datum tijd van het systeem bevat. Vervolgens printen we dit op het scherm:
 
 ```csharp
-        DateTime currentTime = DateTime.Now;
-        Console.WriteLine(currentTime);
+DateTime currentTime = DateTime.Now;
+Console.WriteLine(currentTime);
 ```
+
+`DateTime` op het begin van regel 1 is het type van de variabele. Dit type drukt uit met wat voor data we te maken hebben. Dit is net dezelfde redenering als bij het gebruik van `string` in `string mijnTekst = "hello world";`
 
 ### Met constructor
 
@@ -30,13 +38,16 @@ Enkele voorbeelden:
 
 ```csharp
 DateTime birthday = new DateTime(1982, 3, 18); //year, month, day
-
 DateTime someMomentInTime = new DateTime(2017, 1, 18, 10, 16,34 ); //year, month, day, hour, min, sec
 ```
 
+{% hint style="info" %}
+Je hebt eerder al met constructoren gewerkt: herinner je `new Random()`. Hiermee maakte je eigenlijk een object aan dat willekeurige getallen kon genereren.
+{% endhint %}
+
 ## DateTime methoden
 
-Ieder `DateTime` object dat je aanmaakt heeft en hoop nuttige methoden.
+Ieder `DateTime` object dat je aanmaakt heeft een hoop nuttige methoden.
 
 ### Add Methods
 
@@ -55,7 +66,6 @@ Een voorbeeld:
 
 ```csharp
 DateTime timeNow= DateTime.Now;
-
 DateTime nextWeek= timeNow.AddDays(7);
 ```
 
@@ -65,22 +75,14 @@ Uiteraard mag je ook een bestaand object overschrijven met het resultaat van dez
 
 ```csharp
 DateTime someTime= new DateTime(2019, 4, 1);
-
-//much later...
+// much later...
 someTime = someTime.AddYears(10);
 Console.WriteLine(someTime);
 ```
 
 ## DateTime properties
 
-**Properties** zijn een zeer uniek aspect van C\# zoals we in vorig hoofdstuk zagen. We zullen deze nog tot in den treure leren maken. Via properties kan je de interne staat van objecten uitlezen én aanpassen, dit op een gecontroleerde manier.
-
-Het fijne aan properties is dat :
-
-* je gebruikt ze alsof het gewone variabelen zijn
-* maar ze werken als methoden
-
-Meer hierover later.
+**Properties** zijn een zeer uniek aspect van C\#. Ze geven toegang tot de data van een object, maar op een gecontroleerde manier. We zullen deze nog tot in den treure leren maken.
 
 Enkele nuttige properties van `DateTime` zijn:
 
@@ -101,31 +103,24 @@ Enkele nuttige properties van `DateTime` zijn:
 
 ### Properties gebruiken
 
-**Alle properties van DateTime zijn read-only**.
+**Alle properties van DateTime zijn read-only**. Je kan een bestaande datum dus niet aanpassen \(maar je kan wel een nieuwe datum baseren op een bestaande datum\).
 
 Een voorbeeld:
 
 ```csharp
 DateTime moment = new DateTime(1999, 1, 13, 3, 57, 32, 11);
-
 // Year gets 1999.
 int year = moment.Year;
-
 // Month gets 1 (January).
 int month = moment.Month;
-
 // Day gets 13.
 int day = moment.Day;
-
 // Hour gets 3.
 int hour = moment.Hour;
-
 // Minute gets 57.
 int minute = moment.Minute;
-
 // Second gets 32.
 int second = moment.Second;
-
 // Millisecond gets 11.
 int millisecond = moment.Millisecond;
 ```
@@ -134,19 +129,17 @@ Uiteraard mag je ook deze properties gebruiken om direct naar het scherm te schr
 
 ```csharp
 DateTime now = DateTime.Now;
-
 Console.WriteLine($"The current day is {now.DayOfWeek}");
 ```
 
 ## Datum en tijd formatteren
 
-Je hebt een invloed op hoe DateTime objecten naar string worden opgezet. Je kan dit door door extra _formatter syntax_ mee te geven.
+Je hebt een invloed op hoe `DateTime` objecten naar `string` worden opgezet. Omzetten naar een string is functionaliteit van het object. Je doet dit dus via een **objectmethode**. Deze gebruik je zoals de statische methoden van eerder, maar je roept ze op voor een specifiek object.
 
-Dit zie je in volgende voorbeeld:
+Je kan bepalen hoe de omzetting naar `string` moet gebeuren door extra _formatter syntax_ mee te geven. Dit zie je in volgende voorbeeld:
 
 ```csharp
 DateTime now = DateTime.Now;
-
 WriteLine(now.ToString("d")); // short date 
 WriteLine(now.ToString("D")); // long date
 WriteLine(now.ToString("F")); // full date and time
@@ -168,14 +161,13 @@ Wil je nog meer controle over de output dan kan je ook zelf je formaat specifier
 
 ### Localized time
 
-De manier waarop `DateTime` objecten worden getoond \(via ToString\) is afhankelijk van de landinstellingen van je systeem. Soms wil je dit echter op een andere manier tonen. Je doet dit door mee te geven volgens welke **culture** de tijd en datum getoond moet worden.
+De manier waarop `DateTime` objecten worden getoond \(via `ToString`\) is afhankelijk van de landinstellingen van je systeem. Soms wil je dit echter op een andere manier tonen. Je doet dit door mee te geven volgens welke **culture** de tijd en datum getoond moet worden.
 
-Dit vereist dat je eerst een `CultureInfo` aanmaakt en dat je dan meegeeft:
+Dit vereist dat je eerst een `CultureInfo` object aanmaakt en dat je dan meegeeft:
 
 ```csharp
 DateTime now = DateTime.Now;
 CultureInfo russianCI = new CultureInfo("ru-RU");
-
 Console.WriteLine($"Current time in Russian style is: {now.ToString("F", russianCI)}");
 ```
 
@@ -186,6 +178,8 @@ Een lijst van alle cultures in .NET kan je [hier terugvinden](http://www.csharp-
 
 **Opgelet, enkel indien een specifieke culture op je computer staat geïnstalleerd zal je deze kunnen gebruiken.**
 {% endhint %}
+
+`CultureInfo` is een klasse waar je je misschien al iets minder bij kan voorstellen dan `DateTime`. Een `CultureInfo` stelt een aantal afspraken voor een bepaalde cultuur voor. De data is de combinatie van taal en regio. De functionaliteit bestaat er dan in om zaken zoals de munt, het gebruikte formaat voor datums,... in die taal en die regio te produceren. Ook hier geldt dus het black box principe: je kan code schrijven die bijvoorbeeld het juiste datumformaat voor Rusland gebruikt wanneer je zelf niet weet wat dat formaat is.
 
 ## Static method
 
@@ -201,29 +195,34 @@ DateTime dt = DateTime.Parse(date_string);
 Console.WriteLine(dt);
 ```
 
-Zoals je ziet roepen we `Parse` aan op `DateTime` en dus niet op een specifiek object.
+Zoals je ziet roepen we `Parse` aan op `DateTime` en dus niet op een specifiek object. Dit is logisch omdat je geen bestaande datum nodig hebt om een nieuwe datum te parsen.
 
 ### IsLeapYear
 
 Deze nuttige methode geeft een `bool` terug om aan te geven het meegegeven object eens schrikkeljaar is of niet:
 
 ```csharp
-DateTime today= DateTime.Now;
-bool isLeap= DateTime.IsLeapYear(today.Year);
-if(isLeap==true)
+DateTime today = DateTime.Now;
+bool isLeap = DateTime.IsLeapYear(today.Year);
+if(isLeap == true) {
     Console.WriteLine("This year is a leap year");
+}
 ```
+
+Dit is logisch omdat je geen volledige bestaande datum nodig hebt. Je wil gewoon iets zeggen over een jaartal, terwijl een `DateTime` ook een dag, maand, uur,... heeft. Dus dit heeft niet veel te maken met een specifieke `DateTime`, maar heeft duidelijk wel met de klasse te maken.
+
+{% hint style="info" %}
+Af en toe is het een kwestie van smaak van de auteurs of een methode statisch is of niet. Maar meestal is er een duidelijke "beste" keuze.
+{% endhint %}
 
 ## TimeSpan
 
-Je kan DateTime objecten ook bij mekaar optellen en aftrekken. Het resultaat van deze bewerking geeft echter NIET een DateTime object terug, maar een `TimeSpan` object. Dit is een object dat dus aangeeft hoe groot het verschil is tussen de 2 DateTime objecten:
+Je kan DateTime objecten ook bij mekaar optellen en aftrekken. Deze bewerking geeft echter **geen** `DateTime` object terug, maar een `TimeSpan` object. Dit is een object dat dus aangeeft hoe groot het verschil is tussen de 2 `DateTime` objecten:
 
 ```csharp
 DateTime today = DateTime.Today;
 DateTime borodino_battle = new DateTime(1812, 9, 7);
-
 TimeSpan diff = today - borodino_battle;
-
 WriteLine("{0} days have passed since the Battle of Borodino.", diff.TotalDays);
 ```
 
