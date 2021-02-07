@@ -31,6 +31,10 @@ Een belangrijk concept bij OOP is het **black-box** principe waarbij we de afzon
 
 Binnen OOP wordt dit blackbox-concept **encapsulatie** genoemd. Het doel van OOP is andere programmeurs \(en jezelf\) zoveel mogelijk af te schermen van de interne werking van je code. Net als bij een auto, moet je alleen weten wat elk stukje van de interface klaarspeelt, maar hoef je niet te weten hoe dit allemaal is geprogrammeerd.
 
+{% hint style="info" %}
+Encapsulatie wordt vaak een van de vier pijlers van objectgeoriënteerd programmeren genoemd. De andere zijn abstractie, overerving en polymorfisme. Deze komen allemaal later in de cursus aan bod.
+{% endhint %}
+
 ## Klassen en objecten
 
 Een elementair aspect binnen OOP is het verschil beheersen tussen een **klasse** en een **object**.
