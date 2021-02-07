@@ -1,5 +1,9 @@
 # OOP Intro
 
+{% hint style="success" %}
+[Kennisclip](https://youtu.be/Wp8EQuQV9UU)
+{% endhint %}
+
 ## OOP
 
 Object Oriented Programming of korter OOP is een techniek afkomstig van higher level programmeertalen zoals Java, C\#, VB.NET, ... en vindt zijn oorsprong bij de programmeertaal Smalltalk, die het eerst de term Object Oriented Programming introduceerde.

@@ -85,9 +85,9 @@
 
 * [H10: Klassen en objecten](semester-2-oop/h8-klassen-en-objecten/README.md)
   * [OOP Intro](semester-2-oop/h8-klassen-en-objecten/0_oop_intro.md)
+  * [Klassen en objecten aanmaken](semester-2-oop/h8-klassen-en-objecten/0b_oopincs.md)
   * [DateTime: leren werken met objecten](semester-2-oop/h8-klassen-en-objecten/datetime.md)
   * [Klassen en objecten weergeven deel 1](semester-2-oop/h8-klassen-en-objecten/klassen-en-objecten-weergeven-deel-1.md)
-  * [Klassen en objecten aanmaken](semester-2-oop/h8-klassen-en-objecten/0b_oopincs.md)
   * [Attributen](semester-2-oop/h8-klassen-en-objecten/attributen.md)
   * [Methoden](semester-2-oop/h8-klassen-en-objecten/methoden.md)
   * [Access modifiers](semester-2-oop/h8-klassen-en-objecten/accessmodifiers.md)

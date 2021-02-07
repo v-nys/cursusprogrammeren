@@ -1,5 +1,9 @@
 # Klassen en objecten weergeven deel 1
 
+{% hint style="success" %}
+[Kennisclip](https://youtu.be/IS8jpkYF-X0)
+{% endhint %}
+
 ## Klassen voorstellen
 
 De data en functionaliteit van een klasse, en ook haar relatie tot andere klassen, wordt vaak voorgesteld in een **UML-klassendiagram**. Hoe je verschillende klassen met elkaar verbindt, houden we voor iets verderop. Ook enkele andere details volgen later. Wat we wel al kunnen vertellen:

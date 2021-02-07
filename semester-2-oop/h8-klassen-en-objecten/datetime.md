@@ -1,5 +1,9 @@
 # DateTime: leren werken met objecten
 
+{% hint style="success" %}
+[Kennisclip. Klein verschil met de pagina tot de twee oranje checkboxes, dus lees die goed.](https://youtu.be/vWtra7AF-g4)
+{% endhint %}
+
 ## DateTime
 
 Het .NET gegevenstype `DateTime` is de ideale manier om te leren werken met objecten. Het is een nuttig en toegankelijk gegevenstype. Je kan er je iets bij voorstellen, maar het is ook een beetje abstract.
