@@ -4,7 +4,7 @@
 
 ### Structuur oefeningen
 
-Vanaf hier veronderstellen we dat je in één groot project werkt dat één klasse `Program` heeft. Deze klasse heeft een `Main` methode die een keuzemenu opstart. Oefeningen rond eenzelfde topic worden \(statische\) methodes van één klasse met een methode `ShowSubmenu`, die je een menu toont van alle oefeningen over dat topic en die je toestaat een oefening naar keuze te testen. Dit wordt uitgelegd in de eerste oefening.
+Vanaf hier veronderstellen we dat je in één groot project werkt dat één klasse `Program` heeft. Deze klasse heeft een `Main` methode die een keuzemenu opstart. Oefeningen rond eenzelfde topic worden \(statische\) methodes van één klasse met een methode `ToonSubmenu`, die je een menu toont van alle oefeningen over dat topic en die je toestaat een oefening naar keuze te testen. Dit wordt uitgelegd in de eerste oefening.
 
 ## Oefening: H10-voorbereiding
 
@@ -19,8 +19,8 @@ We willen dat we alle oefeningen die we in dit vak maken op een ordelijke manier
 ### Technische analyse
 
 * Laat in je Main methode een lijst van alle topics zien waarover oefeningen gemaakt zijn. In het begin is dit enkel `DateTime`. De gebruiker kan een topic aanduiden door een nummer in te geven, want voor elk topic staat ook een nummer.
-* Gebruik een switch op de gebruikersinput om te bepalen van welk topic de `ShowSubmenu` methode moet worden opgeroepen. Deze methode heeft return type `void` en geen parameters.
-* Voorzie een eerste klasse, `DateTimeExercises`, met deze methode `ShowSubmenu`. Totdat je oefeningen hebt om te demonstreren, toont `ShowSubmenu` gewoonweg de tekst `"Er zijn nog geen oefeningen over dit topic"`.
+* Gebruik een switch op de gebruikersinput om te bepalen van welk topic de `ToonSubmenu` methode moet worden opgeroepen. Deze methode heeft return type `void` en geen parameters.
+* Voorzie een eerste klasse, `DateTimeOefeningen`, met deze methode `ToonSubmenu`. Totdat je oefeningen hebt om te demonstreren, toont `ToonSubmenu` gewoonweg de tekst `"Er zijn nog geen oefeningen over dit topic"`.
 * Indien er wel oefeningen zijn \(deze oefening moet je dus updaten naarmate je vordert\), wordt elke reeds geprogrammeerde oefening genummerd en getoond en kan de gebruiker kiezen om deze uit te voeren.
 * Nadat een oefening getest is, kan je opnieuw een topic en een oefening kiezen. Het programma eindigt nooit.
 
@@ -64,8 +64,8 @@ We willen voor een willekeurige datum kunnen bepalen welke dag van de week het i
   * gebruik hiervoor formattering van een `DateTime`
   * laat ook de datum zelf zien in een formaat dat leesbaar is voor de gebruiker
   * als je computer niet volledig ingesteld is op Belgisch Nederlands, kan het resultaat er wat anders uitzien.
-* maak deze methode toegankelijk via `ShowSubmenu` van de klasse `DateTimeExercises`
-* noem de methode waarin je dit schrijft `DayOfWeekProgram`
+* maak deze methode toegankelijk via `ToonSubmenu` van de klasse `DateTimeOefeningen`
+* noem de methode waarin je dit schrijft `WeekdagProgramma`
 
 ### Voorbeeldinteractie
 
@@ -93,8 +93,8 @@ We willen weten hoe veel fracties van een seconde al verlopen zijn sinds het beg
 
 * .NET stelt deze fracties \(1 / 10000 milliseconden\) voor als "ticks"
 * We willen weten hoe veel ticks er voorbijgegaan zijn sinds het absolute begin van het jaar 2000
-* maak deze methode toegankelijk via `ShowSubmenu` van de klasse `DateTimeExercises`
-* Noem de methode waarin je dit schrijft `Ticks2000Program`
+* maak deze methode toegankelijk via `ToonSubmenu` van de klasse `DateTimeOefeningen`
+* Noem de methode waarin je dit schrijft `Ticks2000Programma`
 
 ### Voorbeeldinteractie
 
@@ -116,8 +116,8 @@ We willen bepalen hoe veel schrikkeljaren er zijn tussen 1799 en 2021.
 
 * implementeer zelf geen logica voor schrikkeljaren, maar laat dit over aan de klassen `DateTime`
 * maak gebruik van een statische methode van deze klasse
-* maak deze methode toegankelijk via `ShowSubmenu` van de klasse `DateTimeExercises`
-* noem je methode `LeapYearProgram`
+* maak deze methode toegankelijk via `ToonSubmenu` van de klasse `DateTimeOefeningen`
+* noem je methode `SchrikkeljaarProgramma`
 
 ### Voorbeeldinteractie
 
@@ -141,8 +141,8 @@ We zijn benieuwd hoe lang het duurt een array van 1 miljoen `int`s te maken en o
 
 * Bepaal het tijdstip voor en na aanmaken van de array.
 * Vul de array in met een `for`-lus.
-* maak deze methode toegankelijk via `ShowSubmenu` van de klasse `DateTimeExercises`
-* Noem de methode waarin je dit schrijft `ArrayTimerProgram`
+* maak deze methode toegankelijk via `ToonSubmenu` van de klasse `DateTimeOefeningen`
+* Noem de methode waarin je dit schrijft `ArrayTimerProgramma`
 
 ### Voorbeeldinteractie
 
@@ -159,13 +159,13 @@ Leerdoelen
 
 ### Functionele analyse
 
-We zullen het programma uit om het aantal dagen tot een verjaardag te bepalen aanpassen zodat het aantal dagen tot de volgende verjaardag wordt getoond. Dit betekent dat er nooit 0 dagen tot een verjaardag zijn, maar in extreme gevallen duizenden dagen kunnen over gaan \(bijvoorbeeld: van 29 februari 1996 tot 29 februari 2004\).
+We zullen het programma uit om het aantal dagen tot een verjaardag te bepalen \(uit de theorie\) aanpassen zodat het aantal dagen tot de volgende verjaardag wordt getoond. Dit betekent dat er nooit 0 dagen tot een verjaardag zijn, maar in extreme gevallen duizenden dagen kunnen over gaan \(bijvoorbeeld: van 29 februari 1996 tot 29 februari 2004\).
 
 ### Technische analyse
 
 Je moet één geval toevoegen, namelijk het geval waarin het oude programma 0 dagen tot de volgende verjaardag zou geven.
 
-Noem je methode `BirthdayProgram`. Maak deze methode toegankelijk via `ShowSubmenu` van de klasse `DateTimeExercises`
+Noem je methode `VerjaardagProgramma`. Maak deze methode toegankelijk via `ToonSubmenu` van de klasse `DateTimeOefeningen`
 
 ## Oefening: H10-Getallencombinatie
 
