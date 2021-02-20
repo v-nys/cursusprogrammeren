@@ -242,7 +242,7 @@ Test je programma door een statische methode \(in de klasse `Student`\), `Demons
 
 Een overzicht van de klasse na al deze wijzigingen:
 
-![UML-klassendiagram voor Student](../../.gitbook/assets/studentles2c%20%281%29.png)
+![UML-klassendiagram Student](../../.gitbook/assets/studentles2c%20%282%29.png)
 
 Voorbeeldcode om de eerste student aan te maken:
 
@@ -250,11 +250,11 @@ Voorbeeldcode om de eerste student aan te maken:
 Student student1= new Student();
 student1.Leeftijd = 20;
 student1.Naam = "Said Aziz";
-student1.Cursussen[0] = "Communicatie";
+student1.RegistreerVoorCursus("Communicatie");
 student1.CursusResultaten[0] = 12;
-student1.Cursussen[1] = "Programmeren";
+student1.RegistreerVoorCursus("Programmeren");
 student1.CursusResultaten[1] = 15;
-student1.Cursussen[2] = "Webtechnologie";
+student1.RegistreerVoorCursus("Webtechnologie");
 student1.CursusResultaten[2] = 13;
 student1.ToonOverzicht();
 ```
@@ -343,6 +343,7 @@ Commit je aanpassingen!
 
 * wegwerken gesynchroniseerde arrays
 * encapsulatie
+* access modifiers
 
 ### Functionele analyse
 
@@ -352,7 +353,7 @@ De eerdere oefening H10-StudentKlasse gebruikte gesynchroniseerde arrays. We wil
 
 Voorzie een klasse CursusResultaat met twee velden: `Naam` en `Resultaat`. Het eerste stelt de naam van de cursus voor, het tweede het behaalde resultaat.
 
-Vervang vervolgens de arrays Cursussen en CursusResultaten door één array van objecten van deze nieuwe klasse. `DemonstreerStudenten` moet identiek dezelfde uitvoer blijven produceren als tevoren.
+Vervang vervolgens de arrays `cursussen` en `CursusResultaten` door één `private` array van objecten van deze nieuwe klasse. Vervang `RegistreerVoorCursus` door `RegistreerCursusResultaat` om dit mogelijk te maken. `DemonstreerStudenten` moet identiek dezelfde uitvoer blijven produceren als tevoren.
 
 {% hint style="warning" %}
 Commit je aanpassingen!
