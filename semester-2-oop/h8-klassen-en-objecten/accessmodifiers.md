@@ -1,9 +1,5 @@
 # Access modifiers
 
-{% hint style="success" %}
-[Kennisclip voor deze inhoud](https://youtu.be/vcqI7QERNa4) \(oud\)
-{% endhint %}
-
 **Access modifiers** bepalen welke code door welke andere code mag worden uitgevoerd of aangepast. We hebben al een aantal dingen `public` gemaakt bij wijze van demonstratie. Dit is handig om voorbeeldjes te tonen, maar in code van hoge kwaliteit, denk je grondig na voor je dit doet.
 
 ## Public en private access modifiers
