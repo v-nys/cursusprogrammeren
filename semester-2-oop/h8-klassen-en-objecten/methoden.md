@@ -36,7 +36,7 @@ class Auto {
     public void Rijden(int aantalKilometers)
     {
         Kilometers += aantalKilometers;
-        Benzine -= 5.0 * (aantalKilometers/100);
+        Benzine -= 5.0 * (aantalKilometers/100.0);
     }
 
     public void Onderhouden()
@@ -44,7 +44,7 @@ class Auto {
         LaatsteOnderhoud = DateTime.Now;
     }
 
-    public float VerkoopsprijsBepalen()
+    public double VerkoopsprijsBepalen()
     {
         return Math.Max(10000 * (1 - Kilometers / 200000.0),1000);
     }

@@ -92,7 +92,7 @@ Een veld krijgt normaal de defaultwaarde voor zijn type. [Defaultwaarden](../../
 ```csharp
 class Auto {
     public int Kilometers = 5; // in de fabriek vinden bv. een aantal testen plaats
-    public float Benzine = 10; // nieuwe auto's moeten kunnen rijden
+    public double Benzine = 10; // nieuwe auto's moeten kunnen rijden
     public DateTime LaatsteOnderhoud = DateTime.Now;
 }
 ```
