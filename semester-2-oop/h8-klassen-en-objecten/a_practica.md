@@ -172,7 +172,8 @@ Noem je methode `VerjaardagProgramma`. Maak deze methode toegankelijk via `ToonS
 ### Leerdoelen
 
 * werken met klassen en objecten
-* gebruik maken van properties
+* instantieattributen
+* instantiemethoden
 
 ### Functionele analyse
 
@@ -180,29 +181,29 @@ Dit programma geeft op basis van de input van twee getallen de som van beide get
 
 ### Technische analyse
 
-Voorzie voor volgende oefening eerst een nieuwe submenuklasse met als naam `CustomObjectExercises`.
+Voorzie voor volgende oefening eerst een nieuwe submenuklasse met als naam `EigenObjectOefeningen`.
 
-Maak een eigen klasse `NumberCombination` in een eigen file, `NumberCombination.cs`. Deze klasse bevat 2 getallen \(type `int`\). Er zijn 4 methoden, die allemaal een `double` teruggeven:
+Maak een eigen klasse `GetallenCombinatie` in een eigen file, `GetallenCombinatie.cs`. Deze klasse bevat 2 getallen \(type `int`\). Er zijn 4 methoden, die allemaal een `double` teruggeven:
 
-* `Sum`: geeft som van beide getallen weer
-* `Difference`: geeft verschil van beide getallen weer
+* `Som`: geeft som van beide getallen weer
+* `Verschil`: geeft verschil van beide getallen weer
 * `Product`: geeft product van beide getallen weer
-* `Quotient`: geeft deling van beide getallen weer. Print `"Error"` naar de console indien je zou moeten delen door 0 en voer dan de deling uit. Wat er dan gebeurt, is niet belangrijk.
+* `Quotient`: geeft deling van beide getallen weer. Print `"Fout"` naar de console indien je zou moeten delen door 0 en voer dan de deling uit. Wat er dan gebeurt, is niet belangrijk.
 
-Gebruik `public` attributen `Number1` en `Number2`. Plaats onderstaande code in een publieke statische methode van `CustomObjectExercises` met naam `DemonstrateOperations` met return type `void`:
+Gebruik `public` attributen `Getal1` en `Getal2`. Plaats onderstaande code in een publieke statische methode van `EigenObjectOefeningen` met naam `DemonstreerOperaties` met return type `void`:
 
 ```csharp
-NumberCombination pair1 = new NumberCombination();
-pair1.Number1 = 12;
-pair1.Number2 = 34;
-Console.WriteLine("Paar:" + pair1.Number1 + ", " + pair1.Number2);
-Console.WriteLine("Sum = " + pair1.Sum());
-Console.WriteLine("Verschil = " + pair1.Difference());
-Console.WriteLine("Product = " + pair1.Product());
-Console.WriteLine("Quotient = " + pair1.Quotient());
+GetallenCombinatie paar1 = new GetallenCombinatie();
+paar1.Number1 = 12;
+paar1.Number2 = 34;
+Console.WriteLine("Paar:" + paar1.Getal1 + ", " + paar1.Getal2);
+Console.WriteLine("Som = " + paar1.Som());
+Console.WriteLine("Verschil = " + paar1.Verschil());
+Console.WriteLine("Product = " + paar1.Product());
+Console.WriteLine("Quotient = " + paar1.Quotient());
 ```
 
-Zorg dat je `DemonstrateOperations` kan oproepen via het submenu van `CustomObjectExercises`.
+Zorg dat je `DemonstreerOperaties` kan oproepen via het submenu van `EigenObjectOefeningen`.
 
 #### Voorbeeldinteractie\(s\)
 
@@ -213,6 +214,149 @@ Verschil = -22
 Product = 408
 Quotient = 0,352941176470588
 ```
+
+## Oefening: H10-StudentKlasse
+
+{% hint style="warning" %}
+Deze oefening veronderstelt dat je de theoriefilmpjes hebt gevolgd en dat je daar de klasse `Student` al hebt aangemaakt in een SchoolAdmin project.
+{% endhint %}
+
+### Leerdoelen
+
+* werken met klassen en objecten
+* opstart van het project
+
+### Functionele analyse
+
+Dit programma vraagt om de naam en leeftijd van een student. Vervolgens worden de punten voor 3 vakken gevraagd, waarna het gemiddelde wordt teruggegeven.
+
+### Technische analyse
+
+Breid je klasse Student uit met een tweede array `CursusResultaten`. Voorzie ook een methode `Kwoteer` om een cijfer aan een cursus met een bepaalde index toe te kennen. Signaleer ongeldige waarden met een `Console.WriteLine("Ongeldig cijfer!")`. Je kan ook nooit een cijfer boven 20 behalen.
+
+Voeg aan de klasse een methode `Gemiddelde()` toe. Deze berekent het gemiddelde van de niet-`null` cursussen als `double`.
+
+Voeg ook een methode `ToonOverzicht` toe, die de persoonsgegevens en behaalde cijfers voor elke student toont. Kijk naar de voorbeeldinteractie voor de juist voorstellingswijze.
+
+Test je programma door een statische methode \(in de klasse `Student`\), `DemonstreerStudenten` te voorzien, die twee studenten aanmaakt via variabelen `student1`, `student2`. Elke student is ingeschreven voor minstens drie vakken die je zelf kiest en krijgt een geldig cijfer \(naar keuze\) voor elk vak, een naam en een geldige leeftijd. Vervolgens wordt van elke student de `ShowOverview`-methode opgeroepen. In je `Main`-methode voorzie je een \(niet-genest\) keuzemenu dat vraagt wat je wil doen en op dit moment is de enige optie `DemonstrateStudents` uitvoeren.
+
+Een overzicht van de klasse na al deze wijzigingen:
+
+![UML-klassendiagram voor Student](../../.gitbook/assets/studentles2c%20%281%29.png)
+
+Voorbeeldcode om de eerste student aan te maken:
+
+```csharp
+Student student1= new Student();
+student1.Leeftijd = 20;
+student1.Naam = "Said Aziz";
+student1.Cursussen[0] = "Communicatie";
+student1.CursusResultaten[0] = 12;
+student1.Cursussen[1] = "Programmeren";
+student1.CursusResultaten[1] = 15;
+student1.Cursussen[2] = "Webtechnologie";
+student1.CursusResultaten[2] = 13;
+student1.ToonOverzicht();
+```
+
+#### Voorbeeldinteractie\(s\)
+
+```text
+Wat wil je doen?
+1. DemonstreerStudenten uitvoeren
+> 1
+Said Aziz, 20 jaar
+
+Cijferrapport:
+**********
+Communicatie:             12
+Programmeren:             15
+Web Technology:           13
+Gemiddelde:               13.3
+
+Mieke Vermeulen, 21 jaar
+
+Cijferrapport:
+**********
+Communicatie:             13
+Programmeren:             16
+Databanken:               14
+Gemiddelde:               14.3
+```
+
+{% hint style="warning" %}
+Commit je aanpassingen na deze oefening!
+{% endhint %}
+
+## Oefening: H10-Cursus
+
+{% hint style="warning" %}
+Deze klasse hoort bij het SchoolAdmin project.
+{% endhint %}
+
+### Leerdoelen
+
+* werken met klassen en objecten
+* opstart van het project
+* arrays van objecten maken
+
+### Functionele analyse
+
+We zullen studenten groeperen in cursussen. Bij elke cursus horen op dit moment exact twee studenten.
+
+### Technische analyse
+
+Werk verder in het SchoolAdmin project. Maak in dit nieuw project een nieuwe klasse `Cursus` in een file `Cursus.cs`. Deze klasse heeft twee properties: `Studenten` en `Titel`. `Studenten` is een array van `Student`-objecten. De initiële waarde voor deze property is een array met een capaciteit van 2 studenten. `Titel` is gewoonweg een `string`. `Cursus` heeft ook een methode `ToonOverzicht` die de titel van de cursus toont, gevolgd door de namen van alle studenten die de cursus volgen.
+
+Test je programma door een statische methode \(in de klasse `Cursus`\), `DemonstreerCursussen` te voorzien, die vier cursussen \("Communicatie", "Databanken", "Programmeren" en "Webtechnologie"\) aanmaakt via variabelen `course1`, `course2`, `course3` en `course4`. Maak ook twee studenten aan \(dezelfde als in `DemonstreerStudenten`\) en maak hen lid van de cursussen waarvoor ze een cijfer hebben \(zie voorbeeldinteractie van de vorige oefening\). Toon tenslotte voor elke cursus het overzicht via `ToonOverzicht`. De methode `DemonstreerCursussen` kan ook opgeroepen worden via het keuzemenu in `Main`.
+
+Je klasse `Cursus` ziet er uiteindelijk zo uit:
+
+![UML-klassendiagram voor Cursus](../../.gitbook/assets/cursusles2.png)
+
+#### Voorbeeldinteractie\(s\)
+
+```text
+Wat wil je doen?
+1. DemonstreerStudenten uitvoeren
+2. DemonstreerCursussen uitvoeren
+> 2
+Communicatie
+Said Aziz
+Mieke Vermeulen
+Databanken
+Mieke Vermeulen
+Programmeren
+Said Aziz
+Mieke Vermeulen
+Webtechnologie
+Said Aziz
+```
+
+{% hint style="warning" %}
+Commit je aanpassingen!
+{% endhint %}
+
+## Oefening: H10-CursusResultaat
+
+### Leerdoelen
+
+* wegwerken gesynchroniseerde arrays
+* encapsulatie
+
+### Functionele analyse
+
+De eerdere oefening H10-StudentKlasse gebruikte gesynchroniseerde arrays. We willen deze wegwerken.
+
+### Technische analyse
+
+Voorzie een klasse CursusResultaat met twee velden: `Naam` en `Resultaat`. Het eerste stelt de naam van de cursus voor, het tweede het behaalde resultaat.
+
+Vervang vervolgens de arrays Cursussen en CursusResultaten door één array van objecten van deze nieuwe klasse. `DemonstreerStudenten` moet identiek dezelfde uitvoer blijven produceren als tevoren.
+
+{% hint style="warning" %}
+Commit je aanpassingen!
+{% endhint %}
 
 ## Oefening: H10-Figuren
 
@@ -250,126 +394,5 @@ Een driehoek met een basis van 3m en een hoogte van 1m heeft een oppervlakte van
 Een driehoek met een basis van 2m en een hoogte van 2m heeft een oppervlakte van 2m².
 ```
 
-## Oefening: H10-Studentklasse
-
-### Leerdoelen
-
-* werken met klassen en objecten
-* gebruik maken van properties om geldige waarden af te dwingen
-* opstart van het project
-
-### Functionele analyse
-
-Dit programma vraagt om de naam en leeftijd van een student. Vervolgens worden de punten voor 3 vakken gevraagd, waarna het gemiddelde wordt teruggegeven.
-
-### Technische analyse
-
-**Maak een nieuw C♯-project** met als naam `SchoolAdmin` voor deze oefening. Dit wordt een project waaraan we heel het semester zullen blijven bouwen, zodat we uiteindelijk een simpele, maar behoorlijk realistische schoolsoftware verkrijgen.
-
-Maak in dit nieuw project een nieuwe klasse `Student` in een file `Student.cs`. Deze klasse heeft 5 properties. Leeftijd en de punten stel je voor met **full properties**. Een student kan nooit ouder zijn dan 120. Signaleer ongeldige waarden met `ArgumentException`, zoals uitgelegd in de theorie. Je kan ook nooit een cijfer boven 20 behalen. Signaleer dit ook met een `ArgumentException`. Over leeftijden en cijfers onder 0 hoef je je geen zorgen te maken, want je gebruik `byte` voor het type van deze properties en een byte is altijd minstens 0.
-
-* Name \(`string`\)
-* Age \(`byte`\)
-* MarkCommunication \(`byte`\)
-* MarkProgrammingPrinciples \(`byte`\)
-* MarkWebTech \(`byte`\)
-
-Voeg aan de klasse een berekende property `OverallMark` toe. Deze berekent het gemiddelde van de 3 punten als `double`.
-
-Voeg aan de klasse ook de methode `ShowOverview()` toe. Deze methode zal een volledig rapport van de student tonen \(inclusief het gemiddelde m.b.v. de `OverallMark`-property\).
-
-Test je programma door een statische methode \(in de klasse `Student`\), `DemonstrateStudents` te voorzien, die drie studenten aanmaakt via variabelen `student1`, `student2` en `student3`. Elke student krijgt een geldig cijfer \(naar keuze\) voor elk vak, een naam en een geldige leeftijd. Vervolgens wordt van elke student de `ShowOverview`-methode opgeroepen. In je `Main`-methode voorzie je een \(niet-genest\) keuzemenu dat vraagt wat je wil doen en op dit moment is de enige optie `DemonstrateStudents` uitvoeren.
-
-Voorbeeldcode om de eerste student aan te maken:
-
-```csharp
-Student student1= new Student();
-student1.Age = 21;
-student1.Name = "Joske Vermeulen";
-student1.MarkCommunication = 12;
-student1.MarkProgrammingPrinciples = 15;
-student1.MarkWebTech = 13;
-student1.ShowOverview();
-```
-
-#### Voorbeeldinteractie\(s\)
-
-```text
-Wat wil je doen?
-1. DemonstrateStudents uitvoeren
-> 1
-Joske Vermeulen, 21 jaar
-
-Cijferrapport:
-**********
-Communicatie:             12
-Programming Principles:   15
-Web Technology:           13
-Gemiddelde:               13.3
-
-Mieke Vermeulen, 20 jaar
-
-Cijferrapport:
-**********
-Communicatie:             13
-Programming Principles:   16
-Web Technology:           14
-Gemiddelde:               14.3
-
-Mieke Verstrepen, 19 jaar
-
-Cijferrapport:
-**********
-Communicatie:             14
-Programming Principles:   17
-Web Technology:           15
-Gemiddelde:               15.3
-```
-
-{% hint style="warning" %}
-Schrijf zelf eerst wat testcode om te controleren dat je een `ArgumentException` krijgt als je ergens een ongeldige waarde invult.
-{% endhint %}
-
-## Oefening: H10-Course
-
-{% hint style="success" %}
-[Demonstratie van deze oefening](https://youtu.be/pcWMUBuLyIY)
-{% endhint %}
-
-### Leerdoelen
-
-* werken met klassen en objecten
-* opstart van het project
-* arrays van objecten maken
-
-### Functionele analyse
-
-We zullen studenten groeperen in cursussen. Bij elke cursus horen op dit moment exact drie studenten.
-
-### Technische analyse
-
-Werk verder in het SchoolAdmin project. Maak in dit nieuw project een nieuwe klasse `Course` in een file `Course.cs`. Deze klasse heeft twee properties: `Students` en `Title`. `Students` is een array van `Student`-objecten. De initiële waarde voor deze property is een array met een capaciteit van 3 studenten. Deze property mag nooit gewijzigd worden, dus voorzie **geen** setter. `Title` is gewoonweg een `string`. `Title` mag alles zijn behalve `""`. Indien de titel van een cursus toch op `""` wordt gezet, zorg je voor een `ArgumentException`. `Course` heeft ook een methode `ShowOverview` die de titel van de cursus toont, gevolgd door de namen van alle studenten die de cursus volgen.
-
-Test je programma door een statische methode \(in de klasse `Course`\), `DemonstrateCourse` te voorzien, die drie cursussen \("Communicatie", "Programming Principles" en "Web Technology"\) aanmaakt via variabelen `course1`, `course2` en `course3`. Maak ook drie studenten aan \(dezelfde als in `DemonstrateStudents`\) en maak hen lid van elk van de drie cursussen. Toon tenslotte voor elke cursus het overzicht via `ShowOverview`. De methode `DemonstrateCourse` kan ook opgeroepen worden via het keuzemenu in `Main`.
-
-#### Voorbeeldinteractie\(s\)
-
-```text
-Wat wil je doen?
-1. DemonstrateStudents uitvoeren
-2. DemonstrateCourse uitvoeren
-> 2
-Communicatie
-Joske Vermeulen
-Mieke Vermeulen
-Mieke Verstrepen
-Programming Principles
-Joske Vermeulen
-Mieke Vermeulen
-Mieke Verstrepen
-Web Technology
-Joske Vermeulen
-Mieke Vermeulen
-Mieke Verstrepen
-```
+## 
 

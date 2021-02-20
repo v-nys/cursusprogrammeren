@@ -1,10 +1,10 @@
 # Attributen
 
 {% hint style="success" %}
-[Kennisclip voor deze inhoud](https://youtu.be/-U0-u0759p4)
+[Kennisclip voor deze inhoud](https://youtu.be/-U0-u0759p4) \(oud\)
 {% endhint %}
 
-**Attributen**, ook **velden** of **instantievariabelen** genoemd, zijn stukjes data die je bijhoudt in objecten. Ze stellen informatie voor die deel uitmaakt van een \(object van een\) klasse. Ze werken zoals de variabelen die je al kent, maar hun scope is een klasse of een object van een klasse, afhankelijk van de vraag of ze `static` zijn of niet.
+**Attributen**, ook **velden** of **instantievariabelen** genoemd, zijn stukjes data die je bijhoudt in objecten. Ze stellen informatie voor die deel uitmaakt van een \(object van een\) klasse. Ze werken zoals de variabelen die je al kent, maar hun scope is een klasse of een object van een klasse, afhankelijk van de vraag of ze `static` zijn of niet. Door gebruik te maken van attributen, kunnen we stukjes data die samen horen ook samen houden op het niveau van de code. Alle data die samen hoort netjes groeperen en op een gestructureerd toegankelijk maken valt onder het begrip **encapsulatie** dat reeds eerder aan bod kwam.
 
 {% hint style="info" %}
 Attributen behoren tot een algemenere categorie onderdelen van objecten genaamd **members**.
@@ -14,46 +14,84 @@ Attributen behoren tot een algemenere categorie onderdelen van objecten genaamd 
 
 Een typisch voorbeeld van een klasse is `Auto`. Er zijn verschillende stukjes data die deel kunnen uitmaken van één auto: de kilometerstand, het benzinepeil, de datum van het laatste onderhoud,...
 
-{% hint style="info" %}
-Dit is een zinvolle manier om een auto voor te stellen in code, maar er is niet echt een "perfecte" manier. Alles hangt af van wat relevant is voor de programma's die je wil schrijven.
-{% endhint %}
+Een reeds gekende manier om verwante informatie bij te houden is met behulp van "gesynchroniseerde" arrays, d.w.z. arrays die verwante data bijhouden op overeenkomstige posities. Onderstaand voorbeeld toont dit voor auto's:
 
-Deze zaken kunnen we bijhouden in een object van klasse `Auto` als volgt:
+```csharp
+class Program {
+    public static void Main() {
+        int aantalAutos = 3;
+        int[] kilometers = new int[aantalAutos];
+        double[] benzine = new double[aantalAutos];
+        DateTime[] onderhoud = new DateTime[aantalAutos];
+        for (int i = 0; i < aantalAutos; i++) {
+            Console.WriteLine($"Kilometerstand van auto {i+1}?");
+            kilometers[i] = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine($"Benzinepeil van auto {i+1}?");
+            benzine[i] = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine($"Jaar recentste onderhoud auto {i+1}?");
+            int jaar = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine($"Maand recentste onderhoud auto {i+1}?");
+            int maand = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine($"Dag recentste onderhoud auto {i+1}?");
+            int dag = Convert.ToInt32(Console.ReadLine());
+            onderhoud[i] = new DateTime(jaar,maand,dag);
+        }
+        // later in de code
+        for (int i = 0; i < aantalAutos; i++) {
+            PrintOnderhoudsrapport(kilometers[i],benzine[i],onderhoud[i]);
+        }
+    }
+}
+```
+
+Als we nu een methode willen uitvoeren die iets doet met alle informatie over een auto \(bijvoorbeeld een onderhoudsrapport afprinten\), moeten we drie waarden meegeven. Het is ordelijker deze zaken bij te houden in een object van klasse `Auto` als volgt:
 
 ```csharp
 class Auto {
     public int Kilometers;
-    public float Benzine;
+    public double Benzine;
     public DateTime LaatsteOnderhoud;
 }
 ```
 
-Al deze velden zijn voorlopig `public`. Dat hoeft niet absoluut, maar het vergemakkelijkt de presentatie. Verdere opties volgen snel. Het is ook een afspraak om publieke velden met een hoofdletter te schrijven.
-
-## Uitproberen: auto's met eigen attributen
-
-We kunnen nu vaststellen dat elke auto zijn eigen kilometerstand,... heeft met volgende \(gedeeltelijke\) code, die je in `Program` plaatst:
+Al deze velden zijn voorlopig `public`. Dat hoeft niet absoluut, maar het vergemakkelijkt de presentatie. Verdere opties volgen snel. Het is ook een afspraak om publieke velden met een hoofdletter te schrijven. Met deze voorstelling kunnen we dit nu doen:
 
 ```csharp
-public static void DemonstreerAttributen() {
-    Auto auto1 = new Auto();
-    Auto auto2 = new Auto();
-    auto1.Kilometers = 10000;
-    auto2.Kilometers = 50000;
-    auto1.Benzine = 10.0;
-    auto2.Benzine = 30.0;
-    auto1.LaatsteOnderhoud = DateTime.Now;
-    auto2.LaatsteOnderhoud = DateTime.Now.AddMonths(-3);
-    Console.WriteLine(auto1.Kilometers);
-    Console.WriteLine(auto2.Kilometers);
-    // de kilometerstand is verschillend voor beide
-    // idem voor de andere attributen
+class Program {
+    public static void Main() {
+        int aantalAutos = 3;
+        Auto[] autos = new Auto[aantalAutos];
+        for (int i = 0; i < aantalAutos; i++) {
+            Auto nieuweAuto = new Auto();
+            Console.WriteLine($"Kilometerstand van auto {i+1}?");
+            nieuweAuto.Kilometers = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine($"Benzinepeil van auto {i+1}?");
+            nieuweAuto.Benzine = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine($"Jaar recentste onderhoud auto {i+1}?");
+            int jaar = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine($"Maand recentste onderhoud auto {i+1}?");
+            int maand = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine($"Dag recentste onderhoud auto {i+1}?");
+            int dag = Convert.ToInt32(Console.ReadLine());
+            nieuweAuto.LaatsteOnderhoud = new DateTime(jaar,maand,dag);
+        }
+        // later in de code
+        for (int i = 0; i < aantalAutos; i++) {
+            PrintOnderhoudsrapport(autos[i]);
+        }
+    }
 }
 ```
 
+Je ziet hier al enkele voordelen van encapsulatie:
+
+* je hoeft niet bij te houden hoe de informatie verspreid is over meerdere plaatsen
+* als we meer informatie over auto's \(bv. het oliepeil\) in het onderhoudsrapport steken, hoeven we onze calls van `PrintOnderhoudsrapport` niet aan te passen
+  * een kenmerk van goede code is dat wijzigingen typisch geen grote wijzigingen vereisen
+
 ## Beginwaarden
 
-Een veld krijgt normaal de defaultwaarde voor zijn type. Voor `int` is dat bijvoorbeeld `0`. Het is mogelijk dit aan te passen met de syntax voor een toekenning:
+Een veld krijgt normaal de defaultwaarde voor zijn type. [Defaultwaarden](../../semester-1-programming-principles/h7-arrays/value-types-en-reference-types.md#defaultwaarden) hebben we reeds gezien. Het is mogelijk de beginwaarde aan te passen met de syntax voor een toekenning:
 
 ```csharp
 class Auto {
@@ -64,12 +102,6 @@ class Auto {
 ```
 
 Nu hebben nieuwe auto's standaard 5 km op de teller staan, enzovoort. Merk op: deze waarde wordt voor elk nieuw object opnieuw berekend. Als je dus twee auto's aanmaakt in je programma, zullen zij beide een **verschillende** datum van het laatste onderhoud bevatten.
-
-## Voordelen en nadelen
-
-Door attributen te gebruiken, kunnen we met objecten grotere gehelen vormen om over na te denken. We hoeven geen aparte variabelen bij te houden zoals `auto1Kilometers` en `auto2Kilometers`. We hebben alleen variabelen voor `auto1` en `auto2`. De onderdelen zijn netjes verpakt in de objecten. Dit draagt bij tot het objectgeoriënteerd principe van **encapsulatie**, dat je kan onthouden als "onder de motorkap steken".
-
-Een nadeel van dit gebruik van attributen is dat we niet echt controle hebben over de waarde: niets verhindert dat we \(al dan niet per ongeluk\) schrijven: `auto1.kilometers = -20000;`. Om dat soort fouten te voorkomen, hebben we meer concepten nodig.
 
 ## `static` attributen
 
