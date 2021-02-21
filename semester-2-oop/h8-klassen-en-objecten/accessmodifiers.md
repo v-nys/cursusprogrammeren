@@ -36,7 +36,7 @@ Een studente vroeg in een van de afgelopen jaren: "Kunnen we niet gewoon afsprek
 
 ## Voorstelling
 
-In de diagrammen die wij in deze cursus gebruiken, stellen we publieke attributen voor met een bolletje en private attributen \(als we die al tekenen, wat niet altijd gedaan wordt\) met een vierkantje. Deze zaken zijn leeg voor attributen en opgevuld voor methodes. Zie hieronder:
+In de diagrammen die wij in deze cursus gebruiken, stellen we publieke attributen voor met een bolletje en private attributen \(als we die al tekenen, wat niet altijd gedaan wordt\) met een vierkantje. Deze zaken zijn leeg voor attributen en opgevuld voor methodes. Zie hieronder voor een voorbeeld \(je hoeft het rijksregisternummer niet te implementeren in `Student`, volg alleen wat in de kennisclip gebeurt\):
 
 ![Alles behalve het rijksregisternummer is publiek. Het rijksregisternummer is priv&#xE9;.](../../.gitbook/assets/studentles2bb.png)
 
