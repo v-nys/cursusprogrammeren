@@ -95,15 +95,15 @@ class Auto {
         int jaartal;
         double CO;
         switch (norm) {
-            case Euro1:
+            case MilieuNormen.Euro1:
                 jaartal = 1992;
                 CO = 1.0;
                 break;
-            case Euro2:
+            case MilieuNormen.Euro2:
                 jaartal = 1996;
                 CO = 1.0;
                 break;
-            case Euro3:
+            case MilieuNormen.Euro3:
                 jaartal = 2000;
                 CO = 0.64;
                 break;
