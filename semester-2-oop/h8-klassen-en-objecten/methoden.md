@@ -1,5 +1,9 @@
 # Methoden
 
+{% hint style="success" %}
+[Kennisclip](https://youtu.be/Wuk9G1_JMWc). Deze bevat een voorbereiding op het labo die niet uitgeschreven staat in de tekst. Je moet deze mee maken.
+{% endhint %}
+
 **Instantiemethoden**, ook **objectmethoden** genoemd, weerspiegelen staan toe om functionaliteit toe te voegen aan objecten van een bepaalde klasse. Soms wordt ook gezegd dat ze "**gedrag**" van de objecten voorzien. Ze verschillen van statische methoden omdat ze niet alleen gebruik kunnen maken van statische onderdelen van klassen, maar ook van het object waar ze zelf bij horen.
 
 {% hint style="info" %}
