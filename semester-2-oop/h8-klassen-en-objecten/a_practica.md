@@ -194,8 +194,8 @@ Gebruik `public` attributen `Getal1` en `Getal2`. Plaats onderstaande code in ee
 
 ```csharp
 GetallenCombinatie paar1 = new GetallenCombinatie();
-paar1.Number1 = 12;
-paar1.Number2 = 34;
+paar1.Getal1 = 12;
+paar1.Getal2 = 34;
 Console.WriteLine("Paar:" + paar1.Getal1 + ", " + paar1.Getal2);
 Console.WriteLine("Som = " + paar1.Som());
 Console.WriteLine("Verschil = " + paar1.Verschil());
