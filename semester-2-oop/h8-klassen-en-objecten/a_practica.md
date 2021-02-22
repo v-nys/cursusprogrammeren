@@ -238,7 +238,7 @@ Voeg aan de klasse een methode `Gemiddelde()` toe. Deze berekent het gemiddelde 
 
 Voeg ook een methode `ToonOverzicht` toe, die de persoonsgegevens en behaalde cijfers voor elke student toont. Kijk naar de voorbeeldinteractie voor de juist voorstellingswijze.
 
-Test je programma door een statische methode \(in de klasse `Student`\), `DemonstreerStudenten` te voorzien, die twee studenten aanmaakt via variabelen `student1`, `student2`. Elke student is ingeschreven voor minstens drie vakken die je zelf kiest en krijgt een geldig cijfer \(naar keuze\) voor elk vak, een naam en een geldige leeftijd. Vervolgens wordt van elke student de `ShowOverview`-methode opgeroepen. In je `Main`-methode voorzie je een \(niet-genest\) keuzemenu dat vraagt wat je wil doen en op dit moment is de enige optie `DemonstrateStudents` uitvoeren.
+Test je programma door een statische methode \(in de klasse `Student`\), `DemonstreerStudenten` te voorzien, die twee studenten aanmaakt via variabelen `student1`, `student2`. Elke student is ingeschreven voor minstens drie vakken die je zelf kiest en krijgt een geldig cijfer \(naar keuze\) voor elk vak, een naam en een geldige leeftijd. Vervolgens wordt van elke student de `ToonOverzicht`-methode opgeroepen. In je `Main`-methode voorzie je een \(niet-genest\) keuzemenu dat vraagt wat je wil doen en op dit moment is de enige optie `DemonstreerStudenten` uitvoeren.
 
 Een overzicht van de klasse na al deze wijzigingen:
 
@@ -248,7 +248,7 @@ Voorbeeldcode om de eerste student aan te maken:
 
 ```csharp
 Student student1= new Student();
-student1.Leeftijd = 20;
+student1.Geboortedatum = new DateTime(2001,1,3);
 student1.Naam = "Said Aziz";
 student1.RegistreerVoorCursus("Communicatie");
 student1.CursusResultaten[0] = 12;
@@ -271,7 +271,7 @@ Cijferrapport:
 **********
 Communicatie:             12
 Programmeren:             15
-Web Technology:           13
+Webtechnologie:           13
 Gemiddelde:               13.3
 
 Mieke Vermeulen, 21 jaar
@@ -306,7 +306,7 @@ We zullen studenten groeperen in cursussen. Bij elke cursus horen op dit moment 
 
 ### Technische analyse
 
-Werk verder in het SchoolAdmin project. Maak in dit nieuw project een nieuwe klasse `Cursus` in een file `Cursus.cs`. Deze klasse heeft twee properties: `Studenten` en `Titel`. `Studenten` is een array van `Student`-objecten. De initiële waarde voor deze property is een array met een capaciteit van 2 studenten. `Titel` is gewoonweg een `string`. `Cursus` heeft ook een methode `ToonOverzicht` die de titel van de cursus toont, gevolgd door de namen van alle studenten die de cursus volgen.
+Werk verder in het SchoolAdmin project. Maak in dit nieuw project een nieuwe klasse `Cursus` in een file `Cursus.cs`. Deze klasse heeft twee attributen: `Studenten` en `Titel`. `Studenten` is een array van `Student`-objecten. De initiële waarde voor dit attribuut is een array met een capaciteit van 2 studenten. `Titel` is gewoonweg een `string`. `Cursus` heeft ook een methode `ToonOverzicht` die de titel van de cursus toont, gevolgd door de namen van alle studenten die de cursus volgen.
 
 Test je programma door een statische methode \(in de klasse `Cursus`\), `DemonstreerCursussen` te voorzien, die vier cursussen \("Communicatie", "Databanken", "Programmeren" en "Webtechnologie"\) aanmaakt via variabelen `course1`, `course2`, `course3` en `course4`. Maak ook twee studenten aan \(dezelfde als in `DemonstreerStudenten`\) en maak hen lid van de cursussen waarvoor ze een cijfer hebben \(zie voorbeeldinteractie van de vorige oefening\). Toon tenslotte voor elke cursus het overzicht via `ToonOverzicht`. De methode `DemonstreerCursussen` kan ook opgeroepen worden via het keuzemenu in `Main`.
 
