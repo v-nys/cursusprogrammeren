@@ -63,6 +63,7 @@ class Program {
         Auto[] autos = new Auto[aantalAutos];
         for (int i = 0; i < aantalAutos; i++) {
             Auto nieuweAuto = new Auto();
+            autos[i] = nieuweAuto;
             Console.WriteLine($"Kilometerstand van auto {i+1}?");
             nieuweAuto.Kilometers = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine($"Benzinepeil van auto {i+1}?");
