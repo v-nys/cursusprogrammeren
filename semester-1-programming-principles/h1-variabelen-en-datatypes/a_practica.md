@@ -2,45 +2,6 @@
 
 Al deze oefeningen maak je in een klasse `HoofdstukTwee`. In de oefeningen van hoofdstuk 1 heb je gezien hoe je een nieuwe klasse maakt.
 
-## Oefening: H2-variabelen\_hoofdletters
-
-### Leerdoelen
-
-* gebruik van variabelen om input en output via `Console.ReadLine` en `Console.WriteLine` op te slaan en terug te tonen
-
-### Functionele analyse
-
-Een applicatie vraagt je tekst in te voeren die dan daarna zal worden getoond met allemaal hoofdletters.
-
-### Technische analyse
-
-Noem de methode voor deze oefening `VariabelenHoofdletters`.
-
-#### voorbeeldinteractie\(s\)
-
-```text
-Welke tekst moet ik omzetten?
-> Hello World
-HELLO WORLD
-```
-
-### Technische hulp
-
-#### Programmaverloop
-
-Lees de gebruikersinvoer van de console en sla deze op in een variabele.
-
-Zet de inhoud van deze variabele om in hoofdletters. Je kan dit doen door `ToUpper()` toe te voegen aan een variabele van het type `string`. Bijvoorbeeld `myText.ToUpper()` in plaats van `myText`.
-
-Uiteindelijk geef je dan deze variabele weer in de console.
-
-#### Testscenario's
-
-* Voer tekst in met spaties
-* Voer tekst in van meer dan 100 karakters
-* Voer tekst in van 1 karakter
-* Voer geen tekst in
-
 ## Oefening: H2-optellen
 
 ### Leerdoelen
