@@ -78,11 +78,7 @@ Noem de methode voor deze oefening `VerbruikWagen`.
 
 #### voorbeeldinteractie\(s\)
 
-{% hint style="danger" %}
-De screenshot vermeldt het afgeronde verbruik, maar dat hoef je niet te tonen. De instructie om af te ronden heb je nog niet gezien.
-{% endhint %}
-
-![](../../.gitbook/assets/image.png)
+![](../../.gitbook/assets/2021-02-25-21_42_37-c__ap20-21_programmeren_beginnenmetcsharp_beginnenmetcsharp_bin_debug_netcoreapp.png)
 
 ### Technische hulp
 
@@ -92,7 +88,7 @@ Lees de gebruikersinvoer van de console en slaag dit op in variabelen.
 
 Zorg ervoor dat je het juiste gegevenstype kiest voor de verschillende variabelen.
 
-Nadien voer je de berekening uit om op basis van de ingevoerde gegevens het gemiddeld verbruik te berekenen \(100 \* \(aantalLiterinTank1 - aantalLiterinTank2\) / \(kilometerstand2 - kilometerstand1\)\)
+Nadien voer je de berekening uit om op basis van de ingevoerde gegevens het gemiddeld verbruik te berekenen \(100 \* \(aantalLiterinTankVoorRit - aantalLiterinTankNaRit\) / \(kilometerstandNaRit - kilometerstandVoorRit\)\)
 
 Uiteindelijk geef je dan het resultaat weer in de console.
 
