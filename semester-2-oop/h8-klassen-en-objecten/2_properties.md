@@ -25,7 +25,7 @@ Stel dat we volgende klasse hebben:
 public class Auto
 {
     private int kilometers;
-    private float benzine;
+    private double benzine;
 }
 ```
 
@@ -44,13 +44,13 @@ Een eerste mogelijkheid is om hier methodes voor te schrijven:
 public class Auto
 {
     private int kilometers;
-    private float benzine;
-    public float GetBenzine() {
+    private double benzine;
+    public double GetBenzine() {
         return this.benzine;
     }
-    public void SetBenzine(float level) {
-        if(level >= 0 && level <= 50) {
-        this.benzine = level;
+    public void SetBenzine(double waarde) {
+        if(waarde >= 0 && waarde <= 50) {
+            this.benzine = waarde;
         }
     }
 }
@@ -80,9 +80,9 @@ Een **full property** ziet er als volgt uit:
 class Auto
 {
     private int kilometers;
-    private float benzine;
+    private double benzine;
 
-    public float Benzine
+    public double Benzine
     {
         get
         {
@@ -108,14 +108,14 @@ Vergelijk dit met de vorige alinea waar we dit met Get en Set methoden moesten d
 
 We zullen de property nu stuk per stuk analyseren:
 
-* `public float Benzine`: Merk op dat we `Benzine` met een hoofdletter schrijven. Vaak wordt gekozen voor dezelfde naam als de variabele die we afschermen \(in dit geval `benzine` met een kleine "b"\), maar dan in Pascal case. Dat is niet strikt noodzakelijk. Je zou ook `Naft` kunnen schrijven. `public` en `float` staan er om dezelfde reden als in de oplossing met methodes `GetBenzine()` en `SetBenzine()`: we willen deze property buiten de klasse kunnen gebruiken en als we hem opvragen, krijgen we een `float`.
+* `public double Benzine`: Merk op dat we `Benzine` met een hoofdletter schrijven. Vaak wordt gekozen voor dezelfde naam als de variabele die we afschermen \(in dit geval `benzine` met een kleine "b"\), maar dan in Pascal case. Dat is niet strikt noodzakelijk. Je zou ook `Naft` kunnen schrijven. `public` en `double` staan er om dezelfde reden als in de oplossing met methodes `GetBenzine()` en `SetBenzine()`: we willen deze property buiten de klasse kunnen gebruiken en als we hem opvragen, krijgen we een `double`.
 * { }: Vervolgens volgen 2 accolades waarbinnen we de werking van de property beschrijven.
 * `get {}`: indien je wenst dat de property data **naar buiten** moet sturen, dan schrijven we de `get`-code. Binnen de accolades van de `get` schrijven we wat er naar buiten moet gestuurd worden. In dit geval `return benzine` maar dit mag even goed bijvoorbeeld `return 4` of een hele reeks berekeningen zijn. Eigenlijk werkt dit net als de body van een methode en kan je hierin doen wat je in een methode kan doen.
   * We kunnen nu van buitenaf toch de waarde van `benzine` onrechtstreeks uitlezen via de property en het `get`-gedeelte: `Console.WriteLine(auto.Benzine);`
-* `set {}`: in het `set`-gedeelte schrijven we de code die we moeten hanteren indien men van buitenuit een waarde aan de property wenst te geven om zo een instantievariabele aan te passen. De waarde die we van buitenuit krijgen \(eigenlijk is dit een parameter van een methode\) zal **altijd** in een lokale variabele `value` worden bewaard. Deze zal van het type van de property zijn. In dit geval dus `float`, want het type bij `Benzine` is `float`. Vervolgens kunnen we `value` toewijzen aan de interne variabele indien gewenst: `benzine=value` .
+* `set {}`: in het `set`-gedeelte schrijven we de code die we moeten hanteren indien men van buitenuit een waarde aan de property wenst te geven om zo een instantievariabele aan te passen. De waarde die we van buitenuit krijgen \(eigenlijk is dit een parameter van een methode\) zal **altijd** in een lokale variabele `value` worden bewaard. Deze zal van het type van de property zijn. In dit geval dus `double`, want het type bij `Benzine` is `double`. Vervolgens kunnen we `value` toewijzen aan de interne variabele indien gewenst: `benzine=value` .
 
 {% hint style="danger" %}
-Let goed op dat je in je setter schrijft `benzine = value` en niet `Benzine = value`. Dat eerste past de verborgen variabele aan. Dat tweede roept de setter opnieuw op. En opnieuw. En opnieuw. Probeer gerust eens een breakpoint te plaatsen voor de toekenning en dan de debugger te starten als je niet ziet waarom dit een probleem is.
+Let goed op dat je in je setter schrijft `benzine = value` en niet `Benzine = value`. Dat eerste past de verborgen instantievariabele aan. Dat tweede roept de setter opnieuw op. En opnieuw. En opnieuw. Probeer gerust eens een breakpoint te plaatsen voor de toekenning en dan de debugger te starten als je niet ziet waarom dit een probleem is.
 {% endhint %}
 
 {% hint style="info" %}
@@ -129,7 +129,7 @@ De full property `Benzine` heeft nog steeds het probleem dat we negatieve waarde
 We kunnen in de `set` code extra controles inbouwen. Als volgt:
 
 ```csharp
-   public float Benzine
+   public double Benzine
     {
         get
         {
@@ -137,13 +137,14 @@ We kunnen in de `set` code extra controles inbouwen. Als volgt:
         }
         set
         {
-            if(value >= 0 and value <= 50)
+            if(value >= 0 and value <= 50) {
                 benzine = value;
+            }
         }
     }
 ```
 
-Deze code zal het benzinepeil enkel aanpassen als het geldig is en anders stilletjes niets doen. Wat je vaak tegenkomt is `throw new ArgumentException($"{value} is geen geldige waarde voor het benzinepeil")`. Dit doet je programma crashen, maar legt ook uit waarom. We kunnen de code binnen `set` \(en `get`\) zo complex maken als we zelf willen.
+Deze code zal het benzinepeil enkel aanpassen als het geldig is en anders stilletjes niets doen. Wat je vaak tegenkomt is `throw new ArgumentException($"{value} is geen geldig benzinepeil")`. Dit doet je programma crashen, maar legt ook uit waarom. We kunnen de code binnen `set` \(en `get`\) zo complex maken als we zelf willen.
 
 {% hint style="warning" %}
 Je kan dus extra controles toevoegen, maar deze hebben alleen zin als je de variabele **via de property** aanpast. Als je in een methode van de klasse auto `benzine` met kleine "b" aanpast en niet voorzichtig bent, kan je nog steeds een negatief peil instellen. Daarom wordt aangeraden **ook binnen de klasse** gebruik te maken van de property, dus zo veel mogelijk `Benzine` in plaats van `benzine` te gebruiken.
@@ -156,12 +157,13 @@ We zijn niet verplicht om zowel de `get` en de `set` code van een property te sc
 **Write-only property**
 
 ```csharp
-   public float Benzine
+   public double Benzine
     {
         set
         {
-            if(value >= 0)
+            if(value >= 0) {
                 benzine = value;
+            }
         }
     }
 ```
@@ -171,7 +173,7 @@ We kunnen dus enkel `benzine` een waarde geven, maar niet van buitenuit uitlezen
 #### Read-only property
 
 ```csharp
-   public float Benzine
+   public double Benzine
     {
         get
         {
@@ -185,7 +187,7 @@ We kunnen dus enkel `benzine` een waarde geven, maar niet van buitenuit uitlezen
 Soms gebeurt het dat we van buitenuit enkel de gebruiker de property read-only willen maken. We willen echter intern \(in de klasse zelf\) nog steeds controleren dat er geen illegale waarden aan private datafields worden gegeven. Op dat moment definieren we een read-only property met een private setter:
 
 ```csharp
-   public float Benzine
+   public double Benzine
     {
         get
         {
@@ -193,8 +195,9 @@ Soms gebeurt het dat we van buitenuit enkel de gebruiker de property read-only w
         }
         private set
         {
-            if(value >= 0)
+            if(value >= 0) {
                 benzine = value;
+            }
         }
     }
 ```
@@ -211,7 +214,7 @@ Als we verder gaan met de klasse `Auto`:
 public class Auto
 {
     private int kilometers;
-    private float benzine;
+    private double benzine;
     // stelt het aantal blokjes benzine voor op je display
     // bij 50l heb je 5 blokjes
     // bij tussen 40 en 50l heb je 4 blokjes
@@ -236,7 +239,7 @@ Voor `Auto` kan je bijvoorbeeld schrijven:
 ```csharp
 public class Auto
 {
-    public float Benzine
+    public double Benzine
     { get; set; }
 }
 ```
