@@ -1,7 +1,7 @@
 # De essentie van C\#
 
 {% hint style="success" %}
-[Kennisclip voor deze inhoud](https://learning.ap.be/mod/resource/view.php?id=402539)
+[Kennisclip voor deze inhoud](https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=b318b7fa-fa9e-427c-81c8-acdd00a45b3d)
 {% endhint %}
 
 ## Statements en de C\# syntax
